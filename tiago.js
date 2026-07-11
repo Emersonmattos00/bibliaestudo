@@ -1,0 +1,737 @@
+window.LIVRO_DATA = {
+  nome: "Tiago",
+  id: "tiago",
+  testament: "NT",
+
+  dados: {
+    // ======================= CAPÍTULO 1 =======================
+    1: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Saudação e propósito da prova da fé</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Pe 1:6-7; Rm 5:3-5)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Tiago, servo de Deus e do Senhor Jesus Cristo, às doze tribos que andam dispersas, saúde.",
+      "<strong>COMENTÁRIO:</strong> 📖 Tiago se apresenta como 'servo' (doulos — escravo) de Deus e do Senhor Jesus Cristo. Ele não menciona ser irmão de Jesus (embora fosse), demonstrando humildade. A carta é dirigida às 'doze tribos dispersas' — os judeus da Diáspora (a dispersão). 'Saúde' (chairein) é uma saudação grega comum. Aplicação: A humildade é a marca de um verdadeiro servo de Cristo. Reflexão: Você se vê como servo de Deus e de Cristo?",
+      "📖 <strong>RESUMO:</strong> Tiago, servo de Deus e de Cristo, saúda as doze tribos dispersas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Servo de Deus' (Romanos 1:1; Filipenses 1:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Meus irmãos, tende por grande alegria o cairdes em várias tentações,",
+      "<strong>COMENTÁRIO:</strong> 😊 'Tende por grande alegria' (pasan charan hēgēsasthe — considerai como toda alegria) quando 'caídes' (peripiptō — encontrar, cair em) em 'várias tentações' (poikilois peirasmois — provações de vários tipos). Aplicação: As provações devem ser recebidas com alegria, não com desespero. Reflexão: Você considera as provações como motivo de alegria?",
+      "📖 <strong>RESUMO:</strong> Tende por grande alegria as várias tentações.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Alegria nas tribulações' (Romanos 5:3; 1 Pedro 1:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Sabendo que a prova da vossa fé opera a paciência.",
+      "<strong>COMENTÁRIO:</strong> 💪 'A prova' (dokimion — teste, aprovação) da fé 'opera' (katergazomai — produz, efetua) a 'paciência' (hypomonē — perseverança, resistência). Aplicação: A provação não é sem propósito; ela produz perseverança. Reflexão: Você vê o propósito de Deus em suas provações?",
+      "📖 <strong>RESUMO:</strong> A prova da fé opera paciência.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Prova da fé' (1 Pedro 1:7; Romanos 5:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Tenha, porém, a paciência a sua obra perfeita, para que sejais perfeitos e completos, sem falta alguma.",
+      "<strong>COMENTÁRIO:</strong> 🌟 A 'paciência' deve ter sua 'obra perfeita' (ergon teleion), para que sejamos 'perfeitos e completos' (teleioi kai holoklēroi), 'sem falta alguma' (en mēdeni leipomenoi). Aplicação: A perseverança nos leva à maturidade espiritual. Reflexão: Você está deixando a paciência completar sua obra em você?",
+      "📖 <strong>RESUMO:</strong> A paciência aperfeiçoa para que sejais completos, sem falta.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perfeitos e completos' (Colossenses 1:28; 4:12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> E, se algum de vós tem falta de sabedoria, peça-a a Deus, que a todos dá liberalmente e não o lança em rosto, e ser-lhe-á dada.",
+      "<strong>COMENTÁRIO:</strong> 📖 'Falta de sabedoria' (leipetai sophias) — a sabedoria para entender e suportar as provações. Peça a Deus, que 'dá liberalmente' (didōsi haplōs — dá generosamente, simplesmente) e 'não lança em rosto' (mē oneidizō — não censura, não reprova). Aplicação: Deus dá sabedoria generosamente a quem pede. Reflexão: Você pede sabedoria a Deus?",
+      "📖 <strong>RESUMO:</strong> Se alguém tem falta de sabedoria, peça a Deus, que dá liberalmente.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dá liberalmente' (Provérbios 2:6; 1 Reis 3:9-12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Peça-a, porém, com fé, não duvidando; porque o que duvida é semelhante à onda do mar, que é levada pelo vento e lançada de uma para outra parte.",
+      "<strong>COMENTÁRIO:</strong> 🌊 A oração deve ser 'com fé' (en pistei), 'não duvidando' (mēden diakrinomenos). O que duvida (diakrinō) é como a 'onda do mar' (kludōn thalassēs), levada (anemizō) e lançada (rhipizō) pelo vento. Aplicação: A fé é essencial para receber de Deus. Reflexão: Você ora com fé ou com dúvida?",
+      "📖 <strong>RESUMO:</strong> Peça com fé, sem duvidar; o que duvida é como a onda do mar.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Pedir com fé' (Marcos 11:24; Mateus 21:22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Não pense tal homem que receberá do Senhor alguma coisa.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ O que duvida 'não pense' (oiomai) que 'receberá' (lambanō) 'alguma coisa' (ti) do Senhor. Aplicação: A dúvida impede a resposta de Deus. Reflexão: Você espera receber de Deus com fé?",
+      "📖 <strong>RESUMO:</strong> O que duvida não receberá nada do Senhor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não receberá' (Hebreus 11:6; Tiago 4:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> O homem de coração dobro é inconstante em todos os seus caminhos.",
+      "<strong>COMENTÁRIO:</strong> 🔄 O 'homem de coração dobro' (anēr dipsychos — homem de duas almas) é 'inconstante' (akatastatos — instável) em todos os seus caminhos. Aplicação: A fé duvidosa leva à instabilidade. Reflexão: Seu coração é firme ou dividido?",
+      "📖 <strong>RESUMO:</strong> O homem de coração dobro é inconstante em todos os caminhos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Coração dobro' (Tiago 4:8; Efésios 4:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Mas o irmão de condição humilde glorie-se na sua exaltação,",
+      "<strong>COMENTÁRIO:</strong> 👑 O irmão 'humilde' (tapeinos) deve 'gloriar-se' (kauchaomai) em sua 'exaltação' (hypsos) — a posição elevada que tem em Cristo. Aplicação: Os humildes têm motivo de glória em Cristo. Reflexão: Você se gloria em sua posição em Cristo?",
+      "📖 <strong>RESUMO:</strong> O humilde glorie-se na sua exaltação.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Humilde exaltado' (Mateus 23:12; Lucas 14:11).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> E o rico, no seu abatimento; porque ele passará como a flor da erva.",
+      "<strong>COMENTÁRIO:</strong> 🌾 O rico deve se gloriar em seu 'abatimento' (tapeinōsis — humilhação), porque ele passará como a 'flor da erva' (anthos chortou). Aplicação: A riqueza é transitória. Reflexão: Você confia nas riquezas ou em Deus?",
+      "📖 <strong>RESUMO:</strong> O rico glorie-se no seu abatimento, pois passará como a flor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Flor da erva' (Isaías 40:6-8; 1 Pedro 1:24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Porque o sol se levanta com ardor, e a erva seca, e a sua flor cai, e a formosa aparência do seu aspecto perece; assim se murchará também o rico em seus caminhos.",
+      "<strong>COMENTÁRIO:</strong> ☀️ O sol com ardor (kausōn) seca a erva, a flor cai (ekpiptō) e a aparência (euprepeia) perece (apollymi). Assim o rico murchará (marainō) em seus caminhos. Aplicação: A riqueza é efêmera. Reflexão: Você investe no que é eterno ou no que é passageiro?",
+      "📖 <strong>RESUMO:</strong> O rico murchará em seus caminhos como a flor da erva.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Riquezas perecem' (Provérbios 23:5; Mateus 6:19-20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Bem-aventurado o homem que sofre a tentação; porque, quando for provado, receberá a coroa da vida, a qual o Senhor tem prometido aos que o amam.",
+      "<strong>COMENTÁRIO:</strong> 👑 'Bem-aventurado' (makarios) o homem que 'sofre' (hypomenō) a 'tentação' (peirasmos). Quando 'provado' (dokimos — aprovado), receberá a 'coroa da vida' (stephanon tēs zōēs), prometida aos que O amam. Aplicação: A perseverança nas provações traz a coroa da vida. Reflexão: Você ama o Senhor e persevera nas provações?",
+      "📖 <strong>RESUMO:</strong> Bem-aventurado o que sofre a tentação; receberá a coroa da vida.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Coroa da vida' (Apocalipse 2:10; 2 Timóteo 4:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Ninguém, sendo tentado, diga: De Deus sou tentado; porque Deus não pode ser tentado pelo mal, e a ninguém tenta.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ Não diga: 'De Deus sou tentado' (apo Theou peirazomai). Deus não pode ser 'tentado pelo mal' (apeirastos kakōn) e a ninguém 'tenta' (peirazō). Aplicação: Deus não é a fonte da tentação para o mal. Reflexão: Você atribui suas tentações a Deus?",
+      "📖 <strong>RESUMO:</strong> Deus não tenta ninguém; não digais: De Deus sou tentado.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Deus não tenta' (1 Coríntios 10:13; Gênesis 22:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Mas cada um é tentado, quando atraído e engodado pela sua própria concupiscência.",
+      "<strong>COMENTÁRIO:</strong> 🎣 Cada um é tentado quando 'atraído' (exelkō — arrastado para fora) e 'engodado' (deleazō — seduzido) pela sua 'própria concupiscência' (idia epithymia). Aplicação: A tentação vem de dentro, não de Deus. Reflexão: Você reconhece que sua concupiscência é a fonte da tentação?",
+      "📖 <strong>RESUMO:</strong> Cada um é tentado pela sua própria concupiscência.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Concupiscência' (Romanos 7:7-8; Gálatas 5:16-17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Depois, havendo a concupiscência concebido, dá à luz o pecado; e o pecado, sendo consumado, gera a morte.",
+      "<strong>COMENTÁRIO:</strong> 💀 O processo do pecado: concupiscência 'concebe' (syllambanō), 'dá à luz' (tikto) o pecado (hamartia); o pecado, 'consumado' (apoteleō), 'gera' (apokyeō) a morte (thanatos). Aplicação: O pecado não fica isolado; ele leva à morte. Reflexão: Você está dando lugar à concupiscência?",
+      "📖 <strong>RESUMO:</strong> A concupiscência dá à luz o pecado, e o pecado gera a morte.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Salário do pecado' (Romanos 6:23; Gálatas 6:7-8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Não erreis, meus amados irmãos.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ 'Não erreis' (mē planaō) — não vos enganeis. Aplicação: Não se deixe enganar sobre a origem da tentação. Reflexão: Você é enganado por falsos ensinos sobre a tentação?",
+      "📖 <strong>RESUMO:</strong> Não erreis, meus amados irmãos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não vos enganeis' (1 Coríntios 6:9; 15:33).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Toda a boa dádiva e todo o dom perfeito vem do alto, descendo do Pai das luzes, em quem não há mudança, nem sombra de variação.",
+      "<strong>COMENTÁRIO:</strong> ✨ 'Toda boa dádiva' (dosis agathē) e 'todo dom perfeito' (dōrēma teleion) vêm 'do alto' (anōthen), do 'Pai das luzes' (Patos tōn phōtōn), em quem não há 'mudança' (parallagē) nem 'sombra de variação' (tropēs aposkiasma). Aplicação: Todo bem vem de Deus, que é imutável. Reflexão: Você reconhece Deus como a fonte de todo bem?",
+      "📖 <strong>RESUMO:</strong> Toda boa dádiva vem do Pai das luzes, que é imutável.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Pai das luzes' (João 8:12; 1 João 1:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Segundo a sua vontade, ele nos gerou pela palavra da verdade, para que fôssemos como primícias das suas criaturas.",
+      "<strong>COMENTÁRIO:</strong> 🌱 Deus, 'segundo a sua vontade' (boulētheis), nos 'gerou' (apokyeō) pela 'palavra da verdade' (logō alētheias), para que sejamos 'primícias' (aparchē) das suas criaturas (ktisma). Aplicação: Somos nova criação pela Palavra de Deus. Reflexão: Você é uma primícia das criaturas de Deus?",
+      "📖 <strong>RESUMO:</strong> Deus nos gerou pela palavra da verdade para sermos primícias.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Palavra da verdade' (Efésios 1:13; Colossenses 1:5).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Praticar a palavra e controlar a língua</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Ef 4:26; 1Pe 2:1-2)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Portanto, meus amados irmãos, todo o homem seja pronto para ouvir, tardio para falar, tardio para se irar.",
+      "<strong>COMENTÁRIO:</strong> 👂 'Pronto para ouvir' (tachys eis to akousai), 'tardio para falar' (brachys eis to lalēsai), 'tardio para se irar' (brachys eis orgēn). Aplicação: Seja rápido para ouvir, lento para falar e lento para se irar. Reflexão: Você ouve mais do que fala?",
+      "📖 <strong>RESUMO:</strong> Sede prontos para ouvir, tardios para falar e tardios para irar.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tardio para irar' (Provérbios 14:29; 16:32).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Porque a ira do homem não opera a justiça de Deus.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ 'A ira do homem' (orgē andros) 'não opera' (katergazomai — não produz) a 'justiça de Deus' (dikaiosynēn Theou). Aplicação: A ira humana não promove a justiça divina. Reflexão: Você permite que a ira controle suas ações?",
+      "📖 <strong>RESUMO:</strong> A ira do homem não opera a justiça de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ira do homem' (Efésios 4:26-27; Colossenses 3:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Por isso, rejeitando toda a imundícia e superfluidade de malícia, recebei com mansidão a palavra em vós enxertada, a qual pode salvar as vossas almas.",
+      "<strong>COMENTÁRIO:</strong> 🧹 'Rejeitando' (apotithēmi) toda 'imundícia' (ryparia) e 'superfluidade de malícia' (perisseia kakias), 'recebei' (dechomai) com 'mansidão' (praütēs) a 'palavra enxertada' (emphyton — implantada), que pode 'salvar' (sōzō) as almas. Aplicação: Receba a Palavra com mansidão. Reflexão: Você recebe a Palavra com mansidão?",
+      "📖 <strong>RESUMO:</strong> Rejeitando a imundícia, recebei a palavra enxertada com mansidão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Palavra enxertada' (1 Pedro 1:23; 2:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> E sede cumpridores da palavra, e não somente ouvintes, enganando-vos a vós mesmos.",
+      "<strong>COMENTÁRIO:</strong> 📖 'Sede cumpridores' (poiētai — fazedores) da palavra, e não 'ouvintes' (akroatai) apenas, 'enganando-vos a vós mesmos' (paralogizomai — enganando com raciocínio falso). Aplicação: A fé verdadeira é praticada, não apenas ouvida. Reflexão: Você pratica o que ouve?",
+      "📖 <strong>RESUMO:</strong> Sede cumpridores da palavra, não somente ouvintes, enganando-vos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cumpridores da palavra' (Romanos 2:13; João 13:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> Porque, se alguém é ouvinte da palavra e não cumpridor, é semelhante ao homem que contempla ao espelho o seu rosto natural;",
+      "<strong>COMENTÁRIO:</strong> 🪞 O ouvinte não cumpridor é como quem contempla (katanoeō) no espelho (esoptron) seu 'rosto natural' (prosōpon tēs geneseōs). Aplicação: A Palavra revela quem somos, mas só ser praticada transforma. Reflexão: Você apenas se vê no espelho da Palavra ou age?",
+      "📖 <strong>RESUMO:</strong> Ouvinte não cumpridor é como quem se vê no espelho.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Espelho' (1 Coríntios 13:12; 2 Coríntios 3:18).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> Porque se contempla a si mesmo e vai-se, e logo se esquece de como era.",
+      "<strong>COMENTÁRIO:</strong> 🚶 Ele se 'contempla' (katanoeō) e 'vai-se' (apechomai), e logo se 'esquece' (epilanthanomai) de como era. Aplicação: Ouvir sem praticar é esquecer rapidamente. Reflexão: Você se lembra e aplica o que ouve na Palavra?",
+      "📖 <strong>RESUMO:</strong> Contempla-se e vai-se, esquecendo-se de como era.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Esquecendo' (Filipenses 3:13; 2 Pedro 1:9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 25</strong></span>",
+      "<strong>TEXTO:</strong> Porém aquele que atenta bem para a lei perfeita da liberdade e nela persevera, não sendo ouvinte esquecido, mas fazedor da obra, este tal será bem-aventurado no seu feito.",
+      "<strong>COMENTÁRIO:</strong> 👑 Quem 'atenta bem' (parakyptō — inclina-se para examinar) para a 'lei perfeita da liberdade' (teleios nomos tēs eleutherias) e nela 'persevera' (paramenō), sendo 'fazedor' (poiētēs) da obra (ergon), será 'bem-aventurado' (makarios) no seu feito. Aplicação: A lei da liberdade nos liberta para praticar o bem. Reflexão: Você é bem-aventurado em seu fazer?",
+      "📖 <strong>RESUMO:</strong> O que atenta para a lei perfeita da liberdade e a pratica será bem-aventurado.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Lei da liberdade' (Tiago 2:12; Gálatas 5:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 26</strong></span>",
+      "<strong>TEXTO:</strong> Se alguém entre vós cuida ser religioso e não refreia a sua língua, antes engana o seu coração, a religião desse é vã.",
+      "<strong>COMENTÁRIO:</strong> 🗣️ Quem 'cuida' (dokeō) ser 'religioso' (thrēskos) e não 'refreia' (chalinagōgeō — controla com rédea) a língua, 'engana' (apataō) o coração, sua 'religião' (thrēskeia) é 'vã' (mataios). Aplicação: A verdadeira religião controla a língua. Reflexão: Você controla sua língua?",
+      "📖 <strong>RESUMO:</strong> Religião sem controlar a língua é vã.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Refrear a língua' (Tiago 3:2-12; Salmo 34:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 27</strong></span>",
+      "<strong>TEXTO:</strong> A religião pura e imaculada para com Deus e Pai é esta: Visitar os órfãos e as viúvas nas suas tribulações, e guardar-se da corrupção do mundo.",
+      "<strong>COMENTÁRIO:</strong> ❤️ A religião 'pura' (katharos) e 'imaculada' (amiantos) é: (1) 'visitar' (episkeptomai) os órfãos (orphanos) e viúvas (chēra) em suas tribulações (thlipsis); (2) 'guardar-se' (tēreō) da 'corrupção do mundo' (aspilos — sem mancha). Aplicação: A verdadeira religião é prática e santa. Reflexão: Você pratica a religião pura diante de Deus?",
+      "📖 <strong>RESUMO:</strong> A religião pura é visitar órfãos e viúvas e guardar-se do mundo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Visitar órfãos' (Deuteronômio 10:18; 1 João 3:17).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 1</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 1 é uma introdução à carta com temas centrais: alegria nas provações, perseverança, sabedoria, a fonte das tentações e a prática da Palavra. Tiago ensina que as provações produzem perseverança e maturidade; a sabedoria vem de Deus mediante oração com fé; a tentação vem da concupiscência, não de Deus; e a Palavra deve ser praticada, não apenas ouvida. A verdadeira religião se manifesta no cuidado com os necessitados e na santidade. O capítulo nos ensina que: 1) As provações têm propósito; 2) Deus dá sabedoria liberalmente; 3) A tentação vem de dentro; 4) Toda boa dádiva vem de Deus; 5) Sejamos cumpridores da Palavra; 6) Controle a língua; 7) A religião pura é prática e santa.</p>"
+    ],
+
+    // ======================= CAPÍTULO 2 =======================
+    2: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A fé sem acepção de pessoas</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Lv 19:15; 1Co 1:26-29)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Meus irmãos, não tenhais a fé de nosso Senhor Jesus Cristo, Senhor da glória, em acepção de pessoas.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Não tenhais a fé (pistis) em Cristo com 'acepção de pessoas' (prosōpolēpsia — favoritismo). Aplicação: A fé em Cristo não admite parcialidade. Reflexão: Você trata todos com igualdade na igreja?",
+      "📖 <strong>RESUMO:</strong> Não tenhais a fé de Cristo com acepção de pessoas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Acepção de pessoas' (Romanos 2:11; Atos 10:34).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Porque, se no vosso ajuntamento entrar algum homem com anel de ouro, com vestes preciosas, e entrar também algum pobre com vestes vis,",
+      "<strong>COMENTÁRIO:</strong> 👔 Cenário: um homem rico (anel de ouro, vestes preciosas) e um pobre (vestes vis) entram na 'sinagoga' (synagōgē — assembleia, igreja). Aplicação: A igreja deve acolher a todos sem distinção. Reflexão: Você trata ricos e pobres da mesma forma?",
+      "📖 <strong>RESUMO:</strong> Um rico e um pobre entram no vosso ajuntamento.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Pobre e rico' (Provérbios 22:2; 2 Coríntios 8:9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> E atentardes para o que traz a veste preciosa, e lhe disserdes: Assenta-te aqui num lugar de honra; e disserdes ao pobre: Fica tu ali em pé, ou assenta-te abaixo do meu estrado,",
+      "<strong>COMENTÁRIO:</strong> 🪑 O rico é colocado em 'lugar de honra' (kalōs kathou — senta-te bem), o pobre em 'pé' (stēthi) ou 'abaixo do estrado' (hypo to hypopodion mou). Aplicação: A parcialidade é pecado. Reflexão: Você honra os pobres como honra os ricos?",
+      "📖 <strong>RESUMO:</strong> Tratais o rico com honra e o pobre com desprezo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Lugar de honra' (Lucas 14:7-11; Provérbios 25:6-7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Porventura não fizestes distinção entre vós mesmos, e não vos fizestes juízes de maus pensamentos?",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Fazeis 'distinção' (diakrinō) e sois 'juízes de maus pensamentos' (kritai dialogismōn ponērōn). Aplicação: A parcialidade revela pensamentos malignos. Reflexão: Você julga os outros por sua aparência?",
+      "📖 <strong>RESUMO:</strong> Não fizestes distinção e juízes de maus pensamentos?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Juízes de maus pensamentos' (Mateus 7:1-5; João 7:24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Ouvi, meus amados irmãos: Porventura não escolheu Deus os pobres deste mundo para serem ricos na fé e herdeiros do reino que prometeu aos que o amam?",
+      "<strong>COMENTÁRIO:</strong> 👑 Deus escolheu (eklegō) os 'pobres deste mundo' (ptōchoi tō kosmō) para serem 'ricos na fé' (plousioi en pistei) e 'herdeiros do reino' (klēronomoi tēs basileias). Aplicação: A fé é a verdadeira riqueza. Reflexão: Você valoriza a riqueza espiritual acima da material?",
+      "📖 <strong>RESUMO:</strong> Deus escolheu os pobres para serem ricos na fé e herdeiros do reino.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ricos na fé' (Apocalipse 2:9; 1 Coríntios 1:26-29).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Mas vós desonrastes o pobre. Porventura não vos oprimem os ricos, e não vos arrastam aos tribunais?",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Vós 'desonrastes' (atimazō) o pobre. Não são os ricos que vos 'oprimem' (katadynasteuō) e vos 'arrastam' (helkō) aos tribunais? Aplicação: A parcialidade é incoerente com a experiência cristã. Reflexão: Você honra os pobres ou se alia aos ricos opressores?",
+      "📖 <strong>RESUMO:</strong> Desonrastes o pobre, enquanto os ricos vos oprimem.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Oprimem os pobres' (Atos 4:1-3; 16:19-24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Porventura não blasfemam eles o bom nome que sobre vós foi invocado?",
+      "<strong>COMENTÁRIO:</strong> 📛 Os ricos 'blasfemam' (blasphēmeō) o 'bom nome' (kalon onoma) invocado sobre vós (o nome de Cristo). Aplicação: Os opressores frequentemente blasfemam o nome de Cristo. Reflexão: Você defende o nome de Cristo contra a blasfêmia?",
+      "📖 <strong>RESUMO:</strong> Os ricos blasfemam o bom nome invocado sobre vós.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Nome invocado' (Atos 2:21; 1 Coríntios 1:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Todavia, se cumprirdes a lei real segundo a Escritura: Amarás ao teu próximo como a ti mesmo, bem fazeis.",
+      "<strong>COMENTÁRIO:</strong> ❤️ A 'lei real' (nomos basilikos — lei do Rei) é: 'Amarás ao teu próximo como a ti mesmo' (Levítico 19:18). Se a cumprirdes, 'bem fazeis' (kalōs poieite). Aplicação: O amor ao próximo é a lei do reino. Reflexão: Você ama o próximo como a si mesmo?",
+      "📖 <strong>RESUMO:</strong> A lei real é: amarás ao teu próximo como a ti mesmo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Amar ao próximo' (Levítico 19:18; Mateus 22:39).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Mas, se fazeis acepção de pessoas, cometeis pecado, e sois redarguidos pela lei como transgressores.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ Fazer 'acepção de pessoas' (prosōpolēmpteō) é 'pecado' (hamartia) e a lei vos 'redargui' (elegchō — convence, acusa) como 'transgressores' (parabatai). Aplicação: A parcialidade é pecado. Reflexão: Você reconhece a parcialidade como pecado?",
+      "📖 <strong>RESUMO:</strong> Fazer acepção de pessoas é pecado e transgressão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Acepção de pessoas' (Deuteronômio 1:17; 1 Timóteo 5:21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Porque qualquer que guardar toda a lei, e tropeçar em um só ponto, tornou-se culpado de todos.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Quem 'guardar' (tēreō) toda a lei, mas 'tropeçar' (ptaiō) em 'um só ponto' (en heni), torna-se 'culpado de todos' (enochos pantōn). Aplicação: A lei é uma unidade; quebrar um mandamento é quebrar toda a lei. Reflexão: Você entende a seriedade de qualquer pecado?",
+      "📖 <strong>RESUMO:</strong> Quem tropeça em um ponto é culpado de todos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Culpado de todos' (Gálatas 3:10; 5:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Porque aquele que disse: Não adulterarás, também disse: Não matarás. Se tu, pois, não cometeres adultério, mas matares, estás feito transgressor da lei.",
+      "<strong>COMENTÁRIO:</strong> 📖 O mesmo Deus que disse 'não adulterarás' também disse 'não matarás'. Se não adulteras, mas matas, és 'transgressor' (parabatēs). Aplicação: Todos os mandamentos têm a mesma autoridade divina. Reflexão: Você trata todos os mandamentos de Deus com igual seriedade?",
+      "📖 <strong>RESUMO:</strong> Quem não adultera mas mata é transgressor da lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não matarás' (Êxodo 20:13-14; Deuteronômio 5:17-18).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Assim falai e assim procedei, como os que hão de ser julgados pela lei da liberdade.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Falai e procedei como os que serão 'julgados' (krinō) pela 'lei da liberdade' (nomos eleutherias). Aplicação: A lei da liberdade nos julga, mas também nos liberta. Reflexão: Você vive sob a lei da liberdade?",
+      "📖 <strong>RESUMO:</strong> Falai e procedei como os que serão julgados pela lei da liberdade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Lei da liberdade' (Tiago 1:25; Gálatas 5:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Porque o juízo será sem misericórdia sobre aquele que não fez misericórdia; e a misericórdia triunfa sobre o juízo.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ O 'juízo' (krisis) será 'sem misericórdia' (aneleos) para quem não fez misericórdia. A 'misericórdia' (eleos) 'triunfa' (katakauchaō — exulta sobre) sobre o juízo. Aplicação: A misericórdia de Deus supera o juízo. Reflexão: Você pratica a misericórdia?",
+      "📖 <strong>RESUMO:</strong> O juízo será sem misericórdia para quem não fez misericórdia; a misericórdia triunfa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Misericórdia triunfa' (Mateus 5:7; 18:21-35).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A fé sem obras é morta</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Gn 15:6; 22:9-12; Js 2:1-21)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Meus irmãos, que aproveita se alguém disser que tem fé e não tiver obras? Porventura a fé pode salvá-lo?",
+      "<strong>COMENTÁRIO:</strong> ❓ 'Que aproveita' (ti ophelos) se alguém 'disser' (legō) que tem fé (pistis) e não tiver 'obras' (erga)? A fé pode 'salvá-lo' (sōzō)? Aplicação: A fé sem obras é inútil para a salvação. Reflexão: Sua fé é acompanhada de obras?",
+      "📖 <strong>RESUMO:</strong> Que proveito há se alguém tem fé e não tem obras?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fé sem obras' (Efésios 2:8-10; Gálatas 5:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> E, se o irmão ou a irmã estiverem nus e tiverem falta de mantimento cotidiano,",
+      "<strong>COMENTÁRIO:</strong> 👔 Um irmão ou irmã está 'nu' (gymnos) e com 'falta de mantimento' (leipomenoi tēs ephēmerou trophēs). Aplicação: A necessidade prática exige ação. Reflexão: Você vê as necessidades dos irmãos?",
+      "📖 <strong>RESUMO:</strong> Se o irmão estiver nu e com falta de mantimento.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Necessidade' (1 João 3:17; Mateus 25:35-36).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> E algum de vós lhes disser: Ide em paz, aquentai-vos e fartai-vos; e não lhes derdes as coisas necessárias para o corpo, que proveito virá daí?",
+      "<strong>COMENTÁRIO:</strong> ❌ Dizer 'ide em paz' (hypagete en eirēnē), 'aquecei-vos' (thermainō) e 'fartai-vos' (chortazō), sem dar o necessário, não tem 'proveito' (ophelos). Aplicação: Palavras sem ação são vazias. Reflexão: Sua fé se traduz em ação?",
+      "📖 <strong>RESUMO:</strong> Dizer ide em paz sem dar o necessário não tem proveito.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não dar o necessário' (1 João 3:17; Lucas 3:11).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Assim também a fé, se não tiver as obras, é morta em si mesma.",
+      "<strong>COMENTÁRIO:</strong> ⚰️ A fé sem obras é 'morta' (nekros) 'em si mesma' (kath' heautēn). Aplicação: A fé verdadeira é viva e produz obras. Reflexão: Sua fé é viva ou morta?",
+      "📖 <strong>RESUMO:</strong> A fé sem obras é morta em si mesma.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fé morta' (Hebreus 6:1; Efésios 2:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Mas dirá alguém: Tu tens fé, e eu tenho obras; mostra-me a tua fé sem as tuas obras, e eu te mostrarei a minha fé pelas minhas obras.",
+      "<strong>COMENTÁRIO:</strong> 👀 'Mostra-me' (deixō) a tua fé sem obras — isso é impossível. A fé é demonstrada pelas obras. Aplicação: As obras são a evidência visível da fé. Reflexão: Suas obras mostram sua fé?",
+      "📖 <strong>RESUMO:</strong> Mostra-me a tua fé sem obras; eu te mostrarei a minha fé pelas obras.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mostrar pela obra' (Mateus 7:16-20; 1 Timóteo 5:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Tu crês que há um só Deus; fazes bem; também os demônios o creem, e estremecem.",
+      "<strong>COMENTÁRIO:</strong> 😈 Crer que há um só Deus é bom (kalōs poieis). Mas os demônios (daimonia) também 'creem' (pisteuō) e 'estremecem' (phrisso). Aplicação: A fé dos demônios é intelectual, mas não salvadora. Reflexão: Sua fé é apenas intelectual ou transformadora?",
+      "📖 <strong>RESUMO:</strong> Os demônios creem que há um só Deus e estremecem.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Demônios creem' (Marcos 1:24; Atos 16:16-18).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Mas, ó homem vão, queres tu saber que a fé sem as obras é morta?",
+      "<strong>COMENTÁRIO:</strong> ⚠️ 'Homem vão' (anthrōpe kene — homem vazio), a fé sem obras é 'morta' (argē — inoperante, inútil). Aplicação: A fé sem obras é vazia e inoperante. Reflexão: Sua fé é operante?",
+      "📖 <strong>RESUMO:</strong> A fé sem obras é morta.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fé morta' (Tiago 2:17; 2 Pedro 1:5-9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Porventura Abraão, nosso pai, não foi justificado pelas obras, quando ofereceu sobre o altar o seu filho Isaque?",
+      "<strong>COMENTÁRIO:</strong> 📖 Abraão foi 'justificado' (dikaioō) pelas obras (erga) quando ofereceu Isaque (Gênesis 22:1-14). Aplicação: A fé de Abraão foi demonstrada por sua obra de obediência. Reflexão: Sua fé é demonstrada por atos de obediência?",
+      "📖 <strong>RESUMO:</strong> Abraão foi justificado pelas obras ao oferecer Isaque.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Abraão justificado' (Gênesis 22:1-14; Hebreus 11:17-19).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> Bem vês que a fé cooperou com as suas obras, e que pelas obras a fé foi aperfeiçoada.",
+      "<strong>COMENTÁRIO:</strong> 🤝 A fé 'cooperou' (synergeō) com as obras, e a fé foi 'aperfeiçoada' (teleioō) pelas obras. Aplicação: A fé e as obras trabalham juntas. Reflexão: Sua fé e obras cooperam?",
+      "📖 <strong>RESUMO:</strong> A fé cooperou com as obras e foi aperfeiçoada por elas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fé aperfeiçoada' (Hebreus 5:9; 12:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> E cumpriu-se a Escritura, que diz: Creu Abraão em Deus, e isso lhe foi imputado como justiça, e foi chamado amigo de Deus.",
+      "<strong>COMENTÁRIO:</strong> 📖 Citação de Gênesis 15:6: Abraão creu e foi 'imputado' (logizomai) como justiça. Ele foi chamado 'amigo de Deus' (philos Theou) (2 Crônicas 20:7; Isaías 41:8). Aplicação: A fé de Abraão foi creditada como justiça, confirmada por obras. Reflexão: Você é amigo de Deus?",
+      "📖 <strong>RESUMO:</strong> Abraão creu e isso lhe foi imputado como justiça; foi chamado amigo de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Amigo de Deus' (Gênesis 15:6; 2 Crônicas 20:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> Vedes então que o homem é justificado pelas obras, e não somente pela fé.",
+      "<strong>COMENTÁRIO:</strong> 📖 O homem é 'justificado' (dikaioō) pelas obras (erga), e 'não somente' (ou monon) pela fé (pisteōs). Aplicação: A justificação é pela fé, mas a fé que justifica é acompanhada de obras. Reflexão: Sua fé é acompanhada de obras?",
+      "📖 <strong>RESUMO:</strong> O homem é justificado pelas obras e não somente pela fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Justificado pelas obras' (Romanos 4:1-5; Gálatas 2:16).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 25</strong></span>",
+      "<strong>TEXTO:</strong> De igual modo também Raabe, a meretriz, não foi justificada pelas obras, quando acolheu os emissários, e os despediu por outro caminho?",
+      "<strong>COMENTÁRIO:</strong> 👩 Raabe, a meretriz (pornē), foi 'justificada' (dikaioō) pelas obras (erga), quando acolheu os espias e os despediu (Josué 2:1-21; 6:22-25). Aplicação: A fé de Raabe foi demonstrada por suas obras. Reflexão: Sua fé é demonstrada por obras, como a de Raabe?",
+      "📖 <strong>RESUMO:</strong> Raabe foi justificada pelas obras ao acolher os emissários.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Raabe' (Josué 2:1-21; 6:22-25; Hebreus 11:31).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 26</strong></span>",
+      "<strong>TEXTO:</strong> Porque, assim como o corpo sem o espírito está morto, assim também a fé sem obras é morta.",
+      "<strong>COMENTÁRIO:</strong> ⚰️ O corpo sem espírito (pneuma) está morto; assim a fé sem obras (erga) é morta (nekros). Aplicação: A fé viva é acompanhada de obras. Reflexão: Sua fé é viva ou morta?",
+      "📖 <strong>RESUMO:</strong> Assim como o corpo sem espírito está morto, a fé sem obras é morta.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Corpo sem espírito' (Gênesis 2:7; 1 Coríntios 15:45).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 2</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 2 aborda dois temas principais: a parcialidade na igreja e a relação entre fé e obras. Tiago condena a acepção de pessoas, mostrando que Deus escolheu os pobres para serem ricos na fé. A lei real é o amor ao próximo; a parcialidade é pecado. Tiago então argumenta que a fé sem obras é morta, usando Abraão e Raabe como exemplos de fé demonstrada por obras. A fé que justifica é uma fé viva, que produz obras. O capítulo nos ensina que: 1) A fé em Cristo não admite parcialidade; 2) A lei real é o amor ao próximo; 3) A fé sem obras é morta; 4) Abraão foi justificado por obras; 5) As obras são a evidência da fé viva.</p>"
+    ],
+
+    // ======================= CAPÍTULO 3 =======================
+    3: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>O poder e o perigo da língua</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Pv 13:3; 18:21; Mt 12:36-37)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Meus irmãos, não sejais muitos mestres, sabendo que receberemos maior condenação.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ 'Não sejais muitos mestres' (mē polloi didaskaloi ginesthe), pois 'receberemos' (lambanō) 'maior condenação' (meizon krima). Aplicação: Ensinar traz maior responsabilidade. Reflexão: Você busca o ensino com humildade?",
+      "📖 <strong>RESUMO:</strong> Não sejais muitos mestres, pois receberemos maior condenação.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Maior condenação' (Lucas 12:48; 1 Coríntios 3:12-15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Porque todos tropeçamos em muitas coisas. Se alguém não tropeça em palavra, esse é homem perfeito, e capaz de refrear também todo o corpo.",
+      "<strong>COMENTÁRIO:</strong> 📖 'Todos tropeçamos' (ptaiō) em 'muitas coisas' (pollois). Quem não tropeça em 'palavra' (logos) é 'homem perfeito' (teleios anēr) e capaz de 'refrear' (chalinagōgeō) todo o corpo. Aplicação: O domínio da língua é sinal de maturidade. Reflexão: Você controla sua língua?",
+      "📖 <strong>RESUMO:</strong> Todos tropeçamos; quem não tropeça em palavra é perfeito.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tropeçar em palavra' (Provérbios 10:19; 17:27-28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Ora, nós pomos freio na boca dos cavalos, para que nos obedeçam; e conseguimos dirigir todo o seu corpo.",
+      "<strong>COMENTÁRIO:</strong> 🐴 O 'freio' (chalinos) na boca dos cavalos os faz 'obedecer' (peithō) e 'dirigir' (metagō) todo o corpo. Aplicação: A língua, como um freio, pode controlar todo o corpo. Reflexão: Você coloca um freio em sua língua?",
+      "📖 <strong>RESUMO:</strong> O freio na boca dos cavalos dirige todo o corpo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Freio' (Salmo 32:9; Provérbios 26:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Vede também as naus que, sendo tão grandes e levadas de impetuosos ventos, se viram com um bem pequeno leme para onde quer a vontade do timoneiro.",
+      "<strong>COMENTÁRIO:</strong> 🚢 As naus (ploia), grandes e movidas por ventos impetuosos, são 'viradas' (metagō) por um 'pequeno leme' (elachiston pēdalion) conforme a vontade (hormē) do timoneiro (euthynōn). Aplicação: A língua, como o leme, direciona a vida. Reflexão: Para onde sua língua está direcionando sua vida?",
+      "📖 <strong>RESUMO:</strong> Um pequeno leme dirige grandes naus conforme a vontade do timoneiro.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Leme' (Atos 27:40; Ezequiel 27:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Assim também a língua é um pequeno membro e se gaba de grandes coisas. Vede como um pequeno incêndio incendeia um tão grande bosque.",
+      "<strong>COMENTÁRIO:</strong> 🔥 A língua é um 'pequeno membro' (mikron melos) e se 'gaba' (megalaucheō) de grandes coisas. Um 'pequeno incêndio' (mikron pyr) incendeia (anaptō) um 'grande bosque' (hylēn). Aplicação: A língua tem poder de destruição. Reflexão: Você usa sua língua para construir ou destruir?",
+      "📖 <strong>RESUMO:</strong> A língua é pequena, mas se gaba de grandes coisas; um pequeno incêndio incendeia um bosque.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Incendeia o bosque' (Provérbios 16:27; Eclesiastes 10:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> A língua também é um fogo; como um mundo de iniquidade, a língua está posta entre os nossos membros, e contamina todo o corpo, e inflama o curso da natureza, e é inflamada pelo inferno.",
+      "<strong>COMENTÁRIO:</strong> 🔥 A língua é 'fogo' (pyr), um 'mundo de iniquidade' (kosmos tēs adikias), 'contamina' (spiloō) todo o corpo, 'inflama' (phlogizō) o curso da natureza e é 'inflamada pelo inferno' (phlogizomenē hypo tēs geennēs). Aplicação: A língua tem poder destrutivo de origem infernal. Reflexão: Você reconhece o poder destrutivo da língua?",
+      "📖 <strong>RESUMO:</strong> A língua é um fogo, um mundo de iniquidade, inflamada pelo inferno.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fogo' (Provérbios 16:28; 26:18-22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Porque toda a natureza, tanto de bestas como de aves, tanto de répteis como de animais do mar, se doma, e foi domada pela natureza humana.",
+      "<strong>COMENTÁRIO:</strong> 🐾 Toda 'natureza' (physis) de bestas (thēria), aves (peteina), répteis (herpeta) e animais marinhos (enaliois) é 'domada' (damazō) pela natureza humana. Aplicação: O homem domina os animais, mas não a língua. Reflexão: Por que você consegue domar animais, mas não a língua?",
+      "📖 <strong>RESUMO:</strong> Toda a natureza dos animais é domada pelo homem.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Domar' (Gênesis 1:26-28; Salmo 8:6-8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Mas a língua, nenhum homem a pode domar; é um mal que não se pode refrear; está cheia de peçonha mortal.",
+      "<strong>COMENTÁRIO:</strong> 🐍 A língua, nenhum homem (oudeis anthrōpōn) pode domar (damazō). É um 'mal que não se pode refrear' (akatastatos kakon), cheia de 'peçonha mortal' (ios thanatēphoros). Aplicação: A língua é indomável humanamente; precisa do poder de Deus. Reflexão: Você busca a ajuda de Deus para controlar a língua?",
+      "📖 <strong>RESUMO:</strong> Nenhum homem pode domar a língua; está cheia de peçonha mortal.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Peçonha mortal' (Salmo 140:3; Romanos 3:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Com ela bendizemos a Deus e Pai, e com ela amaldiçoamos os homens, feitos à semelhança de Deus.",
+      "<strong>COMENTÁRIO:</strong> 🙏 Com a língua 'bendizemos' (eulogeō) a Deus, e com ela 'amaldiçoamos' (kataraomai) os homens, feitos à 'semelhança de Deus' (kath' homoiosin Theou). Aplicação: A inconsistência da língua é condenável. Reflexão: Sua língua bendiz e amaldiçoa?",
+      "📖 <strong>RESUMO:</strong> Com a língua bendizemos a Deus e amaldiçoamos os homens feitos à semelhança de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Semelhança de Deus' (Gênesis 1:26-27; 9:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> De uma mesma boca procede bênção e maldição. Meus irmãos, não convém que isto se faça assim.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ 'De uma mesma boca' (ek tou autou stomatos) procede bênção (eulogia) e maldição (katara). 'Não convém' (ou chrē) que assim seja. Aplicação: A hipocrisia da língua deve ser eliminada. Reflexão: Sua boca é consistente?",
+      "📖 <strong>RESUMO:</strong> De uma mesma boca procede bênção e maldição; não convém assim.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não convém' (Efésios 4:29; Colossenses 4:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Porventura deita alguma fonte de um mesmo manancial água doce e amargosa?",
+      "<strong>COMENTÁRIO:</strong> 💧 Uma 'fonte' (pēgē) não deita (bryō) água 'doce' (glykys) e 'amargosa' (pikros) do mesmo manancial (opē). Aplicação: A inconsistência é contrária à natureza. Reflexão: Sua vida é consistente?",
+      "📖 <strong>RESUMO:</strong> Uma fonte não deita água doce e amargosa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Água doce e amargosa' (Êxodo 15:23-25; 2 Reis 2:19-22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Meus irmãos, porventura pode uma figueira produzir azeitonas, ou uma videira figos? Assim, tampouco pode uma fonte dar água salgada e doce.",
+      "<strong>COMENTÁRIO:</strong> 🌳 Uma 'figueira' (sykē) não produz 'azeitonas' (elaias), nem uma 'videira' (ampelos) 'figos' (syka). Uma fonte não dá água 'salgada' (halykon) e 'doce' (glykys). Aplicação: A natureza da árvore determina seu fruto. Reflexão: Qual é o fruto da sua vida?",
+      "📖 <strong>RESUMO:</strong> Uma figueira não produz azeitonas, nem uma videira figos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Árvore e fruto' (Mateus 7:16-20; Lucas 6:43-44).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A sabedoria do alto</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Co 1:17-21; 2:6-8)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Quem dentre vós é sábio e inteligente? Mostre, pelo seu bom trato, as suas obras em mansidão de sabedoria.",
+      "<strong>COMENTÁRIO:</strong> 🧠 Quem é 'sábio' (sophos) e 'inteligente' (epistēmōn) deve mostrar (deiknymi) pelo 'bom trato' (kalē anastrophē) suas obras (erga) em 'mansidão de sabedoria' (praütēs sophias). Aplicação: A verdadeira sabedoria se manifesta em mansidão. Reflexão: Sua sabedoria é acompanhada de mansidão?",
+      "📖 <strong>RESUMO:</strong> Quem é sábio mostre suas obras em mansidão de sabedoria.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mansidão de sabedoria' (1 Coríntios 1:17-21; 2:6-8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Mas, se tendes amarga inveja e sentimento faccioso em vosso coração, não vos glorieis, nem mintais contra a verdade.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ Se tendes 'amarga inveja' (zēlos pikros) e 'sentimento faccioso' (eritheia — ambição egoísta), 'não vos glorieis' (mē katakauchaomai) e 'não mintais' (mē pseudesthe) contra a verdade. Aplicação: A falsa sabedoria é marcada por inveja e rivalidade. Reflexão: Há inveja ou rivalidade em seu coração?",
+      "📖 <strong>RESUMO:</strong> Se tendes inveja e rivalidade, não vos glorieis nem mintais.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Amarga inveja' (Romanos 1:29; Gálatas 5:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Essa sabedoria não é a que vem do alto, mas é terrena, animal e diabólica.",
+      "<strong>COMENTÁRIO:</strong> 👿 Essa sabedoria 'não vem do alto' (ouk anōthen), mas é 'terrena' (epigeios), 'animal' (psychikē) e 'diabólica' (daimoniōdēs). Aplicação: A sabedoria mundana é inferior e maligna. Reflexão: Você busca a sabedoria do alto ou a terrena?",
+      "📖 <strong>RESUMO:</strong> A sabedoria com inveja é terrena, animal e diabólica.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Terrena, animal, diabólica' (1 Coríntios 2:14; 15:46-48).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Porque onde há inveja e espírito faccioso, aí há confusão e toda a obra perversa.",
+      "<strong>COMENTÁRIO:</strong> 🌀 Onde há inveja (zēlos) e facção (eritheia), há 'confusão' (akatastasia) e 'toda obra perversa' (pan phaulon pragma). Aplicação: A inveja e a rivalidade geram caos. Reflexão: Você promove paz ou confusão?",
+      "📖 <strong>RESUMO:</strong> Onde há inveja e facção, há confusão e toda obra perversa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Confusão' (1 Coríntios 14:33; 2 Coríntios 12:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Mas a sabedoria que vem do alto é, primeiramente, pura, depois pacífica, moderada, tratável, cheia de misericórdia e de bons frutos, sem parcialidade e sem hipocrisia.",
+      "<strong>COMENTÁRIO:</strong> 🌟 A sabedoria do alto é: 'pura' (hagnos), 'pacífica' (eirēnikos), 'moderada' (epieikēs), 'tratável' (eupeithēs — pronta a obedecer, razoável), 'cheia de misericórdia' (mestē eleous) e 'bons frutos' (karpōn agathōn), 'sem parcialidade' (adiakritos) e 'sem hipocrisia' (anypokritos). Aplicação: A sabedoria divina é pura, pacífica e misericordiosa. Reflexão: Sua vida reflete a sabedoria do alto?",
+      "📖 <strong>RESUMO:</strong> A sabedoria do alto é pura, pacífica, moderada, misericordiosa, sem parcialidade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Sabedoria do alto' (1 Coríntios 2:6-8; 12:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Ora, o fruto da justiça semeia-se na paz, para os que exercitam a paz.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ O 'fruto da justiça' (karpos dikaiosynēs) é 'semeado' (speirō) 'na paz' (en eirēnē) pelos que 'exercitam a paz' (tois poiousin eirēnēn). Aplicação: A paz produz justiça. Reflexão: Você é um pacificador?",
+      "📖 <strong>RESUMO:</strong> O fruto da justiça é semeado na paz pelos pacificadores.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Pacíficos' (Mateus 5:9; Romanos 14:19).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 3</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 3 trata do poder e perigo da língua e da sabedoria verdadeira. Tiago adverte contra o desejo de ser mestre, pois o ensino traz maior responsabilidade. A língua tem um poder descomunal: pode dirigir a vida como um freio ou leme, e pode destruir como um incêndio. Nenhum homem pode domar a língua por si mesmo. A inconsistência de bendizer a Deus e amaldiçoar os homens é condenável. Tiago contrasta a sabedoria terrena (inveja, rivalidade, confusão) com a sabedoria do alto (pura, pacífica, misericordiosa). O capítulo nos ensina que: 1) O ensino traz maior responsabilidade; 2) A língua tem poder de vida e morte; 3) Nenhum homem pode domar a língua; 4) A inconsistência da língua é pecado; 5) A sabedoria do alto é pura e pacífica; 6) A paz produz justiça.</p>"
+    ],
+
+    // ======================= CAPÍTULO 4 =======================
+    4: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A amizade do mundo e a submissão a Deus</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 7:23; 1Jo 2:15-17)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Donde vêm as guerras e pelejas entre vós? Porventura não vêm disto, a saber, dos vossos deleites, que nos vossos membros guerreiam?",
+      "<strong>COMENTÁRIO:</strong> ⚔️ As 'guerras' (polemos) e 'pelejas' (machai) vêm dos 'deleites' (hēdonē) que 'guerreiam' (strateuō) nos membros. Aplicação: Os conflitos têm origem nos desejos carnais. Reflexão: De onde vêm os conflitos em sua vida?",
+      "📖 <strong>RESUMO:</strong> As guerras e pelejas vêm dos deleites que guerreiam nos membros.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Deleites' (Romanos 7:23; Gálatas 5:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Cobiçais, e nada tendes; matais, e sois invejosos, e nada podeis alcançar; combateis e guerreais, e nada tendes, porque não pedis.",
+      "<strong>COMENTÁRIO:</strong> 😔 'Cobiçais' (epithymeō) e nada tendes; 'matais' (phoneuō) e sois 'invejosos' (zēloō); 'combateis' (macheō) e 'guerreais' (polemeō), mas nada tendes, porque 'não pedis' (ou aiteō). Aplicação: A cobiça e a inveja levam ao conflito; a falta de oração é a raiz. Reflexão: Você pede a Deus em vez de cobiçar?",
+      "📖 <strong>RESUMO:</strong> Cobiçais, matais, combateis, e nada tendes porque não pedis.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não pedis' (Mateus 7:7-8; Lucas 11:9-10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Pedis e não recebeis, porque pedis mal, para o gastardes em vossos deleites.",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Pedis' (aiteō) e não recebeis (lambanō) porque pedis 'mal' (kakōs), para 'gastar' (dapanaō) em 'vossos deleites' (hēdonais). Aplicação: A oração com motivos errados não é respondida. Reflexão: Seus pedidos a Deus são para Sua glória ou para seus prazeres?",
+      "📖 <strong>RESUMO:</strong> Pedis e não recebeis porque pedis mal, para gastar em deleites.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Pedis mal' (Tiago 1:5-6; 1 João 5:14-15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Adúlteros e adúlteras, não sabeis vós que a amizade do mundo é inimizade contra Deus? Portanto, qualquer que quiser ser amigo do mundo constitui-se inimigo de Deus.",
+      "<strong>COMENTÁRIO:</strong> 💔 'Adúlteros' (moichalides — infiéis espirituais), a 'amizade do mundo' (philia tou kosmou) é 'inimizade contra Deus' (echthra tou Theou). Quem quer ser 'amigo do mundo' (philos kosmou) constitui-se 'inimigo de Deus' (echthros Theou). Aplicação: Não se pode amar o mundo e amar a Deus. Reflexão: Você é amigo do mundo ou amigo de Deus?",
+      "📖 <strong>RESUMO:</strong> A amizade do mundo é inimizade contra Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Amizade do mundo' (1 João 2:15-17; Romanos 8:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Ou cuidais vós que em vão diz a Escritura: O Espírito que em nós habita tem ciúmes?",
+      "<strong>COMENTÁRIO:</strong> 🕊️ A Escritura diz que o 'Espírito' (Pneuma) que habita em nós tem 'ciúmes' (phthonos — zelo intenso). Deus é zeloso por nossa lealdade exclusiva. Aplicação: Deus deseja nossa devoção total. Reflexão: Você é totalmente devotado a Deus?",
+      "📖 <strong>RESUMO:</strong> O Espírito que habita em nós tem ciúmes.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ciúmes' (Êxodo 20:5; 34:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Antes, ele dá maior graça. Por isso diz: Deus resiste aos soberbos, mas dá graça aos humildes.",
+      "<strong>COMENTÁRIO:</strong> 🙌 Deus dá 'maior graça' (meizona charin). Deus 'resiste' (antitassō) aos 'soberbos' (hyperēphanoi), mas dá graça (charis) aos 'humildes' (tapeinos). Citação de Provérbios 3:34. Aplicação: A humildade atrai a graça de Deus. Reflexão: Você é humilde ou soberbo?",
+      "📖 <strong>RESUMO:</strong> Deus resiste aos soberbos, mas dá graça aos humildes.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Resiste aos soberbos' (Provérbios 3:34; 1 Pedro 5:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Sujeitai-vos, pois, a Deus; resisti ao diabo, e ele fugirá de vós.",
+      "<strong>COMENTÁRIO:</strong> 👿 'Sujeitai-vos' (hypotassō) a Deus; 'resisti' (anthistēmi) ao diabo (diabolos), e ele 'fugirá' (pheugō) de vós. Aplicação: A submissão a Deus é a chave para resistir ao diabo. Reflexão: Você resiste ao diabo com autoridade?",
+      "📖 <strong>RESUMO:</strong> Sujeitai-vos a Deus, resisti ao diabo, e ele fugirá.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Resisti ao diabo' (Efésios 6:11-13; 1 Pedro 5:8-9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Chegai-vos a Deus, e ele se chegará a vós. Limpai as mãos, pecadores; e, vós de coração dobro, purificai os corações.",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Chegai-vos' (engizō) a Deus, e Ele se 'chegará' (engizō) a vós. 'Limpai' (katharizō) as mãos (cheires) pecadores; 'purificai' (hagnizō) os corações (kardias) de coração dobro (dipsychos). Aplicação: A pureza de mãos e coração é necessária para se aproximar de Deus. Reflexão: Você busca a pureza para se aproximar de Deus?",
+      "📖 <strong>RESUMO:</strong> Chegai-vos a Deus, limpai as mãos e purificai os corações.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Chegai-vos a Deus' (Salmo 73:28; 1 João 1:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Afligi-vos, e lamentai, e chorai; converta-se o vosso riso em pranto, e a vossa alegria em tristeza.",
+      "<strong>COMENTÁRIO:</strong> 😢 'Afligi-vos' (talaipōreō), 'lamentai' (pentheō), 'chorai' (klaio). Que o riso (gelōs) se converta em pranto (penthos) e a alegria (chara) em tristeza (katēpheia). Aplicação: O arrependimento genuíno envolve tristeza. Reflexão: Você se arrepende com sinceridade?",
+      "📖 <strong>RESUMO:</strong> Afligi-vos, lamentai, chorai; convertei o riso em pranto.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Chorai' (Mateus 5:4; 2 Coríntios 7:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Humilhai-vos perante o Senhor, e ele vos exaltará.",
+      "<strong>COMENTÁRIO:</strong> 🙌 'Humilhai-vos' (tapeinoō) perante o Senhor, e Ele vos 'exaltará' (hypsŏō). Aplicação: A humildade diante de Deus traz exaltação. Reflexão: Você se humilha diante do Senhor?",
+      "📖 <strong>RESUMO:</strong> Humilhai-vos perante o Senhor, e ele vos exaltará.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Humilhai-vos' (Mateus 23:12; Lucas 14:11).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Não julgar o irmão e depender de Deus</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 2:1; 14:4; Pv 27:1)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Irmãos, não faleis mal uns dos outros. Quem fala mal de um irmão e julga a seu irmão, fala mal da lei e julga a lei; mas, se tu julgas a lei, não és observador da lei, mas juiz.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ 'Não faleis mal' (mē katalaleō) uns dos outros. Quem fala mal (katalaleō) e 'julga' (krinō) o irmão, fala mal da lei e a julga. Se julgas a lei, não és 'observador' (poiētēs), mas 'juiz' (kritēs). Aplicação: Não julgue o irmão; isso é usurpar o lugar de Deus. Reflexão: Você fala mal ou julga os irmãos?",
+      "📖 <strong>RESUMO:</strong> Não faleis mal uns dos outros; quem julga o irmão julga a lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Falar mal' (Romanos 2:1; 14:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Há só um legislador e juiz, que pode salvar e destruir. Tu, porém, quem és, que julgas a outrem?",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Há 'um só' (heis) 'legislador' (nomothetēs) e 'juiz' (kritēs), que pode 'salvar' (sōzō) e 'destruir' (apollymi). 'Quem és tu' (sy tis ei) para julgar o próximo (plēsion)? Aplicação: Só Deus tem o direito de julgar. Reflexão: Você usurpa o lugar de Deus ao julgar os outros?",
+      "📖 <strong>RESUMO:</strong> Há um só legislador e juiz; quem és tu para julgar o outro?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Um só legislador' (Isaías 33:22; Mateus 10:28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Eia agora, vós que dizeis: Hoje, ou amanhã, iremos a tal cidade, e lá passaremos um ano, e contrataremos, e ganharemos.",
+      "<strong>COMENTÁRIO:</strong> 📅 Os que dizem: 'Hoje ou amanhã iremos a tal cidade, passaremos um ano, contrataremos e ganharemos.' Aplicação: Os planos humanos são incertos. Reflexão: Você faz planos sem considerar a vontade de Deus?",
+      "📖 <strong>RESUMO:</strong> Dizeis: hoje ou amanhã iremos a tal cidade e ganharemos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Planos humanos' (Provérbios 27:1; Lucas 12:18-20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Digamos, porém, que não sabeis o que acontecerá amanhã. Porque que é a vossa vida? É um vapor que aparece por um pouco, e depois se desvanece.",
+      "<strong>COMENTÁRIO:</strong> 🌫️ 'Não sabeis' (ouk epistamai) o que acontecerá amanhã. A vida é um 'vapor' (atmis) que aparece por 'um pouco' (pros oligon) e se 'desvanece' (aphanizō). Aplicação: A vida é breve e incerta. Reflexão: Você vive com a consciência da brevidade da vida?",
+      "📖 <strong>RESUMO:</strong> Não sabeis o que acontecerá amanhã; vossa vida é um vapor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Vapor' (Jó 7:7; Salmo 39:5-6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Em lugar do que devíeis dizer: Se o Senhor quiser, e se vivermos, faremos isto ou aquilo.",
+      "<strong>COMENTÁRIO:</strong> 🙏 Em vez disso, digamos: 'Se o Senhor quiser' (ean ho Kyrios thelēsē) e 'se vivermos' (zēsomen), faremos (poiēsomen) isto ou aquilo. Aplicação: Submeta todos os planos à vontade de Deus. Reflexão: Você submete seus planos à vontade de Deus?",
+      "📖 <strong>RESUMO:</strong> Deveis dizer: se o Senhor quiser e se vivermos, faremos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Se o Senhor quiser' (Atos 18:21; 1 Coríntios 4:19).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Mas agora vos jactais das vossas presunções; toda a jactância como esta é maligna.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ Vós vos 'jactais' (kauchaomai) nas vossas 'presunções' (alazoneia). Toda 'jactância' (kauchēsis) como esta é 'maligna' (ponēros). Aplicação: A jactância presunçosa é pecado. Reflexão: Você se vangloria de seus planos sem considerar a Deus?",
+      "📖 <strong>RESUMO:</strong> Vos jactais das vossas presunções; toda jactância é maligna.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Jactância' (1 João 2:16; Tiago 3:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Aquele, pois, que sabe fazer o bem e não o faz, comete pecado.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Quem 'sabe' (eidō) fazer o 'bem' (kalos) e 'não o faz' (poieō), 'comete pecado' (hamartia). Aplicação: Omissão também é pecado. Reflexão: Você pratica o bem que sabe que deve fazer?",
+      "📖 <strong>RESUMO:</strong> Quem sabe fazer o bem e não o faz comete pecado.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não fazer o bem' (Lucas 12:47; Romanos 14:23).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 4</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 4 aborda a origem dos conflitos (desejos carnais), a amizade com o mundo, a humildade e a dependência de Deus. Tiago exorta os crentes a se sujeitarem a Deus, resistirem ao diabo, se chegarem a Ele, e se humilharem. Ele adverte contra o julgamento do irmão e a presunção de fazer planos sem considerar a vontade de Deus. O capítulo nos ensina que: 1) Os conflitos vêm dos desejos carnais; 2) A amizade com o mundo é inimizade com Deus; 3) Deus dá graça aos humildes; 4) Resistir ao diabo e chegar a Deus traz vitória; 5) Não julgue o irmão; 6) Submeta seus planos à vontade de Deus; 7) Omissão é pecado.</p>"
+    ],
+
+    // ======================= CAPÍTULO 5 =======================
+    5: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Advertência aos ricos opressores</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Pv 11:28; Lc 6:24; Is 5:8-10)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Eia agora, vós ricos, chorai e uivai pelas vossas misérias, que sobre vós hão de vir.",
+      "<strong>COMENTÁRIO:</strong> 😢 'Vós ricos' (plousioi), 'chorai' (klaio) e 'uivai' (ololyzō) pelas 'misérias' (talaipōria) que virão. Aplicação: Os ricos que oprimem enfrentarão juízo. Reflexão: Você usa sua riqueza para o bem ou para a opressão?",
+      "📖 <strong>RESUMO:</strong> Vós ricos, chorai e uivai pelas misérias que virão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ricos' (Lucas 6:24; 12:16-21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> As vossas riquezas estão apodrecidas, e as vossas vestes estão comidas de traça.",
+      "<strong>COMENTÁRIO:</strong> 🪱 As 'riquezas' (ploutos) estão 'apodrecidas' (sēpō), e as 'vestes' (himation) estão 'comidas de traça' (sētobrōtos). Aplicação: A riqueza material perece. Reflexão: Onde está seu tesouro?",
+      "📖 <strong>RESUMO:</strong> Vossas riquezas apodreceram e vossas vestes foram comidas de traça.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Traça' (Mateus 6:19-20; Jó 13:28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> O vosso ouro e a vossa prata se enferrujaram; e a sua ferrugem será testemunha contra vós, e comerá como fogo a vossa carne. Entesourastes para os últimos dias.",
+      "<strong>COMENTÁRIO:</strong> 🔥 Ouro e prata 'enferrujados' (katiōō). A 'ferrugem' (ios) será 'testemunha' (martyrion) contra vós e 'comerá' (esthíō) a carne como fogo. 'Entesourastes' (thēsaurizō) para os 'últimos dias' (eschatai hēmerai). Aplicação: A riqueza acumulada injustamente testemunha contra os opressores. Reflexão: Você está acumulando tesouros no céu ou na terra?",
+      "📖 <strong>RESUMO:</strong> Vossa prata enferrujou; a ferrugem testemunhará contra vós.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Últimos dias' (2 Timóteo 3:1; 2 Pedro 3:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Eis que o salário dos trabalhadores que ceifaram as vossas terras, e que por vós foi diminuído, clama; e os clamores dos que ceifaram entraram nos ouvidos do Senhor dos Exércitos.",
+      "<strong>COMENTÁRIO:</strong> 📣 O 'salário' (misthos) dos trabalhadores, 'diminuído' (aphystereō — retido), 'clama' (krazō). Os 'clamores' (boē) entraram nos 'ouvidos do Senhor dos Exércitos' (eis ta ōta Kyriou Sabaōth). Aplicação: Deus ouve o clamor dos oprimidos. Reflexão: Você paga justamente aos que trabalham para você?",
+      "📖 <strong>RESUMO:</strong> O salário retido dos trabalhadores clama ao Senhor dos Exércitos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Senhor dos Exércitos' (Levítico 19:13; Deuteronômio 24:14-15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Deliciosamente vivestes sobre a terra, e vos deleitastes; cevastes os vossos corações, como num dia de matança.",
+      "<strong>COMENTÁRIO:</strong> 🍽️ Vivestes 'deliciosamente' (tryphaō) e vos 'deleitastes' (spatalaō). 'Cevastes' (trephō — engordastes) os corações 'como num dia de matança' (hōs en hēmera sphagēs). Aplicação: A vida de luxo sem justiça é condenável. Reflexão: Você vive para o prazer ou para a justiça?",
+      "📖 <strong>RESUMO:</strong> Vivestes em deleite e cevastes os corações como em dia de matança.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dia de matança' (Jeremias 12:3; 50:27).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Condenastes e matastes o justo; ele não vos resiste.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ 'Condenastes' (katadikazō) e 'matastes' (phoneuō) o 'justo' (dikaios); ele 'não vos resiste' (ouk antitassō). Aplicação: A injustiça contra o justo será julgada. Reflexão: Você defende os justos ou os oprime?",
+      "📖 <strong>RESUMO:</strong> Condenastes e matastes o justo; ele não vos resiste.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Justo condenado' (Atos 3:14; 7:52).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Paciência e oração na expectativa da vinda do Senhor</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Mt 5:12; 1Ts 5:14; 1Pe 4:12-13)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Sede pois, irmãos, pacientes até à vinda do Senhor. Eis que o lavrador espera o precioso fruto da terra, aguardando-o com paciência, até que receba a chuva temporã e serôdia.",
+      "<strong>COMENTÁRIO:</strong> 🌾 'Sede pacientes' (makrothymeō) até a 'vinda do Senhor' (parousia tou Kyriou). O lavrador espera (ekdechomai) o 'precioso fruto' (timios karpos) com paciência (makrothymeō), até receber a 'chuva temporã' (proimos) e 'serôdia' (opsimos). Aplicação: A paciência na espera da volta de Cristo é essencial. Reflexão: Você espera a volta do Senhor com paciência?",
+      "📖 <strong>RESUMO:</strong> Sede pacientes até a vinda do Senhor, como o lavrador espera o fruto.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Vinda do Senhor' (1 Tessalonicenses 4:15; 2 Pedro 3:8-9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Sede vós também pacientes, fortificai os vossos corações; porque já a vinda do Senhor está próxima.",
+      "<strong>COMENTÁRIO:</strong> 💪 'Sede pacientes' (makrothymeō) e 'fortificai' (stērizō) os corações, porque a 'vinda do Senhor' (parousia tou Kyriou) está 'próxima' (engizō). Aplicação: A proximidade da volta de Cristo nos encoraja. Reflexão: Você fortalece seu coração à luz da volta de Cristo?",
+      "📖 <strong>RESUMO:</strong> Sede pacientes e fortificai os corações; a vinda do Senhor está próxima.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fortificai os corações' (Hebreus 12:12; 1 Coríntios 16:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Irmãos, não vos queixeis uns contra os outros, para que não sejais condenados. Eis que o juiz está à porta.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ 'Não vos queixeis' (mē stenazō) uns contra os outros, para não serdes 'condenados' (krinō). O 'juiz' (kritēs) está 'à porta' (pro tōn thyrōn). Aplicação: Não murmure, pois o juiz está próximo. Reflexão: Você murmura contra os irmãos?",
+      "📖 <strong>RESUMO:</strong> Não vos queixeis uns contra os outros; o juiz está à porta.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Juiz à porta' (Mateus 24:33; Apocalipse 22:12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Meus irmãos, tomai como exemplo de aflição e paciência os profetas que falaram em nome do Senhor.",
+      "<strong>COMENTÁRIO:</strong> 📖 Tomai como 'exemplo' (hypodeigma) de 'aflição' (kakopatheia) e 'paciência' (makrothymia) os 'profetas' (prophētai) que falaram em nome (onoma) do Senhor. Aplicação: Os profetas sofreram com paciência. Reflexão: Você segue o exemplo dos profetas?",
+      "📖 <strong>RESUMO:</strong> Tomai como exemplo os profetas que sofreram com paciência.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Profetas' (Mateus 5:12; 23:29-31).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Eis que temos por bem-aventurados os que sofreram. Ouvistes qual foi a paciência de Jó, e vistes o fim que o Senhor lhe deu; porque o Senhor é cheio de misericórdia e compaixão.",
+      "<strong>COMENTÁRIO:</strong> 👑 'Bem-aventurados' (makarios) os que 'sofreram' (hypomenō). A 'paciência' (hypomonē) de Jó (Jó 1-42) e o 'fim' (telos) que o Senhor lhe deu mostram que o Senhor é 'cheio de misericórdia' (polysplanchnos) e 'compaixão' (oiktirmōn). Aplicação: A perseverança de Jó é recompensada pela misericórdia de Deus. Reflexão: Você persevera como Jó?",
+      "📖 <strong>RESUMO:</strong> Bem-aventurados os que sofreram; Jó é exemplo da misericórdia divina.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Jó' (Jó 1:21; 42:10-17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Mas, sobretudo, meus irmãos, não jureis, nem pelo céu, nem pela terra, nem por qualquer outro juramento; mas seja a vossa palavra sim, sim; e não, não; para que não caiais em condenação.",
+      "<strong>COMENTÁRIO:</strong> ✋ 'Não jureis' (mē omnyō) nem pelo céu (ouranos), nem pela terra (gē), nem por qualquer juramento (horkos). Seja vossa palavra 'sim, sim' (nai nai) e 'não, não' (ou ou), para não cair em 'condenação' (hypokrisis — julgamento). Aplicação: A verdade deve ser suficiente; juramentos desnecessários são evitados. Reflexão: Sua palavra é confiável sem juramentos?",
+      "📖 <strong>RESUMO:</strong> Não jureis; seja vossa palavra sim, sim, e não, não.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não jureis' (Mateus 5:33-37; 23:16-22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Está alguém entre vós aflito? Ore. Está alguém alegre? Cante louvores.",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Aflito' (kakopatheō) — 'ore' (proseuchomai). 'Alegre' (euthymeō) — 'cante louvores' (psallō). Aplicação: A oração e o louvor são as respostas cristãs à aflição e à alegria. Reflexão: Você ora na aflição e louva na alegria?",
+      "📖 <strong>RESUMO:</strong> Está aflito? Ore. Está alegre? Cante louvores.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Oração e louvor' (Filipenses 4:6; Efésios 5:19).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Está alguém entre vós doente? Chame os presbíteros da igreja, e orem sobre ele, ungindo-o com azeite em nome do Senhor.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ 'Doente' (astheneō) — chame os 'presbíteros' (presbyteroi) da igreja (ekklēsia). Eles 'orem' (proseuchomai) sobre ele, 'ungindo' (aleiphō) com 'azeite' (elaion) 'em nome do Senhor' (en onomati tou Kyriou). Aplicação: A oração dos presbíteros com unção é um meio de cura. Reflexão: Você busca a oração da igreja quando está doente?",
+      "📖 <strong>RESUMO:</strong> Doente? Chame os presbíteros para orar e ungir com azeite.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Presbíteros' (Atos 15:6; 1 Timóteo 5:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> E a oração da fé salvará o doente, e o Senhor o levantará; e, se houver cometido pecados, ser-lhe-ão perdoados.",
+      "<strong>COMENTÁRIO:</strong> 🙏 A 'oração da fé' (proseuchē tēs pisteōs) 'salvará' (sōzō) o doente (kammōn), e o Senhor o 'levantará' (egeirō). Se houver pecados, 'ser-lhe-ão perdoados' (aphiēmi). Aplicação: A oração com fé traz cura e perdão. Reflexão: Você ora com fé pela cura?",
+      "📖 <strong>RESUMO:</strong> A oração da fé salvará o doente e o Senhor o levantará.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Oração da fé' (Marcos 11:24; 1 João 5:14-15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Confessai as vossas culpas uns aos outros, e orai uns pelos outros, para que sareis. A oração feita por um justo pode muito em seus efeitos.",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Confessai' (exomologeō) as 'culpas' (paraptōma) uns aos outros e 'orai' (proseuchomai) uns pelos outros para 'sareis' (iaomai). A 'oração' (deēsis) de um 'justo' (dikaios) 'pode muito' (ischyō) em seus 'efeitos' (energeō). Aplicação: A confissão mútua e a oração dos justos trazem cura. Reflexão: Você confessa seus pecados e ora pelos outros?",
+      "📖 <strong>RESUMO:</strong> Confessai as culpas uns aos outros e orai para sareis; a oração do justo pode muito.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Confessai' (1 João 1:9; Mateus 5:23-24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Elias era homem sujeito às mesmas paixões que nós, e, orando, pediu que não chovesse, e por três anos e seis meses não choveu sobre a terra.",
+      "<strong>COMENTÁRIO:</strong> 🌧️ Elias era 'homem sujeito às mesmas paixões' (homoiopathēs — de mesma natureza) que nós. Ele 'orou' (proseuchomai) para que não chovesse, e por 'três anos e seis meses' (tria etē kai mēnas hex) não choveu (1 Reis 17:1; 18:1). Aplicação: Homens comuns como Elias podem fazer orações poderosas. Reflexão: Você ora com a fé de Elias?",
+      "📖 <strong>RESUMO:</strong> Elias era homem como nós; orou e não choveu por três anos e seis meses.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Elias' (1 Reis 17:1; 18:1; Lucas 4:25).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> E orou outra vez, e o céu deu chuva, e a terra produziu o seu fruto.",
+      "<strong>COMENTÁRIO:</strong> 🌧️ Elias 'orou outra vez' (proseuchomai) e o céu deu 'chuva' (hyetos), e a terra 'produziu' (blastanō) seu 'fruto' (karpos) (1 Reis 18:41-45). Aplicação: A oração de um justo pode trazer bênção. Reflexão: Você ora por bênçãos sobre a terra?",
+      "📖 <strong>RESUMO:</strong> Elias orou outra vez, e a chuva veio, e a terra produziu fruto.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Oração e chuva' (1 Reis 18:41-45; Atos 14:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Irmãos, se algum de vós se desviar da verdade, e alguém o converter,",
+      "<strong>COMENTÁRIO:</strong> 🔄 Se alguém 'se desviar' (planaō) da 'verdade' (alētheia), e alguém o 'converter' (epistrephō). Aplicação: A restauração do desviado é uma obra de amor. Reflexão: Você busca restaurar os que se desviam?",
+      "📖 <strong>RESUMO:</strong> Se alguém se desviar da verdade, e alguém o converter.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Converter' (Gálatas 6:1; 1 Pedro 2:25).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Saiba que aquele que converte o pecador do erro do seu caminho salvará da morte uma alma, e cobrirá uma multidão de pecados.",
+      "<strong>COMENTÁRIO:</strong> ✨ Quem converte (epistrephō) o 'pecador' (hamartōlos) do 'erro' (planē) do seu caminho (hodos) 'salvará' (sōzō) da 'morte' (thanatos) uma 'alma' (psychē) e 'cobrirá' (kalyptō) uma 'multidão de pecados' (plēthos hamartiōn). Aplicação: A restauração de um pecador salva sua alma e cobre pecados. Reflexão: Você se importa com a salvação dos que se desviam?",
+      "📖 <strong>RESUMO:</strong> Quem converte o pecador salvará uma alma da morte e cobrirá muitos pecados.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cobrir pecados' (Provérbios 10:12; 1 Pedro 4:8).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 5</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 5 conclui a carta com advertências aos ricos opressores, exortações à paciência na espera da vinda do Senhor, e instruções sobre oração e restauração. Tiago adverte os ricos que oprimem os trabalhadores, pois suas riquezas perecerão e seus pecados clamarão a Deus. Ele exorta os crentes à paciência, usando o lavrador e os profetas como exemplos, e lembrando a perseverança de Jó. Ele instrui sobre a oração: o aflito deve orar, o alegre louvar, o doente chamar os presbíteros, e todos confessarem suas culpas uns aos outros. A oração do justo é poderosa, como a de Elias. O capítulo termina com a exortação a restaurar os que se desviam. O capítulo nos ensina que: 1) Os ricos opressores enfrentarão juízo; 2) Sejamos pacientes até a vinda do Senhor; 3) A oração e o louvor são respostas adequadas; 4) A oração dos presbíteros traz cura; 5) A confissão mútua e a oração são poderosas; 6) A restauração do desviado salva uma alma.</p>",
+
+  // ======================= RESUMO FINAL DO LIVRO =======================
+  
+    "<p style='font-size: 1rem; text-align: center;'><i><strong>RESUMO FINAL DE TIAGO</strong></i></p>",
+    "<p style='font-size: 0.6rem;'>A Epístola de Tiago é uma carta prática e direta, cheia de sabedoria para a vida cristã. Escrita por Tiago, irmão de Jesus, ela enfatiza a fé prática que se manifesta em obras. A carta é frequentemente chamada de 'Provérbios do Novo Testamento'.</p>",
+    "<p style='font-size: 0.6rem;'>O capítulo 1 ensina que as provações produzem perseverança e maturidade; a sabedoria vem de Deus pela oração com fé; a tentação vem da concupiscência, não de Deus; e a Palavra deve ser praticada, não apenas ouvida. A verdadeira religião é cuidar dos necessitados e guardar-se da corrupção do mundo.</p>",
+    "<p style='font-size: 0.6rem;'>O capítulo 2 condena a parcialidade na igreja e ensina que a fé sem obras é morta. A fé verdadeira é demonstrada por obras, como no caso de Abraão e Raabe.</p>",
+    "<p style='font-size: 0.6rem;'>O capítulo 3 trata do poder e perigo da língua e contrasta a sabedoria terrena com a sabedoria do alto. A sabedoria do alto é pura, pacífica e misericordiosa.</p>",
+    "<p style='font-size: 0.6rem;'>O capítulo 4 exorta à submissão a Deus, resistência ao diabo, humildade e dependência de Deus nos planos. Adverte contra o julgamento do irmão e a presunção.</p>",
+    "<p style='font-size: 0.6rem;'>O capítulo 5 adverte os ricos opressores, exorta à paciência na espera da vinda do Senhor, e dá instruções sobre oração, confissão e restauração.</p><br><br><br><br><br>",
+    "<p style='font-size: 0.7rem;'><strong>LIÇÕES PRINCIPAIS:</strong></p>",
+    "<ul style='font-size: 0.6rem;'>",
+    "  <li><strong>Alegria nas provações:</strong> As provações produzem perseverança e maturidade (Tiago 1:2-4).</li>",
+    "  <li><strong>Fé e obras:</strong> A fé sem obras é morta; a fé verdadeira se manifesta em ações (Tiago 2:14-26).</li>",
+    "  <li><strong>Controle da língua:</strong> A língua tem poder de vida e morte; deve ser domada (Tiago 3:1-12).</li>",
+    "  <li><strong>Sabedoria do alto:</strong> A sabedoria divina é pura, pacífica e misericordiosa (Tiago 3:13-18).</li>",
+    "  <li><strong>Submissão a Deus:</strong> Resista ao diabo, chegue-se a Deus e humilhe-se perante Ele (Tiago 4:7-10).</li>",
+    "  <li><strong>Dependência de Deus:</strong> Submeta todos os planos à vontade de Deus (Tiago 4:13-17).</li>",
+    "  <li><strong>Paciência e oração:</strong> Seja paciente até a vinda do Senhor; a oração do justo é poderosa (Tiago 5:7-18).</li>",
+    "  <li><strong>Restauração:</strong> Converta o pecador que se desviou; isso salva uma alma da morte (Tiago 5:19-20).</li>",
+    "</ul>",
+    "<p style='font-size: 0.6rem;'>Que possamos viver uma fé prática, demonstrando nosso amor a Deus e ao próximo por meio de obras, controlando a língua, buscando a sabedoria do alto, e perseverando em oração até a vinda do Senhor.</p>"
+  ]
+}
+};
