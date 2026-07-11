@@ -1,0 +1,716 @@
+window.LIVRO_DATA = {
+  nome: "Filipenses",
+  id: "filipenses",
+  testament: "NT",
+
+  dados: {
+    // ======================= CAPÍTULO 1 =======================
+    1: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Saudação e ação de graças</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(At 16:12-40; 2Co 1:3-7)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Paulo e Timóteo, servos de Jesus Cristo, a todos os santos em Cristo Jesus que estão em Filipos, com os bispos e diáconos:",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo e Timóteo se identificam como 'servos' (doulos – escravos) de Cristo, não como apóstolos (como em outras cartas). Isso reflete a humildade e a relação especial com a igreja de Filipos, que era profundamente amada. Ele escreve aos 'santos' (todos os crentes, santificados em Cristo) e aos líderes: bispos (episkopoi – supervisores/pastores) e diáconos (diakonoi – servos). Filipos era uma colônia romana na Macedônia, fundada por Filipe II da Macedônia, e tinha status especial de cidade romana. A igreja foi fundada por Paulo em sua segunda viagem missionária (Atos 16:12-40). Aplicação: A liderança na igreja é um serviço, não um título de honra. Paulo não se coloca acima dos filipenses, mas como servo junto com Timóteo. Reflexão: Você vê sua posição na igreja como serviço ou como privilégio? Você está disposto a ser 'escravo' de Cristo e da igreja?",
+      "📖 <strong>RESUMO:</strong> Paulo e Timóteo, servos de Cristo, escrevem aos santos, bispos e diáconos em Filipos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Servos de Jesus Cristo' (Romanos 1:1; Tiago 1:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Graça a vós e paz da parte de Deus nosso Pai e do Senhor Jesus Cristo.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ Saudação cristã clássica: 'graça' (charis) – favor imerecido de Deus, o fundamento de toda a vida cristã; 'paz' (eirēnē) – reconciliação com Deus e bem-estar integral. Ambas vêm do Pai e do Senhor Jesus Cristo, indicando a origem divina de toda bênção. A graça é a fonte; a paz é o resultado. Aplicação: A graça e a paz são dons que devem marcar a vida cristã. Não podemos produzi-los por nós mesmos; devemos recebê-los de Deus. Reflexão: Você experimenta a graça e a paz de Deus diariamente? Sua vida reflete a graça que você recebeu?",
+      "📖 <strong>RESUMO:</strong> Paulo saúda com graça e paz da parte de Deus Pai e do Senhor Jesus Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Graça e paz' (Romanos 1:7; 1 Coríntios 1:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Dou graças ao meu Deus todas as vezes que me lembro de vós,",
+      "<strong>COMENTÁRIO:</strong> 🙏 Paulo é grato a Deus sempre que se lembra dos filipenses. A gratidão não é ocasional, mas constante ('todas as vezes'). A memória dos filipenses traz alegria e ação de graças. Aplicação: A gratidão pelos irmãos é uma disciplina espiritual que deve ser cultivada. Paulo não se lembrava deles com preocupação, mas com gratidão. Reflexão: Você dá graças a Deus pelos outros? Quando você se lembra de alguém, sua primeira reação é gratidão ou crítica?",
+      "📖 <strong>RESUMO:</strong> Paulo dá graças a Deus sempre que se lembra dos filipenses.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dou graças' (1 Coríntios 1:4; Efésios 1:16).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Fazendo sempre com alegria oração por vós em todas as minhas súplicas,",
+      "<strong>COMENTÁRIO:</strong> 😊 Paulo ora com alegria (chara) por eles. A oração não é uma obrigação pesada, mas uma alegria. O termo 'sempre' (pantote) e 'em todas as minhas súplicas' (pasē mou deēsei) indicam a constância e a intensidade de sua intercessão. A alegria de Paulo na oração reflete seu amor profundo por eles. Aplicação: Ore pelos irmãos com alegria. A oração intercessória não deve ser um fardo, mas uma expressão de amor. Reflexão: Sua oração pelos outros é alegre ou pesarosa? Você ora com alegria ou com relutância?",
+      "📖 <strong>RESUMO:</strong> Paulo ora com alegria pelos filipenses.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Com alegria' (2 Coríntios 9:7; Colossenses 1:11).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Pela vossa cooperação no evangelho desde o primeiro dia até agora.",
+      "<strong>COMENTÁRIO:</strong> 🤝 A 'cooperação' (koinōnia – comunhão, participação, parceria) dos filipenses no evangelho é constante, desde o primeiro dia até o presente. Eles apoiaram Paulo financeiramente (Filipenses 4:15-16) e espiritualmente. A palavra koinōnia indica uma parceria profunda, não apenas apoio ocasional. Aplicação: Apoiar o evangelho é uma forma de cooperação. A parceria no evangelho não é opcional; é parte da vida cristã. Reflexão: Você coopera com o evangelho com suas orações, recursos e tempo? Você tem sido um parceiro fiel desde o início ou apenas ocasionalmente?",
+      "📖 <strong>RESUMO:</strong> Os filipenses cooperam no evangelho desde o início.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cooperação no evangelho' (Filipenses 4:15; Romanos 15:26).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Tendo por certo isto mesmo: que aquele que em vós começou a boa obra a aperfeiçoará até ao dia de Jesus Cristo.",
+      "<strong>COMENTÁRIO:</strong> ✨ **A GRANDE CERTEZA**. Deus começou a 'boa obra' (a salvação, a santificação) nos filipenses, e Ele a aperfeiçoará (epiteleō – completará, trará à conclusão) até o dia de Cristo (a parousia, a segunda vinda). Esta é uma promessa de perseverança: Deus é o autor e o consumador da fé. A aplicação: Sua salvação é segura; Deus é fiel para completá-la. Não depende de sua força, mas da fidelidade de Deus. Reflexão: Você confia que Deus completará a obra que começou em você? Você descansa na fidelidade de Deus ou vive ansioso sobre sua salvação?",
+      "📖 <strong>RESUMO:</strong> Deus começou a boa obra e a aperfeiçoará até o dia de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Boa obra' (Romanos 8:28-30; 1 Coríntios 1:8; 2 Coríntios 1:21-22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Como tenho por justo sentir isto de vós todos, porque vos retenho em meu coração, pois tanto nas minhas prisões como na defesa e confirmação do evangelho, todos vós sois participantes da mesma graça.",
+      "<strong>COMENTÁRIO:</strong> ❤️ Paulo os retém no coração (esplanchna – vísceras, sentimentos profundos). Eles são participantes (synkoinōnoi – co-participantes) da mesma graça, tanto na defesa (apologia) quanto na confirmação (bebaiōsis) do evangelho. Eles estão com ele tanto no sofrimento (prisões) quanto no ministério ativo. Aplicação: A igreja e o líder compartilham da mesma graça. A graça não é apenas para os líderes, mas para toda a comunidade. Reflexão: Você participa da defesa e confirmação do evangelho com seus líderes? Você está disposto a compartilhar tanto as alegrias quanto as dificuldades do ministério?",
+      "📖 <strong>RESUMO:</strong> Os filipenses são participantes da graça com Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Defesa do evangelho' (1 Pedro 3:15; 2 Timóteo 4:16-17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Porque Deus me é testemunha das saudades que de todos vós tenho, em entranhável afeição de Jesus Cristo.",
+      "<strong>COMENTÁRIO:</strong> 💝 Paulo invoca Deus como testemunha (mártus) das saudades (epipothēsis – desejo intenso) que sente por eles, com a 'entranhável afeição' (splanchna – vísceras, sentimentos profundos) de Cristo. O amor de Paulo não é humano apenas; é o amor de Cristo fluindo através dele. Aplicação: O amor pastoral é emocional e profundo, não frio ou distante. Reflexão: Você tem afeição genuína pelos irmãos? Seu amor pelos outros é superficial ou profundo como o amor de Cristo?",
+      "📖 <strong>RESUMO:</strong> Paulo sente saudades dos filipenses com a afeição de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Entranhável afeição' (2 Coríntios 6:12; Colossenses 3:12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> E isto peço: que o vosso amor cresça mais e mais em ciência e em todo o conhecimento,",
+      "<strong>COMENTÁRIO:</strong> 📈 Paulo ora para que o amor (agapē) deles cresça (perisseuō – transborde) em 'ciência' (epignōsis – conhecimento pleno, experimental) e 'todo o conhecimento' (aisthēsis – discernimento prático, percepção moral). O amor não é cego; ele deve ser fundamentado no conhecimento da verdade. Aplicação: O amor deve ser inteligente, não ingênuo. O amor sem discernimento pode ser prejudicial. Reflexão: Seu amor é baseado no conhecimento e discernimento? Você ama com sabedoria ou de forma imprudente?",
+      "📖 <strong>RESUMO:</strong> Paulo ora para que o amor cresça em conhecimento e discernimento.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Amor em conhecimento' (Colossenses 1:9-10; Efésios 1:17-18).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Para que aproveis as coisas excelentes, para que sejais sinceros e sem escândalo algum até ao dia de Cristo;",
+      "<strong>COMENTÁRIO:</strong> 🔍 O propósito: 'aprovar as coisas excelentes' (dokimazō ta diapheronta – discernir, testar e aprovar o que é melhor). O resultado: ser 'sinceros' (eilikrinēs – puros, genuínos, sem hipocrisia) e 'sem escândalo' (aproskopos – sem tropeço, inofensivos) até o dia de Cristo. Aplicação: O amor discernente produz pureza e integridade. Reflexão: Você busca aprovar as melhores coisas? Você é sincero e irrepreensível em sua conduta?",
+      "📖 <strong>RESUMO:</strong> O amor em conhecimento leva a aprovar o que é excelente e viver de forma pura.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Coisas excelentes' (Romanos 2:18; 12:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Cheios de frutos de justiça, que são por Jesus Cristo, para glória e louvor de Deus.",
+      "<strong>COMENTÁRIO:</strong> 🌾 O resultado final: 'frutos de justiça' (karpos dikaiosynēs) – uma vida que produz justiça, por meio de Jesus Cristo, para a glória e louvor de Deus. A justiça não é nossa; vem de Cristo. A vida justa glorifica a Deus. Aplicação: A vida cristã deve produzir frutos que glorificam a Deus. Reflexão: Sua vida produz frutos de justiça? A glória de Deus é o objetivo de sua vida?",
+      "📖 <strong>RESUMO:</strong> Frutos de justiça por Jesus Cristo para glória de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Frutos de justiça' (Tiago 3:18; 2 Coríntios 9:10).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>O progresso do evangelho nas prisões de Paulo</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(At 28:30-31; 2Tm 2:9)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> E quero, irmãos, que saibais que as coisas que me aconteceram contribuíram para maior proveito do evangelho.",
+      "<strong>COMENTÁRIO:</strong> 📢 As 'coisas que me aconteceram' (as prisões, perseguições) resultaram em 'proveito' (prokopē – avanço, progresso) do evangelho. Paulo vê suas dificuldades não como obstáculos, mas como oportunidades. Aplicação: Deus pode usar até mesmo as dificuldades para avançar o evangelho. Reflexão: Você vê suas dificuldades como oportunidades para o evangelho? Você confia que Deus pode transformar suas perdas em ganhos espirituais?",
+      "📖 <strong>RESUMO:</strong> As prisões de Paulo contribuíram para o avanço do evangelho.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Maior proveito' (2 Coríntios 4:17; Romanos 8:28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> De maneira que as minhas prisões em Cristo foram manifestas por toda a guarda pretoriana e por todos os lugares.",
+      "<strong>COMENTÁRIO:</strong> 🛡️ As 'prisões em Cristo' (ser preso por causa de Cristo) se tornaram conhecidas em todo o 'pretório' (praetorium – o acampamento da guarda pretoriana em Roma, a elite militar do imperador) e por toda parte. A fé de Paulo era tão evidente que até os soldados romanos sabiam que ele estava preso por causa de Cristo. Aplicação: O sofrimento por Cristo pode abrir portas para o testemunho. Reflexão: Seu sofrimento tem sido um testemunho para outros? Sua fidelidade em meio à adversidade é visível para os incrédulos?",
+      "📖 <strong>RESUMO:</strong> As prisões de Paulo foram conhecidas na guarda pretoriana.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Guarda pretoriana' (Atos 28:16; Mateus 27:27).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> E muitos dos irmãos no Senhor, tomando confiança com as minhas prisões, ousam falar a palavra mais confiadamente, sem temor.",
+      "<strong>COMENTÁRIO:</strong> 💪 A prisão de Paulo encorajou outros irmãos a pregar com mais ousadia (tolmaō – ter coragem) e confiança (pepoithēsis – certeza). O exemplo de Paulo inspirou outros a superar o medo. Aplicação: O exemplo de um líder pode inspirar outros. Reflexão: Você inspira outros a serem ousados na fé? Sua vida encoraja outros a falar de Cristo sem medo?",
+      "📖 <strong>RESUMO:</strong> As prisões de Paulo encorajaram outros a pregar com ousadia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ousam falar' (Efésios 6:19-20; Atos 4:29-31).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Verdade é que alguns pregam a Cristo até por inveja e porfia, mas outros de boa vontade.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ Motivos mistos na pregação: alguns por 'inveja' (phthonos) e 'porfia' (eris – rivalidade, contenda), outros de 'boa vontade' (eudokia – boa disposição). Paulo reconhece que nem todos que pregam têm motivações puras. Aplicação: Nem todos que pregam têm motivações puras. Reflexão: Você prega (testemunha) por amor ou por rivalidade? Seus motivos são puros diante de Deus?",
+      "📖 <strong>RESUMO:</strong> Alguns pregam por inveja e rivalidade, outros de boa vontade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Inveja e porfia' (1 Coríntios 3:3; Tiago 3:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Uns, na verdade, anunciam a Cristo por contenção, não puramente, julgando acrescentar aflição às minhas prisões.",
+      "<strong>COMENTÁRIO:</strong> 😔 Alguns pregam por 'contenção' (eritheia – espírito partidário, egoísmo) e 'não puramente' (ou hagnōs – não com pureza), pensando em aumentar a aflição de Paulo. Eles viam a prisão de Paulo como uma oportunidade para promover a si mesmos e causar-lhe mais sofrimento. Aplicação: Motivos impuros podem coexistir com a pregação da verdade. Reflexão: Você examina seus motivos ao servir? Você prega para promover a si mesmo ou a Cristo?",
+      "📖 <strong>RESUMO:</strong> Alguns pregam por contenção, pensando em afligir Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Contenção' (Tiago 3:14; Gálatas 5:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Mas outros, por amor, sabendo que estou posto para defesa do evangelho.",
+      "<strong>COMENTÁRIO:</strong> ❤️ Outros pregam 'por amor' (agapē), sabendo que Paulo está posto (keimai – designado, colocado) para a defesa (apologia) do evangelho. Eles pregam em solidariedade com Paulo, não em competição com ele. Aplicação: O amor é o motivo correto para servir. Reflexão: Você serve por amor a Cristo e aos outros? Seu serviço é motivado pela solidariedade ou pela competição?",
+      "📖 <strong>RESUMO:</strong> Outros pregam por amor, reconhecendo a missão de Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Por amor' (2 Coríntios 5:14; 1 Pedro 4:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Mas que importa? Contanto que Cristo seja anunciado de toda a maneira, ou por fingimento ou de verdade, nisto me regozijo, e me regozijarei ainda.",
+      "<strong>COMENTÁRIO:</strong> 😊 Paulo se alegra que Cristo seja anunciado, independentemente dos motivos. O conteúdo (Cristo) é mais importante que o motivo do pregador. Esta é uma atitude notável de maturidade espiritual. Aplicação: A alegria no evangelho supera as falhas dos mensageiros. Reflexão: Você se alegra quando Cristo é anunciado, mesmo por pessoas imperfeitas? Você é capaz de separar o conteúdo da mensagem dos motivos do mensageiro?",
+      "📖 <strong>RESUMO:</strong> Paulo se alegra que Cristo seja anunciado, seja por motivos puros ou não.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cristo anunciado' (1 Coríntios 1:23; 2 Coríntios 2:15-17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Porque sei que disto me resultará em salvação, pela vossa oração e pelo socorro do Espírito de Jesus Cristo,",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Salvação' (sōtēria) aqui provavelmente significa libertação da prisão (como em 2 Coríntios 1:10-11), ou a salvação final (vida eterna). Ela virá através das orações (deēsis) dos filipenses e do 'socorro' (epichorēgia – provisão abundante, suprimento) do Espírito de Cristo. Aplicação: As orações dos irmãos e o Espírito Santo trazem livramento. Reflexão: Você ora pelos que estão em dificuldade? Você confia que as orações dos outros podem trazer livramento?",
+      "📖 <strong>RESUMO:</strong> Paulo confia em salvação através das orações e do Espírito.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Socorro do Espírito' (Romanos 8:26; Efésios 1:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Segundo a minha intensa expectação e esperança, de que em nada serei confundido; antes, com toda a confiança, Cristo será agora, como sempre, engrandecido no meu corpo, quer pela vida, quer pela morte.",
+      "<strong>COMENTÁRIO:</strong> 🌟 Paulo tem 'intensa expectação' (apokaradokia – expectativa ansiosa, cabeça esticada para a frente) e 'esperança' (elpis). Ele não será 'confundido' (aischynō – envergonhado). Seu alvo: Cristo será 'engrandecido' (megalynō – magnificado, exaltado) em seu corpo (vida física), seja pela vida (continuando a viver) ou pela morte (martírio). Aplicação: A vida e a morte devem glorificar a Cristo. Reflexão: Cristo é engrandecido em sua vida e morte? Você tem a mesma expectativa de Paulo de que Cristo será glorificado em você, independentemente das circunstâncias?",
+      "📖 <strong>RESUMO:</strong> Paulo espera que Cristo seja engrandecido em seu corpo, seja pela vida ou pela morte.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Engrandecido' (Atos 19:17; 2 Tessalonicenses 1:10-12).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Viver é Cristo, morrer é ganho</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 14:8; 2Co 5:8)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Porque para mim o viver é Cristo, e o morrer é ganho.",
+      "<strong>COMENTÁRIO:</strong> ✝️ **O VERSÍCULO MAIS FAMOSO DE FILIPENSES**. 'Viver é Cristo' – Cristo é o propósito, o significado e a razão de viver. Toda a vida de Paulo estava centrada em Cristo. 'Morrer é ganho' – a morte é lucro (kerdos) porque leva à presença de Cristo. Paulo não via a morte como perda, mas como ganho. Aplicação: Cristo deve ser o centro de sua vida. Reflexão: Para você, viver é Cristo? O que seria ganho para você: viver para Cristo ou morrer e estar com Ele?",
+      "📖 <strong>RESUMO:</strong> Para Paulo, viver é Cristo e morrer é ganho.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Viver é Cristo' (Gálatas 2:20; Colossenses 3:3-4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> Mas, se o viver na carne me der fruto da minha obra, não sei então o que hei de escolher.",
+      "<strong>COMENTÁRIO:</strong> 😕 Paulo está em dúvida: se viver resultar em fruto (karpos) no ministério, ele não sabe o que escolher (viver ou morrer). O serviço frutífero torna a vida valiosa. Aplicação: O serviço frutífero torna a vida valiosa. Reflexão: Seu trabalho para Cristo dá fruto? Você pode dizer que viver vale a pena por causa do fruto que você está produzindo?",
+      "📖 <strong>RESUMO:</strong> Paulo não sabe o que escolher entre viver (para frutificar) e morrer (para estar com Cristo).",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fruto da obra' (João 15:16; Romanos 1:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> Porque estou em aperto entre estas duas coisas, tendo desejo de partir e estar com Cristo, porque isto é ainda muito melhor;",
+      "<strong>COMENTÁRIO:</strong> 😇 Paulo está em 'aperto' (synechō – pressionado, constrangido) entre duas opções. Seu 'desejo' (epithymia – forte anseio) é 'partir' (analysai – desatar, como soltar as cordas de uma tenda) e 'estar com Cristo' – que é 'muito melhor' (pollō mallō kreissōn – infinitamente superior). Aplicação: A vida eterna é infinitamente melhor que a vida presente. Reflexão: Você deseja estar com Cristo acima de tudo? Você pode dizer que 'partir e estar com Cristo' é muito melhor do que qualquer coisa nesta vida?",
+      "📖 <strong>RESUMO:</strong> Paulo deseja partir e estar com Cristo, o que é muito melhor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Partir e estar com Cristo' (2 Coríntios 5:8; Apocalipse 21:3-4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> Mas ficar na carne é mais necessário por amor de vós.",
+      "<strong>COMENTÁRIO:</strong> 💝 Paulo reconhece que permanecer vivo (ficar na carne) é mais necessário (anankaios – indispensável) por causa dos filipenses. Ele coloca as necessidades dos outros acima de seu próprio desejo de estar com Cristo. Aplicação: O serviço aos outros pode justificar a permanência na terra. Reflexão: Você vive para servir aos outros? Você estaria disposto a adiar seu desejo de estar com Cristo para servir aos irmãos?",
+      "📖 <strong>RESUMO:</strong> Paulo reconhece que ficar vivo é mais necessário por causa deles.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Necessário' (1 Coríntios 9:16; 2 Coríntios 1:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 25</strong></span>",
+      "<strong>TEXTO:</strong> E, tendo esta confiança, sei que ficarei e permanecerei com todos vós, para vosso proveito e gozo da fé,",
+      "<strong>COMENTÁRIO:</strong> 💪 Paulo está 'confiante' (pepoithōs) de que ficará (menō) e permanecerá (paramenō) com eles para o 'proveito' (prokopē – avanço, progresso) e 'gozo' (chara – alegria) da fé deles. Aplicação: O ministério visa o crescimento e a alegria da igreja. Reflexão: Você contribui para o crescimento e alegria dos outros? Sua presença traz proveito e gozo para a fé dos outros?",
+      "📖 <strong>RESUMO:</strong> Paulo confia que ficará para o proveito e gozo da fé deles.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Proveito e gozo' (2 Coríntios 1:24; Romanos 15:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 26</strong></span>",
+      "<strong>TEXTO:</strong> Para que a vossa glória cresça por mim em Cristo Jesus, pela minha nova ida para convosco.",
+      "<strong>COMENTÁRIO:</strong> 🌟 A presença de Paulo resultará em 'glória' (kauchēma – motivo de orgulho, razão de se gloriar) para os filipenses, quando ele for visitá-los novamente. Eles se gloriariam em Paulo como um fruto do ministério deles. Aplicação: A visita dos líderes deve ser motivo de alegria. Reflexão: Você se alegra com a visita de obreiros? Você vê os obreiros como motivo de glória para a igreja?",
+      "📖 <strong>RESUMO:</strong> A nova visita de Paulo trará glória aos filipenses.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Glória' (1 Tessalonicenses 2:19-20; 2 Coríntios 1:14).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Exortação à firmeza e ao sofrimento por Cristo</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Ef 4:1; 1Ts 2:2)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 27</strong></span>",
+      "<strong>TEXTO:</strong> Somente deveis portar-vos dignamente conforme o evangelho de Cristo, para que, quer vá ver-vos, quer esteja ausente, ouça a respeito de vós que estais num mesmo espírito, combatendo juntamente com o mesmo ânimo pela fé do evangelho.",
+      "<strong>COMENTÁRIO:</strong> ⚔️ 'Portar-vos dignamente' (politeuomai – viver como cidadão, exercer a cidadania). A palavra lembra que Filipos era uma colônia romana, e os crentes são cidadãos do céu. O evangelho exige uma vida digna. Eles devem estar em 'um mesmo espírito' (hen pneuma) e 'combatendo juntamente' (synathleō – lutando lado a lado) pela fé. Aplicação: A vida cristã é uma batalha e requer unidade. Reflexão: Você luta junto com outros pela fé? Você vive como cidadão do céu na terra?",
+      "📖 <strong>RESUMO:</strong> Vivei dignamente do evangelho, firmes e combatendo juntos pela fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Portar-vos dignamente' (Efésios 4:1; 1 Pedro 2:11-12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 28</strong></span>",
+      "<strong>TEXTO:</strong> E em nada vos espanteis dos que resistem; o que para eles, na verdade, é indício de perdição, mas para vós, de salvação, e isso de Deus.",
+      "<strong>COMENTÁRIO:</strong> 😨 Não se 'espantem' (ptyromai – se intimidem, se assustem como cavalos) com os adversários. A oposição é sinal de 'perdição' (apōleia – destruição) para eles, mas de 'salvação' (sōtēria) para os crentes – e isso vem de Deus. Aplicação: A perseguição pode confirmar a salvação. Reflexão: Você se deixa intimidar pela oposição? Você vê a perseguição como um sinal de que você está no caminho certo?",
+      "📖 <strong>RESUMO:</strong> Não vos espanteis com os adversários; isso é sinal de perdição para eles e salvação para vós.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Indício de perdição' (2 Tessalonicenses 1:5; 1 Pedro 4:12-14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 29</strong></span>",
+      "<strong>TEXTO:</strong> Porque a vós vos foi concedido, em relação a Cristo, não somente crer nele, como também padecer por ele.",
+      "<strong>COMENTÁRIO:</strong> 🎁 'Foi concedido' (echaristhē – foi dado como graça, como dom) – crer e sofrer são ambos dons de Deus. Sofrer por Cristo é um privilégio (cf. Atos 5:41). Aplicação: O sofrimento por Cristo é uma graça. Reflexão: Você vê o sofrimento como um dom de Deus? Você está disposto a sofrer por Cristo?",
+      "📖 <strong>RESUMO:</strong> Foi concedido crer e também sofrer por Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Padecer por ele' (Atos 5:41; 1 Pedro 4:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 30</strong></span>",
+      "<strong>TEXTO:</strong> Tendo o mesmo combate que já em mim tendes visto e agora ouvis estar em mim.",
+      "<strong>COMENTÁRIO:</strong> ⚔️ Paulo se refere ao 'combate' (agōn – luta, conflito) que ele está enfrentando e que os filipenses já viram (em Filipos) e agora ouvem (em Roma). Aplicação: A vida cristã é uma luta contínua. Reflexão: Você está no mesmo combate pela fé? Você está disposto a lutar como Paulo lutou?",
+      "📖 <strong>RESUMO:</strong> Tendes o mesmo combate que Paulo enfrenta.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Combate' (1 Timóteo 6:12; 2 Timóteo 4:7).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 1</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 1 é uma declaração de alegria e confiança em meio à adversidade. Paulo, preso em Roma, agradece pela cooperação dos filipenses no evangelho e expressa sua certeza de que Deus completará a boa obra neles. Ele vê suas prisões como um avanço do evangelho e se alegra que Cristo está sendo anunciado, mesmo por motivos errados. Paulo declara que 'viver é Cristo, e morrer é ganho', mostrando que Cristo é o centro de sua vida. Ele exorta os filipenses a viverem dignamente, firmes e unidos, sem se espantar com a perseguição. O capítulo nos ensina que: 1) Deus é fiel para completar a obra que começou; 2) As dificuldades podem avançar o evangelho; 3) A alegria do evangelho supera motivos impuros; 4) Cristo deve ser o centro da vida; 5) Sofrer por Cristo é um privilégio; 6) A vida cristã é um combate que exige unidade e firmeza.</p>"
+    ],
+
+    // ======================= CAPÍTULO 2 =======================
+    2: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A humildade e a exaltação de Cristo</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Jo 1:1-2; 2Co 8:9; Is 45:23)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Portanto, se há alguma consolação em Cristo, se algum consolo de amor, se alguma comunhão do Espírito, se alguns entranháveis afetos e misericórdias,",
+      "<strong>COMENTÁRIO:</strong> 💝 Paulo apresenta quatro bases para a exortação: (1) consolação (paraklēsis) em Cristo; (2) consolo (paramythion) do amor; (3) comunhão (koinōnia) do Espírito; (4) entranháveis afetos (splanchna – vísceras, compaixão) e misericórdias. Ele apela para a experiência cristã compartilhada. Aplicação: A unidade da igreja é baseada na comunhão com Cristo e no Espírito. Reflexão: Você experimenta a comunhão do Espírito com os irmãos? Você tem experimentado a consolação em Cristo?",
+      "📖 <strong>RESUMO:</strong> Paulo apela à consolação em Cristo, ao amor, à comunhão do Espírito e à misericórdia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Comunhão do Espírito' (2 Coríntios 13:14; Efésios 4:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Completai o meu gozo, para que sintais o mesmo, tendo o mesmo amor, o mesmo ânimo, sentindo uma mesma coisa.",
+      "<strong>COMENTÁRIO:</strong> 😊 'Completai o meu gozo' – a alegria de Paulo depende da unidade deles. Ele deseja que eles tenham: (1) o mesmo amor (ten autēn agapēn); (2) o mesmo ânimo (symphsychos – unidos em alma, de um só coração); (3) sentindo a mesma coisa (to auto phronountes – tendo a mesma mente). Aplicação: A unidade na igreja é fonte de alegria para os líderes. Reflexão: Você contribui para a unidade da igreja? Você está disposto a abrir mão de suas preferências para manter a unidade?",
+      "📖 <strong>RESUMO:</strong> Paulo pede que completem seu gozo através da unidade de amor e propósito.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mesmo amor' (João 13:34-35; Romanos 15:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Nada façais por contenda ou por vanglória, mas por humildade; cada um considere os outros superiores a si mesmo.",
+      "<strong>COMENTÁRIO:</strong> 🌿 Exortação negativa: evitar 'contenda' (eritheia – egoísmo, ambição partidária) e 'vanglória' (kenodoxia – desejo de honra vazia, orgulho). Exortação positiva: 'humildade' (tapeinophrosynē – mente baixa, modéstia), considerando os outros 'superiores a si mesmo' (hyperechontas heautōn – como mais importantes). Aplicação: A humildade é a base da unidade. Reflexão: Você considera os outros superiores a si mesmo? Você luta contra o egoísmo e a busca de honra?",
+      "📖 <strong>RESUMO:</strong> Nada façais por contenda ou vanglória, mas por humildade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Humildade' (Romanos 12:3; 1 Pedro 5:5-6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Não atente cada um para o que é propriamente seu, mas cada qual também para o que é dos outros.",
+      "<strong>COMENTÁRIO:</strong> 👀 Não olhe apenas para os próprios interesses (ta heautōn), mas também para os dos outros (ta heterōn). O amor busca o bem do próximo. Aplicação: O amor busca o bem do próximo. Reflexão: Você se preocupa com os interesses dos outros? Você está disposto a sacrificar seus próprios interesses pelos outros?",
+      "📖 <strong>RESUMO:</strong> Não atenteis apenas para o que é vosso, mas também para o que é dos outros.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Interesses dos outros' (1 Coríntios 10:24; Romanos 15:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> De sorte que haja em vós o mesmo sentimento que houve também em Cristo Jesus,",
+      "<strong>COMENTÁRIO:</strong> 💡 A exortação culmina: 'haja em vós o mesmo sentimento' (touto phroneite – esta mentalidade, esta maneira de pensar) que Cristo teve. A mentalidade de Cristo é o padrão supremo de humildade e serviço. Aplicação: A mente de Cristo deve ser a nossa. Reflexão: Você tem a mentalidade de Cristo? Você pensa como Cristo pensou?",
+      "📖 <strong>RESUMO:</strong> Tende em vós o mesmo sentimento que houve em Cristo Jesus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mentalidade de Cristo' (1 Coríntios 2:16; Romanos 15:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Que, sendo em forma de Deus, não teve por usurpação ser igual a Deus,",
+      "<strong>COMENTÁRIO:</strong> 🌟 **PRÉ-EXISTÊNCIA DE CRISTO**. 'Em forma de Deus' (morphē Theou) – Cristo é da mesma natureza de Deus, existindo eternamente na glória divina. 'Não teve por usurpação' (ouch harpagmon hēgēsato) – Ele não considerou Sua igualdade com Deus como algo a ser retido egoisticamente (como um ladrão que agarra um troféu). Ele não se apegou à Sua glória divina de forma egoísta. Aplicação: Cristo é Deus, mas não se apegou à Sua glória. Reflexão: Você reconhece a divindade de Cristo? Você está disposto a abrir mão de seus direitos como Cristo fez?",
+      "📖 <strong>RESUMO:</strong> Cristo, sendo em forma de Deus, não se apegou à igualdade com Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Forma de Deus' (João 1:1; Colossenses 1:15; Hebreus 1:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Mas esvaziou-se a si mesmo, tomando a forma de servo, fazendo-se semelhante aos homens;",
+      "<strong>COMENTÁRIO:</strong> 🧎 **A KENOSIS (ESVAZIAMENTO)**. 'Esvaziou-se' (ekenōsen – esvaziou, humilhou voluntariamente, despojou-se). Ele tomou a 'forma de servo' (morphē doulou) – a natureza humana como servo. 'Semelhante aos homens' (homoiōmati anthrōpōn) – verdadeiramente humano, mas sem pecado. Aplicação: A humilhação de Cristo foi voluntária. Reflexão: Você está disposto a se humilhar para servir? Você está disposto a se esvaziar de seus direitos e privilégios para servir aos outros?",
+      "📖 <strong>RESUMO:</strong> Cristo esvaziou-se, tomando a forma de servo e fazendo-se homem.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Esvaziou-se' (2 Coríntios 8:9; Hebreus 2:17; João 1:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> E, achado na forma de homem, humilhou-se a si mesmo, sendo obediente até à morte, e morte de cruz.",
+      "<strong>COMENTÁRIO:</strong> ✝️ **A HUMILHAÇÃO EXTREMA**. 'Humilhou-se' (etapeinōsen – abaixou-se, rebaixou-se) – obediência (hypēkoos – submissão) até a morte, e a pior morte: a cruz (stauros). A cruz era a forma mais vergonhosa de execução, reservada para escravos e criminosos. Aplicação: A obediência de Cristo foi absoluta. Reflexão: Você obedece a Deus até o ponto de sacrifício? Você está disposto a seguir o caminho da cruz, mesmo que seja vergonhoso?",
+      "📖 <strong>RESUMO:</strong> Cristo humilhou-se, obedecendo até a morte de cruz.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Morte de cruz' (Hebreus 12:2; 1 Pedro 2:21-24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Pelo que também Deus o exaltou soberanamente, e lhe deu um nome que é sobre todo o nome,",
+      "<strong>COMENTÁRIO:</strong> 👑 **A EXALTAÇÃO**. 'Exaltou soberanamente' (hyperypsōsen – elevou acima de todos, supremamente exaltou) – deu-lhe o 'nome que é sobre todo o nome' – o nome de Senhor (Kyrios), que é o nome divino (YHWH). Aplicação: A humilhação de Cristo foi seguida pela exaltação máxima. Reflexão: Você honra o nome de Jesus acima de todos? Você reconhece o senhorio absoluto de Jesus?",
+      "📖 <strong>RESUMO:</strong> Deus exaltou soberanamente a Cristo e lhe deu o nome acima de todo nome.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Exaltou' (Atos 2:33; 5:31; Efésios 1:20-21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Para que ao nome de Jesus se dobre todo o joelho dos que estão nos céus, e na terra, e debaixo da terra,",
+      "<strong>COMENTÁRIO:</strong> 🙇 **UNIVERSALIDADE DO SENHORIO**. Todo joelho se dobrará – no céu (anjos), na terra (humanos), e debaixo da terra (espíritos no Hades). A adoração universal a Jesus é o destino final da história. Aplicação: Jesus é Senhor de todo o universo. Reflexão: Você dobra seus joelhos diante de Jesus? Você reconhece que um dia todo joelho se dobrará diante Dele?",
+      "📖 <strong>RESUMO:</strong> Ao nome de Jesus, todo joelho se dobrará em todo o universo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dobre todo joelho' (Isaías 45:23; Romanos 14:11; Apocalipse 5:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> E toda a língua confesse que Jesus Cristo é o Senhor, para glória de Deus Pai.",
+      "<strong>COMENTÁRIO:</strong> 🗣️ 'Toda língua confesse' (exomologēsētai – confessará publicamente, reconhecerá) que 'Jesus Cristo é o Senhor' (Kyrios Iēsous Christos). O propósito: 'para glória de Deus Pai'. A confissão de Jesus como Senhor glorifica o Pai. Aplicação: A confissão de Jesus como Senhor glorifica o Pai. Reflexão: Você confessa Jesus como Senhor diante dos outros? Você vive como se Jesus fosse o Senhor de sua vida?",
+      "📖 <strong>RESUMO:</strong> Toda língua confessará que Jesus Cristo é o Senhor, para glória de Deus Pai.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Jesus é o Senhor' (1 Coríntios 12:3; Romanos 10:9-10).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Luzes no mundo e serviço abnegado</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Dt 32:5; Mt 5:14-16; 1Co 9:24-27)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> De sorte que, meus amados, assim como sempre obedecestes, não só na minha presença, mas muito mais agora na minha ausência, assim operai a vossa salvação com temor e tremor;",
+      "<strong>COMENTÁRIO:</strong> 🔥 'Operai a vossa salvação' (katergazesthe – trabalhai, efetuai, produzi) com 'temor e tremor' (phobos kai tromos – reverência, seriedade, humildade). Isso não significa ganhar a salvação, mas viver de acordo com a salvação que já possuem. A aplicação: A salvação deve ser vivida com reverência. Reflexão: Você vive sua salvação com temor e tremor? Você leva a sério a sua salvação?",
+      "📖 <strong>RESUMO:</strong> Operai vossa salvação com temor e tremor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Temor e tremor' (2 Coríntios 7:15; Efésios 6:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Porque Deus é o que opera em vós tanto o querer como o fazer, segundo a sua boa vontade.",
+      "<strong>COMENTÁRIO:</strong> 🙌 A base para a obediência: Deus 'opera' (energeō – atua, produz energia) em nós, tanto o 'querer' (thelein – a vontade, o desejo) como o 'fazer' (energein – a ação, a execução), segundo Sua 'boa vontade' (eudokia – Seu bom propósito). Aplicação: O esforço humano e a graça divina cooperam. Reflexão: Você confia que Deus opera em você? Você reconhece que até o desejo de obedecer vem de Deus?",
+      "📖 <strong>RESUMO:</strong> Deus opera em vós o querer e o fazer, segundo a sua boa vontade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Opera em vós' (Efésios 1:11; 3:20; Hebreus 13:21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Fazei todas as coisas sem murmurações nem contendas;",
+      "<strong>COMENTÁRIO:</strong> 🤫 Evite 'murmurações' (gongysmos – queixas, resmungos) e 'contendas' (dialogismos – disputas, discussões). Aplicação: A obediência deve ser alegre e sem reclamações. Reflexão: Você murmura ou obedece com alegria? Sua vida é marcada por queixas ou por gratidão?",
+      "📖 <strong>RESUMO:</strong> Fazei todas as coisas sem murmurações nem contendas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Murmurações' (1 Coríntios 10:10; 1 Pedro 4:9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração corrompida e perversa, entre a qual resplandeceis como astros no mundo.",
+      "<strong>COMENTÁRIO:</strong> ⭐ O objetivo: 'irrepreensíveis' (amemptos – sem culpa), 'sinceros' (akeraios – puros, sem mistura, genuínos), 'inculpáveis' (amōmos – sem mancha). No meio de uma geração 'corrompida e perversa' (skolios – tortuosa, pervertida), eles 'resplandecem' (phainō – brilham) como 'astros' (phōstēres – luminares) no mundo. Aplicação: A vida cristã é luz em meio à escuridão. Reflexão: Você resplandece como luz no mundo? Sua vida é irrepreensível e sincera?",
+      "📖 <strong>RESUMO:</strong> Sede irrepreensíveis, resplandecendo como astros no mundo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Astros no mundo' (Mateus 5:14-16; Daniel 12:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Retendo a palavra da vida, para que no dia de Cristo me possa gloriar de que não corri em vão, nem trabalhei em vão.",
+      "<strong>COMENTÁRIO:</strong> 📖 'Retendo a palavra da vida' (epechontes – mantendo firme, segurando, oferecendo) – a Palavra de Deus que dá vida. Paulo quer gloriar-se (kauchēma) no dia de Cristo que seu trabalho não foi em vão (kenos). Aplicação: A Palavra de Deus é a vida que oferecemos ao mundo. Reflexão: Você retém a Palavra da vida? Você oferece a vida eterna aos outros?",
+      "📖 <strong>RESUMO:</strong> Retende a palavra da vida, para que Paulo não tenha corrido em vão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Palavra da vida' (1 João 1:1; Atos 5:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> E, ainda que seja oferecido por libação sobre o sacrifício e serviço da vossa fé, folgo e me regozijo com todos vós.",
+      "<strong>COMENTÁRIO:</strong> 🍷 Paulo está disposto a ser 'oferecido por libação' (spendomai – derramado como oferta de bebida) sobre o 'sacrifício e serviço' (thysia kai leitourgia) da fé deles. Ele se alegra (chairō) com isso. A libação era a oferta derramada sobre o sacrifício no altar. Aplicação: O serviço a Cristo pode exigir derramamento total. Reflexão: Você está disposto a ser derramado por Cristo? Você vê seu serviço como um sacrifício oferecido a Deus?",
+      "📖 <strong>RESUMO:</strong> Paulo se alegra em ser oferecido como libação sobre o sacrifício da fé deles.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Libação' (2 Timóteo 4:6; Números 15:5-10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> E, por esta mesma causa, folgai vós também e regozijai-vos comigo.",
+      "<strong>COMENTÁRIO:</strong> 😊 Paulo convida os filipenses a se alegrarem com ele. A alegria é compartilhada. Aplicação: A alegria no Senhor é contagiosa. Reflexão: Você se alegra com os que se alegram no Senhor? Você compartilha a alegria com os outros?",
+      "📖 <strong>RESUMO:</strong> Regozijai-vos comigo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Alegrai-vos' (Romanos 12:15; 1 Coríntios 12:26).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Timóteo e Epafrodito, exemplos de serviço</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Co 4:17; 2Tm 1:4)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> E espero no Senhor Jesus que em breve vos envie Timóteo, para que também eu esteja de bom ânimo, sabendo das vossas novas.",
+      "<strong>COMENTÁRIO:</strong> 📨 Paulo espera enviar Timóteo para saber notícias deles e ficar 'de bom ânimo' (eupsychō – animado, aliviado). Aplicação: A comunicação entre líderes e igreja é importante. Reflexão: Você se preocupa em dar notícias aos líderes?",
+      "📖 <strong>RESUMO:</strong> Paulo espera enviar Timóteo em breve para saber notícias.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Timóteo' (Atos 16:1-3; 1 Coríntios 4:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Porque a ninguém tenho de igual sentimento, que naturalmente cuide do vosso estado.",
+      "<strong>COMENTÁRIO:</strong> ❤️ Timóteo tem 'igual sentimento' (isopsychos – de alma igual, genuinamente preocupado) e cuida genuinamente (mēriōsei – se preocupa, se interessa) do estado deles. Aplicação: Timóteo é exemplo de cuidado pastoral genuíno. Reflexão: Você cuida genuinamente dos irmãos? Você tem interesse sincero no bem-estar dos outros?",
+      "📖 <strong>RESUMO:</strong> Timóteo tem genuíno cuidado pelo estado dos filipenses.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cuide do vosso estado' (1 Coríntios 4:17; 2 Coríntios 11:28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Porque todos buscam o que é seu, e não o que é de Cristo Jesus.",
+      "<strong>COMENTÁRIO:</strong> 😔 Triste realidade: muitos buscam seus próprios interesses (ta heautōn), não os de Cristo. Timóteo é a exceção. Aplicação: O egoísmo é comum, mesmo entre os que professam servir. Reflexão: Você busca os interesses de Cristo ou os seus próprios? Você está disposto a sacrificar seus interesses pelos de Cristo?",
+      "📖 <strong>RESUMO:</strong> Todos buscam o que é seu, não o que é de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não o que é de Cristo' (Romanos 15:3; 1 Coríntios 13:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> Mas bem sabeis qual é a sua experiência, e que serviu comigo no evangelho, como filho ao pai.",
+      "<strong>COMENTÁRIO:</strong> 👨‍👦 Timóteo serviu com Paulo como 'filho ao pai' – com lealdade, dedicação e submissão. Aplicação: A mentoria gera servos fiéis. Reflexão: Você tem servido como filho espiritual a alguém? Você tem um pai espiritual que o discipula?",
+      "📖 <strong>RESUMO:</strong> Timóteo serviu com Paulo como filho ao pai.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Filho ao pai' (1 Timóteo 1:2; 1 Coríntios 4:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> A este, pois, espero enviar, logo que tenha visto o que me sucederá.",
+      "<strong>COMENTÁRIO:</strong> 📬 Paulo planeja enviar Timóteo assim que sua situação (o resultado de seu julgamento) for esclarecida. Aplicação: A sabedoria pastoral envolve timing. Reflexão: Você age no tempo certo?",
+      "📖 <strong>RESUMO:</strong> Paulo espera enviar Timóteo quando souber o que lhe sucederá.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O que me sucederá' (Atos 28:30-31; Filipenses 1:12-14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> Mas confio no Senhor que também eu mesmo em breve hei de ir.",
+      "<strong>COMENTÁRIO:</strong> 🙏 Paulo confia que também ele poderá visitá-los em breve. Aplicação: A confiança no Senhor é a base dos planos. Reflexão: Você planeja com confiança em Deus?",
+      "📖 <strong>RESUMO:</strong> Paulo confia que também ele irá em breve.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Confio no Senhor' (Filipenses 1:25; 2 Coríntios 1:15-17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 25</strong></span>",
+      "<strong>TEXTO:</strong> Julguei, contudo, necessário enviar-vos Epafrodito, meu irmão, e cooperador, e companheiro nos combates, e vosso enviado para ministrar às minhas necessidades.",
+      "<strong>COMENTÁRIO:</strong> 🤝 Epafrodito é descrito com vários títulos: 'irmão' (adelphos), 'cooperador' (synergos), 'companheiro nos combates' (systratiōtēs – companheiro de guerra), e 'enviado' (apostolos) dos filipenses. Aplicação: Servos fiéis são honrados com títulos múltiplos. Reflexão: Você honra os obreiros fiéis?",
+      "📖 <strong>RESUMO:</strong> Paulo envia Epafrodito, irmão, cooperador e companheiro nos combates.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Companheiro nos combates' (Filemom 2; 2 Timóteo 2:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 26</strong></span>",
+      "<strong>TEXTO:</strong> Porquanto tinha saudades de todos vós, e andava angustiado, porque ouvistes que ele tinha estado doente.",
+      "<strong>COMENTÁRIO:</strong> 😢 Epafrodito sentia saudades (epipotheō) e estava 'angustiado' (adēmoneō – ansioso, preocupado) porque os filipenses souberam de sua doença. Aplicação: O amor se preocupa com a preocupação dos outros. Reflexão: Você se preocupa com o impacto de sua situação sobre os outros?",
+      "📖 <strong>RESUMO:</strong> Epafrodito tinha saudades e estava angustiado porque souberam de sua doença.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Angustiado' (2 Coríntios 2:4; João 11:33).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 27</strong></span>",
+      "<strong>TEXTO:</strong> E de fato esteve doente, quase à morte; mas Deus se compadeceu dele, e não somente dele, mas também de mim, para que eu não tivesse tristeza sobre tristeza.",
+      "<strong>COMENTÁRIO:</strong> 🏥 Epafrodito esteve doente 'quase à morte' (paraplēsion thanatou). Deus se compadeceu (ēleēsen) dele e de Paulo, evitando 'tristeza sobre tristeza' (lypēn epi lypē – dor sobre dor). Aplicação: Deus tem compaixão e evita dores desnecessárias. Reflexão: Você confia na compaixão de Deus?",
+      "📖 <strong>RESUMO:</strong> Epafrodito esteve quase à morte, mas Deus se compadeceu dele.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Deus se compadeceu' (2 Coríntios 1:3; Salmo 103:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 28</strong></span>",
+      "<strong>TEXTO:</strong> Por isso vo-lo enviei com mais urgência, para que, vendo-o outra vez, vos regozijeis, e eu tenha menos tristeza.",
+      "<strong>COMENTÁRIO:</strong> 😊 Paulo o envia para que os filipenses se alegrem ao vê-lo, e assim Paulo tenha 'menos tristeza'. Aplicação: A alegria dos outros diminui nossa tristeza. Reflexão: Você se alegra em ver os irmãos restaurados?",
+      "📖 <strong>RESUMO:</strong> Paulo o envia para que os filipenses se regozijem.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Menos tristeza' (2 Coríntios 2:3; 7:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 29</strong></span>",
+      "<strong>TEXTO:</strong> Recebei-o, pois, no Senhor com todo o gozo, e tende-o em honra;",
+      "<strong>COMENTÁRIO:</strong> 🙌 Paulo exorta: recebam Epafrodito 'com todo o gozo' (pasēs charas) e 'tenham-no em honra' (entimoi – estimado, honrado). Aplicação: Os obreiros fiéis merecem honra e alegria. Reflexão: Você honra os que servem fielmente?",
+      "📖 <strong>RESUMO:</strong> Recebei Epafrodito com todo o gozo e honra.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tende-o em honra' (1 Tessalonicenses 5:12-13; 1 Timóteo 5:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 30</strong></span>",
+      "<strong>TEXTO:</strong> Porque pela obra de Cristo esteve quase à morte, não fazendo caso da própria vida, para suprir a vossa falta de serviço para comigo.",
+      "<strong>COMENTÁRIO:</strong> 💪 Epafrodito arriscou a vida pela obra de Cristo, 'não fazendo caso da própria vida' (paraboleusamenos tē psychē – arriscando a alma, expondo a vida) para suprir a falta de serviço dos filipenses. Aplicação: O serviço a Cristo pode exigir risco de vida. Reflexão: Você está disposto a arriscar pela obra de Cristo?",
+      "📖 <strong>RESUMO:</strong> Epafrodito arriscou a vida pela obra de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Arriscou a vida' (Atos 15:26; Romanos 16:4).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 2</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 2 contém o hino cristológico mais sublime do Novo Testamento, descrevendo a humilhação e exaltação de Cristo. Paulo exorta os filipenses a terem a mesma mentalidade de humildade, evitando contendas e vanglória. Cristo, sendo Deus, esvaziou-se, tornou-se servo, obedeceu até a morte de cruz, e foi exaltado por Deus. Aplicando isso, Paulo exorta a operar a salvação com temor, confiando que Deus opera em nós. Ele também apresenta Timóteo e Epafrodito como exemplos de serviço sacrificial. O capítulo nos ensina que: 1) A humildade de Cristo é o modelo para os crentes; 2) A exaltação de Cristo é a garantia de Seu senhorio universal; 3) Devemos viver nossa salvação com seriedade, confiando na obra de Deus; 4) A vida cristã é luz em meio à escuridão; 5) Devemos honrar e receber com alegria os que servem; 6) A verdadeira unidade vem da humildade.</p>"
+    ],
+
+    // ======================= CAPÍTULO 3 =======================
+    3: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Advertência contra os falsos mestres e a verdadeira circuncisão</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 2:28-29; 2Co 11:18-21; Gl 5:2-3)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Quanto ao mais, irmãos meus, alegrai-vos no Senhor. Escrever-vos as mesmas coisas, a mim, na verdade, não me é penoso, e para vós é seguro.",
+      "<strong>COMENTÁRIO:</strong> 😊 Paulo exorta: 'alegrai-vos no Senhor'. Repetir advertências não é penoso (oknēros – cansativo) para ele e é seguro (asphalēs) para eles. Aplicação: A repetição da verdade é necessária e segura. Reflexão: Você se alegra no Senhor mesmo quando admoestado?",
+      "📖 <strong>RESUMO:</strong> Alegrai-vos no Senhor. Repetir advertências é seguro.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Alegrai-vos no Senhor' (Filipenses 4:4; Salmo 32:11).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Guardai-vos dos cães, guardai-vos dos maus obreiros, guardai-vos da circuncisão.",
+      "<strong>COMENTÁRIO:</strong> 🐕 Paulo adverte contra três grupos: 'cães' (uma referência depreciativa aos falsos mestres, que eram imundos como cães), 'maus obreiros' (ergatai kakoí – trabalhadores maus que pervertem o evangelho), e a 'circuncisão' (katatomē – mutilação) – uma referência irônica àqueles que exigiam a circuncisão como necessária para a salvação. Aplicação: Cuidado com falsos mestres que distorcem o evangelho. Reflexão: Você está vigilante contra aqueles que impõem obras para a salvação?",
+      "📖 <strong>RESUMO:</strong> Guardai-vos dos cães, dos maus obreiros e da circuncisão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cães' (Apocalipse 22:15; Mateus 7:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Porque a circuncisão somos nós, que servimos a Deus em espírito, e nos gloriamos em Jesus Cristo, e não confiamos na carne.",
+      "<strong>COMENTÁRIO:</strong> ✨ A verdadeira circuncisão (peritomē) é espiritual: (1) servimos a Deus em espírito (latreuō pneumati – adoramos no Espírito); (2) nos gloriamos (kauchaomai) em Cristo; (3) não confiamos na carne (sarx – méritos humanos). Aplicação: A verdadeira identidade do povo de Deus é espiritual, não étnica ou ritual. Reflexão: Você serve a Deus em espírito ou na carne?",
+      "📖 <strong>RESUMO:</strong> A verdadeira circuncisão é servir a Deus em espírito, gloriar-se em Cristo e não confiar na carne.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Servir em espírito' (Romanos 2:28-29; João 4:24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Ainda que também podia confiar na carne. Se algum outro cuida que pode confiar na carne, eu ainda mais:",
+      "<strong>COMENTÁRIO:</strong> 💪 Paulo poderia confiar em credenciais humanas (carne) se quisesse. Ele as tinha em abundância. Aplicação: As credenciais humanas não são a base da justificação. Reflexão: Você confia em suas credenciais ou em Cristo?",
+      "📖 <strong>RESUMO:</strong> Paulo podia confiar na carne, se quisesse.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Confi na carne' (2 Coríntios 11:18-22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Circuncidado ao oitavo dia, da linhagem de Israel, da tribo de Benjamim, hebreu de hebreus; segundo a lei, fariseu;",
+      "<strong>COMENTÁRIO:</strong> 📜 Credenciais judaicas de Paulo: circuncidado no oitavo dia (cumprimento da lei, Gênesis 17:12), da linhagem de Israel (não prosélito), tribo de Benjamim (tribo nobre, da qual veio Saul), hebreu de hebreus (língua e cultura hebraica), fariseu (seita mais rigorosa, Atos 23:6). Aplicação: Paulo tinha credenciais impecáveis. Reflexão: Você confiaria em credenciais como essas?",
+      "📖 <strong>RESUMO:</strong> Paulo era circuncidado, israelita, benjamita, hebreu, fariseu.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fariseu' (Atos 23:6; 26:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Segundo o zelo, perseguidor da igreja; segundo a justiça que há na lei, irrepreensível.",
+      "<strong>COMENTÁRIO:</strong> ⚔️ Mais credenciais: zelo – perseguidor da igreja (antes da conversão, Atos 8:3; 9:1-2); justiça na lei – irrepreensível (kata dikaiosynēn en nomō genomenos amemptos – sem culpa segundo o padrão externo da lei). Aplicação: O zelo religioso sem Cristo é inútil. Reflexão: Você já teve zelo sem conhecimento?",
+      "📖 <strong>RESUMO:</strong> Paulo era zeloso, perseguidor e irrepreensível na justiça da lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perseguidor da igreja' (Atos 8:3; 1 Coríntios 15:9).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Justiça pela fé e o conhecimento de Cristo</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 3:21-22; 8:17; 2Co 5:21)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Mas o que para mim era ganho, reputei-o perda por amor de Cristo.",
+      "<strong>COMENTÁRIO:</strong> 💰 A grande virada: o que Paulo considerava 'ganho' (kerdos – lucro, vantagem), agora considera 'perda' (zēmia – prejuízo) por causa de Cristo. Aplicação: Cristo é mais valioso que todas as conquistas religiosas. Reflexão: O que você considera ganho? Você está disposto a considerar tudo perda por Cristo?",
+      "📖 <strong>RESUMO:</strong> O que era ganho para Paulo, ele considerou perda por Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perda por Cristo' (Mateus 13:44; Lucas 14:33).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> E, na verdade, tenho também por perda todas as coisas, pela excelência do conhecimento de Cristo Jesus, meu Senhor; pelo qual sofri a perda de todas estas coisas, e as considero como escória, para que possa ganhar a Cristo,",
+      "<strong>COMENTÁRIO:</strong> 🌟 'Excelência do conhecimento' (hyperechon tēs gnōseōs – a superioridade, o valor supremo de conhecer) a Cristo. Paulo considera tudo 'escória' (skybala – lixo, excremento, refugo) para 'ganhar a Cristo'. Aplicação: Conhecer a Cristo é a maior excelência. Reflexão: Você considera tudo como perda diante do conhecimento de Cristo?",
+      "📖 <strong>RESUMO:</strong> Paulo considera tudo como escória para ganhar a Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Escória' (1 Coríntios 4:13; Lamentações 3:45).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> E seja achado nele, não tendo a minha justiça que vem da lei, mas a que vem pela fé em Cristo, a saber, a justiça que vem de Deus pela fé.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Paulo quer ser 'achado nele' (heuriskō en autō – unido a Cristo, encontrado em comunhão com Ele). Ele rejeita sua própria justiça (da lei) e busca a justiça que vem de Deus (dikaiosynē Theou), pela fé (dia pisteōs). Aplicação: A justificação é pela fé, não por obras. Reflexão: Você confia na justiça de Cristo ou na sua própria?",
+      "📖 <strong>RESUMO:</strong> Paulo busca a justiça que vem de Deus pela fé, não a sua própria da lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Justiça de Deus pela fé' (Romanos 3:22; 2 Coríntios 5:21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Para o conhecer, e a virtude da sua ressurreição, e a comunhão das suas aflições, sendo feito conforme à sua morte;",
+      "<strong>COMENTÁRIO:</strong> 💔 O alvo de Paulo: (1) conhecer a Cristo (gnōnai auton – conhecimento experimental, íntimo); (2) o poder (dynamis) da ressurreição; (3) comunhão (koinōnia) nos sofrimentos; (4) ser feito conforme (symmorphizō – conformado, moldado) à sua morte. Aplicação: Conhecer Cristo envolve participação em Seus sofrimentos. Reflexão: Você deseja conhecer Cristo em Seus sofrimentos?",
+      "📖 <strong>RESUMO:</strong> Paulo quer conhecer a Cristo, o poder da ressurreição e a comunhão de seus sofrimentos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Comunhão das aflições' (2 Coríntios 1:5; 1 Pedro 4:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Para ver se, de alguma maneira, posso chegar à ressurreição dos mortos.",
+      "<strong>COMENTÁRIO:</strong> 🌅 O objetivo final: 'chegar à ressurreição dos mortos' (eis tēn exanastasin tēn ek nekrōn). Paulo não duvida da ressurreição (Romanos 6:5; 1 Coríntios 15:12-20), mas expressa humildade e desejo ardente. Aplicação: A ressurreição é a esperança que motiva a vida cristã. Reflexão: Você vive com a esperança da ressurreição?",
+      "📖 <strong>RESUMO:</strong> Paulo almeja chegar à ressurreição dos mortos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ressurreição dos mortos' (1 Coríntios 15:12-20; João 11:25-26).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Correndo para o alvo da vocação celestial</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Co 9:24-27; 1Tm 6:12; 2Tm 4:7-8)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Não que já a tenha alcançado, ou que já seja perfeito; mas prossigo para alcançar aquilo para o que também fui preso por Cristo Jesus.",
+      "<strong>COMENTÁRIO:</strong> 🏃 Paulo não afirma ter alcançado a perfeição (teteleiōmai – completado, chegado ao fim). Ele 'prossegue' (diōkō – persigo, corro atrás) para alcançar (katalambanō – agarrar, tomar posse) o que Cristo o alcançou (katalambanō). Aplicação: A vida cristã é uma corrida de crescimento, não um estado de perfeição. Reflexão: Você está prosseguindo para o alvo?",
+      "📖 <strong>RESUMO:</strong> Paulo não é perfeito, mas prossegue para o alvo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Prossigo' (1 Coríntios 9:24; 2 Timóteo 4:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Irmãos, quanto a mim, não julgo que o haja alcançado; mas uma coisa faço: esquecendo-me das coisas que atrás ficam, e avançando para as que estão diante de mim,",
+      "<strong>COMENTÁRIO:</strong> 🔄 A estratégia de Paulo: 'esquecendo' (epilanthanomai – negligenciar, deixar para trás) o passado (tanto conquistas quanto fracassos) e 'avançando' (epekteinomai – estendendo-se para a frente, como um corredor) para o que está adiante. Aplicação: Não se apegue ao passado; avance para o que Deus tem adiante. Reflexão: Você está preso ao passado ou avançando?",
+      "📖 <strong>RESUMO:</strong> Paulo esquece o passado e avança para o que está adiante.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Esquecendo o passado' (Isaías 43:18-19; Lucas 9:62).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Prossigo para o alvo, pelo prêmio da soberana vocação de Deus em Cristo Jesus.",
+      "<strong>COMENTÁRIO:</strong> 🎯 'Prossigo' (diōkō) para o 'alvo' (skopos – a linha de chegada, o alvo da corrida) – o prêmio (brabeion – a recompensa) da 'soberana vocação' (anō klēsis – chamado celestial, para cima) de Deus em Cristo. Aplicação: O alvo é Cristo e o prêmio é a vida eterna. Reflexão: Você está correndo em direção ao alvo?",
+      "📖 <strong>RESUMO:</strong> Paulo prossigo para o alvo, o prêmio da vocação celestial.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Prêmio' (1 Coríntios 9:24; 2 Timóteo 4:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Pelo que todos quantos já somos perfeitos, sintamos isto mesmo; e, se sentis alguma coisa de outra maneira, também Deus vo-lo revelará.",
+      "<strong>COMENTÁRIO:</strong> 🧠 'Perfeitos' (teleioi – maduros, completos) devem ter esta mesma mentalidade (phroneō). Se alguém pensa diferente (heteros phroneō), Deus o revelará (apokalyptō). Aplicação: A maturidade está na humildade de continuar crescendo. Reflexão: Você tem a mentalidade de Paulo?",
+      "📖 <strong>RESUMO:</strong> Os maduros devem ter essa mentalidade; Deus revelará o que falta.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perfeitos' (1 Coríntios 2:6; Colossenses 1:28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Todavia, no ponto a que já chegamos, andemos segundo a mesma regra, e sintamos o mesmo.",
+      "<strong>COMENTÁRIO:</strong> 🚶 Exortação prática: onde já chegamos, 'andemos' (stoicheō – caminhemos em linha, marchar em ordem) segundo a mesma regra (kanōn) e tenhamos o mesmo sentimento (phroneō). Aplicação: A unidade na caminhada é essencial. Reflexão: Você anda segundo a mesma regra que os irmãos?",
+      "📖 <strong>RESUMO:</strong> Andemos segundo a mesma regra e tenhamos o mesmo sentimento.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mesma regra' (Gálatas 6:16; 2 Coríntios 10:13-16).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Inimigos da cruz e a pátria celestial</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 16:18; 1Jo 3:2; 2Co 3:18)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Sede também meus imitadores, irmãos, e tende cuidado, segundo o exemplo que tendes em nós, pelos que assim andam.",
+      "<strong>COMENTÁRIO:</strong> 👣 Paulo exorta: 'sede meus imitadores' (symmimētai – imitadores juntos, seguidores). Observem aqueles que andam segundo o exemplo (typos) de Paulo. Aplicação: A imitação de líderes piedosos é um caminho para o crescimento. Reflexão: Você imita os que seguem a Cristo?",
+      "📖 <strong>RESUMO:</strong> Sede imitadores de Paulo e daqueles que andam segundo seu exemplo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Imitadores de mim' (1 Coríntios 4:16; 11:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Porque muitos há, dos quais muitas vezes vos disse, e agora também digo, chorando, que são inimigos da cruz de Cristo,",
+      "<strong>COMENTÁRIO:</strong> 😢 Paulo chora (klaio) ao mencionar os 'inimigos da cruz de Cristo' – aqueles que se opõem ao evangelho da graça, vivendo para si mesmos. Aplicação: A oposição à cruz é motivo de lágrimas. Reflexão: Você chora pelos que rejeitam a cruz?",
+      "📖 <strong>RESUMO:</strong> Muitos são inimigos da cruz de Cristo, e Paulo chora por eles.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Inimigos da cruz' (Gálatas 6:12; 2 Coríntios 11:13-15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Cujo fim é a perdição, cujo Deus é o ventre, e cuja glória é para confusão deles, que só pensam nas coisas terrenas.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Descrição dos inimigos da cruz: (1) fim: perdição (apōleia – destruição); (2) deus: o ventre (koilia – prazeres, apetites carnais); (3) glória: confusão (aischynē – vergonha); (4) mentalidade: terrestre (ta epigeia). Aplicação: Quem vive para os prazeres terrenos está condenado. Reflexão: Você pensa nas coisas terrenas ou celestiais?",
+      "📖 <strong>RESUMO:</strong> O fim desses é a perdição; seu deus é o ventre; só pensam nas coisas terrenas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Deus é o ventre' (Romanos 16:18; 1 Coríntios 6:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Mas a nossa cidade está nos céus, donde também esperamos o Salvador, o Senhor Jesus Cristo.",
+      "<strong>COMENTÁRIO:</strong> 🌍 A 'cidade' (politeuma – cidadania, comunidade, república) dos crentes está nos céus. Esperamos o Salvador (Sōtēr) de lá. Filipos era uma colônia romana; os crentes são cidadãos do céu. Aplicação: Nossa verdadeira pátria é celestial. Reflexão: Você vive como cidadão do céu?",
+      "📖 <strong>RESUMO:</strong> Nossa cidadania está nos céus; de lá esperamos o Salvador.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cidade nos céus' (Hebreus 11:13-16; Efésios 2:19).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Que transformará o nosso corpo vil, para ser conforme ao seu corpo glorioso, segundo o seu eficaz poder de sujeitar também a si todas as coisas.",
+      "<strong>COMENTÁRIO:</strong> ✨ Cristo 'transformará' (metaschēmatizō – mudará a forma) nosso 'corpo vil' (sōma tapeinōseōs – corpo de humilhação, mortal) para ser 'conforme' (symmorphos – moldado junto) ao 'corpo glorioso' (sōma doxēs) dEle, pelo Seu poder (energeia) de sujeitar (hypotassō) todas as coisas. Aplicação: A ressurreição trará um corpo glorificado. Reflexão: Você aguarda a transformação do seu corpo?",
+      "📖 <strong>RESUMO:</strong> Cristo transformará nosso corpo vil em semelhante ao seu corpo glorioso.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Corpo glorioso' (1 Coríntios 15:51-53; 1 João 3:2).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 3</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 3 é uma declaração apaixonada sobre a superioridade do conhecimento de Cristo sobre todas as credenciais humanas. Paulo adverte contra os falsos mestres que impõem a circuncisão e confiam na carne. Ele lista suas próprias credenciais impecáveis, mas as considera perda em comparação com Cristo. A justiça que ele busca não é a sua própria, mas a que vem de Deus pela fé. Paulo anseia conhecer a Cristo, o poder da ressurreição e a comunhão de seus sofrimentos. Ele não afirma perfeição, mas prossegue para o alvo, esquecendo o passado e avançando. Ele alerta contra os inimigos da cruz, cujo fim é a perdição. Finalmente, ele lembra que a cidadania dos crentes está nos céus, aguardando o Salvador que transformará nossos corpos. O capítulo nos ensina que: 1) As credenciais humanas são perda diante de Cristo; 2) A justiça é pela fé, não por obras; 3) Conhecer Cristo envolve participação em seus sofrimentos; 4) A vida cristã é uma corrida em direção ao alvo; 5) Nossa cidadania é celestial; 6) Aguardamos a transformação do corpo.</p>"
+    ],
+
+    // ======================= CAPÍTULO 4 =======================
+    4: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Exortações à unidade, alegria e paz</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Cr 29:17; Is 26:3; Jo 14:27)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Portanto, meus amados e mui queridos irmãos, minha alegria e coroa, estai assim firmes no Senhor, amados.",
+      "<strong>COMENTÁRIO:</strong> 👑 Paulo chama os filipenses de 'alegria' (chara) e 'coroa' (stephanos – coroa de vitória, coroa de louvor). Ele os exorta a permanecerem 'firmes' (stēkō – estar de pé, firme) no Senhor. Aplicação: A igreja fiel é a alegria e a coroa do líder. Reflexão: Você é firme no Senhor?",
+      "📖 <strong>RESUMO:</strong> Paulo os chama de alegria e coroa; exorta-os a estarem firmes no Senhor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Firmes no Senhor' (1 Coríntios 15:58; Colossenses 4:12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Rogo a Evódia e rogo a Síntique que sintam o mesmo no Senhor.",
+      "<strong>COMENTÁRIO:</strong> 🤝 Paulo roga (parakaleō) pessoalmente a duas mulheres, Evódia e Síntique, que tenham 'o mesmo sentimento' (to auto phronein) no Senhor. Elas provavelmente eram líderes na igreja que estavam em desacordo. Aplicação: Conflitos entre irmãos devem ser resolvidos em Cristo. Reflexão: Você busca reconciliação com os irmãos?",
+      "📖 <strong>RESUMO:</strong> Paulo roga a Evódia e Síntique que se reconciliem no Senhor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mesmo sentimento' (Filipenses 2:2; 1 Pedro 3:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> E peço também a ti, meu verdadeiro companheiro, que as ajudes, pois combateram comigo no evangelho, e com Clemente, e com os outros cooperadores, cujos nomes estão no livro da vida.",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo pede a um 'verdadeiro companheiro' (gnēsie syzyge – genuíno colega de jugo, verdadeiro parceiro) que ajude essas mulheres, que 'combateram' (synathleō – lutaram juntas) com ele no evangelho. Seus nomes estão no 'livro da vida' (biblos zōēs – o registro celestial dos salvos). Aplicação: Ajudar os irmãos em conflito é um serviço importante. Reflexão: Você ajuda a reconciliar os irmãos?",
+      "📖 <strong>RESUMO:</strong> Paulo pede a um companheiro que ajude Evódia e Síntique, cujos nomes estão no livro da vida.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Livro da vida' (Apocalipse 3:5; 20:12; Êxodo 32:32-33).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Alegrai-vos sempre no Senhor; outra vez digo: Alegrai-vos.",
+      "<strong>COMENTÁRIO:</strong> 😊 A exortação mais famosa: 'alegrai-vos sempre' (chairete pantote) no Senhor. Repetida para ênfase (palin erō – outra vez digo). A alegria não depende das circunstâncias, mas está enraizada no Senhor. Aplicação: A alegria cristã é constante, não dependente de circunstâncias. Reflexão: Você se alegra sempre no Senhor?",
+      "📖 <strong>RESUMO:</strong> Alegrai-vos sempre no Senhor; outra vez digo: Alegrai-vos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Sempre alegres' (1 Tessalonicenses 5:16; Salmo 32:11).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Seja a vossa equidade notória a todos os homens. Perto está o Senhor.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ 'Equidade' (epieikēs – moderação, gentileza, razão, clemência, tolerância) deve ser notória (gnōstos – conhecida) a todos. 'Perto está o Senhor' (ho Kyrios engys) – a volta de Cristo está próxima, ou o Senhor está perto para ajudar. Aplicação: A gentileza cristã é um testemunho para os incrédulos. Reflexão: Sua gentileza é conhecida por todos?",
+      "📖 <strong>RESUMO:</strong> Seja vossa equidade notória; perto está o Senhor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perto está o Senhor' (Tiago 5:8; Salmo 34:18).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Não estejais inquietos por coisa alguma; antes, as vossas petições sejam em tudo conhecidas diante de Deus pela oração e súplica, com ações de graças.",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Não estejais inquietos' (mēden merimnate – não andeis ansiosos, preocupados) por coisa alguma. Em vez disso, 'orai' (proseuchē), 'suplique' (deēsis) e 'agradeça' (eucharistia) – apresentem tudo (panta) a Deus. Aplicação: A oração com ações de graças é o antídoto para a ansiedade. Reflexão: Você apresenta suas ansiedades a Deus?",
+      "📖 <strong>RESUMO:</strong> Não andeis ansiosos; apresentai tudo a Deus em oração e ações de graças.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não andeis ansiosos' (Mateus 6:25-34; 1 Pedro 5:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> E a paz de Deus, que excede todo o entendimento, guardará os vossos corações e os vossos pensamentos em Cristo Jesus.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ A 'paz de Deus' (eirēnē tou Theou) excede (hyperechō – ultrapassa, supera) todo entendimento (nous). Ela 'guardará' (phroureō – vigiará, protegerá como uma sentinela) os corações e mentes em Cristo. Aplicação: A paz de Deus é a guarda contra a ansiedade. Reflexão: Você experimenta a paz que excede o entendimento?",
+      "📖 <strong>RESUMO:</strong> A paz de Deus guardará vossos corações e pensamentos em Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Paz de Deus' (Colossenses 3:15; João 14:27).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Quanto ao mais, irmãos, tudo o que é verdadeiro, tudo o que é honesto, tudo o que é justo, tudo o que é puro, tudo o que é amável, tudo o que é de boa fama, se há alguma virtude, e se há algum louvor, nisso pensai.",
+      "<strong>COMENTÁRIO:</strong> 🧠 A lista de virtudes para meditação: verdadeiro (alēthēs), honesto (semnos – respeitável, digno), justo (dikaios), puro (hagnos), amável (prosphilēs – agradável), de boa fama (euphēmos – bem falado), virtuoso (aretē – excelência moral) e louvável (epainos). Aplicação: Nossos pensamentos moldam nossa vida; pensemos no que é bom. Reflexão: Você medita no que é virtuoso e louvável?",
+      "📖 <strong>RESUMO:</strong> Pensai no que é verdadeiro, honesto, justo, puro, amável, de boa fama, virtuoso e louvável.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Pensai nas coisas do alto' (Colossenses 3:2; Romanos 12:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> O que também aprendestes, e recebestes, e ouvistes, e vistes em mim, isso fazei; e o Deus de paz será convosco.",
+      "<strong>COMENTÁRIO:</strong> 👣 Aplicação prática: o que aprenderam (manthanō), receberam (paralambanō), ouviram (akouō) e viram (eidō) em Paulo – isso façam (prassō). A promessa: 'o Deus de paz será convosco'. Aplicação: A imitação de líderes piedosos traz a paz de Deus. Reflexão: Você pratica o que aprendeu com os líderes?",
+      "📖 <strong>RESUMO:</strong> O que aprendestes e vistes em Paulo, fazei; e o Deus de paz será convosco.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Deus de paz' (Romanos 15:33; 16:20).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A generosidade dos filipenses e a suficiência em Cristo</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(2Co 8:1-5; 1Tm 6:6-8)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Ora, muito me alegro no Senhor por, finalmente, reviver a vossa lembrança de mim; pois já disso vos tínheis lembrado, mas vos faltava oportunidade.",
+      "<strong>COMENTÁRIO:</strong> 😊 Paulo se alegra que o cuidado dos filipenses por ele 'reviveu' (anathallō – floresceu novamente, como planta que brota). Eles sempre se preocuparam, mas faltou oportunidade (eukaireō – ocasião, tempo favorável). Aplicação: A generosidade tem seu tempo. Reflexão: Você aproveita as oportunidades para servir?",
+      "📖 <strong>RESUMO:</strong> Paulo se alegra que o cuidado dos filipenses reviveu, embora a oportunidade faltasse.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Faltava oportunidade' (Gálatas 6:10; Provérbios 3:27).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Não digo isto por causa da necessidade, porque já aprendi a contentar-me com o que tenho.",
+      "<strong>COMENTÁRIO:</strong> 🧘 Paulo não fala por 'necessidade' (hysterēsis – carência, falta). Ele 'aprendeu' (manthanō) a 'contentar-se' (autarkēs – autossuficiente, satisfeito, independente). O contentamento é aprendido, não inato. Aplicação: O contentamento é aprendido, não inato. Reflexão: Você aprendeu a contentar-se em todas as situações?",
+      "📖 <strong>RESUMO:</strong> Paulo aprendeu a contentar-se em qualquer situação.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Contentar-me' (1 Timóteo 6:6-8; Hebreus 13:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Sei estar abatido, e sei também ter abundância; em toda a maneira e em todas as coisas estou instruído, tanto a ter fartura como a ter fome, tanto a ter abundância como a padecer necessidade.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Paulo sabe (oida) como viver em 'abatimento' (tapeinoō – humilhação, baixeza) e em 'abundância' (perisseuō – transbordar). Ele foi 'instruído' (mymyō – iniciado, ensinado por experiência) em todas as situações: fartura (chortazō – estar cheio, satisfeito), fome (peinaō), abundância (perisseuō) e necessidade (hysterēō – estar em falta). Aplicação: O cristão deve aprender a viver tanto na abundância quanto na escassez. Reflexão: Você confia em Deus na fartura e na fome?",
+      "📖 <strong>RESUMO:</strong> Paulo está instruído a viver em abundância e em necessidade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Instruído' (Provérbios 30:8-9; 2 Coríntios 6:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Posso todas as coisas naquele que me fortalece.",
+      "<strong>COMENTÁRIO:</strong> 💪 **O VERSÍCULO MAIS CITADO DE FILIPENSES**. 'Posso todas as coisas' (panta ischyō – tudo posso, tenho força para tudo) 'naquele que me fortalece' (en tō endynamounti me – no que me infunde poder). O contexto é sobre contentamento, não sobre realizar qualquer desejo. A força vem de Cristo, não de si mesmo. Aplicação: A força para suportar qualquer circunstância vem de Cristo. Reflexão: Você confia na força de Cristo para todas as situações?",
+      "📖 <strong>RESUMO:</strong> Posso todas as coisas naquele que me fortalece.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fortalece' (2 Coríntios 12:9-10; Efésios 3:16).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Todavia, fizestes bem, em tomar parte na minha aflição.",
+      "<strong>COMENTÁRIO:</strong> 🤝 Paulo reconhece a generosidade deles: 'fizestes bem' (kalōs epoiēsate) em 'tomar parte' (synkoinōneō – compartilhar, participar) em sua aflição (thlipsis). Aplicação: A generosidade é uma boa obra. Reflexão: Você compartilha das aflições dos outros?",
+      "📖 <strong>RESUMO:</strong> Os filipenses fizeram bem em participar da aflição de Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tomar parte' (Romanos 12:13; 2 Coríntios 8:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> E vós, ó filipenses, também bem sabeis que, no princípio do evangelho, quando parti da Macedônia, nenhuma igreja comunicou comigo no particular de dar e receber, senão vós somente.",
+      "<strong>COMENTÁRIO:</strong> 💰 Os filipenses foram os únicos que compartilharam com Paulo financeiramente no início do evangelho. 'Dar e receber' (dosis kai lēpsis) é uma linguagem comercial de parceria (cf. 2 Coríntios 8:13-14). Aplicação: A generosidade no início do ministério é especialmente valiosa. Reflexão: Você apoia os obreiros desde o início?",
+      "📖 <strong>RESUMO:</strong> Os filipenses foram os únicos que compartilharam com Paulo no início do evangelho.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dar e receber' (2 Coríntios 8:13-14; Gálatas 6:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Porque também, estando eu em Tessalônica, me mandastes não uma vez, mas duas, o que me era necessário.",
+      "<strong>COMENTÁRIO:</strong> 📦 Os filipenses enviaram ajuda a Paulo em Tessalônica (Atos 17:1-9), não uma (hapax), mas duas vezes (dis). Aplicação: A generosidade contínua é um exemplo. Reflexão: Você é generoso de forma consistente?",
+      "📖 <strong>RESUMO:</strong> Os filipenses enviaram ajuda a Paulo em Tessalônica mais de uma vez.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Necessário' (Atos 17:1-9; 2 Coríntios 11:9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Não que procure dádivas, mas procuro o fruto que cresça para a vossa conta.",
+      "<strong>COMENTÁRIO:</strong> 🌾 Paulo não busca presentes (dōma) em si, mas o 'fruto' (karpos) que cresce para a conta deles – ou seja, o benefício espiritual (recompensa) da generosidade. Aplicação: A generosidade traz fruto espiritual. Reflexão: Você vê sua oferta como investimento espiritual?",
+      "📖 <strong>RESUMO:</strong> Paulo não busca presentes, mas o fruto que cresce para a conta deles.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fruto' (Gálatas 5:22; Romanos 1:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Mas bastante tenho recebido, e tenho abundância; cheio estou, depois que recebi de Epafrodito o que da vossa parte me foi enviado, como cheiro de suavidade e sacrifício agradável e aprazível a Deus.",
+      "<strong>COMENTÁRIO:</strong> 🕯️ Paulo está 'cheio' (peplērōmai – satisfeito, completo). A oferta deles é como 'cheiro de suavidade' (osmē euōdias) e 'sacrifício agradável' (thysia dekta – aceitável) a Deus. A linguagem é sacerdotal (Levítico 1:9; Efésios 5:2). Aplicação: A oferta generosa é um sacrifício agradável a Deus. Reflexão: Você vê sua oferta como adoração a Deus?",
+      "📖 <strong>RESUMO:</strong> Paulo tem abundância; a oferta é cheiro de suavidade e sacrifício agradável a Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cheiro de suavidade' (Efésios 5:2; Gênesis 8:21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> O meu Deus, segundo as suas riquezas, suprirá todas as vossas necessidades em glória, por Cristo Jesus.",
+      "<strong>COMENTÁRIO:</strong> 🙌 A promessa: Deus 'suprirá' (plēroō – encherá, cumprirá) todas as necessidades (chreia) deles, 'segundo as suas riquezas' (kata to ploutos – de acordo com a abundância de Sua glória) e 'em glória' (en doxē) por Cristo. Aplicação: Deus é o provedor generoso. Reflexão: Você confia que Deus suprirá suas necessidades?",
+      "📖 <strong>RESUMO:</strong> Deus suprirá todas as necessidades dos filipenses, segundo suas riquezas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Suprirá' (Salmo 23:1; 84:11; 2 Coríntios 9:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Ora, a Deus e nosso Pai seja glória para todo o sempre. Amém.",
+      "<strong>COMENTÁRIO:</strong> 🙌 Doxologia: glória (doxa) a Deus Pai para todo o sempre (eis tous aiōnas tōn aiōnōn – para os séculos dos séculos). Amém. Aplicação: A glória de Deus é o propósito final de tudo. Reflexão: Sua vida dá glória a Deus?",
+      "📖 <strong>RESUMO:</strong> Glória a Deus Pai para todo o sempre. Amém.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Glória para todo o sempre' (Romanos 11:36; Efésios 3:21).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Saudações finais e bênção</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 16:16; 1Co 16:23)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Saudai a todos os santos em Cristo Jesus. Os irmãos que estão comigo vos saúdam.",
+      "<strong>COMENTÁRIO:</strong> 🤝 Saudações mútuas entre Paulo e os santos. Aplicação: A comunhão entre os santos é expressa em saudações. Reflexão: Você saúda os irmãos com amor?",
+      "📖 <strong>RESUMO:</strong> Paulo saúda todos os santos; os irmãos com ele também os saúdam.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Saudai os santos' (Romanos 16:16; 1 Coríntios 16:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> Todos os santos vos saúdam, mas especialmente os que são da casa de César.",
+      "<strong>COMENTÁRIO:</strong> 🏛️ Saudações especiais 'da casa de César' (Kaisaros oikia) – pessoas do palácio imperial (funcionários, escravos, libertos) que se converteram. Isso mostra que o evangelho alcançou até o círculo de Nero. Aplicação: O evangelho alcança até os palácios. Reflexão: Você testemunha Cristo onde está?",
+      "📖 <strong>RESUMO:</strong> Todos os santos vos saúdam, especialmente os da casa de César.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Casa de César' (Atos 28:30-31; Filipenses 1:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> A graça de nosso Senhor Jesus Cristo seja com todos vós. Amém.",
+      "<strong>COMENTÁRIO:</strong> 🙌 Bênção final: 'A graça' (charis) de Cristo seja com todos. Amém. Aplicação: A graça de Cristo é a última palavra. Reflexão: Você vive pela graça de Cristo?",
+      "📖 <strong>RESUMO:</strong> A graça de nosso Senhor Jesus Cristo seja com todos vós. Amém.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Graça do Senhor' (2 Coríntios 13:14; Gálatas 6:18).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 4</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 4 é uma conclusão cheia de exortações práticas e promessas. Paulo roga a Evódia e Síntique que se reconciliem, exorta os filipenses a se alegrarem sempre, a serem moderados, a não andarem ansiosos, mas a orarem com ações de graças. A promessa é que a paz de Deus guardará seus corações. Paulo os exorta a meditar no que é virtuoso e a praticar o que aprenderam dele. Ele agradece pela generosidade dos filipenses, que o apoiaram financeiramente, e declara que aprendeu a se contentar em todas as situações. A famosa declaração 'posso todas as coisas naquele que me fortalece' é dada nesse contexto de contentamento. Paulo encerra com a promessa de que Deus suprirá todas as necessidades deles e com saudações da casa de César. O capítulo nos ensina que: 1) A reconciliação entre irmãos é essencial; 2) A alegria, a moderação e a oração são marcas do cristão; 3) A paz de Deus guarda os corações; 4) A meditação no que é bom transforma a mente; 5) O contentamento é aprendido em Cristo; 6) A generosidade é um sacrifício agradável a Deus; 7) Deus suprirá todas as necessidades.</p>",
+    
+
+  // ======================= RESUMO FINAL DO LIVRO =======================
+ 
+    "<p style='font-size: 1rem; text-align: center;'><i><strong>RESUMO FINAL DE FILIPENSES</strong></i></p>",
+    "<p style='font-size: 0.6rem;'>A Epístola aos Filipenses é a carta da alegria. Escrita por Paulo durante sua prisão em Roma, ela respira alegria em meio à adversidade. Paulo agradece pela cooperação dos filipenses no evangelho e expressa sua confiança de que Deus completará a boa obra neles.</p>",
+    "<p style='font-size: 0.6rem;'>O coração da carta é o hino de Cristo (capítulo 2), que descreve a humilhação voluntária de Cristo e Sua exaltação. Paulo exorta os filipenses a terem a mesma mentalidade de humildade e serviço. Ele também trata da justiça pela fé (capítulo 3), considerando todas as suas credenciais humanas como perda diante do conhecimento de Cristo.</p>",
+    "<p style='font-size: 0.6rem;'>A carta é marcada por temas como alegria, contentamento, unidade, humildade e generosidade. Paulo declara que 'viver é Cristo, e morrer é ganho' (1:21) e que 'pode todas as coisas naquele que o fortalece' (4:13). A cidadania dos crentes está nos céus, e eles aguardam o Salvador que transformará seus corpos (3:20-21).</p>",
+    "<p style='font-size: 0.7rem;'><strong>LIÇÕES PRINCIPAIS:</strong></p>",
+    "<ul style='font-size: 0.6rem;'>",
+    "  <li><strong>Viver é Cristo:</strong> Cristo é o centro da vida cristã (Filipenses 1:21).</li>",
+    "  <li><strong>A humildade de Cristo:</strong> Ele se esvaziou e se humilhou, sendo obediente até a morte de cruz (Filipenses 2:5-8).</li>",
+    "  <li><strong>Justiça pela fé:</strong> Nossa justiça não vem da lei, mas de Deus pela fé em Cristo (Filipenses 3:9).</li>",
+    "  <li><strong>Prosseguir para o alvo:</strong> A vida cristã é uma corrida em direção a Cristo (Filipenses 3:13-14).</li>",
+    "  <li><strong>Contentamento:</strong> Aprendemos a nos contentar em todas as circunstâncias pela força de Cristo (Filipenses 4:11-13).</li>",
+    "  <li><strong>Alegria e paz:</strong> A alegria no Senhor e a paz de Deus guardam os corações (Filipenses 4:4-7).</li>",
+    "  <li><strong>Cidadania celestial:</strong> Nossa verdadeira pátria está nos céus (Filipenses 3:20).</li>",
+    "</ul>",
+    "<p style='font-size: 0.6rem;'>Que possamos viver com a mentalidade de Cristo, alegrando-nos sempre, confiando na força que Ele nos dá, e aguardando a transformação que Ele trará.</p>"
+  ]
+  },
+};

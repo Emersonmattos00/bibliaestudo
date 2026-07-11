@@ -1,0 +1,1008 @@
+window.LIVRO_DATA = {
+  nome: "Gálatas",
+  id: "galatas",
+  testament: "NT",
+
+  dados: {
+    // ======================= CAPÍTULO 1 =======================
+    1: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Saudação e propósito da carta</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(At 9:1-19; 22:3-16; 26:9-18)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Paulo, apóstolo (não da parte dos homens, nem por homem algum, mas por Jesus Cristo, e por Deus Pai, que o ressuscitou dos mortos),",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo se apresenta com autoridade apostólica, mas com uma ênfase única: seu apostolado não tem origem humana. Ele não foi comissionado por homens (nem por um concílio humano), mas diretamente por Jesus Cristo e por Deus Pai. A ressurreição de Cristo é o fundamento de sua autoridade. Aplicação: A verdadeira autoridade espiritual vem de Deus, não de títulos ou nomeações humanas. Reflexão: Você reconhece sua posição em Cristo como vinda diretamente dEle, não de homens?",
+      "📖 <strong>RESUMO:</strong> Paulo é apóstolo, não por homens, mas por Jesus Cristo e Deus Pai.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não da parte dos homens' (Atos 9:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> E todos os irmãos que estão comigo, às igrejas da Galácia:",
+      "<strong>COMENTÁRIO:</strong> 👥 Paulo inclui os irmãos que estão com ele, demonstrando que não está isolado, mas em comunhão com outros obreiros. A carta é endereçada às 'igrejas da Galácia' (plural) – uma região da Ásia Menor (atual Turquia) onde Paulo havia plantado igrejas em Antioquia da Pisídia, Icônio, Listra e Derbe. Aplicação: O ministério não é solitário; há uma comunidade de irmãos que apoiam a mensagem. Reflexão: Você valoriza a comunhão dos irmãos em seu ministério?",
+      "📖 <strong>RESUMO:</strong> Paulo e os irmãos escrevem às igrejas da Galácia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Igrejas da Galácia' (Atos 13:14-14:23).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Graça a vós e paz da parte de Deus Pai e do nosso Senhor Jesus Cristo,",
+      "<strong>COMENTÁRIO:</strong> 🕊️ A saudação cristã clássica: 'Graça' (charis) – o favor imerecido de Deus, e 'paz' (eirene) – a reconciliação e bem-estar que vêm da graça. Ambas vêm do Pai e do Senhor Jesus. Aplicação: A graça e a paz são dons de Deus que devem marcar a vida cristã. Reflexão: Você experimenta a graça e a paz de Deus diariamente?",
+      "📖 <strong>RESUMO:</strong> Paulo saúda com graça e paz da parte de Deus Pai e do Senhor Jesus Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Graça e paz' (Romanos 1:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> O qual se deu a si mesmo por nossos pecados, para nos livrar deste presente século mau, segundo a vontade de Deus nosso Pai,",
+      "<strong>COMENTÁRIO:</strong> ✝️ O propósito da morte de Cristo: (1) Ele 'se deu a si mesmo' – voluntário e sacrificial; (2) 'por nossos pecados' – substituição; (3) 'para nos livrar deste presente século mau' – resgate do sistema mundial dominado pelo mal; (4) 'segundo a vontade de Deus nosso Pai' – o plano redentor de Deus. Aplicação: A cruz não foi um acidente, mas o plano eterno de Deus para nos libertar. Reflexão: Você reconhece que Cristo se entregou voluntariamente por seus pecados para libertá-lo?",
+      "📖 <strong>RESUMO:</strong> Cristo se deu por nossos pecados para nos livrar deste século mau, segundo a vontade de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Se deu a si mesmo' (Efésios 5:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Ao qual seja glória para todo o sempre. Amém.",
+      "<strong>COMENTÁRIO:</strong> 🙌 Doxologia: toda a glória pertence a Deus. 'Amém' – assim seja. Aplicação: O propósito final de tudo é a glória de Deus. Reflexão: Sua vida glorifica a Deus?",
+      "📖 <strong>RESUMO:</strong> Glória a Deus para todo o sempre. Amém.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Glória para todo o sempre' (Romanos 11:36).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>O único evangelho e a defesa de sua origem divina</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Co 15:1-4; 2Co 11:4)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Maravilho-me de que tão depressa passásseis daquele que vos chamou à graça de Cristo para outro evangelho,",
+      "<strong>COMENTÁRIO:</strong> 😮 Paulo expressa espanto e decepção. Os gálatas estavam se afastando (metatithēmi – mudando de posição) do Deus que os chamou pela graça para um 'outro evangelho'. A aplicação: A facilidade com que as pessoas se desviam da verdade é alarmante. Reflexão: Você tem sido firme no evangelho da graça, ou tem se deixado levar por ensinos diferentes?",
+      "📖 <strong>RESUMO:</strong> Paulo se maravilha que os gálatas estejam se desviando para outro evangelho.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Outro evangelho' (2 Coríntios 11:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> O qual não é outro, mas há alguns que vos inquietam e querem transtornar o evangelho de Cristo.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ O 'outro evangelho' não é realmente outro; é uma distorção do único evangelho. Os falsos mestres estão 'inquietando' (tarassō – perturbando, agitando) e querendo 'transtornar' (metastrephō – perverter, virar de cabeça para baixo) o evangelho de Cristo. Aplicação: Qualquer mensagem que acrescente algo à obra consumada de Cristo é uma perversão do evangelho. Reflexão: Você reconhece as distorções do evangelho que circulam hoje?",
+      "📖 <strong>RESUMO:</strong> O falso evangelho não é outro evangelho; é uma perversão do verdadeiro.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Transtornar o evangelho' (Atos 15:24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Mas, ainda que nós ou um anjo do céu vos anunciasse outro evangelho além do que já vos tenho anunciado, seja anátema.",
+      "<strong>COMENTÁRIO:</strong> 🔥 Paulo pronuncia uma maldição (anátema) sobre qualquer um – incluindo ele mesmo ou um anjo – que pregue um evangelho diferente. Aplicação: O evangelho é imutável e não está sujeito a revisões, nem mesmo por autoridades espirituais. Reflexão: Você estaria disposto a rejeitar até mesmo um anjo se ele pregasse um evangelho diferente?",
+      "📖 <strong>RESUMO:</strong> Se nós ou um anjo pregar outro evangelho, seja anátema.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Anátema' (1 Coríntios 16:22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Assim, como já vo-lo dissemos, agora de novo também vo-lo digo. Se alguém vos anunciar outro evangelho além do que recebestes, seja anátema.",
+      "<strong>COMENTÁRIO:</strong> 📢 Paulo repete a advertência para enfatizar. A verdade do evangelho é de importância máxima. Aplicação: A repetição da verdade é necessária para proteção contra o erro. Reflexão: Você é firme na verdade do evangelho, ou está aberto a 'novas' mensagens?",
+      "📖 <strong>RESUMO:</strong> Paulo repete: se alguém pregar outro evangelho, seja anátema.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Recebestes' (1 Coríntios 15:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Porque, persuado eu agora a homens ou a Deus? ou procuro agradar a homens? Se estivesse ainda agradando aos homens, não seria servo de Cristo.",
+      "<strong>COMENTÁRIO:</strong> 👤 Paulo distingue entre agradar a homens e ser servo de Cristo. O evangelho da graça não é popular; ele ofende o orgulho humano e atrai perseguição. Quem busca agradar a homens dilui a mensagem. Aplicação: A fidelidade a Cristo pode custar a aprovação humana. Reflexão: Você busca agradar a Deus ou aos homens?",
+      "📖 <strong>RESUMO:</strong> Paulo não busca agradar a homens, mas a Deus; caso contrário, não seria servo de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Servo de Cristo' (Romanos 1:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Mas faço-vos saber, irmãos, que o evangelho que por mim foi anunciado não é segundo os homens.",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo declara categoricamente: o evangelho que ele prega não é de origem humana. Não é uma tradição ou filosofia humana. Aplicação: O evangelho não é uma invenção humana, mas revelação divina. Reflexão: Você crê que o evangelho é a Palavra de Deus, não a palavra de homens?",
+      "📖 <strong>RESUMO:</strong> O evangelho de Paulo não é segundo os homens.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não é segundo os homens' (1 Tessalonicenses 2:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Porque não o recebi, nem aprendi de homem algum, mas pela revelação de Jesus Cristo.",
+      "<strong>COMENTÁRIO:</strong> 🔮 Paulo enfatiza a origem divina do seu evangelho: não o recebeu por tradição oral, nem aprendeu em escolas rabínicas, mas por revelação direta (apokalypsis) de Jesus Cristo. Aplicação: A verdade do evangelho vem de Deus, não de tradições humanas. Reflexão: Você confia na revelação de Deus ou nas tradições humanas?",
+      "📖 <strong>RESUMO:</strong> Paulo recebeu o evangelho por revelação de Jesus Cristo, não de homens.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Revelação de Jesus Cristo' (Apocalipse 1:1).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A conversão e o chamado de Paulo</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(At 9:1-22; 26:12-18)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Porque já ouvistes qual foi antigamente a minha conduta no judaísmo, como sobremaneira perseguia a igreja de Deus e a assolava.",
+      "<strong>COMENTÁRIO:</strong> 😰 Paulo relembra seu passado como perseguidor. Ele 'assolava' (portheō – devastava) a igreja de Deus. Aplicação: O passado de pecado não impede o chamado de Deus. Reflexão: Você já experimentou a transformação radical que Deus pode operar?",
+      "📖 <strong>RESUMO:</strong> Paulo perseguia e assolava a igreja de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perseguia a igreja' (Atos 8:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> E excedia em judaísmo a muitos da minha idade entre os da minha nação, sendo extremamente zeloso das tradições de meus pais.",
+      "<strong>COMENTÁRIO:</strong> 📜 Paulo era um judeu de destaque, superando muitos em zelo pelas tradições. Aplicação: O zelo religioso sem conhecimento da verdade pode ser perigoso. Reflexão: Você tem zelo, mas é segundo o conhecimento de Cristo?",
+      "📖 <strong>RESUMO:</strong> Paulo excedia em judaísmo e era zeloso das tradições dos pais.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Zeloso das tradições' (Atos 22:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Mas, quando aprouve a Deus, que desde o ventre de minha mãe me separou, e me chamou pela sua graça,",
+      "<strong>COMENTÁRIO:</strong> ✨ Paulo reconhece que sua vocação não foi acidental. Deus o 'separou' (aphorizō) desde o ventre (antes de nascer) e o chamou pela graça, não por mérito. Aplicação: O chamado de Deus é soberano e gracioso. Reflexão: Você reconhece que Deus o chamou pela graça, não por seus méritos?",
+      "📖 <strong>RESUMO:</strong> Deus separou Paulo desde o ventre e o chamou pela sua graça.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Separou desde o ventre' (Jeremias 1:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Revelar seu Filho em mim, para que o pregasse entre os gentios, não consultei carne e sangue;",
+      "<strong>COMENTÁRIO:</strong> 🗺️ O propósito da revelação: 'revelar seu Filho em mim' (para que Paulo conhecesse Cristo intimamente) e 'para que o pregasse entre os gentios' (missão). Paulo não consultou 'carne e sangue' – ou seja, não buscou aprovação humana imediatamente. Aplicação: O chamado para o ministério vem de Deus e não depende da aprovação humana. Reflexão: Você busca a direção de Deus ou a opinião dos homens?",
+      "📖 <strong>RESUMO:</strong> Deus revelou seu Filho em Paulo para que o pregasse entre os gentios.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Revelar seu Filho' (2 Coríntios 4:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Nem subi a Jerusalém, aos que eram apóstolos antes de mim, mas parti para a Arábia, e voltei outra vez a Damasco.",
+      "<strong>COMENTÁRIO:</strong> 🏜️ Paulo não foi imediatamente a Jerusalém para ser instruído pelos apóstolos. Ele foi para a Arábia (provavelmente para meditar e receber revelação) e depois voltou a Damasco. Aplicação: A independência de Paulo em relação aos apóstolos humanos demonstra a origem divina de seu evangelho. Reflexão: Você busca aprovação de Deus antes da aprovação dos homens?",
+      "📖 <strong>RESUMO:</strong> Paulo foi para a Arábia e depois voltou a Damasco, sem subir a Jerusalém.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Arábia' (Atos 9:19-25).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Depois, passados três anos, fui a Jerusalém para ver a Pedro, e fiquei com ele quinze dias.",
+      "<strong>COMENTÁRIO:</strong> 🏛️ Três anos depois, Paulo visitou Jerusalém para ver Pedro (Cefas). Ficou apenas quinze dias – não foi um período longo de instrução. Aplicação: A independência de Paulo demonstra que seu evangelho não veio de Pedro. Reflexão: Você valoriza a independência que Deus dá para revelar Sua verdade?",
+      "📖 <strong>RESUMO:</strong> Três anos depois, Paulo foi a Jerusalém para ver Pedro e ficou quinze dias.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fui a Jerusalém' (Atos 9:26-30).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> E não vi nenhum outro dos apóstolos, senão a Tiago, irmão do Senhor.",
+      "<strong>COMENTÁRIO:</strong> 👤 Paulo viu apenas Pedro e Tiago (irmão de Jesus, líder da igreja em Jerusalém). Isso mostra que ele não foi instruído pelos apóstolos, confirmando a origem divina de seu evangelho. Aplicação: A autoridade de Paulo não dependia dos outros apóstolos. Reflexão: Você confia na revelação de Deus independentemente de aprovação humana?",
+      "📖 <strong>RESUMO:</strong> Paulo viu apenas Pedro e Tiago, irmão do Senhor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tiago, irmão do Senhor' (1 Coríntios 15:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Ora, acerca do que vos escrevo, eis que diante de Deus testifico que não minto.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Paulo jura solenemente (diante de Deus) que está dizendo a verdade. Aplicação: A integridade é fundamental no ministério. Reflexão: Suas palavras são dignas de confiança diante de Deus?",
+      "📖 <strong>RESUMO:</strong> Paulo testifica diante de Deus que não mente.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Testifico que não minto' (Romanos 9:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Depois fui para as regiões da Síria e da Cilícia.",
+      "<strong>COMENTÁRIO:</strong> 🗺️ Paulo pregou na Síria e na Cilícia (sua terra natal). Aplicação: O ministério de Paulo se expandiu gradualmente. Reflexão: Você está disposto a servir onde Deus o colocar?",
+      "📖 <strong>RESUMO:</strong> Paulo foi para as regiões da Síria e Cilícia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Síria e Cilícia' (Atos 9:30).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> E não era conhecido de vista pelas igrejas da Judeia, que estavam em Cristo;",
+      "<strong>COMENTÁRIO:</strong> 👀 As igrejas da Judeia não conheciam Paulo pessoalmente. Aplicação: A fama não era o objetivo de Paulo; ele servia a Deus onde quer que estivesse. Reflexão: Você serve para ser conhecido ou para glorificar a Deus?",
+      "📖 <strong>RESUMO:</strong> Paulo não era conhecido de vista pelas igrejas da Judeia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Igrejas da Judeia' (1 Tessalonicenses 2:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> Mas somente ouviram dizer: Aquele que antes nos perseguia, agora anuncia a fé que antes destruía.",
+      "<strong>COMENTÁRIO:</strong> 🔄 A notícia da conversão de Paulo se espalhou. O perseguidor agora pregava a fé que antes tentava destruir. Aplicação: A transformação radical de Paulo é um testemunho poderoso do poder de Deus. Reflexão: Sua transformação em Cristo é evidente para outros?",
+      "📖 <strong>RESUMO:</strong> Ouviam dizer que Paulo, antes perseguidor, agora anunciava a fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Anuncia a fé' (Atos 9:20-21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> E glorificavam a Deus por mim.",
+      "<strong>COMENTÁRIO:</strong> 🙌 A resposta das igrejas à conversão de Paulo era glorificar a Deus. Aplicação: Nossas vidas transformadas devem levar outros a glorificar a Deus. Reflexão: Sua vida leva outros a glorificar a Deus?",
+      "📖 <strong>RESUMO:</strong> As igrejas glorificavam a Deus por causa de Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Glorificavam a Deus' (Atos 21:20).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 1</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 1 é uma defesa apaixonada da origem divina do evangelho. Paulo estabelece sua autoridade apostólica como vinda diretamente de Cristo, não de homens. Ele se espanta que os gálatas estejam se desviando para um evangelho diferente – na verdade, uma perversão do único evangelho. Paulo pronuncia um anátema sobre qualquer um, incluindo anjos, que pregue outro evangelho. Ele não busca agradar a homens, mas a Deus. O evangelho que ele prega não é de origem humana, mas por revelação de Jesus Cristo. Paulo relembra seu passado como perseguidor, sua conversão e seu chamado, enfatizando que não recebeu seu evangelho de homens, mas diretamente de Deus. O capítulo nos ensina que: 1) A autoridade espiritual vem de Deus; 2) O evangelho é imutável; 3) Devemos buscar agradar a Deus, não aos homens; 4) A transformação radical é um testemunho do poder de Deus; 5) Nossa vida deve levar outros a glorificar a Deus.</p>"
+    ],
+
+    // ======================= CAPÍTULO 2 =======================
+    2: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Paulo reconhecido pelos apóstolos em Jerusalém</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(At 15:1-29; 2Co 2:13)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Depois, passados catorze anos, subi outra vez a Jerusalém com Barnabé, levando também comigo Tito.",
+      "<strong>COMENTÁRIO:</strong> 🗓️ Catorze anos após sua conversão, Paulo subiu a Jerusalém. Ele levou Barnabé (o 'filho da consolação') e Tito (um gentio convertido). Aplicação: A comunhão e a parceria no ministério são importantes. Reflexão: Você valoriza a parceria com outros obreiros?",
+      "📖 <strong>RESUMO:</strong> Passados catorze anos, Paulo subiu a Jerusalém com Barnabé e Tito.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Com Barnabé' (Atos 15:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> E subi por revelação, e lhes expus o evangelho que prego entre os gentios, mas particularmente aos que estavam em estima, para que de maneira alguma não corresse ou não tivesse corrido em vão.",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo foi a Jerusalém 'por revelação' – não por um pedido humano, mas por direção divina. Ele expôs o evangelho que pregava aos gentios para os líderes (em estima – Tiago, Pedro, João), para garantir que sua mensagem estivesse em harmonia com a verdade. Aplicação: A comunhão com a igreja mãe é importante, mas a autoridade final é a revelação de Deus. Reflexão: Você busca a confirmação da verdade?",
+      "📖 <strong>RESUMO:</strong> Paulo subiu por revelação e expôs o evangelho aos líderes.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Por revelação' (Atos 15:2-4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Mas nem ainda Tito, que estava comigo, sendo grego, foi constrangido a circuncidar-se;",
+      "<strong>COMENTÁRIO:</strong> ✡️ Tito, um grego (não circuncidado), não foi obrigado a se circuncidar. Isso demonstra que os líderes de Jerusalém reconheceram que a circuncisão não era necessária para a salvação. Aplicação: A salvação não depende de rituais ou tradições culturais. Reflexão: Você impõe tradições culturais como requisitos para a salvação?",
+      "📖 <strong>RESUMO:</strong> Tito, sendo grego, não foi constrangido a circuncidar-se.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Sendo grego' (Atos 16:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> E isso por causa dos falsos irmãos que se introduziram, e entraram secretamente a espreitar a nossa liberdade, que temos em Cristo Jesus, para nos porem em servidão.",
+      "<strong>COMENTÁRIO:</strong> 👤 Falsos irmãos (pseudadelphos) infiltraram-se para espionar (kataskopeō) a liberdade dos crentes em Cristo, com a intenção de impor a servidão (katadouloō) da lei. Aplicação: Cuidado com quem se infiltra na igreja para roubar sua liberdade. Reflexão: Você está vigilante contra aqueles que querem impor legalismo?",
+      "📖 <strong>RESUMO:</strong> Falsos irmãos se infiltraram para espiar a liberdade em Cristo e impor servidão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Falsos irmãos' (2 Coríntios 11:26).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Aos quais nem ainda por uma hora nos sujeitamos, para que a verdade do evangelho permanecesse entre vós.",
+      "<strong>COMENTÁRIO:</strong> 💪 Paulo não cedeu aos falsos irmãos, nem por um momento, para preservar a verdade do evangelho. Aplicação: A verdade do evangelho deve ser defendida com firmeza. Reflexão: Você está disposto a resistir à pressão para preservar a verdade?",
+      "📖 <strong>RESUMO:</strong> Paulo não se sujeitou aos falsos irmãos para que a verdade do evangelho permanecesse.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Verdade do evangelho' (Gálatas 2:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> E, quanto àqueles que pareciam ser alguma coisa (quais tenham sido, outrora, não me interessa; Deus não aceita a aparência do homem), esses, digo, que pareciam ser alguma coisa, nada me acrescentaram.",
+      "<strong>COMENTÁRIO:</strong> 👑 Paulo não se impressionou com a reputação dos líderes de Jerusalém. Deus não aceita a aparência (prosōpon – face, posição) do homem. Eles nada acrescentaram ao seu evangelho. Aplicação: A verdade não depende da fama ou posição de quem a prega. Reflexão: Você valoriza a verdade acima da reputação humana?",
+      "📖 <strong>RESUMO:</strong> Os líderes que pareciam ser algo nada acrescentaram a Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não aceita a aparência' (Romanos 2:11).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Antes, pelo contrário, quando viram que o evangelho da incircuncisão me estava confiado, como a Pedro o da circuncisão",
+      "<strong>COMENTÁRIO:</strong> 📜 Os líderes reconheceram que Deus havia confiado a Paulo o evangelho para os incircuncisos (gentios), assim como a Pedro para os circuncisos (judeus). Aplicação: Deus tem diferentes missões para diferentes servos. Reflexão: Você reconhece o chamado específico de Deus para sua vida?",
+      "📖 <strong>RESUMO:</strong> O evangelho da incircuncisão foi confiado a Paulo, como o da circuncisão a Pedro.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Evangelho da incircuncisão' (Atos 13:46-47).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> (Porque aquele que operou eficazmente em Pedro para o apostolado da circuncisão, esse operou também em mim com eficácia para com os gentios),",
+      "<strong>COMENTÁRIO:</strong> 🔥 Deus operou eficazmente (energeō) tanto em Pedro quanto em Paulo. A aplicação: A mesma graça de Deus opera em diferentes ministérios. Reflexão: Você reconhece a obra de Deus em outros ministros, mesmo que diferentes do seu?",
+      "📖 <strong>RESUMO:</strong> Deus operou eficazmente em Pedro e também em Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Operou eficazmente' (1 Coríntios 12:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> E conhecendo Tiago, Cefas e João, que eram considerados como colunas, a graça que me tinha sido dada, deram-nos as destras de comunhão, a mim e a Barnabé, para que fôssemos aos gentios, e eles à circuncisão.",
+      "<strong>COMENTÁRIO:</strong> 🤝 Tiago, Pedro e João (as 'colunas' da igreja) deram a Paulo e Barnabé a 'destra de comunhão' – um gesto de acordo e parceria. Eles concordaram que Paulo e Barnabé iriam aos gentios, e eles aos judeus. Aplicação: A unidade na diversidade de ministérios é um princípio bíblico. Reflexão: Você promove a unidade na igreja, mesmo com diferentes ênfases ministeriais?",
+      "📖 <strong>RESUMO:</strong> Tiago, Pedro e João deram as destras de comunhão a Paulo e Barnabé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Colunas' (1 Timóteo 3:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Recomendando-nos somente que nos lembrássemos dos pobres, o que também procurei fazer com diligência.",
+      "<strong>COMENTÁRIO:</strong> 🤲 A única recomendação dos apóstolos foi lembrar dos pobres – algo que Paulo já fazia com diligência (spoudazō). Aplicação: O cuidado com os pobres é uma parte essencial do evangelho. Reflexão: Você se preocupa com os necessitados e age para ajudar?",
+      "📖 <strong>RESUMO:</strong> A única recomendação foi lembrar dos pobres, o que Paulo já fazia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Lembrar dos pobres' (Romanos 15:26).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Paulo repreende Pedro em Antioquia</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(At 11:19-26; 15:35-41)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> E, chegando Pedro a Antioquia, lhe resisti na cara, porque era repreensível.",
+      "<strong>COMENTÁRIO:</strong> 👊 Paulo confrontou Pedro cara a cara em Antioquia, porque Pedro estava errado (kategnōsmenos). Aplicação: A correção fraternal, quando necessária, deve ser feita com amor e coragem. Reflexão: Você está disposto a confrontar irmãos que erram, mesmo que sejam líderes?",
+      "📖 <strong>RESUMO:</strong> Paulo resistiu a Pedro em Antioquia, porque era repreensível.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Resisti na cara' (1 Timóteo 5:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Porque, antes que alguns tivessem chegado da parte de Tiago, comia com os gentios; mas, depois que chegaram, se foi retirando e se apartou deles, temendo os que eram da circuncisão.",
+      "<strong>COMENTÁRIO:</strong> 😔 Pedro antes comia com os gentios (demonstrando que a lei alimentar não era mais obrigatória). Mas quando alguns judeus chegaram da parte de Tiago, Pedro se retirou e se separou, temendo os da circuncisão. Aplicação: O medo da opinião humana pode nos levar a agir de forma hipócrita. Reflexão: Você age por temor dos homens ou por temor de Deus?",
+      "📖 <strong>RESUMO:</strong> Pedro comia com gentios, mas se retirou temendo os da circuncisão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Temendo os que eram da circuncisão' (Atos 10:28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> E os outros judeus também dissimulavam com ele, de maneira que até Barnabé se deixou levar pela sua dissimulação.",
+      "<strong>COMENTÁRIO:</strong> 🎭 A hipocrisia (hypokrisis) de Pedro contaminou outros judeus, e até Barnabé (o 'filho da consolação') foi arrastado. Aplicação: A influência de líderes pode ser poderosa, para o bem ou para o mal. Reflexão: Você é uma influência positiva ou negativa?",
+      "📖 <strong>RESUMO:</strong> Os outros judeus e até Barnabé se deixaram levar pela dissimulação.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dissimulação' (1 Pedro 2:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Mas, quando vi que não andavam retamente conforme a verdade do evangelho, disse a Pedro na presença de todos: Se tu, sendo judeu, vives como os gentios e não como os judeus, por que obrigas os gentios a viverem como judeus?",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Paulo viu que eles não estavam andando retamente (orthopodeō) conforme a verdade do evangelho. Ele confrontou Pedro publicamente porque seu erro era público. A pergunta de Paulo expõe a contradição: Pedro vivia como gentio (comendo com eles), mas agora exigia que os gentios vivessem como judeus. Aplicação: A coerência entre o que cremos e como vivemos é essencial. Reflexão: Sua vida é coerente com a verdade do evangelho?",
+      "📖 <strong>RESUMO:</strong> Paulo confrontou Pedro publicamente, perguntando por que ele obrigava os gentios a viverem como judeus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Verdade do evangelho' (Gálatas 2:5).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Justificados pela fé, não pelas obras da lei</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Sl 143:2; Rm 3:20; 1Co 15:10)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Nós, judeus por natureza, e não pecadores dentre os gentios,",
+      "<strong>COMENTÁRIO:</strong> 👤 Paulo se identifica com os judeus ('nós') que, por nascimento, são judeus e não considerados 'pecadores' como os gentios. Aplicação: A superioridade racial não tem lugar no evangelho. Reflexão: Você vê os outros como inferiores por sua origem?",
+      "📖 <strong>RESUMO:</strong> Paulo fala como judeu por natureza, não pecador dentre os gentios.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Judeus por natureza' (Romanos 2:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Sabendo que o homem não é justificado pelas obras da lei, mas pela fé em Jesus Cristo, temos também crido em Jesus Cristo, para sermos justificados pela fé de Cristo, e não pelas obras da lei; porquanto pelas obras da lei nenhuma carne será justificada.",
+      "<strong>COMENTÁRIO:</strong> ✝️ **O VERSÍCULO CENTRAL DE GÁLATAS**. Paulo declara que a justificação (declaração de justo) não vem pelas obras da lei (erga nomou), mas pela fé em Jesus Cristo. A lei não pode justificar ninguém. A aplicação: A salvação é pela fé, não por obras. Reflexão: Você confia na obra de Cristo ou em seus próprios esforços para ser justificado?",
+      "📖 <strong>RESUMO:</strong> O homem não é justificado pelas obras da lei, mas pela fé em Jesus Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Justificado pela fé' (Romanos 3:20,28).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Pois, se nós, que procuramos ser justificados em Cristo, nós mesmos somos também achados pecadores, é porventura Cristo ministro do pecado? De maneira nenhuma.",
+      "<strong>COMENTÁRIO:</strong> ❓ Se, ao buscar justificação em Cristo, nós (judeus) somos considerados pecadores como os gentios, isso significa que Cristo é ministro do pecado? Paulo responde enfaticamente: 'De maneira nenhuma!' (mē genoito). Aplicação: A graça não é licença para pecar. Reflexão: Você usa a graça como desculpa para o pecado?",
+      "📖 <strong>RESUMO:</strong> Se Cristo nos torna pecadores? De maneira nenhuma.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'De maneira nenhuma' (Romanos 6:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Porque, se torno a edificar aquilo que destruí, constituo-me a mim mesmo transgressor.",
+      "<strong>COMENTÁRIO:</strong> 🏗️ Se Paulo (ou qualquer crente) volta a confiar na lei para justificação, ele se torna transgressor. Aplicação: Voltar ao legalismo após conhecer a graça é uma transgressão maior. Reflexão: Você já abandonou a graça para confiar em obras?",
+      "📖 <strong>RESUMO:</strong> Se torno a edificar o que destruí, sou transgressor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Edificar aquilo que destruí' (Romanos 3:31).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Porque eu, pela lei, estou morto para a lei, para viver para Deus.",
+      "<strong>COMENTÁRIO:</strong> ⚰️ A lei tem um propósito: condenar o pecador e levá-lo à morte para o sistema legal. Paulo está 'morto para a lei' – ou seja, a lei já não tem jurisdição sobre ele, pois ele morreu com Cristo. O propósito disso é 'viver para Deus'. Aplicação: A morte para a lei nos liberta para viver para Deus. Reflexão: Você está morto para a lei e vivo para Deus?",
+      "📖 <strong>RESUMO:</strong> Paulo está morto para a lei para viver para Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Morto para a lei' (Romanos 7:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Já estou crucificado com Cristo; e vivo, não mais eu, mas Cristo vive em mim; e a vida que agora vivo na carne, vivo-a pela fé do Filho de Deus, o qual me amou e se entregou a si mesmo por mim.",
+      "<strong>COMENTÁRIO:</strong> ✝️ **O VERSÍCULO MAIS PESSOAL DE PAULO**. Ele está crucificado com Cristo – sua velha identidade foi morta. Agora, quem vive é Cristo nele. A vida presente é vivida pela fé no Filho de Deus, que o amou e se entregou por ele. Aplicação: A vida cristã é uma vida de fé, não de esforço próprio. Reflexão: Você pode dizer 'Cristo vive em mim'?",
+      "📖 <strong>RESUMO:</strong> Paulo está crucificado com Cristo; Cristo vive nele; ele vive pela fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Crucificado com Cristo' (Romanos 6:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Não aniquilo a graça de Deus; porque, se a justiça vem pela lei, logo Cristo morreu debalde.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ Paulo conclui: se a justiça pudesse vir pela lei, então Cristo morreu em vão (dōrean – sem propósito). Aplicação: Não anule a graça de Deus confiando em obras. Reflexão: Você está anulando a graça de Deus ao confiar em suas próprias obras?",
+      "📖 <strong>RESUMO:</strong> Se a justiça vem pela lei, Cristo morreu em vão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Aniquilo a graça' (2 Coríntios 6:1).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 2</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 2 é o coração teológico de Gálatas. Paulo narra seu encontro com os apóstolos em Jerusalém, onde seu evangelho foi confirmado, e Tito não foi obrigado a circuncidar-se. Ele resistiu a Pedro em Antioquia quando Pedro, por medo dos judaizantes, se separou dos gentios. O capítulo culmina com a doutrina da justificação pela fé: ninguém é justificado pelas obras da lei, mas pela fé em Jesus Cristo. Paulo declara que está crucificado com Cristo, e que Cristo vive nele. Sua vida é vivida pela fé no Filho de Deus. O capítulo nos ensina que: 1) A salvação é pela fé, não por obras; 2) A verdade do evangelho deve ser defendida; 3) A coerência entre crença e prática é essencial; 4) Estamos crucificados com Cristo e vivemos pela fé; 5) Anular a graça é dizer que Cristo morreu em vão.</p>"
+    ],
+
+    // ======================= CAPÍTULO 3 =======================
+    3: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A loucura dos gálatas e a fé de Abraão</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Gn 15:6; 12:3; Dt 27:26; Hc 2:4; Lv 18:5)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Ó insensatos gálatas! Quem vos fascinou para não obedecerdes à verdade, a vós perante os olhos de quem Jesus Cristo foi já representado como crucificado?",
+      "<strong>COMENTÁRIO:</strong> 😮 Paulo chama os gálatas de 'insensatos' (anoētos) – sem entendimento. Alguém os 'fascinou' (baskainō – enfeitiçou, enganou) para que deixassem de obedecer à verdade, quando Cristo crucificado foi claramente apresentado a eles. Aplicação: O evangelho da graça é tão claro que qualquer desvio é uma insensatez. Reflexão: Você está sendo fascinado por ensinos que desviam da cruz?",
+      "📖 <strong>RESUMO:</strong> Paulo chama os gálatas de insensatos por se desviarem da verdade da cruz.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cristo crucificado' (1 Coríntios 1:23).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Só quisera saber isto de vós: Recebestes o Espírito pelas obras da lei ou pela pregação da fé?",
+      "<strong>COMENTÁRIO:</strong> 🕊️ Paulo pergunta: como vocês receberam o Espírito Santo? Foi por fazer obras da lei, ou por ouvir e crer na mensagem da fé? A aplicação: A recepção do Espírito é pela fé, não por obras. Reflexão: Você recebeu o Espírito pela fé ou por obras?",
+      "📖 <strong>RESUMO:</strong> Recebestes o Espírito pelas obras da lei ou pela pregação da fé?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Recebestes o Espírito' (Atos 2:38).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Sois vós tão insensatos que, tendo começado pelo Espírito, acabais agora pela carne?",
+      "<strong>COMENTÁRIO:</strong> 🔄 O contraste: começaram no Espírito (pela fé), mas querem aperfeiçoar (epiteleō) pela carne (esforço humano, obras da lei). Aplicação: A vida cristã começa pela fé e deve continuar pela fé. Reflexão: Você está confiando na carne para aperfeiçoar o que o Espírito começou?",
+      "📖 <strong>RESUMO:</strong> Tendo começado pelo Espírito, acabais agora pela carne?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Começado pelo Espírito' (Romanos 8:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Haveis padecido tantas coisas em vão? Se é que também em vão.",
+      "<strong>COMENTÁRIO:</strong> 😔 Paulo pergunta se os sofrimentos que eles passaram (perseguições) foram em vão. Ele espera que não. Aplicação: O sofrimento por Cristo é em vão se abandonarmos a fé. Reflexão: Você permanece firme na fé, mesmo em meio ao sofrimento?",
+      "📖 <strong>RESUMO:</strong> Haveis padecido tantas coisas em vão?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Padecido' (1 Tessalonicenses 2:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Aquele, pois, que vos dá o Espírito, e que opera maravilhas entre vós, o faz pelas obras da lei, ou pela pregação da fé?",
+      "<strong>COMENTÁRIO:</strong> ✨ Deus que dá o Espírito e opera milagres (dynameis) entre eles, o faz por obras ou pela fé? A resposta é óbvia: pela fé. Aplicação: Os milagres e o poder de Deus são manifestados pela fé, não por obras. Reflexão: Você espera que Deus opere por sua fé ou por seus méritos?",
+      "📖 <strong>RESUMO:</strong> Deus dá o Espírito e opera maravilhas pela fé, não pelas obras da lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Opera maravilhas' (1 Coríntios 12:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Como Abraão creu a Deus, e isso lhe foi imputado como justiça.",
+      "<strong>COMENTÁRIO:</strong> 📖 Citação de Gênesis 15:6. Abraão creu (pisteuō) e isso foi imputado (logizomai) como justiça (dikaiosynē). Aplicação: A justificação sempre foi pela fé, desde Abraão. Reflexão: Você crê em Deus como Abraão creu?",
+      "📖 <strong>RESUMO:</strong> Abraão creu, e isso lhe foi imputado como justiça.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Imputado como justiça' (Romanos 4:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Sabei, pois, que os que são da fé são filhos de Abraão.",
+      "<strong>COMENTÁRIO:</strong> 👨‍👦 A verdadeira descendência de Abraão não é étnica, mas espiritual: são os que são 'da fé' (ek pisteōs). Aplicação: Você é filho de Abraão pela fé, não pela linhagem. Reflexão: Sua fé o conecta à linhagem espiritual de Abraão?",
+      "📖 <strong>RESUMO:</strong> Os que são da fé são filhos de Abraão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Filhos de Abraão' (Romanos 4:16).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Ora, tendo a Escritura previsto que Deus havia de justificar pela fé os gentios, anunciou primeiro o evangelho a Abraão, dizendo: Todas as nações serão benditas em ti.",
+      "<strong>COMENTÁRIO:</strong> 📜 Citação de Gênesis 12:3. A Escritura prevendo que Deus justificaria os gentios pela fé, anunciou o evangelho a Abraão: 'Todas as nações serão benditas em ti.' Aplicação: O plano de Deus sempre incluiu todas as nações. Reflexão: Você vê o evangelho como uma bênção para todas as nações?",
+      "📖 <strong>RESUMO:</strong> A Escritura prevê que Deus justificaria os gentios pela fé, como prometido a Abraão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Todas as nações serão benditas' (Gênesis 12:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> De sorte que os que são da fé são benditos com o crente Abraão.",
+      "<strong>COMENTÁRIO:</strong> 🙌 Conclusão: os que crêem são benditos junto com Abraão, o crente. Aplicação: A bênção de Abraão é para todos que creem. Reflexão: Você participa da bênção de Abraão pela fé?",
+      "📖 <strong>RESUMO:</strong> Os que são da fé são benditos com Abraão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Benditos com Abraão' (Romanos 4:11-12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Porque todos quantos são das obras da lei estão debaixo da maldição; porque está escrito: Maldito todo aquele que não permanecer em todas as coisas que estão escritas no livro da lei, para fazê-las.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Citação de Deuteronômio 27:26. A lei exige obediência perfeita; quem não a cumpre está sob maldição. Aplicação: A lei não pode abençoar, apenas amaldiçoar, porque ninguém a cumpre perfeitamente. Reflexão: Você reconhece que está sob maldição se confiar na lei?",
+      "📖 <strong>RESUMO:</strong> Os que são das obras da lei estão debaixo da maldição, pois a lei exige obediência total.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Maldito todo aquele' (Deuteronômio 27:26).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> E é evidente que pela lei ninguém será justificado diante de Deus, porque o justo viverá pela fé.",
+      "<strong>COMENTÁRIO:</strong> 📖 Citação de Habacuque 2:4. É evidente (delos) que a lei não justifica; a justificação é pela fé. Aplicação: O justo vive pela fé. Reflexão: Você vive pela fé ou por obras?",
+      "📖 <strong>RESUMO:</strong> Pela lei ninguém será justificado; o justo viverá pela fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Justo viverá pela fé' (Habacuque 2:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Ora, a lei não é da fé; mas o homem que fizer estas coisas por elas viverá.",
+      "<strong>COMENTÁRIO:</strong> 📖 Citação de Levítico 18:5. A lei opera por 'fazer' (poieō); a fé opera por 'crer' (pisteuō). Aplicação: A lei e a fé são princípios opostos de justificação. Reflexão: Você vive pela lei ou pela fé?",
+      "📖 <strong>RESUMO:</strong> A lei não é da fé; ela exige fazer, não crer.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O homem que fizer' (Levítico 18:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Cristo nos resgatou da maldição da lei, fazendo-se maldição por nós; porque está escrito: Maldito todo aquele que for pendurado no madeiro;",
+      "<strong>COMENTÁRIO:</strong> ✝️ **O SUBSTITUTO**. Citação de Deuteronômio 21:23. Cristo nos resgatou (exagorazō – comprou de volta) da maldição da lei, tornando-se maldição por nós, pendurado no madeiro (cruz). Aplicação: Cristo tomou sobre si a maldição que merecíamos. Reflexão: Você agradece a Cristo por ter se tornado maldição por você?",
+      "📖 <strong>RESUMO:</strong> Cristo nos resgatou da maldição da lei, fazendo-se maldição por nós.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Maldito todo aquele' (Deuteronômio 21:23).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Para que a bênção de Abraão chegasse aos gentios por Jesus Cristo, e para que pela fé recebamos a promessa do Espírito.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ O propósito da redenção: (1) a bênção de Abraão chegaria aos gentios; (2) receberíamos a promessa do Espírito pela fé. Aplicação: O Espírito Santo é a bênção da Nova Aliança. Reflexão: Você recebeu a promessa do Espírito pela fé?",
+      "📖 <strong>RESUMO:</strong> A bênção de Abraão veio aos gentios, e recebemos o Espírito pela fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Promessa do Espírito' (Efésios 1:13).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A promessa a Abraão e a função da lei</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Gn 12:7; 13:15; 17:8; Êx 20:18-19; Dt 5:22-23)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Irmãos, como homem falo. Se a aliança de um homem for confirmada, ninguém a anula ou a acrescenta.",
+      "<strong>COMENTÁRIO:</strong> 📜 Paulo usa uma analogia humana: uma aliança (testamento) entre homens, uma vez ratificada, não pode ser anulada ou alterada. Aplicação: Se alianças humanas são firmes, quanto mais a aliança de Deus? Reflexão: Você confia na fidelidade da aliança de Deus?",
+      "📖 <strong>RESUMO:</strong> Uma aliança confirmada não pode ser anulada ou acrescentada.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Aliança' (Hebreus 9:16-17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: E às descendências, como falando de muitas, mas como de uma só: E à tua descendência, que é Cristo.",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo faz um argumento baseado na gramática. A promessa foi a Abraão 'e à tua descendência' (sperma) – singular, não plural. Isso aponta para Cristo. Aplicação: A promessa de Deus é cumprida em Cristo. Reflexão: Você vê Cristo como o cumprimento das promessas?",
+      "📖 <strong>RESUMO:</strong> A promessa foi feita a Abraão e à sua descendência (singular), que é Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'À tua descendência' (Gênesis 13:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> E digo isto: Que a aliança que anteriormente foi confirmada por Deus em Cristo, a lei, que veio quatrocentos e trinta anos depois, não a anula, de forma que ab-rogue a promessa.",
+      "<strong>COMENTÁRIO:</strong> ⏳ A lei veio 430 anos depois da promessa a Abraão. A lei não pode anular a promessa. Aplicação: A lei não revoga a promessa da graça. Reflexão: Você coloca a lei acima da promessa de Deus?",
+      "📖 <strong>RESUMO:</strong> A lei, que veio 430 anos depois, não anula a promessa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Quatrocentos e trinta anos' (Êxodo 12:40).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Porque, se a herança provém da lei, já não provém da promessa; mas Deus pela promessa a deu gratuitamente a Abraão.",
+      "<strong>COMENTÁRIO:</strong> 🎁 A herança (a salvação) vem pela promessa, não pela lei. Se fosse pela lei, não seria mais promessa (gratuita). Aplicação: A salvação é um dom gratuito, não uma recompensa. Reflexão: Você recebe a salvação como um dom gratuito ou como uma recompensa?",
+      "📖 <strong>RESUMO:</strong> A herança vem pela promessa, não pela lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Gratuitamente' (Romanos 3:24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Logo, para que é a lei? Foi acrescentada por causa das transgressões, até que viesse a posteridade a quem a promessa fora feita; e foi posta pelos anjos na mão de um medianeiro.",
+      "<strong>COMENTÁRIO:</strong> 📜 A lei foi acrescentada 'por causa das transgressões' – para definir e aumentar a consciência do pecado. Ela foi dada por meio de anjos e de um mediador (Moisés). Aplicação: A lei tem um propósito temporário e limitado. Reflexão: Você entende o propósito da lei?",
+      "📖 <strong>RESUMO:</strong> A lei foi acrescentada por causa das transgressões, até que viesse a descendência.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Por causa das transgressões' (Romanos 5:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Ora, o medianeiro não o é de um só, mas Deus é um.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ O mediador (Moisés) está entre duas partes (Deus e Israel). Mas a promessa a Abraão veio diretamente de Deus, sem mediador. Aplicação: A Nova Aliança em Cristo é superior porque não há mediador entre Deus e o crente. Reflexão: Você se aproxima de Deus diretamente por Cristo?",
+      "📖 <strong>RESUMO:</strong> O mediador está entre dois; mas Deus é um na promessa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Deus é um' (Deuteronômio 6:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Logo, a lei é contra as promessas de Deus? De maneira nenhuma, porque, se alguma lei pudesse dar vida, a justiça, na verdade, teria sido pela lei.",
+      "<strong>COMENTÁRIO:</strong> ❓ A lei é contrária às promessas? Não! A lei não pode dar vida (zoopoieō); se pudesse, a justiça seria pela lei. Aplicação: A lei não é má, mas não pode salvar. Reflexão: Você olha para a lei como um caminho para a vida?",
+      "📖 <strong>RESUMO:</strong> A lei não é contra as promessas, mas não pode dar vida.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'De maneira nenhuma' (Romanos 7:7).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> Mas a Escritura encerrou tudo debaixo do pecado, para que a promessa pela fé em Jesus Cristo fosse dada aos que creem.",
+      "<strong>COMENTÁRIO:</strong> 🔒 A Escritura (a lei) encerrou (sygkleiō – confinou) todos debaixo do pecado, mostrando que todos são pecadores. O propósito: que a promessa fosse dada pela fé aos que creem. Aplicação: A lei nos mostra nossa necessidade de graça. Reflexão: Você reconhece que está debaixo do pecado e precisa da graça?",
+      "📖 <strong>RESUMO:</strong> A Escritura encerrou todos debaixo do pecado, para que a promessa pela fé fosse dada aos que creem.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Encerrou tudo debaixo do pecado' (Romanos 11:32).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> Mas, antes que a fé viesse, estávamos guardados debaixo da lei, encerrados para aquela fé que se havia de revelar.",
+      "<strong>COMENTÁRIO:</strong> 🔒 Antes da fé (Cristo), a lei nos guardava (phroureō – mantinha em custódia) e nos encerrava para a fé futura. Aplicação: A lei foi um guardião até Cristo. Reflexão: Você vê a lei como um guardião que o conduziu a Cristo?",
+      "📖 <strong>RESUMO:</strong> Antes da fé, estávamos guardados debaixo da lei, encerrados para a fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Guardados debaixo da lei' (Romanos 7:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> De maneira que a lei nos serviu de aio, para nos conduzir a Cristo, para que pela fé fôssemos justificados.",
+      "<strong>COMENTÁRIO:</strong> 👨‍🏫 **A LEI COMO AIO**. A lei foi um 'aio' (paidagōgos – tutor, que conduzia a criança à escola). A função do aio era disciplinar e preparar a criança para a maturidade. A lei nos conduz a Cristo para sermos justificados pela fé. Aplicação: A lei não é o fim, mas o meio que nos leva a Cristo. Reflexão: A lei já o conduziu a Cristo?",
+      "📖 <strong>RESUMO:</strong> A lei serviu de aio para nos conduzir a Cristo, para que pela fé fôssemos justificados.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Aio' (1 Coríntios 4:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 25</strong></span>",
+      "<strong>TEXTO:</strong> Mas, depois que a fé veio, já não estamos debaixo de aio.",
+      "<strong>COMENTÁRIO:</strong> 🔓 Com a vinda de Cristo (a fé), o aio não é mais necessário. Os crentes não estão mais sob a tutela da lei. Aplicação: Em Cristo, somos livres da tutela da lei. Reflexão: Você vive como criança sob a lei ou como adulto em Cristo?",
+      "📖 <strong>RESUMO:</strong> Depois que a fé veio, já não estamos debaixo de aio.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Já não estamos debaixo da lei' (Romanos 6:14).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Filhos de Deus pela fé</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 6:3-4; 1Co 12:13)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 26</strong></span>",
+      "<strong>TEXTO:</strong> Porque todos sois filhos de Deus pela fé em Cristo Jesus.",
+      "<strong>COMENTÁRIO:</strong> 👨‍👧 Todos os que creem são 'filhos de Deus' (huioi Theou) pela fé. Aplicação: A filiação é pela fé, não pela linhagem ou obras. Reflexão: Você se vê como filho de Deus?",
+      "📖 <strong>RESUMO:</strong> Todos são filhos de Deus pela fé em Cristo Jesus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Filhos de Deus' (Romanos 8:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 27</strong></span>",
+      "<strong>TEXTO:</strong> Porque todos quantos fostes batizados em Cristo, já vos revestistes de Cristo.",
+      "<strong>COMENTÁRIO:</strong> 👗 O batismo (em Cristo) significa união com Cristo. Os crentes se revestem (endyō) de Cristo – a identidade de Cristo os cobre. Aplicação: O batismo é uma expressão da união com Cristo. Reflexão: Você se revestiu de Cristo?",
+      "📖 <strong>RESUMO:</strong> Batizados em Cristo, vos revestistes de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Batizados em Cristo' (Romanos 6:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 28</strong></span>",
+      "<strong>TEXTO:</strong> Nisto não há judeu nem grego; não há servo nem livre; não há macho nem fêmea; porque todos vós sois um em Cristo Jesus.",
+      "<strong>COMENTÁRIO:</strong> ☝️ **A UNIDADE EM CRISTO**. Em Cristo, as barreiras sociais, raciais e de gênero são quebradas. Todos são um (heis) em Cristo. Aplicação: A igreja deve refletir essa unidade. Reflexão: Você vive a unidade em Cristo com todos os crentes?",
+      "📖 <strong>RESUMO:</strong> Em Cristo não há judeu, grego, servo, livre, macho ou fêmea; todos são um.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Um em Cristo' (1 Coríntios 12:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 29</strong></span>",
+      "<strong>TEXTO:</strong> E, se sois de Cristo, então sois descendência de Abraão, e herdeiros conforme a promessa.",
+      "<strong>COMENTÁRIO:</strong> 📜 Os crentes em Cristo são a verdadeira descendência de Abraão e herdeiros das promessas. Aplicação: Você é herdeiro das promessas feitas a Abraão. Reflexão: Você vive como herdeiro das promessas?",
+      "📖 <strong>RESUMO:</strong> Se sois de Cristo, sois descendência de Abraão e herdeiros conforme a promessa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Descendência de Abraão' (Romanos 4:13-16).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 3</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 3 é uma exposição magistral da justificação pela fé. Paulo pergunta aos gálatas: como receberam o Espírito? Foi pelas obras da lei ou pela fé? Ele mostra que Abraão foi justificado pela fé, e que os que são da fé são filhos de Abraão. A lei traz maldição, mas Cristo nos resgatou da maldição, tornando-se maldição por nós. A lei foi acrescentada 430 anos depois da promessa e não a anula. A lei serviu como aio para nos conduzir a Cristo. O capítulo nos ensina que: 1) A justificação é pela fé, não por obras; 2) Os que creem são filhos de Abraão; 3) Cristo nos resgatou da maldição da lei; 4) A lei é um aio que nos conduz a Cristo; 5) Em Cristo, somos filhos de Deus, revestidos de Cristo e um só corpo; 6) Se somos de Cristo, somos herdeiros das promessas.</p>"
+    ],
+
+    // ======================= CAPÍTULO 4 =======================
+    4: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Da escravidão à filiação</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 8:14-17; 2Co 6:18)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Digo, pois, que o herdeiro, enquanto é menino, em nada difere do servo, ainda que seja senhor de tudo;",
+      "<strong>COMENTÁRIO:</strong> 👦 O herdeiro menor de idade, embora dono de tudo, é tratado como servo. Aplicação: Antes de Cristo, éramos como menores de idade, sob tutela. Reflexão: Você já reconheceu que, sem Cristo, era como servo, mesmo sendo herdeiro?",
+      "📖 <strong>RESUMO:</strong> O herdeiro, enquanto menino, em nada difere do servo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Herdeiro' (Romanos 8:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Mas está debaixo de tutores e curadores até ao tempo determinado pelo pai.",
+      "<strong>COMENTÁRIO:</strong> 👨‍🏫 Até o tempo determinado, o herdeiro está sob tutores (epitropoi) e curadores (oikonomoi). Aplicação: A lei e os rudimentos do mundo eram nossos tutores até a vinda de Cristo. Reflexão: Você reconhece que estava sob tutela até o tempo de Deus?",
+      "📖 <strong>RESUMO:</strong> O herdeiro está sob tutores até o tempo determinado pelo pai.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tutores' (Gálatas 3:24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Assim também nós, quando éramos meninos, estávamos reduzidos à servidão debaixo dos rudimentos do mundo.",
+      "<strong>COMENTÁRIO:</strong> 🔗 Antes de Cristo, estávamos em servidão (douleuō) sob os 'rudimentos do mundo' (stoicheia – elementos básicos, princípios elementares, incluindo a lei). Aplicação: O legalismo é uma forma de servidão. Reflexão: Você já foi escravo de sistemas religiosos humanos?",
+      "📖 <strong>RESUMO:</strong> Quando éramos meninos, estávamos em servidão sob os rudimentos do mundo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Rudimentos do mundo' (Colossenses 2:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Mas, vindo a plenitude dos tempos, Deus enviou seu Filho, nascido de mulher, nascido sob a lei,",
+      "<strong>COMENTÁRIO:</strong> ⏳ 'Plenitude dos tempos' (plērōma tou chronou) – o momento exato na história, determinado por Deus. Deus enviou Seu Filho, nascido de mulher (plenamente humano), nascido sob a lei (sujeito à lei judaica). Aplicação: Deus age no tempo certo. Reflexão: Você confia no tempo de Deus?",
+      "📖 <strong>RESUMO:</strong> Na plenitude dos tempos, Deus enviou seu Filho, nascido de mulher, sob a lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Plenitude dos tempos' (Efésios 1:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Para remir os que estavam debaixo da lei, a fim de que recebêssemos a adoção de filhos.",
+      "<strong>COMENTÁRIO:</strong> 👨‍👧 O propósito: redimir (exagorazō – comprar de volta) os que estavam sob a lei, para que recebêssemos a adoção (huiothesia) como filhos. Aplicação: Cristo nos redimiu para nos tornar filhos de Deus. Reflexão: Você já recebeu a adoção de filhos?",
+      "📖 <strong>RESUMO:</strong> Cristo veio para remir os que estavam sob a lei, para recebermos a adoção de filhos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Adoção de filhos' (Romanos 8:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> E, porque sois filhos, Deus enviou aos vossos corações o Espírito de seu Filho, que clama: Aba, Pai.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ A evidência da filiação: o Espírito de Seu Filho é enviado aos nossos corações, clamando 'Aba, Pai' – uma expressão de intimidade e confiança. Aplicação: O Espírito nos dá a certeza da filiação. Reflexão: Você experimenta a intimidade de clamar 'Aba, Pai'?",
+      "📖 <strong>RESUMO:</strong> Porque sois filhos, Deus enviou o Espírito de seu Filho, que clama: Aba, Pai.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Aba, Pai' (Romanos 8:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Assim que já não és mais servo, mas filho; e, se és filho, és também herdeiro de Deus por Cristo.",
+      "<strong>COMENTÁRIO:</strong> 📜 O status do crente: não mais servo (doulos), mas filho (huios), e, portanto, herdeiro (klēronomos) de Deus por Cristo. Aplicação: Você é herdeiro de Deus. Reflexão: Você vive como filho e herdeiro?",
+      "📖 <strong>RESUMO:</strong> Já não és servo, mas filho e herdeiro de Deus por Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Herdeiro de Deus' (Romanos 8:17).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Preocupação de Paulo com os gálatas</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Co 8:4-6; 2Co 11:1-4)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Mas, outrora, não conhecendo a Deus, servíeis aos que por natureza não são deuses.",
+      "<strong>COMENTÁRIO:</strong> 🗿 Antes da conversão, os gálatas serviam a falsos deuses (idolatria). Aplicação: Sem Cristo, todos servem a algo que não é Deus. Reflexão: O que você servia antes de conhecer a Deus?",
+      "📖 <strong>RESUMO:</strong> Antes, não conhecendo a Deus, servíeis a falsos deuses.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não são deuses' (1 Coríntios 8:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Agora, porém, conhecendo a Deus, ou, antes, sendo conhecidos por Deus, como tornais outra vez aos rudimentos fracos e pobres, aos quais de novo quereis servir?",
+      "<strong>COMENTÁRIO:</strong> 🤔 Paulo enfatiza que conhecemos a Deus, mas mais importante, somos conhecidos por Ele. Ele pergunta: por que voltar aos 'rudimentos fracos e pobres' (a lei)? Aplicação: A lei é fraca e pobre para salvar. Reflexão: Você está voltando a confiar em sistemas humanos que não podem salvar?",
+      "📖 <strong>RESUMO:</strong> Conhecendo a Deus, ou sendo conhecidos, como tornais aos rudimentos fracos e pobres?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Sendo conhecidos por Deus' (1 Coríntios 8:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Guardais dias, e meses, e tempos, e anos.",
+      "<strong>COMENTÁRIO:</strong> 📅 Os gálatas estavam observando dias especiais (sábados, festas, etc.) como se fossem obrigatórios para a salvação. Aplicação: A observância de dias não é um meio de salvação. Reflexão: Você coloca a observância de dias acima da graça?",
+      "📖 <strong>RESUMO:</strong> Guardais dias, meses, tempos e anos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dias, meses' (Colossenses 2:16-17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Receio de vós que não haja trabalhado em vão para convosco.",
+      "<strong>COMENTÁRIO:</strong> 😟 Paulo teme que seu trabalho entre eles tenha sido em vão (eikē) se eles se desviarem para o legalismo. Aplicação: O esforço do ministro pode ser em vão se a igreja se desvia. Reflexão: Você tem feito o trabalho de Paulo ser em vão?",
+      "📖 <strong>RESUMO:</strong> Paulo receia ter trabalhado em vão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Trabalhado em vão' (1 Tessalonicenses 3:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Irmãos, rogo-vos que sejais como eu, porque também eu sou como vós; em nada me ofendestes.",
+      "<strong>COMENTÁRIO:</strong> 🤝 Paulo pede que os gálatas sejam como ele (livres da lei), assim como ele se fez como eles (gentio). Ele afirma que eles não o ofenderam. Aplicação: A liberdade em Cristo é o padrão. Reflexão: Você é livre como Paulo?",
+      "📖 <strong>RESUMO:</strong> Paulo roga que sejam como ele, assim como ele é como eles.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Sejais como eu' (1 Coríntios 4:16).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> E vós sabeis que primeiro vos anunciei o evangelho estando em fraqueza da carne.",
+      "<strong>COMENTÁRIO:</strong> 😰 Paulo relembra que, quando pregou pela primeira vez aos gálatas, estava em fraqueza (astheneia) – provavelmente uma doença ou perseguição. Aplicação: A fraqueza humana não impede o poder do evangelho. Reflexão: Você permite que Deus use você mesmo em sua fraqueza?",
+      "📖 <strong>RESUMO:</strong> Paulo pregou o evangelho pela primeira vez em fraqueza da carne.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fraqueza da carne' (1 Coríntios 2:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> E não rejeitastes nem desprezastes isso que foi uma tentação na minha carne; antes, me recebestes como a um anjo de Deus, como a Cristo Jesus mesmo.",
+      "<strong>COMENTÁRIO:</strong> 👼 Os gálatas não rejeitaram Paulo por causa de sua fraqueza (uma provação na carne). Eles o receberam como um anjo de Deus, como o próprio Cristo. Aplicação: A recepção do mensageiro reflete a recepção da mensagem. Reflexão: Você recebe os servos de Deus como se recebesse Cristo?",
+      "📖 <strong>RESUMO:</strong> Os gálatas não rejeitaram Paulo, mas o receberam como anjo de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Como um anjo de Deus' (1 Tessalonicenses 2:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Qual foi, pois, a vossa bem-aventurança? Porque vos dou testemunho de que, se possível fora, arrancaríeis os vossos olhos, e mos daríeis.",
+      "<strong>COMENTÁRIO:</strong> 😢 Paulo pergunta onde está a alegria que eles tinham. Eles estavam tão dedicados que dariam os próprios olhos por ele (possivelmente indicando que Paulo tinha um problema nos olhos). Aplicação: A alegria da salvação deve ser preservada. Reflexão: Você perdeu a alegria da sua salvação?",
+      "📖 <strong>RESUMO:</strong> Os gálatas eram tão dedicados que dariam os olhos por Paulo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Bem-aventurança' (Mateus 5:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Fiz-me, porventura, vosso inimigo, dizendo a verdade?",
+      "<strong>COMENTÁRIO:</strong> 😔 Paulo pergunta se dizer a verdade o transformou em inimigo deles. Aplicação: A verdade pode ser desconfortável, mas é necessária. Reflexão: Você se ofende quando a verdade é dita?",
+      "📖 <strong>RESUMO:</strong> Paulo pergunta se se tornou inimigo por dizer a verdade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dizendo a verdade' (Efésios 4:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Eles têm zelo por vós, não como dever ser; mas querem excluir-vos, para que vós tenhais zelo por eles.",
+      "<strong>COMENTÁRIO:</strong> 🔥 Os falsos mestres têm 'zelo' (zēloō) pelos gálatas, mas não com boas intenções. Eles querem excluir (ekkleiō) os gálatas – isolá-los de Paulo – para que eles tenham zelo pelos falsos mestres. Aplicação: Cuidado com líderes que querem controlar e isolar. Reflexão: Você está sendo manipulado por zelo falso?",
+      "📖 <strong>RESUMO:</strong> Os falsos mestres têm zelo, mas querem excluir os gálatas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Excluir' (Romanos 11:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> É bom ser zeloso, mas sempre do bem, e não somente quando estou presente convosco.",
+      "<strong>COMENTÁRIO:</strong> ✅ O zelo (ser dedicado) é bom, desde que seja 'do bem' (kalos) – em coisas boas, e constante, não apenas na presença do líder. Aplicação: A dedicação deve ser genuína e constante. Reflexão: Seu zelo é constante e para o bem?",
+      "📖 <strong>RESUMO:</strong> É bom ser zeloso, mas sempre do bem, e não apenas quando Paulo está presente.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Zeloso' (Apocalipse 3:19).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Meus filhinhos, por quem de novo sinto as dores de parto, até que Cristo seja formado em vós;",
+      "<strong>COMENTÁRIO:</strong> 👶 Paulo expressa um profundo amor pastoral. Ele chama os gálatas de 'filhinhos' (teknia) e sente dores de parto (ōdinō) novamente por eles, até que Cristo seja formado (morphoō – tomando forma) neles. Aplicação: A formação de Cristo na vida do crente é o objetivo do ministério. Reflexão: Cristo está sendo formado em você?",
+      "📖 <strong>RESUMO:</strong> Paulo sente dores de parto por eles até que Cristo seja formado em vós.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cristo seja formado' (Efésios 4:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Bem quisera estar presente convosco agora e mudar a minha voz; porque estou perplexo a vosso respeito.",
+      "<strong>COMENTÁRIO:</strong> 😟 Paulo deseja estar presente para mudar o tom (mudar a voz) e lidar com a perplexidade (aporeō) que sente em relação a eles. Aplicação: A pastoral é feita de perplexidade e amor. Reflexão: Você já se sentiu perplexo em relação a sua fé?",
+      "📖 <strong>RESUMO:</strong> Paulo queria estar presente e mudar a voz, pois está perplexo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perplexo' (2 Coríntios 4:8).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Alegoria de Agar e Sara</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Gn 16:1-4; 21:1-14; Êx 19:20; Is 54:1)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Dizei-me vós, os que quereis estar debaixo da lei: não ouvis a lei?",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo pergunta aos que desejam estar sob a lei: vocês realmente ouvem (entendem) o que a lei diz? Aplicação: Quem quer viver sob a lei precisa entender o que ela exige. Reflexão: Você entende o que a lei realmente exige?",
+      "📖 <strong>RESUMO:</strong> Paulo pergunta aos que querem estar sob a lei se eles ouvem a lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Debaixo da lei' (Romanos 6:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> Porque está escrito que Abraão teve dois filhos, um da escrava, e outro da livre.",
+      "<strong>COMENTÁRIO:</strong> 📜 Paulo aponta para a história de Abraão: dois filhos (Ismael e Isaque) – um da escrava (Agar) e outro da livre (Sara). Aplicação: A história de Abraão é uma lição sobre graça e legalismo. Reflexão: Você é filho da escrava ou da livre?",
+      "📖 <strong>RESUMO:</strong> Abraão teve dois filhos: um da escrava e outro da livre.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Filhos de Abraão' (Gênesis 16:1-4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> Todavia, o que era da escrava nasceu segundo a carne; mas o que era da livre, por promessa.",
+      "<strong>COMENTÁRIO:</strong> 🔄 Ismael nasceu 'segundo a carne' (por esforço humano) – Abraão tentou cumprir a promessa por meio de Agar. Isaque nasceu 'por promessa' (pela graça). Aplicação: O legalismo é o caminho da carne; a graça é o caminho da promessa. Reflexão: Você confia na carne ou na promessa?",
+      "📖 <strong>RESUMO:</strong> O filho da escrava nasceu segundo a carne; o da livre, por promessa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Por promessa' (Gênesis 21:1-2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> O que se entende por alegoria; porque estas são as duas alianças: uma, do monte Sinai, que dá à luz para a servidão, que é Agar.",
+      "<strong>COMENTÁRIO:</strong> 📖 Paulo usa uma alegoria: duas mulheres representam duas alianças. Agar (a escrava) representa a aliança do Sinai (a lei) que produz escravidão. Aplicação: A lei produz servidão; a graça produz liberdade. Reflexão: Você vive em servidão ou liberdade?",
+      "📖 <strong>RESUMO:</strong> Agar representa a aliança do Sinai, que dá à luz para a servidão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Monte Sinai' (Êxodo 19:20).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 25</strong></span>",
+      "<strong>TEXTO:</strong> Porque Agar é o monte Sinai na Arábia, e corresponde à Jerusalém atual, que é escrava com seus filhos.",
+      "<strong>COMENTÁRIO:</strong> 🏔️ Agar é identificada com o monte Sinai (na Arábia) e com a Jerusalém terrestre (judaísmo legalista), que está em escravidão com seus filhos. Aplicação: O legalismo escraviza. Reflexão: Você está preso a um sistema religioso que escraviza?",
+      "📖 <strong>RESUMO:</strong> Agar é o monte Sinai e corresponde à Jerusalém atual, que é escrava.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Jerusalém atual' (Hebreus 12:22).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 26</strong></span>",
+      "<strong>TEXTO:</strong> Mas a Jerusalém que é de cima é livre; a qual é mãe de todos nós.",
+      "<strong>COMENTÁRIO:</strong> 🌟 A Jerusalém celestial (a Nova Aliança) é livre e é a mãe de todos os crentes. Aplicação: A Nova Aliança nos torna filhos da liberdade. Reflexão: Você é filho da Jerusalém celestial?",
+      "📖 <strong>RESUMO:</strong> A Jerusalém celestial é livre e é mãe de todos nós.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Jerusalém que é de cima' (Apocalipse 21:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 27</strong></span>",
+      "<strong>TEXTO:</strong> Porque está escrito: Alegra-te, estéril, que não dás à luz; esforça-te e clama, tu que não estás de parto; porque mais são os filhos da solitária do que os da que tem marido.",
+      "<strong>COMENTÁRIO:</strong> 📖 Citação de Isaías 54:1. A estéril (a Igreja gentia) terá mais filhos que a que tem marido (Israel segundo a carne). Aplicação: A graça traz alegria e multiplicação. Reflexão: Você se alegra na graça de Deus?",
+      "📖 <strong>RESUMO:</strong> Citação: alegra-te, estéril, porque mais são os filhos da solitária.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Alegra-te, estéril' (Isaías 54:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 28</strong></span>",
+      "<strong>TEXTO:</strong> Assim que, irmãos, somos filhos da promessa como Isaque.",
+      "<strong>COMENTÁRIO:</strong> 👨‍👦 Os crentes são filhos da promessa, como Isaque – nascidos pela graça, não pelo esforço humano. Aplicação: Você é filho da promessa. Reflexão: Você vive como filho da promessa?",
+      "📖 <strong>RESUMO:</strong> Somos filhos da promessa, como Isaque.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Filhos da promessa' (Romanos 9:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 29</strong></span>",
+      "<strong>TEXTO:</strong> Mas, como então aquele que era gerado segundo a carne perseguia o que era gerado segundo o Espírito, assim é também agora.",
+      "<strong>COMENTÁRIO:</strong> 😠 Ismael (carne) perseguiu Isaque (Espírito). Da mesma forma, os legalistas perseguem os que vivem pela graça. Aplicação: A perseguição dos legalistas é uma marca do conflito entre carne e Espírito. Reflexão: Você está sendo perseguido por viver pela graça?",
+      "📖 <strong>RESUMO:</strong> O que era da carne perseguia o que era do Espírito; assim também agora.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Perseguia' (Gênesis 21:9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 30</strong></span>",
+      "<strong>TEXTO:</strong> Mas que diz a Escritura? Lança fora a escrava e seu filho, porque o filho da escrava não será herdeiro com o filho da livre.",
+      "<strong>COMENTÁRIO:</strong> 🚪 Citação de Gênesis 21:10. A escrava e seu filho devem ser expulsos; o filho da escrava não herda com o filho da livre. Aplicação: O legalismo não tem lugar na herança da graça. Reflexão: Você já expulsou o legalismo de sua vida?",
+      "📖 <strong>RESUMO:</strong> Lança fora a escrava e seu filho, porque não será herdeiro.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Lança fora a escrava' (Gênesis 21:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 31</strong></span>",
+      "<strong>TEXTO:</strong> De maneira que, irmãos, somos filhos não da escrava, mas da livre.",
+      "<strong>COMENTÁRIO:</strong> 🎉 Conclusão: os crentes não são filhos da escrava (lei), mas da livre (graça). Aplicação: Você é filho da livre, não da escrava. Reflexão: Você vive como filho da livre?",
+      "📖 <strong>RESUMO:</strong> Somos filhos não da escrava, mas da livre.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Filhos da livre' (Gálatas 5:1).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 4</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 4 é uma transição da teologia para a aplicação prática. Paulo mostra que, antes de Cristo, éramos como menores de idade, sob tutores. Mas na plenitude dos tempos, Deus enviou Seu Filho para nos redimir e nos tornar filhos. Como filhos, recebemos o Espírito que clama 'Aba, Pai'. Paulo expressa sua preocupação pastoral: os gálatas estão voltando aos rudimentos fracos e pobres, observando dias e meses. Ele os exorta a não abandonar a alegria que tinham. Paulo usa a alegoria de Agar e Sara para mostrar que o legalismo (Agar) produz escravidão, enquanto a graça (Sara) produz liberdade. O capítulo nos ensina que: 1) Em Cristo, somos filhos, não servos; 2) O Espírito nos dá a certeza da filiação; 3) Não devemos voltar ao legalismo; 4) A alegria da salvação deve ser preservada; 5) O verdadeiro zelo é pelo bem; 6) Somos filhos da livre, não da escrava.</p>"
+    ],
+
+    // ======================= CAPÍTULO 5 =======================
+    5: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Liberdade em Cristo e o conflito entre carne e Espírito</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Jo 8:32; Rm 6:14; 8:2)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Estai, pois, firmes na liberdade com que Cristo nos libertou, e não torneis a colocar-vos debaixo do jugo da servidão.",
+      "<strong>COMENTÁRIO:</strong> 🔓 Paulo exorta os gálatas a permanecerem firmes na liberdade que Cristo conquistou. Não se submetam novamente ao 'jugo da servidão' (a lei). Aplicação: A liberdade cristã deve ser preservada. Reflexão: Você está firme na liberdade em Cristo ou está se submetendo a jugos desnecessários?",
+      "📖 <strong>RESUMO:</strong> Estai firmes na liberdade com que Cristo nos libertou.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Liberdade' (João 8:36).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Eis que eu, Paulo, vos digo que, se vos circuncidardes, Cristo de nada vos aproveitará.",
+      "<strong>COMENTÁRIO:</strong> ⚠️ Paulo declara enfaticamente: se eles buscarem a circuncisão como meio de justificação, Cristo não terá valor para eles. Aplicação: A confiança em obras anula a eficácia de Cristo. Reflexão: Você está confiando em obras que anulam a graça?",
+      "📖 <strong>RESUMO:</strong> Se vos circuncidardes, Cristo de nada vos aproveitará.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'De nada vos aproveitará' (Gálatas 5:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> E de novo testifico a todo o homem que se circuncida, que está obrigado a guardar toda a lei.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Quem aceita a circuncisão como necessária para a salvação fica obrigado a guardar toda a lei – não apenas uma parte. Aplicação: O legalismo é um pacote completo; não se pode escolher apenas partes. Reflexão: Você está disposto a guardar toda a lei?",
+      "📖 <strong>RESUMO:</strong> Quem se circuncida está obrigado a guardar toda a lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Guardar toda a lei' (Tiago 2:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Separados estais de Cristo, vós os que vos justificais pela lei; da graça tendes caído.",
+      "<strong>COMENTÁRIO:</strong> ❌ Os que buscam justificação pela lei estão separados (katargeō – desligados) de Cristo e caídos da graça. Aplicação: A confiança na lei é incompatível com a graça. Reflexão: Você está confiando na lei para ser justificado?",
+      "📖 <strong>RESUMO:</strong> Separados estais de Cristo, da graça tendes caído.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Caídos da graça' (Romanos 11:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Porque nós, pelo Espírito, aguardamos a esperança da justiça pela fé.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ Paulo contrasta a justiça pela lei com a justiça pela fé. Nós (crentes) aguardamos (apekdechomai) a esperança da justiça pela fé, no poder do Espírito. Aplicação: A esperança cristã é a justificação final pela fé. Reflexão: Você aguarda pela fé, não por obras?",
+      "📖 <strong>RESUMO:</strong> Aguardamos a esperança da justiça pela fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Esperança da justiça' (Romanos 5:1-2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Porque, em Jesus Cristo, nem a circuncisão nem a incircuncisão tem valor algum; mas a fé que opera pelo amor.",
+      "<strong>COMENTÁRIO:</strong> ❤️ Em Cristo, os rituais externos (circuncisão ou incircuncisão) não têm valor (ischyō). O que importa é a 'fé que opera pelo amor' (pistis di' agapēs energoumenē). Aplicação: A fé genuína se expressa em amor. Reflexão: Sua fé opera pelo amor?",
+      "📖 <strong>RESUMO:</strong> Em Cristo, o que vale é a fé que opera pelo amor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fé que opera pelo amor' (1 Coríntios 13:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Corríeis bem; quem vos impediu, para que não obedeçais à verdade?",
+      "<strong>COMENTÁRIO:</strong> 🏃 Paulo lembra que eles estavam correndo bem (na fé). Quem os impediu (enekopsen – obstruiu, cortou o caminho)? Aplicação: Não deixe ninguém atrapalhar sua corrida espiritual. Reflexão: Há alguém ou algo te impedindo de obedecer à verdade?",
+      "📖 <strong>RESUMO:</strong> Corríeis bem; quem vos impediu?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Correr bem' (1 Coríntios 9:24).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Tal persuasão não vem daquele que vos chama.",
+      "<strong>COMENTÁRIO:</strong> 🔥 A persuasão (para o legalismo) não vem de Deus, que os chamou. Aplicação: Nem toda persuasão espiritual vem de Deus. Reflexão: Você testa as persuasões à luz da Palavra?",
+      "📖 <strong>RESUMO:</strong> Tal persuasão não vem de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Vos chama' (1 Tessalonicenses 2:12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Um pouco de fermento leveda toda a massa.",
+      "<strong>COMENTÁRIO:</strong> 🍞 Provérbio: um pouco de fermento (erro, pecado, false ensino) contamina toda a massa (a igreja). Aplicação: Cuidado com a influência do erro. Reflexão: Você está atento ao fermento do legalismo?",
+      "📖 <strong>RESUMO:</strong> Um pouco de fermento leveda toda a massa.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fermento' (1 Coríntios 5:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Confio de vós, no Senhor, que de nenhum modo sentireis outra coisa; mas aquele que vos inquieta, seja quem for, levará sobre si a condenação.",
+      "<strong>COMENTÁRIO:</strong> 🙏 Paulo confia (peithō) que os gálatas não adotarão outra posição. Ele declara que o perturbador (quem quer que seja) será condenado. Aplicação: Deus julgará os que perturbam a igreja. Reflexão: Você confia na justiça de Deus?",
+      "📖 <strong>RESUMO:</strong> Paulo confia que os gálatas não se desviarão; o perturbador será condenado.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Condenação' (2 Coríntios 11:15).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> E eu, irmãos, se prego ainda a circuncisão, por que sou perseguido? Logo, o escândalo da cruz está aniquilado.",
+      "<strong>COMENTÁRIO:</strong> ✝️ Se Paulo ainda pregasse a circuncisão, ele não seria perseguido (diōkō). Mas ele prega a cruz, que é escândalo (skandalon) – ofensiva para os judeus. Aplicação: A cruz é ofensiva; não a remova. Reflexão: Você está disposto a suportar o escândalo da cruz?",
+      "📖 <strong>RESUMO:</strong> Paulo é perseguido porque prega a cruz, não a circuncisão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Escândalo da cruz' (1 Coríntios 1:23).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Quem me dera que fossem cortados aqueles que vos andam inquietando!",
+      "<strong>COMENTÁRIO:</strong> ✂️ Paulo expressa um desejo forte: que os que perturbam (com a circuncisão) fossem 'cortados' – um trocadilho com a circuncisão, desejando que eles se mutilassem completamente. Aplicação: A defesa da verdade pode exigir palavras fortes. Reflexão: Você é firme na defesa da verdade?",
+      "📖 <strong>RESUMO:</strong> Paulo deseja que os perturbadores fossem cortados.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cortados' (Filipenses 3:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Porque vós, irmãos, fostes chamados à liberdade; não useis, porém, da liberdade para dar ocasião à carne; mas servi-vos uns aos outros pelo amor.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ A liberdade não é licença para pecar. Ela deve ser usada para servir (douleuō) uns aos outros em amor. Aplicação: A verdadeira liberdade é liberdade para amar e servir. Reflexão: Você usa sua liberdade para servir ou para satisfazer a carne?",
+      "📖 <strong>RESUMO:</strong> Chamados à liberdade; não usem para a carne, mas sirvam pelo amor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Servi-vos pelo amor' (1 Pedro 2:16).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Porque toda a lei se cumpre numa só palavra, nesta: Amarás ao teu próximo como a ti mesmo.",
+      "<strong>COMENTÁRIO:</strong> ❤️ Citação de Levítico 19:18. Toda a lei é resumida no amor ao próximo. Aplicação: A lei de Cristo é a lei do amor. Reflexão: Você ama o próximo como a si mesmo?",
+      "📖 <strong>RESUMO:</strong> Toda a lei se cumpre no amor ao próximo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Amarás ao teu próximo' (Levítico 19:18).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Se vós, porém, vos mordeis e devorais uns aos outros, vede que não sejais também consumidos uns pelos outros.",
+      "<strong>COMENTÁRIO:</strong> 😠 Se a igreja se destrói com conflitos (mordeis e devorais), ela se autodestrói. Aplicação: A falta de amor destrói a igreja. Reflexão: Você está contribuindo para a unidade ou para a divisão?",
+      "📖 <strong>RESUMO:</strong> Se vos mordeis e devorais, cuidado para não vos consumirdes.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mordeis e devorais' (Tiago 3:14-16).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Andar no Espírito e as obras da carne</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Rm 7:23; 8:5-8; 1Co 6:9-10)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Digo, porém: Andai em Espírito, e não cumprireis a concupiscência da carne.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ A chave para vencer a carne é andar no Espírito. O Espírito nos capacita a não satisfazer os desejos da carne. Aplicação: A vitória sobre o pecado vem pela dependência do Espírito. Reflexão: Você anda no Espírito ou na carne?",
+      "📖 <strong>RESUMO:</strong> Andai em Espírito, e não cumprireis a concupiscência da carne.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Andai em Espírito' (Romanos 8:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Porque a carne luta contra o Espírito, e o Espírito contra a carne; e estes se opõem um ao outro, para que não façais o que quereis.",
+      "<strong>COMENTÁRIO:</strong> ⚔️ Há um conflito interno entre a carne (natureza pecaminosa) e o Espírito. Eles se opõem, de modo que o crente não pode fazer o que quer (obedecer plenamente à carne ou ao Espírito sem luta). Aplicação: A vida cristã é uma batalha contínua. Reflexão: Você reconhece a luta entre a carne e o Espírito em sua vida?",
+      "📖 <strong>RESUMO:</strong> A carne luta contra o Espírito, e o Espírito contra a carne.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Luta contra o Espírito' (Romanos 7:23).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Mas, se sois guiados pelo Espírito, não estais debaixo da lei.",
+      "<strong>COMENTÁRIO:</strong> 👣 Se somos guiados (agō) pelo Espírito, não estamos sob a lei (como sistema de justificação). Aplicação: A liderança do Espírito liberta da lei. Reflexão: Você é guiado pelo Espírito ou pela lei?",
+      "📖 <strong>RESUMO:</strong> Se sois guiados pelo Espírito, não estais debaixo da lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Guiados pelo Espírito' (Romanos 8:14).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Porque as obras da carne são manifestas, as quais são: adultério, fornicação, impureza, lascívia,",
+      "<strong>COMENTÁRIO:</strong> 🔥 Paulo lista as 'obras da carne' (erga tēs sarkos). As primeiras são pecados sexuais: adultério, fornicação, impureza, lascívia. Aplicação: A carne produz pecados que são evidentes. Reflexão: Você reconhece as obras da carne em sua vida?",
+      "📖 <strong>RESUMO:</strong> Obras da carne: adultério, fornicação, impureza, lascívia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Obras da carne' (Efésios 5:3).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Idolatria, feitiçaria, inimizades, porfias, emulações, iras, pelejas, dissensões, heresias,",
+      "<strong>COMENTÁRIO:</strong> ⚔️ Mais obras da carne: idolatria, feitiçaria (bruxaria), inimizades, porfias (conflitos), emulações (ciúmes), iras, pelejas (disputas), dissensões, heresias (facções). Aplicação: A carne produz divisão e conflito. Reflexão: Você tem evitado essas obras da carne?",
+      "📖 <strong>RESUMO:</strong> Obras da carne: idolatria, feitiçaria, inimizades, porfias, emulações, iras, pelejas, dissensões, heresias.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Dissensões, heresias' (1 Coríntios 11:19).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 21</strong></span>",
+      "<strong>TEXTO:</strong> Invejas, homicídios, bebedices, glutonarias e coisas semelhantes a estas, acerca das quais vos declaro, como já antes vos disse, que os que cometem tais coisas não herdarão o reino de Deus.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Mais obras: invejas, homicídios, bebedices, glutonarias. Paulo declara que os que praticam tais coisas (sem arrependimento) não herdarão o reino de Deus. Aplicação: A prática contínua desses pecados exclui do reino. Reflexão: Você vive de forma a herdar o reino?",
+      "📖 <strong>RESUMO:</strong> Os que praticam essas coisas não herdarão o reino de Deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não herdarão o reino' (1 Coríntios 6:9-10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 22</strong></span>",
+      "<strong>TEXTO:</strong> Mas o fruto do Espírito é: amor, gozo, paz, longanimidade, benignidade, bondade, fé,",
+      "<strong>COMENTÁRIO:</strong> 🍇 **O FRUTO DO ESPÍRITO**. O Espírito produz caráter: amor (agapē), gozo (chara), paz (eirēnē), longanimidade (makrothymia – paciência), benignidade (chrēstotēs), bondade (agathōsynē), fé (pistis – fidelidade). Aplicação: O fruto do Espírito é a evidência de uma vida transformada. Reflexão: Qual desses frutos você precisa desenvolver mais?",
+      "📖 <strong>RESUMO:</strong> O fruto do Espírito: amor, gozo, paz, longanimidade, benignidade, bondade, fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fruto do Espírito' (Efésios 5:9).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 23</strong></span>",
+      "<strong>TEXTO:</strong> Mansidão, temperança; contra estas coisas não há lei.",
+      "<strong>COMENTÁRIO:</strong> 🍇 Continuação do fruto: mansidão (praütēs), temperança (enkrateia – domínio próprio). 'Contra estas coisas não há lei' – a lei não condena tais virtudes. Aplicação: O fruto do Espírito é a verdadeira liberdade. Reflexão: Você pratica a mansidão e o domínio próprio?",
+      "📖 <strong>RESUMO:</strong> Mansidão, temperança; contra estas coisas não há lei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Contra estas coisas não há lei' (1 Timóteo 1:9-10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 24</strong></span>",
+      "<strong>TEXTO:</strong> E os que são de Cristo crucificaram a carne, com as suas paixões e concupiscências.",
+      "<strong>COMENTÁRIO:</strong> ✝️ Os que são de Cristo crucificaram (stauroō) a carne – eles mortificaram a natureza pecaminosa. Não é uma morte instantânea, mas um processo contínuo. Aplicação: A crucificação da carne é uma marca do verdadeiro crente. Reflexão: Você está crucificando a carne diariamente?",
+      "📖 <strong>RESUMO:</strong> Os que são de Cristo crucificaram a carne com suas paixões.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Crucificaram a carne' (Romanos 6:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 25</strong></span>",
+      "<strong>TEXTO:</strong> Se vivemos em Espírito, andemos também em Espírito.",
+      "<strong>COMENTÁRIO:</strong> 🚶 Se recebemos a vida do Espírito, devemos andar (stoicheō – caminhar, viver) de acordo com o Espírito. Aplicação: A vida espiritual deve ser consistente. Reflexão: Você anda de acordo com o Espírito?",
+      "📖 <strong>RESUMO:</strong> Se vivemos em Espírito, andemos também em Espírito.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Andemos em Espírito' (Romanos 8:4).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 26</strong></span>",
+      "<strong>TEXTO:</strong> Não sejamos cobiçosos de vanglória, irritando-nos uns aos outros, invejando-nos uns aos outros.",
+      "<strong>COMENTÁRIO:</strong> 😠 Exortação final: não busquemos glória vã (kenodoxos – vaidade), provocando e invejando uns aos outros. Aplicação: A humildade e a unidade são frutos do Espírito. Reflexão: Você busca a glória de Deus ou a sua própria?",
+      "📖 <strong>RESUMO:</strong> Não sejamos cobiçosos de vanglória, irritando e invejando.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Vanglória' (Filipenses 2:3).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 5</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 5 é o clímax prático de Gálatas. Paulo exorta os crentes a permanecerem firmes na liberdade que Cristo conquistou. Se buscarem a justificação pela lei, estarão separados de Cristo e caídos da graça. O que importa é a fé que opera pelo amor. Paulo adverte contra a liberdade usada como pretexto para a carne; a liberdade é para servir em amor. Ele contrasta as obras da carne com o fruto do Espírito, mostrando que a verdadeira liberdade é andar no Espírito. O capítulo nos ensina que: 1) A liberdade em Cristo deve ser preservada; 2) A confiança na lei separa de Cristo; 3) A fé genuína opera pelo amor; 4) A liberdade não é licença para pecar; 5) A carne e o Espírito estão em conflito; 6) O fruto do Espírito é a evidência de uma vida transformada; 7) Devemos andar no Espírito.</p>"
+    ],
+
+    // ======================= CAPÍTULO 6 =======================
+    6: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A lei de Cristo e a regra da nova criação</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(1Co 9:21; 2Co 2:6-8)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Irmãos, se algum homem chegar a ser surpreendido nalguma ofensa, vós, que sois espirituais, encaminhai o tal com espírito de mansidão; olhando por ti mesmo, para que também tu não sejas tentado.",
+      "<strong>COMENTÁRIO:</strong> 🤝 A restauração deve ser feita com mansidão (praütēs), pelos que são espirituais. Cada um deve cuidar de si para não cair na mesma tentação. Aplicação: A correção deve ser amorosa e humilde. Reflexão: Você restaura os que caem com mansidão?",
+      "📖 <strong>RESUMO:</strong> Restaurai o irmão surpreendido em ofensa com espírito de mansidão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Espírito de mansidão' (2 Coríntios 10:1).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Levai as cargas uns dos outros, e assim cumprireis a lei de Cristo.",
+      "<strong>COMENTÁRIO:</strong> 🤲 'Levar cargas' (bastazō) – ajudar os outros em suas dificuldades. Isso é cumprir a lei de Cristo (a lei do amor). Aplicação: A solidariedade é a marca da comunidade cristã. Reflexão: Você carrega os fardos dos outros?",
+      "📖 <strong>RESUMO:</strong> Levai as cargas uns dos outros, cumprindo a lei de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Lei de Cristo' (1 Coríntios 9:21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Porque, se alguém cuida ser alguma coisa, não sendo nada, engana-se a si mesmo.",
+      "<strong>COMENTÁRIO:</strong> 😌 Quem pensa ser importante, mas não é, engana-se (phrenapataō) a si mesmo. Aplicação: A humildade é essencial. Reflexão: Você reconhece que, sem Cristo, você é nada?",
+      "📖 <strong>RESUMO:</strong> Quem cuida ser alguma coisa, não sendo nada, engana-se.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Engana-se a si mesmo' (1 Coríntios 3:18).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Mas prove cada um a sua própria obra, e então terá glória só em si mesmo, e não no outro.",
+      "<strong>COMENTÁRIO:</strong> 🔍 Cada um deve examinar (dokimazō) sua própria obra, não se comparando com outros. A verdadeira satisfação vem da aprovação de Deus, não da comparação. Aplicação: Evite a comparação; sirva para agradar a Deus. Reflexão: Você busca a aprovação de Deus ou a comparação com os outros?",
+      "📖 <strong>RESUMO:</strong> Prove cada um a sua própria obra, e terá glória em si mesmo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Prove sua própria obra' (2 Coríntios 13:5).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Porque cada qual levará a sua própria carga.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Cada um é responsável por sua própria carga (phortion – responsabilidade pessoal). Isso não contradiz o v.2; ali se refere ao fardo pesado (baros), aqui à responsabilidade individual. Aplicação: Somos responsáveis por nossa própria vida diante de Deus. Reflexão: Você assume sua responsabilidade pessoal?",
+      "📖 <strong>RESUMO:</strong> Cada qual levará a sua própria carga.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Sua própria carga' (Romanos 14:12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> E o que é instruído na palavra reparta de todos os seus bens com aquele que o instrui.",
+      "<strong>COMENTÁRIO:</strong> 💰 O que é ensinado na Palavra deve compartilhar bens com quem o ensina. Aplicação: O sustento dos obreiros é uma responsabilidade da igreja. Reflexão: Você apoia aqueles que te ensinam?",
+      "📖 <strong>RESUMO:</strong> O instruído na palavra deve repartir bens com o instrutor.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Repartir bens' (1 Coríntios 9:11,14).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Semeai no Espírito e não desfaleçais</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(Jó 4:8; Pv 11:18; Os 10:12)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Não vos enganeis: Deus não se deixa escarnecer; porque tudo o que o homem semear, isso também ceifará.",
+      "<strong>COMENTÁRIO:</strong> 🌾 **LEI DA SEMEADURA**. Não se engane (planāō): Deus não é zombado (mukterizō). A colheita corresponde à semente. Aplicação: Você colherá o que plantar. Reflexão: O que você está semeando?",
+      "📖 <strong>RESUMO:</strong> Não vos enganeis: tudo o que o homem semear, isso também ceifará.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Semeia e ceifará' (Jó 4:8).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Porque o que semeia na sua carne, da carne ceifará a corrupção; mas o que semeia no Espírito, do Espírito ceifará a vida eterna.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ Semear na carne (viver para os desejos carnais) resulta em corrupção (phthora). Semear no Espírito (viver para Deus) resulta em vida eterna (zōē aiōnios). Aplicação: Suas escolhas têm consequências eternas. Reflexão: Você semeia para a carne ou para o Espírito?",
+      "📖 <strong>RESUMO:</strong> O que semeia na carne ceifará corrupção; o que semeia no Espírito ceifará vida eterna.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Corrupção e vida eterna' (Romanos 6:21-23).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> E não nos cansemos de fazer bem, porque a seu tempo ceifaremos, se não houvermos desfalecido.",
+      "<strong>COMENTÁRIO:</strong> 🌾 Não desanime (enkakeō) de fazer o bem. A colheita virá no tempo certo (kairō idiō – no devido tempo). Aplicação: A perseverança no bem é recompensada. Reflexão: Você está cansado de fazer o bem?",
+      "📖 <strong>RESUMO:</strong> Não nos cansemos de fazer bem; a seu tempo ceifaremos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não desfaleçais' (2 Tessalonicenses 3:13).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Então, enquanto temos tempo, façamos bem a todos, mas principalmente aos domésticos da fé.",
+      "<strong>COMENTÁRIO:</strong> 💪 Aproveite as oportunidades (kairōs – tempo) para fazer o bem. Prioridade: os domésticos da fé (a família da igreja), mas também a todos. Aplicação: A generosidade deve ser prática e ampla. Reflexão: Você faz o bem a todos, especialmente aos irmãos?",
+      "📖 <strong>RESUMO:</strong> Façamos bem a todos, especialmente aos domésticos da fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Domésticos da fé' (Efésios 2:19).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Conclusão e glória na cruz</strong></i></p>",
+      "<p style='font-size: 0.8rem; text-align: center;'>(2Co 4:10; 12:10; 1Co 7:19)</p>",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Vede com quão grandes letras vos escrevi por minha própria mão.",
+      "<strong>COMENTÁRIO:</strong> ✍️ Paulo escreve de próprio punho, com letras grandes (provavelmente para enfatizar ou por problemas nos olhos). A aplicação: A carta é pessoal e enfática. Reflexão: Você valoriza a Palavra de Deus como algo pessoal?",
+      "📖 <strong>RESUMO:</strong> Paulo escreve com grandes letras por sua própria mão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Por minha própria mão' (1 Coríntios 16:21).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Todos os que querem mostrar boa aparência na carne, esses vos constrangem a circuncidar-vos, somente para não serem perseguidos por causa da cruz de Cristo.",
+      "<strong>COMENTÁRIO:</strong> 👀 Os falsos mestres querem 'boa aparência' (eupresōpēō) na carne – uma aparência externa de piedade e zelo, mas na verdade estão evitando a perseguição (diōgmos) que vem por causa da cruz. Aplicação: Cuidado com motivações externas de piedade. Reflexão: Você busca a aprovação dos homens ou a aprovação de Deus?",
+      "📖 <strong>RESUMO:</strong> Os falsos mestres querem boa aparência na carne e evitam a perseguição.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Boa aparência' (2 Coríntios 5:12).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Porque nem ainda esses mesmos que se circuncidam guardam a lei; mas querem que vos circuncideis, para se gloriarem na vossa carne.",
+      "<strong>COMENTÁRIO:</strong> 🎭 Os judaizantes não guardam a lei, mas querem que os gálatas se circuncidem para se gloriarem (kauchaomai) neles. Aplicação: Não siga líderes hipócritas. Reflexão: Você impõe padrões que não pratica?",
+      "📖 <strong>RESUMO:</strong> Os que se circuncidam não guardam a lei; querem se gloriar na carne dos gálatas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não guardam a lei' (Romanos 2:23).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Mas longe esteja de mim gloriar-me, a não ser na cruz de nosso Senhor Jesus Cristo, pela qual o mundo está crucificado para mim, e eu para o mundo.",
+      "<strong>COMENTÁRIO:</strong> ✝️ **O VERSÍCULO CENTRAL DA CARTA**. Paulo rejeita qualquer outra glória. Sua única glória é a cruz de Cristo. A cruz cria uma separação radical: o mundo está crucificado para ele, e ele para o mundo. Aplicação: A cruz é o único fundamento da nossa glória. Reflexão: Você se gloria na cruz de Cristo acima de todas as coisas?",
+      "📖 <strong>RESUMO:</strong> Longe esteja gloriar-me, a não ser na cruz de Cristo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Gloriar-me na cruz' (1 Coríntios 1:18, 2:2).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Porque em Cristo Jesus nem a circuncisão nem a incircuncisão tem valor algum, mas sim uma nova criatura.",
+      "<strong>COMENTÁRIO:</strong> 🌟 O que realmente importa em Cristo é a transformação interior: ser uma 'nova criatura' (kainē ktisis) – regenerada pelo Espírito. Aplicação: A salvação é sobre uma nova identidade em Cristo. Reflexão: Você é uma nova criatura?",
+      "📖 <strong>RESUMO:</strong> Em Cristo, o que vale é a nova criatura, não a circuncisão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Nova criatura' (2 Coríntios 5:17).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> E a todos quantos andarem conforme esta regra, paz e misericórdia sobre eles e sobre o Israel de Deus.",
+      "<strong>COMENTÁRIO:</strong> 🕊️ A 'regra' (kanōn) é o princípio de viver como nova criatura. 'Paz e misericórdia' são bênçãos para todos que andam por esta regra, incluindo o 'Israel de Deus' – o Israel espiritual (crentes judeus e gentios). Aplicação: A paz de Deus é para os que vivem pela fé. Reflexão: Você anda segundo esta regra?",
+      "📖 <strong>RESUMO:</strong> Paz e misericórdia sobre todos que andam conforme a regra da nova criação.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Israel de Deus' (Romanos 9:6).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Desde agora, ninguém me inquiete; porque trago no meu corpo as marcas do Senhor Jesus.",
+      "<strong>COMENTÁRIO:</strong> ⛓️ Paulo exige que ninguém mais o perturbe. Ele tem uma credencial maior: as 'marcas' (stigmata) do Senhor Jesus – as cicatrizes de perseguição. Aplicação: Sofrer por Cristo é uma honra. Reflexão: Você está disposto a carregar as marcas de Jesus?",
+      "📖 <strong>RESUMO:</strong> Paulo traz em seu corpo as marcas do Senhor Jesus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Marcas do Senhor' (2 Coríntios 4:10).",
+
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> A graça de nosso Senhor Jesus Cristo seja, irmãos, com o vosso espírito. Amém.",
+      "<strong>COMENTÁRIO:</strong> 🙌 A bênção final: a graça (charis) de Cristo seja com o espírito deles. 'Amém' – assim seja. Aplicação: A graça de Cristo é suficiente para tudo. Reflexão: Você vive pela graça de Cristo?",
+      "📖 <strong>RESUMO:</strong> A graça de Cristo seja com o vosso espírito. Amém.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Graça do Senhor' (2 Coríntios 13:14).",
+
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 6</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>O capítulo 6 conclui a carta de Gálatas com exortações práticas e a poderosa declaração sobre a cruz. Paulo instrui sobre a restauração amorosa dos irmãos caídos, o cuidado mútuo, a responsabilidade pessoal, e a generosidade para com os que ensinam. Ele enfatiza a lei da semeadura e da colheita: o que semeamos na carne colhemos corrupção; o que semeamos no Espírito colhemos vida eterna. O ponto culminante é o versículo 14: 'Longe esteja de mim gloriar-me, a não ser na cruz de nosso Senhor Jesus Cristo.' A carta termina com a afirmação de que o que importa é ser uma nova criatura, e Paulo carrega em seu corpo as marcas de Jesus. O capítulo nos ensina que: 1) Devemos restaurar os caídos com mansidão; 2) Devemos levar as cargas uns dos outros, mas também assumir responsabilidade pessoal; 3) A semeadura determina a colheita; 4) Não devemos nos cansar de fazer o bem; 5) A única glória legítima é a cruz de Cristo; 6) O que importa em Cristo é a nova criação; 7) A graça de Cristo é a bênção final.</p>",
+    
+  // ======================= RESUMO FINAL DO LIVRO =======================
+  
+      "<p style='font-size: 1rem; text-align: center;'><i><strong>RESUMO FINAL DE GÁLATAS</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>A Epístola aos Gálatas é a carta magna da liberdade cristã. Escrita por Paulo com urgência e paixão, ela defende o evangelho da justificação pela fé contra os ataques dos judaizantes, que queriam impor a circuncisão e a observância da lei mosaica como requisitos para a salvação. Paulo não tolera qualquer desvio do evangelho da graça.</p>",
+      "<p style='font-size: 0.6rem;'>Paulo argumenta com base em sua própria experiência (cap. 1-2), na Escritura e na teologia da promessa a Abraão (cap. 3), na alegoria de Agar e Sara (cap. 4), e na contraposição entre carne e Espírito (cap. 5-6). O tema central é que o homem não é justificado pelas obras da lei, mas pela fé em Jesus Cristo. A lei serve como aio para conduzir a Cristo, mas uma vez que a fé chegou, já não estamos mais sob a lei.</p>",
+      "<p style='font-size: 0.6rem;'>A carta também ensina sobre a liberdade cristã: não é licença para pecar, mas liberdade para servir em amor. O fruto do Espírito é a evidência de uma vida transformada, e a cruz é o único fundamento da nossa glória.</p>",
+      "<p style='font-size: 0.7rem;'><strong>LIÇÕES PRINCIPAIS:</strong></p>",
+      "<ul style='font-size: 0.6rem;'>",
+      "  <li><strong>Justificação pela fé:</strong> Não somos justificados pelas obras da lei, mas pela fé em Jesus Cristo (Gálatas 2:16).</li>",
+      "  <li><strong>Liberdade em Cristo:</strong> Cristo nos libertou para a verdadeira liberdade; não nos submetamos novamente ao jugo da servidão (Gálatas 5:1).</li>",
+      "  <li><strong>A lei como aio:</strong> A lei nos conduz a Cristo, mas uma vez que a fé chegou, não estamos mais sob a lei (Gálatas 3:24-25).</li>",
+      "  <li><strong>A cruz como única glória:</strong> Nossa única glória é a cruz de Cristo, pela qual o mundo está crucificado para nós, e nós para o mundo (Gálatas 6:14).</li>",
+      "  <li><strong>Nova criatura:</strong> Em Cristo, o que importa não é a circuncisão ou incircuncisão, mas ser uma nova criatura (Gálatas 6:15).</li>",
+      "  <li><strong>Fruto do Espírito:</strong> A evidência de uma vida transformada é o fruto do Espírito: amor, gozo, paz, longanimidade, benignidade, bondade, fé, mansidão e temperança (Gálatas 5:22-23).</li>",
+      "  <li><strong>Andar no Espírito:</strong> Se vivemos no Espírito, devemos andar no Espírito (Gálatas 5:25).</li>",
+      "</ul>",
+      "<p style='font-size: 0.6rem;'>Que possamos permanecer firmes na liberdade que Cristo nos conquistou, vivendo pela fé, amando uns aos outros, e nos gloriando somente na cruz de nosso Senhor Jesus Cristo.</p>"
+  ]
+}
+};
+
+module.exports = LIVRO_DATA;

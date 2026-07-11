@@ -1,0 +1,382 @@
+window.LIVRO_DATA = {
+  nome: "Habacuque Comentado",
+  id: "habacuque",
+  testament: "AT",
+  
+  dados: {
+    // ======================= CAPÍTULO 1 =======================
+    1: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>O Clamor do Profeta e a Resposta de Deus: 'Até Quando, Ó Senhor?'</strong></i></p>",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> O peso que o profeta Habacuque viu.",
+      "<strong>COMENTÁRIO:</strong> 📖 'O peso (massa)' – oráculo de juízo, carga pesada (como em Naum). 'Habacuque (Chavaquq)' – nome de origem acádica que significa 'abraço' (ou nome de uma planta). 'Viu (chazah)' – visão profética. O princípio é que o profeta vê o que Deus lhe revela, muitas vezes uma mensagem difícil de carregar. Aplicação: você está disposto a 'carregar o peso' da mensagem de Deus para sua geração?",
+      "📖 <strong>RESUMO:</strong> O oráculo (peso) que o profeta Habacuque viu.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ai de mim se não pregar o evangelho' (1 Coríntios 9:16).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Até quando, ó Senhor, clamarei eu, e tu não me escutarás? Gritarei a ti: Violência! e não salvarás?",
+      "<strong>COMENTÁRIO:</strong> 📢 'Até quando (ad-anah)' – expressão de lamento angustiado (Salmo 13:1-2). 'Clamarei eu, e tu não me escutarás?' – Deus parece surdo aos clamores de Habacuque. 'Violência (chamas)' – palavra que descreve a opressão em Judá. 'Não salvarás (toshia)?' – Deus parece inativo diante do mal. O princípio é que o justo pode questionar a aparente demora de Deus em agir contra o mal. Aplicação: você já se sentiu como Habacuque, clamando a Deus sem resposta aparente? Reflexão: Deus não se ofende com nossas perguntas honestas.",
+      "📖 <strong>RESUMO:</strong> Até quando clamarei, Senhor, e não me escutarás? Gritarei 'Violência!', e não salvarás?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Clamo de dia, e não me respondes; de noite, e não tenho sossego' (Salmo 22:2).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Por que me fazes ver a iniqüidade, e a opressão? Pois a destruição e a violência estão diante de mim; há quem suscite contendas e litígios.",
+      "<strong>COMENTÁRIO:</strong> 😫 'Por que me fazes ver a iniqüidade (aven)?' – Habacuque questiona por que Deus permite que ele veja o mal. 'Opressão (amal)' – sofrimento causado pela injustiça. 'Destruição (shod) e violência (chamas)' – termos fortes para o caos social. 'Contendas (riv) e litígios (madon)' – disputas judiciais e conflitos. O princípio é que o profeta está sobrecarregado pela visão do pecado em sua nação. Aplicação: você tem se entristecido pela iniqüidade ao seu redor?",
+      "📖 <strong>RESUMO:</strong> Por que me fazes ver a iniqüidade e a opressão? Diante de mim estão destruição e violência.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ló, justo, afligia-se pela conduta libertina dos ímpios' (2 Pedro 2:7).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Por esta causa a lei se afrouxa, e a justiça nunca se manifesta; porque o ímpio cerca o justo, e a justiça se manifesta distorcida.",
+      "<strong>COMENTÁRIO:</strong> ⚖️ 'A lei (torah) se afrouxa (pug)' – a lei perde seu vigor, não é aplicada. 'A justiça (mishpat) nunca se manifesta' – não há justiça nos tribunais. 'O ímpio (rasha) cerca (kiter) o justo (tsaddik)' – os maus dominam os bons. 'A justiça se manifesta distorcida (ma'uqal)' – a justiça é pervertida, torcida. O princípio é que a ausência de justiça leva ao caos social. Aplicação: quando a justiça é pervertida, a sociedade se desintegra. Ore por líderes justos.",
+      "📖 <strong>RESUMO:</strong> A lei se afrouxa, a justiça não se manifesta; o ímpio cerca o justo, e a justiça é distorcida.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'A justiça se retirou para trás, e a retidão está longe' (Isaías 59:14).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Vede entre as nações, e olhai, e maravilhai-vos, e admirai-vos; porque realizarei em vossos dias uma obra que vós não crereis, quando vos for contada.",
+      "<strong>COMENTÁRIO:</strong> 🌍 'Vede entre as nações (goyim)' – olhe para as potências mundiais. 'Maravilhai-vos (tamahu) e admirai-vos (simu)' – dupla ênfase no espanto. 'Realizarei em vossos dias uma obra' – Deus agirá em breve, não em um futuro distante. 'Que vós não crereis (lo ta'amenu)' – a obra será tão surpreendente que parecerá incrível. Paulo cita este versículo em Atos 13:41 como advertência aos incrédulos. O princípio é que Deus age de maneiras inesperadas que desafiam nossa compreensão. Aplicação: esteja aberto para ver Deus agir de formas surpreendentes. Reflexão: Paulo aplicou este versículo à ressurreição de Cristo – algo que muitos não creram.",
+      "📖 <strong>RESUMO:</strong> Vede entre as nações, maravilhai-vos; realizarei em vossos dias uma obra que não crereis.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Vede, ó desprezadores, e maravilhai-vos, e desaparecei; porque realizo uma obra em vossos dias, obra que não crereis' (Atos 13:41).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Porque eis que suscitarei os caldeus, nação amarga e impetuosa, que marcha sobre a largura da terra, para possuir moradas que não são suas.",
+      "<strong>COMENTÁRIO:</strong> ⚔️ 'Suscitarei (meqim) os caldeus (Kasdim)' – Deus é quem levanta os babilônios como instrumento de juízo. 'Nação amarga (hamar) e impetuosa (nimhar)' – cruel e veloz. 'Marcha sobre a largura da terra (merchavei eretz)' – conquista vastos territórios. 'Para possuir moradas que não são suas' – invasão e conquista. O princípio é que Deus usa nações ímpias para disciplinar Seu povo. Aplicação: Deus tem soberania sobre todas as nações; Ele as usa para Seus propósitos.",
+      "📖 <strong>RESUMO:</strong> Eis que suscitarei os caldeus, nação amarga e impetuosa, que marcha pela terra para conquistar.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ó Assíria, vara da minha ira' (Isaías 10:5).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Ela é terrível e espantosa; dela mesma sairá o seu juízo e a sua grandeza.",
+      "<strong>COMENTÁRIO:</strong> 😨 'Terrível (ayum) e espantosa (nora)' – causa medo e horror. 'Dela mesma sairá o seu juízo (mishpato)' – os caldeus impõem sua própria justiça. 'E a sua grandeza (se'eto)' – sua majestade e poder. O princípio é que os babilônios eram conhecidos por sua crueldade e auto-exaltação. Aplicação: o poder humano sem Deus é aterrorizante.",
+      "📖 <strong>RESUMO:</strong> Os caldeus são terríveis e espantosos; deles mesmos sairá seu juízo e sua grandeza.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O seu poder é grande' (Jó 41:12).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Os seus cavalos são mais ligeiros do que os leopardos, e mais ferozes do que os lobos à tarde; os seus cavaleiros se espalham por toda parte; os seus cavaleiros vêm de longe; voam como águias que se apressam a devorar.",
+      "<strong>COMENTÁRIO:</strong> 🐆 'Cavalos... mais ligeiros que leopardos' – velocidade impressionante. 'Mais ferozes que lobos à tarde' – lobos famintos após o descanso diurno. 'Cavaleiros se espalham (pashu) por toda parte' – ataques generalizados. 'Voam como águias (nesher)' – rapidez e precisão. O princípio é que o exército babilônico era notoriamente rápido e cruel. Aplicação: o juízo de Deus pode vir rapidamente, como águia que se lança sobre a presa.",
+      "📖 <strong>RESUMO:</strong> Os cavalos caldeus são mais ligeiros que leopardos, mais ferozes que lobos; voam como águias.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Onde estiver o cadáver, aí se ajuntarão as águias' (Mateus 24:28).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Eles todos vêm para fazer violência; os seus rostos buscam o vento oriental; e eles amontoam os cativos como areia.",
+      "<strong>COMENTÁRIO:</strong> 💨 'Vêm para fazer violência (chamas)' – propósito destruidor. 'Rostos buscam o vento oriental (qadimah)' – avançam rapidamente como o vento do deserto. 'Amontoam (vayitzbor) os cativos como areia (chol)' – incontáveis prisioneiros. O princípio é que a conquista babilônica resultou em deportações em massa. Aplicação: o pecado leva ao cativeiro.",
+      "📖 <strong>RESUMO:</strong> Todos vêm para fazer violência; amontoam cativos como areia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Porque aquele que semeia para a sua carne, da carne ceifará a corrupção' (Gálatas 6:8).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> E escarnecem dos reis, e dos príncipes fazem zombaria; eles se riem de todas as fortalezas, porque amontoam terra, e as tomam.",
+      "<strong>COMENTÁRIO:</strong> 🏰 'Escarnecem dos reis... zombaria dos príncipes' – desrespeito total à autoridade. 'Riem de todas as fortalezas (mivtzar)' – confiança na própria força militar. 'Amontoam terra (vayitzbor afar)' – constroem rampas de cerco. 'E as tomam (vayilkdah)' – eficácia no cerco. O princípio é que as fortalezas humanas são inúteis diante do poder de Deus (e de Seu instrumento). Aplicação: não confie em 'fortalezas' humanas; confie somente em Deus.",
+      "📖 <strong>RESUMO:</strong> Escarnecem dos reis, riem das fortalezas; amontoam terra e as tomam.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Toda fortaleza será derrubada' (2 Coríntios 10:4).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Então passa o vento impetuoso, e segue; mas ele se faz culpado, atribuindo este poder ao seu deus.",
+      "<strong>COMENTÁRIO:</strong> 🌬️ 'Passa o vento impetuoso (ruach)' – os caldeus passam como vento devastador. 'Segue (ya'avor)' – continuam sua marcha de conquista. 'Faz-se culpado (asham)' – responsável por seus pecados. 'Atribuindo este poder (kocho) ao seu deus' – idolatria, atribuem a vitória a seus falsos deuses. O princípio é que os caldeus serão julgados por sua crueldade e idolatria. Aplicação: o sucesso não é prova da aprovação divina. Os ímpios também prosperam, mas serão julgados.",
+      "📖 <strong>RESUMO:</strong> Passam como vento impetuoso, mas se fazem culpados ao atribuir seu poder ao seu deus.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Mudaram a glória do Deus incorruptível em semelhança... de homens' (Romanos 1:23).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Não és tu desde a eternidade, ó Senhor meu Deus, meu Santo? Nós não morreremos. Ó Senhor, para juízo o puseste; e tu, ó Rocha, para correção o fundaste.",
+      "<strong>COMENTÁRIO:</strong> ⛰️ 'Não és tu desde a eternidade (miqedem)' – Deus é eterno, imutável. 'Senhor meu Deus, meu Santo (qadoshi)' – a santidade de Deus é a base da justiça. 'Nós não morreremos (lo namut)' – confiança na preservação do remanescente. 'Para juízo (mishpat) o puseste' – Deus estabeleceu os caldeus como instrumento de julgamento. 'Para correção (yakkach) o fundaste' – para disciplinar, não para destruir totalmente. O princípio é que mesmo em meio ao juízo, Habacuque confia na soberania e santidade de Deus. Aplicação: Deus é a Rocha eterna; confie Nele mesmo quando não entende Seus caminhos.",
+      "📖 <strong>RESUMO:</strong> Não és tu desde a eternidade, Senhor? Nós não morreremos. Puseste os caldeus para juízo e correção.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tu és o mesmo, e os teus anos não terão fim' (Salmo 102:27).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Tu és tão puro de olhos, que não podes ver o mal, e a opressão não podes contemplar; por que, pois, olhas para os que procedem aleivosamente, e te calas quando o ímpio devora aquele que é mais justo do que ele?",
+      "<strong>COMENTÁRIO:</strong> 👁️ 'Puro de olhos (techar eynayim) que não podes ver o mal (ra)' – Deus é absolutamente santo e não aprova o pecado. 'Opressão (amal) não podes contemplar (habit)' – não pode tolerar a injustiça. 'Por que... olhas para os que procedem aleivosamente (bogedim)?' – pergunta angustiada: por que Deus permite que os ímpios prosperem? 'Calas (tacharish) quando o ímpio devora (bila) o mais justo (tsaddik)?' – Habacuque está perplexo: como Deus pode usar os caldeus (mais ímpios) para punir Judá (menos ímpio)? O princípio é que o problema da teodiceia (justiça de Deus diante do sofrimento) é real e doloroso. Aplicação: é permitido questionar a Deus honestamente sobre a injustiça no mundo. Reflexão: este é o 'escândalo do mal' – por que Deus permite que os maus triunfem sobre os menos maus?",
+      "📖 <strong>RESUMO:</strong> Tu és tão puro que não podes ver o mal; por que olhas para os aleivosos e te calas quando o ímpio devora o justo?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Até quando, ó Senhor, justo e verdadeiro?' (Apocalipse 6:10).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> E por que farias os homens como os peixes do mar, como os répteis que não têm quem os governe?",
+      "<strong>COMENTÁRIO:</strong> 🐟 'Por que farias os homens como os peixes do mar?' – os caldeus pescam nações como peixes. 'Como os répteis (remes) que não têm quem os governe' – criaturas inferiores, sem defesa. O princípio é que Habacuque vê a humanidade sendo tratada como criaturas inferiores, capturadas sem piedade. Aplicação: a opressão desumaniza as pessoas. Deus criou o homem à Sua imagem; tratá-los como peixes é pecado.",
+      "📖 <strong>RESUMO:</strong> Por que fazes os homens como peixes do mar, como répteis sem governante?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Fizeste o homem um pouco menor do que os anjos' (Salmo 8:5).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Eles a todos levam com o anzol, apanham-nos com a sua rede, e os ajuntam na sua rede varredoura; por isso se alegram e se regozijam.",
+      "<strong>COMENTÁRIO:</strong> 🎣 'Levam com o anzol (chakkah)... apanham com a rede (cherem)... ajuntam na rede varredoura (mikmeret)' – três metáforas de pesca para descrever a conquista. 'Se alegram (yismach) e se regozijam (yagil)' – os caldeus celebram suas conquistas. O princípio é que os opressores se alegram com sua crueldade. Aplicação: a alegria dos ímpios é passageira; a justiça de Deus virá.",
+      "📖 <strong>RESUMO:</strong> Levam todos com anzol, apanham com rede, e se alegram com suas conquistas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Rindo-se, não se lembrarão da guerra' (Jó 41:9).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Por isso sacrificam à sua rede, e queimam incenso à sua rede varredoura; porque por elas é pingue a sua porção, e abundante a sua comida.",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Sacrificam (yizbeach) à sua rede' – idolatria: atribuem a vitória aos seus instrumentos de guerra, não a Deus. 'Queimam incenso (yekater) à sua rede varredoura' – adoração aos ídolos. 'Pingue a sua porção (chelek) e abundante a sua comida' – prosperidade material. O princípio é que os caldeus adoram seu próprio poder militar. Aplicação: cuidado para não adorar a 'rede' (seus próprios recursos, habilidades, sucessos) em vez de Deus. Reflexão: você tem sacrificado à sua 'rede'?",
+      "📖 <strong>RESUMO:</strong> Sacrificam à sua rede e queimam incenso a ela, porque por ela têm porção pingue e comida abundante.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não podeis servir a Deus e a Mamom' (Mateus 6:24).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Porventura esvaziarão a sua rede, e não cessarão de matar as nações?",
+      "<strong>COMENTÁRIO:</strong> ❓ 'Porventura esvaziarão (yarik) a sua rede?' – pergunta retórica: os caldeus continuarão sua conquista sem fim? 'Não cessarão (yachmol) de matar as nações?' – a crueldade parece interminável. O princípio é que o poder opressor parece ilimitado, mas Deus tem um limite. Aplicação: confie que Deus porá um fim à opressão. O sofrimento não durará para sempre.",
+      "📖 <strong>RESUMO:</strong> Porventura esvaziarão sua rede e não cessarão de matar as nações?",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Até quando, ó Senhor?' (Apocalipse 6:10).",
+      
+      "<hr style='margin: 15px 0;'>",
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 1</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>Habacuque 1 é o lamento do profeta diante da injustiça em Judá: a lei se afrouxa, o ímpio cerca o justo, e a justiça é pervertida. Deus responde com uma mensagem surpreendente: Ele usará os caldeus (babilônios), uma nação ainda mais ímpia, para julgar Judá. Habacuque fica perplexo: como pode um Deus santo usar uma nação cruel e idólatra para punir Seu povo? O capítulo termina com o profeta questionando a justiça divina, mas ainda confiando na soberania de Deus. O capítulo ensina que: 1) É permitido questionar a Deus honestamente sobre a injustiça; 2) Deus age de maneiras inesperadas que desafiam nossa compreensão; 3) Deus usa nações ímpias como instrumentos de juízo; 4) Os instrumentos do juízo também serão julgados; 5) Mesmo perplexo, Habacuque confia que Deus é eterno, santo e soberano.</p>"
+    ],
+    
+    // ======================= CAPÍTULO 2 =======================
+    2: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A Resposta de Deus e a Visão do Justo: 'O Justo pela Sua Fé Viverá'</strong></i></p>",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Sobre a minha guarda estarei, e sobre a fortaleza me apresentarei, e vigiarei para ver o que ele falará a mim, e o que eu responderei quando for arguido.",
+      "<strong>COMENTÁRIO:</strong> 🚶 'Sobre a minha guarda (mishmeret) estarei' – Habacuque se coloca como atalaia, esperando a resposta de Deus. 'Sobre a fortaleza (matsor) me apresentarei' – posição de vigilância atenta. 'Vigiarei (atzapeh) para ver o que ele falará' – expectativa pela revelação divina. 'O que eu responderei quando for arguido (tokachati)' – o profeta se prepara para defender sua queixa. O princípio é que devemos esperar pacientemente pela resposta de Deus, mesmo quando estamos angustiados. Aplicação: você tem se colocado como 'atalaia' para ouvir a voz de Deus?",
+      "📖 <strong>RESUMO:</strong> Sobre a minha guarda estarei, vigiarei para ver o que Deus me falará.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Esperei com paciência no Senhor, e ele se inclinou para mim' (Salmo 40:1).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Então o Senhor me respondeu, e disse: Escreve a visão, e torna-a bem legível sobre tábuas, para que a possa ler o que correndo passa.",
+      "<strong>COMENTÁRIO:</strong> ✍️ 'Escreve (ketov) a visão (chazon)' – a revelação deve ser registrada. 'Torna-a bem legível (ba'er al halluchot)' – escrita clara em tábuas (de argila ou madeira). 'Para que a possa ler (yarutz) o que correndo passa' – para que o mensageiro possa correr e anunciar a mensagem (ou: para que qualquer um que passe possa ler). O princípio é que a palavra de Deus deve ser clara e proclamada. Aplicação: a visão de Deus precisa ser escrita e compartilhada. Você tem registrado o que Deus tem lhe revelado?",
+      "📖 <strong>RESUMO:</strong> Escreve a visão claramente em tábuas, para que o mensageiro possa lê-la correndo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Escreve estas coisas... porque são fiéis e verdadeiras' (Apocalipse 21:5).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Porque a visão é ainda para o tempo determinado, mas se apressa para o fim, e não enganará; se tardar, espera-o, porque certamente virá, não tardará.",
+      "<strong>COMENTÁRIO:</strong> ⏰ 'A visão é ainda para o tempo determinado (la'moed)' – há um tempo estabelecido por Deus. 'Se apressa (yafeach) para o fim (qets)' – o cumprimento se aproxima. 'Não enganará (yekazev)' – a promessa é verdadeira. 'Se tardar (yitmamah), espera-o (chakeh lo)' – a espera é parte da fé. 'Certamente virá (bo yavo), não tardará (lo ye'acher)' – certeza absoluta do cumprimento. O princípio é que a fé aguarda o cumprimento das promessas de Deus no tempo determinado. Aplicação: quando Deus parece tardar, espere com fé. Ele não se atrasa. Reflexão: 'Se tardar, espera-o' – quantas vezes precisamos ouvir isso!",
+      "📖 <strong>RESUMO:</strong> A visão é para o tempo determinado; se tardar, espera-o, porque certamente virá.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ainda um pouco, e o que há de vir virá, e não tardará' (Hebreus 10:37).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> Eis que a sua alma está orgulhosa, não é reta nele; mas o justo pela sua fé viverá.",
+      "<strong>COMENTÁRIO:</strong> 💎 'Eis que a sua alma (napsho) está orgulhosa (uphelah)' – o ímpio é arrogante, confia em si mesmo. 'Não é reta (lo yashrah) nele' – não é justo diante de Deus. 'Mas o justo (tsaddik) pela sua fé (emunato) viverá (yicheyeh)' – este é o versículo central do livro e um dos mais importantes do AT. 'Emunah' significa fidelidade, confiança, perseverança, fé. Paulo cita este versículo em Romanos 1:17 para a justificação pela fé; em Gálatas 3:11 contra a justificação pela lei; e Hebreus 10:38 para a perseverança da fé. O princípio é que a verdadeira vida vem não da arrogância e auto-suficiência, mas da fé confiante em Deus. Aplicação: você está vivendo pela fé ou pela arrogância? Reflexão: 'O justo pela fé viverá' – esta é a declaração que mudou a vida de Lutero e desencadeou a Reforma.",
+      "📖 <strong>RESUMO:</strong> O ímpio é orgulhoso e não é reto, mas o justo viverá pela sua fé.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O justo viverá pela fé' (Romanos 1:17; Gálatas 3:11; Hebreus 10:38).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> E, decerto, o vinho engana ao soberbo, e ele não permanecerá; que alarga o seu desejo como o inferno, e é como a morte, e não se farta; ajunta a si todas as nações, e congrega a si todos os povos.",
+      "<strong>COMENTÁRIO:</strong> 🍷 'O vinho (hayayin) engana (boged) ao soberbo' – a bebida (ou poder) ilude o orgulhoso. 'Ele não permanecerá (lo yalin)' – sua glória é passageira. 'Alarga o seu desejo (hiphshiv) como o inferno (sheol)' – ambição insaciável como a morte. 'Não se farta (yisba)' – nunca está satisfeito. 'Ajunta a si todas as nações... todos os povos' – imperialismo insaciável. O princípio é que o orgulho e a ambição desmedida levam à ruína. Aplicação: cuidado com o 'vinho' do poder e da riqueza que embriaga e engana.",
+      "📖 <strong>RESUMO:</strong> O vinho engana o soberbo; ele alarga seu desejo como o inferno, insaciável, ajuntando nações.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'A cobiça é idolatria' (Colossenses 3:5).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Não sucederá que todos estes levantem contra ele uma parábola e um dito zombador contra ele? E dir-se-á: Ai daquele que multiplica o que não é seu! (até quando?) e daquele que se carrega a si mesmo de grossas penhores!",
+      "<strong>COMENTÁRIO:</strong> 🗣️ 'Levantem contra ele uma parábola (mashal) e um dito zombador (melitzah)' – as nações zombarão do opressor. 'Ai daquele que multiplica o que não é seu (marbeh lo)' – primeiro 'ai' (v.6-8): ganância e saque. 'Até quando (ad-matai)?' – exclamação de espanto. 'Se carrega a si mesmo de grossas penhores (koved 'abtit)' – acumula dívidas e opressão. O princípio é que os opressores serão ridicularizados e julgados. Aplicação: o que você acumula que não é seu será tirado.",
+      "📖 <strong>RESUMO:</strong> Todos levantarão uma zombaria contra o opressor: 'Ai daquele que multiplica o que não é seu!'",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ai de vós, escribas e fariseus hipócritas!' (Mateus 23:13).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Não se levantarão de repente os que te hão de morder? E não despertarão os que te hão de fazer tremer? E não lhes servirás tu de despojo?",
+      "<strong>COMENTÁRIO:</strong> 🐍 'Os que te hão de morder (noshechecha)' – os que te devem cobrar. 'Despertarão (yaqitzu) os que te hão de fazer tremer (maz'izecha)' – os que te ameaçam. 'Servirás tu de despojo (meshisah)' – você se tornará presa. O princípio é que o opressor será vítima de seus próprios métodos. Aplicação: quem vive pela espada, pela espada morrerá.",
+      "📖 <strong>RESUMO:</strong> Os que te mordem se levantarão; os que te fazem tremer despertarão; servirás de despojo.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Com a medida com que medirdes, também vós sereis medidos' (Mateus 7:2).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Visto que despojaste a muitas nações, todos os mais povos te despojarão a ti, por causa do sangue dos homens, e da violência feita à terra, à cidade e a todos os que nela habitam.",
+      "<strong>COMENTÁRIO:</strong> 🔄 'Despojaste (shallota) a muitas nações' – os caldeus saquearam muitos povos. 'Todos os mais povos (yeter amim) te despojarão' – retribuição na mesma moeda. 'Por causa do sangue dos homens (dame adam)' – violência contra pessoas. 'Violência (chamas) feita à terra (eretz), à cidade (qiryah)' – destruição ambiental e urbana. O princípio é o princípio da retribuição: o que você fez aos outros será feito a você. Aplicação: cuidado com a violência que você pratica; ela voltará para você.",
+      "📖 <strong>RESUMO:</strong> Despojaste nações, portanto serás despojado; por causa do sangue e da violência.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Quem com ferro fere, com ferro será ferido' (Apocalipse 13:10).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> Ai daquele que ajunta em sua casa lucros criminosos, para pôr o seu ninho no alto, a fim de se livrar do poder do mal!",
+      "<strong>COMENTÁRIO:</strong> 🪹 'Ai (hoy) daquele que ajunta em sua casa lucros criminosos (betza ra)' – segundo 'ai' (v.9-11): ganhos ilícitos. 'Para pôr o seu ninho (qino) no alto (marom)' – construir segurança através da injustiça. 'Para se livrar (hinatzel) do poder (kaph) do mal (ra)' – tentativa de proteção através da opressão. O princípio é que a segurança baseada em injustiça é ilusória. Aplicação: 'O dinheiro adquirido com desonestidade diminuirá' (Provérbios 13:11).",
+      "📖 <strong>RESUMO:</strong> Ai daquele que ajunta lucros criminosos e põe seu ninho no alto para se livrar do mal.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não ajunteis tesouros na terra' (Mateus 6:19).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Vergonha maquinaste para a tua casa; destruindo a muitos povos, pecaste contra a tua alma.",
+      "<strong>COMENTÁRIO:</strong> 😔 'Vergonha (qalon) maquinaste (ya'atsta) para a tua casa' – o que você planejou para outros recai sobre você. 'Destruindo (qatsots) a muitos povos' – a violência contra outros. 'Pecaste (chata) contra a tua alma (naphshecha)' – o pecado é autodestrutivo. O princípio é que o pecado sempre fere o pecador primeiro. Aplicação: 'O salário do pecado é a morte' (Romanos 6:23).",
+      "📖 <strong>RESUMO:</strong> Vergonha maquinaste para tua casa; destruindo povos, pecaste contra tua alma.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Aquele que comete pecado é escravo do pecado' (João 8:34).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> Porque a pedra clamará da parede, e a trave da madeira lhe responderá.",
+      "<strong>COMENTÁRIO:</strong> 🪨 'A pedra (even) clamará (tiz'aq) da parede' – os materiais de construção testemunharão contra o opressor. 'A trave (kaphis) da madeira ('etz) lhe responderá (ta'anennah)' – até a madeira dos edifícios construídos com injustiça clama por justiça. O princípio é que a própria criação clama contra a injustiça. Aplicação: 'Até as pedras clamarão' (Lucas 19:40).",
+      "📖 <strong>RESUMO:</strong> A pedra clamará da parede, e a trave de madeira responderá.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Se estes se calarem, as pedras clamarão' (Lucas 19:40).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Ai daquele que edifica a cidade com sangue, e que funda a cidade com iniqüidade!",
+      "<strong>COMENTÁRIO:</strong> 🏗️ 'Ai (hoy) daquele que edifica (boneh) a cidade ('ir) com sangue (damim)' – terceiro 'ai' (v.12-14): construção sobre violência. 'Funda (konen) a cidade com iniqüidade (avlah)' – os fundamentos são injustos. O princípio é que edifícios construídos sobre sangue e injustiça não prosperarão. Aplicação: examine os 'fundamentos' do que você está construindo; se são injustos, sua obra cairá.",
+      "📖 <strong>RESUMO:</strong> Ai daquele que edifica a cidade com sangue e a funda com iniqüidade.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Se alguém edificar sobre este fundamento... a obra se manifestará' (1 Coríntios 3:12-13).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Acaso não vem do Senhor dos Exércitos que os povos trabalhem para o fogo, e as nações se cansem em vão?",
+      "<strong>COMENTÁRIO:</strong> 🔥 'Acaso não vem do Senhor dos Exércitos (YHWH tzeva'ot)?' – Deus é a fonte do juízo. 'Os povos trabalhem (ya'ayu) para o fogo ('esh)' – todo trabalho será consumido. 'As nações se cansem (yiga'u) em vão (derek)' – esforço fútil. O princípio é que todo trabalho baseado na injustiça é em vão. Aplicação: trabalhe para o que é eterno, não para o que será consumido pelo fogo.",
+      "📖 <strong>RESUMO:</strong> Do Senhor vem que os povos trabalhem para o fogo e as nações se cansem em vão.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'A obra de cada um se manifestará... o fogo a provará' (1 Coríntios 3:13).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Porque a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.",
+      "<strong>COMENTÁRIO:</strong> 🌍 'A terra (ha'aretz) se encherá (timale) do conhecimento (de'ah) da glória (kevod) do Senhor (YHWH)' – visão escatológica da universalidade do conhecimento de Deus. 'Como as águas (mayim) cobrem (yechassu) o mar (yam)' – totalidade e abundância. Este versículo ecoa Isaías 11:9. O princípio é que, apesar do juízo, o propósito final de Deus é que toda a terra conheça Sua glória. Aplicação: anseie pelo dia em que o conhecimento do Senhor encherá a terra. Enquanto isso, compartilhe esse conhecimento.",
+      "📖 <strong>RESUMO:</strong> A terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Assim como a terra se enche da água do mar, assim se encherá do conhecimento do Senhor' (Isaías 11:9).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Ai daquele que dá de beber ao seu companheiro, misturando o seu veneno, e que o embriaga para lhe ver a nudez!",
+      "<strong>COMENTÁRIO:</strong> 🍺 'Ai (hoy) daquele que dá de beber (mashqeh) ao seu companheiro (re'ehu)' – quarto 'ai' (v.15-17): sedução e humilhação. 'Misturando o seu veneno (chamatkha)' – o cálice da ira de Deus (ou: embriagar para humilhar). 'Embriaga (veshakkar) para lhe ver a nudez (me'oreihem)' – humilhação pública. O princípio é que aqueles que humilham outros serão humilhados. Aplicação: não se alegre na humilhação alheia; você pode beber o mesmo cálice.",
+      "📖 <strong>RESUMO:</strong> Ai daquele que dá de beber veneno ao companheiro para lhe ver a nudez.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O cálice que tu me deste, eu o beberei' (João 18:11).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> De vergonha te fartarás, e não de glória; bebe tu também, e aparece incircunciso; o cálice da mão direita do Senhor se voltará contra ti, e infâmia sujará a tua glória.",
+      "<strong>COMENTÁRIO:</strong> 😳 'De vergonha (qalon) te fartarás (sava'ta)' – em vez de glória, receberá vergonha. 'Bebe tu também (sheteh gam attah)' – beberá o mesmo cálice. 'Aparece incircunciso (he'arel)' – humilhado como os pagãos. 'O cálice (kos) da mão direita (yemin) do Senhor se voltará contra ti' – o juízo divino. 'Infâmia (qiksalon) sujará a tua gloria (kevodekha)' – o orgulho será manchado. O princípio é que o cálice do juízo é retributivo. Aplicação: se você faz outros beberem amargura, você beberá também.",
+      "📖 <strong>RESUMO:</strong> De vergonha te fartarás; bebe tu também o cálice do Senhor; infâmia sujará tua glória.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Bebeu da ira do vinho de Deus' (Apocalipse 14:10).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Porque a violência contra o Líbano te cobrirá, e a destruição das feras te amedrontará, por causa do sangue dos homens, e da violência feita à terra, à cidade e a todos os que nela habitam.",
+      "<strong>COMENTÁRIO:</strong> 🌲 'Violência contra o Líbano (chamas Levanon)' – destruição das florestas (ou: violência contra os nobres). 'Destruição (shod) das feras (behemot) te amedrontará (yecheretzeka)' – a violência contra a criação volta-se contra o agressor. 'Sangue dos homens... violência à terra' – pecados múltiplos. O princípio é que a violência contra a natureza e contra os seres humanos trará juízo. Aplicação: Deus julga a destruição ambiental e a violência contra os vulneráveis.",
+      "📖 <strong>RESUMO:</strong> A violência contra o Líbano te cobrirá; a destruição das feras te amedrontará.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'A criação geme e suporta dores' (Romanos 8:22).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Que proveito, pois, faz a imagem de escultura, para que o seu artífice a esculpa? Ela é uma imagem de fundição, e mestre de mentira; para que o artífice confie na sua obra, fazendo ídolos mudos?",
+      "<strong>COMENTÁRIO:</strong> 🗿 'Que proveito (ho'il) faz a imagem de escultura (pesel)?' – quinto 'ai' (v.18-19): idolatria. 'Seu artífice (yotzro) a esculpa' – o ídolo é obra humana. 'Imagem de fundição (massekhah) e mestre de mentira (moreh sheqer)' – fonte de engano. 'Confie (batch) na sua obra' – fé equivocada. 'Ídolos mudos (elim ilmim)' – não podem falar nem salvar. O princípio é que os ídolos são impotentes e seus adoradores são enganados. Aplicação: em que você confia? Se é algo que você mesmo fez, é um ídolo mudo.",
+      "📖 <strong>RESUMO:</strong> Que proveito faz um ídolo? O artífice confia em sua obra, fazendo ídolos mudos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Os ídolos são prata e ouro, obra das mãos dos homens' (Salmo 115:4).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> Ai daquele que diz ao pau: Acorda; e à pedra muda: Levanta-te; ensinará! Eis que está coberta de ouro e de prata, e dentro dela não há fôlego algum.",
+      "<strong>COMENTÁRIO:</strong> 🗣️ 'Ai (hoy) daquele que diz ao pau ('etz): Acorda (haqitzah)!' – falar com ídolos inanimados. 'À pedra (even) muda (dumam): Levanta-te ('uri)!' – comando vão. 'Ensinará (yoreh)?' – ironia: o ídolo pode ensinar algo? 'Coberta de ouro e de prata... dentro dela não há fôlego (ruach) algum' – bela por fora, vazia por dentro. O princípio é que a idolatria é conversar com objetos mudos. Aplicação: examine se você está 'falando com pau e pedra' – colocando sua fé em objetos que não têm vida.",
+      "📖 <strong>RESUMO:</strong> Ai daquele que diz ao pau 'Acorda!' e à pedra 'Levanta-te!'; dentro dela não há fôlego.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Não tenham comunhão com as obras infrutuosas das trevas' (Efésios 5:11).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 20</strong></span>",
+      "<strong>TEXTO:</strong> Mas o Senhor está no seu santo templo; cale-se diante dele toda a terra.",
+      "<strong>COMENTÁRIO:</strong> 🤫 'O Senhor (YHWH) está no seu santo templo (heichal qodsho)' – contrasta com os ídolos mudos. 'Cale-se (has) diante dele toda a terra (kol ha'aretz)' – reverência universal. Em contraste com o barulho dos ídolos que não falam, o Deus vivo fala e deve ser ouvido em silêncio reverente. O princípio é que a resposta adequada à majestade de Deus é o silêncio reverente. Aplicação: você tem feito silêncio diante de Deus? Ou sua vida é cheia de barulho de ídolos?",
+      "📖 <strong>RESUMO:</strong> O Senhor está no seu santo templo; cale-se diante dele toda a terra.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cala-te, e sabe que eu sou Deus' (Salmo 46:10).",
+      
+      "<hr style='margin: 15px 0;'>",
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 2</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>Habacuque 2 é a resposta de Deus ao lamento do profeta. Deus ordena que a visão seja escrita claramente, pois seu cumprimento é certo, ainda que pareça tardar. O centro do capítulo é o versículo 4: 'O justo pela sua fé viverá' — declaração que ecoa por todo o Novo Testamento (Romanos 1:17; Gálatas 3:11; Hebreus 10:38), sendo o estopim da Reforma Protestante. O capítulo também contém cinco 'ais' (woes) contra os caldeus, denunciando: ganância (v.6-8), extorsão (v.9-11), violência na construção de impérios (v.12-14), humilhação e crueldade (v.15-17) e idolatria (v.18-19). Cada 'ai' é uma sentença divina que garante que o opressor será julgado com a mesma medida que usou contra outros. Deus é apresentado como juiz justo que não fica indiferente ao sofrimento dos povos. O capítulo termina com um contraste poderoso: os ídolos são mudos, cobertos de ouro e prata, sem fôlego de vida; mas o Senhor está no Seu santo templo, e diante Dele toda a terra deve calar-se em reverência. O capítulo ensina que: 1) A visão de Deus é certa e se cumprirá no tempo determinado; 2) A justiça divina virá sobre todo opressor, por mais poderoso que pareça; 3) O justo não vive pela força, riqueza ou poder, mas pela fé-confiança em Deus; 4) Os impérios construídos sobre sangue e injustiça cairão; 5) A idolatria é vã e insensata; 6) A resposta correta à majestade de Deus é o silêncio reverente e a fé que espera.</p>"
+    ],
+    3: [
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>A Oração e o Salmo de Confiança: 'Ainda que a Figueira Não Floresça... Todavia Eu Me Alegrarei no Senhor'</strong></i></p>",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span>",
+      "<strong>TEXTO:</strong> Oração do profeta Habacuque, sobre Sigionote.",
+      "<strong>COMENTÁRIO:</strong> 🎵 'Oração (tefillah) do profeta Habacuque' – capítulo 3 é uma oração em forma de salmo. 'Sobre Sigionote (Shigyonot)' – termo musical (possivelmente um instrumento, uma melodia, ou um estilo de salmo lamentoso). A raiz 'shagah' significa 'errar' ou 'delirar' – talvez um salmo de emoção intensa. O princípio é que a oração e o louvor são respostas apropriadas à revelação de Deus. Aplicação: transforme suas preocupações em oração e louvor. Reflexão: Habacuque começa com lamento (cap.1), questiona (cap.2), e termina em louvor (cap.3). Este é o caminho da fé.",
+      "📖 <strong>RESUMO:</strong> Oração de Habacuque, em estilo musical (Sigionote).",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Cantarei com o espírito, mas também cantarei com o entendimento' (1 Coríntios 14:15).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 2</strong></span>",
+      "<strong>TEXTO:</strong> Ouvi, Senhor, a tua palavra, e temi; aviva, ó Senhor, a tua obra no meio dos anos, no meio dos anos faze-a conhecida; na ira lembra-te da misericórdia.",
+      "<strong>COMENTÁRIO:</strong> 🙏 'Ouvi (shama'ti), Senhor, a tua palavra (shim'akha), e temi (yareti)' – Habacuque ouviu a resposta de Deus (cap.2) e temeu. 'Aviva (chayeh), ó Senhor, a tua obra (po'alkha) no meio dos anos (qerev shanim)' – pedido para Deus agir em breve, na geração presente. 'Na ira (rogez) lembra-te da misericórdia (rachamim)' – mesmo no juízo, peça misericórdia. O princípio é que a resposta de Deus deve nos levar ao temor e à oração por misericórdia. Aplicação: quando Deus revela Seus planos de juízo, nossa resposta deve ser clamar por misericórdia. Reflexão: 'Na ira, lembra-te da misericórdia' – uma oração poderosa!",
+      "📖 <strong>RESUMO:</strong> Ouvi tua palavra e temi; aviva tua obra no meio dos anos; na ira, lembra-te da misericórdia.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Aproximemo-nos, pois, do trono da graça, para que possamos obter misericórdia' (Hebreus 4:16).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 3</strong></span>",
+      "<strong>TEXTO:</strong> Deus veio de Temã, e o Santo do monte Parã. (Selá) A sua glória cobriu os céus, e a terra encheu-se do seu louvor.",
+      "<strong>COMENTÁRIO:</strong> ⛰️ 'Deus (Eloah) veio de Temã' – teofania (manifestação de Deus) vinda do sul (Temã, em Edom). 'O Santo (Qadosh) do monte Parã' – região montanhosa no deserto do Sinai. '(Selá)' – pausa musical ou litúrgica. 'Sua glória (hodo) cobriu (kisah) os céus (shamayim)' – majestade divina sobre a criação. 'A terra (eretz) encheu-se (male'ah) do seu louvor (tehillato)' – resposta da criação. O princípio é que Deus se manifesta em poder e majestade, lembrando o Êxodo e o Sinai. Aplicação: lembre-se das grandes obras de Deus no passado para confiar Nele no presente. Reflexão: 'Deus veio de Temã' – este é o Deus que age na história!",
+      "📖 <strong>RESUMO:</strong> Deus veio de Temã, o Santo do monte Parã; sua glória cobriu os céus, e a terra encheu-se de louvor. (Selá)",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O Senhor veio do Sinai, e alvoreceu sobre eles de Seir' (Deuteronômio 33:2).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 4</strong></span>",
+      "<strong>TEXTO:</strong> E o seu resplendor era como a luz; raios brilhantes saíam da sua mão, e ali estava o esconderijo da sua força.",
+      "<strong>COMENTÁRIO:</strong> 💡 'Seu resplendor (nogah) era como a luz ('or)' – Deus é luz radiante. 'Raios brilhantes (qarnayim) saíam da sua mão (yado)' – relâmpagos ou raios de poder. 'Ali estava o esconderijo (chivyon) da sua força ('oz)' – o poder de Deus está oculto, mas manifesto em raios. O princípio é que Deus é glorioso e poderoso, mas Sua força plena está escondida (revelada na cruz em Cristo). Aplicação: adore a Deus por Sua majestade e poder.",
+      "📖 <strong>RESUMO:</strong> Seu resplendor era como luz; raios saíam de sua mão; ali estava o esconderijo de sua força.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Deus é luz, e não há nele treva alguma' (1 João 1:5).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 5</strong></span>",
+      "<strong>TEXTO:</strong> Adiante dele ia a peste, e brasas ardentes saíam debaixo dos seus pés.",
+      "<strong>COMENTÁRIO:</strong> 🔥 'Adiante dele (lefanav) ia a peste (dever)' – pestilência como precursor do juízo divino. 'Brasas ardentes (resheph) saíam (yatza) debaixo dos seus pés (raglav)' – fogo consumidor. O princípio é que a manifestação de Deus em juízo é aterrorizante. Aplicação: 'Horrível coisa é cair nas mãos do Deus vivo' (Hebreus 10:31).",
+      "📖 <strong>RESUMO:</strong> Diante dele ia a peste; brasas ardentes saíam debaixo de seus pés.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O nosso Deus é fogo consumidor' (Hebreus 12:29).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span>",
+      "<strong>TEXTO:</strong> Parou, e mediu a terra; olhou, e separou as nações; e os montes eternos se espalharam; os outeiros perpétuos se abateram; os seus caminhos são eternos.",
+      "<strong>COMENTÁRIO:</strong> 🌍 'Parou ('amad), e mediu (yemoded) a terra' – Deus como soberano que mede a terra. 'Olhou (ra'ah), e separou (vater) as nações' – Deus dispersa nações. 'Os montes eternos (harerei 'ad) se espalharam (hitpotzatzu)' – montanhas se desfazem. 'Os outeiros perpétuos (giv'ot 'olam) se abateram (shachu)' – colinas se curvam. 'Os seus caminhos (halichot 'olam) são eternos' – os caminhos de Deus são imutáveis. O princípio é que Deus tem autoridade sobre a geografia e a história. Aplicação: confie que o Deus que move montanhas também cuida de você.",
+      "📖 <strong>RESUMO:</strong> Deus mediu a terra, separou nações; os montes eternos se espalharam; seus caminhos são eternos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Nele vivemos, e nos movemos, e existimos' (Atos 17:28).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 7</strong></span>",
+      "<strong>TEXTO:</strong> Vi as tendas de Cusã em aflição; tremiam as cortinas da terra de Midiã.",
+      "<strong>COMENTÁRIO:</strong> 😰 'Vi (ra'iti) as tendas ('ohalot) de Cusã (Kushan) em aflição (aven)' – os midianitas (ou cuxitas) sofrendo juízo. 'Tremiam (tirgashen) as cortinas (yeri'ot) da terra de Midiã (Midyan)' – as moradas dos midianitas tremem. Referência à derrota dos midianitas (Juízes 6-8) ou a povos vizinhos. O princípio é que Deus julga todos os que se opõem a Ele. Aplicação: o juízo de Deus alcança todas as nações.",
+      "📖 <strong>RESUMO:</strong> Vi as tendas de Cusã em aflição; as cortinas de Midiã tremiam.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Tremei e não pequeis' (Salmo 4:4).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 8</strong></span>",
+      "<strong>TEXTO:</strong> Acaso é contra os rios que o Senhor está irado? É contra os rios a tua ira, ou contra o mar o teu furor, para que andes montado nos teus cavalos, nos teus carros de vitória?",
+      "<strong>COMENTÁRIO:</strong> 🌊 'Acaso é contra os rios (neharim) que o Senhor está irado (charah)?' – pergunta retórica: Deus não está irado contra a natureza, mas contra os inimigos. 'Contra o mar (yam) o teu furor ('evratkha)?' – o mar não é o alvo. 'Para que andes montado (tirkov) nos teus cavalos (susekha), nos teus carros (merkavot) de vitória (yeshu'ah)?' – Deus é guerreiro divino que vem para salvar. O princípio é que a ira de Deus é contra o pecado, não contra a criação. Aplicação: Deus usa Sua criação para julgar, mas Seu alvo é o mal.",
+      "📖 <strong>RESUMO:</strong> É contra os rios ou contra o mar que estás irado? Montas em teus cavalos de vitória.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O Senhor é homem de guerra' (Êxodo 15:3).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 9</strong></span>",
+      "<strong>TEXTO:</strong> O teu arco foi descoberto; conforme os juramentos feitos às tribos, é a tua palavra. (Selá) Tu fendeste a terra com rios.",
+      "<strong>COMENTÁRIO:</strong> 🏹 'O teu arco (qashtekha) foi descoberto ('eriyah)' – Deus prepara Seu arco para batalha. 'Conforme os juramentos (shevu'ot) feitos às tribos (mattot), é a tua palavra (omer)' – Deus cumpre Suas promessas de aliança. '(Selá)' – pausa. 'Tu fendeste (betza'ta) a terra (eretz) com rios (neharot)' – abrindo o Mar Vermelho e o Jordão. O princípio é que Deus é fiel às Suas alianças e age para salvar Seu povo. Aplicação: confie nas promessas de Deus; Ele as cumprirá.",
+      "📖 <strong>RESUMO:</strong> Teu arco foi descoberto; conforme os juramentos às tribos é tua palavra. (Selá) Fendeste a terra com rios.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Todas as promessas de Deus são sim nele, e amém' (2 Coríntios 1:20).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 10</strong></span>",
+      "<strong>TEXTO:</strong> Os montes te viram, e tremeram; a torrente das águas passou; o abismo fez ouvir a sua voz, levantou ao alto as suas mãos.",
+      "<strong>COMENTÁRIO:</strong> ⛰️ 'Os montes (harim) te viram (ra'ukha), e tremeram (yachilu)' – a criação reage à presença divina. 'A torrente (zerem) das águas (mayim) passou ('avar)' – enchente, referência ao dilúvio ou ao Mar Vermelho. 'O abismo (tehom) fez ouvir (natan) a sua voz (qolo)' – as profundezas respondem. 'Levantou (nasa) ao alto as suas mãos (yadav)' – imagem poética do mar se abrindo. O princípio é que a criação obedece ao Criador. Aplicação: se a criação treme diante de Deus, quanto mais nós devemos reverenciá-Lo!",
+      "📖 <strong>RESUMO:</strong> Os montes te viram e tremeram; a torrente das águas passou; o abismo levantou as mãos.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Os montes derreteram como cera na presença do Senhor' (Salmo 97:5).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 11</strong></span>",
+      "<strong>TEXTO:</strong> O sol e a lua pararam nas suas moradas; à luz das tuas flechas eles foram, ao resplendor do teu ferro reluzente.",
+      "<strong>COMENTÁRIO:</strong> ☀️ 'O sol (shemesh) e a lua (yareach) pararam ('amdu) nas suas moradas (zevul)' – referência ao milagre de Josué (Josué 10:12-14). 'À luz (le'or) das tuas flechas (chitstsekha) eles foram (yehallechu)' – Deus como guerreiro com flechas de luz. 'Ao resplendor (lenogah) do teu ferro (berak) reluzente (berak)' – armas brilhantes. O princípio é que Deus controla os corpos celestes e os usa para Seus propósitos. Aplicação: o Deus que parou o sol pode parar qualquer coisa por você.",
+      "📖 <strong>RESUMO:</strong> O sol e a lua pararam; à luz de tuas flechas eles foram, ao resplendor do teu ferro reluzente.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O sol se escurecerá, e a lua não dará o seu resplendor' (Mateus 24:29).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 12</strong></span>",
+      "<strong>TEXTO:</strong> Com indignação marchaste pela terra, com ira trilhaste as nações.",
+      "<strong>COMENTÁRIO:</strong> 👣 'Com indignação (za'am) marchaste (tz'ada) pela terra' – Deus caminha em juízo. 'Com ira (aph) trilhaste (dush) as nações (goyim)' – Deus pisa as nações como uvas no lagar. O princípio é que Deus julga as nações ímpias com justa indignação. Aplicação: confie que Deus trará justiça às nações.",
+      "📖 <strong>RESUMO:</strong> Com indignação marchaste pela terra; com ira trilhaste as nações.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O Senhor Jesus se manifestará do céu em chama de fogo' (2 Tessalonicenses 1:7).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 13</strong></span>",
+      "<strong>TEXTO:</strong> Saíste para salvação do teu povo, para salvação do teu ungido; feriste a cabeça da casa do ímpio, descobrindo os fundamentos até ao pescoço. (Selá)",
+      "<strong>COMENTÁRIO:</strong> 🛡️ 'Saíste (yatzata) para salvação (yesha) do teu povo ('ammekha)' – Deus como libertador. 'Para salvação do teu ungido (mashichekha)' – o Messias, o rei ungido. 'Feriste (machatzta) a cabeça (rosh) da casa do ímpio (rasha)' – derrota do inimigo. 'Descobrindo ('arot) os fundamentos (yesod) até ao pescoço ('ad tzavar)' – destruição completa. '(Selá)' – pausa. O princípio é que Deus vem para salvar Seu povo e Seu ungido (o Messias), e derrotar os ímpios. Aplicação: Jesus é o Ungido que veio para salvar Seu povo. Confie nEle.",
+      "📖 <strong>RESUMO:</strong> Saíste para salvação do teu povo e do teu ungido; feriste a cabeça da casa do ímpio. (Selá)",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'O Filho de Deus se manifestou para destruir as obras do diabo' (1 João 3:8).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 14</strong></span>",
+      "<strong>TEXTO:</strong> Traspassaste com as suas próprias lanças a cabeça das suas aldeias; eles saíram como redemoinho para me espalharem; alegravam-se como se estivessem para devorar o pobre em segredo.",
+      "<strong>COMENTÁRIO:</strong> ⚔️ 'Traspassaste (nikarta) com as suas próprias lanças (matteyhu) a cabeça (rosh) das suas aldeias (perazav)' – Deus usa as armas do inimigo contra ele. 'Eles saíram (yesa'u) como redemoinho (se'arah) para me espalharem (lephizeni)' – inimigo como tempestade. 'Alegravam-se ('alitzatam) como se estivessem para devorar (le'echol) o pobre ('ani) em segredo (bemistar)' – crueldade arrogante. O princípio é que Deus retribui ao inimigo com suas próprias armas. Aplicação: cuidado com a arrogância; Deus pode usar suas próprias armas contra você.",
+      "📖 <strong>RESUMO:</strong> Traspassaste a cabeça das aldeias com suas próprias lanças; eles se alegravam em devorar o pobre.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Quem fere com a espada, à espada será ferido' (Apocalipse 13:10).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 15</strong></span>",
+      "<strong>TEXTO:</strong> Pisaste o mar com os teus cavalos, a vasqueira das grandes águas.",
+      "<strong>COMENTÁRIO:</strong> 🌊 'Pisaste (darachta) o mar (yam) com os teus cavalos (susekha)' – imagem da travessia do Mar Vermelho (Êxodo 15). 'A vasqueira (chomer) das grandes águas (mayim rabim)' – o mar revolto, Deus o domina. O princípio é que Deus tem poder sobre as águas e as usa para salvar Seu povo. Aplicação: o Deus que abriu o Mar Vermelho pode abrir caminho para você onde não há caminho.",
+      "📖 <strong>RESUMO:</strong> Pisaste o mar com teus cavalos, a vasqueira das grandes águas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ele fez o mar seco, e atravessaram o rio a pé' (Salmo 66:6).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 16</strong></span>",
+      "<strong>TEXTO:</strong> Ouvindo-o eu, o meu ventre se comoveu, à sua voz tremeram os meus lábios; entrou a podridão nos meus ossos, e estremeci dentro de mim; no dia da angústia descansarei, quando subir contra o povo que nos invadirá com as suas tropas.",
+      "<strong>COMENTÁRIO:</strong> 😖 'Ouvindo-o (shama'ti) eu, o meu ventre (bitni) se comoveu (ragaz)' – reação física ao temor de Deus. 'À sua voz (qol) tremeram (tzalelu) os meus lábios (safatai)' – medo manifestado. 'Entrou podridão (raqav) nos meus ossos ('atzamai)' – sensação de morte. 'Estremeci ('ergaz) dentro de mim (tachtai)' – tremor interno. 'No dia da angústia (yom tzarah) descansarei (anuchah)' – confiança paradoxal: mesmo na angústia, há descanso. 'Quando subir (la'alot) contra o povo que nos invadirá' – aguardando o juízo divino. O princípio é que o temor de Deus produz tremor, mas também confiança. Aplicação: você pode descansar no dia da angústia se confiar no Deus que controla tudo.",
+      "📖 <strong>RESUMO:</strong> Meu ventre se comoveu, meus lábios tremeram; podridão entrou nos meus ossos; no dia da angústia descansarei.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Temamos, pois, que, porventura, deixada a promessa... pareça que algum deles fica para trás' (Hebreus 4:1).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 17</strong></span>",
+      "<strong>TEXTO:</strong> Porque ainda que a figueira não floresça, nem haja fruto na vide; ainda que o produto da oliveira minta, e os campos não produzam mantimento; ainda que as ovelhas sejam arrebatadas do aprisco, e nos currais não haja gado;",
+      "<strong>COMENTÁRIO:</strong> 🌳 'Ainda que a figueira (te'enah) não floresça (tiprach)' – ausência de frutos (colheita perdida). 'Nem haja fruto (yevul) na vide (gefen)' – videira improdutiva. 'Produto da oliveira (zayit) minta (kichesh)' – azeite escasso. 'Os campos (shadmot) não produzam (asah) mantimento ('ochel)' – fome no campo. 'As ovelhas (tzon) sejam arrebatadas (gazar) do aprisco (mareq)' – perda do rebanho. 'Nos currais (refet) não haja gado (baqar)' – perda total dos animais. Este versículo descreve uma situação de calamidade total: colheitas, árvores, rebanhos – tudo perdido. O princípio é que a fé não depende de circunstâncias favoráveis. Aplicação: você conseguiria dizer 'todavia' mesmo em meio à perda total?",
+      "📖 <strong>RESUMO:</strong> Ainda que a figueira não floresça, a vide não dê fruto, a oliveira falhe, os campos não produzam, e não haja ovelhas nem gado...",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Ainda que ele me mate, nele esperarei' (Jó 13:15).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 18</strong></span>",
+      "<strong>TEXTO:</strong> Todavia eu me alegrarei no Senhor; exultarei no Deus da minha salvação.",
+      "<strong>COMENTÁRIO:</strong> 💚 'Todavia (ani) eu me alegrarei ('e'elozah) no Senhor (ba'YHWH)' – a decisão de Habacuque: alegria não nas circunstâncias, mas em Deus. 'Exultarei (agilah) no Deus (B'elohei) da minha salvação (yish'i)' – a fonte da alegria é o Deus que salva. Este é um dos maiores versículos de fé das Escrituras. O princípio é que a alegria cristã transcende as circunstâncias. Aplicação: sua alegria está baseada em Deus ou nas coisas que Deus dá? Reflexão: Habacuque não diz 'se Deus resolver minha situação, então me alegrarei', mas 'ainda que tudo dê errado, eu me alegrarei no Senhor'. Esta é a fé madura!",
+      "📖 <strong>RESUMO:</strong> Todavia eu me alegrarei no Senhor; exultarei no Deus da minha salvação.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Alegrai-vos sempre no Senhor; outra vez digo, alegrai-vos' (Filipenses 4:4).",
+      
+      "<span style='font-size: 15px;'><strong>VERSÍCULO: 19</strong></span>",
+      "<strong>TEXTO:</strong> O Senhor Deus é a minha força, e fará os meus pés como os das cervas, e me fará andar sobre as minhas alturas. (Para o mestre de canto, sobre os meus instrumentos de corda.)",
+      "<strong>COMENTÁRIO:</strong> 🦌 'O Senhor Deus (Adonai YHWH) é a minha força (cheli)' – Deus é a fonte do poder. 'Fará os meus pés (raglai) como os das cervas (ayalot)' – agilidade, capacidade de enfrentar terrenos difíceis. 'Me fará andar (yadricheni) sobre as minhas alturas (bamotai)' – vitória e posição elevada. '(Para o mestre de canto (lamnatzeach), sobre os meus instrumentos de corda (binginotai))' – nota musical indicando uso litúrgico. O princípio é que Deus capacita Seu povo para superar dificuldades e triunfar. Aplicação: Deus pode dar a você 'pés de cerva' para andar sobre as alturas, mesmo em meio à adversidade. Reflexão: o livro termina com uma nota de triunfo. Começou com 'Até quando, Senhor?' e termina com 'Alegrar-me-ei no Senhor'. A fé vence!",
+      "📖 <strong>RESUMO:</strong> O Senhor Deus é a minha força; fará meus pés como os das cervas e me fará andar sobre minhas alturas.",
+      "✝️ <strong>CONEXÃO BÍBLICA:</strong> 'Posso todas as coisas naquele que me fortalece' (Filipenses 4:13).",
+      
+      "<hr style='margin: 15px 0;'>",
+      "<p style='font-size: 0.8rem; text-align: center;'><i><strong>Reflexão Final do Capítulo 3 - Conclusão do Livro de Habacuque</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>Habacuque 3 é uma oração em forma de salmo que responde à revelação de Deus nos capítulos anteriores. O profeta relembra as poderosas teofanias de Deus no passado: o Sinai, o Êxodo, o Mar Vermelho, a conquista de Canaã (Josué). Diante da visão do juízo iminente (os caldeus virão), Habacuque treme: 'meu ventre se comoveu, meus lábios tremeram'. No entanto, ele responde com uma das mais belas declarações de fé das Escrituras: 'Ainda que a figueira não floresça... todavia eu me alegrarei no Senhor; exultarei no Deus da minha salvação'. O livro termina com confiança: 'O Senhor Deus é a minha força, e fará os meus pés como os das cervas'. O capítulo ensina que: 1) Lembrar das obras passadas de Deus fortalece a fé para o presente; 2) A teofania (manifestação de Deus) é aterrorizante para os ímpios, mas traz esperança para os justos; 3) O temor de Deus produz tremor, mas também confiança; 4) A alegria cristã não depende das circunstâncias, mas do Deus da salvação; 5) Deus capacita Seu povo para andar sobre as alturas, mesmo em meio à adversidade; 6) O livro começa com um lamento ('Até quando?') e termina com louvor ('Alegrar-me-ei no Senhor'). A fé triunfa!</p>",
+
+      "<p style='font-size: 1rem; text-align: center;'><i><strong>RESUMO FINAL DE HABACUQUE</strong></i></p>",
+      "<p style='font-size: 0.6rem;'>Habacuque é um diálogo entre o profeta e Deus sobre o problema do mal. O profeta clama: \"Por que Deus não julga o pecado?\" Deus responde que usará os caldeus para punir Judá. Habacuque então pergunta: \"Como pode Deus usar um povo mais ímpio?\"</p>",
+      "<p style='font-size: 0.6rem;'>A resposta final é uma declaração de fé: \"O justo viverá pela sua fé\" (2:4). Apesar da crise, Habacuque decide confiar em Deus e se alegrar Nele.</p>",
+      "<p style='font-size: 0.6rem;'>Habacuque nos ensina a confiar em Deus mesmo quando não entendemos Seus caminhos.</p>",
+      "<p style='font-size: 0.7rem;'><strong>LIÇÕES PRINCIPAIS:</strong></p>",
+      "<ul style='font-size: 0.6rem;'>",
+      "  <li><strong>A fé é a resposta ao sofrimento:</strong> O justo vive pela fé.</li>",
+      "  <li><strong>Deus é soberano sobre a história:</strong> Ele usa até nações ímpias para Seus propósitos.</li>",
+      "  <li><strong>Podemos questionar Deus:</strong> Mas devemos fazê-lo com humildade.</li>",
+      "  <li><strong>Confiar em Deus apesar das circunstâncias:</strong> A alegria do Senhor é nossa força.</li>",
+      "  <li><strong>A visão ainda aguarda seu tempo:</strong> Deus é fiel para cumprir Suas promessas.</li>",
+      "</ul>",
+      "<p style='font-size: 0.6rem;'>Que possamos viver pela fé, confiando em Deus mesmo quando não entendemos, e nos alegrar Nele em todas as circunstâncias.</p>"
+    ]
+  }
+};
