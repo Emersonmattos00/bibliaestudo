@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Enciclopédia Bíblica | Flipbook Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <style>
+        /* ===== MENU LATERAL ESQUERDO (FIXO) ===== */
+        .side-nav {
+            position: fixed !important;
+            top: 50% !important;
+            left: 12px !important;
+            transform: translateY(-50%) !important;
+            z-index: 10000 !important;
+            background: rgba(20, 30, 20, 0.75);
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            border-radius: 16px;
+            padding: 12px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 4px 0 30px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255, 217, 102, 0.15);
+        }
+
+        .side-nav a {
+            color: #c5a47a;
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            position: relative;
+            width: 44px;
+            height: 44px;
+        }
+
+        .side-nav a i {
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* Tooltip que aparece ao passar o mouse - à direita do ícone */
+        .side-nav a .tooltip {
+            position: absolute;
+            left: 58px;
+            background: rgba(20, 30, 20, 0.92);
+            backdrop-filter: blur(8px);
+            color: #ffd966;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.8);
+            transition: all 0.25s ease;
+            border: 1px solid rgba(255, 217, 102, 0.2);
+            letter-spacing: 0.3px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        .side-nav a .tooltip::after {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-right: 8px solid rgba(20, 30, 20, 0.92);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: none;
+        }
+
+        .side-nav a:hover {
+            background: rgba(255, 217, 102, 0.12);
+            transform: scale(1.05);
+        }
+
+        .side-nav a:hover i {
+            color: #ffd966;
+            transform: scale(1.1);
+        }
+
+        .side-nav a:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        .side-nav a.active {
+            background: rgba(255, 217, 102, 0.15);
+            border: 1px solid rgba(255, 217, 102, 0.25);
+        }
+
+        .side-nav a.active i {
+            color: #ffd966;
+        }
+
+        .side-nav .divider {
+            width: 30px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 217, 102, 0.2), transparent);
+            margin: 4px 0;
+        }
+
+        /* ===== AJUSTE DO CONTEÚDO PRINCIPAL ===== */
+        body {
+            padding-top: 20px;
+            margin: 0;
+            background: linear-gradient(135deg, #000000d5 0%, #404241 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('assets/capa/biblia-sagrada.webp') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.10;
+            pointer-events: none;
+            z-index: 0;
+            filter: sepia(0.3) brightness(0.9);
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            padding: 0 20px 0 80px; /* espaço para o menu lateral */
+        }
+
+        /* ===== BARRA DE TÍTULO (substitui a nav-livros) ===== */
+        .page-title-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 25px;
+            background: rgba(255,254,247,0.06);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            margin: 10px 25px 0 25px;
+            border: 1px solid rgba(255,215,0,0.1);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .page-title-bar .title-left {
+            display: flex;
+            align-items: center;
+            background: none;
+            gap: 12px;
+            color: #ffd966;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .page-title-bar .title-left i {
+            font-size: 1.8rem;
+        }
+        .page-title-bar .title-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .page-title-bar .title-right .volume-counter {
+            color: #e4d5b8;
+            font-size: 0.9rem;
+        }
+        .page-title-bar .nav-vol-btn {
+            background: none;
+            transform: translateY(20%);
+            backdrop-filter: blur(5px);
+            border-radius: 50%;
+            color: #f8efda;
+            cursor: pointer;
+            display: flex;
+            transition: 0.3s;
+            font-size: 0.85rem;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 10;
+            opacity: 1;
+            visibility: visible;
+            border: none;
+            outline: none;
+        }
+        .page-title-bar .nav-vol-btn:hover {
+            font-size: 20px;
+            color: #ffca2b;
+            transform: translateY(-5%) scale(1.1);
+        }
+
+        /* Classe para ocultar os botões de navegação entre volumes */
+        .page-title-bar .nav-vol-btn.hidden-nav {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            display: none !important;
+        }
+
+        .page-title-bar .selector-livro {
+            background: #f8efda;
+            border-radius: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.85rem;
+            padding: 6px 16px;
+            border: 1px solid #c5a47a;
+            cursor: pointer;
+        }
+        .page-title-bar .selector-livro optgroup {
+            font-weight: bold;
+            color: #4a2c1a;
+        }
+        .page-title-bar .selector-livro option {
+            padding: 4px 8px;
+        }
+
+        /* ===== ESTILOS EXISTENTES (mantidos) ===== */
+        .search-bar { margin: 8px 25px; display: flex; gap: 10px; background: white; border-radius: 40px; padding: 5px 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border: 1px solid #e0c48b; }
+        .search-bar input { flex: 1; border: none; padding: 10px 5px; outline: none; font-size: 1rem; background: transparent; }
+        .search-bar button { background: #8b4513; border: none; color: white; padding: 8px 20px; border-radius: 30px; cursor: pointer; }
+        .search-bar button:hover { background: #5c3a21; }
+        .search-results { position: absolute; top: 100px; right: 30px; width: 320px; background: white; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); z-index: 1000; display: none; max-height: 400px; overflow-y: auto; border: 1px solid #e0c48b; }
+        .search-results.show { display: block; }
+        .search-result-item { padding: 12px 15px; border-bottom: 1px solid #eee; cursor: pointer; font-size: 0.85rem; }
+        .search-result-item:hover { background: #f8efda; }
+        .result-ref { font-weight: bold; color: #8b4513; }
+        .page-number { position: absolute; bottom: 12px; right: 20px; font-size: 11px; color: #8b4513; font-family: monospace; text-align: right; }
+        .status { text-align: center; padding: 50px; color: #8b4513; font-style: italic; }
+
+        /* Estilos para o Enciclopédia UMA COLUNA */
+        .verbete-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e0c48b;
+            padding-bottom: 15px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        .verbete-titulo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #8b4513;
+            border-left: 4px solid #d4af37;
+            padding-left: 12px;
+            margin-bottom: 10px;
+        }
+        .verbete-titulo-continuacao {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8b4513;
+            border-left: 4px solid #d4af37;
+            padding-left: 12px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .verbete-definicao {
+            text-align: justify;
+            line-height: 1.5;
+            margin-top: 8px;
+            font-size: 13px;
+            color: #2c2b26;
+        }
+        .verbete-referencias {
+            font-family: monospace;
+            color: #8b4513;
+            margin: 8px 0 0 0;
+            font-size: 11px;
+            padding-top: 8px;
+            border-top: 1px dashed #e0c48b;
+        }
+        .verbete-referencias i {
+            margin-right: 5px;
+        }
+        .continuacao-label {
+            font-size: 12px;
+            color: #8b4513;
+            font-style: italic;
+            margin-bottom: 10px;
+            padding: 5px;
+            background: #f0e6d2;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .conteudo-uma-coluna {
+            height: calc(100% - 60px);
+            overflow: visible;
+        }
+        .coluna-unica {
+            height: 100%;
+            padding-right: 10px;
+        }
+        .cabecalho-pagina {
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        .referencia {
+            font-size: 16px;
+            font-weight: bold;
+            color: #8b4513;
+        }
+        .footnote {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            right: 20px;
+            text-align: left;
+            font-size: 9px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 5px;
+        }
+        .page-content {
+            position: relative;
+            height: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
+        /* Slider de páginas */
+        .slider-container {
+            margin: 10px 25px;
+            padding: 8px 0;
+        }
+        .slider-container label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color:#e4d5b8;
+            margin-bottom: 5px;
+        }
+        #slider { width: 100%; margin: 8px 0; }
+        .ui-slider { background: #e0c48b; border-radius: 10px; height: 8px; }
+        .ui-slider .ui-slider-handle {
+            width: 6px; height: 6px;
+            margin-left: 1px;
+            background: #8b4513; border-radius: 50%;
+            border: none; cursor: pointer;
+            top: 0px;
+        }
+        .ui-slider .ui-slider-range { background: #d4af37; border-radius: 10px; }
+        .ui-slider .ui-slider-handle:focus { outline: none; }
+        
+        .hidden { display: none; }
+
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 768px) {
+            .main-container { padding: 0 15px 0 70px; }
+            .side-nav { left: 6px !important; padding: 8px 6px; gap: 4px; }
+            .side-nav a { width: 36px; height: 36px; padding: 6px 8px; font-size: 16px; }
+            .side-nav a i { font-size: 16px; }
+            .side-nav a .tooltip { font-size: 11px; left: 48px; padding: 4px 10px; }
+            .page-title-bar { flex-direction: column; align-items: stretch; text-align: center; }
+            .page-title-bar .title-right { justify-content: center; }
+            .scroll-left { left: -10px; width: 35px; height: 35px; font-size: 16px; }
+            .scroll-right { right: -10px; width: 35px; height: 35px; font-size: 16px; }
+            .search-bar { margin: 8px 10px; flex-wrap: wrap; }
+            .search-bar input { font-size: 0.9rem; }
+            .search-bar button { padding: 6px 14px; font-size: 0.8rem; }
+            .search-results { right: 10px; width: 280px; top: 90px; }
+            .slider-container { margin: 8px 10px; }
+            .slider-container label { font-size: 11px; }
+            .leitor-wrapper { margin: 8px 10px; }
+        }
+        @media (max-width: 480px) {
+            .main-container { padding: 0 10px 0 60px; }
+            .side-nav { left: 4px !important; padding: 6px 4px; border-radius: 12px; }
+            .side-nav a { width: 32px; height: 32px; padding: 4px 6px; font-size: 14px; }
+            .side-nav a i { font-size: 14px; }
+            .side-nav a .tooltip { font-size: 10px; left: 40px; padding: 3px 8px; }
+            .page-title-bar .title-left { font-size: 1rem; }
+            .page-title-bar .title-left i { font-size: 1.4rem; }
+            .scroll-left { left: -5px; width: 30px; height: 30px; font-size: 14px; }
+            .scroll-right { right: -5px; width: 30px; height: 30px; font-size: 14px; }
+            .search-bar { padding: 5px 10px; }
+            .search-bar input { font-size: 0.8rem; padding: 6px 5px; }
+            .search-bar button { padding: 5px 12px; font-size: 0.7rem; }
+            .search-results { right: 5px; width: 220px; top: 80px; }
+            .page-title-bar .selector-livro { font-size: 0.7rem; padding: 4px 8px; }
+            .page-title-bar .nav-vol-btn { font-size: 0.7rem; padding: 4px 10px; }
+            .slider-container { margin: 6px 8px; }
+            .slider-container label { font-size: 10px; }
+            .leitor-wrapper { margin: 6px 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== MENU LATERAL ESQUERDO ===== -->
+  <nav class="side-nav" aria-label="Navegação principal">
+    <a href="index.html" title="Página Principal">
+      <i class="fas fa-home"></i>
+      <span class="tooltip" style="text-align: center;">Início</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="bibliasagrada.html" title="Bíblia Completa">
+      <i class="fas fa-bible"></i>
+      <span class="tooltip" style="text-align: center;">Bíblia<br>Sagrada</span>
+    </a>
+    
+    <a href="comentada.html" title="Bíblia Comentada versículo a versículo">
+      <i class="fas fa-comment-dots"></i>
+      <span class="tooltip" style="text-align: center;">Bíblia<br>Comentada</span>
+    </a>
+    
+    <a href="original.html" title="Hebraico, Grego e Latim">
+      <i class="fas fa-scroll"></i>
+      <span class="tooltip" style="text-align: center;">Textos<br>Originais</span>
+    </a>
+    
+    <a href="apologetica.html" title="Bíblia em Defesa da Fé">
+      <i class="fas fa-shield-alt"></i>
+      <span class="tooltip" style="text-align: center;">Bíblia<br>Apologética</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="cristologia.html" title="Estude com a Enciclopédia Cristológica">
+      <i class="fas fa-cross"></i>
+      <span class="tooltip" style="text-align: center;">Enciclopédia<br>Cristológica</span>
+    </a>
+    
+    <a href="enciclopedia.html" class="active" title="Estude com a Enciclopédia">
+      <i class="fas fa-book-open"></i>
+      <span class="tooltip" style="text-align: center;">Enciclopédia<br>Bíblica</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="harpa.html" title="Hinos das Assembléias de Deus">
+      <i class="fas fa-music"></i>
+      <span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span>
+    </a>
+    
+    <a href="Cantor.html" title="Hinos Clássicos Batistas">
+      <i class="fas fa-microphone-alt"></i>
+      <span class="tooltip">Cantor<br>Cristão</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="apoiar.html" title="Apoie o Porjeto">
+      <i class="fas fa-heart"></i>
+      <span class="tooltip" style="text-align: center;">Apoiar</span>
+    </a>
+  </nav>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <div class="main-container">
+        <div class="container">
+            <!-- BARRA DE TÍTULO (substitui a nav-livros) -->
+            <div class="page-title-bar">
+                <div class="title-left">
+                    <i class="fas fa-book-open"></i>
+                    <span>Enciclopédia Bíblica</span>
+                </div>
+                <div class="title-right">
+                    <button id="btn-anterior-livro" class="nav-vol-btn"><i class="fas fa-chevron-left"></i></button>
+                    <span class="volume-counter" id="volume-counter">📖 Volume 1</span>
+                    <select id="selector-livro" class="selector-livro">
+                        <optgroup label="Enciclopédia Bíblica">
+                            <option value="volume-1">1 a 100</option>
+                            <option value="volume-2">101 a 200</option>
+                            <option value="volume-3">201 a 300</option>
+                            <option value="volume-4">301 a 400</option>
+                            <option value="volume-5">401 a 500</option>
+                            <option value="volume-6">501 a 600</option>
+                            <option value="volume-7">601 a 700</option>
+                            <option value="volume-8">701 a 800</option>
+                            <option value="volume-9">801 a 900</option>
+                            <option value="volume-10">901 a 1000</option>
+                            <option value="volume-11">1001 a 1100</option>
+                            <option value="volume-12">1101 a 1200</option>
+                            <option value="volume-13">1201 a 1300</option>          
+                            <option value="volume-14">1301 a 1400</option>
+                            <option value="volume-15">1401 a 1466</option>          
+                        </optgroup>
+                    </select>
+                    <button id="btn-proximo-livro" class="nav-vol-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Barra de busca -->
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar termo na Enciclopédia Bíblica...">
+                <button id="searchBtn">Buscar</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+
+            <!-- Flipbook -->
+            <div class="leitor-wrapper">
+                <button id="scroll-left" class="scroll-btn scroll-left" aria-label="Página anterior" title="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div id="leitor">
+                    <div id="flipbook">
+                        <div class="ej-book"></div>
+                    </div>
+                </div>
+
+                <button id="scroll-right" class="scroll-btn scroll-right" aria-label="Próxima página" title="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Slider de páginas -->
+            <div class="slider-container">
+                <label>
+                    <span><i class="fas fa-book-open"></i> Página <span id="pagina-atual-slider">1</span></span>
+                    <span><span id="pagina-total-slider">0</span> páginas</span>
+                </label>
+                <div id="slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="medidor" style="position: absolute; visibility: hidden; width: 860px; background: #fffef7; padding: 15px;"></div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="turn.min.js"></script>
+
+    <script>
+    // ======================== CONFIGURAÇÕES ========================
+    const CONFIG = {
+        ALTURA_MAX_PAGINA: 460,
+        LARGURA: 960,
+        ALTURA: 600
+    };
+
+    // ===== LISTA DE TODOS OS VOLUMES EM ORDEM =====
+    const VOLUMES_ORDEM = [
+        "volume-1", "volume-2", "volume-3", "volume-4", "volume-5", 
+        "volume-6", "volume-7", "volume-8", "volume-9", "volume-10", 
+        "volume-11", "volume-12", "volume-13", "volume-14", "volume-15"
+    ];
+
+    // ======================== FUNÇÃO ESCAPE HTML ========================
+    function escapeHTML(str) {
+        if (!str) return '';
+        return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    // ======================== FUNÇÃO PARA DIVIDIR VERBETES EM PÁGINAS ========================
+    function criarPaginasDinamicas(termo, definicao, referencias, alturaMaxPagina) {
+        const paginas = [];
+        if (!definicao && !referencias) return paginas;
+        
+        const medidor = document.createElement('div');
+        medidor.style.cssText = `
+            width: 540px;
+            position: absolute;
+            visibility: hidden;
+            pointer-events: none;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 13px;
+            line-height: 1.5;
+            padding: 15px;
+            background: #fffef7;
+            box-sizing: border-box;
+            top: -9999px;
+            left: 0;
+        `;
+        document.body.appendChild(medidor);
+        
+        const referenciasHtml = referencias ? `<div class="verbete-referencias"><i class="fas fa-book"></i> Referências: ${escapeHTML(referencias)}</div>` : '';
+        
+        const cabecalhoCompleto = `<div class="verbete-item" data-termo="${termo}">
+            <div class="verbete-titulo">${escapeHTML(termo)}</div>
+        `;
+        
+        const textoDefinicao = definicao || '';
+        const palavras = textoDefinicao.split(/\s+/);
+        
+        if (palavras.length === 0 || (palavras.length === 1 && palavras[0] === '')) {
+            const paginaUnica = `<div class="own-size" data-termo="${termo}" data-pagina-inicial="true">
+                <div class="page-content">
+                    <div class="cabecalho-pagina">
+                        <span class="referencia">${escapeHTML(termo)}</span>
+                    </div>
+                    <div class="conteudo-uma-coluna">
+                        <div class="coluna-unica">
+                            ${cabecalhoCompleto}
+                            <div class="verbete-definicao"></div>
+                            ${referenciasHtml}
+                        </div>
+                    </div>
+                    <div class="footnote">Enciclopédia Bíblica</div>
+                    <div class="page-number">0</div>
+                </div>
+            </div>`;
+            paginas.push(paginaUnica);
+            document.body.removeChild(medidor);
+            return paginas;
+        }
+        
+        let paginaNum = 1;
+        let indicePalavra = 0;
+        
+        while (indicePalavra < palavras.length) {
+            let testeConteudo = "";
+            
+            while (indicePalavra < palavras.length) {
+                const proximaPalavra = palavras[indicePalavra];
+                const novoTeste = testeConteudo ? `${testeConteudo} ${proximaPalavra}` : proximaPalavra;
+                
+                let htmlTeste;
+                if (paginaNum === 1) {
+                    htmlTeste = `${cabecalhoCompleto}<div class="verbete-definicao">${escapeHTML(novoTeste)}</div>${referenciasHtml}</div>`;
+                } else {
+                    htmlTeste = `<div class="verbete-item" data-termo="${termo}">
+                        <div class="continuacao-label"><i class="fas fa-arrow-right"></i> Continuação: ${escapeHTML(termo)}</div>
+                        <div class="verbete-definicao">${escapeHTML(novoTeste)}</div>
+                        ${paginaNum === 2 && referencias ? referenciasHtml : ''}
+                    </div>`;
+                }
+                
+                medidor.innerHTML = htmlTeste;
+                
+                if (medidor.scrollHeight > alturaMaxPagina && testeConteudo.length > 0) {
+                    break;
+                }
+                
+                testeConteudo = novoTeste;
+                indicePalavra++;
+            }
+            
+            if (testeConteudo) {
+                let paginaHtml;
+                
+                if (paginaNum === 1) {
+                    paginaHtml = `<div class="own-size" data-termo="${termo}" data-pagina-inicial="true">
+                        <div class="page-content">
+                            <div class="cabecalho-pagina">
+                                <span class="referencia">${escapeHTML(termo)}</span>
+                            </div>
+                            <div class="conteudo-uma-coluna">
+                                <div class="coluna-unica">
+                                    ${cabecalhoCompleto}
+                                    <div class="verbete-definicao">${escapeHTML(testeConteudo)}</div>
+                                    ${referenciasHtml}
+                                </div>
+                            </div>
+                            <div class="footnote">Enciclopédia Bíblica</div>
+                            <div class="page-number">0</div>
+                        </div>
+                    </div>`;
+                } else {
+                    paginaHtml = `<div class="own-size" data-termo="${termo}" data-continuacao="true">
+                        <div class="page-content">
+                            <div class="cabecalho-pagina">
+                                <span class="referencia">${escapeHTML(termo)} (continuação ${paginaNum - 1})</span>
+                            </div>
+                            <div class="conteudo-uma-coluna">
+                                <div class="coluna-unica">
+                                    <div class="verbete-item" data-termo="${termo}">
+                                        <div class="continuacao-label"><i class="fas fa-arrow-right"></i> Continuação: ${escapeHTML(termo)} (parte ${paginaNum - 1})</div>
+                                        <div class="verbete-definicao">${escapeHTML(testeConteudo)}</div>
+                                        ${paginaNum === 2 && referencias ? referenciasHtml : ''}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footnote">Enciclopédia Bíblica - Continuação</div>
+                            <div class="page-number">0</div>
+                        </div>
+                    </div>`;
+                }
+                
+                paginas.push(paginaHtml);
+                paginaNum++;
+            } else {
+                break;
+            }
+        }
+        
+        document.body.removeChild(medidor);
+        
+        if (paginas.length === 0 && textoDefinicao.length > 0) {
+            const paginaUnica = `<div class="own-size" data-termo="${termo}" data-pagina-inicial="true">
+                <div class="page-content">
+                    <div class="cabecalho-pagina">
+                        <span class="referencia">${escapeHTML(termo)}</span>
+                    </div>
+                    <div class="conteudo-uma-coluna">
+                        <div class="coluna-unica">
+                            ${cabecalhoCompleto}
+                            <div class="verbete-definicao">${escapeHTML(textoDefinicao)}</div>
+                            ${referenciasHtml}
+                        </div>
+                    </div>
+                    <div class="footnote">Enciclopédia Bíblica</div>
+                    <div class="page-number">0</div>
+                </div>
+            </div>`;
+            paginas.push(paginaUnica);
+        }
+        
+        return paginas;
+    }
+
+    // ======================== PAGE BUILDER ========================
+    class PageBuilder {
+        constructor(letraNome, dadosArray) {
+            this.letraNome = letraNome;
+            this.dadosArray = dadosArray;
+            this.termoPaginaMap = {};
+            this.verbeteStartPages = [];
+        }
+        
+        gerarCapa() {
+            return `<div depth="5" class="hard" style="background-image: url('assets/capa/encinomes.webp') !important; background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <div class="side"></div>
+                <div class="capa-conteudo">
+                    <h1 style="font-style: bold; font-family: 'Segoe UI'; font-size: 20px; text-align: center; -webkit-text-fill-color: #e89717; position: relative; top: -400%;margin-left: 75px; margin-right: 35px;">${this.letraNome}</h1>
+                </div>
+            </div>`;
+        }
+
+        gerarVersoCapa() {
+            const totalTermos = this.dadosArray.length;
+            return `<div depth="5" class="hard front-side" style="position: relative;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('assets/capa/versodicionomes.webp'); background-repeat: no-repeat; background-size: cover; z-index: 0;"></div>
+                <div class="depth"></div>
+                <div class="verso-capa-conteudo" style="position: relative; z-index: 2; color: black; padding: 20px;">
+                    <p style="font-size:40px; font-weight:bold; color:#2c3e50; border-bottom:3px solid #d4af37; display:inline-block; padding-bottom:8px;">Enciclopedia Bíblica</p><br>
+                    <div style="text-align:left; max-width:550px; margin:20px auto 0; border-radius:12px; padding:20px;">
+                        <div style="margin-bottom:25px; margin-left: 30px;">
+                            <p style="font-size:16px; font-weight:bold; color:#8b4513; margin-bottom:8px;">📖 SOBRE as enciclopedia:</p>
+                            <div style="padding-left:10px; font-size:12px;">
+                                <p style="margin:5px 0;">• <strong>Enciclopédia Bíblica</strong> – Definições e conceitos bíblicos</p>
+                                <p style="margin:5px 0;">• <strong>Referências</strong> – Versículos relacionados</p>
+                                <p style="margin:5px 0;">• <strong>Teologia</strong> – Doutrinas e fundamentos</p>
+                                <p style="margin:5px 0;">• <strong>História</strong> – Contexto bíblico</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top:20px; border-top:1px dashed #ddd; padding-top:15px; margin-left: 30px;">
+                            <p style="font-size:16px; font-weight:bold; color:#8b4513; margin-bottom:8px;">✨ SOBRE ESTA EDIÇÃO:</p>
+                            <div style="padding-left:15px; font-size:12px;">
+                                <p style="margin:8px 0; padding:10px; border-radius:8px; border-left:4px solid #d4af37;">
+                                    <strong>Total de termos nesta seção:</strong> ${totalTermos}<br>
+                                    <strong>Enciclopédia:</strong> 1.000 Enciclopédia Bíblica<br>
+                                    <strong>Base:</strong> Escrituras Sagradas
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top:20px; border-top:1px dashed #ddd; padding-top:15px; margin-left: 30px;">
+                            <p style="font-size:16px; font-weight:bold; color:#8b4513; margin-bottom:8px;">✨ VERSÍCULO-CHAVE:</p>
+                            <div style="padding-left:15px; font-size:12px;">
+                                <p style="margin:8px 0; padding:10px; border-radius:8px; border-left:4px solid #d4af37;">
+                                    <strong>2 Timóteo 3:16-17</strong><br>
+                                    "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        }
+        
+        gerarPaginasConteudo() {
+            let todasPaginas = [];
+            let currentPage = 3;
+            
+            for (let i = 0; i < this.dadosArray.length; i++) {
+                const item = this.dadosArray[i];
+                const termo = item.termo;
+                const definicao = item.definicao;
+                const referencias = item.referencias;
+                
+                this.verbeteStartPages.push({ term: termo, page: currentPage });
+                this.termoPaginaMap[termo] = currentPage;
+                
+                const paginasVerbete = criarPaginasDinamicas(termo, definicao, referencias, CONFIG.ALTURA_MAX_PAGINA);
+                
+                for (let j = 0; j < paginasVerbete.length; j++) {
+                    let paginaHtml = paginasVerbete[j];
+                    paginaHtml = paginaHtml.replace('class="page-number">0</div>', `class="page-number">${currentPage}</div>`);
+                    todasPaginas.push(paginaHtml);
+                    currentPage++;
+                }
+            }
+            
+            return { paginas: todasPaginas, ultimaPagina: currentPage - 1 };
+        }
+        
+        gerarPaginaBranca(numeroPagina) {
+            return `<div class="own-size blank-page" style="background: #fafaf5;">
+                <div class="page-content">
+                    <div style="text-align:center; margin-top:40%; font-style:italic; color:#aaa;">
+                        <i class="fas fa-leaf" style="font-size: 36px;"></i>
+                        <p style="margin-top: 20px;">"Examinai as Escrituras, porque vós cuidais ter nelas a vida eterna, e são elas que de mim testificam."</p>
+                        <p style="font-size:0.8rem; margin-top: 10px;">João 5:39</p>
+                    </div>
+                    <div class="page-number">${numeroPagina}</div>
+                </div>
+            </div>`;
+        }
+        
+        gerarAnteverso() {
+            return `<div class="hard fixed back-side" style="position: relative;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('assets/capa/anteversodicionomes.webp'); background-repeat: no-repeat; background-size: cover; background-position: center; z-index: 0;"></div>
+                <div class="depth"></div>
+                <div class="anteverso-conteudo" style="position: relative; z-index: 2; text-align: center; padding: 40px; color: black;">
+                    <i class="fas fa-church" style="font-size:48px;"></i>
+                    <h3 style="font-size:28px; margin-top: 1%;">Soli Deo Gloria</h3>
+                    <p style="margin-top:5%; font-style:italic;">"E conhecereis a verdade, e a verdade vos libertará."</p>
+                    <p style="font-size:0.9rem; margin-top: 1%;">João 8:32</p>
+                    <p style="margin-top:5%;">Conheça o significado dos termos e palavras da Bíblia<br>e aprofunde-se na Palavra de Deus.</p>
+                </div>
+            </div>`;
+        }
+        
+        gerarContracapa() {
+            return `<div class="hard" style="background-image: url('assets/capa/contracapadicionomes.webp') !important; background-repeat: no-repeat !important; background-size: cover !important; background-position: center;">
+                <div class="contracapa-conteudo"></div>
+            </div>`;
+        }
+        
+        gerarTodasPaginas() {
+            let paginas = [this.gerarCapa(), this.gerarVersoCapa()];
+            const { paginas: paginasConteudo, ultimaPagina } = this.gerarPaginasConteudo();
+            paginas.push(...paginasConteudo);
+            
+            if (paginasConteudo.length % 2 !== 0) {
+                const proximoNumero = ultimaPagina + 1;
+                let paginaBranca = this.gerarPaginaBranca(proximoNumero);
+                paginaBranca = paginaBranca.replace('class="page-number">0</div>', `class="page-number">${proximoNumero}</div>`);
+                paginas.push(paginaBranca);
+            }
+            
+            let anteverso = this.gerarAnteverso();
+            let contracapa = this.gerarContracapa();
+            const ultimaPaginaNum = ultimaPagina + (paginasConteudo.length % 2 === 0 ? 0 : 1) + 1;
+            anteverso = anteverso.replace('class="page-number">0</div>', `class="page-number">${ultimaPaginaNum}</div>`);
+            contracapa = contracapa.replace('class="page-number">0</div>', `class="page-number">${ultimaPaginaNum + 1}</div>`);
+            
+            paginas.push(anteverso, contracapa);
+            return paginas;
+        }
+        
+        getMapaTermoPagina() {
+            return this.termoPaginaMap;
+        }
+        
+        getVerbeteStartPages() {
+            return this.verbeteStartPages;
+        }
+    }
+
+    // ======================== FLIPBOOK MANAGER ========================
+    class FlipbookManager {
+        constructor(seletor, largura, altura) {
+            this.container = $(seletor);
+            this.largura = largura;
+            this.altura = altura;
+            this.flipbook = null;
+        }
+        
+        carregar(paginasHtml, paginaInicial = 1) {
+            if (this.flipbook) {
+                try { this.flipbook.turn('destroy'); } catch(e) {}
+                this.flipbook = null;
+            }
+            
+            this.container.empty();
+            paginasHtml.forEach(html => this.container.append(html));
+            
+            this.flipbook = this.container.turn({
+                width: this.largura, 
+                height: this.altura, 
+                autoCenter: true, 
+                display: 'double',
+                acceleration: true,
+                gradients: true, 
+                elevation: 50,
+                when: { 
+                    turning: (e, page, view) => {
+                        var book = $(this.flipbook);
+                        var pages = book.turn('pages');
+                        
+                        if (page >= 2) {
+                            $('.ej-book .front-side').addClass('fixed');
+                        } else {
+                            $('.ej-book .front-side').removeClass('fixed');
+                        }
+                        if (page < pages) {
+                            $('.ej-book .back-side').addClass('fixed');
+                        } else {
+                            $('.ej-book .back-side').removeClass('fixed');
+                        }
+                        
+                        this.updateDepth(page);
+                    },
+                    turned: (e, page) => {
+                        this.onTurn(page);
+                    }
+                }
+            });
+            
+            setTimeout(() => {
+                if (this.flipbook) {
+                    try { 
+                        this.flipbook.turn('page', paginaInicial);
+                        const total = this.flipbook.turn('pages');
+                        this.onTurn(paginaInicial);
+                    } catch(e) {}
+                }
+            }, 200);
+        }
+        
+        onTurn(page) {
+            if (!this.flipbook) return;
+            const total = this.flipbook.turn('pages');
+            
+            $('#scroll-left').toggleClass('hidden', page <= 1);
+            $('#scroll-right').toggleClass('hidden', page >= total);
+            
+            $('#pagina-atual-slider').text(page);
+            $('#pagina-total-slider').text(total);
+            
+            if ($('#slider').data('uiSlider')) {
+                $('#slider').slider('option', 'max', total);
+                $('#slider').slider('value', page);
+            }
+            
+            this.updateDepth(page);
+        }
+        
+        updateDepth(page) {
+            if (!this.flipbook) return;
+            const pages = this.flipbook.turn('pages');
+            if (!pages) return;
+            
+            const front = $('.ej-book .front-side .depth');
+            if (front.length) {
+                let w = 16 * Math.min(1, page * 2 / pages);
+                if (page > 3) front.css({ width: w + 'px', left: (20 - w) + 'px' });
+                else front.css({ width: '0px', left: '0px' });
+            }
+            
+            const back = $('.ej-book .back-side .depth');
+            if (back.length) {
+                let w = 16 * Math.min(1, (pages - page) * 2 / pages);
+                if (page < pages - 3) back.css({ width: w + 'px', right: (20 - w) + 'px' });
+                else back.css({ width: '0px', right: '0px' });
+            }
+        }
+        
+        irParaPagina(num) { 
+            if (this.flipbook) { this.flipbook.turn('page', num); }
+        }
+        
+        proximo() { if (this.flipbook) { this.flipbook.turn('next'); } }
+        anterior() { if (this.flipbook) { this.flipbook.turn('previous'); } }
+        primeiraPagina() { if (this.flipbook) { this.flipbook.turn('page', 1); } }
+        ultimaPagina() { if (this.flipbook) { 
+            const total = this.flipbook.turn('pages');
+            this.flipbook.turn('page', total);
+        }}
+    }
+
+    // ======================== CARREGAMENTO EXTERNO ========================
+    let flipbookManager = null;
+    let dadosAtuais = null;
+    let termoParaPagina = {};
+    let carregandoLetra = false;
+
+    // Função para atualizar a visibilidade dos botões de navegação entre volumes
+    function atualizarBotoesNavegacaoVolume(volumeId) {
+        const currentIndex = VOLUMES_ORDEM.indexOf(volumeId);
+        if (currentIndex === -1) return;
+        
+        const $btnAnterior = $('#btn-anterior-livro');
+        const $btnProximo = $('#btn-proximo-livro');
+        
+        // Oculta botão "Anterior" se estiver no primeiro volume
+        if (currentIndex <= 0) {
+            $btnAnterior.addClass('hidden-nav');
+        } else {
+            $btnAnterior.removeClass('hidden-nav');
+        }
+        
+        // Oculta botão "Próximo" se estiver no último volume
+        if (currentIndex >= VOLUMES_ORDEM.length - 1) {
+            $btnProximo.addClass('hidden-nav');
+        } else {
+            $btnProximo.removeClass('hidden-nav');
+        }
+        
+        // Atualiza o contador de volume
+        const nomeVolume = volumeId.replace('volume-', 'Volume ');
+        $('#volume-counter').text(`📖 ${nomeVolume}`);
+    }
+
+    function carregarLetraExterna(letraId) {
+        return new Promise((resolve, reject) => {
+            const oldScript = document.querySelector(`script[data-letra="${letraId}"]`);
+            if (oldScript) oldScript.remove();
+            const script = document.createElement('script');
+            script.src = `library/${letraId}.js`;
+            script.dataset.letra = letraId;
+            script.onload = () => {
+                if (window.LIVRO_DATA && window.LIVRO_DATA.dados) {
+                    resolve(window.LIVRO_DATA);
+                } else {
+                    reject(new Error(`Formato inválido em library/${letraId}.js`));
+                }
+            };
+            script.onerror = () => reject(new Error(`Não foi possível carregar library/${letraId}.js`));
+            document.head.appendChild(script);
+        });
+    }
+
+    async function mudarLetra(letraId, paginaDestino = 1) {
+        if (carregandoLetra) return;
+        carregandoLetra = true;
+        $('#searchResults').removeClass('show');
+        $('#searchInput').val('');
+        $('#livro-nome').text('Carregando...');
+        
+        // Atualiza visibilidade dos botões antes de carregar
+        atualizarBotoesNavegacaoVolume(letraId);
+        
+        try {
+            const letraData = await carregarLetraExterna(letraId);
+            dadosAtuais = letraData.dados;
+            const nome = letraData.nome || `Enciclopédia Bíblica - ${letraId.replace('volume-', 'Volume ')}`;
+            $('#livro-nome').text(nome);
+            $('#selector-livro').val(letraId);
+            const builder = new PageBuilder(nome, dadosAtuais);
+            const paginasHtml = builder.gerarTodasPaginas();
+            termoParaPagina = builder.getMapaTermoPagina();
+            if (!flipbookManager) {
+                flipbookManager = new FlipbookManager('.ej-book', CONFIG.LARGURA, CONFIG.ALTURA);
+            }
+            flipbookManager.carregar(paginasHtml, paginaDestino);
+            
+            // Reforça a atualização dos botões após carregamento
+            atualizarBotoesNavegacaoVolume(letraId);
+        } catch (err) {
+            console.error(err);
+            $('#livro-nome').text('Erro');
+            $('.ej-book').html(`<div class="status">Erro ao carregar: ${err.message}<br>Verifique se o arquivo library/${letraId}.js existe.</div>`);
+        } finally {
+            carregandoLetra = false;
+        }
+    }
+
+    function buscarNoDicionarioAtual(termo) {
+        if (!dadosAtuais || !Array.isArray(dadosAtuais)) return [];
+        const resultados = [];
+        const termoLower = termo.toLowerCase();
+        
+        for (const item of dadosAtuais) {
+            const termoItem = item.termo || '';
+            const definicao = item.definicao || '';
+            const referencias = item.referencias || '';
+            
+            if (termoItem.toLowerCase().includes(termoLower) ||
+                definicao.toLowerCase().includes(termoLower) ||
+                referencias.toLowerCase().includes(termoLower)) {
+                resultados.push({
+                    termo: termoItem,
+                    definicao: definicao.substring(0, 100) + (definicao.length > 100 ? '…' : ''),
+                    referencias: referencias
+                });
+            }
+            if (resultados.length >= 30) break;
+        }
+        return resultados;
+    }
+
+    function executarBusca() {
+        const termo = $('#searchInput').val().trim();
+        if (!termo) {
+            alert('Digite um termo para buscar na Enciclopédia Bíblica.');
+            return;
+        }
+        
+        if (!dadosAtuais) {
+            alert('Aguardando carregamento da Enciclopédia Bíblica...');
+            return;
+        }
+        
+        const resultados = buscarNoDicionarioAtual(termo);
+        const $results = $('#searchResults');
+        $results.empty();
+        
+        if (resultados.length === 0) {
+            $results.html('<div class="search-result-item">📖 Nenhum termo encontrado.</div>');
+        } else {
+            const letraAtual = $('#selector-livro option:selected').text();
+            resultados.forEach(r => {
+                $results.append(`<div class="search-result-item" data-termo="${r.termo}">
+                            <span class="result-ref">${letraAtual} - ${r.termo}</span><br>
+                            <small>${r.definicao.substring(0, 80)}${r.definicao.length > 80 ? '…' : ''}</small>
+                         </div>`);
+            });
+        }
+        $results.addClass('show');
+    }
+
+    function navegarParaLetra(delta) {
+        const select = $('#selector-livro')[0];
+        const currentVal = select.value;
+        const currentIndex = VOLUMES_ORDEM.indexOf(currentVal);
+        if (currentIndex === -1) return;
+        const newIndex = currentIndex + delta;
+        if (newIndex >= 0 && newIndex < VOLUMES_ORDEM.length) {
+            const novaLetra = VOLUMES_ORDEM[newIndex];
+            select.value = novaLetra;
+            mudarLetra(novaLetra, 1);
+        }
+    }
+
+    // ======================== INICIALIZAÇÃO ========================
+    $(document).ready(function() {
+        $("#slider").slider({
+            min: 1,
+            max: 1,
+            value: 1,
+            slide: function(e, ui) {
+                if (flipbookManager) {
+                    flipbookManager.irParaPagina(ui.value);
+                }
+            }
+        });
+        
+        setTimeout(function() { mudarLetra('volume-1', 1); }, 50);
+        
+        $('#selector-livro').change(function() { mudarLetra($(this).val(), 1); });
+        $('#btn-anterior-livro').click(() => navegarParaLetra(-1));
+        $('#btn-proximo-livro').click(() => navegarParaLetra(1));
+        $('#scroll-left').click(() => flipbookManager?.anterior());
+        $('#scroll-right').click(() => flipbookManager?.proximo());
+        
+        $(document).keydown(e => {
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                flipbookManager?.anterior();
+            }
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                flipbookManager?.proximo();
+            }
+        });
+        
+        $('#searchBtn').click(executarBusca);
+        
+        $('#searchInput').keypress(function(e) {
+            if (e.which === 13) {
+                executarBusca();
+            }
+        });
+        
+        $(document).on('click', '.search-result-item', function() {
+            const termo = $(this).data('termo');
+            const paginaDestino = termoParaPagina[termo];
+            if (paginaDestino && flipbookManager) {
+                flipbookManager.irParaPagina(paginaDestino);
+                $('#searchResults').removeClass('show');
+                $('#searchInput').val('');
+            } else {
+                alert(`Não foi possível localizar o termo "${termo}".`);
+            }
+        });
+        
+        $(document).click(e => {
+            if (!$(e.target).closest('.search-bar, .search-results').length)
+                $('#searchResults').removeClass('show');
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,3332 @@
+/* Bíblia Sagrada Digital */
+/* Define um comentário de título para o arquivo CSS */
+
+/* ===== ESTILOS GERAIS ===== */
+/* Reset global de margens, preenchimentos e box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo da página - UNIFICADO */
+body, ul, table, form {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  height: 100%;
+  font-family: 'Segoe UI', 'Stempel-Garamond-W01-Roman', 'Times New Roman', serif;
+  background: #2c1810;
+  overflow-Y: scroll;
+  position: relative;
+  transition: all 0.3s ease;
+  scrollbar-width: thin;
+  scrollbar-color: #8b4513 #fdf5e6;
+  scroll-behavior: smooth;
+  padding-top: 20px;
+  background: #313030;
+  min-height: 100vh;
+  padding: 5px 5px 0 5px;
+  overflow-x: hidden;
+}
+
+/* Funciona no Chrome, Edge e Safari */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8b4513;
+  border-radius: 10px;
+  border: 2px solid #fdf5e6;
+}
+
+/* Fundo da barra (track) */
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Parte que desliza (thumb) */
+body::-webkit-scrollbar-thumb {
+  background-color: #8b4513;
+  border-radius: 20px;
+  border: 3px solid #fdf5e6;
+}
+
+/* Ao passar o mouse */
+body::-webkit-scrollbar-thumb:hover {
+  background: #4a2c1a;
+}
+
+body::before { 
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('assets/capa/biblia-sagrada.webp') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+  filter: sepia(0.3) brightness(0.9);
+}
+
+@font-face {
+  font-family: 'OldeEnglish';
+  src: url('fonts/OldeEnglish.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#leitor {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    top: 0 !important;
+    height: 100vh;
+}
+
+/* Quando o leitor está ativo, esconder a navbar */
+#leitor:not(.oculto) ~ .navbar,
+#leitor:not(.oculto) ~ .footer,
+#leitor:not(.oculto) + .navbar,
+body:has(#leitor:not(.oculto)) .navbar {
+    display: none !important;
+}
+
+/* Alternativa: garantir que a navbar não apareça sobre o leitor */
+#leitor {
+    z-index: 10000 !important;
+}
+
+.navbar {
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+/* Quando o leitor está aberto, desabilitar interação com a navbar */
+#leitor:not(.oculto) ~ .navbar,
+#leitor:not(.oculto) ~ .footer,
+#leitor:not(.oculto) + .navbar,
+#leitor:not(.oculto) .navbar {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* ===== ANIMAÇÕES E TRANSIÇÕES ===== */
+.animated{
+  transition: margin-left 0.2s ease-in-out;
+}
+
+#book-zoom{
+  transition: transform 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* ===== CANVAS PRINCIPAL ===== */
+#canvas{
+  width: 960px;
+  height: 600px;
+  margin: 100px auto;
+}
+
+/* ===== ESTILOS DO LIVRO ===== */
+.ej-book{
+  width: 960px;
+  height: 600px;
+}
+
+.ej-book h1{
+  font-family: "Stempel-Garamond-W01-Roman";
+  font-size: 38px;
+  font-weight: lighter;
+  margin: 20px 0;
+  color: #8b4513;
+  -webkit-text-fill-color: #8b4513;
+  -webkit-text-stroke-color: #e4d5b8;
+  -webkit-text-stroke-width: 0.005em;
+}
+
+.ej-book h2{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #654321;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.ej-book .book-content{
+  font-family: "Stempel-Garamond-W01-Roman";
+  font-size: 16px;
+  margin: 70px 40px;
+}
+
+.ej-book blockquote{
+  color: #4a2c1a;
+  margin: 10px 0;
+  font-style: italic;
+  border-left: 3px solid #c5a47a;
+  padding-left: 20px;
+}
+
+.ej-book blockquote:before{
+  content: "\201C";
+  color: #8b4513;
+  font-size: 20px;
+}
+
+.ej-book blockquote:after{
+  content: "\201D";
+  color: #8b4513;
+  font-size: 20px;
+}
+
+.ej-book cite{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 200;
+  font-style: normal;
+  color: #8b4513;
+}
+
+.ej-book .book-content .center-pic{
+  margin: 0;
+  text-indent: 0;
+  text-align: center;
+}
+
+.ej-book .zoom-this:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.ej-book .book-content p{
+  text-indent: 18px;
+  margin: 20px 0;
+  line-height: 22px;
+}
+
+.ej-book .left-pic{
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.ej-book .shadow{
+  transition: box-shadow 0.5s;
+  box-shadow: 0 0 10px rgba(139, 69, 19, 0.3);
+}
+
+.ej-book .page{
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* ===== ESTANTE DE LIVROS ===== */
+.bookcase {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book {
+    width: 110px !important;
+    height: 160px !important;
+    cursor: pointer;
+    background: #fdf5e6;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
+    animation: fadeIn 0.5s ease-out;
+    border: 1px solid #c5a47a;
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.book .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(42, 28, 16, 0.95);
+    padding: 8px 4px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.book:hover .info {
+    transform: translateY(0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.book .titulo, .book .autor {
+    color: #e4d5b8;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.book .titulo {
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+
+.book .autor {
+    font-size: 0.5rem;
+    margin-top: 2px;
+}
+
+.livros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 200px;
+}
+
+.livros-container .book {
+    flex: 0 0 auto;
+    width: 150px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.livros-container .book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.mensagem-vazia {
+    text-align: center;
+    padding: 40px;
+    color: #e4d5b8;
+    width: 100%;
+}
+
+#estante {
+    display: none !important;
+}
+
+#flipbook {
+    top: 70px;
+    position: relative;
+    background-image: none;
+    z-index: 0;
+    margin: 0 auto;
+}
+
+/* ===== ESTILOS DAS CAPAS DA BÍBLIA ===== */
+
+/* Capa frontal - CORRIGIDO */
+.ej-book .hard.bible-cover-front {
+    width: 480px;
+    height: 600px;
+    background: linear-gradient(135deg, #8b4513, #4a2c1a);
+    background-image: url('assets/capa/capabiblica.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.ej-book .bible-cover-front .side {
+    width: 15px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 475px;
+    background: linear-gradient(to right, #4a2c1a, #8b4513, #4a2c1a);
+    transform: rotateY(-90deg);
+    transform-origin: top right;
+    z-index: 100000;
+}
+
+.ej-book .bible-cover-front .cover-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.ej-book .bible-cover-front h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+    font-family: 'Times New Roman', serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.ej-book .bible-cover-front .cover-version {
+    position:relative;
+    display: flex;
+    z-index: 2;
+    font-size: 1.2rem;
+    color: #e4d5b8;
+    font-style: italic;
+}
+
+/* Verso da capa */
+.ej-book .hard.bible-cover-inside {
+    background: #fdf5e6 !important;
+}
+
+.ej-book .bible-cover-inside .depth {
+    background-image: url('assets/pics/page-depth.webp');
+    position: absolute;
+    top: 7px;
+    width: 16px;
+    height: 590px;
+    left: 4px;
+    background-position: 0 0;
+}
+
+.ej-book .bible-cover-inside .inside-content {
+    padding: 40px;
+    text-align: center;
+    color: #4a2c1a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ej-book .bible-cover-inside h2 {
+    font-size: 2rem;
+    color: #8b4513;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+.ej-book .bible-cover-inside p {
+    font-size: 1.1rem;
+    color: #4a2c1a;
+    font-style: italic;
+}
+
+/* Páginas internas */
+.ej-book .own-size.bible-page {
+    width: 460px;
+    height: 582px;
+    background-color: #fdf5e6;
+    overflow: hidden;
+    background: linear-gradient(to right, #f5f1e0, rgba(139, 69, 19, 0.03)), #fdf5e6;
+    background-image: 
+        linear-gradient(90deg, transparent 79px, #e4d5b8 79px, #e4d5b8 81px, transparent 81px),
+        linear-gradient(#e4d5b8 .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    position: relative;
+    box-shadow: inset 0 0 0 transparent;
+}
+
+.ej-book .own-size.even.bible-page {
+    background-position: -1920px 0 !important;
+}
+
+/* Anteverso da contracapa */
+.ej-book .hard.bible-appendix {
+    background: #fdf5e6 !important;
+}
+
+.ej-book .bible-appendix .depth {
+    background-image: url('assets/pic/page-depth.webp');
+    position: absolute;
+    top: 7px;
+    width: 16px;
+    height: 590px;
+    right: 4px;
+    background-position: right 0;
+}
+
+.ej-book .bible-appendix .appendix-content {
+    padding: 40px;
+    text-align: center;
+    color: #4a2c1a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ej-book .bible-appendix h3 {
+    font-size: 1.8rem;
+    color: #8b4513;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+.ej-book .bible-appendix p {
+    font-size: 1rem;
+    color: #4a2c1a;
+}
+
+/* Contracapa - CORRIGIDO */
+.ej-book .hard.bible-cover-back {
+    background: linear-gradient(135deg, #4a2c1a, #2c1810);
+    background-image: url('assets/capa/capabiblica.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.ej-book .bible-cover-back .back-content {
+    padding: 40px;
+    text-align: center;
+    color: #ffd700;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.ej-book .bible-cover-back p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-style: italic;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.ej-book .bible-cover-back .back-verse {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* Elementos comuns do flipbook */
+.ej-book .hard {
+    width: 480px;
+    height: 600px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 
+        inset 4px 0 10px rgba(0, 0, 0, 0.3),
+        inset 0 -4px 6px rgba(0, 0, 0, 0.2),
+        inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ej-book .front-side {
+    background-position: -480px 0 !important;
+}
+
+.ej-book .back-side {
+    background-position: -960px 0 !important;
+}
+
+.ej-book .loader {
+    background-image: url('../assets/bible/loader.gif');
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 280px;
+    left: 219px;
+}
+
+.ej-book .page-number {
+    color: #ccc;
+    width: 100%;
+    bottom: 5px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-right: 20px;
+    line-height: 30px;
+    font-size: 9px;
+    font-style: italic;
+}
+
+.ej-book .table-contents {
+    font-size: 16px;
+    width: 300px;
+    margin: 80px auto;
+    color: #8b4513;
+}
+
+.ej-book .table-contents li {
+    list-style: none;
+    line-height: 25px;
+}
+
+.ej-book .table-contents span {
+    float: right;
+}
+
+.ej-book .table-contents a {
+    float: left;
+    width: 100%;
+    clear: both;
+    text-decoration: none;
+    color: #4a2c1a;
+    margin: 2px 0;
+    padding: 0 10px;
+}
+
+.ej-book .table-contents a:hover {
+    background: #e4d5b8;
+    float: left;
+    width: 100%;
+    clear: both;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.ej-book .book-content .capital,
+.ej-book .book-content .no-indent {
+    text-indent: 0;
+}
+
+.ej-book .capital:first-letter {
+    display: block;
+    float: left;
+    font-size: 300%;
+    line-height: 70%;
+    margin-right: 6px;
+    margin-top: 7px;
+    margin-left: 18px;
+    color: #8b4513;
+}
+
+.admin-container, .submissoes-container {
+    position: sticky;
+}
+
+/* ===== ESTILOS PARA AUTENTICAÇÃO ===== */
+#pagina-auth {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.auth-form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    background: rgba(253, 245, 230, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid #c5a47a;
+}
+
+#auth-container {
+    margin-top: 50px;
+}
+
+.auth-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #4a2c1a;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #c5a47a;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: white;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: #8b4513;
+    color: #e4d5b8;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-form button:hover {
+    background: #4a2c1a;
+}
+
+.auth-switch {
+    margin-top: 15px;
+    color: #4a2c1a;
+}
+
+.auth-switch a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.auth-actions {
+    margin-top: 20px;
+}
+
+/* ===== ESTILOS PARA LIVROS PESSOAIS ===== */
+.livro-principal {
+    border: 2px solid #c5a47a;
+}
+
+.livro-pessoal {
+    border: 2px solid #ffd700;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+.badge-principal, .badge-pessoal {
+    font-size: 0.5rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-top: 4px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.badge-principal {
+    background: #8b4513;
+}
+
+.badge-pessoal {
+    background: #ffd700;
+    color: #4a2c1a;
+}
+
+.secao-estante {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-criar-livro {
+    background: #8b4513;
+    color: #e4d5b8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-criar-livro:hover {
+    background: #4a2c1a;
+}
+
+/* ===== CONTROLES ===== */
+/* Container dos botões de controle */
+#next-btn, #prev-btn {
+    position: absolute;
+    gap: 15px;
+    background: transparent;
+    padding: 20px !important;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+#next-btn {
+    margin-left: 50px;
+}
+
+#prev-btn {
+    margin-right: 50px;
+}
+
+.control-btn:disabled {
+    background: transparent;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ===== BOTÕES DE NAVEGAÇÃO ===== */
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-top: 0px;
+    background: rgba(42, 28, 16, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 50px;
+    margin: 15px auto;
+    max-width: fit-content;
+    border: 1px solid #c5a47a;
+}
+
+.nav {
+    display: grid;
+    text-decoration: none;
+}
+
+/* CORRIGIDO - Removido 'position: 70 30;' */
+.book-actions-top, 
+.favorito-badge,
+#formLivro button {
+    top: 5px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+}
+
+#formLivro {
+    position: absolute;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    background: #fdf5e6 !important;
+    background-size: cover;
+    z-index: inherit;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #c5a47a;
+}
+
+.btn-edit, .btn-delete, .control-btn, .btn-remover-pagina,
+.btn-submeter, nav button, .btn-favorite, .btn-curtir {
+    position: relative;
+    text-decoration: none !important;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;    
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    color: #e4d5b8;
+}
+
+#btnLogin {
+    text-decoration: none !important;
+}
+
+.btn-edit:hover, .btn-delete:hover, nav button:hover, .control-btn:hover,
+.btn-submeter:hover, .btn-favorite:hover, #formLivro button:hover, .btn-curtir:hover {
+    transform: scale(1.1);
+    font-size: 2rem;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    color: #ffd700;
+}
+
+#formLivro button {
+    display: inline-flex;
+}
+
+#btnEdt, #btnFavNav {
+    text-decoration: none;
+}
+
+/* MELHORIA: Animações */
+.book {
+    animation: fadeIn 0.5s ease-out;
+}
+
+button, .control-btn, .book, nav button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== ESTILOS PARA BOTÕES DE FAVORITO ===== */
+.btn-favorito {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+    color: #8b4513;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-favorito:hover {
+    background: rgba(255,255,255,1);
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    color: #ffd700;
+}
+
+.btn-favorito.favoritado {
+    color: #ffd700 !important;
+}
+
+.book {
+    position: relative !important;
+}
+
+/* Feedback visual */
+.feedback-favorito {
+    animation: slideIn 0.3s ease;
+}
+
+/* Estatísticas nos livros */
+.book-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    font-size: 0.8em;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #e4d5b8;
+}
+
+.stat.views {
+    color: #ffd700;
+}
+
+.stat.likes {
+    color: #ff6b6b;
+}
+
+/* Botão de curtir */
+.btn-curtir {
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #8b4513;
+}
+
+.btn-curtir.curtido {
+    color: #ff6b6b;
+}
+
+/* Página de Ranking */
+.ranking-section {
+    margin-bottom: 40px;
+}
+
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fdf5e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 1px solid #c5a47a;
+}
+
+.ranking-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.rank-position {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #8b4513;
+}
+
+.medalha {
+    font-size: 1.5em;
+}
+
+.ranking-capa {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 15px;
+    border: 1px solid #c5a47a;
+}
+
+.ranking-info {
+    flex: 1;
+}
+
+.ranking-titulo {
+    margin: 0;
+    color: #4a2c1a;
+}
+
+.ranking-autor {
+    margin: 5px 0;
+    color: #8b4513;
+    font-size: 0.9em;
+}
+
+.ranking-stats {
+    display: flex;
+    gap: 15px;
+}
+
+.ranking-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.ranking-badge.visualizacoes {
+    background: #8b4513;
+    color: #e4d5b8;
+}
+
+.ranking-badge.curtidas {
+    background: #ff6b6b;
+    color: white;
+}
+
+.ranking-badge.curtidas.curtido {
+    background: #ff4757;
+}
+
+.btn-curtir-ranking {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+    color: #8b4513;
+}
+
+.btn-curtir-ranking:hover {
+    transform: scale(1.2);
+}
+
+.btn-curtir-ranking.curtido {
+    color: #ff6b6b;
+}
+
+/* Estatísticas gerais */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: #fdf5e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #c5a47a;
+}
+
+.stat-icon {
+    font-size: 2em;
+    color: #8b4513;
+}
+
+.stat-number {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4a2c1a;
+}
+
+.stat-label {
+    color: #8b4513;
+    font-size: 0.9em;
+}
+
+.stat-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4a2c1a;
+}
+
+.stat-subtext {
+    font-size: 0.8em;
+    color: #8b4513;
+    margin-top: 5px;
+}
+
+/* ===== HEADER E TÍTULOS ===== */
+header {
+    text-align: justify;
+    margin-bottom: 10px;
+    color: #e4d5b8;
+    z-index: 100;
+    padding: 20px 0;
+}
+
+h1 {
+    position: absolute;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #ffd700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #e4d5b8;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #e4d5b8;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== EFEITOS DE PÁGINA E SOMBRAS ===== */
+.flipbook > div:not(.hard) {
+    background: #fdf5e6;
+    border-right: 1px solid #c5a47a;
+}
+
+.hard {
+    background: #42403e !important;
+    color: #e4d5b8;
+}
+
+.hard.cover-front {
+    background: linear-gradient(135deg, #8b4513 0%, #4a2c1a 100%) !important;
+}
+
+.hard.cover-back {
+    background: linear-gradient(135deg, #4a2c1a 0%, #2c1810 100%) !important;
+}
+
+#flipbook .page-wrapper {
+    perspective: 2000px;
+}
+
+#flipbook .page.flipping {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 100 !important;
+}
+
+#flipbook .page.flipping.front {
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.25);
+}
+
+#flipbook .page.flipping.back {
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.ej-book .page.turning {
+    box-shadow: 
+        8px 0 25px rgba(0, 0, 0, 0.4),
+        inset -6px 0 12px rgba(0, 0, 0, 0.1),
+        0 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.ej-book .page.turning::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -3px;
+    width: 12px;
+    height: 100%;
+    background: linear-gradient(to left,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        transparent 100%);
+    border-radius: 0 3px 3px 0;
+    z-index: 101;
+}
+
+.ej-book .page.below-shadow {
+    box-shadow: 
+        inset 15px 0 20px rgba(0, 0, 0, 0.15),
+        -5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.ej-book .page.below-shadow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0.1) 60%,
+        transparent 100%);
+    pointer-events: none;
+    z-index: 99;
+}
+
+#flipbook .page.odd::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to right,
+        rgba(0,0,0,0.1) 0%,
+        rgba(0,0,0,0.02) 50%,
+        transparent 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#flipbook .page.even::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to left,
+        rgba(0,0,0,0.1) 0%,
+        rgba(0,0,0,0.02) 50%,
+        transparent 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ===== EDITOR DE LIVROS ===== */
+.editor-pagina {
+    margin-bottom: 10px;
+    border: 1px solid #c5a47a;
+    border-radius: 4px;
+}
+
+#paginasContainer {
+    max-height: 500px;
+    background: #fdf5e6;
+    background-image: white;
+    background-size: cover;
+    overflow-y: auto;
+    padding: 10px;
+    z-index: 1001 !important;
+    border-radius: 5px;
+}
+
+.ql-editor {
+    min-height: 200px;
+}
+
+#contadorPalavras {
+    margin-left: 20px;
+    color: #8b4513;
+}
+
+form#formLivro {
+    margin-top: 5px;
+    display: grid;
+    max-width: 900px;
+    height: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #fdf5e6 !important;
+    overflow-y: hidden;
+    border: 1px solid #c5a47a;
+}
+
+.form-group {
+      margin-bottom: 3px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #4a2c1a;
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 5px;
+      border: 2px solid #c5a47a;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #8b4513;
+      box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+      font-family: inherit;
+    }
+
+#livro-titulo, 
+form#formLivro input[type="text"],
+form#formLivro input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #c5a47a;
+    font-size: 1rem;
+}
+
+#form-wrapper form {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fdf5e6;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 1px solid #c5a47a;
+}
+
+#form-wrapper header {
+    position: relative;
+    z-index: 2;
+}
+
+#form-wrapper form::-webkit-scrollbar {
+    width: 8px;
+}
+
+#form-wrapper form::-webkit-scrollbar-thumb {
+    background: #8b4513;
+    border-radius: 4px;
+}
+
+.ql-toolbar button svg {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+#toolbar {
+    margin-top: 10px;
+    border-top: 1px solid #c5a47a;
+    border-bottom: 1px solid #c5a47a;
+    background: #fdf5e6;
+}
+
+/* ===== ESTILOS PARA OS FAVORITOS ===== */
+.livros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 200px;
+    padding: 20px;
+  }
+  
+  .livros-container .book {
+    flex: 0 0 auto;
+    width: 150px;
+    margin: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .livros-container .book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .mensagem-vazia {
+    text-align: center;
+    padding: 40px;
+    color: #e4d5b8;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .estante-favoritos {
+    margin: 20px;
+    border: 1px solid #c5a47a;
+    border-radius: 8px;
+    background: #fdf5e6;
+  }
+  
+  .estante-header {
+    display: flex;
+    color: #fdf5e6;
+    align-items: center;
+    padding: 15px 20px;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid #c5a47a;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .estante-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffd700;
+  }
+  
+  .estante-title {
+    margin: 0;
+    font-size: 18px;
+    color: #e4d5b8;
+    flex: 1;
+  }
+  
+  .linha-divisoria {
+    height: 3px;
+    background: #ffd700;
+    margin: 0;
+  }
+  
+  /* Estilos para controles */
+  .control-btn {
+    background: transparent;
+    color: #e4d5b8;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 2px;
+  }
+  
+  .control-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .oculto {
+    display: none !important;
+  }
+
+/* ===== CONTEÚDO INTERNO ===== */
+.inner-page h3, .article h2 {
+    font-size: 2em;
+    color: #4a2c1a;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #c5a47a;
+    padding-bottom: 10px;
+    line-height: 1.4;
+}
+
+.article {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.article p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #4a2c1a;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+}
+
+.article blockquote {
+    background: #fdf5e6;
+    border-left: 4px solid #8b4513;
+    padding: 20px;
+    margin: 25px 0;
+    font-style: italic;
+    border-radius: 5px;
+    quotes: "«" "»";
+}
+
+/* ===== ESTILOS PARA SISTEMA DE SUBMISSÕES ===== */
+
+/* Botão de submeter no editor */
+#btnSubmeterAdmin {
+    position: sticky;
+    background: linear-gradient(135deg, #8b4513 0%, #4a2c1a 100%);
+    color: #e4d5b8;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    display: none;
+}
+
+#btnSubmeterAdmin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.4);
+}
+
+#btnSubmeterAdmin:active {
+    transform: translateY(0);
+}
+
+/* Links de navegação para submissões */
+.nav-link.active {
+    background: rgba(139, 69, 19, 0.2);
+    border-left: 4px solid #8b4513;
+}
+
+/* Badge admin no header */
+.admin-badge {
+    background: #8b4513;
+    color: #e4d5b8;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.7em;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Responsividade para páginas de submissão */
+@media (max-width: 768px) {
+    .grid-submissoes,
+    .grid-submissoes-admin {
+        grid-template-columns: 1fr;
+    }
+    
+    .submissao-admin-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .action-buttons {
+        justify-content: center;
+    }
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .bookcase {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #flipbook {
+        width: 95vw;
+        height: 70vh;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .controls {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .turnjs-slider {
+        width: 80%;
+        height: 45px;
+        bottom: 20px;
+    }
+}
+
+/* ===== ESTILOS PARA RANKING ===== */
+.ranking-hero {
+    position: sticky;
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #8b4513 0%, #4a2c1a 100%);
+    color: #e4d5b8;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.ranking-item {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #fdf5e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid #c5a47a;
+}
+
+.ranking-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.rank-position {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #8b4513;
+}
+
+.ranking-capa {
+    width: 70px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 20px;
+    border: 1px solid #c5a47a;
+}
+
+.ranking-info {
+    flex: 1;
+}
+
+.ranking-titulo {
+    margin: 0 0 8px 0;
+    font-size: 1.2em;
+    color: #4a2c1a;
+}
+
+.ranking-autor {
+    margin: 0 0 12px 0;
+    color: #8b4513;
+    font-size: 0.95em;
+}
+
+.ranking-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.ranking-badge {
+    padding: 8px 15px;
+    background: #ecf0f1;
+    border-radius: 20px;
+    font-size: 0.95em;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.ranking-badge.visualizacoes {
+    background: #8b4513;
+    color: #e4d5b8;
+}
+
+.ranking-badge.curtidas {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-curtir-ranking {
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.2s;
+    color: #8b4513;
+}
+
+.btn-curtir-ranking:hover {
+    background: #fdf5e6;
+}
+
+.btn-curtir-ranking.curtido {
+    color: #e74c3c;
+}
+
+/* Estatísticas */
+.stats-grid {
+    position: sticky;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: #fdf5e6;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #c5a47a;
+}
+
+.stat-icon {
+    font-size: 2.5em;
+    color: #8b4513;
+}
+
+.stat-value {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4a2c1a;
+}
+
+.stat-label {
+    color: #8b4513;
+    font-size: 0.95em;
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin: 30px 0 15px 0;
+    color: #e4d5b8;
+}
+
+.section-subtitle {
+    color: #e4d5b8;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .ranking-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .rank-position {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .ranking-capa {
+        margin: 10px 0;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ranking-stats {
+        justify-content: center;
+    }
+}
+
+/* Estilos para links compartilháveis */
+.btn-link-compartilhavel {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.2s;
+    margin-left: 10px;
+    color: #8b4513;
+}
+
+.btn-link-compartilhavel:hover {
+    background: #fdf5e6;
+}
+
+/* Overlay do leitor */
+#overlay-leitor-ranking {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #overlay-leitor-ranking > div {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .btn-link-compartilhavel {
+        margin-left: 5px;
+        font-size: 1em;
+    }
+}
+
+/* Estilos para o leitor no ranking */
+#leitor-ranking {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.oculto {
+    display: none !important;
+}
+
+/* Melhorar visualização do conteúdo do livro */
+#conteudo-livro-ranking {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#conteudo-livro-ranking h4 {
+    color: #4a2c1a;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 8px;
+}
+
+#conteudo-livro-ranking img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    position: absolute;
+    color: #e4d5b8;
+    margin-bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.8rem;
+    z-index: 1001;
+    background: rgba(42, 28, 16, 0.8);
+    padding: 15px 25px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    border: 1px solid #c5a47a;
+}
+
+/* ===== COMPATIBILIDADE IE ===== */
+.ie8 .ej-book .even,
+.ie9 .ej-book .even{
+    background-image: url('assets/bible/gradient-left.jpg');
+    background-position: right top;
+    background-repeat: repeat-y;
+}
+
+.ie8 .ej-book .odd,
+.ie9 .ej-book .odd{
+    background-image: url('assets/bible/gradient-right.jpg');
+    background-position: left top;
+    background-repeat: repeat-y;
+}
+
+/* ============================================
+   NAVBAR ESTILO TURNBOOK - ADAPTADO PARA BÍBLIA
+   ============================================ */
+
+.navbar {
+    background: transparent;
+    padding: 15px 0;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #ffd700;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Times New Roman', serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.nav-logo i {
+    font-size: 1.8em;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+    align-items: center;
+}
+
+.navbar-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.95rem;
+}
+
+.navbar-menu a:hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-6px);
+    color: #ffd700;
+    
+}
+
+.navbar-menu li a i {
+    font-size: 1.2em;
+}
+
+.user-menu {
+    color: #ffd700;
+    position: relative;
+}
+
+.user-name-display {
+    color: #e4d5b8;
+    padding: 10px 15px;
+    background: rgba(139, 69, 19, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #c5a47a;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.5rem;
+    color: var(--text-light);
+}
+
+.nav-link.active {
+    color: #f5f1dd;
+}
+
+.nav-link:hover {
+    color: transparent;
+    transform: translateY(-2px);
+}
+
+/* Botões estilo TurnBook - Adaptado */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #8b4513 0%, #4a2c1a 100%);
+    color: #e4d5b8;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.6);
+    color: #ffd700;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #8b4513;
+    color: #8b4513;
+}
+
+.btn-outline:hover {
+    background: #8b4513;
+    color: #e4d5b8;
+    transform: translateY(-2px);
+}
+
+/* Padding para o conteúdo principal devido à navbar fixa */
+body {
+    padding-top: 20px;
+}
+
+main, .main-content, .page-content, .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ajuste específico para o leitor */
+#leitor {
+    top: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    height: 72vh;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .navbar-menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .navbar-menu a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    
+    .navbar-menu a i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-menu a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ===== ESTILOS ESPECÍFICOS PARA HARPA CRISTÃ ===== */
+
+/* Garantir que o modo Harpa sobreponha os estilos padrão */
+.harpa-mode .ej-book {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%) !important;
+}
+
+.harpa-mode .ej-book .hard {
+    background: linear-gradient(135deg, #2d5a3b, #1e3e2a) !important;
+}
+
+.harpa-page {
+    background: #fffef7 !important;
+    font-family: 'Georgia', 'Times New Roman', serif !important;
+}
+
+.harpa-page .page-content {
+    background: #fffef7 !important;
+    padding: 40px 35px !important;
+}
+
+/* Remover o fundo de linhas de caderno nas páginas da Harpa */
+.harpa-page.own-size.bible-page {
+    background-image: none !important;
+    background: #fffef7 !important;
+}
+
+/* Título do hino */
+.titulo-hino {
+    text-align: center !important;
+    color: #2d5a3b !important;
+    font-size: 26px !important;
+    margin-bottom: 25px !important;
+    padding-bottom: 12px !important;
+    border-bottom: 3px solid #ffd966 !important;
+    font-weight: bold !important;
+}
+
+/* Coro */
+.coro-box {
+    background: #fef5e6 !important;
+    padding: 25px !important;
+    border-left: 6px solid #ffd966 !important;
+    margin: 25px 0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+.coro-box strong {
+    color: #2d5a3b !important;
+    font-size: 18px !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+}
+
+.coro-box div {
+    font-style: italic !important;
+    line-height: 1.9 !important;
+    color: #4a4a4a !important;
+}
+
+/* Estrofes */
+.estrofe {
+    margin-bottom: 35px !important;
+    page-break-inside: avoid !important;
+}
+
+.estrofe-numero {
+    background: #2d5a3b !important;
+    color: #ffd966 !important;
+    display: inline-block !important;
+    padding: 6px 20px !important;
+    border-radius: 30px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    margin-bottom: 15px !important;
+    letter-spacing: 1px !important;
+}
+
+.estrofe-texto {
+    line-height: 2 !important;
+    white-space: pre-line !important;
+    color: #2c3e2b !important;
+    font-size: 15px !important;
+    padding-left: 10px !important;
+}
+
+/* Ajustes para a capa no modo Harpa */
+.harpa-mode .bible-cover-front .cover-content h1 {
+    color: #ffd966 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+}
+
+.harpa-mode .bible-cover-front .cover-version {
+    color: #e4d5b8 !important;
+}
+
+/* Garantir que as páginas tenham altura correta */
+.harpa-page.own-size {
+    height: 582px !important;
+    width: 460px !important;
+    overflow-y: auto !important;
+}
+
+/* Scroll personalizado para páginas da Harpa */
+.harpa-page::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.harpa-page::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+    border-radius: 10px !important;
+}
+
+.harpa-page::-webkit-scrollbar-thumb {
+    background: #2d5a3b !important;
+    border-radius: 10px !important;
+}
+
+.harpa-page::-webkit-scrollbar-thumb:hover {
+    background: #1e3e2a !important;
+}
+
+/* Navegação da Harpa */
+.harpa-mode .bible-navigation,
+.harpa-mode .nav-controls,
+.harpa-mode .bible-tools {
+    background: rgba(0,0,0,0.6) !important;
+}
+
+.harpa-mode #chapter-info {
+    color: #ffd966 !important;
+}
+
+.harpa-mode .chapter-selector {
+    background: #2d5a3b !important;
+    color: #ffd966 !important;
+    border-color: #ffd966 !important;
+}
+
+/* Ajustes responsivos para Harpa */
+@media (max-width: 1000px) {
+    .harpa-page .page-content {
+        padding: 25px !important;
+    }
+    
+    .titulo-hino {
+        font-size: 22px !important;
+    }
+    
+    .estrofe-texto {
+        font-size: 14px !important;
+    }
+}
+
+/* Estilos da Bíblia */
+
+       
+        body {
+            background: #313030;
+            min-height: 100vh;
+            font-family: 'Georgia', serif;
+            padding: 5px;
+            overflow-x: hidden;
+        }
+        
+        .biblia-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .biblia-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .biblia-header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .biblia-header h1 i {
+            margin-right: 10px;
+        }
+        
+        .biblia-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .livro-selector {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .livro-selector select {
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: white;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            min-width: 200px;
+        }
+        
+        .capitulo-selector {
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: white;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            min-width: 120px;
+        }
+        
+        .livro-selector button {
+            padding: 10px 25px;
+            background: #2d5a3b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .livro-selector button:hover {
+            background: #1e3e2a;
+        }
+        
+        #status {
+            text-align: center;
+            padding: 12px;
+            margin: 15px auto;
+            background: rgba(0,0,0,0.7);
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            color: white;
+            max-width: 500px;
+            position: relative;
+            z-index: 2;
+        }
+        
+               
+        #flipbook {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .ej-book {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .hard {
+            width: 480px;
+            height: 600px;
+            background-image: url('assets/capa/capabiblica.webp')!important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        
+
+        .own-size {
+            background-position: -1920px 0 !important;
+            width: 460px;
+            height: 582px;
+            overflow: hidden;
+            box-shadow: inset 0 0 0 transparent;
+            background:  #f5f1e0;
+            background-size: 100% 1.2em;
+            position: relative;
+        }
+        
+        .page-content {
+            background-image: url('assets/capa/page.webp')!important; 
+            background-repeat: no-repeat !important; 
+            background-size: cover !important;
+            font-family: 'Segoe UI';
+            padding: 10px 20px;
+            min-height: 100%;
+        }
+        
+        /* Estilos específicos da Bíblia */
+        .titulo-livro {
+            text-align: center;
+            color: #2d5a3b;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #ffd966;
+        }
+        
+        .capitulo-numero {
+            text-align: center;
+            color: #8b4513;
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        
+        .versiculo {
+            font-family: 'Segoe UI';
+            margin-bottom: 12px;
+            line-height: 1.2;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .versiculo-numero {
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #8b4513;
+            font-weight: bold;
+            font-size: 12px;
+            width: 30px;
+            text-align: right;
+        }
+        
+        .versiculo-texto {
+            font-family: 'Segoe UI';
+            color: #2c3e2b;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        /* Navegação */
+        .navigation-controls {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            width: 960px;
+            margin: 20px auto 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .navigation-controls button {
+            padding: 10px 25px;
+            color: rgb(10, 10, 10);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .navigation-controls button:hover { 
+            color: #ffd966; 
+            transform: scale(1.05);
+        }
+        
+        .navigation-controls span {
+            color: white;
+            margin: 0 10px;
+            font-family: monospace;
+            font-size: 16px;
+            background: rgba(0,0,0,0.5);
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+        
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .back-link a {
+            color: #ffd966;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 20px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        
+        .back-link a:hover {
+            background: rgba(0,0,0,0.7);
+            text-decoration: underline;
+        }
+        
+        /* Scroll personalizado */
+        .page-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .page-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .page-content::-webkit-scrollbar-thumb {
+            background: #2d5a3b;
+            border-radius: 10px;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 1000px) {
+            .leitor-wrapper {
+                transform: scale(0.9);
+            }
+            #leitor {
+                width: 100%;
+                height: auto;
+                min-height: 500px;
+            }
+            .hard, .own-size {
+                width: 100%;
+                height: auto;
+                min-height: 500px;
+            }
+            .navigation-controls {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .livro-selector {
+                flex-direction: column;
+            }
+        }
+        
+        .main-container {
+            font-family: 'Segoe UI';
+            position: relative;
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .container { 
+            max-width: 960px; 
+            margin: 0 auto; 
+            padding: 20px;
+            position: relative; 
+            z-index: 1; 
+        }
+        
+        /* ===== MENU DE NAVEGAÇÃO ENTRE LIVROS ===== */
+        .nav-livros {
+            width: 1000px;
+            backdrop-filter: blur(12px);
+            border-radius: 60px;
+            padding: 8px 20px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            
+            text-shadow: 0 6px 14px rgba(0,0,0,0.3);
+        }
+        
+        .nav-livros .nav-title {
+            color: #ffd966;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .nav-livros .nav-title i {
+            margin-right: 8px;
+            color: #ffcd7e;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .nav-btn {
+            background: transparent;
+            border: none;
+            color: #f5f5f5;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-family: inherit;
+        }
+        
+        .nav-btn i {
+            font-size: 1rem;
+        }
+        
+        .nav-btn:hover:not(.disabled) {
+            color: #ffd966;
+            transform: scale(1.02);
+            text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+        }
+        
+        .nav-btn.disabled {
+            opacity: 0.4;
+            cursor: default;
+            pointer-events: none;
+            filter: grayscale(0.2);
+        }
+        
+        .livro-atual {
+            background: #ffd966;
+            color: #1e2a1a;
+            padding: 6px 16px;
+            border-radius: 32px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .livro-atual i {
+            color: #8b4513;
+        }
+        
+        @media (max-width: 650px) {
+            .nav-livros {
+                justify-content: center;
+                flex-direction: column;
+                padding: 12px 16px;
+            }
+            .nav-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        .header {
+            width: 1200px;
+            text-align: right; 
+            margin-bottom: 25px; 
+            color: #f9efcf; 
+        }
+        
+        .header h1 { 
+            font-size: 32px; 
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0 #2a401f;
+        }
+        
+        .header h1 i { 
+            margin-right: 10px; 
+        }
+        
+        .header p { 
+            font-size: 14px; 
+            opacity: 0.9; 
+        }
+        
+        #status { 
+            text-align: center; 
+            padding: 10px; 
+            margin: 12px auto; 
+            background: rgba(0,0,0,0.7); 
+            border-radius: 8px; 
+            font-family: monospace; 
+            font-size: 13px; 
+            color: #ffecb3; 
+            max-width: 500px; 
+        }
+        
+        /* Botões de navegação laterais do flipbook */
+        .scroll-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            background: none;
+            backdrop-filter: blur(5px);
+            border-radius: 50%;
+            color: #ffd966;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 10;
+            opacity: 1;
+            visibility: visible;
+            border: none;
+            outline: none;
+        }
+        
+        .scroll-btn:hover {
+            font-size: 28px;
+            color: #ffca2b;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .scroll-btn.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        
+        .scroll-left {
+            left: -80px;
+        }
+        
+        .scroll-right {
+            right: -80px;
+        }
+        @media (max-width: 1100px) {
+            body { padding: 20px 30px; }
+            .scroll-left { left: -50px; }
+            .scroll-right { right: -50px; }
+            .scroll-btn { width: 44px; height: 44px; font-size: 18px; }
+        }
+        
+        @media (max-width: 850px) {
+            body { padding: 15px 20px; }
+            .scroll-left { left: -35px; }
+            .scroll-right { right: -35px; }
+            .scroll-btn { width: 40px; height: 40px; font-size: 16px; }
+        }
+        
+        @media (max-width: 768px) {
+            .scroll-left { left: -20px; }
+            .scroll-right { right: -20px; }
+            .scroll-btn { width: 36px; height: 36px; font-size: 14px; }
+        }
+        
+        .titulo-livro {
+            text-align: center;
+            color: #8b3c1c;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #ffd966;
+            font-weight: bold;
+        }
+        
+        .capitulo-numero {
+            text-align: center;
+            color: #a5572a;
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        /* Estilos do flipbook e páginas */
+        
+        .pagina-biblia {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        
+        .cabecalho-pagina {
+            flex-shrink: 0;
+            text-align: center;
+            padding: 10px 5px;
+            border-bottom: 1px solid #e0d5c0;
+        }
+        
+        .cabecalho-pagina .referencia {
+            font-size: 14px;
+            color: #8b4513;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        
+        
+        .conteudo-duas-colunas {
+            flex: 1;
+            display: flex;
+            gap: 24px;
+            padding: 5px 2px 2px 2px;
+            overflow-y: hidden;
+            height: calc(100% - 48px);
+        }
+        
+        .coluna {
+            flex: 1;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .coluna .versiculo {
+            display: block;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            position: relative;
+            padding-left: 0.1px;
+            padding-right: 0.1px;
+            font-size: 10px;
+            break-inside: avoid;
+            text-align: justify;
+        }
+        
+        .coluna .versiculo-texto {
+            color: #2c3e2b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .versiculo-inicial .versiculo-texto::first-letter {
+            font-size: 44px;
+            font-weight: bold;
+            float: left;
+            line-height: 0.8;
+            margin-right: 8px;
+            color: #b35f2a;
+            font-family: 'Times New Roman', serif;
+        }
+        
+        .page-indicator {
+            text-align: center;
+            margin-top: 20px;
+            color: #e6c68b;
+            font-size: 14px;
+            font-family: monospace;
+            background: rgba(0,0,0,0.5);
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 30px;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .footer-info {
+            display: flex;
+            justify-content: center;
+            color: whitesmoke;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 1000px) { 
+            .conteudo-duas-colunas {
+                flex-direction: column;
+                gap: 20px;
+                height: auto;
+                overflow-y: visible;
+            }
+            .coluna {
+                width: 100%;
+            }
+        }
+
+        /* Estilo para página em branco da contracapa */
+        .blank-page {
+            background: #fdf8ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .blank-page .page-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+/* ============================================
+   ESTILOS EXCLUSIVOS DO DICIONÁRIO BÍBLICO
+   ============================================ */
+
+/* Títulos dos verbetes */
+.entry-title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #8b4c2c;
+    border-bottom: 2px solid #e0c48b;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', 'Georgia', serif;
+}
+
+/* Texto dos verbetes */
+.entry-text {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    text-align: justify;
+    color: #2c241a;
+    font-family: 'Segoe UI', 'Georgia', serif;
+}
+
+.entry-text p {
+    margin-bottom: 12px;
+}
+
+/* Grid de índices interativos */
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.index-grid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.index-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.index-grid::-webkit-scrollbar-thumb {
+    background: #8b4513;
+    border-radius: 10px;
+}
+
+/* Itens do índice */
+.index-item {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    background: #f8efda;
+    border-radius: 30px;
+    text-align: center;
+    color: #5a3e28;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Segoe UI', 'Georgia', serif;
+}
+
+.index-item:hover {
+    background: #e6d9bd;
+    transform: scale(1.02);
+}
+
+/* Capa personalizada do dicionário - CORRIGIDO */
+.hard.dictionary-cover {
+    background: linear-gradient(135deg, #8b4513, #4a2c1a);
+    background-image: url('assets/capa/capabiblica.webp');
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.hard.dictionary-cover i {
+    color: #ffd966;
+}
+
+.hard.dictionary-cover h1,
+.hard.dictionary-cover h2,
+.hard.dictionary-cover p {
+    color: #ffd966 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Ajustes responsivos para o dicionário */
+@media (max-width: 1000px) {
+    .entry-title {
+        font-size: 1.4rem;
+    }
+    .index-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 780px) {
+    .entry-title {
+        font-size: 1.2rem;
+    }
+    .index-item {
+        font-size: 0.75rem;
+        padding: 6px 8px;
+    }
+}
+
+/* Estilo para páginas de conteúdo do dicionário */
+.dictionary-page .page-content {
+    background: #fffaf0;
+    padding: 22px 28px;
+}
+
+/* Destaque para letras capitulares em verbetes */
+.entry-text p:first-of-type::first-letter {
+    font-size: 2.2rem;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 8px;
+    color: #8b4513;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Tooltip para referências bíblicas */
+.bible-ref {
+    border-bottom: 1px dotted #c5a47a;
+    cursor: help;
+    color: #8b4513;
+}
+
+.bible-ref:hover {
+    background: #f8efda;
+    border-radius: 3px;
+}
+
+/* Navegação rápida entre verbetes */
+.verbete-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e0c48b;
+}
+
+.verbete-nav a {
+    color: #8b4513;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.verbete-nav a:hover {
+    color: #ffd966;
+    text-decoration: underline;
+}
+
+/* Estilos adicionais para números de página */
+        .page-number {
+            position: absolute;
+            bottom: 12px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 11px;
+            color: #8b4513;
+            font-family: monospace;
+            font-style: italic;
+            z-index: 10;
+        }
+        
+        /* Garantir que o page-content tenha position relative para o número da página */
+        .page-content {
+            position: relative;
+        }
+        
+        /* Estilo para o verso da capa (sem imagem) */
+        .verso-capa {
+             border: 1 solid whitesmoke;
+            background: black !important;
+        }
+        
+        .verso-capa div {
+            background: transparent !important;
+        }
+        
+        /* Estilo para o anteverso da contracapa (comportamento de capa) */
+        .anteverso-capa {
+            border: 1 solid whitesmoke;
+            background: black !important;
+        }
+        
+        .anteverso-capa div {
+            background: transparent !important;
+        }
+        
+        /* Medidor invisível */
+        #medidor {
+            position: absolute;
+            visibility: hidden;
+            width: 580px;
+            top: -9999px;
+            left: 0;
+            background: #fffaf0;
+            padding: 35px 30px;
+            font-family: 'Segoe UI', 'Georgia', serif;
+            box-sizing: border-box;
+        }
+
+        /* ===== EFEITO DEPTH (PROFUNDIDADE) PARA AS PÁGINAS ===== */
+        
+        .ej-book .depth {
+            background-image: url(assets/pics/pages-depth.webp);
+            position: absolute;
+            top: 7px;
+            width: 16px;
+            height: 590px;
+        }
+
+        .ej-book .front-side .depth {
+            left: 4px;
+            background-position: 0 0;
+        }
+
+        .ej-book .back-side .depth {
+            right: 4px;
+            background-position: right 0;
+        }
+
+        .page-content {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .pagina-biblia {
+            font-family: 'Segoe UI';
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px 8px; /* topo e base iguais */
+            box-sizing: border-box;
+        }
+
+        .conteudo-duas-colunas {
+            display: flex;
+            gap: 10px;
+            height: 100%;
+            overflow: hidden; /* 🔴 impede vazar */
+        }
+
+        .coluna {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden; /* 🔴 ESSENCIAL */
+        }
+
+        .versiculo {
+            break-inside: avoid; /* 🔴 impede quebrar no meio */
+            margin-bottom: 6px;
+        }
+
+        /* Hifenização automática para todo o texto bíblico */
+        .versiculo,
+        .texto-versiculo,
+        .coluna,
+        .pagina-biblia,
+        .conteudo-duas-colunas {
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        /* Mantém o layout das colunas funcionando normalmente */
+        .conteudo-duas-colunas {
+            display: flex;
+            gap: 24px;
+            justify-content: space-between;
+            align-items: stretch;
+            flex: 1;
+            min-height: 0;
+        }
+        
+        .conteudo-duas-colunas .coluna {
+            flex: 1;
+            min-width: 0;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            text-align: justify;
+        }
+        
+        /* Versículos com hifenização e espaçamento otimizado */
+        .versiculo {
+            line-height: 1.6;
+            margin-bottom: 6px;
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+        }
+        
+        .texto-versiculo {
+            display: inline;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+        }
+        
+        /* Cabeçalho */
+        .cabecalho-pagina {
+            text-align: center;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            font-size: 13px;
+            letter-spacing: 1px;
+            flex-shrink: 0;
+        }
+                      
+        /* Remove margens extras */
+        .pagina-biblia *:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Suporte para navegadores */
+        @supports (hyphens: auto) {
+            .versiculo, .texto-versiculo, .coluna {
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+        }
+        
+        :lang(pt) {
+            hyphens: auto;
+            -webkit-hyphens: auto;
+        }
+        
+        /* Evita linhas solitárias */
+        .versiculo {
+            orphans: 2;
+            widows: 2;
+        }
+        
+        /* Estilos para apresentação */
+        .titulo-livro {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        
+        .capitulo-numero {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .referencia {
+            font-weight: bold;
+        }
+        
+        .page-number {
+            text-align: center;
+            font-size: 11px;
+            margin-top: 15px;
+            color: #888;
+            flex-shrink: 0;
+        }
+        
+        /* Medidor para cálculo de altura */
+        #medidor {
+            position: absolute;
+            visibility: hidden;
+            width: 420px;
+            pointer-events: none;
+            font-family: inherit;
+            line-height: 1.5;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            text-align: justify;
+        }
+        
+        #medidor .versiculo {
+            margin-bottom: 6px;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .versiculo {
+                line-height: 1.5;
+                margin-bottom: 4px;
+            }
+            .conteudo-duas-colunas {
+                gap: 16px;
+            }
+        }

@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Bíblia Digital | Textos Originais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    
+    <style>
+        .main-container {
+            font-family: 'Segoe UI';
+            position: relative;
+            width: 100%;
+            margin: 0 35px;
+        }
+
+        /* ===== MENU LATERAL GLOBAL (ÍCONES COM TOOLTIPS) ===== */
+        .side-nav-global {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: fixed !important;
+            top: 50% !important;
+            left: 12px !important;
+            transform: translateY(-50%) !important;
+            z-index: 10000 !important;
+            background: rgba(20, 30, 20, 0.75);
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            border-radius: 16px;
+            padding: 12px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 4px 0 30px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255, 217, 102, 0.15);
+            transition: all 0.3s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .side-nav-global.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateY(-50%) scale(0.9);
+        }
+
+        .side-nav-global a {
+            color: #c5a47a;
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            position: relative;
+            width: 44px;
+            height: 44px;
+        }
+
+        .side-nav-global a i {
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .side-nav-global a .tooltip {
+            position: absolute;
+            left: 58px;
+            background: rgba(20, 30, 20, 0.92);
+            backdrop-filter: blur(8px);
+            color: #ffd966;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.8);
+            transition: all 0.25s ease;
+            border: 1px solid rgba(255, 217, 102, 0.2);
+            letter-spacing: 0.3px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            z-index: 10002;
+        }
+
+        .side-nav-global a .tooltip::after {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-right: 8px solid rgba(20, 30, 20, 0.92);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: none;
+        }
+
+        .side-nav-global a:hover {
+            background: rgba(255, 217, 102, 0.12);
+            transform: scale(1.05);
+        }
+
+        .side-nav-global a:hover i {
+            color: #ffd966;
+            transform: scale(1.1);
+        }
+
+        .side-nav-global a:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        .side-nav-global a.active {
+            background: rgba(255, 217, 102, 0.15);
+            border: 1px solid rgba(255, 217, 102, 0.25);
+        }
+
+        .side-nav-global a.active i {
+            color: #ffd966;
+        }
+
+        .side-nav-global .divider {
+            width: 30px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 217, 102, 0.2), transparent);
+            margin: 4px 0;
+        }
+
+        /* ===== MENU LATERAL DE LIVROS (AT/NT) ===== */
+        .sidebar-at {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: fixed;
+            left: 12px;
+            top: 10px;
+            width: 260px;
+            height: 910px;
+            color: #e4d5b8;
+            z-index: 2000;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            scrollbar-width: thin;
+            scrollbar-color: #e4d5b8 transparent;
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .sidebar-at.open {
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .sidebar-at h3 {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #e4d5b8;
+            margin-bottom: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            user-select: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .sidebar-at h3:hover {
+            color: #d4af37;
+        }
+
+        .sidebar-at h3 .testamento-icon {
+            font-size: 1.2rem;
+        }
+
+        .sidebar-at h3 .testamento-nome {
+            font-weight: bold;
+        }
+
+        .sidebar-at h3 .testamento-indicator {
+            font-size: 0.65rem;
+            color: #d4af37;
+            opacity: 0.7;
+            font-weight: normal;
+            margin-top: 2px;
+        }
+
+        .menu-list-container {
+            max-height: calc(100% - 100px);
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #e4d5b8 transparent;
+        }
+
+        /* ===== BARRA DE ROLAGEM SEM FUNDO ===== */
+        .menu-list-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .menu-list-container::-webkit-scrollbar-track {
+            background: transparent !important;
+        }
+        .menu-list-container::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+        .menu-list-container::-webkit-scrollbar-thumb:hover {
+            background: #e8c84a;
+        }
+
+        /* Firefox - barra sem fundo */
+        .menu-list-container {
+            scrollbar-color: #e4d5b8 transparent !important;
+        }
+
+        .livros-lista {
+            list-style: none;
+            padding: 5px 0;
+        }
+
+        .livros-lista li {
+            padding: 10px 15px 10px 25px;
+        }
+
+        .livros-lista li a {
+            color: #e4d5b8;
+            text-decoration: none;
+            display: block;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .livros-lista li a:hover {
+            color: #d4af37;
+            padding-left: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        .livros-lista li a.ativo {
+            color: #d4af37;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-left: 8px;
+            border-left: 3px solid #d4af37;
+        }
+
+        /* ===== BOTÃO TOGGLE ===== */
+        .menu-toggle {
+            position: fixed;
+            left: 0;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 80px;
+            background: #e4d5b81f;
+            border: none;
+            cursor: pointer;
+            z-index: 2001;
+            font-size: 1.2rem;
+            color: #f8efda;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 10px 10px 0;
+            opacity: 0.8;
+        }
+
+        .menu-toggle:hover {
+            opacity: 1;
+            width: 40px;
+        }
+
+        .menu-toggle.hidden-toggle {
+            display: none !important;
+        }
+
+        /* ===== AJUSTE DO CONTEÚDO PRINCIPAL ===== */
+        .main-content {
+            padding-left: 80px !important;
+        }
+
+        /* Layout com dois painéis laterais */
+        .apologetic-wrapper {
+            display: flex;
+            gap: 20px;
+            max-width: 2000px;
+            margin: 0 auto;
+            padding: 5px;
+            overflow: visible !important;
+        }
+
+        /* ===== ESTILOS DO FLIPBOOK E PAINEL DIREITO ===== */
+        #flipbook, .ej-book, .leitor-wrapper, .own-size, .page-content {
+            z-index: 1 !important;
+            position: relative;
+        }
+
+        .container {
+            overflow: visible !important;
+        }
+
+        .main-container {
+            flex: 1;
+            min-width: 0;
+            overflow: visible !important;
+        }
+
+        /* Painel Direito - Textos Originais */
+        .sidebar-panel {
+            width: 330px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            overflow-y: auto;
+            max-height: 780px;
+            position: relative;
+            top: 80px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-header {
+            padding: 12px 15px;
+            border-radius: 16px 16px 0 0;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 0.9rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #d4af37;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .panel-header i {
+            margin-right: 8px;
+        }
+
+        .panel-content {
+            padding: 12px;
+            color: #e0d5c1;
+            font-size: 0.8rem;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .capitulo-titulo {
+            color: #e0d5c1;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .capitulo-titulo i {
+            margin-right: 8px;
+        }
+
+        .verso-original-item {
+            background: rgba(0,0,0,0.25);
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border-left: 3px solid #e4d5b8;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .verso-original-item:last-child {
+            border-bottom: none;
+        }
+
+        .verso-original-ref {
+            font-weight: bold;
+            color: #d4af37;
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 6px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .verso-original-texto {
+            font-size: 0.75rem;
+            color: #e8e0d0;
+            line-height: 1.5;
+            margin-bottom: 6px;
+            padding: 4px 8px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 4px;
+        }
+
+        .verso-original-texto strong {
+            color: #f0e68c;
+        }
+
+        .verso-original-hebraico {
+            font-size: 1.1rem;
+            direction: rtl;
+            text-align: right;
+            color: #d4af37;
+            font-family: 'Times New Roman', 'SBL Hebrew', serif;
+            padding: 4px 8px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .verso-original-translit {
+            font-style: italic;
+            color: #c0b090;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            margin-bottom: 4px;
+        }
+
+        .verso-original-grego {
+            font-size: 1rem;
+            color: #90c0d0;
+            font-family: 'Times New Roman', 'SBL Greek', serif;
+            padding: 2px 8px;
+            background: rgba(0,0,0,0.15);
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .verso-original-vulgata {
+            font-size: 0.85rem;
+            color: #b0a090;
+            font-style: italic;
+            padding: 2px 8px;
+            background: rgba(0,0,0,0.15);
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .verso-original-lexical {
+            font-size: 0.7rem;
+            color: #d4d0c0;
+            padding: 4px 8px;
+            background: rgba(0,0,0,0.15);
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .verso-original-lexical strong {
+            color: #d4af37;
+        }
+
+        .verso-original-lexical ul {
+            padding-left: 20px;
+            margin: 4px 0;
+        }
+
+        .verso-original-lexical li {
+            margin-bottom: 2px;
+            list-style-type: disc;
+        }
+
+        .verso-original-simbolismo {
+            font-size: 0.7rem;
+            color: #d4d0c0;
+            padding: 4px 8px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .verso-original-simbolismo strong {
+            color: #d4af37;
+        }
+
+        .verso-original-simbolismo ul {
+            padding-left: 20px;
+            margin: 4px 0;
+        }
+
+        .verso-original-simbolismo li {
+            margin-bottom: 2px;
+            list-style-type: circle;
+        }
+
+        .verso-original-comentarios {
+            font-size: 0.7rem;
+            color: #d4d0c0;
+            padding: 4px 8px;
+            background: rgba(0,0,0,0.15);
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .verso-original-comentarios strong {
+            color: #d4af37;
+        }
+
+        .verso-original-comentarios ul {
+            padding-left: 20px;
+            margin: 4px 0;
+        }
+
+        .verso-original-comentarios li {
+            margin-bottom: 2px;
+            list-style-type: square;
+        }
+
+        .verso-original-aplicacao {
+            font-size: 0.7rem;
+            color: #f0e68c;
+            font-style: italic;
+            padding: 4px 8px;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 4px;
+            margin-top: 4px;
+            border-top: 1px dashed rgba(212, 175, 55, 0.2);
+        }
+
+        .verso-original-aplicacao strong {
+            color: #d4af37;
+            font-style: normal;
+        }
+
+        .verso-divisoria {
+            border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+            margin: 8px 0;
+            padding: 0;
+        }
+
+        .badge-original {
+            background: #d4af37;
+            color: #1a0e08;
+            font-size: 0.6rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-left: 6px;
+        }
+
+        .status {
+            text-align: center;
+            padding: 50px;
+            color: #8b4513;
+            font-style: italic;
+        }
+
+        /* Barra de rolagem do painel direito */
+        .panel-content::-webkit-scrollbar,
+        .menu-list-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .panel-content::-webkit-scrollbar-track,
+        .menu-list-container::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+        .panel-content::-webkit-scrollbar-thumb,
+        .menu-list-container::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 10px;
+        }
+        .panel-content::-webkit-scrollbar-thumb:hover,
+        .menu-list-container::-webkit-scrollbar-thumb:hover {
+            background: #e8c84a;
+        }
+
+        .panel-content, .menu-list-container {
+            scrollbar-width: thin;
+            scrollbar-color: #e0c48b rgba(0, 0, 0, 0);
+        }
+
+        /* Barra de título */
+        .page-title-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 25px;
+            background: rgba(255,254,247,0.06);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            margin: 0px 25px 0 25px;
+            border: 1px solid rgba(255,215,0,0.1);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .page-title-bar .title-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #ffd966;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .page-title-bar .title-left i {
+            font-size: 1.8rem;
+        }
+
+        .search-bar { margin: 15px 25px; display: flex; gap: 10px; background: white; border-radius: 40px; padding: 5px 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border: 1px solid #e0c48b; }
+        .search-bar input { flex: 1; border: none; padding: 10px 5px; outline: none; font-size: 1rem; background: transparent; }
+        .search-bar button { background: #8b4513; border: none; color: white; padding: 8px 20px; border-radius: 30px; cursor: pointer; }
+        .search-results { position: absolute; top: 100px; right: 30px; width: 320px; background: white; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); z-index: 1000; display: none; max-height: 400px; overflow-y: auto; border: 1px solid #e0c48b; }
+        .search-results.show { display: block; }
+        .search-result-item { padding: 12px 15px; border-bottom: 1px solid #eee; cursor: pointer; font-size: 0.85rem; }
+        .search-result-item:hover { background: #f8efda; }
+        .result-ref { font-weight: bold; color: #8b4513; }
+        .page-number { position: absolute; bottom: 12px; right: 20px; font-size: 11px; color: #8b4513; font-family: monospace; text-align: right; }
+
+        .slider-container {
+            margin: 10px 25px;
+            padding: 8px 0;
+        }
+        .slider-container label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color:#e4d5b8;
+            margin-bottom: 5px;
+        }
+        #slider { width: 100%; margin: 8px 0; }
+        .ui-slider { background: #e0c48b; border-radius: 10px; height: 8px; }
+        .ui-slider .ui-slider-handle {
+            width: 6px; height: 6px;
+            margin-left: 1px;
+            background: #8b4513; border-radius: 50%;
+            border: none; cursor: pointer;
+            top: 0px;
+        }
+        .ui-slider .ui-slider-range { background: #d4af37; border-radius: 10px; }
+        .ui-slider .ui-slider-handle:focus { outline: none; }
+
+        .hidden { display: none; }
+
+        .nav-buttons .nav-btn.hidden-nav {
+            display: none !important;
+        }
+
+        .livro-atual {
+            font-size: 1.3rem;
+            background: transparent;
+            color: #e4d5b8;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .selector-livro {
+            display: none !important;
+        }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 768px) {
+            .main-content { padding-left: 70px !important; }
+            .side-nav-global { left: 6px !important; padding: 8px 6px; gap: 4px; }
+            .side-nav-global a { width: 36px; height: 36px; padding: 6px 8px; font-size: 16px; }
+            .side-nav-global a i { font-size: 16px; }
+            .side-nav-global a .tooltip { font-size: 11px; left: 48px; padding: 4px 10px; }
+            .sidebar-at { width: 200px; height: 600px; left: 6px; }
+            .menu-toggle { width: 16px; height: 60px; font-size: 1rem; }
+            .menu-toggle:hover { width: 30px; }
+            .sidebar-at h3 { font-size: 0.9rem; padding: 15px; }
+            .livros-lista li { padding: 8px 10px 8px 18px; }
+            .livros-lista li a { font-size: 0.75rem; }
+            .sidebar-panel { width: 100%; max-height: 250px; position: static; }
+            .apologetic-wrapper { flex-direction: column; }
+        }
+        @media (max-width: 480px) {
+            .main-content { padding-left: 60px !important; }
+            .side-nav-global { left: 4px !important; padding: 6px 4px; border-radius: 12px; }
+            .side-nav-global a { width: 32px; height: 32px; padding: 4px 6px; font-size: 14px; }
+            .side-nav-global a i { font-size: 14px; }
+            .side-nav-global a .tooltip { font-size: 10px; left: 40px; padding: 3px 8px; }
+            .sidebar-at { width: 160px; height: 500px; left: 4px; }
+            .menu-toggle { width: 14px; height: 50px; font-size: 0.8rem; }
+            .menu-toggle:hover { width: 25px; }
+            .livros-lista li { padding: 6px 8px 6px 14px; }
+            .livros-lista li a { font-size: 0.7rem; }
+        }
+
+        [data-direction] {
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        [data-direction="left"]:hover { 
+            transform: translateX(-15px); 
+            animation: moverLeft 1.5s ease-in-out infinite; 
+        }
+
+        @keyframes moverLeft {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-10px); }
+        }
+
+        .testamento-indicator {
+            font-size: 0.7rem;
+            color: #d4af37;
+            opacity: 0.7;
+            display: block;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== MENU LATERAL GLOBAL (ÍCONES COM TOOLTIPS) ===== -->
+<nav class="side-nav-global" id="sideNavGlobal" aria-label="Navegação principal">
+    <a href="index.html" title="Início">
+        <i class="fas fa-home"></i>
+        <span class="tooltip" style="text-align: center;">Início</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="bibliasagrada.html" title="Bíblia Completa">
+        <i class="fas fa-bible"></i>
+        <span class="tooltip" style="text-align: center;">Bíblia<br>Sagrada</span>
+    </a>
+    
+    <a href="comentada.html" title="Bíblia Comentada versículo a versículo">
+        <i class="fas fa-comment-dots"></i>
+        <span class="tooltip" style="text-align: center;">Bíblia<br>Comentada</span>
+    </a>
+    
+    <a href="original.html" class="active" title="Hebraico, Grego e Latim">
+        <i class="fas fa-scroll"></i>
+        <span class="tooltip" style="text-align: center;">Textos<br>Originais</span>
+    </a>
+    
+    <a href="apologetica.html" title="Bíblia em Defesa da Fé">
+        <i class="fas fa-shield-alt"></i>
+        <span class="tooltip" style="text-align: center;">Bíblia<br>Apologética</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="cristologia.html" title="Estude com a Enciclopédia Cristológica">
+        <i class="fas fa-cross"></i>
+        <span class="tooltip" style="text-align: center;">Enciclopédia<br>Cristológica</span>
+    </a>
+    
+    <a href="enciclopedia.html" title="Estude com a Enciclopédia">
+        <i class="fas fa-book-open"></i>
+        <span class="tooltip" style="text-align: center;">Enciclopédia<br>Bíblica</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="harpa.html" title="Hinos das Assembléias de Deus">
+        <i class="fas fa-music"></i>
+        <span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span>
+    </a>
+    
+    <a href="Cantor.html" title="Hinos Clássicos Batistas">
+        <i class="fas fa-microphone-alt"></i>
+        <span class="tooltip" style="text-align: center;">Cantor<br>Cristão</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="apoiar.html" title="Apoie o Projeto">
+        <i class="fas fa-heart"></i>
+        <span class="tooltip" style="text-align: center;">Apoiar</span>
+    </a>
+</nav>
+
+<!-- ===== BOTÃO TOGGLE DO MENU DE LIVROS ===== -->
+<button class="menu-toggle" id="menuToggle" title="Menu de Livros">
+    <i class="fas fa-chevron-right"></i>
+</button>
+
+<!-- ===== MENU LATERAL DE LIVROS (AT/NT) ===== -->
+<div class="sidebar-at" id="sidebarAT">
+    <h3 id="titulo-testamento">
+        <i class="fas fa-scroll testamento-icon"></i> 
+        <span class="testamento-nome" id="testamento-nome">Antigo Testamento</span>
+        <span class="testamento-indicator" id="testamento-indicator">Clique para Novo Testamento</span>
+    </h3>
+    <div id="menu-container" class="menu-list-container"></div>
+</div>
+
+<!-- ===== CONTEÚDO PRINCIPAL ===== -->
+<div class="apologetic-wrapper">
+    <div class="main-container">
+        <div class="container">
+            <div class="page-title-bar">
+                <div class="title-left">
+                    <i class="fas fa-scroll"></i>
+                    <span>Textos Originais</span>
+                </div>
+                <div class="nav-buttons">
+                    <button id="btn-anterior-livro" class="nav-btn"><i class="fas fa-chevron-left"></i> Anterior</button>
+                    <span class="livro-atual" id="livro-nome">Carregando...</span>
+                    <button id="btn-proximo-livro" class="nav-btn">Próximo <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar versículo. Ex.: Gênesis 1:1">
+                <button id="searchBtn">Buscar</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+            
+            <div class="leitor-wrapper">
+                <button id="scroll-left" class="scroll-btn scroll-left" aria-label="Página anterior" title="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div id="leitor">
+                    <div id="flipbook">
+                        <div class="ej-book"></div>
+                    </div>
+                </div>
+                
+                <button id="scroll-right" class="scroll-btn scroll-right" aria-label="Próxima página" title="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="slider-container">
+                <label>
+                    <span><i class="fas fa-book-open"></i> Página <span id="pagina-atual-slider">1</span></span>
+                    <span><span id="pagina-total-slider">0</span> páginas</span>
+                </label>
+                <div id="slider"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Painel Direito - Textos Originais -->
+    <div class="sidebar-panel">
+        <div class="panel-header">
+            <i class="fas fa-language"></i> TEXTOS ORIGINAIS <span class="badge-original">Hebraico/Grego</span>
+        </div>
+        <div class="panel-content" id="panel-direito">
+            <div class="status">Selecione um capítulo</div>
+        </div>
+    </div>
+</div>
+
+<div id="medidor" style="position: absolute; visibility: hidden; width: 420px;"></div>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="turn.min.js"></script>
+
+<script>
+// ======================== CONFIGURAÇÕES ========================
+const CONFIG = {
+    LIMITE_ALTURA: 1100,
+    LARGURA: 960,
+    ALTURA: 600
+};
+
+// Lista de livros com informações
+const LIVROS_INFO = {
+    "genesis": { nome: "Gênesis", abrev: "Gn", testamento: "antigo" },
+    "exodo": { nome: "Êxodo", abrev: "Êx", testamento: "antigo" },
+    "levitico": { nome: "Levítico", abrev: "Lv", testamento: "antigo" },
+    "numeros": { nome: "Números", abrev: "Nm", testamento: "antigo" },
+    "deuteronomio": { nome: "Deuteronômio", abrev: "Dt", testamento: "antigo" },
+    "josue": { nome: "Josué", abrev: "Js", testamento: "antigo" },
+    "juizes": { nome: "Juízes", abrev: "Jz", testamento: "antigo" },
+    "rute": { nome: "Rute", abrev: "Rt", testamento: "antigo" },
+    "1samuel": { nome: "1 Samuel", abrev: "1Sm", testamento: "antigo" },
+    "2samuel": { nome: "2 Samuel", abrev: "2Sm", testamento: "antigo" },
+    "1reis": { nome: "1 Reis", abrev: "1Rs", testamento: "antigo" },
+    "2reis": { nome: "2 Reis", abrev: "2Rs", testamento: "antigo" },
+    "1cronicas": { nome: "1 Crônicas", abrev: "1Cr", testamento: "antigo" },
+    "2cronicas": { nome: "2 Crônicas", abrev: "2Cr", testamento: "antigo" },
+    "esdras": { nome: "Esdras", abrev: "Ed", testamento: "antigo" },
+    "neemias": { nome: "Neemias", abrev: "Ne", testamento: "antigo" },
+    "ester": { nome: "Ester", abrev: "Et", testamento: "antigo" },
+    "jo": { nome: "Jó", abrev: "Jó", testamento: "antigo" },
+    "salmos": { nome: "Salmos", abrev: "Sl", testamento: "antigo" },
+    "proverbios": { nome: "Provérbios", abrev: "Pv", testamento: "antigo" },
+    "eclesiastes": { nome: "Eclesiastes", abrev: "Ec", testamento: "antigo" },
+    "cantares": { nome: "Cantares", abrev: "Ct", testamento: "antigo" },
+    "isaias": { nome: "Isaías", abrev: "Is", testamento: "antigo" },
+    "jeremias": { nome: "Jeremias", abrev: "Jr", testamento: "antigo" },
+    "lamentacoes": { nome: "Lamentações", abrev: "Lm", testamento: "antigo" },
+    "ezequiel": { nome: "Ezequiel", abrev: "Ez", testamento: "antigo" },
+    "daniel": { nome: "Daniel", abrev: "Dn", testamento: "antigo" },
+    "oseias": { nome: "Oseias", abrev: "Os", testamento: "antigo" },
+    "joel": { nome: "Joel", abrev: "Jl", testamento: "antigo" },
+    "amos": { nome: "Amós", abrev: "Am", testamento: "antigo" },
+    "obadias": { nome: "Obadias", abrev: "Ob", testamento: "antigo" },
+    "jonas": { nome: "Jonas", abrev: "Jn", testamento: "antigo" },
+    "miqueias": { nome: "Miqueias", abrev: "Mq", testamento: "antigo" },
+    "naum": { nome: "Naum", abrev: "Na", testamento: "antigo" },
+    "habacuque": { nome: "Habacuque", abrev: "Hc", testamento: "antigo" },
+    "sofonias": { nome: "Sofonias", abrev: "Sf", testamento: "antigo" },
+    "ageu": { nome: "Ageu", abrev: "Ag", testamento: "antigo" },
+    "zacarias": { nome: "Zacarias", abrev: "Zc", testamento: "antigo" },
+    "malaquias": { nome: "Malaquias", abrev: "Ml", testamento: "antigo" },
+    "mateus": { nome: "Mateus", abrev: "Mt", testamento: "novo" },
+    "marcos": { nome: "Marcos", abrev: "Mc", testamento: "novo" },
+    "lucas": { nome: "Lucas", abrev: "Lc", testamento: "novo" },
+    "joao": { nome: "João", abrev: "Jo", testamento: "novo" },
+    "atos": { nome: "Atos", abrev: "At", testamento: "novo" },
+    "romanos": { nome: "Romanos", abrev: "Rm", testamento: "novo" },
+    "1corintios": { nome: "1 Coríntios", abrev: "1Co", testamento: "novo" },
+    "2corintios": { nome: "2 Coríntios", abrev: "2Co", testamento: "novo" },
+    "galatas": { nome: "Gálatas", abrev: "Gl", testamento: "novo" },
+    "efesios": { nome: "Efésios", abrev: "Ef", testamento: "novo" },
+    "filipenses": { nome: "Filipenses", abrev: "Fp", testamento: "novo" },
+    "colossenses": { nome: "Colossenses", abrev: "Cl", testamento: "novo" },
+    "1tessalonicenses": { nome: "1 Tessalonicenses", abrev: "1Ts", testamento: "novo" },
+    "2tessalonicenses": { nome: "2 Tessalonicenses", abrev: "2Ts", testamento: "novo" },
+    "1timoteo": { nome: "1 Timóteo", abrev: "1Tm", testamento: "novo" },
+    "2timoteo": { nome: "2 Timóteo", abrev: "2Tm", testamento: "novo" },
+    "tito": { nome: "Tito", abrev: "Tt", testamento: "novo" },
+    "filemom": { nome: "Filemom", abrev: "Fm", testamento: "novo" },
+    "hebreus": { nome: "Hebreus", abrev: "Hb", testamento: "novo" },
+    "tiago": { nome: "Tiago", abrev: "Tg", testamento: "novo" },
+    "1pedro": { nome: "1 Pedro", abrev: "1Pe", testamento: "novo" },
+    "2pedro": { nome: "2 Pedro", abrev: "2Pe", testamento: "novo" },
+    "1joao": { nome: "1 João", abrev: "1Jo", testamento: "novo" },
+    "2joao": { nome: "2 João", abrev: "2Jo", testamento: "novo" },
+    "3joao": { nome: "3 João", abrev: "3Jo", testamento: "novo" },
+    "judas": { nome: "Judas", abrev: "Jd", testamento: "novo" },
+    "apocalipse": { nome: "Apocalipse", abrev: "Ap", testamento: "novo" }
+};
+
+const LIVROS_AT = [
+    "genesis", "exodo", "levitico", "numeros", "deuteronomio",
+    "josue", "juizes", "rute", "1samuel", "2samuel", "1reis", "2reis",
+    "1cronicas", "2cronicas", "esdras", "neemias", "ester", "jo", "salmos",
+    "proverbios", "eclesiastes", "cantares", "isaias", "jeremias", "lamentacoes",
+    "ezequiel", "daniel", "oseias", "joel", "amos", "obadias", "jonas", "miqueias",
+    "naum", "habacuque", "sofonias", "ageu", "zacarias", "malaquias"
+];
+
+const LIVROS_NT = [
+    "mateus", "marcos", "lucas", "joao", "atos", "romanos", "1corintios", "2corintios",
+    "galatas", "efesios", "filipenses", "colossenses", "1tessalonicenses", "2tessalonicenses",
+    "1timoteo", "2timoteo", "tito", "filemom", "hebreus", "tiago", "1pedro", "2pedro",
+    "1joao", "2joao", "3joao", "judas", "apocalipse"
+];
+
+const LIVROS_ORDEM = [...LIVROS_AT, ...LIVROS_NT];
+
+// ======================== VARIÁVEIS GLOBAIS ========================
+let livroAtualIndex = 0;
+let testamentoAtual = "antigo";
+let menuLivrosAberto = false;
+
+// ======================== CLASSES ========================
+class TextPaginator {
+    constructor(medidorId, alturaMax) {
+        this.medidor = document.getElementById(medidorId);
+        this.alturaMax = alturaMax;
+    }
+    calcularAltura(html) {
+        this.medidor.innerHTML = html;
+        const altura = this.medidor.scrollHeight;
+        this.medidor.innerHTML = "";
+        return altura;
+    }
+    dividirEmColunas(versiculos) {
+        let index = 0;
+        const paginas = [];
+        while (index < versiculos.length) {
+            const colEsq = [], colDir = [];
+            let altEsq = 0, altDir = 0;
+            while (index < versiculos.length) {
+                const conteudo = typeof versiculos[index] === 'string' ? versiculos[index] : (versiculos[index].texto || '');
+                const html = `<div class="versiculo">${conteudo}</div>`;
+                const altura = this.calcularAltura(html);
+                if (altEsq + altura <= this.alturaMax) {
+                    colEsq.push(versiculos[index]);
+                    altEsq += altura;
+                    index++;
+                } else break;
+            }
+            while (index < versiculos.length) {
+                const conteudo = typeof versiculos[index] === 'string' ? versiculos[index] : (versiculos[index].texto || '');
+                const html = `<div class="versiculo">${conteudo}</div>`;
+                const altura = this.calcularAltura(html);
+                if (altDir + altura <= this.alturaMax) {
+                    colDir.push(versiculos[index]);
+                    altDir += altura;
+                    index++;
+                } else break;
+            }
+            paginas.push({ esq: colEsq, dir: colDir, isContinuacao: paginas.length > 0 });
+        }
+        return paginas;
+    }
+}
+
+class PageBuilder {
+    constructor(livroNome, dados, paginator) {
+        this.livroNome = livroNome;
+        this.dados = dados;
+        this.paginator = paginator;
+        this.capituloPaginaMap = {};
+    }
+    gerarCapa() {
+        return `<div depth="5" class="hard" style="background-image: url('assets/capa/original.webp') !important; background-repeat: no-repeat; background-size: cover; background-position: center;">
+            <div class="side"></div>
+            <div class="capa-conteudo">
+                <h1 style="font-style: bold; font-family: 'OldeEnglish'; font-size: 70px; text-align: center; -webkit-text-fill-color: #c8a45c; position: relative; top: 40%;margin-left: 65px; margin-right: 35px;">${this.livroNome}</h1>
+            </div>
+        </div>`;
+    }
+
+    gerarVersoCapa() {
+        return `<div depth="5" class="hard front-side" style="position: relative;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('assets/capa/verso.webp'); background-repeat: no-repeat; background-size: cover; z-index: 0;"></div>
+            <div class="depth"></div>
+            <div class="verso-capa-conteudo" style="position: relative; z-index: 2; color: black;">
+                    <p style="font-size:40px; font-weight:bold; color:#2c3e50; border-bottom:3px solid #d4af37; display:inline-block; padding-bottom:5px;">Bíblia Sagrada</p><br>
+                    <div style="text-align:left; max-width:550px; margin:25px auto 0; border-radius:12px; padding:20px;">
+                        <h2 style="font-family: 'OldeEnglish'; font-size:35px; text-align:center;">${this.livroNome}</h2>
+                        <div style="margin-bottom:25px; margin-left: 30px;">
+                            <p style="font-size:16px; font-weight:bold; color:#8b4513; margin-bottom:8px;">📖 GRANDES PERSONAGENS BÍBLICOS:</p>
+                            <div style="padding-left:10px; font-size:12px;">
+                                <p style="margin:5px 0;">• <strong>Abraão</strong> – pai da fé</p>
+                                <p style="margin:5px 0;">• <strong>Moisés</strong> – libertador e legislador</p>
+                                <p style="margin:5px 0;">• <strong>Davi</strong> – homem segundo o coração de Deus</p>
+                                <p style="margin:5px 0;">• <strong>Jesus Cristo</strong> – Filho de Deus, Salvador da humanidade</p>
+                                <p style="margin:5px 0;">• <strong>Paulo</strong> – apóstolo dos gentios</p>
+                                <p style="margin:5px 0;">• <strong>Maria</strong> – mãe de Jesus</p>
+                                <p style="margin:5px 0;">• <strong>Pedro</strong> – líder dos apóstolos</p>
+                                <p style="margin:5px 0;">• <strong>João</strong> – o discípulo amado</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top:20px; border-top:1px dashed #ddd; padding-top:15px; margin-left: 30px;">
+                            <p style="font-size:16px; font-weight:bold; color:#8b4513; margin-bottom:8px;">✨ VERSÍCULO-CHAVE:</p>
+                            <div style="padding-left:15px; font-size:12px;">
+                                <p style="margin:8px 0; padding:10px; border-radius:8px; border-left:4px solid #d4af37;">
+                                    <strong>João 3:16</strong><br>
+                                    "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>`;
+    }
+    gerarPaginasConteudo() {
+        let paginas = [];
+        let currentPage = 3;
+        const capitulos = Object.keys(this.dados).sort((a,b)=>Number(a)-Number(b));
+        for (let cap of capitulos) {
+            const colunas = this.paginator.dividirEmColunas(this.dados[cap]);
+            for (let i = 0; i < colunas.length; i++) {
+                if (i === 0) this.capituloPaginaMap[cap] = currentPage;
+                const col = colunas[i];
+                const titulo = `${this.livroNome} ${cap}${col.isContinuacao ? ' continuação' : ''}`;
+                
+                const renderizar = (item) => {
+                    if (typeof item === 'string') {
+                        return `<div class="versiculo">${item}</div>`;
+                    } else if (typeof item === 'object' && item !== null) {
+                        return `<div class="versiculo">${item.texto || ''}</div>`;
+                    }
+                    return '';
+                };
+                
+                const html = `<div class="own-size" data-capitulo="${cap}" data-pagina="${currentPage}">
+                    <div class="page-content">
+                        <div class="cabecalho-pagina"><span class="referencia">${titulo}</span></div>
+                        <div class="conteudo-duas-colunas">
+                            <div class="coluna">${col.esq.map(renderizar).join('') || '—'}</div>
+                            <div class="coluna">${col.dir.map(renderizar).join('') || '—'}</div>
+                        </div>
+                        <div class="footnote">${this.livroNome} ${cap} - Bíblia Digital</div>
+                        <div class="page-number">${currentPage}</div>
+                    </div>
+                </div>`;
+                paginas.push(html);
+                currentPage++;
+            }
+        }
+        return { paginas, ultimaPagina: currentPage - 1 };
+    }
+    gerarPaginaBranca(numeroPagina) {
+        return `<div class="own-size blank-page">
+            <div class="page-content">
+                <div style="text-align:center; margin-top:40%; font-style:italic; color:#aaa;">
+                    <i class="fas fa-leaf"></i>
+                    <p>Procura apresentar-te a Deus aprovado, como obreiro que não tem de que se envergonhar, que maneja bem a palavra da verdade.</p>
+                    <p style="font-size:0.8rem;">2 Timóteo 2:15</p>
+                </div>
+                <div class="page-number">${numeroPagina}</div>
+            </div>
+        </div>`;
+    }
+    gerarAnteverso() {
+        return `<div class="hard fixed back-side" style="position: relative;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('assets/capa/anteverso.webp'); background-repeat: no-repeat; background-size: cover; background-position: center; z-index: 0;"></div>
+        <div class="depth"></div>
+        <div class="anteverso-conteudo" style="position: relative; z-index: 2; text-align: center; padding: 40px;">
+            <i class="fas fa-church" style="font-size: 48px; color: black;"></i>
+            <h3 style="font-size: 28px; margin-top: 20px;">Soli Deo Gloria</h3>
+            <p style="margin-top: 30px;">"Eis que faço novas todas as coisas."</p>
+            <p>Apocalipse 21:5</p>
+        </div>
+    </div>`;
+    }
+    gerarContracapa() {
+        return `<div class="hard" style="background-image: url('assets/capa/contracapa.webp') !important; background-repeat: no-repeat !important; background-size: cover !important; background-position: center;">
+            <div class="contracapa-conteudo"></div>
+        </div>`;
+    }
+    gerarTodasPaginas() {
+        let paginas = [this.gerarCapa(), this.gerarVersoCapa()];
+        const { paginas: paginasConteudo, ultimaPagina } = this.gerarPaginasConteudo();
+        paginas.push(...paginasConteudo);
+        if (paginasConteudo.length % 2 !== 0) {
+            const proximoNumero = ultimaPagina + 1;
+            paginas.push(this.gerarPaginaBranca(proximoNumero));
+        }
+        paginas.push(this.gerarAnteverso(), this.gerarContracapa());
+        return paginas;
+    }
+    getMapaCapituloPagina() {
+        return this.capituloPaginaMap;
+    }
+}
+
+class FlipbookManager {
+    constructor(seletor, largura, altura) {
+        this.container = $(seletor);
+        this.largura = largura;
+        this.altura = altura;
+        this.flipbook = null;
+        this.isChrome = () => navigator.userAgent.indexOf('Chrome') != -1;
+    }
+    carregar(paginasHtml, paginaInicial = 1) {
+        if (this.flipbook) {
+            try { 
+                this.flipbook.turn('destroy'); 
+            } catch(e) {}
+            this.flipbook = null;
+        }
+        
+        this.container.empty();
+        paginasHtml.forEach(html => this.container.append(html));
+        
+        this.flipbook = this.container.turn({
+            width: this.largura, 
+            height: this.altura, 
+            autoCenter: true, 
+            display: 'double',
+            acceleration: !this.isChrome(),
+            gradients: true, 
+            elevation: 50,
+            when: { 
+                turning: (e, page, view) => {
+                    var book = $(this.flipbook);
+                    var pages = book.turn('pages');
+                    
+                    if (page >= 2) {
+                        $('.ej-book .front-side').addClass('fixed');
+                    } else {
+                        $('.ej-book .front-side').removeClass('fixed');
+                    }
+                    if (page < pages) {
+                        $('.ej-book .back-side').addClass('fixed');
+                    } else {
+                        $('.ej-book .back-side').removeClass('fixed');
+                    }
+                    
+                    this.updateDepth(page);
+                },
+                turned: (e, page) => {
+                    this.onTurn(page);
+                }
+            }
+        });
+        
+        setTimeout(() => {
+            if (this.flipbook) {
+                try { 
+                    this.flipbook.turn('page', paginaInicial);
+                    const total = this.flipbook.turn('pages');
+                    this.onTurn(paginaInicial);
+                } catch(e) {}
+            }
+        }, 200);
+    }
+    
+    onTurn(page) {
+        if (!this.flipbook) return;
+        const total = this.flipbook.turn('pages');
+        
+        $('#scroll-left').toggleClass('hidden', page <= 1);
+        $('#scroll-right').toggleClass('hidden', page >= total);
+        
+        $('#pagina-atual-slider').text(page);
+        $('#pagina-total-slider').text(total);
+        
+        if ($('#slider').data('uiSlider')) {
+            $('#slider').slider('option', 'max', total);
+            $('#slider').slider('value', page);
+        }
+        
+        this.updateDepth(page);
+        
+        if (typeof atualizarPaineisPorPagina === 'function') {
+            atualizarPaineisPorPagina(page);
+        }
+    }
+    
+    updateDepth(page) {
+        if (!this.flipbook) return;
+        const pages = this.flipbook.turn('pages');
+        if (!pages) return;
+        
+        const front = $('.ej-book .front-side .depth');
+        if (front.length) {
+            let w = 16 * Math.min(1, page * 2 / pages);
+            if (page > 3) {
+                front.css({ width: w + 'px', left: (20 - w) + 'px' });
+            } else {
+                front.css({ width: '0px', left: '0px' });
+            }
+        }
+        
+        const back = $('.ej-book .back-side .depth');
+        if (back.length) {
+            let w = 16 * Math.min(1, (pages - page) * 2 / pages);
+            if (page < pages - 3) {
+                back.css({ width: w + 'px', right: (20 - w) + 'px' });
+            } else {
+                back.css({ width: '0px', right: '0px' });
+            }
+        }
+    }
+    
+    irParaPagina(num) { 
+        if (this.flipbook) { 
+            this.flipbook.turn('page', num);
+        }
+    }
+    
+    proximo() { if (this.flipbook) { this.flipbook.turn('next'); } }
+    anterior() { if (this.flipbook) { this.flipbook.turn('previous'); } }
+    primeiraPagina() { if (this.flipbook) { this.flipbook.turn('page', 1); } }
+    ultimaPagina() { if (this.flipbook) { 
+        const total = this.flipbook.turn('pages');
+        this.flipbook.turn('page', total);
+    }}
+    
+    getPaginaAtual() {
+        return this.flipbook ? this.flipbook.turn('page') : 1;
+    }
+}
+
+// ======================== VARIÁVEIS GLOBAIS ========================
+let flipbookManager = null;
+let dadosAtuais = null;
+let dadosComentados = null;
+let capituloParaPagina = {};
+let carregandoLivro = false;
+let nomeLivroAtual = "";
+const paginator = new TextPaginator('medidor', CONFIG.LIMITE_ALTURA);
+
+// ======================== FUNÇÕES DO MENU ========================
+
+function gerarMenu() {
+    const container = document.getElementById('menu-container');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    const ul = document.createElement('ul');
+    ul.className = 'livros-lista';
+    
+    const livros = testamentoAtual === 'antigo' ? LIVROS_AT : LIVROS_NT;
+    const titulo = testamentoAtual === 'antigo' ? 'Antigo Testamento' : 'Novo Testamento';
+    const proximo = testamentoAtual === 'antigo' ? 'Novo Testamento' : 'Antigo Testamento';
+    
+    document.getElementById('titulo-testamento').innerHTML = `
+        <i class="fas fa-scroll testamento-icon"></i>
+        <span class="testamento-nome" id="testamento-nome">${titulo}</span>
+        <span class="testamento-indicator" id="testamento-indicator">Clique para ${proximo}</span>
+    `;
+    
+    livros.forEach(livro => {
+        const li = document.createElement('li');
+        const nome = LIVROS_INFO[livro]?.nome || livro;
+        const isAtivo = LIVROS_ORDEM[livroAtualIndex] === livro ? 'ativo' : '';
+        li.innerHTML = `<a onclick="selecionarLivro('${livro}')" class="${isAtivo}" data-livro="${livro}">${nome}</a>`;
+        ul.appendChild(li);
+    });
+    
+    container.appendChild(ul);
+}
+
+function alternarTestamento() {
+    testamentoAtual = testamentoAtual === 'antigo' ? 'novo' : 'antigo';
+    gerarMenu();
+    
+    const livroAtual = LIVROS_ORDEM[livroAtualIndex];
+    const livros = testamentoAtual === 'antigo' ? LIVROS_AT : LIVROS_NT;
+    if (!livros.includes(livroAtual)) {
+        const novoLivro = livros[0];
+        const novoIndex = LIVROS_ORDEM.indexOf(novoLivro);
+        if (novoIndex !== -1) {
+            livroAtualIndex = novoIndex;
+            mudarLivro(novoLivro, 1);
+        }
+    }
+    atualizarMenuAtivo();
+}
+
+function selecionarLivro(livroId) {
+    const novoIndex = LIVROS_ORDEM.indexOf(livroId);
+    if (novoIndex !== -1) {
+        livroAtualIndex = novoIndex;
+        mudarLivro(livroId, 1);
+    }
+    toggleMenuLivros(false);
+}
+
+function atualizarMenuAtivo() {
+    const livroAtual = LIVROS_ORDEM[livroAtualIndex];
+    document.querySelectorAll('.livros-lista li a').forEach(el => {
+        el.classList.remove('ativo');
+        if (el.dataset.livro === livroAtual) {
+            el.classList.add('ativo');
+        }
+    });
+}
+
+// ======================== FUNÇÃO PARA ALTERNAR MENUS ========================
+function toggleMenuLivros(abrir) {
+    const sidebar = document.getElementById('sidebarAT');
+    const navGlobal = document.getElementById('sideNavGlobal');
+    const toggle = document.getElementById('menuToggle');
+    
+    if (abrir === undefined) {
+        abrir = !sidebar.classList.contains('open');
+    }
+    
+    if (abrir) {
+        sidebar.classList.add('open');
+        navGlobal.classList.add('hidden');
+        toggle.innerHTML = '<i class="fas fa-chevron-left"></i>';
+        toggle.classList.add('hidden-toggle');
+        menuLivrosAberto = true;
+    } else {
+        sidebar.classList.remove('open');
+        navGlobal.classList.remove('hidden');
+        toggle.innerHTML = '<i class="fas fa-chevron-right"></i>';
+        toggle.classList.remove('hidden-toggle');
+        menuLivrosAberto = false;
+    }
+}
+
+// ======================== FUNÇÕES DE TEXTOS ORIGINAIS ========================
+
+function carregarTextosOriginais(livroId) {
+    return new Promise((resolve) => {
+        const oldScript = document.querySelector(`script[data-livro-original="${livroId}"]`);
+        if (oldScript) oldScript.remove();
+        const script = document.createElement('script');
+        script.src = `texto/${livroId}.js`;
+        script.dataset.livroOriginal = livroId;
+        script.onload = () => {
+            if (window.LIVRO_DATA && window.LIVRO_DATA.dados) {
+                resolve(window.LIVRO_DATA);
+            } else {
+                resolve(null);
+            }
+        };
+        script.onerror = () => resolve(null);
+        document.head.appendChild(script);
+    });
+}
+
+function processarArrayTexto(versiculos) {
+    let html = '';
+    let dentroDoVerso = false;
+    let blocoAtual = '';
+    let versoAtual = 0;
+    
+    for (let i = 0; i < versiculos.length; i++) {
+        const item = versiculos[i];
+        
+        if (typeof item === 'object' && item !== null && item.texto) {
+            versoAtual++;
+            html += renderizarTextoOriginal(item, versoAtual);
+            html += `<div class="verso-divisoria"></div>`;
+            continue;
+        }
+        
+        if (typeof item === 'string') {
+            if (item.includes("style='font-size: 0.8rem; text-align: center;'") || 
+                item.includes("<p style='font-size: 0.8rem; text-align: center;'")) {
+                html += `<div class="titulo-capital">${item}</div>`;
+                continue;
+            }
+            
+            if (item.includes('<strong>VERSÍCULO:') || item.includes('VERSÍCULO:')) {
+                if (dentroDoVerso && blocoAtual) {
+                    html += `<div class="verso-original-item">${blocoAtual}</div>`;
+                    html += `<div class="verso-divisoria"></div>`;
+                    blocoAtual = '';
+                }
+                
+                const match = item.match(/VERSÍCULO:\s*(\d+)/);
+                if (match) {
+                    versoAtual = parseInt(match[1]);
+                }
+                
+                blocoAtual = item;
+                dentroDoVerso = true;
+                continue;
+            }
+            
+            if (dentroDoVerso) {
+                blocoAtual += item;
+            }
+        }
+    }
+    
+    if (dentroDoVerso && blocoAtual) {
+        html += `<div class="verso-original-item">${blocoAtual}</div>`;
+        html += `<div class="verso-divisoria"></div>`;
+    }
+    
+    return html;
+}
+
+function renderizarTextoOriginal(versoObj, numVerso) {
+    let html = `<div class="verso-original-item">`;
+    
+    html += `<div class="verso-original-ref"><i class="fas fa-scroll"></i> <strong>VERSÍCULO: ${numVerso}</strong></div>`;
+    
+    if (versoObj.texto) {
+        html += `<div class="verso-original-texto"><strong>📖 TEXTO:</strong> ${versoObj.texto}</div>`;
+    }
+    
+    if (versoObj.original) {
+        if (versoObj.original.hebraico) {
+            html += `<div class="verso-original-hebraico">${versoObj.original.hebraico}</div>`;
+        }
+        if (versoObj.original.transliteracao) {
+            html += `<div class="verso-original-translit"><strong>Transliteração:</strong> ${versoObj.original.transliteracao}</div>`;
+        }
+        if (versoObj.original.septuaginta) {
+            html += `<div class="verso-original-grego"><strong>LXX (Grego):</strong> ${versoObj.original.septuaginta}</div>`;
+        }
+        if (versoObj.original.vulgata) {
+            html += `<div class="verso-original-vulgata"><strong>Vulgata (Latim):</strong> ${versoObj.original.vulgata}</div>`;
+        }
+    }
+    
+    if (versoObj.estudo_lexical && versoObj.estudo_lexical.length > 0) {
+        html += `<div class="verso-original-lexical"><strong>📚 ESTUDO LEXICAL:</strong><ul>`;
+        versoObj.estudo_lexical.forEach(item => {
+            html += `<li><strong>${item.palavra}</strong> – ${item.significado}</li>`;
+        });
+        html += `</ul></div>`;
+    }
+    
+    if (versoObj.simbolismo) {
+        html += `<div class="verso-original-simbolismo"><strong>🎯 SIMBOLISMO:</strong><ul>`;
+        for (let key in versoObj.simbolismo) {
+            html += `<li><strong>${key}:</strong> ${versoObj.simbolismo[key]}</li>`;
+        }
+        html += `</ul></div>`;
+    }
+    
+    if (versoObj.comentarios_exegeticos && versoObj.comentarios_exegeticos.length > 0) {
+        html += `<div class="verso-original-comentarios"><strong>💬 COMENTÁRIOS EXEGÉTICOS:</strong><ul>`;
+        versoObj.comentarios_exegeticos.forEach(com => {
+            html += `<li><strong>${com.tradicao}:</strong> ${com.resumo}</li>`;
+        });
+        html += `</ul></div>`;
+    }
+    
+    if (versoObj.aplicacao) {
+        html += `<div class="verso-original-aplicacao"><strong>✏️ APLICAÇÃO:</strong> ${versoObj.aplicacao}</div>`;
+    }
+    
+    html += `</div>`;
+    return html;
+}
+
+function atualizarPaineisPorPagina(page) {
+    let capituloAtual = null;
+    for (let [cap, pagina] of Object.entries(capituloParaPagina)) {
+        if (parseInt(page) === parseInt(pagina) || parseInt(page) === parseInt(pagina) + 1) {
+            capituloAtual = cap;
+            break;
+        }
+    }
+    
+    if (capituloAtual) {
+        atualizarPaineisOriginais(capituloAtual);
+    }
+}
+
+function atualizarPaineisOriginais(capitulo) {
+    if (!dadosComentados || !dadosComentados.dados || !dadosComentados.dados[capitulo]) {
+        $("#panel-direito").html(`
+            <div class="capitulo-titulo">
+                <i class="fas fa-book"></i> ${nomeLivroAtual} ${capitulo}
+            </div>
+            <div class="status">
+                <i class="fas fa-info-circle"></i><br>
+                Textos originais não disponíveis para este capítulo
+            </div>
+        `);
+        return;
+    }
+    
+    const versiculos = dadosComentados.dados[capitulo];
+    let htmlDir = `<div class="capitulo-titulo">
+        <i class="fas fa-language"></i> ${nomeLivroAtual} ${capitulo}
+    </div>`;
+    
+    htmlDir += processarArrayTexto(versiculos);
+    
+    $("#panel-direito").html(htmlDir);
+}
+
+// ======================== CARREGAMENTO DE LIVROS EXTERNOS ========================
+
+function carregarLivroTexto(livroId) {
+    return new Promise((resolve, reject) => {
+        const oldScript = document.querySelector(`script[data-livro-texto="${livroId}"]`);
+        if (oldScript) oldScript.remove();
+        const script = document.createElement('script');
+        script.src = `apolo/${livroId}.js`;
+        script.dataset.livroTexto = livroId;
+        script.onload = () => {
+            if (window.LIVRO_DATA && window.LIVRO_DATA.dados) {
+                resolve(window.LIVRO_DATA);
+            } else {
+                reject(new Error(`Formato inválido em apolo/${livroId}.js`));
+            }
+        };
+        script.onerror = () => reject(new Error(`Não foi possível carregar apolo/${livroId}.js`));
+        document.head.appendChild(script);
+    });
+}
+
+function carregarLivroOriginal(livroId) {
+    return new Promise((resolve) => {
+        const oldScript = document.querySelector(`script[data-livro-original="${livroId}"]`);
+        if (oldScript) oldScript.remove();
+        const script = document.createElement('script');
+        script.src = `texto/${livroId}.js`;
+        script.dataset.livroOriginal = livroId;
+        script.onload = () => {
+            if (window.LIVRO_DATA && window.LIVRO_DATA.dados) {
+                resolve(window.LIVRO_DATA);
+            } else {
+                resolve(null);
+            }
+        };
+        script.onerror = () => resolve(null);
+        document.head.appendChild(script);
+    });
+}
+
+function atualizarBotoesNavegacaoLivro() {
+    const $btnAnterior = $('#btn-anterior-livro');
+    const $btnProximo = $('#btn-proximo-livro');
+    
+    if (livroAtualIndex <= 0) {
+        $btnAnterior.addClass('hidden-nav');
+    } else {
+        $btnAnterior.removeClass('hidden-nav');
+    }
+    
+    if (livroAtualIndex >= LIVROS_ORDEM.length - 1) {
+        $btnProximo.addClass('hidden-nav');
+    } else {
+        $btnProximo.removeClass('hidden-nav');
+    }
+}
+
+async function mudarLivro(livroId, paginaDestino = 1) {
+    if (carregandoLivro) return;
+    carregandoLivro = true;
+    $('#searchResults').removeClass('show');
+    $('#searchInput').val('');
+    $('#livro-nome').text('Carregando...');
+    
+    try {
+        const livroTexto = await carregarLivroTexto(livroId);
+        dadosAtuais = livroTexto.dados;
+        nomeLivroAtual = livroTexto.nome || LIVROS_INFO[livroId]?.nome || livroId.charAt(0).toUpperCase() + livroId.slice(1);
+        
+        try {
+            const livroOriginal = await carregarLivroOriginal(livroId);
+            dadosComentados = livroOriginal;
+        } catch (err) {
+            console.warn('Textos originais não encontrados para este livro:', err);
+            dadosComentados = null;
+        }
+        
+        $('#livro-nome').text(nomeLivroAtual);
+        
+        const builder = new PageBuilder(nomeLivroAtual, dadosAtuais, paginator);
+        const paginasHtml = builder.gerarTodasPaginas();
+        capituloParaPagina = builder.getMapaCapituloPagina();
+        
+        if (!flipbookManager) {
+            flipbookManager = new FlipbookManager('.ej-book', CONFIG.LARGURA, CONFIG.ALTURA);
+        }
+        flipbookManager.carregar(paginasHtml, paginaDestino);
+        
+        atualizarBotoesNavegacaoLivro();
+        atualizarMenuAtivo();
+        
+        const primeiroCap = Object.keys(dadosAtuais).sort((a,b)=>Number(a)-Number(b))[0];
+        if (primeiroCap) atualizarPaineisOriginais(primeiroCap);
+        
+    } catch (err) {
+        console.error(err);
+        $('#livro-nome').text('Erro');
+        $('.ej-book').html(`<div class="status">Erro ao carregar livro: ${err.message}<br>Verifique se os arquivos existem.</div>`);
+    } finally {
+        carregandoLivro = false;
+    }
+}
+
+function navegarParaLivro(delta) {
+    const novoIndex = livroAtualIndex + delta;
+    if (novoIndex >= 0 && novoIndex < LIVROS_ORDEM.length) {
+        livroAtualIndex = novoIndex;
+        mudarLivro(LIVROS_ORDEM[livroAtualIndex], 1);
+    }
+}
+
+function buscarNoLivroAtual(termo) {
+    if (!dadosAtuais) return [];
+    const resultados = [];
+    const termoLower = termo.toLowerCase();
+    
+    const refMatch = termo.match(/^(\d*\s*[a-záàâãéèêíïóôõöúçñ]+)\s+(\d+):(\d+)$/i);
+    if (refMatch) {
+        const livroRef = refMatch[1].toLowerCase().trim();
+        const capRef = refMatch[2];
+        const versRef = parseInt(refMatch[3]);
+        
+        if (livroRef === nomeLivroAtual.toLowerCase()) {
+            if (dadosAtuais[capRef] && dadosAtuais[capRef][versRef - 1]) {
+                const item = dadosAtuais[capRef][versRef - 1];
+                const texto = typeof item === 'string' ? item : (item.texto || '');
+                resultados.push({
+                    cap: capRef,
+                    vers: versRef,
+                    texto: texto.substring(0, 120) + (texto.length > 120 ? '…' : '')
+                });
+            }
+        }
+    } else {
+        for (let cap in dadosAtuais) {
+            if (dadosAtuais.hasOwnProperty(cap) && Array.isArray(dadosAtuais[cap])) {
+                for (let idx = 0; idx < dadosAtuais[cap].length; idx++) {
+                    const item = dadosAtuais[cap][idx];
+                    const texto = typeof item === 'string' ? item : (item.texto || '');
+                    if (texto && texto.toLowerCase().includes(termoLower)) {
+                        resultados.push({ 
+                            cap, 
+                            vers: idx + 1, 
+                            texto: texto.substring(0, 120) + (texto.length > 120 ? '…' : '') 
+                        });
+                    }
+                }
+            }
+            if (resultados.length > 30) break;
+        }
+    }
+    return resultados;
+}
+
+function executarBusca() {
+    const termo = $('#searchInput').val().trim();
+    if (!termo) {
+        alert('Digite um termo para buscar ou uma referência (ex: João 3:16)');
+        return;
+    }
+    
+    if (!dadosAtuais) {
+        alert('Aguardando carregamento do livro...');
+        return;
+    }
+    
+    const resultados = buscarNoLivroAtual(termo);
+    const $results = $('#searchResults');
+    $results.empty();
+    
+    if (resultados.length === 0) {
+        $results.append('<div class="search-result-item">Nenhum versículo encontrado.</div>');
+    } else {
+        resultados.forEach(r => {
+            $results.append(`<div class="search-result-item" data-cap="${r.cap}" data-vers="${r.vers}">
+                <span class="result-ref">${nomeLivroAtual} ${r.cap}:${r.vers}</span><br>
+                <small>${r.texto}</small>
+            </div>`);
+        });
+    }
+    $results.addClass('show');
+}
+
+// ======================== INICIALIZAÇÃO ========================
+$(document).ready(function() {
+    gerarMenu();
+    
+    toggleMenuLivros(false);
+    
+    $('#menuToggle').click(function() {
+        toggleMenuLivros(!menuLivrosAberto);
+    });
+    
+    $('#titulo-testamento').click(function() {
+        alternarTestamento();
+    });
+    
+    $(document).keydown(function(e) {
+        if (e.key === 'Escape') {
+            if (menuLivrosAberto) {
+                toggleMenuLivros(false);
+            }
+        }
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+            e.preventDefault();
+        }
+    });
+    
+    let teclaPressionada = false;
+    $(document).keydown(function(e) {
+        if (teclaPressionada) {
+            e.preventDefault();
+            return;
+        }
+        if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            teclaPressionada = true;
+            flipbookManager?.anterior();
+            setTimeout(() => { teclaPressionada = false; }, 300);
+            return;
+        }
+        if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            teclaPressionada = true;
+            flipbookManager?.proximo();
+            setTimeout(() => { teclaPressionada = false; }, 300);
+            return;
+        }
+    });
+    $(document).keyup(function(e) {
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+            teclaPressionada = false;
+        }
+    });
+    
+    $(document).click(function(e) {
+        if (!$(e.target).closest('#sidebarAT, #menuToggle')) {
+            if (menuLivrosAberto) {
+                toggleMenuLivros(false);
+            }
+        }
+    });
+    
+    $("#slider").slider({
+        min: 1,
+        max: 1,
+        value: 1,
+        slide: function(e, ui) {
+            if (flipbookManager) {
+                flipbookManager.irParaPagina(ui.value);
+            }
+        }
+    });
+    
+    $('#btn-primeira-pagina').click(() => flipbookManager?.primeiraPagina());
+    $('#btn-ultima-pagina').click(() => flipbookManager?.ultimaPagina());
+    $('#btn-pagina-anterior').click(() => flipbookManager?.anterior());
+    $('#btn-proxima-pagina').click(() => flipbookManager?.proximo());
+    
+    $('#page-input').on('change', function() {
+        let pagina = parseInt($(this).val());
+        const total = parseInt($('#total-paginas').text());
+        if (isNaN(pagina)) pagina = 1;
+        if (pagina < 1) pagina = 1;
+        if (pagina > total) pagina = total;
+        $(this).val(pagina);
+        if (flipbookManager) {
+            flipbookManager.irParaPagina(pagina);
+        }
+    });
+    
+    livroAtualIndex = LIVROS_ORDEM.indexOf('genesis');
+    setTimeout(function() {
+        mudarLivro('genesis', 1);
+    }, 50);
+    
+    $('#btn-anterior-livro').click(() => navegarParaLivro(-1));
+    $('#btn-proximo-livro').click(() => navegarParaLivro(1));
+    $('#scroll-left').click(() => flipbookManager?.anterior());
+    $('#scroll-right').click(() => flipbookManager?.proximo());
+    
+    $('#searchBtn').click(executarBusca);
+    $('#searchInput').keypress(function(e) {
+        if (e.which === 13) {
+            executarBusca();
+        }
+    });
+    
+    $(document).on('click', '.search-result-item', function() {
+        const cap = $(this).data('cap');
+        const paginaDestino = capituloParaPagina[cap];
+        if (paginaDestino && flipbookManager) {
+            flipbookManager.irParaPagina(paginaDestino);
+            $('#searchResults').removeClass('show');
+            $('#searchInput').val('');
+            atualizarPaineisOriginais(cap);
+        } else {
+            alert(`Não foi possível localizar o capítulo ${cap}.`);
+        }
+    });
+    
+    $(document).click(e => {
+        if (!$(e.target).closest('.search-bar, .search-results').length)
+            $('#searchResults').removeClass('show');
+    });
+});
+</script>
+</body>
+</html>

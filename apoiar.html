@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plataforma de Estudos Bíblicos - Apoiar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="./assets/icons/bible-icon-192.png" type="image/png" />
+  <style>
+    /* ===== TODOS OS ESTILOS ===== */
+    :root {
+      --primary: #8B4513;
+      --primary-dark: #4a2c1a;
+      --gold: #ffd966;
+      --cream: #fffef7;
+      --text-muted: #7a6a5a;
+      --shadow: 0 8px 32px rgba(0,0,0,0.2);
+      --border-radius: 16px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #000000d5 0%, #404241 100%);
+      min-height: 100vh;
+      padding-top: 20px;
+    }
+
+    h1 {
+      position: relative;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #ffd700;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('assets/capa/biblia-sagrada.webp') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.10;
+      pointer-events: none;
+      z-index: 0;
+      filter: sepia(0.3) brightness(0.9);
+    }
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      padding: 0 20px 0 80px;
+    }
+
+    /* ===== MENU LATERAL ESQUERDO (FIXO) ===== */
+    .side-nav {
+      position: fixed !important;
+      top: 50% !important;
+      left: 12px !important;
+      transform: translateY(-50%) !important;
+      z-index: 10000 !important;
+      background: rgba(20, 30, 20, 0.75);
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border-radius: 16px;
+      padding: 12px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 4px 0 30px rgba(0,0,0,0.6);
+      border: 1px solid rgba(255, 217, 102, 0.15);
+    }
+
+    .side-nav a {
+      color: #c5a47a;
+      text-decoration: none;
+      padding: 10px 12px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      position: relative;
+      width: 44px;
+      height: 44px;
+    }
+
+    .side-nav a i {
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .side-nav a .tooltip {
+      position: absolute;
+      left: 58px;
+      background: rgba(20, 30, 20, 0.92);
+      backdrop-filter: blur(8px);
+      color: #ffd966;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.8);
+      transition: all 0.25s ease;
+      border: 1px solid rgba(255, 217, 102, 0.2);
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .side-nav a .tooltip::after {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-right: 8px solid rgba(20, 30, 20, 0.92);
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: none;
+    }
+
+    .side-nav a:hover {
+      background: rgba(255, 217, 102, 0.12);
+      transform: scale(1.05);
+    }
+
+    .side-nav a:hover i {
+      color: #ffd966;
+      transform: scale(1.1);
+    }
+
+    .side-nav a:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    .side-nav a.active {
+      background: rgba(255, 217, 102, 0.15);
+      border: 1px solid rgba(255, 217, 102, 0.25);
+    }
+
+    .side-nav a.active i {
+      color: #ffd966;
+    }
+
+    .side-nav .divider {
+      width: 30px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 217, 102, 0.2), transparent);
+      margin: 4px 0;
+    }
+
+    /* ===== ESTILOS DA PÁGINA APOIAR ===== */
+    .page {
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+    .page.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-header { text-align: center; color: #fff; margin-bottom: 30px; padding: 20px 0; }
+    .page-header h1 { font-size: 48px; margin-bottom: 15px; text-shadow: 2px 4px 12px rgba(0,0,0,0.4); }
+    .page-header h1 i { color: var(--gold); margin-right: 12px; }
+    .page-header .subtitle { font-size: 20px; color: var(--gold); font-style: italic; }
+    .page-header .description { font-size: 16px; opacity: 0.85; max-width: 700px; margin: 12px auto 0; line-height: 1.6; }
+
+    /* ===== SEÇÃO PIX COM QR CODE E CARDS ===== */
+    .pix-section {
+      background: var(--cream);
+      border-radius: var(--border-radius);
+      padding: 45px 30px;
+      margin-top: 30px;
+      border: 2px solid var(--gold);
+      box-shadow: var(--shadow);
+    }
+    .pix-section .section-title {
+      text-align: center;
+      color: var(--primary-dark);
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .pix-section .section-title i {
+      color: var(--gold);
+      margin-right: 10px;
+    }
+    .pix-section .section-sub {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .pix-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .donation-cards-left {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .donation-card {
+      background: #fcf9f4;
+      border-radius: var(--border-radius);
+      padding: 18px 20px 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid #e0d5c8;
+      position: relative;
+      overflow: hidden;
+    }
+    .donation-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), #e67e22);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .donation-card:hover::after {
+      opacity: 1;
+    }
+    .donation-card:hover {
+      transform: translateX(6px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .donation-card .card-icon {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+    .donation-card h3 {
+      color: var(--primary-dark);
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .donation-card p {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .donation-card .highlight {
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 12px;
+      background: #f5ede4;
+      padding: 3px 12px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .donation-card .card-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-donate {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--gold);
+      text-decoration: none;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: all 0.3s;
+      border: 2px solid var(--gold);
+      cursor: pointer;
+    }
+    .btn-donate:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #a0522d, #5a3a2a);
+      box-shadow: 0 8px 24px rgba(139,69,19,0.4);
+    }
+    .btn-donate i { font-size: 14px; }
+    .btn-donate.secondary {
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .btn-donate.secondary:hover {
+      background: var(--primary);
+      color: var(--gold);
+    }
+    .btn-pix {
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      border-color: #22c55e;
+    }
+    .btn-pix:hover {
+      background: linear-gradient(135deg, #16a34a, #15803d);
+      border-color: #16a34a;
+    }
+
+    .btn-patrocine {
+      background: linear-gradient(135deg, #d4af37, #b8941e);
+      border-color: #d4af37;
+      color: #1a1a2e;
+    }
+    .btn-patrocine:hover {
+      background: linear-gradient(135deg, #e8c84a, #c8a428);
+      border-color: #e8c84a;
+      color: #1a1a2e;
+    }
+
+    .btn-sugestao {
+      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
+      border-color: #4a6fa5;
+      color: #ffffff;
+    }
+    .btn-sugestao:hover {
+      background: linear-gradient(135deg, #5a7fb5, #3a5a8a);
+      border-color: #5a7fb5;
+      color: #ffffff;
+    }
+
+    [data-tooltip] { position: relative; cursor: help; }
+    [data-tooltip]:before {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: calc(100% + 14px);
+      left: 50%;
+      transform: translateX(-50%) scale(0.9);
+      padding: 6px 14px;
+      background: var(--primary-dark);
+      color: var(--gold);
+      font-size: 12px;
+      white-space: nowrap;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s ease;
+      border: 1px solid var(--gold);
+      z-index: 100;
+    }
+    [data-tooltip]:after {
+      content: "";
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%) scale(0.9);
+      border: 6px solid transparent;
+      border-top-color: var(--primary-dark);
+      opacity: 0;
+      transition: all 0.25s ease;
+      pointer-events: none;
+    }
+    [data-tooltip]:hover:before,
+    [data-tooltip]:hover:after {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+
+    .qr-side-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding-top: 5px;
+    }
+
+    .qr-image-container {
+      background: white;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      border: 2px solid #ffd966;
+      display: inline-block;
+      max-width: 260px;
+      transition: all 0.3s;
+    }
+    .qr-image-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 30px rgba(255, 217, 102, 0.2);
+    }
+    .qr-image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+    }
+    .qr-image-container .qr-label {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #4a2c1a;
+      font-weight: 600;
+      text-align: center;
+    }
+    .qr-image-container .qr-label i {
+      color: #22c55e;
+      margin-right: 6px;
+    }
+
+    .pix-code {
+      background: #f5ede4;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-family: 'Courier New', monospace;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: var(--primary-dark);
+      border: 2px dashed #c5a47a;
+      word-break: break-all;
+      max-width: 100%;
+      user-select: all;
+      text-align: center;
+    }
+    .btn-copy {
+      background: var(--primary);
+      color: var(--gold);
+      border: none;
+      padding: 10px 24px;
+      border-radius: 40px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      border: 2px solid var(--gold);
+    }
+    .btn-copy:hover {
+      background: var(--primary-dark);
+      transform: scale(1.03);
+    }
+    .pix-tip {
+      background: #f5ede4;
+      padding: 10px 18px;
+      border-radius: 12px;
+      max-width: 100%;
+      width: 100%;
+      font-size: 13px;
+      color: var(--primary-dark);
+      text-align: center;
+    }
+    .pix-tip i {
+      color: var(--primary);
+      margin-right: 8px;
+    }
+    .security-badge {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .security-badge i {
+      color: var(--gold);
+      margin-right: 6px;
+    }
+
+    .btn-open-form-wrapper {
+      text-align: center;
+      margin-top: 35px;
+      padding-top: 30px;
+      border-top: 2px dashed #d5c8b8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-actions-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-open-form {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn-open-form:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(139,69,19,0.4);
+    }
+    .btn-open-form i {
+      font-size: 22px;
+    }
+
+    .btn-sugestao-form {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
+      color: #ffffff;
+      border: 2px solid #4a6fa5;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn-sugestao-form:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(74, 111, 165, 0.4);
+    }
+    .btn-sugestao-form i {
+      font-size: 22px;
+    }
+
+    .btn-hint {
+      font-size: 14px;
+      color: #7a6a5a;
+      margin-top: 0;
+    }
+
+    /* ===== DEPOIMENTOS E APOIADORES ===== */
+    .testimonials { margin-top: 50px; text-align: center; color: #e4d5b8; }
+    .testimonials h3 { font-size: 26px; color: var(--gold); margin-bottom: 20px; }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 15px; }
+    .testimonial-item { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); padding: 20px; border-radius: var(--border-radius); border: 1px solid rgba(255,215,0,0.15); font-size: 14px; line-height: 1.6; color: #f0e6d5; transition: transform 0.3s; }
+    .testimonial-item:hover { transform: translateY(-4px); }
+    .testimonial-item i { color: var(--gold); font-size: 24px; margin-bottom: 8px; display: block; }
+    .testimonial-item .author { margin-top: 10px; font-weight: 700; color: var(--gold); font-size: 13px; }
+
+    .supporters-section { margin-top: 50px; text-align: center; color: #e4d5b8; }
+    .supporters-section h3 { font-size: 26px; margin-bottom: 10px; color: var(--gold); }
+    .supporters-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 25px; margin-top: 18px; }
+    .supporter-tag { background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); padding: 6px 20px; border-radius: 30px; font-size: 14px; border: 1px solid #c5a47a44; }
+    .supporter-tag i { color: var(--gold); margin-right: 6px; }
+    .share-buttons { margin-top: 30px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .share-btn { background: rgba(255,255,255,0.08); color: #e4d5b8; padding: 8px 20px; border-radius: 40px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; border: 1px solid #c5a47a44; transition: 0.3s; }
+    .share-btn:hover { background: var(--gold); color: var(--primary-dark); border-color: var(--gold); }
+
+    /* ===== MODAL DE PLANOS PARA ANUNCIANTES ===== */
+    .modal-planos-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999999;
+      padding: 20px;
+      animation: fadeInOverlay 0.3s ease;
+    }
+    .modal-planos-overlay.active { display: flex; }
+
+    .modal-planos-box {
+      background: var(--cream);
+      max-width: 950px;
+      width: 100%;
+      max-height: 95vh;
+      padding: 40px 35px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      border: 2px solid var(--gold);
+      animation: modalPop 0.4s ease;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .modal-planos-box .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 18px;
+      background: none;
+      border: none;
+      font-size: 32px;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: 0.3s;
+      line-height: 1;
+    }
+    .modal-planos-box .modal-close:hover {
+      color: var(--primary);
+      transform: rotate(90deg);
+    }
+
+    .modal-planos-box .modal-planos-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .modal-planos-box .modal-planos-header h2 {
+      font-size: 32px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .modal-planos-box .modal-planos-header h2 i {
+      color: var(--gold);
+      margin-right: 10px;
+    }
+    .modal-planos-box .modal-planos-header p {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    /* Tabs Mensal/Anual */
+    .plano-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+    .plano-tabs .tab-btn {
+      padding: 10px 30px;
+      border-radius: 40px;
+      border: 2px solid #e0d5c8;
+      background: transparent;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .plano-tabs .tab-btn.active {
+      background: var(--gold);
+      color: #1a1a2e;
+      border-color: var(--gold);
+    }
+    .plano-tabs .tab-btn:hover:not(.active) {
+      border-color: var(--gold);
+      color: var(--primary-dark);
+    }
+    .plano-tabs .tab-btn .badge-economia {
+      background: #22c55e;
+      color: #fff;
+      font-size: 10px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-left: 6px;
+    }
+
+    .modal-planos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .modal-plano-card {
+      background: #fcf9f4;
+      border-radius: var(--border-radius);
+      padding: 25px 20px;
+      text-align: center;
+      transition: all 0.3s;
+      border: 2px solid #e0d5c8;
+      position: relative;
+      overflow: hidden;
+    }
+    .modal-plano-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    .modal-plano-card.destaque {
+      border-color: var(--gold);
+      box-shadow: 0 0 30px rgba(255,217,102,0.15);
+      transform: scale(1.02);
+    }
+    .modal-plano-card.destaque:hover {
+      transform: scale(1.04) translateY(-5px);
+    }
+    .modal-plano-card .plano-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--gold);
+      color: #1a1a2e;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 3px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .modal-plano-card .plano-icon {
+      font-size: 40px;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .modal-plano-card .plano-nome {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 2px;
+    }
+    .modal-plano-card .plano-preco {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+    .modal-plano-card .plano-preco span {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    .modal-plano-card .plano-preco-anual {
+      font-size: 16px;
+      color: #22c55e;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .modal-plano-card .plano-preco-anual .economia {
+      background: #22c55e;
+      color: #fff;
+      font-size: 10px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-left: 6px;
+    }
+    .modal-plano-card .plano-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .modal-plano-card .plano-beneficios {
+      text-align: left;
+      padding: 0 5px;
+      margin-bottom: 15px;
+    }
+    .modal-plano-card .plano-beneficios li {
+      list-style: none;
+      padding: 4px 0;
+      font-size: 12px;
+      color: #4a3a2a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .modal-plano-card .plano-beneficios li i {
+      color: var(--gold);
+      font-size: 14px;
+      width: 18px;
+      text-align: center;
+    }
+    .modal-plano-card .plano-beneficios li i.fa-times {
+      color: #ccc;
+    }
+
+    .btn-plano-modal {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 24px;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: 2px solid var(--primary);
+      background: var(--primary);
+      color: var(--gold);
+      cursor: pointer;
+      width: 100%;
+      justify-content: center;
+    }
+    .btn-plano-modal:hover {
+      background: var(--primary-dark);
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(139,69,19,0.3);
+    }
+    .btn-plano-modal.destaque-btn {
+      background: linear-gradient(135deg, #d4af37, #b8941e);
+      border-color: #d4af37;
+      color: #1a1a2e;
+    }
+    .btn-plano-modal.destaque-btn:hover {
+      background: linear-gradient(135deg, #e8c84a, #c8a428);
+      border-color: #e8c84a;
+    }
+    .btn-plano-modal.outline {
+      background: transparent;
+      color: var(--primary);
+    }
+    .btn-plano-modal.outline:hover {
+      background: var(--primary);
+      color: var(--gold);
+    }
+
+    .modal-planos-footer {
+      text-align: center;
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid #e0d5c8;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .modal-planos-footer i {
+      color: var(--gold);
+      margin-right: 6px;
+    }
+    .modal-planos-footer a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .modal-planos-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== MODAL DE FORMULÁRIO MELHORADO ===== */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      padding: 20px;
+      animation: fadeInOverlay 0.3s ease;
+    }
+    .modal-overlay.active { display: flex; }
+    @keyframes fadeInOverlay {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-box {
+      background: var(--cream);
+      max-width: 620px;
+      width: 100%;
+      max-height: 92vh;
+      border-radius: 24px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+      border: 2px solid var(--gold);
+      animation: modalPop 0.4s ease;
+      overflow-y: auto;
+      position: relative;
+      padding: 0;
+    }
+
+    .modal-box.sugestao-modal {
+      border-color: #4a6fa5;
+    }
+    .modal-box.sugestao-modal .modal-header {
+      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
+    }
+
+    @keyframes modalPop {
+      0% { transform: scale(0.85) translateY(30px); opacity: 0; }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
+    }
+
+    /* HEADER DO MODAL */
+    .modal-header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      padding: 30px 35px 25px;
+      border-radius: 22px 22px 0 0;
+      text-align: center;
+      position: relative;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .modal-header .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-header .modal-close:hover {
+      background: rgba(255,255,255,0.3);
+      transform: rotate(90deg);
+    }
+
+    .modal-header .modal-icon-top {
+      font-size: 52px;
+      color: var(--gold);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .modal-header h2 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 4px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .modal-header .modal-subtitle {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .modal-header .modal-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--primary-dark);
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+    }
+
+    /* CORPO DO MODAL */
+    .modal-body {
+      padding: 28px 35px 35px;
+    }
+
+    .modal-body .form-sub {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 2px;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+    .form-group label i {
+      color: var(--gold);
+      font-size: 14px;
+      width: 18px;
+      text-align: center;
+    }
+    .form-group label .required-star {
+      color: #e74c3c;
+      font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e0d5c8;
+      border-radius: 12px;
+      font-size: 14px;
+      background: #fcf9f4;
+      transition: all 0.3s;
+      font-family: inherit;
+      color: #2c1810;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(255,215,0,0.15);
+      background: #fff;
+    }
+
+    .form-group textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .form-group .field-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .form-group .field-hint i {
+      font-size: 12px;
+    }
+
+    .form-group .char-counter {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: right;
+      margin-top: 3px;
+    }
+
+    /* INPUT COM ÍCONE */
+    .input-icon-wrapper {
+      position: relative;
+    }
+    .input-icon-wrapper .input-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold);
+      font-size: 16px;
+    }
+    .input-icon-wrapper input,
+    .input-icon-wrapper select {
+      padding-left: 44px;
+    }
+
+    /* BOTÃO DE ENVIO */
+    .btn-submit-form {
+      grid-column: 1 / -1;
+      justify-self: center;
+      padding: 16px 50px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 17px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+      letter-spacing: 0.3px;
+    }
+    .btn-submit-form:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 30px rgba(139,69,19,0.4);
+    }
+    .btn-submit-form i {
+      font-size: 20px;
+    }
+
+    .btn-submit-sugestao {
+      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
+      border-color: #4a6fa5;
+      color: #ffffff;
+    }
+    .btn-submit-sugestao:hover {
+      background: linear-gradient(135deg, #5a7fb5, #3a5a8a);
+      border-color: #5a7fb5;
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(74, 111, 165, 0.4);
+    }
+
+    /* FOOTER DO MODAL */
+    .modal-footer {
+      background: #f5f0e8;
+      padding: 14px 35px;
+      border-radius: 0 0 22px 22px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid #e0d5c8;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .modal-footer i {
+      color: var(--gold);
+      margin-right: 4px;
+    }
+    .modal-footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .modal-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== MODAL DE SUCESSO ===== */
+    .modal-success-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999999;
+      padding: 20px;
+    }
+    .modal-success-overlay.active { display: flex; }
+
+    .modal-success-box {
+      background: var(--cream);
+      max-width: 480px;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      border: 3px solid #22c55e;
+      animation: modalPop 0.4s ease;
+    }
+    .modal-success-box .success-icon {
+      font-size: 72px;
+      color: #22c55e;
+      margin-bottom: 12px;
+    }
+    .modal-success-box h3 {
+      font-size: 28px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .modal-success-box p {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .modal-success-box .verse-highlight {
+      background: #f5ede4;
+      padding: 12px 20px;
+      border-radius: 12px;
+      color: var(--primary-dark);
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--gold);
+    }
+    .btn-modal-close {
+      background: var(--primary);
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      padding: 14px 44px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-modal-close:hover {
+      background: var(--primary-dark);
+      transform: scale(1.02);
+    }
+
+    /* ===== TOAST ===== */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #4a2c1a;
+      color: #ffd966;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      z-index: 9999999;
+      border: 1px solid #ffd966;
+      opacity: 0;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+
+    /* ===== PÁGINAS DE REDIRECIONAMENTO ===== */
+    .redirect-card {
+      background: #fffef7;
+      max-width: 540px;
+      margin: 40px auto;
+      padding: 45px 35px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 1px solid #c5a47a;
+    }
+    .redirect-card .icon { font-size: 72px; margin-bottom: 15px; }
+    .redirect-card h2 { color: #4a2c1a; font-size: 28px; margin-bottom: 8px; }
+    .redirect-card p { color: #5a4a3a; font-size: 16px; line-height: 1.6; margin-bottom: 20px; }
+    .spinner { width: 60px; height: 60px; margin: 15px auto; border: 6px solid #e0d5c0; border-top-color: #22c55e; border-radius: 50%; animation: spin 0.9s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .progress-bar-redir { width: 100%; height: 6px; background: #e0d5c0; border-radius: 10px; margin: 20px 0 10px; overflow: hidden; }
+    .progress-bar-redir .fill { height: 100%; width: 0%; background: linear-gradient(90deg, #22c55e, #16a34a); border-radius: 10px; animation: progress 5s ease forwards; }
+    @keyframes progress { from { width: 0%; } to { width: 100%; } }
+    .btn-voltar { display: inline-block; margin-top: 15px; color: #8B4513; text-decoration: none; font-weight: 600; border: 2px solid #8B4513; padding: 10px 28px; border-radius: 40px; transition: 0.3s; }
+    .btn-voltar:hover { background: #8B4513; color: #ffd966; }
+    .highlight-verse { background: #f5ede4; padding: 12px 20px; border-radius: 12px; color: #4a2c1a; font-size: 15px; margin: 15px 0 25px; display: inline-block; }
+    .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 12px 30px; border-radius: 40px; text-decoration: none; font-weight: 700; transition: 0.3s; border: 2px solid transparent; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-primary { background: #8B4513; color: #ffd966; border-color: #ffd966; }
+    .btn-primary:hover { background: #4a2c1a; transform: scale(1.03); }
+    .btn-secondary { background: transparent; color: #8B4513; border-color: #8B4513; }
+    .btn-secondary:hover { background: #8B4513; color: #ffd966; }
+
+    footer { text-align: center; margin-top: 60px; padding: 25px 20px; color: #e4d5b8; border-top: 1px solid #c5a47a44; font-size: 13px; }
+    footer i.fa-heart { color: #ff6b6b; }
+
+    /* ===== RESPONSIVO ===== */
+    @media (max-width: 992px) {
+      .pix-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .donation-cards-left { order: 2; }
+      .qr-side-right { order: 1; }
+      .modal-planos-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 34px; }
+      .pix-section { padding: 30px 18px; }
+      .modal-box { max-width: 100%; }
+      .modal-header { padding: 25px 20px; }
+      .modal-body { padding: 20px; }
+      .modal-footer { padding: 12px 20px; flex-direction: column; gap: 6px; }
+      .pix-code { font-size: 16px; padding: 12px 18px; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .main-content { padding: 0 15px 0 70px; }
+      .side-nav { left: 6px !important; padding: 8px 6px; gap: 4px; }
+      .side-nav a { width: 36px; height: 36px; padding: 6px 8px; font-size: 16px; }
+      .side-nav a i { font-size: 16px; }
+      .side-nav a .tooltip { font-size: 11px; left: 48px; padding: 4px 10px; }
+      .donation-card { padding: 14px 16px; }
+      .modal-planos-grid { grid-template-columns: 1fr; }
+      .modal-plano-card.destaque { transform: scale(1); }
+      .modal-plano-card.destaque:hover { transform: translateY(-5px); }
+      .plano-tabs .tab-btn { padding: 8px 20px; font-size: 12px; }
+      .btn-actions-row { flex-direction: column; align-items: center; }
+      .btn-open-form, .btn-sugestao-form { width: 100%; justify-content: center; padding: 14px 20px; font-size: 16px; }
+      .form-grid { grid-template-columns: 1fr; gap: 12px; }
+      .btn-submit-form { width: 100%; justify-content: center; padding: 14px 20px; font-size: 15px; }
+      .modal-header h2 { font-size: 22px; }
+      .modal-header .modal-icon-top { font-size: 40px; }
+    }
+    @media (max-width: 480px) {
+      .page-header h1 { font-size: 28px; }
+      .btn-donate { padding: 8px 16px; font-size: 12px; }
+      .pix-section { padding: 20px 14px; }
+      .qr-image-container { max-width: 180px; padding: 10px; }
+      .donation-card { padding: 12px 12px; }
+      .donation-card .card-icon { font-size: 26px; }
+      .main-content { padding: 0 10px 0 60px; }
+      .side-nav { left: 4px !important; padding: 6px 4px; border-radius: 12px; }
+      .side-nav a { width: 32px; height: 32px; padding: 4px 6px; font-size: 14px; }
+      .side-nav a i { font-size: 14px; }
+      .side-nav a .tooltip { font-size: 10px; left: 40px; padding: 3px 8px; }
+      .modal-planos-box { padding: 20px 14px; }
+      .modal-plano-card { padding: 18px 14px; }
+      .modal-plano-card .plano-preco { font-size: 22px; }
+      .plano-tabs .tab-btn { padding: 6px 14px; font-size: 11px; }
+      .plano-tabs .tab-btn .badge-economia { font-size: 8px; padding: 1px 6px; }
+      .btn-open-form, .btn-sugestao-form { font-size: 14px; padding: 12px 16px; }
+      .modal-header { padding: 20px 16px; }
+      .modal-body { padding: 16px; }
+      .modal-header h2 { font-size: 20px; }
+      .modal-success-box { padding: 30px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== MENU LATERAL ESQUERDO ===== -->
+  <nav class="side-nav" aria-label="Navegação principal">
+    <a href="index.html" title="Página Principal">
+      <i class="fas fa-home"></i>
+      <span class="tooltip" style="text-align: center;">Início</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="bibliasagrada.html" title="Bíblia Completa">
+      <i class="fas fa-bible"></i>
+      <span class="tooltip" style="text-align: center;">Bíblia<br>Sagrada</span>
+    </a>
+    
+    <a href="comentada.html" title="Bíblia Comentada versículo a versículo">
+      <i class="fas fa-comment-dots"></i>
+      <span class="tooltip" style="text-align: center;">Bíblia<br>Comentada</span>
+    </a>
+    
+    <a href="original.html" title="Hebraico, Grego e Latim">
+      <i class="fas fa-scroll"></i>
+      <span class="tooltip" style="text-align: center;">Textos<br>Originais</span>
+    </a>
+    
+    <a href="apologetica.html" title="Bíblia em Defesa da Fé">
+      <i class="fas fa-shield-alt"></i>
+      <span class="tooltip" style="text-align: center;">Bíblia<br>Apologética</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="cristologia.html" title="Estude com a Enciclopédia Cristológica">
+      <i class="fas fa-cross"></i>
+      <span class="tooltip" style="text-align: center;">Enciclopédia<br>Cristológica</span>
+    </a>
+    
+    <a href="enciclopedia.html" title="Estude com a Enciclopédia">
+      <i class="fas fa-book-open"></i>
+      <span class="tooltip" style="text-align: center;">Enciclopédia<br>Bíblica</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="harpa.html" title="Hinos das Assembléias de Deus">
+      <i class="fas fa-music"></i>
+      <span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span>
+    </a>
+    
+    <a href="Cantor.html" title="Hinos Clássicos Batistas">
+      <i class="fas fa-microphone-alt"></i>
+      <span class="tooltip">Cantor<br>Cristão</span>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a href="apoiar.html" class="active" title="Apoie o Projeto">
+      <i class="fas fa-heart"></i>
+      <span class="tooltip" style="text-align: center;">Apoiar</span>
+    </a>
+  </nav>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main class="main-content">
+
+    <!-- ========== PÁGINA APOIAR ========== -->
+    <div id="page-apoiar" class="page active">
+      <header class="page-header">
+        <h1><i class="fas fa-heart"></i> Apoie este Projeto</h1>
+        <p class="subtitle">"Cada um contribua conforme propôs no coração" — 2 Coríntios 9:7</p><br><hr>
+        <p class="description">
+          Esta plataforma é mantida como um serviço gratuito para a comunidade cristã.
+          Sua colaboração nos ajuda a manter os servidores, melhorar os recursos e
+          continuar desenvolvendo novos materiais de estudo bíblico.
+        </p>
+      </header>
+
+      <!-- ===== SEÇÃO PIX COM QR CODE E CARDS ===== -->
+      <section class="pix-section" id="pixSection">
+        <h2 class="section-title"><i class="fas fa-hand-holding-heart"></i> Contribua via PIX</h2>
+        <p class="section-sub">Escolha como deseja ajudar e faça sua doação de forma rápida e segura</p>
+
+        <div class="pix-grid">
+          <div class="donation-cards-left">
+            <div class="donation-card">
+              <i class="fas fa-hand-holding-heart card-icon"></i>
+              <h3>Doação Única</h3>
+              <p>Contribua com qualquer valor via PIX.</p>
+              <span class="highlight">💡 Valor sugerido: R$ 10,00</span>
+              <div class="card-actions">
+                <a href="#" class="btn-donate btn-pix" onclick="scrollParaQR()">
+                  <i class="fas fa-qrcode"></i> Ver QR Code <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="donation-card">
+              <i class="fas fa-user-friends card-icon"></i>
+              <h3>Apoio Mensal</h3>
+              <p>Contribuição recorrente via PIX.</p>
+              <span class="highlight">🌟 Valor sugerido: R$ 20,00/mês</span>
+              <div class="card-actions">
+                <a href="#" class="btn-donate btn-pix" onclick="scrollParaQR()">
+                  <i class="fas fa-qrcode"></i> Ver QR Code <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="donation-card">
+              <i class="fas fa-bullhorn card-icon"></i>
+              <h3>Anuncie na Plataforma</h3>
+              <p>Anuncie sua empresa, igreja ou ministério na plataforma.</p>
+              <span class="highlight">📢 Destaque sua marca</span>
+              <div class="card-actions">
+                <a href="#" class="btn-donate btn-patrocine" onclick="abrirModalPlanos()">
+                  <i class="fas fa-star"></i> Ver Planos
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="qr-side-right">
+            <div class="qr-image-container" id="qrContainer">
+              <img src="assets/pics/qrcode.jpg" alt="QR Code PIX" />
+              <div class="qr-label">
+                <i class="fas fa-bolt"></i> Escaneie com o app do seu banco
+              </div>
+            </div>
+            <div class="pix-code" id="pixKey">emerson.mattos00@gmail.com</div>
+            <button class="btn-copy" onclick="copiarPix()"><i class="fas fa-copy"></i> Copiar Chave PIX</button>
+            <div class="pix-tip">
+              <i class="fas fa-lightbulb"></i>
+              <strong>Dica:</strong> Abra o app do seu banco, escolha "PIX Copia e Cola" e cole a chave.
+            </div>
+            <div class="security-badge">
+              <span><i class="fas fa-lock"></i> Transação segura</span>
+              <span><i class="fas fa-check-circle"></i> Emerson José de Mello Mattos</span>
+              <span><i class="fas fa-clock"></i> Disponível 24h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-open-form-wrapper">
+          <div class="btn-actions-row">
+            <button class="btn-open-form" onclick="abrirFormModal()">
+              <i class="fas fa-pen-fancy"></i> Seja um Apoiador Oficial
+            </button>
+            <button class="btn-sugestao-form" onclick="abrirSugestaoModal()">
+              <i class="fas fa-lightbulb"></i> Sugestões e Correções
+            </button>
+          </div>
+          <p class="btn-hint">
+            <i class="fas fa-info-circle"></i> Registre seu nome, deixe uma mensagem e inspire outros!<br>
+            <small style="opacity:0.7;">Sugestões e correções ajudam a melhorar a plataforma para todos.</small>
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== DEPOIMENTOS ===== -->
+      <section class="testimonials">
+        <h3><i class="fas fa-quote-left"></i> Depoimentos dos Apoiadores</h3>
+        <div class="testimonial-grid" id="testimonialGrid">
+          <div class="testimonial-item"><i class="fas fa-quote-right"></i><p>"Esta plataforma transformou meus estudos diários. Fico feliz em poder contribuir para que outros também tenham acesso."</p><div class="author">— Ana Paula S.</div></div>
+          <div class="testimonial-item"><i class="fas fa-quote-right"></i><p>"Material rico e bem organizado. Apoiar esse projeto é investir na propagação da Palavra de Deus."</p><div class="author">— Pastor Marcos R.</div></div>
+          <div class="testimonial-item"><i class="fas fa-quote-right"></i><p>"Gratidão por disponibilizarem tantos recursos gratuitamente. Minha doação é uma pequena retribuição."</p><div class="author">— Lúcia M.</div></div>
+        </div>
+      </section>
+
+      <!-- ===== APOIADORES ===== -->
+      <section class="supporters-section">
+        <h3><i class="fas fa-users"></i> Nossos Apoiadores</h3>
+        <p>Pessoas e organizações que já contribuíram com este projeto</p>
+        <div class="supporters-list" id="supportersList">
+          <span class="supporter-tag"><i class="fas fa-star"></i> Igreja Batista Central</span>
+          <span class="supporter-tag"><i class="fas fa-star"></i> Ministério Jovem AD</span>
+          <span class="supporter-tag"><i class="fas fa-star"></i> Carlos A. Silva</span>
+          <span class="supporter-tag"><i class="fas fa-star"></i> Mariana Oliveira</span>
+          <span class="supporter-tag"><i class="fas fa-star"></i> Rafael Lima</span>
+          <span class="supporter-tag"><i class="fas fa-star"></i> Comunidade Vida Nova</span>
+          <span class="supporter-tag" id="placeholderSupporter"><i class="fas fa-star"></i> + Seu nome aqui...</span>
+        </div>
+        <p style="margin-top:16px; font-size:14px; opacity:0.7;">Deseja aparecer aqui? Preencha o formulário e faça parte!</p>
+        <div class="share-buttons">
+          <a href="https://wa.me/?text=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" target="_blank" class="share-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://seudominio.com/apoiar" target="_blank" class="share-btn"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="https://twitter.com/intent/tweet?text=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" target="_blank" class="share-btn"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="mailto:?subject=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" class="share-btn"><i class="fas fa-envelope"></i> E-mail</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========== PÁGINAS DE REDIRECIONAMENTO ========== -->
+    <div id="page-redirecionar" class="page">
+      <div class="redirect-card">
+        <div class="icon" style="color:#22c55e;"><i class="fas fa-qrcode"></i></div>
+        <h2 id="redirect-title">Aguarde...</h2>
+        <p id="redirect-desc">Redirecionando para o QR Code.</p>
+        <div class="spinner"></div>
+        <div class="progress-bar-redir"><div class="fill"></div></div>
+        <a href="#" class="btn-voltar" onclick="navegar('apoiar')"><i class="fas fa-arrow-left"></i> Voltar</a>
+      </div>
+    </div>
+
+    <div id="page-sucesso" class="page">
+      <div class="redirect-card" style="border-color: #22c55e;">
+        <div class="icon" style="color:#22c55e;"><i class="fas fa-check-circle"></i></div>
+        <h2>Doação realizada com sucesso!</h2>
+        <p>Muito obrigado por apoiar a <strong>Plataforma de Estudos Bíblicos</strong>.</p>
+        <div class="highlight-verse"><i class="fas fa-bible" style="margin-right:8px;"></i> "Deus ama a quem dá com alegria" — 2 Coríntios 9:7</div>
+        <div class="btn-group">
+          <a href="#" class="btn btn-primary" onclick="navegar('apoiar')"><i class="fas fa-heart"></i> Ver Apoiadores</a>
+          <a href="index.html" class="btn btn-secondary"><i class="fas fa-home"></i> Página Inicial</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-cancelado" class="page">
+      <div class="redirect-card" style="border-color: #e67e22;">
+        <div class="icon" style="color:#e67e22;"><i class="fas fa-times-circle"></i></div>
+        <h2>Doação não concluída</h2>
+        <p>Não se preocupe, você pode tentar novamente quando quiser.</p>
+        <div class="btn-group">
+          <a href="#" class="btn btn-primary" onclick="navegar('apoiar')"><i class="fas fa-redo"></i> Tentar Novamente</a>
+          <a href="index.html" class="btn btn-secondary"><i class="fas fa-home"></i> Início</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><i class="fas fa-heart"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart"></i></p>
+      <p style="margin-top:8px;">Idealizado pelo Pastor Emerson José de Mello Mattos | ADAMRV</p>
+      <p style="margin-top:8px;">Plataforma 100% gratuita · Mantida por doações via PIX</p>
+    </footer>
+  </main>
+
+  <!-- ===== MODAL DE PLANOS PARA ANUNCIANTES ===== -->
+  <div class="modal-planos-overlay" id="planosModal">
+    <div class="modal-planos-box">
+      <button class="modal-close" onclick="fecharModalPlanos()">&times;</button>
+      
+      <div class="modal-planos-header">
+        <h2><i class="fas fa-bullhorn"></i> Planos para Anunciantes</h2>
+        <p>Escolha o plano ideal para sua empresa, igreja ou ministério e alcance milhares de leitores da Bíblia diariamente.</p>
+      </div>
+
+      <!-- Tabs Mensal/Anual -->
+      <div class="plano-tabs">
+        <button class="tab-btn active" data-tab="mensal" onclick="trocarTab('mensal')">
+          <i class="fas fa-calendar-alt"></i> Mensal
+        </button>
+        <button class="tab-btn" data-tab="anual" onclick="trocarTab('anual')">
+          <i class="fas fa-calendar-check"></i> Anual <span class="badge-economia">-20%</span>
+        </button>
+      </div>
+
+      <!-- Grid de Planos - Mensal -->
+      <div class="modal-planos-grid" id="planosMensal">
+        <!-- Plano Básico Mensal -->
+        <div class="modal-plano-card">
+          <span class="plano-badge">Iniciante</span>
+          <i class="fas fa-flag plano-icon"></i>
+          <div class="plano-nome">Plano Básico</div>
+          <div class="plano-preco">R$ 197 <span>/mês</span></div>
+          <p class="plano-desc">Ideal para quem quer começar e testar os resultados.</p>
+          <ul class="plano-beneficios">
+            <li><i class="fas fa-check"></i> Banner em 1 página</li>
+            <li><i class="fas fa-check"></i> 5.000 impressões/mês</li>
+            <li><i class="fas fa-check"></i> Link para seu site</li>
+            <li><i class="fas fa-times"></i> Destaque na página inicial</li>
+            <li><i class="fas fa-times"></i> Relatório mensal</li>
+          </ul>
+          <button class="btn-plano-modal outline" onclick="fecharModalPlanos(); abrirModalContato('Plano Básico - Mensal')">
+            <i class="fas fa-envelope"></i> Quero este plano
+          </button>
+        </div>
+
+        <!-- Plano Plus Mensal (Destaque) -->
+        <div class="modal-plano-card destaque">
+          <span class="plano-badge">⭐ Recomendado</span>
+          <i class="fas fa-star plano-icon" style="color: #d4af37;"></i>
+          <div class="plano-nome">Plano Plus</div>
+          <div class="plano-preco">R$ 397 <span>/mês</span></div>
+          <p class="plano-desc">O plano mais popular com excelente custo-benefício.</p>
+          <ul class="plano-beneficios">
+            <li><i class="fas fa-check"></i> Banner em 3 páginas</li>
+            <li><i class="fas fa-check"></i> 20.000 impressões/mês</li>
+            <li><i class="fas fa-check"></i> Link para seu site</li>
+            <li><i class="fas fa-check"></i> Destaque na página inicial</li>
+            <li><i class="fas fa-times"></i> Relatório mensal</li>
+          </ul>
+          <button class="btn-plano-modal destaque-btn" onclick="fecharModalPlanos(); abrirModalContato('Plano Plus - Mensal')">
+            <i class="fas fa-star"></i> Quero este plano
+          </button>
+        </div>
+
+        <!-- Plano Premium Mensal -->
+        <div class="modal-plano-card">
+          <span class="plano-badge">VIP</span>
+          <i class="fas fa-crown plano-icon" style="color: #d4af37;"></i>
+          <div class="plano-nome">Plano Premium</div>
+          <div class="plano-preco">R$ 897 <span>/mês</span></div>
+          <p class="plano-desc">Máxima visibilidade para sua marca na plataforma.</p>
+          <ul class="plano-beneficios">
+            <li><i class="fas fa-check"></i> Banner em todas as páginas</li>
+            <li><i class="fas fa-check"></i> 50.000 impressões/mês</li>
+            <li><i class="fas fa-check"></i> Link para seu site</li>
+            <li><i class="fas fa-check"></i> Destaque na página inicial</li>
+            <li><i class="fas fa-check"></i> Relatório mensal detalhado</li>
+          </ul>
+          <button class="btn-plano-modal outline" onclick="fecharModalPlanos(); abrirModalContato('Plano Premium - Mensal')">
+            <i class="fas fa-envelope"></i> Quero este plano
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid de Planos - Anual -->
+      <div class="modal-planos-grid" id="planosAnual" style="display: none;">
+        <!-- Plano Básico Anual -->
+        <div class="modal-plano-card">
+          <span class="plano-badge">Iniciante</span>
+          <i class="fas fa-flag plano-icon"></i>
+          <div class="plano-nome">Plano Básico</div>
+          <div class="plano-preco">R$ 1.890 <span>/ano</span></div>
+          <div class="plano-preco-anual"><i class="fas fa-check-circle"></i> Economia de R$ 474 <span class="economia">-20%</span></div>
+          <p class="plano-desc">Ideal para quem quer começar e testar os resultados.</p>
+          <ul class="plano-beneficios">
+            <li><i class="fas fa-check"></i> Banner em 1 página</li>
+            <li><i class="fas fa-check"></i> 5.000 impressões/mês</li>
+            <li><i class="fas fa-check"></i> Link para seu site</li>
+            <li><i class="fas fa-times"></i> Destaque na página inicial</li>
+            <li><i class="fas fa-times"></i> Relatório mensal</li>
+            <li><i class="fas fa-check" style="color: #22c55e;"></i> <strong style="color: #22c55e;">Economia de 20%</strong></li>
+          </ul>
+          <button class="btn-plano-modal outline" onclick="fecharModalPlanos(); abrirModalContato('Plano Básico - Anual')">
+            <i class="fas fa-envelope"></i> Quero este plano
+          </button>
+        </div>
+
+        <!-- Plano Plus Anual (Destaque) -->
+        <div class="modal-plano-card destaque">
+          <span class="plano-badge">⭐ Recomendado</span>
+          <i class="fas fa-star plano-icon" style="color: #d4af37;"></i>
+          <div class="plano-nome">Plano Plus</div>
+          <div class="plano-preco">R$ 3.810 <span>/ano</span></div>
+          <div class="plano-preco-anual"><i class="fas fa-check-circle"></i> Economia de R$ 954 <span class="economia">-20%</span></div>
+          <p class="plano-desc">O plano mais popular com excelente custo-benefício.</p>
+          <ul class="plano-beneficios">
+            <li><i class="fas fa-check"></i> Banner em 3 páginas</li>
+            <li><i class="fas fa-check"></i> 20.000 impressões/mês</li>
+            <li><i class="fas fa-check"></i> Link para seu site</li>
+            <li><i class="fas fa-check"></i> Destaque na página inicial</li>
+            <li><i class="fas fa-times"></i> Relatório mensal</li>
+            <li><i class="fas fa-check" style="color: #22c55e;"></i> <strong style="color: #22c55e;">Economia de 20%</strong></li>
+          </ul>
+          <button class="btn-plano-modal destaque-btn" onclick="fecharModalPlanos(); abrirModalContato('Plano Plus - Anual')">
+            <i class="fas fa-star"></i> Quero este plano
+          </button>
+        </div>
+
+        <!-- Plano Premium Anual -->
+        <div class="modal-plano-card">
+          <span class="plano-badge">VIP</span>
+          <i class="fas fa-crown plano-icon" style="color: #d4af37;"></i>
+          <div class="plano-nome">Plano Premium</div>
+          <div class="plano-preco">R$ 8.610 <span>/ano</span></div>
+          <div class="plano-preco-anual"><i class="fas fa-check-circle"></i> Economia de R$ 2.154 <span class="economia">-20%</span></div>
+          <p class="plano-desc">Máxima visibilidade para sua marca na plataforma.</p>
+          <ul class="plano-beneficios">
+            <li><i class="fas fa-check"></i> Banner em todas as páginas</li>
+            <li><i class="fas fa-check"></i> 50.000 impressões/mês</li>
+            <li><i class="fas fa-check"></i> Link para seu site</li>
+            <li><i class="fas fa-check"></i> Destaque na página inicial</li>
+            <li><i class="fas fa-check"></i> Relatório mensal detalhado</li>
+            <li><i class="fas fa-check" style="color: #22c55e;"></i> <strong style="color: #22c55e;">Economia de 20%</strong></li>
+          </ul>
+          <button class="btn-plano-modal outline" onclick="fecharModalPlanos(); abrirModalContato('Plano Premium - Anual')">
+            <i class="fas fa-envelope"></i> Quero este plano
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-planos-footer">
+        <i class="fas fa-info-circle"></i> Todos os planos incluem suporte dedicado e análise de resultados.
+        <br><small>Os valores são por mês e podem ser ajustados conforme a necessidade do anunciante.</small>
+        <br><br>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:emerson.mattos00@gmail.com">emerson.mattos00@gmail.com</a></span>
+        <span style="margin: 0 15px;">|</span>
+        <span><i class="fab fa-whatsapp"></i> (21) 96661-4971/97507-9806</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL DE APOIADOR OFICIAL - MELHORADO ===== -->
+  <div class="modal-overlay" id="formModal">
+    <div class="modal-box">
+      <!-- HEADER -->
+      <div class="modal-header">
+        <button class="modal-close" onclick="fecharFormModal()">&times;</button>
+        <span class="modal-icon-top"><i class="fas fa-pen-fancy"></i></span>
+        <h2>Seja um Apoiador Oficial</h2>
+        <p class="modal-subtitle">Faça parte da nossa comunidade e inspire outros com sua mensagem</p>
+        <span class="modal-badge"><i class="fas fa-heart"></i> Sua contribuição importa</span>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body">
+        <p class="form-sub">
+          <i class="fas fa-quote-left" style="color: var(--gold); opacity: 0.5;"></i>
+          Preencha os campos abaixo e apareça em nossa lista de apoiadores.
+          <i class="fas fa-quote-right" style="color: var(--gold); opacity: 0.5;"></i>
+        </p>
+
+        <form id="supporterForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>
+                <i class="fas fa-user"></i> Nome Completo
+                <span class="required-star">*</span>
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="supName" placeholder="Ex: João Silva" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <i class="fas fa-envelope"></i> E-mail
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="supEmail" placeholder="seu@email.com" />
+              </div>
+              <span class="field-hint"><i class="fas fa-info-circle"></i> Opcional – para receber novidades</span>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <i class="fas fa-hand-holding-heart"></i> Tipo de Apoio
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-tag input-icon"></i>
+                <select id="supType">
+                  <option value="Doação única">💰 Doação única</option>
+                  <option value="Apoio mensal">🔄 Apoio mensal</option>
+                  <option value="Patrocinador">📢 Patrocinador</option>
+                  <option value="Divulgação">📢 Divulgação</option>
+                  <option value="Oração">🙏 Oração</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <i class="fas fa-star"></i> Quer aparecer como?
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-user-tag input-icon"></i>
+                <select id="supVisibility">
+                  <option value="Nome completo">👤 Nome completo</option>
+                  <option value="Primeiro nome">👤 Primeiro nome</option>
+                  <option value="Anônimo">🕊️ Anônimo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-quote-left"></i> Mensagem de Apoio
+                <span class="required-star">*</span>
+              </label>
+              <textarea id="supMessage" placeholder="Escreva uma mensagem inspiradora para aparecer nos depoimentos..." required style="min-height: 90px;"></textarea>
+              <div class="char-counter"><span id="charCount">0</span> caracteres</div>
+            </div>
+
+            <button type="submit" class="btn-submit-form">
+              <i class="fas fa-paper-plane"></i> Enviar e Fazer Parte
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="modal-footer">
+        <span><i class="fas fa-lock"></i> Dados seguros</span>
+        <span><i class="fas fa-check-circle"></i> Apareça na lista</span>
+        <span><i class="fas fa-heart" style="color: #e74c3c;"></i> Inspiramos mais pessoas</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL DE SUGESTÕES E CORREÇÕES ===== -->
+  <div class="modal-overlay" id="sugestaoModal">
+    <div class="modal-box sugestao-modal">
+      <div class="modal-header" style="background: linear-gradient(135deg, #4a6fa5, #2c4a7a);">
+        <button class="modal-close" onclick="fecharSugestaoModal()">&times;</button>
+        <span class="modal-icon-top"><i class="fas fa-lightbulb"></i></span>
+        <h2>Sugestões e Correções</h2>
+        <p class="modal-subtitle">Sua opinião é importante! Ajude-nos a melhorar</p>
+        <span class="modal-badge"><i class="fas fa-users-cog"></i> Contribua com ideias</span>
+      </div>
+
+      <div class="modal-body">
+        <p class="form-sub">
+          <i class="fas fa-quote-left" style="color: #4a6fa5; opacity: 0.5;"></i>
+          Envie sugestões de melhoria ou reporte correções para a plataforma.
+          <i class="fas fa-quote-right" style="color: #4a6fa5; opacity: 0.5;"></i>
+        </p>
+
+        <form id="sugestaoForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-user"></i> Seu Nome
+                <span class="required-star">*</span>
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="sugNome" placeholder="Ex: João Silva" required />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-envelope"></i> Seu E-mail
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="sugEmail" placeholder="seu@email.com" />
+              </div>
+              <span class="field-hint"><i class="fas fa-info-circle"></i> Opcional – para que possamos responder</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-tag"></i> Tipo de contribuição
+                <span class="required-star">*</span>
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-tag input-icon"></i>
+                <select id="sugTipo" required>
+                  <option value="">Selecione...</option>
+                  <option value="Sugestão de melhoria">💡 Sugestão de melhoria</option>
+                  <option value="Correção de erro">🐛 Correção de erro</option>
+                  <option value="Novo recurso">🚀 Sugestão de novo recurso</option>
+                  <option value="Conteúdo bíblico">📖 Correção em conteúdo bíblico</option>
+                  <option value="Layout/Design">🎨 Sugestão de design</option>
+                  <option value="Outro">📌 Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-map-pin"></i> Onde encontrou o problema ou sugere a melhoria?
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-map-pin input-icon"></i>
+                <input type="text" id="sugLocal" placeholder="Ex: Bíblia Sagrada - Gênesis 1:1, Página inicial, etc." />
+              </div>
+              <span class="field-hint"><i class="fas fa-info-circle"></i> Especifique a página ou seção para facilitar a localização</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-quote-left"></i> Descreva sua sugestão ou correção
+                <span class="required-star">*</span>
+              </label>
+              <textarea id="sugMensagem" placeholder="Descreva detalhadamente sua sugestão, melhoria ou correção..." required style="min-height: 120px;"></textarea>
+              <div class="char-counter"><span id="sugCharCount">0</span> caracteres</div>
+            </div>
+
+            <button type="submit" class="btn-submit-form btn-submit-sugestao">
+              <i class="fas fa-paper-plane"></i> Enviar Sugestão
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer" style="border-top-color: #4a6fa5;">
+        <span><i class="fas fa-lock"></i> Dados seguros</span>
+        <span><i class="fas fa-check-circle"></i> Análise da equipe</span>
+        <span><i class="fas fa-lightbulb"></i> Juntos melhoramos</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL DE SUCESSO ===== -->
+  <div class="modal-success-overlay" id="successModal">
+    <div class="modal-success-box">
+      <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+      <h3>Recebemos seu apoio!</h3>
+      <p><strong id="modalUserName"></strong>, sua mensagem foi registrada com sucesso!</p>
+      <div class="verse-highlight">
+        <i class="fas fa-bible" style="margin-right: 8px; color: var(--gold);"></i>
+        "Deus ama a quem dá com alegria" — 2 Coríntios 9:7
+      </div>
+      <p style="font-size: 14px; color: var(--text-muted);">Você já faz parte oficialmente da nossa lista de apoiadores. 🙌</p>
+      <button class="btn-modal-close" onclick="fecharSuccessModal()"><i class="fas fa-heart"></i> Que bom!</button>
+    </div>
+  </div>
+
+  <!-- ===== MODAL DE SUCESSO PARA SUGESTÕES ===== -->
+  <div class="modal-success-overlay" id="sugestaoSuccessModal">
+    <div class="modal-success-box" style="border-color: #4a6fa5;">
+      <div class="success-icon" style="color: #4a6fa5;"><i class="fas fa-lightbulb"></i></div>
+      <h3>Sugestão Enviada!</h3>
+      <p><strong id="sugUserNome"></strong>, obrigado por contribuir para a melhoria da plataforma!</p>
+      <div class="verse-highlight" style="border-left-color: #4a6fa5;">
+        <i class="fas fa-bible" style="margin-right: 8px; color: #4a6fa5;"></i>
+        "O sábio ouvirá e crescerá em conhecimento" — Provérbios 1:5
+      </div>
+      <p style="font-size: 14px; color: var(--text-muted);">Sua sugestão será analisada pela equipe. 🙏</p>
+      <button class="btn-modal-close" onclick="fecharSugestaoSuccessModal()" style="background: linear-gradient(135deg, #4a6fa5, #2c4a7a); border-color: #4a6fa5;">
+        <i class="fas fa-check"></i> Obrigado!
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== MODAL DE CONTATO PARA PLANOS ===== -->
+  <div class="modal-overlay" id="contatoPlanoModal">
+    <div class="modal-box" style="max-width: 500px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #d4af37, #b8941e); border-bottom-color: #e8c84a;">
+        <button class="modal-close" onclick="fecharModalContato()">&times;</button>
+        <span class="modal-icon-top" style="color: #1a1a2e;"><i class="fas fa-bullhorn"></i></span>
+        <h2 style="color: #1a1a2e;">Solicitar Plano</h2>
+        <p class="modal-subtitle" style="color: rgba(26,26,46,0.8);">Preencha seus dados e entraremos em contato</p>
+        <span class="modal-badge" style="background: #1a1a2e; color: #d4af37;"><i class="fas fa-star"></i> Planos exclusivos</span>
+      </div>
+
+      <div class="modal-body">
+        <form id="contatoPlanoForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-user"></i> Nome Completo
+                <span class="required-star">*</span>
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="planoNome" placeholder="Ex: João Silva" required />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-envelope"></i> E-mail
+                <span class="required-star">*</span>
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="planoEmail" placeholder="seu@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-phone"></i> Telefone/WhatsApp
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-phone input-icon"></i>
+                <input type="text" id="planoTelefone" placeholder="(11) 99999-9999" />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-building"></i> Nome da Empresa/Igreja/Ministério
+              </label>
+              <div class="input-icon-wrapper">
+                <i class="fas fa-building input-icon"></i>
+                <input type="text" id="planoEmpresa" placeholder="Ex: Igreja Batista Central" />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                <i class="fas fa-quote-left"></i> Mensagem adicional
+              </label>
+              <textarea id="planoMensagem" placeholder="Escolha do plano e outras informações de que precisa..." style="min-height: 80px;"></textarea>
+            </div>
+
+            <input type="hidden" id="planoSelecionado" value="" />
+
+            <button type="submit" class="btn-submit-form" style="background: linear-gradient(135deg, #d4af37, #b8941e); color: #1a1a2e; border-color: #d4af37;">
+              <i class="fas fa-paper-plane"></i> Enviar Solicitação
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer" style="border-top-color: #e8c84a;">
+        <span><i class="fas fa-lock"></i> Dados seguros</span>
+        <span><i class="fas fa-check-circle"></i> Resposta rápida</span>
+        <span><i class="fas fa-star" style="color: #d4af37;"></i> Plano personalizado</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // ============================================================
+    // 1. NAVEGAÇÃO ENTRE PÁGINAS (SPA)
+    // ============================================================
+    function navegar(pagina) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById('page-' + pagina);
+      if (target) target.classList.add('active');
+      if (history.pushState) {
+        const url = new URL(window.location);
+        url.searchParams.set('page', pagina);
+        window.history.pushState({ page: pagina }, '', url);
+      }
+    }
+
+    // ============================================================
+    // 2. SCROLL PARA O QR CODE
+    // ============================================================
+    function scrollParaQR() {
+      const qrContainer = document.getElementById('qrContainer');
+      if (qrContainer) {
+        qrContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        qrContainer.style.transition = 'box-shadow 0.5s ease';
+        qrContainer.style.boxShadow = '0 0 0 4px #22c55e, 0 8px 30px rgba(34, 197, 94, 0.3)';
+        setTimeout(() => {
+          qrContainer.style.boxShadow = '';
+        }, 2000);
+      }
+    }
+
+    // ============================================================
+    // 3. MODAL DE PLANOS
+    // ============================================================
+    let tabAtual = 'mensal';
+
+    function abrirModalPlanos() {
+      document.getElementById('planosModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+      trocarTab('mensal');
+    }
+
+    function fecharModalPlanos() {
+      document.getElementById('planosModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('planosModal').addEventListener('click', function(e) {
+      if (e.target === this) fecharModalPlanos();
+    });
+
+    function trocarTab(tab) {
+      tabAtual = tab;
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.tab-btn[data-tab="${tab}"]`).classList.add('active');
+      
+      document.getElementById('planosMensal').style.display = tab === 'mensal' ? 'grid' : 'none';
+      document.getElementById('planosAnual').style.display = tab === 'anual' ? 'grid' : 'none';
+    }
+
+    // ============================================================
+    // 4. MODAL DO FORMULÁRIO DE APOIADOR
+    // ============================================================
+    function abrirFormModal() {
+      document.getElementById('formModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+      // Reset char counter
+      document.getElementById('charCount').textContent = '0';
+    }
+    function fecharFormModal() {
+      document.getElementById('formModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('formModal').addEventListener('click', function(e) {
+      if (e.target === this) fecharFormModal();
+    });
+
+    // Contador de caracteres para mensagem de apoio
+    document.getElementById('supMessage').addEventListener('input', function() {
+      document.getElementById('charCount').textContent = this.value.length;
+    });
+
+    // ============================================================
+    // 5. MODAL DE SUGESTÕES E CORREÇÕES
+    // ============================================================
+    function abrirSugestaoModal() {
+      document.getElementById('sugestaoModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('sugCharCount').textContent = '0';
+    }
+    function fecharSugestaoModal() {
+      document.getElementById('sugestaoModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('sugestaoModal').addEventListener('click', function(e) {
+      if (e.target === this) fecharSugestaoModal();
+    });
+
+    // Contador de caracteres para sugestões
+    document.getElementById('sugMensagem').addEventListener('input', function() {
+      document.getElementById('sugCharCount').textContent = this.value.length;
+    });
+
+    // ============================================================
+    // 6. MODAL DE CONTATO PARA PLANOS
+    // ============================================================
+    function abrirModalContato(plano) {
+      document.getElementById('planoSelecionado').value = plano;
+      document.getElementById('contatoPlanoModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function fecharModalContato() {
+      document.getElementById('contatoPlanoModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('contatoPlanoModal').addEventListener('click', function(e) {
+      if (e.target === this) fecharModalContato();
+    });
+
+    document.getElementById('contatoPlanoForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('planoNome').value.trim();
+      const email = document.getElementById('planoEmail').value.trim();
+      const telefone = document.getElementById('planoTelefone').value.trim();
+      const empresa = document.getElementById('planoEmpresa').value.trim();
+      const mensagem = document.getElementById('planoMensagem').value.trim();
+      const plano = document.getElementById('planoSelecionado').value;
+
+      if (nome === '' || email === '') {
+        alert('Por favor, preencha seu nome e e-mail.');
+        return;
+      }
+
+      const texto = `*Solicitação de Plano de Anúncio*%0A%0A*Plano:* ${plano}%0A*Nome:* ${nome}%0A*E-mail:* ${email}%0A*Telefone:* ${telefone || 'Não informado'}%0A*Empresa/Igreja:* ${empresa || 'Não informado'}%0A%0A*Mensagem:* ${mensagem || 'Sem mensagem adicional'}`;
+      
+      window.open(`https://wa.me/5511999999999?text=${texto}`, '_blank');
+      
+      fecharModalContato();
+      mostrarToast('Solicitação enviada! Entraremos em contato em breve.', 'success');
+      
+      document.getElementById('planoNome').value = '';
+      document.getElementById('planoEmail').value = '';
+      document.getElementById('planoTelefone').value = '';
+      document.getElementById('planoEmpresa').value = '';
+      document.getElementById('planoMensagem').value = '';
+    });
+
+    // ============================================================
+    // 7. MODAL DE SUCESSO
+    // ============================================================
+    function abrirSuccessModal(nome) {
+      document.getElementById('modalUserName').textContent = nome;
+      document.getElementById('successModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function fecharSuccessModal() {
+      document.getElementById('successModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('successModal').addEventListener('click', function(e) {
+      if (e.target === this) fecharSuccessModal();
+    });
+
+    // ============================================================
+    // 8. MODAL DE SUCESSO PARA SUGESTÕES
+    // ============================================================
+    function abrirSugestaoSuccessModal(nome) {
+      document.getElementById('sugUserNome').textContent = nome;
+      document.getElementById('sugestaoSuccessModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function fecharSugestaoSuccessModal() {
+      document.getElementById('sugestaoSuccessModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('sugestaoSuccessModal').addEventListener('click', function(e) {
+      if (e.target === this) fecharSugestaoSuccessModal();
+    });
+
+    // ============================================================
+    // 9. FORMULÁRIO DE APOIADOR
+    // ============================================================
+    document.getElementById('supporterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('supName').value.trim();
+      if (nome === '') {
+        alert('Por favor, digite seu nome para continuar.');
+        document.getElementById('supName').focus();
+        return;
+      }
+      const mensagem = document.getElementById('supMessage').value.trim() || 'Apoio este projeto com muito amor! ❤️';
+      const tipo = document.getElementById('supType').value;
+      const visibilidade = document.getElementById('supVisibility').value;
+      
+      let nomeExibido = nome;
+      if (visibilidade === 'Primeiro nome') {
+        nomeExibido = nome.split(' ')[0];
+      } else if (visibilidade === 'Anônimo') {
+        nomeExibido = 'Anônimo';
+      }
+
+      const lista = document.getElementById('supportersList');
+      const placeholder = document.getElementById('placeholderSupporter');
+      const newTag = document.createElement('span');
+      newTag.className = 'supporter-tag';
+      newTag.innerHTML = `<i class="fas fa-star"></i> ${nomeExibido}`;
+      if (placeholder) lista.insertBefore(newTag, placeholder);
+      else lista.appendChild(newTag);
+
+      const grid = document.getElementById('testimonialGrid');
+      const newTestimonial = document.createElement('div');
+      newTestimonial.className = 'testimonial-item';
+      newTestimonial.style.animation = 'modalPop 0.5s ease';
+      newTestimonial.innerHTML = `
+        <i class="fas fa-quote-right"></i>
+        <p>"${mensagem}"</p>
+        <div class="author">— ${nomeExibido} · ${tipo}</div>
+      `;
+      grid.prepend(newTestimonial);
+
+      fecharFormModal();
+      abrirSuccessModal(nomeExibido);
+      document.getElementById('supName').value = '';
+      document.getElementById('supEmail').value = '';
+      document.getElementById('supMessage').value = '';
+      document.getElementById('charCount').textContent = '0';
+    });
+
+    // ============================================================
+    // 10. FORMULÁRIO DE SUGESTÕES
+    // ============================================================
+    document.getElementById('sugestaoForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('sugNome').value.trim();
+      const email = document.getElementById('sugEmail').value.trim();
+      const tipo = document.getElementById('sugTipo').value;
+      const local = document.getElementById('sugLocal').value.trim();
+      const mensagem = document.getElementById('sugMensagem').value.trim();
+
+      if (nome === '') {
+        alert('Por favor, digite seu nome.');
+        document.getElementById('sugNome').focus();
+        return;
+      }
+      if (tipo === '') {
+        alert('Por favor, selecione o tipo de contribuição.');
+        document.getElementById('sugTipo').focus();
+        return;
+      }
+      if (mensagem === '') {
+        alert('Por favor, descreva sua sugestão ou correção.');
+        document.getElementById('sugMensagem').focus();
+        return;
+      }
+
+      const texto = `*Sugestão/Correção - Plataforma Bíblica*%0A%0A*Nome:* ${nome}%0A*E-mail:* ${email || 'Não informado'}%0A*Tipo:* ${tipo}%0A*Local/Seção:* ${local || 'Não especificado'}%0A%0A*Descrição:*%0A${mensagem}`;
+      
+      window.open(`https://wa.me/5511999999999?text=${texto}`, '_blank');
+      
+      fecharSugestaoModal();
+      abrirSugestaoSuccessModal(nome);
+      
+      document.getElementById('sugNome').value = '';
+      document.getElementById('sugEmail').value = '';
+      document.getElementById('sugTipo').value = '';
+      document.getElementById('sugLocal').value = '';
+      document.getElementById('sugMensagem').value = '';
+      document.getElementById('sugCharCount').textContent = '0';
+    });
+
+    // ============================================================
+    // 11. COPIAR PIX
+    // ============================================================
+    function copiarPix() {
+      const pixText = document.getElementById('pixKey').innerText;
+      navigator.clipboard.writeText(pixText).then(() => {
+        mostrarToast('Chave PIX copiada com sucesso!', 'success');
+      }).catch(() => {
+        const input = document.createElement('input');
+        input.value = pixText;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        input.remove();
+        mostrarToast('Chave PIX copiada!', 'success');
+      });
+    }
+
+    // ============================================================
+    // 12. TOAST
+    // ============================================================
+    function mostrarToast(mensagem, tipo) {
+      const toast = document.getElementById('toast');
+      const icon = tipo === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
+      toast.innerHTML = `<i class="fas ${icon}" style="color: #2ecc71;"></i> ${mensagem}`;
+      toast.classList.add('show');
+      clearTimeout(toast._timeout);
+      toast._timeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+
+    // ============================================================
+    // 13. INICIALIZAÇÃO
+    // ============================================================
+    (function init() {
+      const params = new URLSearchParams(window.location.search);
+      const page = params.get('page');
+      if (page && ['apoiar', 'redirecionar', 'sucesso', 'cancelado'].includes(page)) {
+        navegar(page);
+      } else {
+        navegar('apoiar');
+      }
+      window.addEventListener('popstate', function(e) {
+        if (e.state && e.state.page) {
+          navegar(e.state.page);
+        }
+      });
+    })();
+
+    // ============================================================
+    // EXPOR GLOBAL
+    // ============================================================
+    window.navegar = navegar;
+    window.scrollParaQR = scrollParaQR;
+    window.copiarPix = copiarPix;
+    window.mostrarToast = mostrarToast;
+    window.abrirFormModal = abrirFormModal;
+    window.fecharFormModal = fecharFormModal;
+    window.abrirSugestaoModal = abrirSugestaoModal;
+    window.fecharSugestaoModal = fecharSugestaoModal;
+    window.abrirSuccessModal = abrirSuccessModal;
+    window.fecharSuccessModal = fecharSuccessModal;
+    window.abrirSugestaoSuccessModal = abrirSugestaoSuccessModal;
+    window.fecharSugestaoSuccessModal = fecharSugestaoSuccessModal;
+    window.abrirModalPlanos = abrirModalPlanos;
+    window.fecharModalPlanos = fecharModalPlanos;
+    window.abrirModalContato = abrirModalContato;
+    window.fecharModalContato = fecharModalContato;
+    window.trocarTab = trocarTab;
+  </script>
+
+</body>
+</html>
