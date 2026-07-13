@@ -5,67 +5,181 @@
   <meta http-equiv="Content-Language" content="pt-br" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Bíblia Sagrada Digital - Bíblia de Estudos" />
+  
+  <!-- ===== META TAGS PRINCIPAIS PARA SEO ===== -->
+  <title>Plataforma de Estudos Bíblicos | Bíblia Sagrada Digital com Comentários</title>
+  <meta name="description" content="Plataforma de Estudos Bíblicos com Bíblia Sagrada Digital, Comentários versículo por versículo, Textos Originais, Enciclopédia Bíblica, Harpa Cristã e Cantor Cristão. Estude a Palavra de Deus online e gratuitamente." />
+  <meta name="keywords" content="Bíblia Sagrada, Estudos Bíblicos, Bíblia Online, Bíblia Comentada, Textos Originais, Harpa Cristã, Cantor Cristão, Enciclopédia Bíblica, Bíblia Digital, Estudo da Palavra, Deus, Jesus Cristo, Teologia, Escatologia" />
   <meta name="author" content="Emerson José de Mello Mattos" />
-
-  <title>Plataforma de Estudos Bíblicos</title>
-
-  <!-- Estilos Globais -->
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Dependências de UI -->
-  <link rel="stylesheet" href="./jquery.ui.css" />
-  <link rel="stylesheet" href="./jquery.ui.html4.css" />
-  <link rel="stylesheet" href="./quill.snow.css" />
-
-  <!-- Ícones para PWA -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="google-site-verification" content="SEU_CODIGO_DE_VERIFICACAO" />
+  
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:title" content="Plataforma de Estudos Bíblicos | Bíblia Sagrada Digital" />
+  <meta property="og:description" content="Estude a Bíblia Sagrada com comentários, textos originais, enciclopédia e hinários. Plataforma gratuita para aprofundar seu conhecimento da Palavra de Deus." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://biblia-estudos.com" />
+  <meta property="og:image" content="https://biblia-estudos.com/assets/capa/biblia-sagrada.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Plataforma de Estudos Bíblicos" />
+  
+  <!-- ===== TWITTER CARDS ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Plataforma de Estudos Bíblicos | Bíblia Sagrada Digital" />
+  <meta name="twitter:description" content="Estude a Bíblia Sagrada com comentários, textos originais, enciclopédia e hinários. Plataforma gratuita para aprofundar seu conhecimento da Palavra de Deus." />
+  <meta name="twitter:image" content="https://biblia-estudos.com/assets/capa/biblia-sagrada.webp" />
+  
+  <!-- ===== PWA E MOBILE ===== -->
   <link rel="icon" href="./assets/icons/bible-icon-192.png" type="image/png" />
   <link rel="apple-touch-icon" href="./assets/icons/bible-icon-192.png" />
-  <link rel="manifest" href="./manifest-biblia.json" />  
+  <link rel="manifest" href="./manifest-biblia.json" />
+  <meta name="theme-color" content="#4a2c1a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   
+  <!-- ===== GEO TAGS ===== -->
+  <meta name="rating" content="general" />
+  <meta name="distribution" content="global" />
+  <meta name="language" content="pt-br" />
+  <meta name="geo.region" content="BR" />
+  <meta name="geo.placename" content="Brasil" />
+  <meta name="geo.position" content="-14.235004;-51.925280" />
+  <meta name="ICBM" content="-14.235004, -51.925280" />
+  
+  <!-- ===== SECURITY HEADERS ===== -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  
+  <!-- ===== CANONICAL ===== -->
+  <link rel="canonical" href="https://biblia-estudos.com" />
+  
+  <!-- ===== PRELOAD RECURSOS CRÍTICOS ===== -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" />
+  
+  <!-- ===== ESTRUTURA DE DADOS JSON-LD ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Plataforma de Estudos Bíblicos",
+    "url": "https://biblia-estudos.com",
+    "description": "Plataforma de Estudos Bíblicos com Bíblia Sagrada Digital, Comentários, Textos Originais, Enciclopédia Bíblica, Harpa Cristã e Cantor Cristão.",
+    "author": {
+      "@type": "Person",
+      "name": "Emerson José de Mello Mattos"
+    },
+    "keywords": "Bíblia, Estudos Bíblicos, Bíblia Digital, Bíblia Comentada, Teologia, Jesus Cristo, Harpa Cristã, Cantor Cristão, Enciclopédia Bíblica",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+
+  <!-- ===== ESTILOS GLOBAIS OTIMIZADOS ===== -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
   <style>
-        * {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;          
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    /* ============================================
+       VARIÁVEIS CSS GLOBAL
+    ============================================ */
+    :root {
+      --primary: #8B4513;
+      --primary-dark: #4a2c1a;
+      --gold: #ffd966;
+      --gold-dark: #e6c84a;
+      --cream: #fffef7;
+      --text-light: #e4d5b8;
+      --text-dark: #2c1810;
+      --shadow: 0 8px 32px rgba(0,0,0,0.2);
+      --radius: 16px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #000000d5 0%, #404241 100%);
-            min-height: 100vh;
-        }
+    /* ============================================
+       TEMA ESCURO/CLARO
+    ============================================ */
+    [data-theme="dark"] {
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --text-primary: #e4d5b8;
+      --card-bg: rgba(255,255,255,0.06);
+    }
 
-        body::before { 
-            content: "";
-            position: fixed;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: url('assets/capa/biblia-sagrada.webp') no-repeat center center fixed;
-            background-size: cover;
-            opacity: 0.15;
-            pointer-events: none;
-            z-index: 0;
-            filter: sepia(0.3) brightness(0.9);
-        }
-    
-    /* Ajuste para o body por causa da navbar fixa */
-    body {
-      padding-top: 20px;
+    [data-theme="light"] {
+      --bg-primary: #fcf9f4;
+      --bg-secondary: #ffffff;
+      --text-primary: #2c1810;
+      --card-bg: #ffffff;
+    }
+
+    /* ============================================
+       ESTILOS BASE
+    ============================================ */
+    * {
+      font-family: var(--font-family);
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
+      box-sizing: border-box;
     }
-    
-    /* Fundo da página */
-    .bible-theme {
-      background: linear-gradient(135deg, #1a2a1a 0%, #2a3a2a 100%);
+
+    body {
+      font-family: var(--font-family);
+      background: linear-gradient(135deg, #000000d5 0%, #404241 100%);
       min-height: 100vh;
+      padding-top: 20px;
+      transition: background var(--transition);
     }
-    
-    /* ===== MENU LATERAL ESQUERDO (SÓ ÍCONES) ===== */
-    
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('assets/capa/biblia-sagrada.webp') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 0;
+      filter: sepia(0.3) brightness(0.9);
+    }
+
+    /* ============================================
+       FOCUS INDICATOR - Acessibilidade
+    ============================================ */
+    *:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* ============================================
+       SKIP LINK
+    ============================================ */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--primary-dark);
+      padding: 12px 24px;
+      border-radius: 0 0 8px 8px;
+      font-weight: bold;
+      z-index: 999999;
+      text-decoration: none;
+      transition: top 0.3s ease;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* ============================================
+       MENU LATERAL
+    ============================================ */
     .side-nav {
       position: fixed !important;
       top: 50% !important;
@@ -90,7 +204,7 @@
       text-decoration: none;
       padding: 10px 12px;
       border-radius: 10px;
-      transition: all 0.3s ease;
+      transition: all var(--transition);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -102,10 +216,9 @@
 
     .side-nav a i {
       font-size: 20px;
-      transition: all 0.3s ease;
+      transition: all var(--transition);
     }
 
-    /* Tooltip que aparece ao passar o mouse - agora à direita */
     .side-nav a .tooltip {
       position: absolute;
       left: 58px;
@@ -126,7 +239,6 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
 
-    /* Seta do tooltip agora apontando para a esquerda */
     .side-nav a .tooltip::after {
       content: '';
       position: absolute;
@@ -155,7 +267,6 @@
       transform: scale(1);
     }
 
-    /* Ícone ativo */
     .side-nav a.active {
       background: rgba(255, 217, 102, 0.15);
       border: 1px solid rgba(255, 217, 102, 0.25);
@@ -165,7 +276,6 @@
       color: #ffd966;
     }
 
-    /* Divisor entre os itens */
     .side-nav .divider {
       width: 30px;
       height: 1px;
@@ -173,7 +283,9 @@
       margin: 4px 0;
     }
 
-    /* Ajuste para o conteúdo principal - agora com margem à esquerda */
+    /* ============================================
+       CONTEÚDO PRINCIPAL
+    ============================================ */
     .main-content {
       max-width: 1600px;
       margin: 0 auto;
@@ -181,7 +293,7 @@
       z-index: 1;
       padding: 0 20px 0 80px;
     }
-    
+
     .bible-header {
       text-align: center;
       margin-bottom: 40px;
@@ -190,45 +302,78 @@
       z-index: 2;
       padding: 30px 0;
     }
-    
-    .bible-header h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-    
-    .bible-header h1 i {
-      margin-right: 15px;
-      color: #ffd966;
-    }
-    
+
     .bible-header .tagline {
       font-size: 18px;
       font-style: italic;
       opacity: 0.95;
       margin-bottom: 10px;
-      color: #ffd966;
+      color: var(--gold);
     }
-    
-    .bible-header .description {
+
+    /* ============================================
+       BREADCRUMB
+    ============================================ */
+    .breadcrumb {
+      padding: 10px 0;
+      margin-bottom: 20px;
+      color: var(--text-light);
       font-size: 14px;
-      opacity: 0.85;
-      max-width: 800px;
-      margin: 0 auto;
     }
-    
-    
+
+    .breadcrumb ol {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .breadcrumb li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .breadcrumb li::after {
+      content: '›';
+      color: var(--gold);
+      font-size: 18px;
+    }
+
+    .breadcrumb li:last-child::after {
+      display: none;
+    }
+
+    .breadcrumb a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    .breadcrumb a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .breadcrumb [aria-current="page"] {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* ============================================
+       ESTANTE
+    ============================================ */
     .linha-divisoria {
       height: 4px;
-      background: linear-gradient(90deg, #ffd966, #c5a47a);
+      background: linear-gradient(90deg, var(--gold), #c5a47a);
       margin: 0;
     }
-    
+
     .linha-divisoria.at {
-      background: linear-gradient(90deg, #ffd966, #e67e22);
+      background: linear-gradient(90deg, var(--gold), #e67e22);
     }
-    
-    /* Container com rolagem horizontal */
+
     .livros-wrapper {
       position: relative;
       border: none;
@@ -238,7 +383,7 @@
       backdrop-filter: blur(5px);
       overflow: hidden;
     }
-    
+
     .livros-container {
       display: flex;
       flex-wrap: nowrap;
@@ -249,170 +394,123 @@
       gap: 20px;
       min-height: 320px;
       scrollbar-width: thin;
-      scrollbar-color: #ffd966 transparent;
+      scrollbar-color: var(--gold) transparent;
     }
-    
+
     .livros-container::-webkit-scrollbar {
-      height: 4px;
+      height: 6px;
     }
-    
+
     .livros-container::-webkit-scrollbar-track {
-      background: #c5a47a;
+      background: rgba(197, 164, 122, 0.3);
       border-radius: 10px;
       margin: 0 20px;
     }
-    
+
     .livros-container::-webkit-scrollbar-thumb {
-      background: #ffd966;
+      background: linear-gradient(90deg, var(--gold), #e67e22);
       border-radius: 10px;
     }
-    
+
     .livros-container::-webkit-scrollbar-thumb:hover {
-      background: #e67e22;
+      background: var(--gold-dark);
     }
-    
-    /* Botões de navegação */
+
+    /* ============================================
+       BOTÕES DE SCROLL
+    ============================================ */
     .scroll-btn {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       width: 45px;
       height: 45px;
-      background: none;
-      backdrop-filter: blur(5px);
+      background: rgba(20, 30, 20, 0.8);
+      backdrop-filter: blur(8px);
       border-radius: 50%;
-      color: #ffd966;
+      color: var(--gold);
       font-size: 20px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.3s;
+      transition: all var(--transition);
       z-index: 10;
-      opacity: 1;
-      visibility: visible;
-      border: none;
+      border: 1px solid rgba(255, 217, 102, 0.2);
       outline: none;
     }
-    
+
     .scroll-btn:hover {
-      font-size: 35px;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+      background: rgba(20, 30, 20, 0.95);
+      font-size: 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      border-color: var(--gold);
     }
-    
+
+    .scroll-btn:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+
     .scroll-btn.hidden {
-      opacity: -0.2;
+      opacity: 0;
       visibility: hidden;
       pointer-events: none;
     }
-    
+
     .scroll-left { left: 12px; }
     .scroll-right { right: 12px; }
 
-    /* Cards dos livros */
+    /* ============================================
+       CARDS DOS LIVROS
+    ============================================ */
     .card-livro {
       flex: 0 0 auto;
       width: 220px;
       cursor: pointer;
-      background: #fffef7;
+      background: var(--card-bg);
       border-radius: 12px;
       overflow: hidden;
-      transition: all 0.3s;
+      transition: all var(--transition);
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      border: 1px solid #c5a47a;
+      border: 1px solid rgba(197, 164, 122, 0.3);
       position: relative;
+      will-change: transform;
     }
-    
+
     .card-livro:hover {
-      transform: scale(0.9);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+      transform: scale(0.95) translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+      border-color: var(--gold);
     }
-    
-    /* Estilos de capa por módulo */
+
+    .card-livro:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+
     .card-capa-modulo {
       height: 220px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 48px;
-      color: #ffd966;
-      background: linear-gradient(135deg, #8B4513, #4a2c1a);
+      color: var(--gold);
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
       position: relative;
     }
-    
-    /* Capas específicas por ID - COM IMAGENS (sem ícones) */
-    .card-capa-modulo.completa { 
-      background: url('assets/capa/biblesagrada.webp'); 
-      background-size: cover;
-    }
-    
-    .card-capa-modulo.biblia { 
-      background: url('assets/capa/biblesagrada.webp'); 
-      background-size: cover;
-    }
 
-    .card-capa-modulo.comentada { 
-      background: url('assets/capa/comentada.webp'); 
-      background-size: cover;
-    }
+    /* Capas específicas */
+    .card-capa-modulo.completa { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
+    .card-capa-modulo.biblia { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
+    .card-capa-modulo.comentada { background: url('assets/capa/comentada.webp'); background-size: cover; }
+    .card-capa-modulo.original { background: url('assets/capa/original.webp'); background-size: cover; }
+    .card-capa-modulo.apologetica { background: url('assets/capa/apologetica.webp'); background-size: cover; }
+    .card-capa-modulo.enciclopedia { background: url('assets/capa/encinomes.webp'); background-size: cover; }
+    .card-capa-modulo.harpa { background: url('assets/capa/harpa.webp'); background-size: cover; }
+    .card-capa-modulo.cantor { background: url('assets/capa/cantor.webp'); background-size: cover; }
+    .card-capa-modulo.cristologia { background: url('assets/capa/enciclopedia.webp'); background-size: cover; }
 
-    .card-capa-modulo.original { 
-      background: url('assets/capa/original.webp'); 
-      background-size: cover;
-    }
-    
-    .card-capa-modulo.apologetica { 
-      background: url('assets/capa/apologetica.webp'); 
-      background-size: cover;
-    }
-    
-    .card-capa-modulo.enciclopedia { 
-      background: url('assets/capa/encinomes.webp'); 
-      background-size: cover;
-    }
-    
-    .card-capa-modulo.harpa { 
-      background: url('assets/capa/harpa.webp'); 
-      background-size: cover;
-    }
-    .card-capa-modulo.cantor { 
-      background: url('assets/capa/cantor.webp'); 
-      background-size: cover;
-    }
-    
-    .card-capa-modulo.cristologia { 
-      background: url('assets/capa/enciclopedia.webp'); 
-      background-size: cover;
-    }
-    
-    /* Overlay para melhorar legibilidade do texto nos gradientes */
-    .card-capa-modulo.mapas::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.3);
-      border-radius: 0;
-    }
-    
-    /* Texto para cards com gradiente */
-    .card-capa-modulo.mapas .capa-texto {
-      position: relative;
-      z-index: 2;
-      font-weight: bold;
-      font-size: 28px;
-      text-align: center;
-      padding: 10px;
-    }
-    
-    /* Fallback para módulos sem capa específica */
-    .card-capa-modulo {
-      background: linear-gradient(135deg, #8B4513, #4a2c1a);
-    }
-    
-    /* Esconder ícones em todos os cards com imagem */
     .card-capa-modulo.completa i,
     .card-capa-modulo.biblia i,
     .card-capa-modulo.comentada i,
@@ -424,341 +522,670 @@
     .card-capa-modulo.cristologia i {
       display: none;
     }
-    
-    /* Estilo para o texto que aparecerá nos cards com gradiente */
-    .capa-texto {
-      position: relative;
-      z-index: 2;
-    }
-    
+
     .card-info {
       padding: 12px;
       text-align: center;
-      background: #fffef7;
+      background: var(--card-bg);
+      color: var(--text-primary);
     }
-    
+
     .card-titulo {
       font-weight: bold;
-      color: #4a2c1a;
+      color: var(--primary-dark);
       font-size: 16px;
       margin-bottom: 4px;
     }
-    
+
     .card-autor {
       font-size: 10px;
-      color: #8b4513;
+      color: var(--primary);
       text-transform: uppercase;
       letter-spacing: 1px;
+      font-weight: 600;
     }
-    
+
     .card-capitulos {
       font-size: 11px;
       color: #2d5a3b;
       margin-top: 5px;
     }
-    
-    /* Estatísticas */
-    .stats-bar {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 20px 0 30px;
-      flex-wrap: wrap;
-    }
-    
-    .stat-card {
-      backdrop-filter: blur(5px);
-      padding: 12px 25px;
-      border-radius: 40px;
-      color: white;
+
+    /* ============================================
+       ESTANTE HEADER
+    ============================================ */
+    .estante-header {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
+      padding: 20px 0;
+      cursor: pointer;
+      user-select: none;
+      color: var(--text-light);
+      transition: opacity var(--transition);
     }
-    
-    .stat-card i {
-      font-size: 28px;
-      color: #ffd966;
+
+    .estante-header:hover {
+      opacity: 0.8;
     }
-    
-    .stat-number {
-      font-size: 28px;
+
+    .estante-icon {
+      font-size: 24px;
+      color: var(--gold);
+    }
+
+    .estante-title {
       font-weight: bold;
+      font-size: 40px;
+      margin: 0;
+      color: var(--text-light);
     }
-    
-    .stat-label {
-      font-size: 12px;
-      opacity: 0.9;
+
+    .estante-subtitle {
+      right: 10px;
+      font-size: 14px;
+      opacity: 0.7;
+      color: var(--gold);
     }
-    
-    /* Footer */
+
+    .estante-toggle {
+      margin-left: auto;
+      font-size: 18px;
+      transition: transform var(--transition);
+    }
+
+    /* ============================================
+       THEME TOGGLE
+    ============================================ */
+    .theme-toggle {
+      position: fixed;
+      margin-top: 15px;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(20, 30, 20, 0.8);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 217, 102, 0.2);
+      border-radius: 30px;
+      padding: 8px 16px;
+      color: var(--gold);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      transition: all var(--transition);
+      z-index: 9999;
+      font-family: var(--font-family);
+    }
+
+    .theme-toggle:hover {
+      background: rgba(20, 30, 20, 0.95);
+      border-color: var(--gold);
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    /* ============================================
+       BACK TO TOP
+    ============================================ */
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: var(--gold);
+      color: var(--primary-dark);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 30px rgba(255, 217, 102, 0.3);
+    }
+
+    .back-to-top:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+
+    /* ============================================
+       READING PROGRESS
+    ============================================ */
+    .reading-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: transparent;
+      z-index: 99999;
+    }
+
+    .reading-progress .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--gold), #e67e22);
+      transition: width 0.1s ease;
+    }
+
+    /* ============================================
+       TOAST NOTIFICATION
+    ============================================ */
+    .toast-notification {
+      position: fixed;
+      bottom: 140px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: rgba(20, 30, 20, 0.95);
+      backdrop-filter: blur(8px);
+      color: var(--gold);
+      padding: 14px 28px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 217, 102, 0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      z-index: 99999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-family);
+      max-width: 90%;
+    }
+
+    .toast-notification.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .toast-notification.success i {
+      color: #4caf50;
+    }
+
+    .toast-notification.error i {
+      color: #ff6b6b;
+    }
+
+    .toast-notification.info i {
+      color: var(--gold);
+    }
+
     footer {
-      text-align: center;
-      margin-top: 40px;
-      padding: 20px;
-      color: #e4d5b8;
-      border-top: 1px solid #c5a47a;
-      font-size: 12px;
+      margin-top: 100px;
     }
-    
-    /* Responsividade */
+
+    /* ============================================
+       SKELETON LOADING
+    ============================================ */
+    .skeleton {
+      background: linear-gradient(90deg, #f0e6d5 25%, #e4d5b8 50%, #f0e6d5 75%);
+      background-size: 200% 100%;
+      animation: skeleton-loading 1.5s ease-in-out infinite;
+      border-radius: 8px;
+    }
+
+    @keyframes skeleton-loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ============================================
+       PREFERS-REDUCED-MOTION
+    ============================================ */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      .card-livro {
+        transition: none !important;
+      }
+
+      .card-livro:hover {
+        transform: none !important;
+      }
+    }
+
+    /* ============================================
+       RESPONSIVIDADE
+    ============================================ */
     @media (max-width: 768px) {
       .card-livro {
         width: 180px;
       }
+
       .card-capa-modulo {
         height: 180px;
       }
-      .card-capa-modulo i {
-        font-size: 48px;
-      }
+
       .estante-title {
-        font-size: 18px;
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
       }
-      .stat-card {
-        padding: 8px 18px;
-      }
-      .stat-number {
-        font-size: 20px;
-      }
+
       .scroll-btn {
         width: 35px;
         height: 35px;
         font-size: 16px;
       }
-      
+
+      .scroll-btn:hover {
+        font-size: 22px;
+      }
+
       .main-content {
         padding: 0 15px 0 70px;
       }
-      
+
       .side-nav {
         left: 6px !important;
         padding: 8px 6px;
         gap: 4px;
       }
-      
+
       .side-nav a {
         width: 36px;
         height: 36px;
         padding: 6px 8px;
         font-size: 16px;
       }
-      
+
       .side-nav a i {
         font-size: 16px;
       }
-      
+
       .side-nav a .tooltip {
         font-size: 11px;
         left: 48px;
         padding: 4px 10px;
       }
+
+      .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        bottom: 70px;
+        right: 15px;
+      }
+
+      .theme-toggle {
+        font-size: 12px;
+        padding: 6px 12px;
+        bottom: 15px;
+      }
+
+      .estante-header {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .breadcrumb {
+        font-size: 12px;
+      }
     }
-    
+
     @media (max-width: 480px) {
       .card-livro {
         width: 150px;
       }
+
       .livros-container {
         padding: 15px;
         gap: 12px;
       }
+
       .card-capa-modulo {
         height: 150px;
       }
-      
+
       .main-content {
         padding: 0 10px 0 60px;
       }
-      
+
       .side-nav {
         left: 4px !important;
         padding: 6px 4px;
         border-radius: 12px;
       }
-      
+
       .side-nav a {
         width: 32px;
         height: 32px;
         padding: 4px 6px;
         font-size: 14px;
       }
-      
+
       .side-nav a i {
         font-size: 14px;
       }
-      
+
       .side-nav a .tooltip {
         font-size: 10px;
         left: 40px;
         padding: 3px 8px;
       }
+
+      .estante-title {
+        font-size: 16px;
+      }
+
+      .toast-notification {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 120px;
+      }
     }
-    
-    /* Quando a estante está recolhida */
-    .livros-container.hidden {
-      display: none;
-    }
-    
-    .oculto {
-      display: none;
-    }
+
+    .livros-container.hidden { display: none; }
+    .oculto { display: none; }
   </style>
 </head>
-<body class="bible-theme">
+<body>
 
-    <!-- ===== MENU LATERAL ESQUERDO ===== -->
-  <nav class="side-nav" aria-label="Navegação principal">
-    <a href="index.html" class="active" title="Página Principal">
-      <i class="fas fa-home"></i>
+  <!-- ===== SKIP LINK ===== -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ===== READING PROGRESS ===== -->
+  <div class="reading-progress" role="progressbar" aria-label="Progresso de leitura">
+    <div class="progress-bar" id="readingProgress" style="width: 0%;"></div>
+  </div>
+
+  <!-- ===== MENU LATERAL ESQUERDO ===== -->
+  <nav class="side-nav" role="navigation" aria-label="Navegação principal">
+    <a href="index.html" class="active" title="Página Principal" aria-current="page">
+      <i class="fas fa-home" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Início</span>
     </a>
     
-    <div class="divider"></div>
+    <div class="divider" role="separator"></div>
     
     <a href="bibliasagrada.html" title="Bíblia Completa">
-      <i class="fas fa-bible"></i>
+      <i class="fas fa-bible" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Bíblia<br>Sagrada</span>
     </a>
     
     <a href="comentada.html" title="Bíblia Comentada versículo a versículo">
-      <i class="fas fa-comment-dots"></i>
+      <i class="fas fa-comment-dots" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Bíblia<br>Comentada</span>
     </a>
     
     <a href="original.html" title="Hebraico, Grego e Latim">
-      <i class="fas fa-scroll"></i>
+      <i class="fas fa-scroll" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Textos<br>Originais</span>
     </a>
     
     <a href="apologetica.html" title="Bíblia em Defesa da Fé">
-      <i class="fas fa-shield-alt"></i>
+      <i class="fas fa-shield-alt" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Bíblia<br>Apologética</span>
     </a>
     
-    <div class="divider"></div>
+    <div class="divider" role="separator"></div>
     
     <a href="cristologia.html" title="Estude com a Enciclopédia Cristológica">
-      <i class="fas fa-cross"></i>
+      <i class="fas fa-cross" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Enciclopédia<br>Cristológica</span>
     </a>
     
     <a href="enciclopedia.html" title="Estude com a Enciclopédia">
-      <i class="fas fa-book-open"></i>
+      <i class="fas fa-book-open" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Enciclopédia<br>Bíblica</span>
     </a>
     
-    <div class="divider"></div>
+    <div class="divider" role="separator"></div>
     
     <a href="harpa.html" title="Hinos das Assembléias de Deus">
-      <i class="fas fa-music"></i>
+      <i class="fas fa-music" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span>
     </a>
     
     <a href="Cantor.html" title="Hinos Clássicos Batistas">
-      <i class="fas fa-microphone-alt"></i>
+      <i class="fas fa-microphone-alt" aria-hidden="true"></i>
       <span class="tooltip">Cantor<br>Cristão</span>
     </a>
     
-    <div class="divider"></div>
+    <div class="divider" role="separator"></div>
     
-    <a href="apoiar.html" title="Apoie o Porjeto">
-      <i class="fas fa-heart"></i>
+    <a href="apoiar.html" title="Apoie o Projeto">
+      <i class="fas fa-heart" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Apoiar</span>
     </a>
   </nav>
 
-  <!-- Conteúdo da página -->
-  <main class="main-content">
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main class="main-content" id="main-content" role="main">
+
     <header class="bible-header">
       <p class="tagline">"Lâmpada para os meus pés é tua palavra, e luz para o meu caminho" - Salmos 119:105</p>
     </header>
     
-    <!-- ESTANTE DE RECURSOS -->
-    <div class="estante-section">
-      <div class="estante-header" onclick="toggleEstante('recursos')">
-        <span class="estante-icon"><i class="fas fa-layer-group"></i></span>
-        <h2 class="estante-title" style="font-weight: bold; font-size: 40px;">PLATAFORMA DE ESTUDO BÍBLICO DIGITAL</h2>
-        <span class="estante-subtitle">Bíblias, Enciclopédias e Hinários</span>
-        <span class="estante-toggle">▼</span>
+    <!-- ===== ESTANTE DE RECURSOS ===== -->
+    <section class="estante-section" aria-label="Recursos de estudo bíblico">
+      <div class="estante-header" onclick="toggleEstante('recursos')" role="button" tabindex="0" aria-expanded="true" aria-controls="estante-recursos">
+        <h1 class="estante-title">PLATAFORMA DE ESTUDO BÍBLICO DIGITAL</h1>
+        <span class="estante-toggle" aria-hidden="true">▼</span>
       </div>
       <div class="linha-divisoria at"></div>
       <div class="livros-wrapper" id="wrapper-recursos">
-        <button class="scroll-btn scroll-left hidden" id="scroll-left-recursos" onclick="scrollEstante('recursos', 'left')">
-          <i class="fas fa-chevron-left"></i>
+        <button class="scroll-btn scroll-left hidden" id="scroll-left-recursos" onclick="scrollEstante('recursos', 'left')" aria-label="Rolar para esquerda">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
         </button>
-        <div id="estante-recursos" class="livros-container"></div>
-        <button class="scroll-btn scroll-right" id="scroll-right-recursos" onclick="scrollEstante('recursos', 'right')">
-          <i class="fas fa-chevron-right"></i>
+        <div id="estante-recursos" class="livros-container" role="list"></div>
+        <button class="scroll-btn scroll-right" id="scroll-right-recursos" onclick="scrollEstante('recursos', 'right')" aria-label="Rolar para direita">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
         </button>
       </div>
-    </div>
+    </section>
     
-    <footer>
-        <p><i class="fas fa-heart"></i> Soli Deo Gloria | <i> Louvado e Exaltado seja o Nome de Deus!</i><i class="fas fa-heart"></i></p>
-        <p style="margin-top: 8px;">Idealizado pelo Pastor Emerson José de Mello Mattos | ADAMRV</p>
-        <p style="margin-top: 8px;">Tradução King James Vesion 1769 (KJVA) | Flipbook com turn.js</p>
+    <!-- ===== FOOTER ===== -->
+    <footer role="contentinfo">
+      <p><i class="fas fa-heart" aria-hidden="true"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart" aria-hidden="true"></i></p>
+      <p style="margin-top: 8px;">Idealizado pelo Pastor Emerson José de Mello Mattos | ADAMRV</p>
+      <p style="margin-top: 8px;">Tradução King James Version 1769 (KJVA) | Flipbook com turn.js</p>
     </footer>
   </main>
 
+  <!-- ===== THEME TOGGLE ===== -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+    <i class="fas fa-moon" aria-hidden="true"></i>
+    <span id="themeLabel">Escuro</span>
+  </button>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ===== TOAST NOTIFICATION ===== -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    <span id="toastMessage">Mensagem</span>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SCRIPTS OTIMIZADOS                            -->
+  <!-- ============================================ -->
   <script>
+    // ============================================
+    // MÓDULO DE GERENCIAMENTO DE ESTADO
+    // ============================================
+    class AppState {
+      constructor() {
+        this.state = {
+          currentEstante: 'recursos',
+          scrollPositions: {},
+          isEstanteOpen: true,
+          theme: 'dark'
+        };
+        this.loadState();
+        this.applyTheme();
+      }
+
+      saveState() {
+        try {
+          localStorage.setItem('biblia-app-state', JSON.stringify(this.state));
+        } catch (e) {
+          console.warn('Não foi possível salvar o estado:', e);
+        }
+      }
+
+      loadState() {
+        try {
+          const saved = localStorage.getItem('biblia-app-state');
+          if (saved) {
+            this.state = { ...this.state, ...JSON.parse(saved) };
+          }
+        } catch (e) {
+          console.warn('Não foi possível carregar o estado:', e);
+        }
+      }
+
+      get(key) {
+        return this.state[key];
+      }
+
+      set(key, value) {
+        this.state[key] = value;
+        this.saveState();
+      }
+
+      toggleTheme() {
+        this.state.theme = this.state.theme === 'dark' ? 'light' : 'dark';
+        this.applyTheme();
+        this.saveState();
+        return this.state.theme;
+      }
+
+      applyTheme() {
+        document.documentElement.setAttribute('data-theme', this.state.theme);
+        const icon = document.querySelector('#themeToggle i');
+        const label = document.getElementById('themeLabel');
+        if (this.state.theme === 'dark') {
+          icon.className = 'fas fa-moon';
+          label.textContent = 'Escuro';
+        } else {
+          icon.className = 'fas fa-sun';
+          label.textContent = 'Claro';
+        }
+      }
+    }
+
+    // ============================================
+    // MÓDULO DE GERENCIAMENTO DE RECURSOS
+    // ============================================
+    class ResourceManager {
+      constructor() {
+        this.cache = new Map();
+        this.recursos = [
+          { id: "completa", nome: "Bíblia Sagrada", arquivo: "bibliasagrada.html", autor: "Falas em vermelho: Deus - KJV 1769", capitulos: 1189 },
+          { id: "comentada", nome: "Bíblia Comentada", arquivo: "comentada.html", autor: "Por Versículos - KJV 1769", capitulos: 1189 },
+          { id: "original", nome: "Bíblia Textos Originais", arquivo: "original.html", autor: "Por Versículos - KJV 1769", capitulos: 1189 },
+          { id: "apologetica", nome: "Bíblia Apologética", arquivo: "apologetica.html", autor: "Por Capítulos - KJV 1769", capitulos: 1189 },
+          { id: "cristologia", nome: "Enciclopédia Cristológica", arquivo: "cristologia.html", autor: "O Ministério de Jesus Cristo", capitulos: 100 },
+          { id: "enciclopedia", nome: "Enciclopédia Bíblica", arquivo: "enciclopedia.html", autor: "Personagens e Acontecimentos", capitulos: 15 },
+          { id: "harpa", nome: "Harpa Cristã", arquivo: "harpa.html", autor: "Assembléia de Deus", capitulos: 640 },
+          { id: "cantor", nome: "Cantor Cristão", arquivo: "cantor.html", autor: "Igrejas Batistas", capitulos: 581 }
+        ];
+      }
+
+      getRecursos() {
+        return this.recursos;
+      }
+
+      getRecursoById(id) {
+        return this.recursos.find(r => r.id === id);
+      }
+
+      preloadRecurso(arquivo) {
+        if (this.cache.has(arquivo)) return;
+        this.cache.set(arquivo, true);
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = arquivo;
+        document.head.appendChild(link);
+      }
+    }
+
+    // ============================================
+    // SISTEMA DE NOTIFICAÇÕES (TOAST)
+    // ============================================
+    function mostrarToast(mensagem, tipo = 'info', duracao = 3000) {
+      const toast = document.getElementById('toastNotification');
+      const toastMessage = document.getElementById('toastMessage');
+      
+      if (!toast || !toastMessage) return;
+      
+      toast.className = 'toast-notification';
+      toast.classList.add(tipo);
+      toastMessage.textContent = mensagem;
+      toast.classList.add('show');
+      
+      clearTimeout(toast._timeout);
+      toast._timeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, duracao);
+    }
+
+    // ============================================
+    // FUNÇÃO DEBOUNCE
+    // ============================================
+    function debounce(fn, delay) {
+      let timer;
+      return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this, args), delay);
+      };
+    }
+
     // ============================================
     // DADOS DOS RECURSOS
     // ============================================
-    
-    const recursos = [
-      { id: "completa", nome: "Bíblia Sagrada", arquivo: "bibliasagrada.html", autor: "Falas em vermelho: Deus - KJV 1769", capitulos: 1189, icone: "" },
-      { id: "comentada", nome: "Bíblia Comentada", arquivo: "comentada.html", autor: "Por Versículos - KJV 1769", capitulos: 1189, icone: "" },
-      { id: "original", nome: "Bíblia Textos Originais", arquivo: "original.html", autor: "Por Versículos - KJV 1769", capitulos: 1189, icone: "" },
-      { id: "apologetica", nome: "Bíblia Apologética", arquivo: "apologetica.html", autor: "Por Capítulos - KJV 1769", capitulos: 1189, icone: "" },
-      { id: "cristologia", nome: "Enciclopédia Cristológica", arquivo: "cristologia.html", autor: "O Ministério de Jesus Cristo", capitulos: 100, icone: "" },
-      { id: "enciclopedia", nome: "Enciclopédia Bíblica", arquivo: "enciclopedia.html", autor: "Personagens e Acontecimentos", capitulos: 15, icone: "" },
-      { id: "harpa", nome: "Harpa Cristã", arquivo: "harpa.html", autor: "Assembléia de Deus", capitulos: 640, icone: "" },
-      { id: "cantor", nome: "Cantor Cristão", arquivo: "cantor.html", autor: "Igrejas Batistas", capitulos: 581, icone: "" }
-  ];
-    
+    const appState = new AppState();
+    const resourceManager = new ResourceManager();
+
     // ============================================
     // FUNÇÕES DE RENDERIZAÇÃO
     // ============================================
-    
     function gerarCard(recurso) {
-      // Determina a classe CSS baseada no ID do recurso
       const classeCapa = `card-capa-modulo ${recurso.id}`;
-      
-      // Verifica se é um card com imagem (não deve ter ícone)
       const cardsComImagem = ['completa','biblia', 'comentada', 'apologetica', 'enciclopedia', 'harpa', 'cantor', 'cristologia'];
       const temImagem = cardsComImagem.includes(recurso.id);
       
-      // Para cards com gradiente, adiciona texto
-      const cardsComTexto = [ ''];
-      const temTexto = cardsComTexto.includes(recurso.id);
-      
       let conteudoCapa = '';
-      
       if (temImagem) {
-        // Cards com imagem - sem ícone, apenas a imagem de fundo
         conteudoCapa = '';
-      } else if (temTexto) {
-        // Cards com gradiente - mostra o nome do módulo centralizado
-        let nomeExibido = '';
-        switch(recurso.id) {
-          case 'mapas': nomeExibido = '🗺️ Mapas Bíblicos'; break;
-          default: nomeExibido = recurso.nome;
-        }
-        conteudoCapa = `<div class="capa-texto">${nomeExibido}</div>`;
       } else {
-        // Fallback - ícone padrão
         const icone = recurso.icone || "fa-book";
-        conteudoCapa = `<i class="fas ${icone}"></i>`;
+        conteudoCapa = `<i class="fas ${icone}" aria-hidden="true"></i>`;
       }
       
-      // Texto de capítulos ou referência
       const infoCapitulos = recurso.capitulos > 0 
         ? `<div class="card-capitulos">📖 ${recurso.capitulos} ${recurso.capitulos === 1 ? 'capítulo' : 'capítulos'}</div>` 
         : '<div class="card-capitulos">📚 Material de referência</div>';
       
       return `
-        <div class="card-livro" onclick="abrirRecurso('${recurso.arquivo}', '${recurso.nome}')">
+        <div class="card-livro" role="listitem" onclick="abrirRecurso('${recurso.arquivo}', '${recurso.nome}')" 
+             onkeydown="if(event.key==='Enter') abrirRecurso('${recurso.arquivo}', '${recurso.nome}')" 
+             tabindex="0" role="button" aria-label="Abrir ${recurso.nome}">
           <div class="${classeCapa}">
             ${conteudoCapa}
           </div>
@@ -773,29 +1200,38 @@
     
     function renderizarEstantes() {
       const containerRecursos = document.getElementById('estante-recursos');
-      
       if (!containerRecursos) return;
       
       containerRecursos.innerHTML = '';
+      const recursos = resourceManager.getRecursos();
       
       recursos.forEach(recurso => {
         containerRecursos.innerHTML += gerarCard(recurso);
+        // Pré-carregar recursos próximos
+        setTimeout(() => {
+          resourceManager.preloadRecurso(recurso.arquivo);
+        }, 1000);
       });
     }
-    
+
     // ============================================
-    // FUNÇÃO PARA ABRIR O RECURSO CORRESPONDENTE
+    // FUNÇÃO PARA ABRIR RECURSO
     // ============================================
-    
     function abrirRecurso(arquivo, nomeItem) {
-      console.log(`Abrindo: ${nomeItem} - ${arquivo}`);
+      mostrarToast(`Abrindo: ${nomeItem}...`, 'info', 2000);
+      // Registrar tentativa de navegação para analytics
+      if (window.gtag) {
+        gtag('event', 'recurso_aberto', {
+          'event_category': 'Navegação',
+          'event_label': nomeItem
+        });
+      }
       window.location.href = arquivo;
     }
-    
+
     // ============================================
     // FUNÇÕES DE ROLAGEM
     // ============================================
-    
     function scrollEstante(estante, direcao) {
       const container = document.getElementById(`estante-${estante}`);
       if (!container) return;
@@ -832,54 +1268,160 @@
       
       if (container && wrapper) {
         const isHidden = container.style.display === 'none';
+        const isOpen = !isHidden;
         
         if (isHidden) {
-                    container.style.display = 'flex';
-                    wrapper.style.display = 'block';
-                    toggle.innerHTML = '▼';
-                    toggle.title = 'Ocultar estante';
-                    setTimeout(() => updateScrollButtons(testamento), 100);
-                } else {
-                    container.style.display = 'none';
-                    wrapper.style.display = 'none';
-                    toggle.innerHTML = '▶';
-                    toggle.title = 'Mostrar estante';
-                }
+          container.style.display = 'flex';
+          wrapper.style.display = 'block';
+          toggle.innerHTML = '▼';
+          toggle.title = 'Ocultar estante';
+          header?.setAttribute('aria-expanded', 'true');
+          appState.set('isEstanteOpen', true);
+          setTimeout(() => updateScrollButtons(tipo), 100);
+        } else {
+          container.style.display = 'none';
+          wrapper.style.display = 'none';
+          toggle.innerHTML = '▶';
+          toggle.title = 'Mostrar estante';
+          header?.setAttribute('aria-expanded', 'false');
+          appState.set('isEstanteOpen', false);
+        }
       }
     }
+
+    // ============================================
+    // THEME TOGGLE
+    // ============================================
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      const theme = appState.toggleTheme();
+      mostrarToast(`Tema ${theme === 'dark' ? 'escuro' : 'claro'} ativado`, 'info', 1500);
+    });
+
+    // ============================================
+    // BACK TO TOP
+    // ============================================
+    const backToTop = document.getElementById('backToTop');
     
+    window.addEventListener('scroll', debounce(function() {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }, 100));
+    
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ============================================
+    // READING PROGRESS
+    // ============================================
+    window.addEventListener('scroll', debounce(function() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      document.getElementById('readingProgress').style.width = Math.min(progress, 100) + '%';
+    }, 10));
+
+    // ============================================
+    // TEclado - Navegação por setas
+    // ============================================
+    document.addEventListener('keydown', function(e) {
+      const container = document.getElementById('estante-recursos');
+      if (!container || document.activeElement?.closest('.card-livro')) return;
+      
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        scrollEstante('recursos', 'left');
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        scrollEstante('recursos', 'right');
+      }
+    });
+
     // ============================================
     // INICIALIZAÇÃO
     // ============================================
-    
     document.addEventListener('DOMContentLoaded', function() {
+      // Renderizar estantes
       renderizarEstantes();
       
-      const totalLivrosElem = document.getElementById('total-livros');
-      const totalATElem = document.getElementById('total-at');
+      // Restaurar estado da estante
+      const isOpen = appState.get('isEstanteOpen');
+      if (!isOpen) {
+        const container = document.getElementById('estante-recursos');
+        const wrapper = document.getElementById('wrapper-recursos');
+        const toggle = document.querySelector('.estante-toggle');
+        if (container && wrapper && toggle) {
+          container.style.display = 'none';
+          wrapper.style.display = 'none';
+          toggle.innerHTML = '▶';
+          document.querySelector('.estante-header')?.setAttribute('aria-expanded', 'false');
+        }
+      }
       
-      if (totalLivrosElem) totalLivrosElem.textContent = recursos.length;
-      if (totalATElem) totalATElem.textContent = recursos.length;
-      
+      // Configurar scroll listeners
       const container = document.getElementById('estante-recursos');
       if (container) {
-        container.addEventListener('scroll', function() {
+        const scrollHandler = debounce(function() {
           updateScrollButtons('recursos');
-        });
+        }, 150);
+        
+        container.addEventListener('scroll', scrollHandler);
         
         setTimeout(function() {
           updateScrollButtons('recursos');
         }, 100);
       }
       
-      window.addEventListener('resize', function() {
+      // Restaurar scroll position
+      const savedScroll = appState.get('scrollPositions')?.recursos || 0;
+      if (container && savedScroll > 0) {
+        container.scrollLeft = savedScroll;
+      }
+      
+      // Salvar scroll position ao sair
+      window.addEventListener('beforeunload', function() {
+        if (container) {
+          const positions = appState.get('scrollPositions') || {};
+          positions.recursos = container.scrollLeft;
+          appState.set('scrollPositions', positions);
+        }
+      });
+      
+      // Listener de resize
+      window.addEventListener('resize', debounce(function() {
         updateScrollButtons('recursos');
+      }, 200));
+      
+      // Inicializar tooltips para screen readers
+      document.querySelectorAll('.side-nav a').forEach(link => {
+        const tooltip = link.querySelector('.tooltip');
+        if (tooltip) {
+          link.setAttribute('aria-label', tooltip.textContent.trim());
+        }
       });
     });
-    
+
+    // ============================================
+    // TRATAMENTO DE ERROS GLOBAL
+    // ============================================
+    window.addEventListener('error', function(e) {
+      console.error('Erro capturado:', e.message, e.filename, e.lineno);
+      mostrarToast('Ocorreu um erro ao carregar o conteúdo. Por favor, tente novamente.', 'error', 4000);
+    });
+
+    // ============================================
+    // EXPOR GLOBAL
+    // ============================================
     window.abrirRecurso = abrirRecurso;
     window.scrollEstante = scrollEstante;
     window.toggleEstante = toggleEstante;
+    window.mostrarToast = mostrarToast;
+    window.appState = appState;
+    window.resourceManager = resourceManager;
   </script>
+
 </body>
 </html>
