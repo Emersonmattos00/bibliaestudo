@@ -1250,6 +1250,40 @@
     footer { text-align: center; margin-top: 60px; padding: 25px 20px; color: #e4d5b8; border-top: 1px solid #c5a47a44; font-size: 13px; }
     footer i.fa-heart { color: #ff6b6b; }
 
+    /* ===== CONTATOS ===== */
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      padding: 15px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255,215,0,0.1);
+    }
+    .contact-info a {
+      color: #e4d5b8;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      transition: all 0.3s;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+    .contact-info a:hover {
+      color: var(--gold);
+      background: rgba(255,215,0,0.1);
+      transform: translateY(-2px);
+    }
+    .contact-info a i {
+      font-size: 18px;
+    }
+    .contact-info a i.fa-whatsapp { color: #25d366; }
+    .contact-info a i.fa-envelope { color: #ffd966; }
+
     /* ===== RESPONSIVO ===== */
     @media (max-width: 992px) {
       .pix-grid {
@@ -1286,6 +1320,7 @@
       .btn-submit-form { width: 100%; justify-content: center; padding: 14px 20px; font-size: 15px; }
       .modal-header h2 { font-size: 22px; }
       .modal-header .modal-icon-top { font-size: 40px; }
+      .contact-info { flex-direction: column; align-items: center; gap: 8px; }
     }
     @media (max-width: 480px) {
       .page-header h1 { font-size: 28px; }
@@ -1455,6 +1490,22 @@
           </div>
         </div>
 
+        <!-- ===== CONTATOS ===== -->
+        <div class="contact-info">
+          <a href="https://wa.me/5521975079806" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i> (21) 97507-9806
+          </a>
+          <a href="https://wa.me/5521966614971" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i> (21) 96661-4971
+          </a>
+          <a href="mailto:emerson.mattos00@gmail.com" title="E-mail">
+            <i class="fas fa-envelope"></i> emerson.mattos00@gmail.com
+          </a>
+          <a href="mailto:emerson.mattos01@gmail.com" title="E-mail">
+            <i class="fas fa-envelope"></i> emerson.mattos01@gmail.com
+          </a>
+        </div>
+
         <div class="btn-open-form-wrapper">
           <div class="btn-actions-row">
             <button class="btn-open-form" onclick="abrirFormModal()">
@@ -1497,8 +1548,8 @@
         <p style="margin-top:16px; font-size:14px; opacity:0.7;">Deseja aparecer aqui? Preencha o formulário e faça parte!</p>
         <div class="share-buttons">
           <a href="https://wa.me/?text=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" target="_blank" class="share-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://seudominio.com/apoiar" target="_blank" class="share-btn"><i class="fab fa-facebook"></i> Facebook</a>
-          <a href="https://twitter.com/intent/tweet?text=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" target="_blank" class="share-btn"><i class="fab fa-twitter"></i> Twitter</a>
+        <!-- =====  <a href="https://www.facebook.com/sharer/sharer.php?u=https://seudominio.com/apoiar" target="_blank" class="share-btn"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="https://twitter.com/intent/tweet?text=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" target="_blank" class="share-btn"><i class="fab fa-twitter"></i> Twitter</a> ===== -->
           <a href="mailto:?subject=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" class="share-btn"><i class="fas fa-envelope"></i> E-mail</a>
         </div>
       </section>
@@ -1546,6 +1597,10 @@
       <p><i class="fas fa-heart"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart"></i></p>
       <p style="margin-top:8px;">Idealizado pelo Pastor Emerson José de Mello Mattos | ADAMRV</p>
       <p style="margin-top:8px;">Plataforma 100% gratuita · Mantida por doações via PIX</p>
+      <p style="margin-top:8px; font-size:12px; opacity:0.7;">
+        <i class="fab fa-whatsapp"></i> (21) 97507-9806 / (21) 96661-4971 · 
+        <i class="fas fa-envelope"></i> emerson.mattos00@gmail.com / emerson.mattos01@gmail.com
+      </p>
     </footer>
   </main>
 
@@ -1701,7 +1756,7 @@
         <br><br>
         <span><i class="fas fa-envelope"></i> <a href="mailto:emerson.mattos00@gmail.com">emerson.mattos00@gmail.com</a></span>
         <span style="margin: 0 15px;">|</span>
-        <span><i class="fab fa-whatsapp"></i> (21) 96661-4971/97507-9806</span>
+        <span><i class="fab fa-whatsapp"></i> (21) 96661-4971 / 97507-9806</span>
       </div>
     </div>
   </div>
@@ -2019,6 +2074,20 @@
   <!-- ===== SCRIPTS ===== -->
   <script>
     // ============================================================
+    // CONFIGURAÇÕES DE CONTATO
+    // ============================================================
+    const CONTATOS = {
+      whatsapp: [
+        '5521975079806',
+        '5521966614971'
+      ],
+      email: [
+        'emerson.mattos00@gmail.com',
+        'emerson.mattos01@gmail.com'
+      ]
+    };
+
+    // ============================================================
     // 1. NAVEGAÇÃO ENTRE PÁGINAS (SPA)
     // ============================================================
     function navegar(pagina) {
@@ -2048,7 +2117,27 @@
     }
 
     // ============================================================
-    // 3. MODAL DE PLANOS
+    // 3. FUNÇÃO PARA ENVIAR MENSAGEM PARA O WHATSAPP
+    // ============================================================
+    function enviarWhatsApp(mensagem, numero = null) {
+      const numeroPadrao = CONTATOS.whatsapp[0];
+      const num = numero || numeroPadrao;
+      const url = `https://wa.me/${num}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, '_blank');
+    }
+
+    // ============================================================
+    // 4. FUNÇÃO PARA ENVIAR E-MAIL
+    // ============================================================
+    function enviarEmail(assunto, corpo, destinatario = null) {
+      const emailPadrao = CONTATOS.email[0];
+      const para = destinatario || emailPadrao;
+      const url = `mailto:${para}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+      window.open(url, '_blank');
+    }
+
+    // ============================================================
+    // 5. MODAL DE PLANOS
     // ============================================================
     let tabAtual = 'mensal';
 
@@ -2077,12 +2166,11 @@
     }
 
     // ============================================================
-    // 4. MODAL DO FORMULÁRIO DE APOIADOR
+    // 6. MODAL DO FORMULÁRIO DE APOIADOR
     // ============================================================
     function abrirFormModal() {
       document.getElementById('formModal').classList.add('active');
       document.body.style.overflow = 'hidden';
-      // Reset char counter
       document.getElementById('charCount').textContent = '0';
     }
     function fecharFormModal() {
@@ -2093,13 +2181,12 @@
       if (e.target === this) fecharFormModal();
     });
 
-    // Contador de caracteres para mensagem de apoio
     document.getElementById('supMessage').addEventListener('input', function() {
       document.getElementById('charCount').textContent = this.value.length;
     });
 
     // ============================================================
-    // 5. MODAL DE SUGESTÕES E CORREÇÕES
+    // 7. MODAL DE SUGESTÕES E CORREÇÕES
     // ============================================================
     function abrirSugestaoModal() {
       document.getElementById('sugestaoModal').classList.add('active');
@@ -2114,13 +2201,12 @@
       if (e.target === this) fecharSugestaoModal();
     });
 
-    // Contador de caracteres para sugestões
     document.getElementById('sugMensagem').addEventListener('input', function() {
       document.getElementById('sugCharCount').textContent = this.value.length;
     });
 
     // ============================================================
-    // 6. MODAL DE CONTATO PARA PLANOS
+    // 8. MODAL DE CONTATO PARA PLANOS
     // ============================================================
     function abrirModalContato(plano) {
       document.getElementById('planoSelecionado').value = plano;
@@ -2151,7 +2237,7 @@
 
       const texto = `*Solicitação de Plano de Anúncio*%0A%0A*Plano:* ${plano}%0A*Nome:* ${nome}%0A*E-mail:* ${email}%0A*Telefone:* ${telefone || 'Não informado'}%0A*Empresa/Igreja:* ${empresa || 'Não informado'}%0A%0A*Mensagem:* ${mensagem || 'Sem mensagem adicional'}`;
       
-      window.open(`https://wa.me/5511999999999?text=${texto}`, '_blank');
+      enviarWhatsApp(texto);
       
       fecharModalContato();
       mostrarToast('Solicitação enviada! Entraremos em contato em breve.', 'success');
@@ -2164,7 +2250,7 @@
     });
 
     // ============================================================
-    // 7. MODAL DE SUCESSO
+    // 9. MODAL DE SUCESSO
     // ============================================================
     function abrirSuccessModal(nome) {
       document.getElementById('modalUserName').textContent = nome;
@@ -2180,7 +2266,7 @@
     });
 
     // ============================================================
-    // 8. MODAL DE SUCESSO PARA SUGESTÕES
+    // 10. MODAL DE SUCESSO PARA SUGESTÕES
     // ============================================================
     function abrirSugestaoSuccessModal(nome) {
       document.getElementById('sugUserNome').textContent = nome;
@@ -2196,7 +2282,7 @@
     });
 
     // ============================================================
-    // 9. FORMULÁRIO DE APOIADOR
+    // 11. FORMULÁRIO DE APOIADOR
     // ============================================================
     document.getElementById('supporterForm').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -2245,7 +2331,7 @@
     });
 
     // ============================================================
-    // 10. FORMULÁRIO DE SUGESTÕES
+    // 12. FORMULÁRIO DE SUGESTÕES
     // ============================================================
     document.getElementById('sugestaoForm').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -2273,7 +2359,7 @@
 
       const texto = `*Sugestão/Correção - Plataforma Bíblica*%0A%0A*Nome:* ${nome}%0A*E-mail:* ${email || 'Não informado'}%0A*Tipo:* ${tipo}%0A*Local/Seção:* ${local || 'Não especificado'}%0A%0A*Descrição:*%0A${mensagem}`;
       
-      window.open(`https://wa.me/5511999999999?text=${texto}`, '_blank');
+      enviarWhatsApp(texto);
       
       fecharSugestaoModal();
       abrirSugestaoSuccessModal(nome);
@@ -2287,7 +2373,7 @@
     });
 
     // ============================================================
-    // 11. COPIAR PIX
+    // 13. COPIAR PIX
     // ============================================================
     function copiarPix() {
       const pixText = document.getElementById('pixKey').innerText;
@@ -2305,7 +2391,7 @@
     }
 
     // ============================================================
-    // 12. TOAST
+    // 14. TOAST
     // ============================================================
     function mostrarToast(mensagem, tipo) {
       const toast = document.getElementById('toast');
@@ -2319,7 +2405,7 @@
     }
 
     // ============================================================
-    // 13. INICIALIZAÇÃO
+    // 15. INICIALIZAÇÃO
     // ============================================================
     (function init() {
       const params = new URLSearchParams(window.location.search);
@@ -2356,6 +2442,9 @@
     window.abrirModalContato = abrirModalContato;
     window.fecharModalContato = fecharModalContato;
     window.trocarTab = trocarTab;
+    window.enviarWhatsApp = enviarWhatsApp;
+    window.enviarEmail = enviarEmail;
+    window.CONTATOS = CONTATOS;
   </script>
 
 </body>
