@@ -555,7 +555,7 @@
     .testimonial-item i { color: var(--gold); font-size: 24px; margin-bottom: 8px; display: block; }
     .testimonial-item .author { margin-top: 10px; font-weight: 700; color: var(--gold); font-size: 13px; }
 
-    .supporters-section { margin-top: 50px; text-align: center; color: #e4d5b8; }
+    .supporters-section { margin-top: 5px; text-align: center; color: #e4d5b8; }
     .supporters-section h3 { font-size: 26px; margin-bottom: 10px; color: var(--gold); }
     .supporters-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 25px; margin-top: 18px; }
     .supporter-tag { background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); padding: 6px 20px; border-radius: 30px; font-size: 14px; border: 1px solid #c5a47a44; }
@@ -1258,12 +1258,12 @@
       flex-wrap: wrap;
       margin-top: 15px;
       padding: 15px;
-      background: rgba(255,255,255,0.05);
+      background: #f1e6cf71;
       border-radius: 12px;
       border: 1px solid rgba(255,215,0,0.1);
     }
     .contact-info a {
-      color: #e4d5b8;
+      color: #f1d9a8;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -1274,8 +1274,7 @@
       border-radius: 8px;
     }
     .contact-info a:hover {
-      color: var(--gold);
-      background: rgba(255,215,0,0.1);
+      color: var(--black);
       transform: translateY(-2px);
     }
     .contact-info a i {
@@ -1283,6 +1282,49 @@
     }
     .contact-info a i.fa-whatsapp { color: #25d366; }
     .contact-info a i.fa-envelope { color: #ffd966; }
+
+    /* Links de contato no footer */
+    footer .contact-link {
+      color: var(--text-light);
+      background: rgba(255, 215, 0, 0.1);
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* Estilo para os contatos no footer */
+    footer .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    footer .contact-info a {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    footer .contact-info a:hover {
+      color: var(--gold);
+      background: rgba(255, 217, 102, 0.1);
+      transform: translateY(-2px);
+    }
+
+    footer .contact-info i {
+      font-size: 14px;
+    }
 
     /* ===== RESPONSIVO ===== */
     @media (max-width: 992px) {
@@ -1345,6 +1387,73 @@
       .modal-header h2 { font-size: 20px; }
       .modal-success-box { padding: 30px 20px; }
     }
+
+    /* ============================================
+   BOTÕES DE CONTATO - SHARE BUTTONS
+   ============================================ */
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 5;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-light);
+  border-color: rgba(197, 164, 122, 0.2);
+  cursor: pointer;
+}
+
+.share-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.share-btn i {
+  font-size: 20px;
+}
+
+/* ===== BOTÃO WHATSAPP ===== */
+.share-btn.whatsapp-btn {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: #25d366;
+  color: #25d366;
+}
+
+.share-btn.whatsapp-btn:hover {
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  border-color: #25d366;
+  transform: translateY(-3px);
+}
+
+/* ===== BOTÃO E-MAIL ===== */
+.share-btn.email-btn {
+  background: rgba(255, 215, 0, 0.12);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.share-btn.email-btn:hover {
+  background: var(--gold);
+  color: var(--primary-dark);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
   </style>
 </head>
 <body>
@@ -1397,7 +1506,7 @@
       <span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span>
     </a>
     
-    <a href="cantor.html" title="Hinos Clássicos Batistas">
+    <a href="Cantor.html" title="Hinos Clássicos Batistas">
       <i class="fas fa-microphone-alt"></i>
       <span class="tooltip">Cantor<br>Cristão</span>
     </a>
@@ -1531,28 +1640,6 @@
           <div class="testimonial-item"><i class="fas fa-quote-right"></i><p>"Gratidão por disponibilizarem tantos recursos gratuitamente. Minha doação é uma pequena retribuição."</p><div class="author">— Lúcia M.</div></div>
         </div>
       </section>
-
-      <!-- ===== APOIADORES ===== -->
-      <section class="supporters-section">
-        <h3><i class="fas fa-users"></i> Nossos Apoiadores</h3>
-        <p>Pessoas e organizações que já contribuíram com este projeto</p>
-        <div class="supporters-list" id="supportersList">
-          <span class="supporter-tag"><i class="fas fa-star"></i> Igreja Batista Central</span>
-          <span class="supporter-tag"><i class="fas fa-star"></i> Ministério Jovem AD</span>
-          <span class="supporter-tag"><i class="fas fa-star"></i> Carlos A. Silva</span>
-          <span class="supporter-tag"><i class="fas fa-star"></i> Mariana Oliveira</span>
-          <span class="supporter-tag"><i class="fas fa-star"></i> Rafael Lima</span>
-          <span class="supporter-tag"><i class="fas fa-star"></i> Comunidade Vida Nova</span>
-          <span class="supporter-tag" id="placeholderSupporter"><i class="fas fa-star"></i> + Seu nome aqui...</span>
-        </div>
-        <p style="margin-top:16px; font-size:14px; opacity:0.7;">Deseja aparecer aqui? Preencha o formulário e faça parte!</p>
-        <div class="share-buttons">
-          <a href="https://wa.me/?text=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" target="_blank" class="share-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <!-- =====  <a href="https://www.facebook.com/sharer/sharer.php?u=https://seudominio.com/apoiar" target="_blank" class="share-btn"><i class="fab fa-facebook"></i> Facebook</a>
-          <a href="https://twitter.com/intent/tweet?text=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" target="_blank" class="share-btn"><i class="fab fa-twitter"></i> Twitter</a> ===== -->
-          <a href="mailto:?subject=Apoie%20a%20Plataforma%20de%20Estudos%20B%C3%ADblicos" class="share-btn"><i class="fas fa-envelope"></i> E-mail</a>
-        </div>
-      </section>
     </div>
 
     <!-- ========== PÁGINAS DE REDIRECIONAMENTO ========== -->
@@ -1592,15 +1679,20 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <p><i class="fas fa-heart"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart"></i></p>
+    <footer role="contentinfo">
+      <p><i class="fas fa-heart" aria-hidden="true"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart" aria-hidden="true"></i></p>
       <p style="margin-top:8px;">Idealizado pelo Pastor Emerson José de Mello Mattos | ADAMRV</p>
       <p style="margin-top:8px;">Plataforma 100% gratuita · Mantida por doações via PIX</p>
-      <p style="margin-top:8px; font-size:12px; opacity:0.7;">
-        <i class="fab fa-whatsapp"></i> (21) 97507-9806 / (21) 96661-4971 · 
-        <i class="fas fa-envelope"></i> emerson.mattos00@gmail.com / emerson.mattos01@gmail.com
-      </p>
+      <section class="supporters-section">
+        <div class="share-buttons">
+          <a href="https://wa.me/5521975079806?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Plataforma%20de%20Estudos%20Bíblicos" target="_blank" class="share-btn whatsapp-btn" title="(21) 975079806">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a> 
+          <a href="mailto:emerson.mattos00@gmail.com?subject=Contato%20sobre%20a%20Plataforma%20de%20Estudos%20Bíblicos&body=Olá,%20gostaria%20de%20entrar%20em%20contato%20sobre%20a%20plataforma..." class="share-btn email-btn" title="emerson.mattos00@gmail.com">
+            <i class="fas fa-envelope"></i> E-mail
+          </a>
+        </div>
+      </section>
     </footer>
   </main>
 
