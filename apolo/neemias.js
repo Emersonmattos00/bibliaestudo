@@ -6,6 +6,7 @@ window.LIVRO_DATA = {
   dados: {
 
     1: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Vida de oração e serviço de Neemias</b></i></p>",
         "<b>1</b> As palavras de Neemias, filho de Hacalias. Ora, sucedeu no mês de Quisleu, no ano vigésimo, estando eu em Susã, a capital,",
         "<b>2</b> que veio Hanani, um de meus irmãos, com alguns de Judá; e perguntei-lhes acerca dos judeus que tinham escapado, que restaram do cativeiro, e acerca de Jerusalém.",
         "<b>3</b> E disseram-me: Os restantes, que ficaram do cativeiro, lá na província, estão em grande aflição e opróbrio; o muro de Jerusalém está derribado, e as suas portas queimadas a fogo.",
@@ -19,6 +20,7 @@ window.LIVRO_DATA = {
         "<b>11</b> Ah! Senhor, estejam atentos os teus ouvidos à oração do teu servo, e à oração dos teus servos que desejam temer o teu nome; e concede que teu servo prospere hoje, e alcance mercê diante deste homem. Pois eu era copeiro do rei."
     ],
     2: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Neemias vai a Jerusalém em missão</b></i></p>",
         "<b>1</b> Sucedeu, pois, no mês de Nisã, no ano vigésimo do rei Artaxerxes, que estava posto vinho diante dele; e eu peguei o vinho e o dei ao rei; porém eu nunca antes estivera triste na sua presença.",
         "<b>2</b> Pelo que o rei me disse: Por que está triste o teu semblante, visto que não estás doente? Não é isto senão tristeza de coração. Então temi muito;",
         "<b>3</b> e disse ao rei: Viva o rei para sempre! Como não estaria triste o meu semblante, estando a cidade, o lugar dos sepulcros de meus pais, assolada, e tendo as suas portas consumidas pelo fogo?",
@@ -29,6 +31,7 @@ window.LIVRO_DATA = {
         "<b>8</b> como também uma carta para Asafe, guarda da floresta do rei, para que me dê madeira para as vigas das portas do palácio que pertence à casa, e para o muro da cidade, e para a casa que eu houver de ocupar. E o rei mas deu, segundo a boa mão de meu Deus sobre mim.",
         "<b>9</b> Então fui ter com os governadores dalém do Eufrates, e lhes dei as cartas do rei. Ora, o rei tinha enviado comigo capitães do exército e cavaleiros.",
         "<b>10</b> O que ouvindo Sambalate, o horonita, e Tobias, o servo amonita, lhes pareceu extremamente mal que tivesse vindo um homem para procurar o bem dos filhos de Israel.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Avaliação dos muros de Jerusalém</b></i></p>",
         "<b>11</b> Assim cheguei a Jerusalém, e depois de ali estar três dias,",
         "<b>12</b> levantei-me de noite, eu e uns poucos homens comigo; e não declarei a ninguém o que o meu Deus me pusera no coração para fazer em Jerusalém. Não havia comigo animal algum, senão aquele em que estava montado.",
         "<b>13</b> De noite saí pela porta do vale, e para o lado da fonte do dragão, e à porta do monturo, e contemplei os muros de Jerusalém, que estavam derribados, e as suas portas, que tinham sido consumidas pelo fogo.",
@@ -41,6 +44,7 @@ window.LIVRO_DATA = {
         "<b>20</b> Então lhes respondi: O Deus do céu é que nos fará prosperar; e nós, seus servos, nos levantaremos e edificaremos; mas vós não tendes parte, nem direito, nem memorial em Jerusalém."
     ],
     3: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os vaoluntários e mãos à obra</b></i></p>",
         "<b>1</b> Então se levantou Eliasibe, o sumo sacerdote, com os seus irmãos, os sacerdotes, e edificaram a porta das ovelhas; eles a santificaram, e lhe assentaram as portas, e continuaram a santificá-la até à torre de Meá, até à torre de Hananel.",
         "<b>2</b> E ao seu lado edificaram os homens de Jericó; e ao lado deles edificou Zacur, filho de Inri.",
         "<b>3</b> Os filhos de Hassená edificaram a porta do peixe; puseram-lhe as vigas, e lhe assentaram as portas com os seus ferrolhos e as suas barras.",
@@ -75,6 +79,7 @@ window.LIVRO_DATA = {
         "<b>32</b> E entre a subida da esquina e a porta das ovelhas repararam os ourives e os mercadores."
     ],
     4: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os inimigos se opõem à obra</b></i></p>",
         "<b>1</b> Sucedeu, porém, que, ouvindo Sambalate que nós edificávamos o muro, se encolerizou e se indignou muito, e zombou dos judeus.",
         "<b>2</b> E falou na presença de seus irmãos e do exército de Samária, e disse: Que fazem estes fracos judeus? Fortalecer-se-ão eles? oferecerão eles sacrifícios? acabarão eles a obra num só dia? reanimarão eles as pedras dos montões de entulho, que foram queimadas?",
         "<b>3</b> Tobias, o amonita, que estava ao seu lado, acrescentou: O que eles edificam, se uma raposa subir por cima, derrubará o seu muro de pedras.",
@@ -89,6 +94,7 @@ window.LIVRO_DATA = {
         "<b>12</b> Sucedeu que, vindo os judeus que habitavam perto deles, dez vezes nos disseram: De todos os lugares para onde vos virareis, eles nos atacarão.",
         "<b>13</b> Então pus nos lugares baixos e abertos atrás do muro, e nos lugares altos, o povo, repartido por famílias, com as suas espadas, com as suas lanças e com os seus arcos.",
         "<b>14</b> Olhei, e levantei-me, e disse aos nobres, aos magistrados e ao resto do povo: Não tenhais medo deles; lembrai-vos do Senhor, grande e temível, e pelejai pelos vossos irmãos, vossos filhos, vossas filhas, vossas mulheres e vossas casas.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>As atitudes tomadas pelos obreiros</b></i></p>",
         "<b>15</b> Sucedeu que, quando os nossos inimigos souberam que o tínhamos sabido, e que Deus tinha desfeito o conselho deles, voltamos todos ao muro, cada um para a sua obra.",
         "<b>16</b> Sucedeu, pois, que desde aquele dia metade dos meus servos trabalhava na obra, e a outra metade empunhava as lanças, os escudos, os arcos e as couraças; e os chefes estavam por detrás de toda a casa de Judá.",
         "<b>17</b> Os que edificavam o muro, e os que carregavam os fardos, cada um com uma das mãos fazia a obra e com a outra empunhava a arma.",
@@ -100,6 +106,7 @@ window.LIVRO_DATA = {
         "<b>23</b> Assim nem eu, nem meus irmãos, nem meus servos, nem os homens da guarda que me seguiam, nenhum de nós largava as vestes; cada um só as tirava para lavar."
     ],
     5: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Medidas contra a injustiça social</b></i></p>",
         "<b>1</b> Então houve grande clamor do povo e de suas mulheres contra os seus irmãos, os judeus.",
         "<b>2</b> Pois alguns diziam: Nós, nossos filhos e nossas filhas somos muitos; então procuremos trigo, para que comamos e vivamos.",
         "<b>3</b> E outros diziam: Hipotecamos as nossas terras, as nossas vinhas e as nossas casas, para comprarmos trigo, por causa da fome.",
@@ -112,6 +119,7 @@ window.LIVRO_DATA = {
         "<b>10</b> Também eu, meus irmãos e meus servos lhes emprestamos dinheiro e trigo. Deixemos este empréstimo com usura.",
         "<b>11</b> Restituí-lhes, pois, hoje mesmo as suas terras, as suas vinhas, os seus olivais e as suas casas, como também a centésima parte do dinheiro, do trigo, do vinho e do azeite que vós exigis deles.",
         "<b>12</b> Então disseram: Restituir-lhes-emos e nada lhes pediremos; faremos assim como dizes. Então chamei os sacerdotes e os fiz jurar que fariam conforme esta promessa.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>O bom exemplo do líder e do povo</b></i></p>",
         "<b>13</b> Também sacudi as minhas vestes, e disse: Assim sacuda Deus da sua casa e do seu trabalho a todo o homem que não cumprir esta promessa; e assim seja ele sacudido e esvaziado. E toda a congregação respondeu: Amém! E louvaram ao Senhor. E o povo fez conforme esta promessa.",
         "<b>14</b> Além disso, desde o dia em que o rei me nomeou governador da terra de Judá, desde o ano vigésimo até ao trigésimo segundo ano do rei Artaxerxes, doze anos, nem eu nem meus irmãos comemos o pão devido ao governador.",
         "<b>15</b> Mas os primeiros governadores, que foram antes de mim, sobrecarregaram o povo, recebendo deles pão e vinho e, além disso, quarenta siclos de prata; até os seus servos dominavam sobre o povo. Porém eu não fiz assim, por causa do temor de Deus.",
@@ -121,6 +129,7 @@ window.LIVRO_DATA = {
         "<b>19</b> Lembra-te de mim para bem, ó meu Deus, por tudo quanto tenho feito a este povo."
     ],
     6: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Inimigos tentam intimidar o líder</b></i></p>",
         "<b>1</b> Quando Sambalate, Tobias, Gesém, o arábio, e o resto dos nossos inimigos souberam que eu já tinha edificado o muro e que nele já não havia brecha alguma (embora até esse tempo eu não houvesse posto as portas nos portais),",
         "<b>2</b> Sambalate e Gesém mandaram dizer-me: Vem, encontremo-nos em alguma das aldeias da planície de Ono. Eles, porém, intentavam fazer-me mal.",
         "<b>3</b> E enviei-lhes mensageiros a dizer: Estou fazendo uma grande obra, de modo que não poderei descer; por que cessaria a obra, enquanto eu a deixasse e fosse ter convosco?",
@@ -135,6 +144,7 @@ window.LIVRO_DATA = {
         "<b>12</b> E percebi que Deus não o enviara; mas esta profecia pronunciou ele contra mim, porque Tobias e Sambalate o tinham subornado.",
         "<b>13</b> Estava ele subornado para que eu tivesse medo e assim fizesse e pecasse, e para que tivessem motivo de me infamar e de me vituperar.",
         "<b>14</b> Lembra-te, meu Deus, de Tobias e de Sambalate, conforme estas suas obras, e também da profetisa Noadias e dos outros profetas que procuravam atemorizar-me.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Concluída a obra da restauração</b></i></p>",
         "<b>15</b> E acabou-se o muro no dia vinte e cinco do mês de Elul, em cinqüenta e dois dias.",
         "<b>16</b> Sucedeu que, quando todos os nossos inimigos ouviram isto, temeram todos os gentios que estavam ao redor de nós, e decaíram muito nos seus próprios olhos; porque perceberam que esta obra fora realizada por nosso Deus.",
         "<b>17</b> Além disso, naqueles dias os nobres de Judá enviaram muitas cartas a Tobias, e as cartas de Tobias vinham para eles.",
@@ -142,6 +152,7 @@ window.LIVRO_DATA = {
         "<b>19</b> Também diante de mim falavam das boas obras dele, e lhe participavam as minhas palavras. E Tobias mandava cartas para me atemorizar."
     ],
     7: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Lista dos repatriados a Jerusalém</b></i></p>",
         "<b>1</b> E sucedeu que, quando o muro foi edificado, e eu já tinha assentado as portas, e os porteiros, os cantores e os levitas já tinham sido designados,",
         "<b>2</b> dei a responsabilidade sobre Jerusalém a Hanani, meu irmão, e a Hananias, governador do palácio; porque era homem fiel e temente a Deus mais do que muitos.",
         "<b>3</b> E disse-lhes: Não se abram as portas de Jerusalém até que o sol aqueça; e enquanto os porteiros estiverem ali, que eles fechem as portas e as tranquem. Também constituí guardas dentre os moradores de Jerusalém, cada um no seu posto, e cada um defronte da sua casa.",
@@ -211,12 +222,14 @@ window.LIVRO_DATA = {
         "<b>67</b> afora os seus servos e as suas servas, que foram sete mil trezentos e trinta e sete; e havia entre eles duzentos e quarenta e cinco cantores e cantoras.",
         "<b>68</b> Os seus cavalos: setecentos e trinta e seis; os seus mulos: duzentos e quarenta e cinco;",
         "<b>69</b> os seus camelos: quatrocentos e trinta e cinco; os seus jumentos: seis mil setecentos e vinte.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Contribuições financeiras de todos</b></i></p>",
         "<b>70</b> E alguns dos chefes das casas paternas deram ofertas para a obra. O governador deu para o tesouro mil dracmas de ouro, cinquenta bacias, e quinhentas e trinta vestes sacerdotais.",
         "<b>71</b> E alguns dos chefes das casas paternas deram para o tesouro da obra vinte mil dracmas de ouro e dois mil e duzentos arráteis de prata.",
         "<b>72</b> E o que o resto do povo deu foi vinte mil dracmas de ouro, dois mil arráteis de prata, e sessenta e sete vestes sacerdotais.",
         "<b>73</b> Assim habitaram os sacerdotes, os levitas, os porteiros, os cantores, alguns do povo, os netinins, e todo o Israel nas suas cidades; e, chegando o sétimo mês, já os filhos de Israel estavam nas suas cidades."
     ],
     8: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Esdras lê a Torá com todo o povo</b></i></p>",
         "<b>1</b> Então todo o povo se ajuntou como um só homem, na praça que está diante da porta das águas; e disseram a Esdras, o escriba, que trouxesse o livro da lei de Moisés, que o Senhor tinha ordenado a Israel.",
         "<b>2</b> E Esdras, o sacerdote, trouxe a lei perante a congregação, tanto de homens como de mulheres, e de todos os que podiam ouvir com entendimento, no primeiro dia do sétimo mês.",
         "<b>3</b> E leu nela diante da praça que está diante da porta das águas, desde a madrugada até o meio-dia, na presença dos homens e das mulheres, e dos que podiam entender; e os ouvidos de todo o povo estavam atentos ao livro da lei.",
@@ -229,6 +242,7 @@ window.LIVRO_DATA = {
         "<b>10</b> Disse-lhes mais: Ide, comei as iguarias, bebei as bebidas doces, e enviai porções aos que não têm nada preparado; porque este dia é consagrado ao nosso Senhor; portanto não vos entristeçais, porque a alegria do Senhor é a vossa força.",
         "<b>11</b> E os levitas fizeram calar todo o povo, dizendo: Calai-vos, porque este dia é santo; e não vos entristeçais.",
         "<b>12</b> Então todo o povo se foi a comer, a beber, a enviar porções, e a fazer grande regozijo; porque tinham entendido as palavras que lhes foram explicadas.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>A festa da Tendas ou Tabernáculos</b></i></p>",
         "<b>13</b> No segundo dia ajuntaram-se os cabeças das casas paternas de todo o povo, os sacerdotes e os levitas, a Esdras, o escriba, para entenderem as palavras da lei.",
         "<b>14</b> E acharam escrito na lei que o Senhor ordenara por intermédio de Moisés, que os filhos de Israel habitassem em cabanas na festa do sétimo mês.",
         "<b>15</b> Assim que publicaram e fizeram passar pregão por todas as suas cidades e em Jerusalém, dizendo: Saí ao monte, e trazei ramos de oliveira, de zambujeiro, de murta, de palmeira, e de outras árvores frondosas, para fazer cabanas, como está escrito.",
@@ -237,6 +251,7 @@ window.LIVRO_DATA = {
         "<b>18</b> E Esdras leu no livro da lei de Deus cada dia, desde o primeiro até o último; e celebraram a festa por sete dias; e no oitavo dia houve uma assembléia solene, segundo a ordenança."
     ],
     9: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Confissão e pacto de perdão</b></i></p>",
         "<b>1</b> Ora, no vigésimo quarto dia deste mês se ajuntaram os filhos de Israel em jejum, e com sacos, e com terra sobre si.",
         "<b>2</b> E os da linhagem de Israel se apartaram de todos os estrangeiros, e se puseram em pé, e confessaram os seus pecados, e as iniqüidades de seus pais.",
         "<b>3</b> E levantaram-se no seu lugar, e leram no livro da lei do Senhor seu Deus uma quarta parte do dia; e numa quarta parte fizeram confissão, e adoraram ao Senhor seu Deus.",
@@ -277,6 +292,7 @@ window.LIVRO_DATA = {
         "<b>38</b> E por tudo isto, nós fazemos um pacto firme, e o escrevemos; e os nossos príncipes, os nossos levitas e os nossos sacerdotes o selam."
     ],
     10: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>O pacto do povo em guardar a Torá</b></i></p>",
         "<b>1</b> Os que selaram foram: Neemias, o governador, filho de Hacalias, e Zedequias,",
         "<b>2</b> Seraías, Azarias, Jeremias,",
         "<b>3</b> Pasur, Amarias, Malquias,",
@@ -318,6 +334,7 @@ window.LIVRO_DATA = {
         "<b>39</b> Porque os filhos de Israel e os filhos de Levi trarão a oferta do trigo, do vinho e do azeite para as câmaras, onde estão os utensílios do santuário, e os sacerdotes que ministram, e os porteiros, e os cantores; e não desampararemos a casa de nosso Deus."
     ],
     11: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>A população judaica em Jerusalém</b></i></p>",
         "<b>1</b> Os príncipes do povo habitaram em Jerusalém; o resto do povo lançou sortes para trazer um de cada dez para habitar na santa cidade de Jerusalém, e as nove partes nas outras cidades.",
         "<b>2</b> E o povo abençoou a todos os homens que voluntariamente se ofereceram para habitar em Jerusalém.",
         "<b>3</b> Estes são os chefes da província que habitaram em Jerusalém; porém nas cidades de Judá habitaram cada um na sua possessão, nas suas cidades, a saber, Israel, os sacerdotes, os levitas, os netinins e os filhos dos servos de Salomão.",
@@ -356,6 +373,7 @@ window.LIVRO_DATA = {
         "<b>36</b> E dos levitas, alguns estavam com as divisões de Judá e com as de Benjamim."
     ],
     12: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Zorobabel volta com os ministros</b></i></p>",
         "<b>1</b> Estes são os sacerdotes e os levitas que subiram com Zorobabel, filho de Sealtiel, e com Jesua: Seraías, Jeremias, Esdras,",
         "<b>2</b> Amarias, Maluc, Hatuxe,",
         "<b>3</b> Secanias, Reum, Meremote,",
@@ -382,6 +400,7 @@ window.LIVRO_DATA = {
         "<b>24</b> E os chefes dos levitas: Hasabias, Serebias, Jesua, filho de Cadmiel, e seus irmãos, defronte deles, para louvarem e darem graças, conforme a ordem de Davi, homem de Deus, cada qual na sua função, defronte de seus irmãos.",
         "<b>25</b> Matanias, Baquebuquias, Obadias, Mesulão, Talmom e Acube eram porteiros, guardando a vigilância junto aos celeiros das portas.",
         "<b>26</b> Estes viveram nos dias de Joiaquim, filho de Jesua, filho de Jozadaque, e nos dias de Neemias, o governador, e de Esdras, o sacerdote, o escriba.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>A santificação dos muros da Cidade</b></i></p>",
         "<b>27</b> Na dedicação do muro de Jerusalém, buscaram os levitas de todos os seus lugares, para os trazerem a Jerusalém, a fim de celebrarem a dedicação com alegria, com ações de graças e com cânticos, címbalos, saltérios e harpas.",
         "<b>28</b> E os filhos dos cantores se ajuntaram tanto do distrito ao redor de Jerusalém, como das aldeias dos netofatitas;",
         "<b>29</b> como também de Bete-Gilgal, e dos campos de Geba e de Azmavete; pois os cantores tinham edificado para si aldeias nos arredores de Jerusalém.",
@@ -399,12 +418,14 @@ window.LIVRO_DATA = {
         "<b>41</b> E os sacerdotes Eliaquim, Maaseias, Miniamim, Micaías, Elioenai, Zacarias e Hananias, com trombetas;",
         "<b>42</b> e Maaseias, Semaías, Eleazar, Uzi, Joanã, Malquias, Elão e Ézer. E os cantores cantavam em alta voz, e Jezraías era o superintendente.",
         "<b>43</b> E naquele dia ofereceram grandes sacrifícios, e se alegraram, porque Deus lhes dera motivo de grande alegria; e também as mulheres e as crianças se alegraram; de modo que a alegria de Jerusalém se ouvia até de longe.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>O ministério na Casa de Deus</b></i></p>",
         "<b>44</b> Naquele mesmo tempo foram nomeados alguns homens sobre as câmaras dos tesouros, das ofertas, das primícias e dos dízimos, para recolherem nelas, dos campos das cidades, as porções designadas pela lei aos sacerdotes e aos levitas; porque Judá se alegrava por causa dos sacerdotes e dos levitas que estavam no serviço.",
         "<b>45</b> E tanto os cantores como os porteiros guardavam a ordenança do seu Deus, e a ordenança da purificação, conforme o mandado de Davi e de Salomão, seu filho.",
         "<b>46</b> Porque já nos dias de Davi e de Asafe, desde a antiguidade, havia chefes dos cantores, e cânticos de louvor e de ações de graças a Deus.",
         "<b>47</b> E todo o Israel, nos dias de Zorobabel e nos dias de Neemias, deu as porções dos cantores e dos porteiros, cada coisa no seu dia; e santificaram as coisas sagradas aos levitas, e os levitas as santificaram aos filhos de Arão."
     ],
     13: [
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Conclusão das reformas de Neemias</b></i></p>",
         "<b>1</b> Naquele dia se leu no livro de Moisés, na audiência do povo, e nele se achou escrito que o amonita e o moabita não entrassem jamais na congregação de Deus,",
         "<b>2</b> porquanto não saíram ao encontro dos filhos de Israel com pão e água, mas assalariaram contra eles a Balaão, para os amaldiçoar; todavia o nosso Deus tornou a maldição em bênção.",
         "<b>3</b> Sucedeu, pois, que, ouvindo eles a lei, separaram de Israel toda a mistura de estrangeiros.",
@@ -419,6 +440,7 @@ window.LIVRO_DATA = {
         "<b>12</b> Então todo o Judá trouxe os dízimos do trigo, do vinho e do azeite aos celeiros.",
         "<b>13</b> E pus por tesoureiros sobre os celeiros a Selemias, o sacerdote, e a Zadoque, o escriba, e a Pedaías, dos levitas; e com eles Hanã, filho de Zacur, filho de Matanias; porque foram achados fiéis; e o seu cargo era repartir as porções a seus irmãos.",
         "<b>14</b> Lembra-te de mim, meu Deus, por isto, e não apagues as minhas beneficências que fiz para com a casa do meu Deus, e para com o seu serviço.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Restabelecimento do Shabbãth</b></i></p>",
         "<b>15</b> Naqueles dias vi em Judá alguns que pisavam lagares no sábado, e outros que traziam feixes e os carregavam sobre jumentos; como também vinho, uvas e figos, e toda a sorte de cargas, que traziam a Jerusalém no dia de sábado; e protestei contra eles no dia em que vendiam mantimentos.",
         "<b>16</b> Habitavam também em Jerusalém alguns tírios, que traziam peixe e toda a sorte de mercadorias, e os vendiam no sábado aos filhos de Judá, e em Jerusalém.",
         "<b>17</b> Então contendi com os nobres de Judá, e lhes disse: Que mal é este que fazeis, profanando o dia de sábado?",
@@ -427,6 +449,7 @@ window.LIVRO_DATA = {
         "<b>20</b> Então os mercadores e os vendedores de toda a mercadoria passaram a noite fora de Jerusalém uma ou duas vezes.",
         "<b>21</b> Mas protestei contra eles, e lhes disse: Por que passais a noite junto ao muro? Se outra vez o fizerdes, hei de lançar mão de vós. Daí em diante não vieram mais no sábado.",
         "<b>22</b> Também ordenei aos levitas que se purificassem e viessem guardar as portas, para santificar o dia de sábado. Nisto também, meu Deus, lembra-te de mim, e perdoa-me segundo a grandeza da tua misericórdia.",
+        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Condenação aos casamentos mistos</b></i></p>",
         "<b>23</b> Vi também naqueles dias alguns judeus que haviam casado com mulheres asdoditas, amonitas e moabitas.",
         "<b>24</b> E seus filhos falavam meio asdodita, e não sabiam falar a língua dos judeus, mas falavam segundo a língua de um e de outro povo.",
         "<b>25</b> E contendi com eles, e os amaldiçoei, e espanquei alguns deles, e lhes arranquei os cabelos, e os fiz jurar por Deus, dizendo: Não dareis vossas filhas a seus filhos, e não tomareis suas filhas para vossos filhos, nem para vós mesmos.",
