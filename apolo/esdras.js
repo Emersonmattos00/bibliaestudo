@@ -2,6 +2,7 @@ window.LIVRO_DATA = {
 nome: "Esdras",
 dados: {
 1: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ciro convida os judeus a voltarem para Jerusalém e a edificarem o templo</b></i></p>",
     "<b>1</b> Ora, no primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do Senhor da boca de Jeremias, despertou o Senhor o espírito de Ciro, rei da Pérsia, o qual fez proclamar por todo o seu reino, de viva voz e também por escrito, dizendo:",
     "<b>2</b> Assim diz Ciro, rei da Pérsia: O Senhor, Deus do céu, me deu todos os reinos da terra; e ele me encarregou de lhe edificar uma casa em Jerusalém, que está em Judá.",
     "<b>3</b> Quem dentre vós é de todo o seu povo, seja seu Deus com ele, e suba a Jerusalém, que está em Judá, e edifique a casa do Senhor, Deus de Israel; ele é o Deus que habita em Jerusalém.",
@@ -15,6 +16,7 @@ dados: {
     "<b>11</b> Todos os utensílios de ouro e de prata foram cinco mil e quatrocentos. Todos estes Sesbazar fez subir, quando os exilados subiram de Babilônia para Jerusalém."
     ],
 2: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A lista dos que voltaram de Babilônia para Jerusalém com Zorobabel</b></i></p>",
     "<b>1</b> Estes são os filhos da província que subiram do cativeiro, daqueles que foram transportados, os quais Nabucodonosor, rei de Babilônia, tinha levado cativos para Babilônia, e que voltaram para Jerusalém e para Judá, cada um para a sua cidade;",
     "<b>2</b> os quais vieram com Zorobabel, Jesua, Neemias, Seraías, Reelaías, Mordecai, Bilsã, Mispar, Bigvai, Reum e Baaná. O número dos homens do povo de Israel:",
     "<b>3</b> Os filhos de Parós: dois mil cento e setenta e dois.",
@@ -87,6 +89,7 @@ dados: {
     "<b>70</b> Assim habitaram os sacerdotes, e os levitas, e alguns do povo, e os cantores, e os porteiros, e os netinins, nas suas cidades; e todo o Israel nas suas cidades."
     ],
 3: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>É levantado o altar</b></i></p>",
     "<b>1</b> Quando chegou o sétimo mês, e os filhos de Israel já estavam nas suas cidades, ajuntou-se o povo, como um só homem, em Jerusalém.",
     "<b>2</b> Então se levantaram Jesua, filho de Jozadaque, e seus irmãos, os sacerdotes, e Zorobabel, filho de Sealtiel, e seus irmãos, e edificaram o altar do Deus de Israel, para oferecerem sobre ele holocaustos, como está escrito na lei de Moisés, homem de Deus.",
     "<b>3</b> E, embora estivessem com medo dos povos das terras, colocaram o altar sobre a sua base, e ofereceram sobre ele holocaustos ao Senhor, holocaustos pela manhã e à tarde.",
@@ -94,6 +97,7 @@ dados: {
     "<b>5</b> depois o holocausto contínuo, tanto das luas novas como de todas as festas fixas do Senhor que estavam consagradas, como de todos aqueles que voluntariamente faziam ofertas voluntárias ao Senhor.",
     "<b>6</b> Desde o primeiro dia do sétimo mês começaram a oferecer holocaustos ao Senhor; porém os alicerces do templo do Senhor não estavam ainda lançados.",
     "<b>7</b> Deram dinheiro aos pedreiros e aos carpinteiros; como também comida, bebida e azeite aos sidônios e aos tírios, para trazerem do Líbano madeira de cedro até o mar de Jope, conforme a permissão que lhes dera Ciro, rei da Pérsia.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>São postos os alicerces do templo</b></i></p>",
     "<b>8</b> No segundo ano da sua vinda à casa de Deus em Jerusalém, no segundo mês, Zorobabel, filho de Sealtiel, e Jesua, filho de Jozadaque, e o restante de seus irmãos, os sacerdotes e os levitas, e todos os que vieram do cativeiro para Jerusalém, deram início à obra e designaram os levitas de vinte anos para cima, para supervisionarem a obra da casa do Senhor.",
     "<b>9</b> Então se apresentaram Jesua, com seus filhos e seus irmãos, Cadmiel e seus filhos, os filhos de Judá, como um só homem, para superintender os que faziam a obra na casa de Deus; como também os filhos de Henadade, com seus filhos e seus irmãos, os levitas.",
     "<b>10</b> Quando os edificadores lançaram os alicerces do templo do Senhor, os sacerdotes, paramentados e com trombetas, e os levitas, filhos de Asafe, com címbalos, puseram-se nos seus lugares para louvarem ao Senhor, segundo a ordem de Davi, rei de Israel.",
@@ -102,6 +106,7 @@ dados: {
     "<b>13</b> E não podia o povo discernir o clamor do júbilo do clamor do choro do povo; porque o povo jubilava com grande júbilo, e o barulho se ouvia de muito longe."
     ],
 4: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os samaritanos acusam os judeus ao rei Artaxerxes, e a construção do tempo é proibida</b></i></p>",
     "<b>1</b> Ora, quando os adversários de Judá e Benjamim ouviram que os exilados edificavam o templo ao Senhor, Deus de Israel,",
     "<b>2</b> chegaram-se a Zorobabel e aos chefes das casas paternas, e disseram-lhes: Deixai-nos edificar convosco, porque, como vós, buscamos a vosso Deus; e já lhe oferecemos sacrifícios desde os dias de Esar-Hadom, rei da Assíria, que nos fez subir para aqui.",
     "<b>3</b> Porém Zorobabel, Jesua e os outros chefes das casas paternas de Israel lhes responderam: Não convém que vós e nós edifiquemos casa a nosso Deus; mas nós sozinhos a edificaremos ao Senhor, Deus de Israel, como nos ordenou o rei Ciro, rei da Pérsia.",
@@ -128,6 +133,7 @@ dados: {
     "<b>24</b> Então cessou a obra da casa de Deus, que estava em Jerusalém; e ficou interrompida até ao segundo ano do reinado de Dario, rei da Pérsia."
     ],
 5: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ageu e Zacarias exortam os judeus a continuarem a construção do templo</b></i></p>",
     "<b>1</b> Ora, os profetas Ageu e Zacarias, filho de Ido, profetizaram aos judeus que estavam em Judá e em Jerusalém; em nome do Deus de Israel lhes profetizaram.",
     "<b>2</b> Então se levantaram Zorobabel, filho de Sealtiel, e Jesua, filho de Jozadaque, e começaram a edificar a casa de Deus, que está em Jerusalém; e com eles estavam os profetas de Deus, que os ajudavam.",
     "<b>3</b> Naquele tempo vieram ter com eles Tatenai, governador dalém do Eufrates, Setar-Bozenai e seus companheiros, e assim lhes perguntaram: Quem vos deu ordem para edificardes esta casa e restaurardes este muro?",
@@ -147,6 +153,7 @@ dados: {
     "<b>17</b> Agora, pois, se parecer bem ao rei, busque-se na casa dos tesouros do rei, ali em Babilônia, se é verdade que se deu ordem pelo rei Ciro para edificar esta casa de Deus em Jerusalém; e sobre isso nos seja enviada a vontade do rei."
     ],
 6: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O rei Dario confirma a ordem de edificar o templo</b></i></p>",
     "<b>1</b> Então o rei Dario deu ordem, e buscaram na casa dos arquivos, onde os tesouros eram depositados em Babilônia.",
     "<b>2</b> E em Acmeta, no palácio que está na província dos medos, se achou um rolo, e nele estava escrito o seguinte memorando:",
     "<b>3</b> No primeiro ano do rei Ciro, o mesmo rei Ciro deu ordem acerca da casa de Deus em Jerusalém: Seja edificada a casa, o lugar onde oferecem sacrifícios, e sejam os seus fundamentos bem firmados; a sua altura será de sessenta côvados, e a sua largura de sessenta côvados,",
@@ -159,6 +166,7 @@ dados: {
     "<b>10</b> para que ofereçam sacrifícios de aroma agradável ao Deus do céu, e orem pela vida do rei e de seus filhos.",
     "<b>11</b> Também por mim é dada ordem de que a todo homem que alterar este mandamento seja arrancada madeira da sua casa, e, levantada, seja pregado nela, e que a sua casa seja feita por isso um monturo.",
     "<b>12</b> E o Deus que fez habitar ali o seu nome derribe todos os reis e povos que estenderem a sua mão para alterar e destruir esta casa de Deus, que está em Jerusalém. Eu Dario dei esta ordem; cumprindo se execute.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Acaba-se o templo e é consagrado</b></i></p>",
     "<b>13</b> Então Tatenai, o governador dalém do Eufrates, Setar-Bozenai e seus companheiros executaram prontamente o que lhes mandou o rei Dario.",
     "<b>14</b> E os anciãos dos judeus iam edificando e prosperando, por meio da profecia de Ageu, o profeta, e de Zacarias, filho de Ido. Edificaram e acabaram a casa, segundo o mandado do Deus de Israel, e conforme o decreto de Ciro, e de Dario, e de Artaxerxes, rei da Pérsia.",
     "<b>15</b> E acabaram esta casa no terceiro dia do mês de Adar, que foi no sexto ano do reinado do rei Dario.",
@@ -171,6 +179,7 @@ dados: {
     "<b>22</b> E celebraram a festa dos pães ázimos por sete dias com alegria; porque o Senhor os tinha alegrado, tendo convertido o coração do rei da Assíria para com eles, para lhes fortalecer as mãos na obra da casa de Deus, o Deus de Israel."
     ],
 7: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Artaxerxes envia Esdras a Jerusalém para proclamar o edito em favor dos judeus</b></i></p>",
     "<b>1</b> Depois destas coisas, no reinado de Artaxerxes, rei da Pérsia, Esdras, filho de Seraías, filho de Azarias, filho de Hilquias,",
     "<b>2</b> filho de Salum, filho de Zadoque, filho de Aitube,",
     "<b>3</b> filho de Amarias, filho de Azarias, filho de Meraiote,",
@@ -201,6 +210,7 @@ dados: {
     "<b>28</b> e que estendeu a sua benignidade sobre mim perante o rei e seus conselheiros, e perante todos os poderosos príncipes do rei. E eu, fortalecido pela boa mão do Senhor meu Deus sobre mim, ajuntei dentre Israel alguns chefes para subirem comigo."
     ],
 8: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A lista dos que voltaram de Babilônia com Esdras</b></i></p>",
     "<b>1</b> Estes são os chefes das suas casas paternas, e a genealogia daqueles que subiram comigo de Babilônia, no reinado do rei Artaxerxes:",
     "<b>2</b> Dos filhos de Fineias, Gérson; dos filhos de Itamar, Daniel; dos filhos de Davi, Hatuxe;",
     "<b>3</b> dos filhos de Secanias, dos filhos de Parós, Zacarias, e com ele foram registrados, segundo a genealogia, cento e cinquenta homens.",
@@ -239,6 +249,7 @@ dados: {
     "<b>36</b> E entregaram as cartas do rei aos seus sátrapas e aos governadores dalém do Eufrates; e estes favoreceram o povo e a casa de Deus."
     ],
 9: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Esdras sabe que muitos israelitas casaram com mulheres heteias e faz oração e confissão a Deus</b></i></p>",
     "<b>1</b> Acabadas estas coisas, vieram ter comigo os príncipes, dizendo: O povo de Israel, os sacerdotes e os levitas não se separaram dos povos destas terras, das abominações dos cananeus, dos heteus, dos ferezeus, dos jebuseus, dos amonitas, dos moabitas, dos egípcios e dos amorreus.",
     "<b>2</b> Pois tomaram das suas filhas para si e para seus filhos; e assim se misturou a semente santa com os povos destas terras; e até os príncipes e os governadores foram os primeiros nessa transgressão.",
     "<b>3</b> Ouvindo eu tal coisa, rasguei a minha veste e o meu manto, e arranquei os cabelos da minha cabeça e da minha barba, e me sentei atônito.",
@@ -256,6 +267,7 @@ dados: {
     "<b>15</b> Ó Senhor, Deus de Israel, tu és justo, pois ficamos escapos, como hoje se vê; eis que estamos diante de ti na nossa culpa; porém ninguém pode subsistir diante de ti por causa disso."
     ],
 10: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As alianças pagãs são desfeitas</b></i></p>",
     "<b>1</b> Ora, enquanto Esdras orava e fazia confissão, chorando e prostrado diante da casa de Deus, ajuntou-se a ele de Israel uma grande multidão de homens, mulheres e crianças; porque o povo chorava amargamente.",
     "<b>2</b> Então Secanias, filho de Jeiel, um dos filhos de Elão, respondeu a Esdras: Nós temos transgredido contra o nosso Deus, casando com mulheres estrangeiras dos povos da terra; mas agora há esperança para Israel acerca disso.",
     "<b>3</b> Agora, pois, façamos um pacto com o nosso Deus, de que despediremos todas as mulheres e os seus filhos, conforme o conselho do meu senhor e daqueles que tremem ao mandamento do nosso Deus; e faça-se segundo a lei.",
@@ -273,6 +285,7 @@ dados: {
     "<b>15</b> Somente Jônatas, filho de Asael, e Jazias, filho de Ticvá, se opuseram a isso; e Mesulão e o levita Sabetai os apoiaram.",
     "<b>16</b> Assim o fizeram os que tinham voltado do cativeiro. E o sacerdote Esdras, com certos chefes das casas paternas, segundo as suas casas paternas, todos eles por nome, foram designados; e se assentaram no primeiro dia do décimo mês para examinarem o negócio.",
     "<b>17</b> E terminaram de examinar todos os homens que tinham casado com mulheres estrangeiras até o primeiro dia do primeiro mês.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os culpados de alinças mistas</b></i></p>",
     "<b>18</b> E entre os filhos dos sacerdotes se acharam os que tinham casado com mulheres estrangeiras: dos filhos de Jesua, filho de Jozadaque, e seus irmãos: Maaseias, Eliézer, Jaribe e Gedalias.",
     "<b>19</b> E eles deram a sua mão em penhor de que despediriam as suas mulheres; e, sendo culpados, ofereceram um carneiro do rebanho pela sua culpa.",
     "<b>20</b> E dos filhos de Imer: Hanani e Zebadias.",
