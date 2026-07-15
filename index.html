@@ -444,178 +444,172 @@
     .scroll-left { left: 12px; }
     .scroll-right { right: 12px; }
 
-/* ============================================
-   ESTANTE - ALTURA FIXA
-   ============================================ */
-.livros-wrapper {
-  position: relative;
-  border: none;
-  border-top: none;
-  border-radius: 0 0 12px 12px;
-  background: none;
-  backdrop-filter: blur(5px);
-  overflow: hidden;
-  height: 450px; /* ALTURA FIXA DA ESTANTE */
-}
+    /* ============================================
+       ESTANTE - ALTURA FIXA
+    ============================================ */
+    .livros-wrapper {
+      position: relative;
+      border: none;
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      background: none;
+      backdrop-filter: blur(5px);
+      overflow: hidden;
+      height: 450px;
+    }
 
-.livros-container {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  padding: 30px;
-  gap: 20px;
-  height: 100%; /* OCUPA 100% DA ALTURA DO WRAPPER */
-  min-height: 320px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--gold) transparent;
-  align-items: flex-start; /* ALINHA OS CARDS NO TOPO */
-}
+    .livros-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      padding: 30px;
+      gap: 20px;
+      height: 100%;
+      min-height: 320px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--gold) transparent;
+      align-items: flex-start;
+    }
 
-.livros-container::-webkit-scrollbar {
-  height: 6px;
-}
+    .livros-container::-webkit-scrollbar {
+      height: 6px;
+    }
 
-.livros-container::-webkit-scrollbar-track {
-  background: rgba(197, 164, 122, 0.3);
-  border-radius: 10px;
-  margin: 0 20px;
-}
+    .livros-container::-webkit-scrollbar-track {
+      background: rgba(197, 164, 122, 0.3);
+      border-radius: 10px;
+      margin: 0 20px;
+    }
 
-.livros-container::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, var(--gold), #e67e22);
-  border-radius: 10px;
-}
+    .livros-container::-webkit-scrollbar-thumb {
+      background: linear-gradient(90deg, var(--gold), #e67e22);
+      border-radius: 10px;
+    }
 
-.livros-container::-webkit-scrollbar-thumb:hover {
-  background: var(--gold-dark);
-}
+    .livros-container::-webkit-scrollbar-thumb:hover {
+      background: var(--gold-dark);
+    }
 
-/* ============================================
-   CARDS DOS LIVROS - COM HOVER REVELANDO INFO
-   ============================================ */
-.card-livro {
-  flex: 0 0 auto;
-  width: 230px;
-  cursor: pointer;
-  background: var(--card-bg);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all var(--transition);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  border: 1px solid rgba(197, 164, 122, 0.3);
-  position: relative;
-  will-change: transform;
-}
+    /* ============================================
+       CARDS DOS LIVROS - COM HOVER REVELANDO INFO
+    ============================================ */
+    .card-livro {
+      flex: 0 0 auto;
+      width: 230px;
+      cursor: pointer;
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all var(--transition);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border: 1px solid rgba(197, 164, 122, 0.3);
+      position: relative;
+      will-change: transform;
+    }
 
-/* REMOVIDO O transform: scale() do hover */
-.card-livro:hover {
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-  border-color: var(--gold);
-  /* SEM transform: scale() - imagem não redimensiona */
-}
+    .card-livro:hover {
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+      border-color: var(--gold);
+    }
 
-.card-livro:focus-visible {
-  outline: 3px solid var(--gold);
-  outline-offset: 2px;
-}
+    .card-livro:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
 
-.card-capa-modulo {
-  height: 286px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: var(--gold);
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  position: relative;
-  transition: all var(--transition);
-}
+    .card-capa-modulo {
+      height: 286px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      color: var(--gold);
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      position: relative;
+      transition: all var(--transition);
+    }
 
-/* Capas específicas */
-.card-capa-modulo.completa { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
-.card-capa-modulo.biblia { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
-.card-capa-modulo.comentada { background: url('assets/capa/comentada.webp'); background-size: cover; }
-.card-capa-modulo.original { background: url('assets/capa/original.webp'); background-size: cover; }
-.card-capa-modulo.apologetica { background: url('assets/capa/apologetica.webp'); background-size: cover; }
-.card-capa-modulo.enciclopedia { background: url('assets/capa/encinomes.webp'); background-size: cover; }
-.card-capa-modulo.harpa { background: url('assets/capa/harpa.webp'); background-size: cover; }
-.card-capa-modulo.cantor { background: url('assets/capa/cantor.webp'); background-size: cover; }
-.card-capa-modulo.cristologia { background: url('assets/capa/enciclopedia.webp'); background-size: cover; }
+    /* Capas específicas */
+    .card-capa-modulo.completa { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
+    .card-capa-modulo.biblia { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
+    .card-capa-modulo.comentada { background: url('assets/capa/comentada.webp'); background-size: cover; }
+    .card-capa-modulo.original { background: url('assets/capa/original.webp'); background-size: cover; }
+    .card-capa-modulo.apologetica { background: url('assets/capa/apologetica.webp'); background-size: cover; }
+    .card-capa-modulo.enciclopedia { background: url('assets/capa/encinomes.webp'); background-size: cover; }
+    .card-capa-modulo.harpa { background: url('assets/capa/harpa.webp'); background-size: cover; }
+    .card-capa-modulo.cantor { background: url('assets/capa/cantor.webp'); background-size: cover; }
+    .card-capa-modulo.cristologia { background: url('assets/capa/enciclopedia.webp'); background-size: cover; }
 
-.card-capa-modulo.completa i,
-.card-capa-modulo.biblia i,
-.card-capa-modulo.comentada i,
-.card-capa-modulo.original i,
-.card-capa-modulo.apologetica i,
-.card-capa-modulo.enciclopedia i,
-.card-capa-modulo.harpa i,
-.card-capa-modulo.cantor i,
-.card-capa-modulo.cristologia i {
-  display: none;
-}
+    .card-capa-modulo.completa i,
+    .card-capa-modulo.biblia i,
+    .card-capa-modulo.comentada i,
+    .card-capa-modulo.original i,
+    .card-capa-modulo.apologetica i,
+    .card-capa-modulo.enciclopedia i,
+    .card-capa-modulo.harpa i,
+    .card-capa-modulo.cantor i,
+    .card-capa-modulo.cristologia i {
+      display: none;
+    }
 
-/* ===== CARD INFO - OCULTO POR PADRÃO ===== */
-.card-info {
-  padding: 12px;
-  text-align: center;
-  background: rgba(3, 168, 160, 0.212);
-  border: 1px solid rgba(197, 164, 122, 0.3);
-  color: var(--text-light);
-  
-  /* Oculto por padrão */
-  max-height: 0;
-  opacity: 0;
-  padding: 0 12px;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(-10px);
-  border: none;
-}
+    /* ===== CARD INFO - OCULTO POR PADRÃO ===== */
+    .card-info {
+      padding: 12px;
+      text-align: center;
+      background: rgba(3, 168, 160, 0.212);
+      border: 1px solid rgba(197, 164, 122, 0.3);
+      color: var(--text-light);
+      max-height: 0;
+      opacity: 0;
+      padding: 0 12px;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateY(-10px);
+      border: none;
+    }
 
-/* Mostrar info ao passar o mouse */
-.card-livro:hover .card-info {
-  max-height: 150px;
-  opacity: 1;
-  padding: 12px;
-  border: 1px solid rgba(197, 164, 122, 0.3);
-  transform: translateY(0);
-}
+    .card-livro:hover .card-info {
+      max-height: 150px;
+      opacity: 1;
+      padding: 12px;
+      border: 1px solid rgba(197, 164, 122, 0.3);
+      transform: translateY(0);
+    }
 
-/* Efeito de brilho na capa ao passar o mouse */
-.card-livro:hover .card-capa-modulo::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 217, 102, 0.1), rgba(255, 217, 102, 0.05));
-  border-radius: 0;
-  pointer-events: none;
-}
+    .card-livro:hover .card-capa-modulo::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255, 217, 102, 0.1), rgba(255, 217, 102, 0.05));
+      border-radius: 0;
+      pointer-events: none;
+    }
 
-.card-titulo {
-  font-weight: bold;
-  color: var(--cream);
-  font-size: 16px;
-  margin-bottom: 4px;
-}
+    .card-titulo {
+      font-weight: bold;
+      color: var(--cream);
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
 
-.card-autor {
-  font-size: 10px;
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
+    .card-autor {
+      font-size: 10px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
 
-.card-capitulos {
-  font-size: 11px;
-  color: #8bc34a;
-  margin-top: 5px;
-}
+    .card-capitulos {
+      font-size: 11px;
+      color: #8bc34a;
+      margin-top: 5px;
+    }
 
     /* ============================================
        ESTANTE HEADER
@@ -760,6 +754,55 @@
       color: var(--gold);
     }
 
+    /* ============================================
+       CONTADOR DE VISUALIZAÇÕES - DISCRETO
+    ============================================ */
+    .view-counter {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(20, 30, 20, 0.6);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 217, 102, 0.1);
+      border-radius: 20px;
+      padding: 6px 16px;
+      color: var(--text-light);
+      font-size: 11px;
+      font-family: var(--font-family);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0.5;
+      transition: all 0.3s ease;
+      z-index: 9998;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .view-counter:hover {
+      opacity: 0.9;
+      background: rgba(20, 30, 20, 0.8);
+      border-color: rgba(255, 217, 102, 0.3);
+    }
+
+    .view-counter i {
+      color: var(--gold);
+      font-size: 12px;
+    }
+
+    .view-counter .count-number {
+      font-weight: 600;
+      color: var(--gold);
+      min-width: 30px;
+      text-align: center;
+    }
+
+    .view-counter .count-label {
+      opacity: 0.6;
+      font-size: 10px;
+    }
+
     footer {
       margin-top: 100px;
     }
@@ -876,6 +919,12 @@
         font-size: 14px;
         padding: 12px 20px;
       }
+
+      .view-counter {
+        bottom: 15px;
+        font-size: 10px;
+        padding: 4px 12px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -927,6 +976,16 @@
         font-size: 13px;
         padding: 10px 16px;
         bottom: 70px;
+      }
+
+      .view-counter {
+        bottom: 12px;
+        font-size: 9px;
+        padding: 3px 10px;
+      }
+
+      .view-counter .count-number {
+        min-width: 20px;
       }
     }
 
@@ -1049,10 +1108,80 @@
     <span id="toastMessage">Mensagem</span>
   </div>
 
+  <!-- ===== CONTADOR DE VISUALIZAÇÕES ===== -->
+  <div class="view-counter" aria-label="Contador de visualizações da página">
+    <i class="fas fa-eye" aria-hidden="true"></i>
+    <span class="count-number" id="viewCount">0</span>
+    <span class="count-label">visualizações</span>
+  </div>
+
   <!-- ============================================ -->
   <!-- SCRIPTS OTIMIZADOS                            -->
   <!-- ============================================ -->
   <script>
+    // ============================================
+    // CONTADOR DE VISUALIZAÇÕES
+    // ============================================
+    (function() {
+      const STORAGE_KEY = 'biblia_view_count';
+      const DISPLAY_ID = 'viewCount';
+      
+      function getViewCount() {
+        try {
+          const stored = localStorage.getItem(STORAGE_KEY);
+          return stored ? parseInt(stored, 10) || 0 : 0;
+        } catch (e) {
+          return 0;
+        }
+      }
+      
+      function incrementViewCount() {
+        const current = getViewCount();
+        const newCount = current + 1;
+        try {
+          localStorage.setItem(STORAGE_KEY, String(newCount));
+        } catch (e) {
+          // Se localStorage falhar, mantém o valor atual
+          return current;
+        }
+        return newCount;
+      }
+      
+      function updateDisplay(count) {
+        const el = document.getElementById(DISPLAY_ID);
+        if (el) {
+          // Formata o número com separadores de milhar
+          el.textContent = count.toLocaleString('pt-BR');
+        }
+      }
+      
+      function initViewCounter() {
+        // Incrementa apenas se não foi contado nesta sessão
+        const sessionKey = 'biblia_view_session';
+        let shouldIncrement = true;
+        
+        try {
+          if (sessionStorage.getItem(sessionKey)) {
+            shouldIncrement = false;
+          } else {
+            sessionStorage.setItem(sessionKey, '1');
+          }
+        } catch (e) {
+          // Se sessionStorage falhar, incrementa mesmo assim
+        }
+        
+        const count = shouldIncrement ? incrementViewCount() : getViewCount();
+        updateDisplay(count);
+      }
+      
+      // Executa quando o DOM estiver pronto
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initViewCounter);
+      } else {
+        initViewCounter();
+      }
+    })();
+
     // ============================================
     // MÓDULO DE GERENCIAMENTO DE ESTADO
     // ============================================
