@@ -6,7 +6,6 @@ window.LIVRO_DATA = {
   dados: {
 
     1: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Juízo contra as nações vizinhas</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Palavras de Amós, que foi entre os pastores de Tecoa, as quais ele viu a respeito de Israel, nos dias de Uzias, rei de Judá, e nos dias de Jeroboão, filho de Joás, rei de Israel, dois anos antes do terremoto.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -189,7 +188,6 @@ window.LIVRO_DATA = {
     ],
 
     2: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Juízo contra Moabe, Judá e Israel</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Assim diz o Senhor: Por três transgressões de Moabe, e por quatro, não desviarei o castigo, porque queimou os ossos do rei de Edom, reduzindo-os a cal.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -383,7 +381,6 @@ window.LIVRO_DATA = {
         "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> O juízo de Deus é certo e completo. Arrependa-se e busque refúgio em Cristo.<br>"
     ],
         3: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Juízo sobre Israel - A responsabilidade do povo escolhido</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Ouvi esta palavra que o Senhor fala contra vós, ó filhos de Israel, contra toda a família que fiz subir da terra do Egito, dizendo:<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -566,7 +563,6 @@ window.LIVRO_DATA = {
     ],
 
     4: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Juízo contra as mulheres de Samaria e advertências</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Ouvi esta palavra, vós, vacas de Basã, que estais no monte de Samária, que oprimis os pobres, que esmagais os necessitados, que dizeis a seus maridos: Dai-nos de beber.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -725,7 +721,6 @@ window.LIVRO_DATA = {
     ],
 
     5: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Lamentação e chamado ao arrependimento</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Ouvi esta palavra que eu levanto contra vós, uma lamentação, ó casa de Israel.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -1052,7 +1047,6 @@ window.LIVRO_DATA = {
     ],
 
         6: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ai dos que vivem em segurança e luxo</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Ai dos que vivem sossegados em Sião, e dos que confiam no monte de Samária, os notáveis das principais nações, a quem vem a casa de Israel!<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -1223,7 +1217,6 @@ window.LIVRO_DATA = {
     ],
 
     7: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Visões de juízo e a intercessão do profeta</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Isto me mostrou o Senhor Deus: eis que ele formava gafanhotos ao princípio do rebento da erva serôdia; e eis que era a erva serôdia depois de findas as ceifas do rei.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -1430,7 +1423,6 @@ window.LIVRO_DATA = {
     ],
 
     8: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>Visão do cesto de frutos de verão e o juízo final</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Isto me mostrou o Senhor Deus: eis aqui um cesto de frutos de verão.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -1601,7 +1593,6 @@ window.LIVRO_DATA = {
     ],
 
     9: [
-        "<p style='font-size: 0.8rem; text-align: center;'><i><b>O juízo final e a restauração de Israel</b></i></p>",
         "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Vi o Senhor em pé junto ao altar; e disse: Fere o capitel, e estremecerão os umbrais; e faze em pedaços as suas cabeças; e matarei à espada o último deles; nenhum deles conseguirá fugir; nenhum dos que fugirem se livrará.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
         "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
