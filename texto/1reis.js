@@ -5,8 +5,7 @@ window.LIVRO_DATA = {
   
   dados: {
 1: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A velhice de Davi</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ora, o rei Davi já era velho e avançado em anos; e, por mais que o cobrissem com roupas, não conseguia se aquecer.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -379,8 +378,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Bate-Seba reverenciou o rei. Calvino: A reverência prefigura a adoração a Cristo. Crisóstomo: Cristo vive para sempre.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Adoramos a Cristo, o Rei eterno.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão é constituído rei</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 32</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E disse o rei Davi: Chamai-me o sacerdote Zadoque, e o profeta Natã, e Benaías, filho de Joiada. E eles entraram à presença do rei.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -646,8 +644,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Recebemos o perdão de Deus em Cristo.<br>"
 ],
 2: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi dá conselhos a Salomão e morre</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Aproximando-se os dias de Davi para morrer, deu ele ordem a Salomão, seu filho, dizendo:<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -780,8 +777,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: O reinado de Davi durou quarenta anos. Calvino: O resumo prefigura a eternidade do reinado de Cristo. Crisóstomo: Cristo reinará para sempre.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> O reinado de Cristo é eterno.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A morte de Adonias</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 12</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Salomão se assentou no trono de Davi, seu pai; e o seu reino se firmou grandemente.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -950,8 +946,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Adonias foi executado. Calvino: A execução prefigura a morte do pecado. Crisóstomo: Cristo venceu o pecado.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo venceu o pecado e a morte.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O fim de Abiatar e Joabe</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 26</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E ao sacerdote Abiatar disse o rei: Vai para Anatote, para as tuas terras, porque és digno de morte; porém não te matarei agora, porque levaste a arca do Senhor Deus diante de Davi, meu pai, e porque foste afligido em tudo em que meu pai foi afligido.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1072,8 +1067,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão nomeou novos líderes. Calvino: A nomeação prefigura a nomeação de servos por Cristo. Crisóstomo: Cristo nomeia Seus servos.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos nomeia para servi-Lo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A desobediência e morte de Simei</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 36</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Depois o rei mandou chamar Simei, e disse-lhe: Edifica para ti uma casa em Jerusalém, habita ali, e não saias para nenhum outro lugar.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1207,8 +1201,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo remove o pecado de nossas vidas.<br>"
 ],
 3: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão roga sabedoria a Deus</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Salomão aparentou-se com Faraó, rei do Egito, tomando a filha de Faraó, e a trouxe à cidade de Davi, até que acabasse de edificar a sua própria casa, e a casa do Senhor, e o muro de Jerusalém em redor.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1245,8 +1238,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão amava a Deus, mas ainda sacrificava nos altos. Calvino: O amor imperfeito prefigura a necessidade de Cristo. Crisóstomo: Cristo é o perfeito amor.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> O amor de Cristo nos aperfeiçoa.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Deus fala a Salomão em sonho</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 4</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E foi o rei a Gibeão para sacrificar ali, porque aquele era o principal alto; ofereceu Salomão sobre aquele altar mil holocaustos.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1391,8 +1383,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão acordou e ofereceu sacrifícios. Calvino: A ação prefigura a adoração em resposta à graça. Crisóstomo: Cristo recebe nossa adoração.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Adoramos a Deus em resposta à Sua graça.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão usa a sabedoria de Deus</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 16</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Então vieram duas mulheres prostitutas ao rei, e apresentaram-se diante dele.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1550,8 +1541,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Tememos a Deus e honramos Sua sabedoria.<br>"
 ],
 4: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os leais assessores de Salomão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Assim o rei Salomão reinou sobre todo o Israel.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1624,8 +1614,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Os administradores serviam ao reino. Calvino: A administração prefigura a administração do Reino. Crisóstomo: Cristo governa com justiça.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Servimos a Cristo como administradores.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os prefeitos de Salomão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 7</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Salomão tinha doze provedores sobre todo o Israel, que proviam de víveres o rei e sua casa; cada um provia durante um mês no ano.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1782,8 +1771,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Geber governava sobre as terras conquistadas. Calvino: O governo prefigura o domínio de Cristo. Crisóstomo: Cristo domina sobre todas as nações.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo domina sobre todas as nações.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>As provisões diárias do reino</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 20</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Eram Judá e Israel muitos, como a areia que está à beira-mar em multidão, comendo, bebendo e alegrando-se.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1892,8 +1880,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Os provedores traziam alimento para os animais. Calvino: A provisão abrangente prefigura o cuidado de Deus. Crisóstomo: Cristo cuida de toda a criação.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Deus cuida de todas as nossas necessidades.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O famoso saber de Salomão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 29</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E deu Deus a Salomão sabedoria, e muito grande entendimento, e largueza de coração, como a areia que está na praia do mar.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -1967,8 +1954,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Todas as nações virão a Cristo.<br>"
 ],
 5: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão e o projeto do Templo</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ora, Hirão, rei de Tiro, enviou os seus servos a Salomão, porque ouvira que o haviam ungido rei em lugar de seu pai; pois Hirão sempre amara a Davi.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2113,8 +2099,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão e Hirão fizeram uma aliança de paz. Calvino: A aliança mostra a bênção de Deus. Crisóstomo: Cristo estabelece a nova aliança.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Estamos na nova aliança em Cristo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O corte da madeira e das pedras</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 13</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E o rei Salomão impôs uma leva de homens dentre todo o Israel; e a leva era de trinta mil homens.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2189,8 +2174,7 @@ window.LIVRO_DATA = {
 ],
 
 6: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A construção do Templo</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E sucedeu que, no ano quatrocentos e oitenta depois de saírem os filhos de Israel da terra do Egito, no quarto ano do reinado de Salomão sobre Israel, no mês de Zive (que é o segundo mês), ele começou a edificar a casa do Senhor.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2359,9 +2343,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão terminou o templo. Calvino: A conclusão mostra a fidelidade de Salomão. Crisóstomo: Cristo completou a obra da salvação.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo completou nossa salvação.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O Santo dos Santos</b></i></p>",
-  "<p style='font-size: 0.8rem; text-align: center;'><i>(2Cr 3: 4-14)</i></p>",
-
+    
   "<span style='font-size: 15px;'><b>VERSÍCULO: 15</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E revestiu as paredes da casa por dentro com pranchas de cedro, desde o soalho da casa até às vigas do teto; e cobriu o interior com madeira, e cobriu o soalho da casa com pranchas de cipreste.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2458,8 +2440,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Toda a casa foi revestida de ouro. Calvino: A plenitude mostra a glória de Deus. Crisóstomo: Cristo é a plenitude de Deus.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Em Cristo habita toda a plenitude de Deus.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os querubins</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 23</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E dentro do oráculo fez dois querubins de madeira de oliveira, cada um de dez côvados de altura.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2556,8 +2537,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: O soalho foi revestido de ouro. Calvino: A santidade mostra a pureza de Deus. Crisóstomo: Cristo é santo.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo é santo e puro.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>As portas e o pátio do Templo</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 31</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E para a entrada do oráculo fez portas de madeira de oliveira; a ombreira e os umbrais formavam a quinta parte da parede.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2655,8 +2635,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo completou nossa salvação.<br>"
 ],
 7: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão constrói seu palácio</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Porém Salomão edificou a sua própria casa em treze anos, e acabou toda a sua casa.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2801,8 +2780,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: O átrio grande era cercado de pedras e cedro. Calvino: A acessibilidade mostra a comunhão com Deus. Crisóstomo: Cristo dá acesso ao Pai.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Temos acesso a Deus por Cristo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os elementos do Templo</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 13</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E o rei Salomão mandou buscar a Hirão de Tiro.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2827,9 +2805,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Hirão era habilidoso em trabalhar com bronze. Calvino: A habilidade mostra o dom de Deus. Crisóstomo: Cristo dá dons para o serviço.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Usamos nossos dons para servir a Deus.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>As duas colunas do templo</b></i></p>",
-  "<p style='font-size: 0.8rem; text-align: center;'><i>(2Cr 3:15-17)</i></p>",
-
+    
   "<span style='font-size: 15px;'><b>VERSÍCULO: 15</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Fundiu duas colunas de bronze; a altura de cada coluna era de dezoito côvados, e um fio de doze côvados media a circunferência de cada uma.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2926,9 +2902,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: As colunas foram completadas. Calvino: A conclusão mostra a perfeição da obra. Crisóstomo: Cristo completou a obra da salvação.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo completou nossa salvação.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O Mar de bronze</b></i></p>",
-  "<p style='font-size: 0.8rem; text-align: center;'><i>(2Cr 4:2-5)</i></p>",
-
+    
   "<span style='font-size: 15px;'><b>VERSÍCULO: 23</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Fez também o mar de fundição, de dez côvados de uma borda à outra, redondo ao redor; e a sua altura era de cinco côvados; e um cordão de trinta côvados o cingia ao redor.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -2977,8 +2951,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: O mar de bronze era grande e profundo. Calvino: A capacidade mostra a abundância da purificação. Crisóstomo: Cristo é a fonte de água viva.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos dá água viva.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os pequenos carros de bronze</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 27</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Fez também as dez bases de bronze; o comprimento de cada base era de quatro côvados, e a largura de quatro côvados, e a altura de três côvados.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3135,9 +3108,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Os utensílios foram dispostos ordenadamente. Calvino: A ordem mostra a reverência ao templo. Crisóstomo: Cristo estabelece a ordem do culto.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Adoramos a Deus com ordem e reverência.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Alguns objetos do Templo</b></i></p>",
-  "<p style='font-size: 0.8rem; text-align: center;'><i>(2Cr 4:11; 5:1)</i></p>",
-
+    
   "<span style='font-size: 15px;'><b>VERSÍCULO: 40</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Hirão fez também as pias, e as pás, e as bacias; e acabou de fazer toda a obra que fez para o rei Salomão, para a casa do Senhor:<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3284,9 +3255,7 @@ window.LIVRO_DATA = {
 ],
 
 8: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O traslado da Arca da Aliança</b></i></p>",
-  "<p style='font-size: 0.8rem; text-align: center;'><i>(2Cr 5:2-6; Lv 23:34)</i></p>",
-
+    
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Então Salomão reuniu os anciãos de Israel, e todos os cabeças das tribos, os chefes das casas paternas dos filhos de Israel, diante do rei Salomão em Jerusalém, para fazerem subir a arca do pacto do Senhor da cidade de Davi, que é Sião.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3395,8 +3364,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: A arca continha apenas as tábuas da lei. Calvino: A lei mostra a aliança de Deus. Crisóstomo: Cristo estabelece a nova aliança.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Estamos na nova aliança em Cristo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Deus se manifesta no Templo</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 10</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E sucedeu que, saindo os sacerdotes do santuário, uma nuvem encheu a casa do Senhor,<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3445,8 +3413,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão edificou uma morada eterna para Deus. Calvino: A morada mostra a presença de Deus. Crisóstomo: Cristo habita conosco para sempre.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Deus habita conosco em Cristo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Discurso de Salomão ao povo</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 14</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E o rei virou o rosto, e abençoou toda a congregação de Israel (e toda a congregação de Israel estava em pé);<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3543,8 +3510,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: A arca continha o pacto. Calvino: O pacto mostra a fidelidade de Deus. Crisóstomo: Cristo estabelece a nova aliança.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Estamos na nova aliança em Cristo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A oração de dedicação</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 22</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Salomão se pôs diante do altar do Senhor, na presença de toda a congregação de Israel, e estendeu as suas mãos para o céu;<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3654,9 +3620,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos perdoa.<br>"
 ],
 9: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Deus fala com Salomão de novo</b></i></p>",
-  "<p style='font-size: 0.8rem; text-align: center;'><i>(2Cr 7:11-22)</i></p>",
-
+    
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Sucedeu, pois, que, acabando Salomão de edificar a casa do Senhor, e a casa real, e tudo o que desejou fazer,<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3765,8 +3729,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: A idolatria trouxe o juízo. Calvino: A causa mostra a justiça de Deus. Crisóstomo: Cristo julgará os que O rejeitam.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> A idolatria traz juízo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A insatisfação de Hirão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 10</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E sucedeu que, ao fim de vinte anos, havendo Salomão edificado as duas casas, a casa do Senhor e a casa real,<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3827,9 +3790,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Hirão enviou muito ouro a Salomão. Calvino: A generosidade mostra a aliança entre os reis. Crisóstomo: Cristo nos dá todas as coisas.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Deus nos dá generosamente.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O uso do trabalho escravo</b></i></p>",
-  "<p style='font-size: 0.8rem; text-align: center;'><i>(2Cr 8:3-18)</i></p>",
-
+    
   "<span style='font-size: 15px;'><b>VERSÍCULO: 15</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E esta é a razão da leva de homens que o rei Salomão levantou: para edificar a casa do Senhor, e a sua própria casa, e Milo, e o muro de Jerusalém, e Hazor, e Megido, e Gezer.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3950,8 +3911,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: A filha de Faraó mudou-se. Calvino: A separação mostra a distinção do povo de Deus. Crisóstomo: Cristo nos chama para fora do mundo.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Somos separados para Cristo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O culto a Deus no Templo</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 25</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Três vezes por ano Salomão oferecia holocaustos e ofertas pacíficas sobre o altar que edificara ao Senhor, e queimava incenso sobre o altar que estava perante o Senhor; assim acabou a casa.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -3964,8 +3924,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão oferecia sacrifícios regularmente. Calvino: A adoração mostra a devoção de Salomão. Crisóstomo: Cristo é adorado.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Adoramos a Cristo regularmente.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão investe em navios</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 26</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Fez também o rei Salomão uma frota de navios em Eziom-Geber, que está junto a Elate, na praia do Mar Vermelho, na terra de Edom.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -4004,8 +3963,7 @@ window.LIVRO_DATA = {
 ],
 
 10: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A visita da rainha de Sabá</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ouvindo, pois, a rainha de Sabá a fama de Salomão, no que pertencia ao nome do Senhor, veio prová-lo com perguntas difíceis.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -4162,8 +4120,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Salomão deu generosamente à rainha. Calvino: A generosidade mostra a riqueza de Salomão. Crisóstomo: Cristo nos dá tudo.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Deus nos dá generosamente.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>As riquezas do rei Salomão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 14</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ora, o peso do ouro que se trazia a Salomão cada ano era de seiscentos e sessenta e seis talentos de ouro,<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -4357,8 +4314,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Somos enviados a todas as nações.<br>"
 ],
 11: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O erro de Salomão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ora, o rei Salomão amou muitas mulheres estrangeiras, além da filha de Faraó: moabitas, amonitas, edomitas, sidônias e heteias;<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -4515,8 +4471,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Deus preservou uma tribo para Judá. Calvino: A preservação mostra a fidelidade de Deus. Crisóstomo: Cristo preserva Seu povo.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Deus preserva Seu povo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Surgem os inimigos de Salomão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 14</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Levantou, pois, o Senhor um adversário a Salomão, a Hadade, o edomita; ele era da linhagem real em Edom.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -4841,8 +4796,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Jeroboão fugiu para o Egito. Calvino: A fuga mostra a providência de Deus. Crisóstomo: Cristo é nosso refúgio.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Encontramos refúgio em Cristo.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A morte do rei Salomão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 41</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Quanto ao restante dos atos de Salomão, e a tudo o que fez, e à sua sabedoria, porventura não estão escritos no livro dos atos de Salomão?<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -4881,8 +4835,7 @@ window.LIVRO_DATA = {
 ],
 
 12: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A divisão do reino</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Roboão foi a Siquém, porque todo o Israel tinha vindo a Siquém para o fazer rei.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -5184,8 +5137,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo edifica Sua Igreja.<br>"
 ],
 14: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A doença de Abias e a profecia contra Jeroboão</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Naquele tempo Abias, filho de Jeroboão, adoeceu.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -5426,8 +5378,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Jeroboão reinou 22 anos. Calvino: A sucessão mostra a continuidade do pecado. Crisóstomo: Cristo nos liberta do pecado.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos liberta do ciclo do pecado.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Roboão em Judá</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 21</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Roboão, filho de Salomão, reinou em Judá; era Roboão de quarenta e um anos quando começou a reinar, e reinou dezessete anos em Jerusalém, a cidade que o Senhor escolhera dentre todas as tribos de Israel, para pôr ali o seu nome; e sua mãe se chamava Naamá, amonita.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -5562,8 +5513,7 @@ window.LIVRO_DATA = {
 ],
 
 15: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Abias em Judá</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ora, no décimo oitavo ano do rei Jeroboão, filho de Nebate, começou Abias a reinar sobre Judá.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -5660,8 +5610,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Asa sucedeu Abias. Calvino: A sucessão mostra a continuidade da casa de Davi. Crisóstomo: Cristo nos restaura.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos restaura.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Asa em Judá</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 9</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ora, no vigésimo ano de Jeroboão, rei de Israel, começou Asa a reinar sobre Judá.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -5854,8 +5803,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Jeosafá sucedeu Asa. Calvino: A sucessão mostra a continuidade da casa de Davi. Crisóstomo: Cristo é o descendente de Davi.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo é o descendente de Davi que reina para sempre.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Nadabe em Israel</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 25</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Nadabe, filho de Jeroboão, começou a reinar sobre Israel no segundo ano de Asa, rei de Judá, e reinou sobre Israel dois anos.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -5952,8 +5900,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: A guerra continuou. Calvino: O conflito mostra a divisão. Crisóstomo: Cristo nos dá vitória.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos dá vitória.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Baasa em Israel</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 33</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> No terceiro ano de Asa, rei de Judá, começou Baasa, filho de Aías, a reinar sobre todo o Israel em Tirza, e reinou vinte e quatro anos.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -5980,8 +5927,7 @@ window.LIVRO_DATA = {
 ],
 
 16: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Profecia contra Baasa e seu reinado</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Então veio a palavra do Senhor a Jeú, filho de Hanani, contra Baasa, dizendo:<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -6066,8 +6012,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: A profecia contra Baasa foi confirmada. Calvino: A confirmação mostra a fidelidade de Deus. Crisóstomo: Cristo cumpre a palavra.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> A palavra de Deus é fiel.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Elá, Zinri e Onri em Israel</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 8</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> No vigésimo sexto ano de Asa, rei de Judá, começou Elá, filho de Baasa, a reinar sobre Israel em Tirza, e reinou dois anos.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -6320,8 +6265,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Acabe sucedeu Onri. Calvino: A sucessão mostra a continuidade. Crisóstomo: Cristo nos liberta.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos liberta do pecado.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Acabe em Israel</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 29</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Acabe, filho de Onri, começou a reinar sobre Israel no trigésimo oitavo ano de Asa, rei de Judá; e Acabe, filho de Onri, reinou sobre Israel em Samaria vinte e dois anos.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -6395,8 +6339,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Obedecemos à palavra de Deus.<br>"
 ],
 17: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Elias anuncia a seca e é sustentado</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Elias, o tisbita, dos moradores de Gileade, disse a Acabe: Vive o Senhor, Deus de Israel, perante cuja face estou, que nestes anos nem orvalho nem chuva haverá, senão segundo a minha palavra.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -6687,8 +6630,7 @@ window.LIVRO_DATA = {
 ],
 
 18: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Elias e os profetas de Baal</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E sucedeu que, passados muitos dias, veio a palavra do Senhor a Elias, no terceiro ano, dizendo: Vai, apresenta-te a Acabe; porque darei chuva sobre a terra.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -7242,8 +7184,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> O Espírito Santo nos capacita.<br>"
 ],
 19: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A fuga de Elias e o encontro com Deus</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Acabe, porém, contou a Jezabel tudo o que Elias havia feito, e como matara todos os profetas à espada.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -7498,8 +7439,7 @@ window.LIVRO_DATA = {
 ],
 
 20: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A guerra contra Ben-Hadade</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Ora, Ben-Hadade, rei da Síria, ajuntou todo o seu exército; e havia trinta e dois reis com ele, e cavalos e carros; e subiu, e sitiou a Samaria, e guerreou contra ela.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -8018,8 +7958,7 @@ window.LIVRO_DATA = {
 ],
 
 21: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>A vinha de Nabote</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E sucedeu depois destas coisas que, tendo Nabote, o jizreelita, uma vinha em Jizreel, junto ao palácio de Acabe, rei de Samaria,<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -8370,8 +8309,7 @@ window.LIVRO_DATA = {
 ],
 
 22: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O profeta Micaías e a morte de Acabe</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 1</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E três anos houve sem guerra entre a Síria e Israel.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -8852,8 +8790,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Acazias sucedeu Acabe. Calvino: A sucessão mostra a continuidade. Crisóstomo: Cristo nos liberta.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo nos liberta do pecado.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Jeosafá em Judá</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 41</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> E Jeosafá, filho de Asa, começou a reinar sobre Judá no quarto ano de Acabe, rei de Israel.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
@@ -8974,8 +8911,7 @@ window.LIVRO_DATA = {
   "<b><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></b> Rashi: Jeorão sucedeu Jeosafá. Calvino: A sucessão mostra a continuidade. Crisóstomo: Cristo reina para sempre.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>APLICAÇÃO:</span></b> Cristo é o Rei eterno.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Acazias em Israel</b></i></p>",
-
+  
   "<span style='font-size: 15px;'><b>VERSÍCULO: 51</b></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>TEXTO:</span></b> Acazias, filho de Acabe, começou a reinar sobre Israel em Samaria no décimo sétimo ano de Jeosafá, rei de Judá, e reinou dois anos sobre Israel.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<b><span style='color: #d4af37;'>ORIGINAL:</span></b><br>",
