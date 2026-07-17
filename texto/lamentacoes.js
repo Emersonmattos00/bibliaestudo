@@ -6,7 +6,7 @@ window.LIVRO_DATA = {
   dados: {
 
 1: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Eis Jerusalém: Destruída e deserta</b></i></p>",
+  
   "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Como está sentada solitária aquela cidade que era tão populosa! Tornou-se como viúva a que era grande entre as nações; a princesa entre as províncias tornou-se tributária!<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -27,7 +27,7 @@ window.LIVRO_DATA = {
   "🇬🇷 <strong>Septuaginta (LXX):</strong> Κλαίουσα ἔκλαυσεν ἐν νυκτί, καὶ δάκρυα αὐτῆς ἐπὶ παρειᾶς αὐτῆς· οὐκ ἔστιν ὁ παρακαλῶν αὐτὴν ἀπὸ πάντων τῶν ἀγαπώντων αὐτήν· πάντες οἱ φιλοῦντες αὐτὴν ἠθέτησαν ἐν αὐτῇ, ἐγένοντο αὐτῇ εἰς ἐχθρούς.<br>",
   "🇻🇦 <strong>Vulgata:</strong> Plorans ploravit in nocte et lacrimae eius in maxillis eius non est qui consoletur eam ex omnibus caris eius omnes amici eius spreverunt eam et facti sunt ei inimici<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ESTUDO LEXICAL:</span></strong> <em>בָּכוֹ תִבְכֶּה</em> – 'chora amargamente' – repetição para ênfase, choro intenso. <em>דִּמְעָתָהּ</em> – 'lágrimas' – lágrimas. <em>עַל לֶחֱיָהּ</em> – 'faces' – bochechas. <em>מְנַחֵם</em> – 'consolador' – confortador. <em>אֹהֲבֶיהָ</em> – 'amantes' – aqueles que a amavam. <em>בָּגְדוּ</em> – 'aleivosamente' – traíram, agiram perfidamente.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
-  "<strong><span style='color: #d4af37;'>SIMBOLISMO:</span></strong> Jerusalém é personificada como uma mulher que chora sem consolo. Seus "amantes" (nações aliadas) a traíram. A noite simboliza a escuridão do sofrimento.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
+  "<strong><span style='color: #d4af37;'>SIMBOLISMO:</span></strong> Jerusalém é personificada como uma mulher que chora sem consolo. Seus 'amantes' (nações aliadas) a traíram. A noite simboliza a escuridão do sofrimento.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></strong> Jerusalém buscou alianças com outras nações, mas elas a abandonaram. A traição dos aliados agrava a dor.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> Confiar em alianças humanas em vez de Deus traz desapontamento. Só Deus é fiel.<br>",
 
@@ -272,7 +272,7 @@ window.LIVRO_DATA = {
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> Deus é o juiz justo. Entregue a vingança a Ele e confie em Sua justiça.<br>"
 ],
 2: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O sofrer de Sião procede de Deus</b></i></p>",
+  
   "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Como cobriu o Senhor de nuvens na sua ira a filha de Sião! Derribou do céu à terra a glória de Israel, e não se lembrou do escabelo de seus pés no dia da sua ira.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -330,7 +330,7 @@ window.LIVRO_DATA = {
   "🇻🇦 <strong>Vulgata:</strong> Factus est Dominus quasi inimicus praecipitavit Israhel praecipitavit omnia moenia eius dissipavit munitiones eius et replevit in filia Iuda humiliatum et humilem<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ESTUDO LEXICAL:</span></strong> <em>כְּאוֹיֵב</em> – 'como inimigo' – como inimigo. <em>בִּלַּע</em> – 'devorou' – engolir, devorar. <em>אַרְמְנוֹתֶיהָ</em> – 'palácios' – palácios, fortalezas. <em>שִׁחֵת</em> – 'destruiu' – destruir, arruinar. <em>תַּאֲנִיָּה</em> – 'pranto' – pranto, lamentação. <em>וַאֲנִיָּה</em> – 'lamentação' – gemido, lamentação.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>SIMBOLISMO:</span></strong> O Senhor se tornou um inimigo para Israel, devorando palácios e fortalezas, multiplicando pranto e lamentação.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
-  "<strong><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></strong> A destruição é total. A palavra "devorou" é repetida para ênfase.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
+  "<strong><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></strong> A destruição é total. A palavra 'devorou' é repetida para ênfase.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> Quando Deus se torna inimigo, a destruição é inevitável. Busque a reconciliação através de Cristo.<br>",
 
   "<span style='font-size: 15px;'><strong>VERSÍCULO: 6</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
@@ -538,7 +538,7 @@ window.LIVRO_DATA = {
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> O juízo de Deus é completo, mas Sua misericórdia oferece esperança.<br>"
 ],
 3: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O profeta prega arrependimento</b></i></p>",
+  
   "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Eu sou o homem que viu a aflição sob a vara do seu furor.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -1007,7 +1007,7 @@ window.LIVRO_DATA = {
   "<strong><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></strong> A responsabilidade pelo sofrimento é do pecador, não de Deus.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> Examine seus próprios pecados antes de reclamar de Deus.<br>",
 
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Esperança pela bondade de Deus</b></i></p>",
+  
   "<span style='font-size: 15px;'><strong>VERSÍCULO: 40</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Esquadrinhemos os nossos caminhos, e provemo-los, e voltemos ao Senhor.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -1220,7 +1220,7 @@ window.LIVRO_DATA = {
   "🇬🇷 <strong>Septuaginta (LXX):</strong> ἤγγισας ἐν ἡμέρᾳ ἐπικαλέσομαί σε· εἶπας, μὴ φοβοῦ.<br>",
   "🇻🇦 <strong>Vulgata:</strong> adpropinquasti in die quando invocavi te dixisti ne timeas<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ESTUDO LEXICAL:</span></strong> <em>קָרַבְתָּ</em> – 'aproximaste' – aproximar, chegar perto. <em>בְּיוֹם</em> – 'no dia' – no dia. <em>אֶקְרָאֶךָּ</em> – 'invoquei' – invocar, chamar. <em>אָמַרְתָּ</em> – 'disseste' – dizer, falar. <em>אַל</em> – 'não' – não. <em>תִּירָא</em> – 'temas' – temer, ter medo.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
-  "<strong><span style='color: #d4af37;'>SIMBOLISMO:</span></strong> Deus se aproxima e diz: "Não temas".<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
+  "<strong><span style='color: #d4af37;'>SIMBOLISMO:</span></strong> Deus se aproxima e diz: 'Não temas'.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>COMENTÁRIOS EXEGÉTICOS:</span></strong> A presença de Deus traz conforto e coragem.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> Quando Deus está perto, não há motivo para temer.<br>",
 
@@ -1333,7 +1333,7 @@ window.LIVRO_DATA = {
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> A justiça de Deus prevalecerá. Confie Nele.<br>"
 ],
 4: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>O lamento do povo no cativieiro</b></i></p>",
+  
   "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Como se escureceu o ouro! como se mudou o ouro finíssimo! as pedras do santuário estão derramadas pelas esquinas de todas as ruas.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
@@ -1599,7 +1599,7 @@ window.LIVRO_DATA = {
   "<strong><span style='color: #d4af37;'>APLICAÇÃO:</span></strong> O juízo de Deus é justo e Ele restaurará Seu povo.<br>"
 ],
 5: [
-  "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os fiéis clamam por misericórdia</b></i></p>",
+  
   "<span style='font-size: 15px;'><strong>VERSÍCULO: 1</strong></span><br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>TEXTO:</span></strong> Lembra-te, ó Senhor, do que nos tem sucedido; considera e olha para o nosso opróbrio.<br><hr style='border: 1px solid rgba(212, 175, 55, 0.2);'><br>",
   "<strong><span style='color: #d4af37;'>ORIGINAL:</span></strong><br>",
