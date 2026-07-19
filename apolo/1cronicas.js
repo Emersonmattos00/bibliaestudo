@@ -757,7 +757,7 @@
     "<b>8</b> Esses nasceram dos gigantes em Gate; e caíram pela mão de Davi e pela mão de seus servos."
     ],
 21: [
-    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi nu era o povo</b></i></p>",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi numera o povo</b></i></p>",
     "<b>1</b> Então Satanás se levantou contra Israel, e incitou Davi a numerar Israel.",
     "<b>2</b> E disse Davi a Joabe e aos chefes do povo: Ide, numerai Israel desde Berseba até Dã, e trazei-mo, para que eu saiba o seu número.",
     "<b>3</b> Respondeu Joabe: O Senhor acrescente ao seu povo cem vezes tanto como ele é; porventura, ó rei meu senhor, não são todos servos de meu senhor? Por que, pois, requer isso o meu senhor? Por que seria isso causa de delito a Israel?",
