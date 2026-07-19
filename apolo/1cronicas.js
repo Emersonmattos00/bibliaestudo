@@ -6,6 +6,7 @@
   dados: {
 
 1: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Genealogia desde Adão até Noé</b></i></p>",
     "<b>1</b> Adão, Sete, Enos;",
     "<b>2</b> Cainã, Maalalel, Jarede;",
     "<b>3</b> Enoque, Matusalém, Lameque;",
@@ -62,8 +63,10 @@
     "<b>54</b> o príncipe Magdiel, o príncipe Irão; estes são os príncipes de Edom."
     ],
 2: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os doze filhos de Jacó</b></i></p>",
     "<b>1</b> Estes são os filhos de Israel: Rúben, Simeão, Levi, Judá, Issacar, Zebulom,",
     "<b>2</b> Dã, José, Benjamim, Naftali, Gade e Aser.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Descendentes de Judá</b></i></p>",
     "<b>3</b> Os filhos de Judá: Er, Onã e Selá; estes três lhe nasceram da filha de Suá, a cananeia. Er, o primogênito de Judá, era mau aos olhos do Senhor, pelo que o Senhor o matou.",
     "<b>4</b> E Tamar, sua nora, lhe deu à luz Perez e Zerá. Todos os filhos de Judá foram cinco.",
     "<b>5</b> Os filhos de Perez: Hezrom e Hamul.",
@@ -119,6 +122,7 @@
     "<b>55</b> E as famílias dos escribas que habitavam em Jabez: os tiratitas, os simeatitas e os sucatitas; estes são os queneus, que vieram de Hamate, pai da casa de Recabe."
     ],
 3: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Descendentes de Davi</b></i></p>",
     "<b>1</b> Estes foram os filhos de Davi que lhe nasceram em Hebrom: o primogênito Amnom, de Ainoã, a jizreelita; o segundo, Daniel, de Abigail, a carmelita;",
     "<b>2</b> o terceiro, Absalão, filho de Maaca, filha de Talmai, rei de Gesur; o quarto, Adonias, filho de Hagite;",
     "<b>3</b> o quinto, Sefatias, de Abital; o sexto, Itreão, de Eglá, sua mulher.",
@@ -145,6 +149,7 @@
     "<b>24</b> Os filhos de Elioenai: Hodavias, Eliasibe, Pelaías, Acube, Joanã, Dalaías e Anani, sete."
     ],
 4: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Descendentes de Judá</b></i></p>",
     "<b>1</b> Os filhos de Judá: Perez, Hezrom, Carmi, Hur e Sobal.",
     "<b>2</b> Reaías, filho de Sobal, gerou a Jaate; Jaate gerou a Aumai e a Laade. Estas são as famílias dos zoratitas.",
     "<b>3</b> Estes foram os filhos de Etã: Jezreel, Isma e Idbás; e o nome da irmã deles era Hazlelponi;",
@@ -190,6 +195,7 @@
     "<b>43</b> E feriram o resto dos amalequitas que escapara, e ali habitaram até o dia de hoje."
     ],
 5: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os filhos de Rúben</b></i></p>",
     "<b>1</b> Quanto aos filhos de Rúben, o primogênito de Israel (porque ele era o primogênito; mas, porquanto profanara a cama de seu pai, a sua primogenitura foi dada aos filhos de José, filho de Israel; de modo que a genealogia não é contada segundo a primogenitura.",
     "<b>2</b> Porquanto Judá prevaleceu sobre seus irmãos, e dele proveio o príncipe, mas a primogenitura foi de José),",
     "<b>3</b> os filhos de Rúben, primogênito de Israel, foram: Enoque, Palu, Hezrom e Carmi.",
@@ -217,7 +223,8 @@
     "<b>25</b> Mas transgrediram contra o Deus de seus pais, e se prostituíram após os deuses dos povos da terra, os quais Deus destruíra de diante deles.",
     "<b>26</b> Pelo que o Deus de Israel excitou o espírito de Pul, rei da Assíria, e o espírito de Tilgate-Pilneser, rei da Assíria, que levou cativos os rubenitas, os gaditas, e a meia tribo de Manassés, e os trouxe a Hala, a Habor, a Hara e ao rio Gozã, até o dia de hoje."
     ],
-6: [
+6: [   
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Descendentes de Levi, seu ministérioe sua cidade</b></i></p>",
     "<b>1</b> Os filhos de Levi: Gérson, Coate e Merari.",
     "<b>2</b> Os filhos de Coate: Anrão, Izar, Hebrom e Uziel.",
     "<b>3</b> Os filhos de Anrão: Arão, Moisés e Miriã. Os filhos de Arão: Nadabe, Abiú, Eleazar e Itamar.",
@@ -301,11 +308,13 @@
     "<b>81</b> Hesbom com os seus arredores, e Jazer com os seus arredores."
     ],
 7: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Descendentes de Issacar</b></i></p>",
     "<b>1</b> Os filhos de Issacar: Tolá, Puá, Jasube e Sinrom, quatro.",
     "<b>2</b> Os filhos de Tolá: Uzi, Refaías, Jeriel, Jamai, Jibsão e Samuel, chefes das casas de seus pais, a saber, de Tolá; homens valentes nas suas gerações; o seu número nos dias de Davi foi vinte e dois mil e seiscentos.",
     "<b>3</b> Os filhos de Uzi: Izraías; e os filhos de Izraías: Micael, Obadias, Joel e Issias; todos eles cinco, chefes.",
     "<b>4</b> E com eles, segundo as suas gerações, segundo as casas de seus pais, havia trinta e seis mil homens em exércitos, porque tinham muitas mulheres e filhos.",
     "<b>5</b> Seus irmãos, em todas as famílias de Issacar, homens valentes, contados todos nas genealogias, eram oitenta e sete mil.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>De Benjamim</b></i></p>",
     "<b>6</b> Os filhos de Benjamim: Belá, Bequer e Jediael, três.",
     "<b>7</b> Os filhos de Belá: Esbom, Uzi, Uziel, Jerimote e Iri, cinco chefes das casas de seus pais, homens valentes; foram contados vinte e dois mil e trinta e quatro nas genealogias.",
     "<b>8</b> Os filhos de Bequer: Zemira, Joás, Eliezer, Elioenai, Onri, Jerimote, Abias, Anatote e Almete; todos esses foram filhos de Bequer.",
@@ -314,6 +323,7 @@
     "<b>11</b> Todos esses foram filhos de Jediael, chefes das casas de seus pais, homens valentes, dezessete mil e duzentos, capazes de sair à guerra e à peleja.",
     "<b>12</b> Supim e Hupim eram filhos de Ir; e Husim, filho de Aquer.",
     "<b>13</b> Os filhos de Naftali: Jaziel, Guni, Jezer e Salum, filhos de Bila.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>De Manassés</b></i></p>",
     "<b>14</b> Os filhos de Manassés: Asriel, que sua concubina, a arameia, deu à luz; ela deu à luz a Maquir, pai de Gileade.",
     "<b>15</b> Maquir tomou por mulher a irmã de Hupim e Supim, cujo nome era Maaca; e o nome do segundo foi Zelofeade; e Zelofeade teve filhas.",
     "<b>16</b> Maaca, mulher de Maquir, deu à luz um filho, a quem chamou Peres; e o nome de seu irmão foi Seres; e seus filhos foram Ulão e Requém.",
@@ -330,6 +340,7 @@
     "<b>27</b> Num, seu filho, e Josué, seu filho.",
     "<b>28</b> E as suas possessões e habitações foram Betel e suas aldeias; e ao oriente, Naarã; e ao ocidente, Gezer e suas aldeias; Siquém e suas aldeias, até Gaza e suas aldeias;",
     "<b>29</b> e nos limites dos filhos de Manassés, Bete-Seã e suas aldeias, Taanaque e suas aldeias, Megido e suas aldeias, Dor e suas aldeias. Nesses lugares habitaram os filhos de José, filho de Israel.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>De Aser</b></i></p>",
     "<b>30</b> Os filhos de Aser: Imná, Isvá, Isvi, Berias e Sera, irmã deles.",
     "<b>31</b> Os filhos de Berias: Héber e Malquiel; este foi pai de Birzavite.",
     "<b>32</b> Héber gerou a Jaflete, a Somer e a Hotão, e a Suá, irmã deles.",
@@ -343,6 +354,7 @@
     "<b>40</b> Todos esses foram filhos de Aser, chefes das casas de seus pais, escolhidos, homens valentes, chefes dos príncipes; e o seu número, contado nas genealogias para o serviço de guerra, foi vinte e seis mil homens."
     ],
 8: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Descendentes de Benjamim e de Saul</b></i></p>",
     "<b>1</b> Benjamim gerou a Belá, seu primogênito, a Asbel, o segundo, a Aará, o terceiro,",
     "<b>2</b> a Noá, o quarto, e a Rafa, o quinto.",
     "<b>3</b> Os filhos de Belá: Adar, Gera, Abiúde,",
@@ -385,6 +397,7 @@
     "<b>40</b> Os filhos de Ulão foram homens valentes, flecheiros, e tiveram muitos filhos, e filhos de filhos, cento e cinquenta. Todos esses foram dos filhos de Benjamim."
     ],
 9: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Habitantes de Jerusalém depois da volta do cativeiro</b></i></p>",
     "<b>1</b> Assim todo o Israel foi contado nas genealogias; e eis que estão escritos no livro dos reis de Israel e Judá, que foram levados cativos para Babilônia por causa da sua transgressão.",
     "<b>2</b> Os primeiros habitantes que viviam nas suas possessões, nas suas cidades, eram os israelitas, os sacerdotes, os levitas e os netinins.",
     "<b>3</b> Em Jerusalém habitaram alguns dos filhos de Judá, dos filhos de Benjamim e dos filhos de Efraim e Manassés:",
@@ -431,6 +444,7 @@
     "<b>44</b> Azel teve seis filhos, cujos nomes foram: Azricão, Bocru, Ismael, Searias, Obadias e Hanã; estes foram os filhos de Azel."
     ],
 10: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A morte de Saul e de seus filhos</b></i></p>",
     "<b>1</b> Ora, os filisteus pelejaram contra Israel; e os homens de Israel fugiram de diante dos filisteus, e caíram mortos no monte Gilboa.",
     "<b>2</b> E os filisteus perseguiram a Saul e a seus filhos; e mataram a Jônatas, a Abinadabe e a Malquisua, filhos de Saul.",
     "<b>3</b> E a peleja se agravou contra Saul, e os flecheiros o alcançaram, e ele ficou ferido pelos flecheiros.",
@@ -447,6 +461,7 @@
     "<b>14</b> e não inquiri ao Senhor; pelo que o matou, e transferiu o reino a Davi, filho de Jessé."
     ],
 11: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi é ungido rei</b></i></p>",
     "<b>1</b> Então todo o Israel se ajuntou a Davi em Hebrom, dizendo: Eis que somos teus ossos e tua carne.",
     "<b>2</b> Outrora, quando Saul ainda reinava, eras tu o que fazia sair e entrar a Israel; e o Senhor teu Deus te disse: Tu apascentarás o meu povo Israel, e tu serás príncipe sobre o meu povo Israel.",
     "<b>3</b> Assim todos os anciãos de Israel vieram ao rei, a Hebrom; e Davi fez com eles aliança em Hebrom perante o Senhor; e ungiram a Davi rei sobre Israel, conforme a palavra do Senhor por intermédio de Samuel.",
@@ -456,6 +471,7 @@
     "<b>7</b> E Davi habitou na fortaleza; por isso lhe chamaram a cidade de Davi.",
     "<b>8</b> E edificou a cidade em redor, desde Milo em diante; e Joabe reparou o resto da cidade.",
     "<b>9</b> E Davi ia cada vez mais aumentando, porque o Senhor dos exércitos era com ele.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os poderosos de Davi</b></i></p>",
     "<b>10</b> Estes são os chefes dos valentes que Davi tinha, e que o apoiaram fortemente no seu reino, com todo o Israel, para o fazerem rei, segundo a palavra do Senhor concernente a Israel.",
     "<b>11</b> Este é o número dos valentes que Davi tinha: Jasobeão, filho de Hacmoni, chefe dos capitães; este, brandindo a sua lança contra trezentos, de uma vez os matou.",
     "<b>12</b> Depois dele, Eleazar, filho de Dodó, aoíta, era um dos três valentes.",
@@ -496,6 +512,7 @@
     "<b>47</b> Eliel, Obede e Jaasiel, o mezobaíta."
     ],
 12: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os que vieram a Davi em Ziclague</b></i></p>",
     "<b>1</b> Estes são os que vieram a Davi em Ziclague, quando ele ainda se conservava afastado por causa de Saul, filho de Quis; e eram dos valentes que o ajudaram na guerra.",
     "<b>2</b> Eles usavam o arco, e com a mão direita e com a esquerda atiravam pedras e flechas com o arco; eram dos irmãos de Saul, benjamitas.",
     "<b>3</b> O chefe era Aiezer, depois Joás, filhos de Semaá, o gibeatita; Jeziel e Pelete, filhos de Azmavete; Beraca e Jeú, o anatotita;",
@@ -518,6 +535,7 @@
     "<b>20</b> Indo Davi para Ziclague, passaram para ele, de Manassés: Adna, Jozabade, Jediael, Micael, Jozabade, Eliú e Ziletai, chefes de milhares em Manassés.",
     "<b>21</b> E ajudaram a Davi contra aquela tropa de saqueadores, porque todos eram homens valentes, e foram capitães no exército.",
     "<b>22</b> Porque naquele tempo, dia após dia, vinha gente ajudar a Davi, até que se fez um grande exército, como o exército de Deus.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os que vieram a Davi em Hebrom</b></i></p>",
     "<b>23</b> Este é o número dos homens armados para a guerra, que vieram a Davi em Hebrom, para lhe entregar o reino de Saul, conforme a palavra do Senhor.",
     "<b>24</b> Dos filhos de Judá, que traziam escudo e lança, seis mil e oitocentos, armados para a guerra.",
     "<b>25</b> Dos filhos de Simeão, homens valentes para a guerra, sete mil e cem.",
@@ -538,6 +556,7 @@
     "<b>40</b> Até os de Issacar, Zebulom e Naftali trouxeram pão sobre jumentos, sobre camelos, sobre mulas e sobre bois, provisão de farinha, figos pastosos, passas, vinho, azeite, bois e ovelhas em abundância; porque havia alegria em Israel."
     ],
 13: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A arca é depositada em casa de Obede-Edom</b></i></p>",
     "<b>1</b> Davi consultou os capitães de milhares e de centenas, isto é, todos os chefes.",
     "<b>2</b> E disse Davi a toda a congregação de Israel: Se bem vos parece, e se isto vem do Senhor nosso Deus, enviemos depressa mensageiros a todos os nossos irmãos em toda a terra de Israel, como também aos sacerdotes e levitas nas suas cidades e arredores, para que se ajuntem conosco;",
     "<b>3</b> e tornemos a trazer para nós a arca do nosso Deus; pois não a buscamos nos dias de Saul.",
@@ -554,13 +573,16 @@
     "<b>14</b> E a arca de Deus ficou com a família de Obede-Edom, três meses em sua casa; e o Senhor abençoou a casa de Obede-Edom e tudo o que lhe pertencia."
     ],
 14: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi faz acordo com Hirão</b></i></p>",
     "<b>1</b> Então Hirão, rei de Tiro, enviou mensageiros a Davi, e madeira de cedro, com pedreiros e carpinteiros, para lhe edificarem uma casa.",
     "<b>2</b> E entendeu Davi que o Senhor o havia confirmado rei sobre Israel; porque o seu reino se tinha muito exaltado por amor do seu povo Israel.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As mulheres de Davi</b></i></p>",
     "<b>3</b> E Davi tomou ainda mulheres em Jerusalém, e gerou mais filhos e filhas.",
     "<b>4</b> Estes são os nomes dos filhos que lhe nasceram em Jerusalém: Samua, Sobabe, Natã, Salomão,",
     "<b>5</b> Ibar, Elisua, Elpalete,",
     "<b>6</b> Nogá, Nefegue, Jafia,",
     "<b>7</b> Elisama, Beeliada e Elifelete.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As vitórias de Davi sobre os filisteus</b></i></p>",
     "<b>8</b> Quando os filisteus ouviram que Davi havia sido ungido rei sobre todo o Israel, todos os filisteus subiram para o buscar; mas Davi o soube e saiu-lhes ao encontro.",
     "<b>9</b> Ora, os filisteus tinham vindo, e se haviam espalhado pelo vale de Refaim.",
     "<b>10</b> Então Davi consultou a Deus, dizendo: Subirei contra os filisteus? e entregar-mos-ás nas mãos? Respondeu-lhe o Senhor: Sobe, porque eu os entregarei nas tuas mãos.",
@@ -573,6 +595,7 @@
     "<b>17</b> Assim a fama de Davi se espalhou por todas as terras; e o Senhor fez com que todas as nações o temessem."
     ],
 15: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A arca da aliança é levada para Jerusalém</b></i></p>",
     "<b>1</b> Davi fez para si casas na cidade de Davi; e preparou um lugar para a arca de Deus, e armou-lhe uma tenda.",
     "<b>2</b> Então disse Davi: A arca de Deus não deve ser carregada senão pelos levitas; porque o Senhor os escolheu para levarem a arca de Deus e para o servirem eternamente.",
     "<b>3</b> E Davi convocou todo o Israel a Jerusalém, para fazer subir a arca do Senhor ao lugar que lhe tinha preparado.",
@@ -607,6 +630,7 @@
     "<b>1</b> Assim trouxeram a arca de Deus, e a puseram no meio da tenda que Davi lhe tinha armado; e ofereceram holocaustos e ofertas pacíficas perante Deus.",
     "<b>2</b> E quando Davi acabou de oferecer os holocaustos e as ofertas pacíficas, abençoou o povo em nome do Senhor.",
     "<b>3</b> E repartiu a cada um de Israel, tanto homem como mulher, a cada um um bolo de pão, um bom pedaço de carne e um bolo de passas.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ação de graças e cântico de Davi</b></i></p>",
     "<b>4</b> E designou alguns dos levitas para ministrarem diante da arca do Senhor, e para celebrarem, e louvarem, e darem graças ao Senhor, Deus de Israel.",
     "<b>5</b> Asafe era o chefe, e Zacarias era o segundo; depois Jeiel, Semiramote, Jeiel, Matitias, Eliabe, Benaías, Obede-Edom e Jeiel, com saltérios e harpas; e Asafe fazia ressoar os címbalos;",
     "<b>6</b> e Benaías e Jaaziel, os sacerdotes, tocavam continuamente as trombetas perante a arca do pacto de Deus.",
@@ -649,6 +673,7 @@
     "<b>43</b> Então todo o povo se foi, cada um para a sua casa; e Davi voltou para abençoar a sua casa."
     ],
 17: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi deseja edificar o templo</b></i></p>",
     "<b>1</b> Sucedeu que, estando Davi já morando na sua casa, disse ele ao profeta Natã: Eis que eu moro numa casa de cedro, mas a arca do pacto do Senhor está debaixo de cortinas.",
     "<b>2</b> E Natã disse a Davi: Faze tudo o que está no teu coração, porque Deus é contigo.",
     "<b>3</b> Naquela mesma noite veio a palavra de Deus a Natã, dizendo:",
@@ -664,6 +689,7 @@
     "<b>13</b> Eu lhe serei por pai, e ele me será por filho; e não retirarei dele a minha benignidade, como a retirei daquele que foi antes de ti;",
     "<b>14</b> mas o estabelecerei para sempre na minha casa e no meu reino; e o seu trono será firme para sempre.",
     "<b>15</b> Conforme todas estas palavras, e conforme toda esta visão, assim falou Natã a Davi.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A oração de Davi</b></i></p>",
     "<b>16</b> Então entrou o rei Davi, e sentou-se perante o Senhor, e disse: Quem sou eu, ó Senhor Deus, e qual é a minha casa, para que me tenhas trazido até aqui?",
     "<b>17</b> E ainda isso foi pouco aos teus olhos, ó Deus; pelo que falaste também da casa do teu servo para tempos distantes, e me olhaste como se eu fosse homem excelente, ó Senhor Deus.",
     "<b>18</b> Que mais te poderia dizer Davi acerca da honra dada ao teu servo? pois tu bem conheces o teu servo.",
@@ -678,6 +704,7 @@
     "<b>27</b> Agora, pois, te agradaste em abençoar a casa do teu servo, para que permaneça para sempre diante de ti; porque tu, Senhor, a abençoaste, e ela será abençoada para sempre."
     ],
 18: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Diversas vitórias de Davi</b></i></p>",
     "<b>1</b> Depois disto, Davi feriu os filisteus, e os subjugou, e tirou da mão dos filisteus Gate e suas aldeias.",
     "<b>2</b> Também feriu os moabitas, e os moabitas tornaram-se servos de Davi, pagando-lhe tributo.",
     "<b>3</b> Davi também feriu a Hadadezer, rei de Zobá, até Hamate, quando ele ia estabelecer o seu domínio junto ao rio Eufrates.",
@@ -697,6 +724,7 @@
     "<b>17</b> Benaías, filho de Joiada, estava sobre os quereteus e peleteus; e os filhos de Davi eram os primeiros junto ao rei."
     ],
 19: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os mensageiros de Davi são insultados</b></i></p>",
     "<b>1</b> Depois disto, morreu Naás, rei dos amonitas; e seu filho reinou em seu lugar.",
     "<b>2</b> Disse Davi: Usarei de benevolência para com Hanum, filho de Naás, porque seu pai usou de benevolência para comigo. E Davi enviou mensageiros a consolar a Hanum acerca de seu pai. Quando os servos de Davi chegaram à terra dos amonitas, a Hanum, para consolá-lo,",
     "<b>3</b> disseram os príncipes dos amonitas a Hanum: Porventura é para honrar a teu pai, que Davi te enviou consoladores? Não vieram antes os seus servos a ti para espiar, e transtornar, e esquadrinhar a terra?",
@@ -718,6 +746,7 @@
     "<b>19</b> Vendo, pois, os servos de Hadadezer que tinham sido derrotados diante de Israel, fizeram paz com Davi, e o serviram; e os sírios não quiseram mais socorrer os amonitas."
     ],
 20: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Várias vitórias</b></i></p>",
     "<b>1</b> Na primavera do ano seguinte, no tempo em que os reis saem à guerra, Joabe conduziu a flor do exército, e devastou a terra dos amonitas; e foi, e sitiou a Rabá; mas Davi ficou em Jerusalém. E Joabe feriu a Rabá, e a destruiu.",
     "<b>2</b> E Davi tirou a coroa da cabeça do seu rei, e achou que tinha o peso de um talento de ouro, e havia nela pedras preciosas; e foi posta sobre a cabeça de Davi; e ele trouxe da cidade despojos em abundância.",
     "<b>3</b> Também tirou o povo que estava nela, e o fez trabalhar com serras, com trilhos de ferro e com machados. E assim fez Davi a todas as cidades dos amonitas; e voltou Davi com todo o povo para Jerusalém.",
@@ -728,6 +757,7 @@
     "<b>8</b> Esses nasceram dos gigantes em Gate; e caíram pela mão de Davi e pela mão de seus servos."
     ],
 21: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi nu era o povo</b></i></p>",
     "<b>1</b> Então Satanás se levantou contra Israel, e incitou Davi a numerar Israel.",
     "<b>2</b> E disse Davi a Joabe e aos chefes do povo: Ide, numerai Israel desde Berseba até Dã, e trazei-mo, para que eu saiba o seu número.",
     "<b>3</b> Respondeu Joabe: O Senhor acrescente ao seu povo cem vezes tanto como ele é; porventura, ó rei meu senhor, não são todos servos de meu senhor? Por que, pois, requer isso o meu senhor? Por que seria isso causa de delito a Israel?",
@@ -760,6 +790,7 @@
     "<b>30</b> Davi, porém, não pôde ir perante ele para consultar a Deus, porque estava aterrorizado por causa da espada do anjo do Senhor."
     ],
 22: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi faz preparativos para edificar o templo</b></i></p>",
     "<b>1</b> Então disse Davi: Esta é a casa do Senhor Deus, e este é o altar do holocausto para Israel.",
     "<b>2</b> E Davi ordenou que se ajuntassem os estrangeiros que estavam na terra de Israel, e nomeou pedreiros para lavrarem pedras, a fim de edificarem a casa de Deus.",
     "<b>3</b> Também preparou ferro em abundância, para os pregos das portas das entradas e para as junturas; como também bronze em abundância, sem peso;",
@@ -781,6 +812,7 @@
     "<b>19</b> Dispõe, pois, agora o vosso coração e a vossa alma para buscardes ao Senhor vosso Deus; levantai-vos, pois, e edificai o santuário do Senhor Deus, para que a arca do pacto do Senhor e os vasos sagrados de Deus sejam trazidos para a casa que se há de edificar ao nome do Senhor."
     ],
 23: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi faz Salomão rei</b></i></p>",
     "<b>1</b> Tendo, pois, Davi envelhecido e cheio de dias, constituiu a seu filho Salomão rei sobre Israel.",
     "<b>2</b> E ajuntou todos os príncipes de Israel, como também os sacerdotes e os levitas.",
     "<b>3</b> Foram contados os levitas da idade de trinta anos para cima; e foi o número deles, contados um por um, trinta e oito mil.",
@@ -815,6 +847,7 @@
     "<b>32</b> e para terem a seu cargo a tenda da congregação, e o santuário, e os filhos de Arão, seus irmãos, no serviço da casa do Senhor."
     ],
 24: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As divisões dos sacerdotes</b></i></p>",
     "<b>1</b> Ora, os turnos dos filhos de Arão foram estes: Os filhos de Arão: Nadabe e Abiú, Eleazar e Itamar.",
     "<b>2</b> Mas Nadabe e Abiú morreram antes de seu pai, e não tiveram filhos; por isso Eleazar e Itamar administravam o sacerdócio.",
     "<b>3</b> Davi, juntamente com Zadoque, dos filhos de Eleazar, e com Aimeleque, dos filhos de Itamar, os distribuiu segundo os seus deveres no ministério.",
@@ -848,6 +881,7 @@
     "<b>31</b> Também estes lançaram sortes, como seus irmãos, os filhos de Arão, perante o rei Davi, Zadoque, Aimeleque, e os chefes das casas paternas dos sacerdotes e dos levitas; as casas paternas dos mais velhos e dos mais novos igualmente."
     ],
 25: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Funções dos cantores e suas divisões</b></i></p>",
     "<b>1</b> Além disso, Davi e os capitães do exército separaram para o ministério os filhos de Asafe, de Hemã e de Jedutum, para profetizarem com harpas, com saltérios e com címbalos; e o número dos homens aptos para o serviço foi:",
     "<b>2</b> Dos filhos de Asafe: Zacur, José, Netanias e Asarela, filhos de Asafe, sob a direção de Asafe, que profetizava sob a direção do rei.",
     "<b>3</b> De Jedutum: os filhos de Jedutum: Gedalias, Zeri, Jesaías, Hasabias e Matitias, seis, sob a direção de seu pai Jedutum, que profetizava com harpa, para render graças e louvar ao Senhor.",
@@ -881,6 +915,7 @@
     "<b>31</b> a vigésima quarta, a Romanti-Ézer, seus filhos e seus irmãos, doze."
     ],
 26: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Funções dos porteiros</b></i></p>",
     "<b>1</b> Quanto às turmas dos porteiros: dos coraítas: Meselemias, filho de Coré, dos filhos de Asafe.",
     "<b>2</b> E foram os filhos de Meselemias: Zacarias, o primogênito, Jediael, o segundo, Zebadias, o terceiro, Jatniel, o quarto,",
     "<b>3</b> Elão, o quinto, Joanã, o sexto, Elioenai, o sétimo.",
@@ -900,6 +935,7 @@
     "<b>17</b> Ao oriente estavam seis levitas, ao norte quatro por dia, ao sul quatro por dia, e para os depósitos, de dois em dois.",
     "<b>18</b> No pátio para o ocidente, quatro no caminho, e dois no pátio.",
     "<b>19</b> Estas são as turmas dos porteiros dentre os filhos dos coraítas e dentre os filhos de Merari.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os guardas dos tesouros</b></i></p>",
     "<b>20</b> E dos levitas, Aías tinha cargo dos tesouros da casa de Deus e dos tesouros das coisas sagradas.",
     "<b>21</b> Quanto aos filhos de Ladã (os filhos do gersonita Ladã eram chefes das casas paternas de Ladã, o gersonita), a saber, os jeielitas:",
     "<b>22</b> os filhos de Jeieli: Zetã e Joel, seu irmão, que tinham cargo dos tesouros da casa do Senhor.",
@@ -909,12 +945,14 @@
     "<b>26</b> Este Selomite e seus irmãos tinham cargo de todos os tesouros das coisas sagradas, que haviam consagrado o rei Davi, os chefes das casas paternas, os capitães dos milhares e dos centenas e os capitães do exército.",
     "<b>27</b> Dos despojos das guerras eles consagraram esses bens para repararem a casa do Senhor.",
     "<b>28</b> Também tudo o que havia sido consagrado por Samuel, o vidente, por Saul, filho de Quis, por Abner, filho de Ner, e por Joabe, filho de Zeruia; qualquer coisa consagrada estava sob a direção de Selomite e de seus irmãos.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os oficiais e os juízes</b></i></p>",
     "<b>29</b> Dos izaritas: Quenanias e seus filhos foram postos sobre Israel, para os negócios externos, como oficiais e juízes.",
     "<b>30</b> Dos hebronitas: Hasabias e seus irmãos, mil e setecentos homens valentes, tinham a seu cargo Israel, do outro lado do Jordão, para o ocidente, em todos os negócios do Senhor e no serviço do rei.",
     "<b>31</b> Dos hebronitas: Jerias era o chefe dos hebronitas, segundo as suas gerações, conforme as casas paternas. No ano quarenta do reinado de Davi, se fez uma busca, e acharam-se entre eles homens valentes em Jazer de Gileade.",
     "<b>32</b> Os seus irmãos, homens valentes, foram dois mil e setecentos chefes das casas paternas; e o rei Davi os constituiu sobre os rubenitas, os gaditas e a meia tribo dos manassitas, para todos os negócios de Deus e para os negócios do rei."
     ],
 27: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As divisões de serviço para cada mês</b></i></p>",
     "<b>1</b> Ora, os filhos de Israel, segundo o seu número, isto é, os chefes das casas paternas, os capitães de milhares e de centenas, e os seus oficiais que serviam ao rei em todas as turmas que se revezavam mês a mês durante todos os meses do ano, cada turma de vinte e quatro mil homens, eram estes:",
     "<b>2</b> Sobre a primeira turma do primeiro mês estava Jasobeão, filho de Zabdiel; e na sua turma havia vinte e quatro mil.",
     "<b>3</b> Era ele dos filhos de Perez, e chefe de todos os capitães do exército para o primeiro mês.",
@@ -951,6 +989,7 @@
     "<b>34</b> Depois de Aitofel veio Joiada, filho de Benaías, e Abiatar. E Joabe era o general do exército do rei."
     ],
 28: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi exorta os príncipes de Salomão</b></i></p>",
     "<b>1</b> Davi convocou em Jerusalém todos os príncipes de Israel, os príncipes das tribos, os capitães das turmas que serviam o rei, os capitães de milhares, os capitães de centenas, e os intendentes de todos os bens e possessões do rei e de seus filhos, com os oficiais e os homens valentes, todos os homens poderosos.",
     "<b>2</b> E o rei Davi, pondo-se em pé, disse: Ouvi-me, irmãos meus e povo meu. Quanto a mim, tive no coração o propósito de edificar uma casa de repouso para a arca do pacto do Senhor, e para o estrado dos pés do nosso Deus, e fiz preparativos para a edificar.",
     "<b>3</b> Mas Deus me disse: Tu não edificarás casa ao meu nome, porque és homem de guerra e tens derramado sangue.",
@@ -961,6 +1000,7 @@
     "<b>8</b> Agora, pois, perante os olhos de todo o Israel, a congregação do Senhor, e perante os ouvidos do nosso Deus, guardai e buscai todos os mandamentos do Senhor vosso Deus, para que possuais esta boa terra, e a deixeis por herança a vossos filhos depois de vós para sempre.",
     "<b>9</b> E tu, Salomão, meu filho, conhece o Deus de teu pai, e serve-o com coração perfeito e com alma voluntária; porque o Senhor esquadrinha todos os corações, e penetra todos os desígnios dos pensamentos. Se o buscares, ele se deixará achar por ti; mas, se o deixares, ele te rejeitará para sempre.",
     "<b>10</b> Olha, pois, que o Senhor te escolheu para edificares uma casa como santuário; esforça-te, e faze a obra.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Davi da a Salomão o desenho do templo</b></i></p>",
     "<b>11</b> Então Davi deu a Salomão, seu filho, o modelo do pórtico, das suas casas, dos seus tesouros, dos seus quartos superiores, das suas câmaras interiores e da casa do propiciatório,",
     "<b>12</b> assim como o modelo de tudo o que ele tinha em mente acerca dos átrios da casa do Senhor, e de todas as câmaras em redor, para os tesouros da casa de Deus e para os tesouros das coisas sagradas;",
     "<b>13</b> também para as turmas dos sacerdotes e dos levitas, e para toda a obra do serviço da casa do Senhor, e para todos os utensílios do serviço da casa do Senhor.",
@@ -974,6 +1014,7 @@
     "<b>21</b> Eis aí as turmas dos sacerdotes e dos levitas para todo o serviço da casa de Deus; e para toda a obra há contigo todo homem voluntário e perito em qualquer arte, para todo o serviço; também os príncipes e todo o povo estarão inteiramente às tuas ordens."
     ],
 29: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As ofertas para a construção do templo</b></i></p>",
     "<b>1</b> E disse o rei Davi a toda a congregação: Salomão, meu filho, o único que Deus escolheu, é ainda moço e tenro, e a obra é grande; porque este paço não é para homens, mas para o Senhor Deus.",
     "<b>2</b> E eu, com todas as minhas forças, já preparei para a casa do meu Deus ouro para as coisas de ouro, prata para as de prata, bronze para as de bronze, ferro para as de ferro, madeira para as de madeira, pedras de ônix, pedras de engaste, pedras reluzentes de várias cores, toda espécie de pedras preciosas, e mármore em abundância.",
     "<b>3</b> Também, por ter grande afeição à casa do meu Deus, dei à casa do meu Deus ouro e prata, além de tudo o que já preparei para a santa casa:",
@@ -983,6 +1024,7 @@
     "<b>7</b> e deram para o serviço da casa de Deus cinco mil talentos de ouro, e dez mil dracmas, e dez mil talentos de prata, e dezoito mil talentos de bronze, e cem mil talentos de ferro.",
     "<b>8</b> E os que tinham pedras preciosas as deram para o tesouro da casa do Senhor, sob a direção de Jeiel, o gersonita.",
     "<b>9</b> Então o povo se alegrou porque eles fizeram ofertas voluntariamente, porque de coração perfeito ofereceram voluntariamente ao Senhor; e também o rei Davi se alegrou com grande alegria.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ação de graças de Davi</b></i></p>",
     "<b>10</b> Pelo que Davi louvou ao Senhor na presença de toda a congregação, dizendo: Bendito és tu, ó Senhor, Deus de Israel, nosso pai, de eternidade em eternidade.",
     "<b>11</b> Tua é, ó Senhor, a grandeza, o poder, a glória, a vitória e a majestade; porque tudo o que há no céu e na terra é teu. Teu é, ó Senhor, o reino, e tu te exaltaste sobre todos como chefe.",
     "<b>12</b> Riquezas e glória vêm de ti; tu dominas sobre tudo; na tua mão há poder e força; e na tua mão está o engrandecer e dar força a todos.",
