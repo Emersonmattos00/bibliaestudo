@@ -208,7 +208,6 @@ window.LIVRO_DATA = {
 ],
 9: [
     "<p style='font-size: 0.8rem; text-align: center;'><i><b>A rainha de Sabá vem ver a Salomão</b></i></p>",
-    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Saudação e ação de graças</b></i></p>",
     "<b>1</b> Ouvindo, pois, a rainha de Sabá a fama de Salomão, veio a Jerusalém prová-lo com perguntas difíceis, com um grande séquito, com camelos carregados de especiarias, e muito ouro, e pedras preciosas; e tendo chegado onde estava Salomão, falou-lhe de tudo o que tinha no seu coração.",
     "<b>2</b> E Salomão lhe deu resposta a todas as suas perguntas; não houve nada que fosse obscuro ao rei, que ele não lhe explicasse.",
     "<b>3</b> Vendo, pois, a rainha de Sabá a sabedoria de Salomão, e a casa que edificara,",
