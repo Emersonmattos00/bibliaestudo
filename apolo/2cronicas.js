@@ -6,18 +6,21 @@ window.LIVRO_DATA = {
   dados: {
 
 1: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão oferece sacrifícios</b></i></p>",
     "<b>1</b> Salomão, filho de Davi, fortaleceu-se no seu reino, e o Senhor seu Deus era com ele, e o engrandeceu sobremaneira.",
     "<b>2</b> E Salomão falou a todo o Israel, aos chefes de milhares e de centenas, aos juízes, e a todos os príncipes de todo o Israel, chefes das casas paternas.",
     "<b>3</b> E Salomão, e toda a congregação com ele, foram ao alto que estava em Gibeão, porque ali estava a tenda da congregação de Deus, que Moisés, servo do Senhor, tinha feito no deserto.",
     "<b>4</b> Porém Davi tinha feito subir a arca de Deus de Quiriate-Jearim ao lugar que lhe tinha preparado, porque lhe armara uma tenda em Jerusalém.",
     "<b>5</b> Também o altar de bronze que Bezaleel, filho de Uri, filho de Hur, fizera, estava ali diante do tabernáculo do Senhor; e Salomão e a congregação o buscavam.",
     "<b>6</b> E Salomão subiu ali, ao altar de bronze perante o Senhor, que estava na tenda da congregação, e ofereceu mil holocaustos sobre ele.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão pede a Deus sabedoria</b></i></p>",
     "<b>7</b> Naquela mesma noite Deus apareceu a Salomão, e disse-lhe: Pede o que queres que eu te dê.",
     "<b>8</b> E Salomão disse a Deus: Tu tens usado de grande benignidade para com Davi meu pai, e a mim me fizeste rei em seu lugar.",
     "<b>9</b> Agora, pois, ó Senhor Deus, confirme-se a tua promessa a Davi meu pai; porque tu me fizeste rei sobre um povo numeroso como o pó da terra.",
     "<b>10</b> Dá-me, pois, agora sabedoria e conhecimento, para que eu possa sair e entrar perante este povo; pois quem pode julgar a este teu tão grande povo?",
     "<b>11</b> Então Deus disse a Salomão: Porquanto houve isto no teu coração, e não pediste riquezas, bens ou honra, nem a vida dos teus inimigos, nem tampouco pediste muitos dias de vida, mas pediste para ti sabedoria e conhecimento, para poderes julgar o meu povo, sobre o qual te fiz rei,",
     "<b>12</b> sabedoria e conhecimento te são concedidos; e além disso te darei riquezas, bens e honra, quais não tiveram os reis que foram antes de ti, nem haverá depois de ti.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As forças  e as riquezas de Salomão</b></i></p>",
     "<b>13</b> Assim Salomão veio do alto que estava em Gibeão a Jerusalém, de diante da tenda da congregação, e reinou sobre Israel.",
     "<b>14</b> E Salomão ajuntou carros e cavaleiros; e teve mil e quatrocentos carros, e doze mil cavaleiros, os quais pôs nas cidades dos carros, e junto ao rei em Jerusalém.",
     "<b>15</b> E o rei tornou o ouro e a prata tão comuns em Jerusalém como as pedras, e os cedros tantos em abundância como os sicômoros que há nas campinas.",
@@ -25,6 +28,7 @@ window.LIVRO_DATA = {
     "<b>17</b> E faziam subir e sair do Egito um carro por seiscentos siclos de prata, e um cavalo por cento e cinquenta; e assim, por meio deles, os exportavam para todos os reis dos heteus e para os reis da Síria."
 ],
 2: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ajuda na construção do templo</b></i></p>",
     "<b>1</b> E Salomão resolveu edificar uma casa ao nome do Senhor, e uma casa real para si.",
     "<b>2</b> E designou Salomão setenta mil homens para trabalharem como carregadores, e oitenta mil para cortarem pedras nas montanhas, e três mil e seiscentos inspetores sobre eles.",
     "<b>3</b> E Salomão mandou dizer a Hirão, rei de Tiro: Como usaste com Davi, meu pai, mandando-lhe cedros para edificar uma casa em que morasse, usa também comigo.",
@@ -45,6 +49,7 @@ window.LIVRO_DATA = {
     "<b>18</b> E deles separou setenta mil para carregadores, oitenta mil para cortarem pedras nas montanhas, e três mil e seiscentos inspetores para fazerem trabalhar o povo."
 ],
 3: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A construção do templo começa</b></i></p>",
     "<b>1</b> Então Salomão começou a edificar a casa do Senhor em Jerusalém, no monte Moriá, onde o Senhor aparecera a Davi, seu pai, no lugar que Davi tinha preparado na eira de Ornã, o jebuseu.",
     "<b>2</b> E começou a edificar no segundo dia do segundo mês, no quarto ano do seu reinado.",
     "<b>3</b> Este é o fundamento que Salomão pôs para edificar a casa de Deus: o comprimento, em côvados segundo a medida antiga, era de sessenta côvados, e a largura de vinte côvados.",
@@ -54,6 +59,7 @@ window.LIVRO_DATA = {
     "<b>7</b> Revestiu também de ouro a casa, as vigas, os umbrais, as suas paredes e as suas portas; e mandou lavrar querubins nas paredes.",
     "<b>8</b> Fez também a casa do lugar santíssimo, cujo comprimento correspondia à largura da casa, de vinte côvados, e a largura de vinte côvados; e revestiu-a de ouro fino, no valor de seiscentos talentos.",
     "<b>9</b> E o peso dos pregos era de cinquenta siclos de ouro. Também revestiu de ouro os quartos superiores.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Os dois querubins</b></i></p>",
     "<b>10</b> E na casa do lugar santíssimo fez dois querubins de madeira; e os revestiu de ouro.",
     "<b>11</b> As asas dos querubins tinham vinte côvados de comprimento: a asa de um deles, de cinco côvados, tocava a parede da casa; e a outra asa, de cinco côvados, tocava a asa do outro querubim.",
     "<b>12</b> E a asa de um dos querubins, de cinco côvados, tocava a parede da casa; e a outra asa, de cinco côvados, estava unida à asa do outro querubim.",
@@ -64,11 +70,13 @@ window.LIVRO_DATA = {
     "<b>17</b> E levantou as colunas diante do templo, uma à direita, e outra à esquerda; e chamou à da direita Jaquim, e à da esquerda Boaz."
 ],
 4: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O altar e o mar de bronze</b></i></p>",
     "<b>1</b> Fez mais um altar de bronze, de vinte côvados de comprimento, vinte de largura e dez de altura.",
     "<b>2</b> Fez também o mar de fundição, de dez côvados de uma borda à outra, redondo ao redor; e a sua altura era de cinco côvados; e um cordão de trinta côvados o cingia ao redor.",
     "<b>3</b> E por baixo dele havia figuras de bois, que o cingiam ao redor, dez em cada côvado, contornando o mar. Duas fileiras de bois foram fundidas, quando o mar foi fundido.",
     "<b>4</b> Assentava sobre doze bois; três olhavam para o norte, três para o ocidente, três para o sul, e três para o oriente; e o mar estava posto sobre eles, e as suas partes traseiras estavam para dentro.",
     "<b>5</b> E a sua grossura era de quatro dedos, e a sua borda era como a borda de um copo, como flor de lírio; e cabiam nele três mil batos.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Vários utensílios do templo</b></i></p>",
     "<b>6</b> Fez também dez pias, e pôs cinco à direita e cinco à esquerda, para nelas lavarem; nelas lavavam as coisas pertencentes aos holocaustos; porém o mar era para os sacerdotes se lavarem.",
     "<b>7</b> Fez também dez castiçais de ouro, conforme a sua forma, e os pôs no templo, cinco à direita e cinco à esquerda.",
     "<b>8</b> Também fez dez mesas, e as pôs no templo, cinco à direita e cinco à esquerda; e fez cem bacias de ouro.",
@@ -89,6 +97,7 @@ window.LIVRO_DATA = {
 ],
 5: [
     "<b>1</b> Assim se acabou toda a obra que Salomão fez para a casa do Senhor. Então Salomão trouxe as coisas que Davi, seu pai, tinha consagrado; a prata, o ouro e todos os utensílios, ele os pôs entre os tesouros da casa de Deus.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A arca é levada para o santuário do templo</b></i></p>",
     "<b>2</b> Então Salomão convocou em Jerusalém os anciãos de Israel, e todos os cabeças das tribos, os chefes das casas paternas dos filhos de Israel, para fazerem subir a arca do pacto do Senhor da cidade de Davi, que é Sião.",
     "<b>3</b> E todos os homens de Israel se congregaram ao rei na festa, no sétimo mês.",
     "<b>4</b> E vieram todos os anciãos de Israel; e os levitas levantaram a arca.",
@@ -104,6 +113,7 @@ window.LIVRO_DATA = {
     "<b>14</b> de modo que os sacerdotes não podiam ter-se em pé para ministrar, por causa da nuvem; porque a glória do Senhor enchera a casa de Deus."
 ],
 6: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão abençoa o povo e louva a Deus</b></i></p>",
     "<b>1</b> Então disse Salomão: O Senhor disse que habitaria na escuridão.",
     "<b>2</b> Porém eu te edifiquei uma casa para habitação, um lugar para a tua morada eterna.",
     "<b>3</b> E o rei virou o rosto, e abençoou toda a congregação de Israel, e toda a congregação de Israel estava em pé.",
@@ -115,6 +125,7 @@ window.LIVRO_DATA = {
     "<b>9</b> Todavia tu não edificarás a casa, mas teu filho, que sair dos teus lombos, ele edificará a casa ao meu nome.",
     "<b>10</b> E o Senhor cumpriu a palavra que falara; porque eu me levantei em lugar de Davi, meu pai, e me assentei no trono de Israel, como o Senhor prometeu, e edifiquei a casa ao nome do Senhor, Deus de Israel.",
     "<b>11</b> E nela tenho posto a arca em que está o pacto do Senhor, que ele fez com os filhos de Israel.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A oração de Salomão</b></i></p>",
     "<b>12</b> E Salomão se pôs diante do altar do Senhor, na presença de toda a congregação de Israel, e estendeu as suas mãos.",
     "<b>13</b> Porque Salomão tinha feito uma tribuna de bronze, de cinco côvados de comprimento, cinco de largura e três de altura, e a tinha posto no meio do átrio; e pôs-se em pé sobre ela, e ajoelhou-se na presença de toda a congregação de Israel, e estendeu as suas mãos para o céu;",
     "<b>14</b> e disse: Ó Senhor, Deus de Israel, não há Deus como tu, nem no céu nem na terra, que guardas a aliança e a misericórdia a teus servos que andam diante de ti de todo o seu coração;",
@@ -148,6 +159,7 @@ window.LIVRO_DATA = {
     "<b>42</b> Ó Senhor Deus, não rejeites o teu ungido; lembra-te das benignidades prometidas a Davi, teu servo."
 ],
 7: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A glória de Deus aparece</b></i></p>",
     "<b>1</b> Quando Salomão acabou de orar, desceu fogo do céu, e consumiu o holocausto e os sacrifícios; e a glória do Senhor encheu a casa.",
     "<b>2</b> E os sacerdotes não podiam entrar na casa do Senhor, porque a glória do Senhor tinha enchido a casa do Senhor.",
     "<b>3</b> E todos os filhos de Israel, vendo descer o fogo e a glória do Senhor sobre a casa, prostraram-se com o rosto em terra no pavimento, e adoraram, e louvaram ao Senhor, dizendo: Porque ele é bom, porque a sua benignidade dura para sempre.",
@@ -158,6 +170,7 @@ window.LIVRO_DATA = {
     "<b>8</b> E naquele tempo Salomão celebrou a festa por sete dias, e todo o Israel com ele, uma grande congregação, desde a entrada de Hamate até ao rio do Egito.",
     "<b>9</b> No oitavo dia fizeram uma assembléia solene; porque celebraram a dedicação do altar por sete dias, e a festa por sete dias.",
     "<b>10</b> E no vigésimo terceiro dia do sétimo mês despediu o povo para as suas tendas, alegres e de coração contente por causa do bem que o Senhor fizera a Davi, a Salomão e a Israel, seu povo.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Deus aparece a Salomão</b></i></p>",
     "<b>11</b> Assim Salomão acabou a casa do Senhor e a casa real; e tudo quanto tinha planejado fazer na casa do Senhor e na sua própria casa, ele o realizou com êxito.",
     "<b>12</b> E o Senhor apareceu a Salomão de noite, e disse-lhe: Ouvi a tua oração, e escolhi para mim este lugar para casa de sacrifício.",
     "<b>13</b> Se eu cerrar o céu de modo que não haja chuva, ou se ordenar ao gafanhoto que devore a terra, ou se enviar a peste entre o meu povo,",
@@ -172,6 +185,7 @@ window.LIVRO_DATA = {
     "<b>22</b> E responderão: Porque deixaram o Senhor, Deus de seus pais, que os tirou da terra do Egito, e se apegaram a outros deuses, e os adoraram e serviram; por isso ele trouxe sobre eles todo este mal."
 ],
 8: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Salomão edifica cidades</b></i></p>",
     "<b>1</b> Sucedeu, pois, que, ao fim de vinte anos, havendo Salomão edificado a casa do Senhor e a sua própria casa,",
     "<b>2</b> edificou as cidades que Hirão lhe tinha dado, e fez habitar nelas os filhos de Israel.",
     "<b>3</b> E Salomão foi a Hamate-Zobá, e a dominou.",
@@ -183,6 +197,7 @@ window.LIVRO_DATA = {
     "<b>9</b> Porém dos filhos de Israel não fez Salomão escravos para a sua obra; mas eram homens de guerra, chefes dos seus capitães, e chefes dos seus carros e dos seus cavaleiros.",
     "<b>10</b> Estes eram os chefes dos oficiais do rei Salomão, duzentos e cinquenta, que davam ordens ao povo.",
     "<b>11</b> E Salomão fez subir a filha de Faraó da cidade de Davi para a casa que lhe tinha edificado; porque disse: Minha mulher não habitará na casa de Davi, rei de Israel, porque santos são os lugares nos quais entrou a arca do Senhor.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As ofertas de Salomão</b></i></p>",
     "<b>12</b> Então Salomão ofereceu holocaustos ao Senhor sobre o altar do Senhor, que tinha edificado diante do pórtico,",
     "<b>13</b> conforme a ordem de Moisés para cada dia, nos sábados, nas luas novas e nas festas fixas, três vezes no ano: na festa dos pães ázimos, na festa das semanas e na festa dos tabernáculos.",
     "<b>14</b> E conforme a ordem de Davi, seu pai, designou os turnos dos sacerdotes para o seu serviço, e dos levitas para os seus cargos, para louvarem a Deus e para ministrarem diante dos sacerdotes, segundo o que era exigido para cada dia; e também os porteiros pelos seus turnos a cada porta; porque assim tinha ordenado Davi, o homem de Deus.",
@@ -192,6 +207,8 @@ window.LIVRO_DATA = {
     "<b>18</b> E Hirão mandou-lhe, por intermédio de seus servos, navios e servos práticos do mar; e foram com os servos de Salomão a Ofir, e de lá tomaram quatrocentos e cinquenta talentos de ouro, e os trouxeram ao rei Salomão."
 ],
 9: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A rainha de Sabá vem ver a Salomão</b></i></p>",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Saudação e ação de graças</b></i></p>",
     "<b>1</b> Ouvindo, pois, a rainha de Sabá a fama de Salomão, veio a Jerusalém prová-lo com perguntas difíceis, com um grande séquito, com camelos carregados de especiarias, e muito ouro, e pedras preciosas; e tendo chegado onde estava Salomão, falou-lhe de tudo o que tinha no seu coração.",
     "<b>2</b> E Salomão lhe deu resposta a todas as suas perguntas; não houve nada que fosse obscuro ao rei, que ele não lhe explicasse.",
     "<b>3</b> Vendo, pois, a rainha de Sabá a sabedoria de Salomão, e a casa que edificara,",
@@ -204,6 +221,7 @@ window.LIVRO_DATA = {
     "<b>10</b> Também os servos de Hirão, e os servos de Salomão, que de Ofir trouxeram ouro, trouxeram madeira de algumins e pedras preciosas.",
     "<b>11</b> E o rei fez da madeira de algumins degraus para a casa do Senhor e para a casa real, como também harpas e saltérios para os cantores; nunca se viu coisa semelhante na terra de Judá.",
     "<b>12</b> E o rei Salomão deu à rainha de Sabá tudo o que ela desejou, quanto lhe pediu, além do que lhe tinha trazido ao rei. Assim ela voltou e foi para a sua terra, ela e os seus servos.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As riquezas e a magnificência de Salomão</b></i></p>",
     "<b>13</b> Ora, o peso do ouro que se trazia a Salomão cada ano era de seiscentos e sessenta e seis talentos de ouro,",
     "<b>14</b> fora o que os mercadores e negociantes traziam; e todos os reis da Arábia e os governadores da terra traziam ouro e prata a Salomão.",
     "<b>15</b> E fez o rei Salomão duzentos paveses de ouro batido; seiscentos siclos de ouro batido foram para cada pavês;",
@@ -220,11 +238,13 @@ window.LIVRO_DATA = {
     "<b>26</b> E dominava sobre todos os reis desde o Rio até a terra dos filisteus, e até o termo do Egito.",
     "<b>27</b> E o rei tornou a prata tão comum em Jerusalém como as pedras, e os cedros tantos em abundância como os sicômoros que há nas campinas.",
     "<b>28</b> E traziam a Salomão cavalos do Egito e de todas as terras.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A morte de Salomão</b></i></p>",
     "<b>29</b> Quanto ao restante dos atos de Salomão, tanto os primeiros como os últimos, porventura não estão escritos nas palavras de Natã, o profeta, e na profecia de Aías, o silonita, e nas visões de Ido, o vidente, concernentes a Jeroboão, filho de Nebate?",
     "<b>30</b> E Salomão reinou em Jerusalém sobre todo o Israel quarenta anos.",
     "<b>31</b> E Salomão dormiu com seus pais, e foi sepultado na cidade de Davi, seu pai; e Roboão, seu filho, reinou em seu lugar."
 ],
 10: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A revolta de dez tribos de Israel</b></i></p>",
     "<b>1</b> E Roboão foi a Siquém, porque todo o Israel tinha vindo a Siquém para o fazer rei.",
     "<b>2</b> E sucedeu que, ouvindo-o Jeroboão, filho de Nebate (estando ele ainda no Egito, para onde tinha fugido da presença do rei Salomão), voltou Jeroboão do Egito.",
     "<b>3</b> E enviaram e o chamaram. E vieram Jeroboão e todo o Israel, e falaram a Roboão, dizendo:",
@@ -246,6 +266,7 @@ window.LIVRO_DATA = {
     "<b>19</b> Assim Israel se rebelou contra a casa de Davi até ao dia de hoje."
 ],
 11: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Deus proibe fazer guerra contra as dez tribos</b></i></p>",
     "<b>1</b> Quando Roboão chegou a Jerusalém, reuniu a casa de Judá e de Benjamim, cento e oitenta mil homens escolhidos, destros na guerra, para pelejarem contra Israel, a fim de restituírem o reino a Roboão.",
     "<b>2</b> Porém veio a palavra do Senhor a Semaías, homem de Deus, dizendo:",
     "<b>3</b> Fala a Roboão, filho de Salomão, rei de Judá, e a todo o Israel em Judá e Benjamim, dizendo:",
@@ -258,6 +279,7 @@ window.LIVRO_DATA = {
     "<b>10</b> Zorá, Aijalom e Hebrom, que estão em Judá e em Benjamim, cidades fortificadas.",
     "<b>11</b> Fortalecendo, pois, estas fortalezas, pôs nelas capitães e mantimentos, azeite e vinho.",
     "<b>12</b> Também pôs em cada cidade escudos e lanças, e fortificou-as grandemente; assim Judá e Benjamim lhe pertenciam.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Todos os que temem a Deus vêm a Jerusalém</b></i></p>",
     "<b>13</b> Também os sacerdotes e os levitas que havia em todo o Israel recorreram a ele de todos os seus termos.",
     "<b>14</b> Porque os levitas deixaram os seus arredores e as suas possessões, e vieram para Judá e Jerusalém, porquanto Jeroboão e seus filhos os excluíram, para que não exercessem o sacerdócio do Senhor;",
     "<b>15</b> e ele constituiu para si sacerdotes para os altos, para os demônios, e para os bezerros que fizera.",
@@ -271,6 +293,7 @@ window.LIVRO_DATA = {
     "<b>23</b> E procedeu com sabedoria, espalhando todos os seus filhos por todas as terras de Judá e de Benjamim, por todas as cidades fortes, e deu-lhes mantimentos em abundância, e conseguiu muitas mulheres."
 ],
 12: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Deus castiga Roboão por causa da idolatria</b></i></p>",
     "<b>1</b> Tendo Roboão confirmado o reino e se havendo fortalecido, deixou a lei do Senhor, e com ele todo o Israel.",
     "<b>2</b> E sucedeu que, no quinto ano do rei Roboão, Sisaque, rei do Egito, subiu contra Jerusalém, porque tinham transgredido contra o Senhor,",
     "<b>3</b> com mil e duzentos carros, e sessenta mil cavaleiros; e era inumerável o povo que vinha com ele do Egito, a saber, líbios, suquitas e etíopes.",
