@@ -6,6 +6,7 @@ window.LIVRO_DATA = {
   dados: {
 
 1: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A história de Jó na terra e no céu</b></i></p>",
     "<b>1</b> Havia um homem na terra de Uz, cujo nome era Jó; e era este homem íntegro, reto, temente a Deus e que se desviava do mal.",
     "<b>2</b> Nasceram-lhe sete filhos e três filhas.",
     "<b>3</b> Possuía sete mil ovelhas, três mil camelos, quinhentas juntas de bois e quinhentas jumentas; tinha também muitos servos; de modo que este homem era o maior de todos os do Oriente.",
@@ -18,6 +19,7 @@ window.LIVRO_DATA = {
     "<b>10</b> Não o tens protegido de todos os lados, a ele, a sua casa e a tudo quanto possui? Tens abençoado a obra das suas mãos, e os seus bens se multiplicam na terra.",
     "<b>11</b> Mas estende a tua mão agora, toca em tudo quanto ele tem, e ele blasfemará de ti na tua face.",
     "<b>12</b> Respondeu o Senhor a Satanás: Eis que tudo quanto ele possui está na tua mão; somente contra ele não estendas a tua mão. E Satanás saiu da presença do Senhor.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O início das provações de Jó</b></i></p>",
     "<b>13</b> Certo dia, quando seus filhos e suas filhas comiam e bebiam vinho em casa do irmão mais velho,",
     "<b>14</b> veio um mensageiro a Jó e lhe disse: Os bois lavravam, e as jumentas pastavam junto a eles;",
     "<b>15</b> e os sabeus deram sobre eles, e os levaram; aos servos mataram ao fio da espada; e só eu escapei para trazer-te a nova.",
@@ -30,21 +32,25 @@ window.LIVRO_DATA = {
     "<b>22</b> Em tudo isso Jó não pecou, nem atribuiu a Deus falta alguma."
     ],
 2: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As provações aumentam sobre Jó</b></i></p>",
     "<b>1</b> Outra vez veio um dia em que os filhos de Deus vieram apresentar-se perante o Senhor; e veio também Satanás entre eles apresentar-se perante o Senhor.",
     "<b>2</b> Perguntou o Senhor a Satanás: Donde vens? Respondeu Satanás ao Senhor, e disse: De rodear a terra e passear por ela.",
     "<b>3</b> Disse o Senhor a Satanás: Observaste o meu servo Jó? Porque ninguém há na terra como ele, homem íntegro e reto, temente a Deus e que se desvia do mal; ele ainda retém a sua integridade, embora me incitasses contra ele, para o consumir sem causa.",
     "<b>4</b> Então Satanás respondeu ao Senhor, e disse: Pele por pele, e tudo quanto o homem tem dará pela sua vida.",
     "<b>5</b> Mas estende a tua mão agora, toca-lhe nos ossos e na carne, e ele blasfemará de ti na tua face.",
     "<b>6</b> Respondeu o Senhor a Satanás: Eis que ele está na tua mão; poupa-lhe, porém, a vida.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A provação da terrível doença</b></i></p>",
     "<b>7</b> Então saiu Satanás da presença do Senhor, e feriu a Jó de úlceras malignas, desde a planta do pé até ao alto da cabeça.",
     "<b>8</b> E Jó tomou um caco para se raspar com ele, e se assentou no meio da cinza.",
     "<b>9</b> Então sua mulher lhe disse: Ainda reténs a tua integridade? Blasfema de Deus, e morre.",
     "<b>10</b> Ele, porém, lhe disse: Como fala qualquer doida, falas tu; temos recebido o bem de Deus, e não receberíamos também o mal? Em tudo isso não pecou Jó com os seus lábios.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As atitudes dos amigos de Jó</b></i></p>",
     "<b>11</b> Ouvindo, pois, três amigos de Jó todo este mal que lhe sobreviera, vieram, cada um do seu lugar: Elifaz, o temanita, Bildade, o suíta, e Zofar, o naamatita; e combinaram de comum acordo vir condoer-se dele e consolá-lo.",
     "<b>12</b> Levantando eles de longe os olhos, e não o reconhecendo, choraram em alta voz; cada um rasgou o seu manto, e polvilharam de pó as suas cabeças.",
     "<b>13</b> E sentaram-se com ele na terra, sete dias e sete noites; e nenhum deles lhe dizia palavra alguma, porque viam que a dor era muito grande."
     ],
 3: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó lamenta o dia em que nasceu</b></i></p>",
     "<b>1</b> Depois disto abriu Jó a sua boca e amaldiçoou o seu dia.",
     "<b>2</b> E Jó, falando, disse:",
     "<b>3</b> Pereça o dia em que eu nasci, e a noite em que se disse: Foi concebido um homem!",
@@ -55,6 +61,7 @@ window.LIVRO_DATA = {
     "<b>8</b> Amaldiçoem-na aqueles que amaldiçoam o dia, que são peritos em suscitar o leviatã.",
     "<b>9</b> Escureçam-se as estrelas do seu crepúsculo; espere ela a luz, e não a haja; e não veja os olhos da alva;",
     "<b>10</b> porquanto não fechou as portas do ventre de minha mãe, nem escondeu dos meus olhos a aflição.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Queria ter morrido antes de nascer</b></i></p>",
     "<b>11</b> Por que não morri eu desde a madre? Porque não expirei ao sair do ventre?",
     "<b>12</b> Por que me receberam os joelhos? E por que os seios, para que eu mamasse?",
     "<b>13</b> Pois agora eu estaria deitado, e sossegaria; dormiria, e então teria repouso,",
@@ -73,6 +80,7 @@ window.LIVRO_DATA = {
     "<b>26</b> Não tenho sossego, nem descanso, nem repouso; e já me vem a perturbação."
     ],
 4: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A reflexão de Elifaz, amigo de Jó</b></i></p>",
     "<b>1</b> Então respondeu Elifaz, o temanita, e disse:",
     "<b>2</b> Se alguém tentar falar-te, enfadar-te-ás? Mas quem poderá conter as palavras?",
     "<b>3</b> Eis que tens ensinado a muitos, e tens fortalecido as mãos fracas.",
@@ -96,6 +104,7 @@ window.LIVRO_DATA = {
     "<b>21</b> Se a sua formosura se desvanece dentro deles, morrem, e sem atingir a sabedoria."
     ],
 5: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Elifaz insta Jó a buscar a Deus</b></i></p>",
     "<b>1</b> Clama agora; há alguém que te responda? E para qual dos santos te virarás?",
     "<b>2</b> Pois a ira mata o insensato, e o zelo mata o tolo.",
     "<b>3</b> Bem vi eu o insensato lançar raízes; mas logo amaldiçoei a sua habitação.",
@@ -112,6 +121,7 @@ window.LIVRO_DATA = {
     "<b>14</b> Eles de dia encontram as trevas, e ao meio-dia andam às apalpadelas como de noite.",
     "<b>15</b> Mas Deus salva da espada, da boca, e da mão do poderoso ao necessitado;",
     "<b>16</b> ao pobre, para que haja esperança; e a iniqüidade tapa a sua boca.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>As bençãos decorrentes da correção</b></i></p>",
     "<b>17</b> Eis que bem-aventurado é o homem a quem Deus disciplina; não desprezes, pois, a correção do Todo-Poderoso.",
     "<b>18</b> Porque ele faz a ferida, e ele mesmo a ata; ele fere, e as suas mãos curam.",
     "<b>19</b> Em seis angústias te livrará, e em sete o mal não te tocará.",
@@ -125,6 +135,7 @@ window.LIVRO_DATA = {
     "<b>27</b> Eis que isto já o havemos inquirido, e assim é; ouve-o, e aplica-o ao teu bem."
     ],
 6: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó justifica sua dor e lamentação</b></i></p>",
     "<b>1</b> Então respondeu Jó, e disse:",
     "<b>2</b> Oh! pesassem de vero a minha mágoa, e a minha calamidade se pusesse juntamente numa balança!",
     "<b>3</b> Porque, na verdade, agora seria mais pesada do que a areia do mar; por isso as minhas palavras foram temerárias.",
@@ -157,6 +168,7 @@ window.LIVRO_DATA = {
     "<b>30</b> Há iniqüidade na minha língua? Ou não poderia o meu paladar discernir coisas perversas?"
     ],
 7: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó desabafa e questiona a Deus</b></i></p>",
     "<b>1</b> Porventura não tem o homem guerra sobre a terra? E não são os seus dias como os dias do jornaleiro?",
     "<b>2</b> Como o servo que suspira pela sombra, e como o jornaleiro que espera o seu salário.",
     "<b>3</b> Assim me deram por herança meses de sofrimento, e noites de aflição me foram destinadas.",
@@ -180,6 +192,7 @@ window.LIVRO_DATA = {
     "<b>21</b> E por que não perdoas a minha transgressão e não tiras a minha iniqüidade? Pois agora me deitarei no pó; e tu me buscarás, mas eu não mais existirei."
     ],
 8: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Bildade repreende Jó</b></i></p>",
     "<b>1</b> Então respondeu Bildade, o suíta, e disse:",
     "<b>2</b> Até quando falarás tais coisas, e até quando serão as palavras da tua boca como um vento impetuoso?",
     "<b>3</b> Porventura Deus perverteria o direito? Ou o Todo-Poderoso perverteria a justiça?",
@@ -204,6 +217,7 @@ window.LIVRO_DATA = {
     "<b>22</b> Os que te odeiam se vestirão de confusão; e a tenda dos ímpios não subsistirá."
     ],
 9: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O grande questionamento de Jó</b></i></p>",
     "<b>1</b> Então respondeu Jó, e disse:",
     "<b>2</b> Na verdade sei que assim é; mas como pode o homem ser justo diante de Deus?",
     "<b>3</b> Se quiser contender com ele, a mil perguntas não lhe poderá responder uma.",
@@ -241,6 +255,7 @@ window.LIVRO_DATA = {
     "<b>35</b> então falarei, e não o temerei; porque não estou assim comigo mesmo."
     ],
 10: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó questiona a severidade de Deus</b></i></p>",
     "<b>1</b> A minha alma tem tédio da minha vida; darei livre curso à minha queixa, falarei na amargura da minha alma.",
     "<b>2</b> Direi a Deus: Não me condenes; faze-me saber por que pelejas contra mim.",
     "<b>3</b> Parece-te bem que me oprimas, que rejeites o trabalho das tuas mãos, e favoreças o conselho dos ímpios?",
@@ -265,6 +280,7 @@ window.LIVRO_DATA = {
     "<b>22</b> terra escuridão, como as próprias trevas, e da sombra da morte, onde não há ordem alguma, e a luz ali é como as trevas."
     ],
 11: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Zofar insiste que Jó se arrependa</b></i></p>",
     "<b>1</b> Então respondeu Zofar, o naamatita, e disse:",
     "<b>2</b> Não se dará resposta à multidão de palavras? E será justificado o homem falador?",
     "<b>3</b> Acaso as tuas jactâncias farão calar os homens? E zombarás tu sem que ninguém te envergonhe?",
@@ -287,6 +303,7 @@ window.LIVRO_DATA = {
     "<b>20</b> Mas os olhos dos ímpios desfalecerão, e para eles não haverá refúgio; e a sua esperança será o expirar."
     ],
 12: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó se defende das acusações</b></i></p>",
     "<b>1</b> Então respondeu Jó, e disse:",
     "<b>2</b> Na verdade, vós sois o povo, e convosco morrerá a sabedoria.",
     "<b>3</b> Mas eu tenho entendimento como vós; e não vos sou inferior; e quem não sabe tais coisas como estas?",
@@ -314,6 +331,7 @@ window.LIVRO_DATA = {
     "<b>25</b> Andam às apalpadelas nas trevas, sem luz, e os faz cambalear como ébrios."
     ],
 13: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó reclama um julgamento justo</b></i></p>",
     "<b>1</b> Eis que os meus olhos já viram tudo isso, e os meus ouvidos o ouviram e entenderam.",
     "<b>2</b> O que vós sabeis, eu também sei; não vos sou inferior.",
     "<b>3</b> Mas eu falarei ao Todo-Poderoso, e quero defender-me perante Deus.",
@@ -344,6 +362,7 @@ window.LIVRO_DATA = {
     "<b>28</b> embora ele se consuma como coisa podre, como a roupa que a traça rói."
     ],
 14: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó fala da exiguidade da vida</b></i></p>",
     "<b>1</b> O homem, nascido da mulher, vive breve tempo, cheio de inquietação.",
     "<b>2</b> Nasce como a flor, e logo corta; foge como a sombra, e não permanece.",
     "<b>3</b> E sobre um tal como este abres os teus olhos, e a mim me fazes entrar em juízo contigo?",
@@ -356,11 +375,13 @@ window.LIVRO_DATA = {
     "<b>10</b> Mas o homem morre, e fica prostrado; sim, o homem expira, e onde está?",
     "<b>11</b> Como as águas se retiram do mar, e o rio minguar e secar,",
     "<b>12</b> assim o homem se deita e não se levanta; até que não haja mais céus, não acordará nem será despertado do seu sono.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó aguarda por melhores dias</b></i></p>",
     "<b>13</b> Quem me dera que me escondesses na sepultura, e me ocultasses até que a tua ira se passasse, e me determinasses um prazo, e te lembrasses de mim!",
     "<b>14</b> Morrendo o homem, porventura tornará a viver? Todos os dias do meu combate esperaria, até que viesse a minha mudança.",
     "<b>15</b> Tu me chamarias, e eu te responderia; e terias afeto à obra das tuas mãos.",
     "<b>16</b> Mas agora contas os meus passos; não vigias porventura o meu pecado?",
     "<b>17</b> A minha transgressão está selada num saco, e ajuntas as minhas iniqüidades.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O além é o destino de todos</b></i></p>",
     "<b>18</b> Mas, na verdade, caindo o monte, desfaz-se; e a rocha é removida do seu lugar;",
     "<b>19</b> as águas gastam as pedras; as enxurradas levam o pó da terra; assim destróis a esperança do homem.",
     "<b>20</b> Prevalences para sempre contra ele, e ele passa; mudas o seu rosto, e o despedes.",
@@ -368,6 +389,7 @@ window.LIVRO_DATA = {
     "<b>22</b> Mas a sua carne nele tem dores, e a sua alma nele lamenta."
     ],
 15: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Elifaz censura as palavras de Jó</b></i></p>",
     "<b>1</b> Então respondeu Elifaz, o temanita, e disse:",
     "<b>2</b> Porventura o sábio responderá com vão conhecimento, e encherá do vento oriental o seu ventre,",
     "<b>3</b> argüindo com palavras que de nada servem, e com discursos de que nenhum proveito vem?",
@@ -405,6 +427,7 @@ window.LIVRO_DATA = {
     "<b>35</b> Concebem o mal, e dão à luz a iniqüidade; e o seu ventre produz o engano."
     ],
 16: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A resposta de Jó às injustiças</b></i></p>",
     "<b>1</b> Então respondeu Jó, e disse:",
     "<b>2</b> Tenho ouvido muitas coisas como essas; todos vós sois consoladores molestos.",
     "<b>3</b> Não terão fim essas palavras vãs? Ou que te irrita, para assim responderes?",
@@ -429,6 +452,7 @@ window.LIVRO_DATA = {
     "<b>22</b> Porque anos contados virão, então me irei pelo caminho sem volta."
     ],
 17: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Jó não espera nada deste mundo</b></i></p>",
     "<b>1</b> O meu hálito se corrompe; os meus dias se extinguem, e a sepultura me espera.",
     "<b>2</b> Não estou com zombadores? E os meus olhos não têm de habitar com a provocação deles?",
     "<b>3</b> Dá-me um penhor, e sê o meu fiador para contigo mesmo; quem mais há que me dê a mão?",
