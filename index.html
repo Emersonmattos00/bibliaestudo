@@ -803,6 +803,190 @@
       font-size: 10px;
     }
 
+    /* ============================================
+       ANÚNCIO - PLAYLIST DO SPOTIFY
+    ============================================ */
+    .ad-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9997;
+      max-width: 320px;
+      width: 100%;
+      background: rgba(20, 30, 20, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid rgba(255, 217, 102, 0.15);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+      transition: all var(--transition);
+    }
+
+    .ad-container:hover {
+      border-color: rgba(255, 217, 102, 0.3);
+      box-shadow: 0 8px 48px rgba(255, 217, 102, 0.08);
+    }
+
+    .ad-content {
+      text-align: center;
+      color: var(--text-light);
+    }
+
+    .ad-content .ad-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #1DB954;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .ad-content .ad-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 2px;
+    }
+
+    .ad-content .ad-description {
+      font-size: 12px;
+      opacity: 0.8;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .ad-content .ad-description span {
+      display: block;
+      font-size: 11px;
+      opacity: 0.6;
+      margin-top: 2px;
+    }
+
+    .ad-content iframe {
+      border-radius: 12px;
+      margin: 8px 0;
+      width: 100%;
+      height: 80px;
+      border: none;
+    }
+
+    .ad-content .ad-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1DB954;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13px;
+      transition: all var(--transition);
+      border: none;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+
+    .ad-content .ad-button:hover {
+      transform: scale(1.04);
+      box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
+      background: #1ed760;
+    }
+
+    .ad-content .ad-button i {
+      font-size: 14px;
+    }
+
+    /* Botão de fechar anúncio */
+    .ad-close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 18px;
+      cursor: pointer;
+      transition: all var(--transition);
+      padding: 4px;
+      line-height: 1;
+      z-index: 10;
+    }
+
+    .ad-close:hover {
+      color: #ff6b6b;
+      transform: scale(1.1);
+    }
+
+    /* Versão responsiva do anúncio */
+    @media (max-width: 768px) {
+      .ad-container {
+        max-width: 280px;
+        bottom: 15px;
+        right: 15px;
+        padding: 14px;
+      }
+
+      .ad-content .ad-title {
+        font-size: 14px;
+      }
+
+      .ad-content .ad-description {
+        font-size: 11px;
+      }
+
+      .ad-content iframe {
+        height: 72px;
+      }
+
+      .ad-content .ad-button {
+        font-size: 12px;
+        padding: 6px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ad-container {
+        max-width: 220px;
+        bottom: 70px;
+        right: 10px;
+        padding: 12px;
+        border-radius: 12px;
+      }
+
+      .ad-content .ad-title {
+        font-size: 13px;
+      }
+
+      .ad-content .ad-description {
+        font-size: 10px;
+        margin-bottom: 6px;
+      }
+
+      .ad-content .ad-description span {
+        font-size: 10px;
+      }
+
+      .ad-content iframe {
+        height: 64px;
+        margin: 6px 0;
+      }
+
+      .ad-content .ad-button {
+        font-size: 11px;
+        padding: 5px 14px;
+        gap: 5px;
+      }
+
+      .ad-close {
+        font-size: 15px;
+        top: 5px;
+        right: 8px;
+      }
+    }
+
     footer {
       margin-top: 100px;
     }
@@ -1116,6 +1300,43 @@
   </div>
 
   <!-- ============================================ -->
+  <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY ========= -->
+  <!-- ============================================ -->
+  <div class="ad-container" id="adContainer" role="complementary" aria-label="Playlist do Spotify">
+    <button class="ad-close" id="adClose" aria-label="Fechar anúncio">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <div class="ad-content">
+      <span class="ad-label">🎧 Playlist Recomendada</span>
+      <div class="ad-title">Joseph Matthos</div>
+      <div class="ad-description">
+        Mentalidade de Ouro · Jardim do Coração
+        <span>69 músicas · ~2h15</span>
+      </div>
+      <!-- ===== EMBED DO SPOTIFY ===== -->
+      <iframe 
+        src="https://open.spotify.com/embed/playlist/3flgUEol1uBvFAlriXZE24?utm_source=generator" 
+        width="100%" 
+        height="80" 
+        frameborder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"
+        style="border-radius: 12px; margin: 8px 0;"
+        title="Player da playlist Joseph Matthos no Spotify">
+      </iframe>
+      <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" 
+         class="ad-button" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         aria-label="Abrir playlist no Spotify">
+        <i class="fab fa-spotify" aria-hidden="true"></i>
+        Ouvir no Spotify
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
   <!-- SCRIPTS OTIMIZADOS                            -->
   <!-- ============================================ -->
   <script>
@@ -1141,7 +1362,6 @@
         try {
           localStorage.setItem(STORAGE_KEY, String(newCount));
         } catch (e) {
-          // Se localStorage falhar, mantém o valor atual
           return current;
         }
         return newCount;
@@ -1150,13 +1370,11 @@
       function updateDisplay(count) {
         const el = document.getElementById(DISPLAY_ID);
         if (el) {
-          // Formata o número com separadores de milhar
           el.textContent = count.toLocaleString('pt-BR');
         }
       }
       
       function initViewCounter() {
-        // Incrementa apenas se não foi contado nesta sessão
         const sessionKey = 'biblia_view_session';
         let shouldIncrement = true;
         
@@ -1166,15 +1384,12 @@
           } else {
             sessionStorage.setItem(sessionKey, '1');
           }
-        } catch (e) {
-          // Se sessionStorage falhar, incrementa mesmo assim
-        }
+        } catch (e) {}
         
         const count = shouldIncrement ? incrementViewCount() : getViewCount();
         updateDisplay(count);
       }
       
-      // Executa quando o DOM estiver pronto
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initViewCounter);
       } else {
@@ -1190,7 +1405,8 @@
         this.state = {
           currentEstante: 'recursos',
           scrollPositions: {},
-          isEstanteOpen: true
+          isEstanteOpen: true,
+          adClosed: false
         };
         this.loadState();
       }
@@ -1342,7 +1558,6 @@
       
       recursos.forEach(recurso => {
         containerRecursos.innerHTML += gerarCard(recurso);
-        // Pré-carregar recursos próximos
         setTimeout(() => {
           resourceManager.preloadRecurso(recurso.arquivo);
         }, 1000);
@@ -1354,7 +1569,6 @@
     // ============================================
     function abrirRecurso(arquivo, nomeItem) {
       mostrarToast(`Abrindo: ${nomeItem}...`, 'info', 2000);
-      // Registrar tentativa de navegação para analytics
       if (window.gtag) {
         gtag('event', 'recurso_aberto', {
           'event_category': 'Navegação',
@@ -1452,6 +1666,40 @@
     }, 10));
 
     // ============================================
+    // ANÚNCIO - CONTROLE DE FECHAMENTO
+    // ============================================
+    function initAd() {
+      const adContainer = document.getElementById('adContainer');
+      const adClose = document.getElementById('adClose');
+      
+      // Verificar se o anúncio foi fechado anteriormente
+      const adClosed = appState.get('adClosed');
+      
+      if (adClosed) {
+        adContainer.style.display = 'none';
+        return;
+      }
+      
+      // Evento de fechar anúncio
+      adClose.addEventListener('click', function() {
+        adContainer.style.opacity = '0';
+        adContainer.style.transform = 'scale(0.8)';
+        setTimeout(() => {
+          adContainer.style.display = 'none';
+        }, 300);
+        appState.set('adClosed', true);
+        mostrarToast('Playlist fechada. Continue estudando! 📖', 'info', 2000);
+      });
+      
+      // Permitir fechar com tecla ESC
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && adContainer.style.display !== 'none') {
+          adClose.click();
+        }
+      });
+    }
+
+    // ============================================
     // Teclado - Navegação por setas
     // ============================================
     document.addEventListener('keydown', function(e) {
@@ -1529,6 +1777,9 @@
           link.setAttribute('aria-label', tooltip.textContent.trim());
         }
       });
+      
+      // Inicializar anúncio
+      initAd();
     });
 
     // ============================================
