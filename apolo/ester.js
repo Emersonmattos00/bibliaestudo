@@ -6,6 +6,7 @@ window.LIVRO_DATA = {
   dados: {
 
 1: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O banquete do rei Assuero, Xerxes</b></i></p>",
     "<b>1</b> Sucedeu, pois, nos dias de Assuero (este é aquele Assuero que reinou desde a Índia até a Etiópia, sobre cento e vinte e sete províncias),",
     "<b>2</b> que naqueles dias, estando o rei Assuero assentado no trono do seu reino, que estava na cidadela de Susã,",
     "<b>3</b> no terceiro ano do seu reinado, deu um banquete a todos os seus príncipes e seus servos, estando perante ele o poder da Pérsia e da Média, os nobres e os príncipes das províncias;",
@@ -14,10 +15,12 @@ window.LIVRO_DATA = {
     "<b>6</b> Havia panos brancos, verdes e azuis, presos com cordas de linho fino e de púrpura a argolas de prata e a colunas de mármore; os leitos eram de ouro e de prata, sobre um pavimento de pórfiro, de mármore branco, de madrepérola e de mármore preto.",
     "<b>7</b> Davam de beber em copos de ouro, sendo os copos diferentes uns dos outros; e havia vinho real em abundância, segundo a generosidade do rei.",
     "<b>8</b> E o beber era, por lei, sem restrição; porque assim havia ordenado o rei a todos os oficiais da sua casa, que fizessem conforme a vontade de cada um.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A rainha Vasti afronta a ordem do rei</b></i></p>",
     "<b>9</b> Também a rainha Vasti deu um banquete às mulheres, no palácio real do rei Assuero.",
     "<b>10</b> Ao sétimo dia, estando já o rei alegre pelo vinho, mandou a Meumã, Bizta, Harbona, Bigta, Abagta, Zetar e Carcas, os sete eunucos que serviam na presença do rei Assuero,",
     "<b>11</b> que trouxessem a rainha Vasti à presença do rei com a coroa real, para mostrar ao povo e aos príncipes a sua beleza, pois era formosa à vista.",
     "<b>12</b> Porém a rainha Vasti recusou vir conforme a ordem do rei, transmitida pelos eunucos; então o rei muito se irou, e ardeu nele a sua indignação.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Vasti é condenada à pena exemplar</b></i></p>",
     "<b>13</b> Então perguntou o rei aos sábios que conheciam os tempos (pois assim se tratava dos negócios do rei perante todos os que sabiam a lei e o direito;",
     "<b>14</b> e os mais chegados a ele eram Carsena, Setar, Admata, Társis, Meres, Marsena e Memucã, os sete príncipes da Pérsia e da Média, que viam o rosto do rei e se assentavam primeiro no reino):",
     "<b>15</b> Que se há de fazer, segundo a lei, à rainha Vasti, por não haver cumprido a ordem do rei Assuero, transmitida pelos eunucos?",
@@ -30,6 +33,7 @@ window.LIVRO_DATA = {
     "<b>22</b> pois enviou cartas a todas as províncias do rei, a cada província segundo a sua escrita, e a cada povo segundo a sua língua, para que todo homem fosse senhor em sua casa, e se falasse conforme a língua do seu povo."
     ],
 2: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ester é proclamada de rainha</b></i></p>",
     "<b>1</b> Depois destas coisas, aplacada já a ira do rei Assuero, lembrou-se de Vasti, do que ela fizera e do que se havia decretado contra ela.",
     "<b>2</b> Então disseram os servos do rei que ministravam diante dele: Busquem-se para o rei moças virgens, de formosa aparência;",
     "<b>3</b> e o rei nomeie oficiais em todas as províncias do seu reino, que ajuntem todas as moças virgens, de formosa aparência, na cidadela de Susã, na casa das mulheres, sob a custódia de Hegai, eunuco do rei, guarda das mulheres; e dêem-se-lhes os seus cosméticos.",
@@ -48,6 +52,7 @@ window.LIVRO_DATA = {
     "<b>16</b> Ester foi levada para o rei Assuero, ao palácio real, no décimo mês, que é o mês de Tebete, no sétimo ano do seu reinado.",
     "<b>17</b> E o rei amou a Ester mais do que a todas as mulheres, e ela alcançou perante ele graça e benevolência mais do que todas as virgens; de modo que lhe pôs a coroa real na cabeça, e a fez rainha em lugar de Vasti.",
     "<b>18</b> Então o rei deu um grande banquete a todos os seus príncipes e seus servos, o banquete de Ester; e concedeu alívio às províncias, e fez distribuições segundo a generosidade real.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Mardoqueu delata conspiradores</b></i></p>",
     "<b>19</b> E, ajuntando-se segunda vez as virgens, Mardoqueu estava sentado à porta do rei.",
     "<b>20</b> Ester, pois, como Mardoqueu lhe ordenara, não havia declarado a sua parentagem nem o seu povo, porque cumpria as ordens de Mardoqueu, como quando estava sendo criada por ele.",
     "<b>21</b> Naqueles dias, estando Mardoqueu sentado à porta do rei, dois eunucos do rei, Bigtã e Teres, guardas da porta, se indignaram e procuravam levantar as mãos contra o rei Assuero.",
@@ -55,12 +60,14 @@ window.LIVRO_DATA = {
     "<b>23</b> Inquiriu-se o negócio, e achou-se ser verdade; e ambos foram enforcados numa árvore. E isto foi escrito no livro das crônicas perante o rei."
     ],
 3: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O ódio de Hamã contra os judeus</b></i></p>",
     "<b>1</b> Depois destas coisas, o rei Assuero engrandeceu a Hamã, filho de Hamedata, o agagita, e o exaltou, e pôs o seu assento acima de todos os príncipes que estavam com ele.",
     "<b>2</b> E todos os servos do rei, que estavam à porta do rei, se inclinavam e se prostravam perante Hamã; porque assim tinha ordenado o rei acerca dele. Mardoqueu, porém, não se inclinava nem se prostrava.",
     "<b>3</b> Então os servos do rei, que estavam à porta do rei, disseram a Mardoqueu: Por que transgrides a ordem do rei?",
     "<b>4</b> Sucedeu, pois, que, falando-lhe eles dia após dia, e não lhes dando ele ouvidos, o fizeram saber a Hamã, para ver se as palavras de Mardoqueu se sustentariam; porque ele lhes tinha declarado que era judeu.",
     "<b>5</b> Vendo, pois, Hamã que Mardoqueu não se inclinava nem se prostrava diante dele, encheu-se de furor.",
     "<b>6</b> Mas teve pouco caso de lançar mão só de Mardoqueu (pois lhe haviam declarado o povo de Mardoqueu); antes Hamã procurou destruir todos os judeus, o povo de Mardoqueu, que havia em todo o reino de Assuero.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O alvo de Hamã: aniquilar os judeus</b></i></p>",
     "<b>7</b> No primeiro mês, que é o mês de Nisã, no ano duodécimo do rei Assuero, se lançou Pur, isto é, a sorte, perante Hamã, de dia em dia, e de mês em mês, até ao duodécimo mês, que é o mês de Adar.",
     "<b>8</b> E Hamã disse ao rei Assuero: Existe um povo espalhado e disperso entre os povos em todas as províncias do teu reino, e as suas leis são diferentes das leis de todos os povos, e não guardam as leis do rei; pelo que não convém ao rei tolerá-lo.",
     "<b>9</b> Se parecer bem ao rei, decrete-se que sejam destruídos; e eu pagarei dez mil talentos de prata na mão dos que fazem a obra, para os introduzir nos tesouros do rei.",
@@ -72,9 +79,11 @@ window.LIVRO_DATA = {
     "<b>15</b> Os correios, apressados pela ordem do rei, saíram; e o decreto foi divulgado na cidadela de Susã. E o rei e Hamã se assentaram a beber; mas a cidade de Susã estava perplexa."
     ],
 4: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Horror e humilhação dos judeus</b></i></p>",
     "<b>1</b> Quando Mardoqueu soube tudo quanto se havia passado, rasgou as suas vestes, vestiu-se de saco e de cinza, e saiu pela cidade, clamando com grande e amargo clamor.",
     "<b>2</b> E chegou até diante da porta do rei; porque ninguém podia entrar pela porta do rei vestido de saco.",
     "<b>3</b> E em cada província, e em cada lugar aonde chegava a ordem do rei e o seu decreto, havia grande luto entre os judeus, com jejum, e choro, e lamentação; e muitos se deitavam em saco e em cinza.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Mardoqueu pede ajuda a Ester</b></i></p>",
     "<b>4</b> Então as servas de Ester e os seus eunucos vieram e lhe fizeram saber isso; e a rainha muito se doeu; e mandou roupas para vestir a Mardoqueu e para lhe tirar o seu saco; porém ele não as aceitou.",
     "<b>5</b> Então Ester mandou chamar Hatá, um dos eunucos que o rei havia posto para a servir, e lhe deu ordem para ir ter com Mardoqueu e saber que era aquilo e por que era.",
     "<b>6</b> E saiu Hatá a ter com Mardoqueu, à praça da cidade, que estava diante da porta do rei.",
@@ -91,6 +100,7 @@ window.LIVRO_DATA = {
     "<b>17</b> Então Mardoqueu foi e fez conforme tudo o que Ester lhe ordenara."
     ],
 5: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Ester dirige-se à presença do rei</b></i></p>",
     "<b>1</b> Ao terceiro dia, Ester vestiu-se com as suas vestes reais, e pôs-se no pátio interior da casa do rei, defronte do aposento real; e o rei estava assentado sobre o seu trono real, na casa real, defronte da porta do aposento.",
     "<b>2</b> E sucedeu que, vendo o rei a rainha Ester parada no pátio, ela alcançou graça aos seus olhos; e o rei estendeu para Ester o cetro de ouro que tinha na sua mão. Então Ester se aproximou, e tocou na ponta do cetro.",
     "<b>3</b> E o rei lhe disse: Que é que tens, rainha Ester? Qual é a tua petição? Até metade do reino se te dará.",
@@ -99,6 +109,7 @@ window.LIVRO_DATA = {
     "<b>6</b> E, no banquete do vinho, o rei disse a Ester: Qual é a tua petição? e ser-te-á concedida. E qual é o teu desejo? Até metade do reino se te dará.",
     "<b>7</b> Então respondeu Ester: A minha petição e desejo é:",
     "<b>8</b> Se tenho alcançado graça aos olhos do rei, e se parecer bem ao rei conceder-me a minha petição e cumprir o meu desejo, venha o rei com Hamã ao banquete que lhes hei de preparar, e amanhã farei conforme a palavra do rei.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>É feita uma forca para Mardoqueu</b></i></p>",
     "<b>9</b> Então Hamã saiu naquele dia alegre e de bom ânimo; porém, vendo Mardoqueu à porta do rei, e que não se levantara nem se movera diante dele, Hamã se encheu de furor contra Mardoqueu.",
     "<b>10</b> Contudo Hamã se refreou, e foi para sua casa; e mandou chamar os seus amigos e Zeres, sua mulher.",
     "<b>11</b> E contou-lhes a glória de suas riquezas, e a multidão de seus filhos, e tudo em que o rei o tinha engrandecido, e como o havia exaltado sobre os príncipes e servos do rei.",
@@ -107,6 +118,7 @@ window.LIVRO_DATA = {
     "<b>14</b> Então lhe disseram Zeres, sua mulher, e todos os seus amigos: Faça-se uma forca de cinquenta côvados de altura, e amanhã dize ao rei que nela seja enforcado Mardoqueu; e então entra alegre com o rei ao banquete. E isto agradou a Hamã, e mandou fazer a forca."
     ],
 6: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Hamã acaba honrando Mardoqueu</b></i></p>",
     "<b>1</b> Naquela noite o rei não conseguia dormir; então mandou trazer o livro de registro das crônicas, e estas foram lidas perante o rei.",
     "<b>2</b> E achou-se escrito que Mardoqueu tinha denunciado Bigtã e Teres, dois eunucos do rei, guardas da porta, que haviam procurado levantar as mãos contra o rei Assuero.",
     "<b>3</b> Então o rei disse: Que honra ou distinção foi conferida a Mardoqueu por isso? Responderam os servos do rei que ministravam diante dele: Coisa nenhuma se lhe fez.",
@@ -123,6 +135,7 @@ window.LIVRO_DATA = {
     "<b>14</b> Enquanto ainda falavam com ele, chegaram os eunucos do rei, e se apressaram a levar Hamã ao banquete que Ester tinha preparado."
     ],
 7: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Hamã morre na forca que construiu</b></i></p>",
     "<b>1</b> Vieram, pois, o rei e Hamã para banquetear com a rainha Ester.",
     "<b>2</b> E, no segundo dia, o rei disse a Ester no banquete do vinho: Qual é a tua petição, rainha Ester? e ser-te-á concedida. E qual é o teu desejo? Até metade do reino se te dará.",
     "<b>3</b> Então respondeu a rainha Ester: Se, ó rei, tenho alcançado a tua graça, e se parecer bem ao rei, dá-se-me a minha vida como minha petição, e o meu povo como meu desejo.",
@@ -135,6 +148,7 @@ window.LIVRO_DATA = {
     "<b>10</b> Enforcaram, pois, a Hamã na forca que ele tinha preparado para Mardoqueu. Então o furor do rei se aplacou."
     ],
 8: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O rei determina a favor dos judeus</b></i></p>",
     "<b>1</b> Naquele mesmo dia o rei Assuero deu à rainha Ester a casa de Hamã, inimigo dos judeus. E Mardoqueu veio perante o rei; pois Ester lhe tinha declarado o que ele era para com ela.",
     "<b>2</b> E o rei tirou o seu anel, que tinha tirado a Hamã, e o deu a Mardoqueu. E Ester encarregou Mardoqueu de administrar a casa de Hamã.",
     "<b>3</b> Falou mais Ester perante o rei, e, lançando-se-lhe aos pés, com lágrimas lhe suplicou que revogasse a maldade de Hamã, o agagita, e o intento que tinha contra os judeus.",
@@ -154,6 +168,7 @@ window.LIVRO_DATA = {
     "<b>17</b> E em cada província e em cada cidade, onde chegava a ordem do rei e o seu decreto, havia entre os judeus alegria e gozo, banquetes e festas. E muitos dos povos da terra se fizeram judeus, porque o temor dos judeus tinha caído sobre eles."
     ],
 9: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A vingança dos judeus - Purim</b></i></p>",
     "<b>1</b> Ora, no duodécimo mês, que é o mês de Adar, no seu dia treze, quando estava para ser executada a ordem do rei e o seu decreto, no dia em que os inimigos dos judeus esperavam assenhorear-se deles, sucedeu o contrário, isto é, os judeus é que se assenhorearam dos que os odiavam.",
     "<b>2</b> Os judeus se reuniram nas suas cidades em todas as províncias do rei Assuero, para estenderem a mão contra os que procuravam o seu mal; e ninguém podia resistir-lhes, porque o temor deles tinha caído sobre todos os povos.",
     "<b>3</b> E todos os príncipes das províncias, e os sátrapas, e os governadores, e os oficiais do rei ajudavam os judeus, porque o temor de Mardoqueu tinha caído sobre eles.",
@@ -169,6 +184,7 @@ window.LIVRO_DATA = {
     "<b>13</b> Ester respondeu: Se parecer bem ao rei, conceda-se também amanhã aos judeus que se acham em Susã que façam conforme o decreto de hoje; e enforquem numa forca os dez filhos de Hamã.",
     "<b>14</b> E ordenou o rei que assim se fizesse; e publicou-se o decreto em Susã; e enforcaram os dez filhos de Hamã.",
     "<b>15</b> Os judeus que estavam em Susã reuniram-se também no dia catorze do mês de Adar, e mataram em Susã trezentos homens; porém ao despojo não estenderam a mão.",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>A instituição da festa dos Purim</b></i></p>",
     "<b>16</b> Os outros judeus, que estavam nas províncias do rei, se reuniram e se dispuseram para defender as suas vidas, e tiveram descanso dos seus inimigos, e mataram deles setenta e cinco mil; porém ao despojo não estenderam a mão.",
     "<b>17</b> Sucedeu isso no dia treze do mês de Adar; e no dia catorze do mesmo descansaram, e fizeram desse dia um dia de banquetes e de alegria.",
     "<b>18</b> Mas os judeus que estavam em Susã se reuniram no dia treze e no dia catorze do mesmo mês; e no dia quinze descansaram, e fizeram dele um dia de banquetes e de alegria.",
@@ -188,6 +204,7 @@ window.LIVRO_DATA = {
     "<b>32</b> E a ordem de Ester confirmou estas coisas relativas a Purim; e foi escrita no livro."
     ],
 10: [
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>Mardoqueu é honrado pelo rei</b></i></p>",
     "<b>1</b> O rei Assuero impôs tributo sobre a terra e sobre as ilhas do mar.",
     "<b>2</b> E todos os atos do seu poder e do seu valor, e a declaração da grandeza de Mardoqueu, com que o rei o exaltou, porventura não estão escritos no livro das crônicas dos reis da Média e da Pérsia?",
     "<b>3</b> Porque o judeu Mardoqueu foi o segundo depois do rei Assuero, e grande entre os judeus, e estimado pela multidão de seus irmãos, procurando o bem do seu povo e falando de paz para toda a sua posteridade."
