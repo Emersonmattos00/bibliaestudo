@@ -804,14 +804,14 @@
     }
 
     /* ============================================
-       ANÚNCIO - PLAYLIST DO SPOTIFY
+       ANÚNCIO - PLAYLIST DO SPOTIFY COM IMAGEM
     ============================================ */
     .ad-container {
       position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 9997;
-      max-width: 320px;
+      max-width: 340px;
       width: 100%;
       background: rgba(20, 30, 20, 0.92);
       backdrop-filter: blur(12px);
@@ -820,12 +820,33 @@
       padding: 16px;
       border: 1px solid rgba(255, 217, 102, 0.15);
       box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-      transition: all var(--transition);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .ad-container.minimized {
+      max-width: 56px;
+      padding: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .ad-container.minimized .ad-content > *:not(.ad-minimized-icon) {
+      display: none;
+    }
+
+    .ad-container.minimized .ad-minimized-icon {
+      display: flex !important;
     }
 
     .ad-container:hover {
       border-color: rgba(255, 217, 102, 0.3);
       box-shadow: 0 8px 48px rgba(255, 217, 102, 0.08);
+    }
+
+    .ad-container.minimized:hover {
+      border-color: rgba(255, 217, 102, 0.3);
+      transform: scale(1.05);
     }
 
     .ad-content {
@@ -841,6 +862,26 @@
       font-weight: 600;
       margin-bottom: 6px;
       display: block;
+    }
+
+    /* ===== IMAGEM DA PLAYLIST ===== */
+    .ad-playlist-image {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      aspect-ratio: 1/1;
+      border-radius: 12px;
+      margin: 0 auto 10px;
+      display: block;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(255, 217, 102, 0.1);
+      transition: all var(--transition);
+    }
+
+    .ad-playlist-image:hover {
+      transform: scale(1.02);
+      border-color: rgba(255, 217, 102, 0.3);
     }
 
     .ad-content .ad-title {
@@ -899,7 +940,24 @@
       font-size: 14px;
     }
 
-    /* Botão de fechar anúncio */
+    /* ===== ÍCONE MINIMIZADO ===== */
+    .ad-minimized-icon {
+      display: none !important;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      color: #1DB954;
+      background: rgba(20, 30, 20, 0.92);
+      border-radius: 50%;
+    }
+
+    .ad-minimized-icon i {
+      font-size: 28px;
+    }
+
+    /* ===== BOTÃO DE MINIMIZAR ===== */
     .ad-close {
       position: absolute;
       top: 8px;
@@ -920,13 +978,47 @@
       transform: scale(1.1);
     }
 
+    .ad-container.minimized .ad-close {
+      display: none;
+    }
+
+    /* ===== BOTÃO DE EXPANDIR (aparece quando minimizado) ===== */
+    .ad-expand-btn {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 5;
+    }
+
+    .ad-container.minimized .ad-expand-btn {
+      display: block;
+    }
+
     /* Versão responsiva do anúncio */
     @media (max-width: 768px) {
       .ad-container {
-        max-width: 280px;
+        max-width: 290px;
         bottom: 15px;
         right: 15px;
         padding: 14px;
+      }
+
+      .ad-container.minimized {
+        max-width: 50px;
+        padding: 6px;
+      }
+
+      .ad-playlist-image {
+        max-width: 160px;
       }
 
       .ad-content .ad-title {
@@ -945,15 +1037,37 @@
         font-size: 12px;
         padding: 6px 16px;
       }
+
+      .ad-minimized-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+      }
+
+      .ad-minimized-icon i {
+        font-size: 24px;
+      }
     }
 
     @media (max-width: 480px) {
       .ad-container {
-        max-width: 220px;
+        max-width: 230px;
         bottom: 70px;
         right: 10px;
         padding: 12px;
         border-radius: 12px;
+      }
+
+      .ad-container.minimized {
+        max-width: 44px;
+        padding: 5px;
+        bottom: 75px;
+        right: 12px;
+      }
+
+      .ad-playlist-image {
+        max-width: 120px;
+        margin-bottom: 8px;
       }
 
       .ad-content .ad-title {
@@ -984,6 +1098,16 @@
         font-size: 15px;
         top: 5px;
         right: 8px;
+      }
+
+      .ad-minimized-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+      }
+
+      .ad-minimized-icon i {
+        font-size: 20px;
       }
     }
 
@@ -1292,27 +1416,34 @@
     <span id="toastMessage">Mensagem</span>
   </div>
 
-  <!-- ===== CONTADOR DE VISUALIZAÇÕES ===== -->
-  <div class="view-counter" aria-label="Contador de visualizações da página">
-    <i class="fas fa-eye" aria-hidden="true"></i>
-    <span class="count-number" id="viewCount">0</span>
-    <span class="count-label">visualizações</span>
-  </div>
-
   <!-- ============================================ -->
-  <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY ========= -->
+  <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY COM IMAGEM (MINIMIZÁVEL) ===== -->
   <!-- ============================================ -->
   <div class="ad-container" id="adContainer" role="complementary" aria-label="Playlist do Spotify">
-    <button class="ad-close" id="adClose" aria-label="Fechar anúncio">
-      <i class="fas fa-times" aria-hidden="true"></i>
+    <button class="ad-close" id="adClose" aria-label="Minimizar playlist">
+      <i class="fas fa-minus" aria-hidden="true"></i>
     </button>
+    <button class="ad-expand-btn" id="adExpand" aria-label="Expandir playlist" style="display: none;"></button>
+    
     <div class="ad-content">
       <span class="ad-label">🎧 Playlist Recomendada</span>
+      
+      <!-- ===== IMAGEM DA PLAYLIST ===== -->
+      <img 
+        src="assets/capa/josephmatthos.png" 
+        alt="Capa da playlist Joseph Matthos" 
+        class="ad-playlist-image"
+        loading="lazy"
+        width="200"
+        height="200"
+      />
+      
       <div class="ad-title">Joseph Matthos</div>
       <div class="ad-description">
         Mentalidade de Ouro · Jardim do Coração
         <span>69 músicas · ~2h15</span>
       </div>
+      
       <!-- ===== EMBED DO SPOTIFY ===== -->
       <iframe 
         src="https://open.spotify.com/embed/playlist/3flgUEol1uBvFAlriXZE24?utm_source=generator" 
@@ -1325,6 +1456,7 @@
         style="border-radius: 12px; margin: 8px 0;"
         title="Player da playlist Joseph Matthos no Spotify">
       </iframe>
+      
       <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" 
          class="ad-button" 
          target="_blank" 
@@ -1333,6 +1465,11 @@
         <i class="fab fa-spotify" aria-hidden="true"></i>
         Ouvir no Spotify
       </a>
+    </div>
+    
+    <!-- ===== ÍCONE MINIMIZADO ===== -->
+    <div class="ad-minimized-icon">
+      <i class="fab fa-spotify" aria-hidden="true"></i>
     </div>
   </div>
 
@@ -1406,7 +1543,7 @@
           currentEstante: 'recursos',
           scrollPositions: {},
           isEstanteOpen: true,
-          adClosed: false
+          adMinimized: false
         };
         this.loadState();
       }
@@ -1666,34 +1803,61 @@
     }, 10));
 
     // ============================================
-    // ANÚNCIO - CONTROLE DE FECHAMENTO
+    // ANÚNCIO - CONTROLE DE MINIMIZAR/EXPANDIR
     // ============================================
     function initAd() {
       const adContainer = document.getElementById('adContainer');
       const adClose = document.getElementById('adClose');
+      const adExpand = document.getElementById('adExpand');
       
-      // Verificar se o anúncio foi fechado anteriormente
-      const adClosed = appState.get('adClosed');
+      // Verificar estado salvo
+      const isMinimized = appState.get('adMinimized');
       
-      if (adClosed) {
-        adContainer.style.display = 'none';
-        return;
+      if (isMinimized) {
+        adContainer.classList.add('minimized');
+        adExpand.style.display = 'block';
       }
       
-      // Evento de fechar anúncio
-      adClose.addEventListener('click', function() {
-        adContainer.style.opacity = '0';
-        adContainer.style.transform = 'scale(0.8)';
-        setTimeout(() => {
-          adContainer.style.display = 'none';
-        }, 300);
-        appState.set('adClosed', true);
-        mostrarToast('Playlist fechada. Continue estudando! 📖', 'info', 2000);
+      // Minimizar
+      adClose.addEventListener('click', function(e) {
+        e.stopPropagation();
+        adContainer.classList.add('minimized');
+        adExpand.style.display = 'block';
+        appState.set('adMinimized', true);
+        mostrarToast('Playlist minimizada. Clique no ícone para expandir.', 'info', 2000);
       });
       
-      // Permitir fechar com tecla ESC
+      // Expandir (clique no container ou no botão de expandir)
+      function expandAd() {
+        adContainer.classList.remove('minimized');
+        adExpand.style.display = 'none';
+        appState.set('adMinimized', false);
+      }
+      
+      adExpand.addEventListener('click', function(e) {
+        e.stopPropagation();
+        expandAd();
+      });
+      
+      adContainer.addEventListener('click', function(e) {
+        if (adContainer.classList.contains('minimized')) {
+          // Verifica se o clique não foi no botão de fechar
+          if (!e.target.closest('.ad-close')) {
+            expandAd();
+          }
+        }
+      });
+      
+      // Permitir expandir com tecla Enter no container minimizado
+      adContainer.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && adContainer.classList.contains('minimized')) {
+          expandAd();
+        }
+      });
+      
+      // Tecla ESC para minimizar quando expandido
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && adContainer.style.display !== 'none') {
+        if (e.key === 'Escape' && !adContainer.classList.contains('minimized')) {
           adClose.click();
         }
       });
@@ -1778,7 +1942,7 @@
         }
       });
       
-      // Inicializar anúncio
+      // Inicializar anúncio minimizável
       initAd();
     });
 
