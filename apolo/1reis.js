@@ -674,7 +674,7 @@ window.LIVRO_DATA = {
     "<b>4</b> Quem de Baasa morrer na cidade, os cães o comerão; e quem dele morrer no campo, as aves do céu o comerão.",
     "<b>5</b> Quanto ao restante dos atos de Baasa, e ao que fez, e ao seu poder, porventura não está escrito no livro das crônicas dos reis de Israel?",
     "<b>6</b> E Baasa descansou com seus pais, e foi sepultado em Tirza; e Elá, seu filho, reinou em seu lugar.",
-    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Elá em Israel/b></i></p>",
+    "<p style='font-size: 0.8rem; text-align: center;'><i><b>O reinado de Elá em Israel</b></i></p>",
     "<b>7</b> E também pela mão do profeta Jeú, filho de Hanani, veio a palavra do Senhor contra Baasa e contra a sua casa, e por todo o mal que fez aos olhos do Senhor, provocando-o à ira com a obra das suas mãos, sendo como a casa de Jeroboão, e porque ele a destruiu.",
     "<p style='font-size: 0.8rem; text-align: center;'><i><b>A conspiração de Zinri</b></i></p>",
     "<b>8</b> No vigésimo sexto ano de Asa, rei de Judá, começou Elá, filho de Baasa, a reinar sobre Israel em Tirza, e reinou dois anos.",
