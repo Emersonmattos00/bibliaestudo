@@ -249,7 +249,7 @@
             page-break-inside: avoid;
         }
         .verbete-titulo {
-            font-size: 22px;
+            font-size: 10px;
             font-weight: bold;
             color: #8b4513;
             border-left: 4px solid #d4af37;
@@ -356,6 +356,118 @@
         
         .hidden { display: none; }
 
+        /* ===== NOVOS ESTILOS PARA FORMATAÇÃO DO CONTEÚDO ===== */
+        /* Estilos para formatação dos verbetes dentro do flipbook */
+        .numero-ordem {
+            color: #8b4513;
+            font-weight: 900;
+            font-size: 1.1em;
+        }
+
+        .nome-principal {
+            color: #2c3e50;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+
+        .subtitulo {
+            color: #7f8c8d;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .hebraico {
+            color: #8e44ad;
+            font-style: italic;
+            background: #f4ecf7;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .destaque-amarelo {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            color: #856404;
+        }
+
+        .destaque-vermelho {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .versiculo {
+            color: #c0392b;
+            font-weight: 700;
+            background: #fde8e8;
+            padding: 1px 6px;
+            border-radius: 3px;
+        }
+
+        .label-ref {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 0.95em;
+        }
+
+        .refs {
+            color: #34495e;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        /* Melhorias nos verbetes */
+        .verbete-definicao p {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+
+        .verbete-definicao strong {
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .verbete-definicao ul {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            list-style: none;
+            margin: 12px 0;
+        }
+
+        .verbete-definicao ul li {
+            padding: 6px 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .verbete-definicao ul li:last-child {
+            border-bottom: none;
+        }
+
+        .verbete-definicao ul li strong {
+            color: #2980b9;
+        }
+
+        .verbete-definicao .destaque {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            color: #856404;
+        }
+
+        .verbete-definicao .diferenca {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .verbete-definicao em {
+            color: #8e44ad;
+            font-style: italic;
+        }
+
         /* ===== RESPONSIVIDADE ===== */
         @media (max-width: 768px) {
             .main-container { padding: 0 15px 0 70px; }
@@ -447,7 +559,7 @@
       <span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span>
     </a>
     
-    <a href="cantor.html" title="Hinos Clássicos Batistas">
+    <a href="Cantor.html" title="Hinos Clássicos Batistas">
       <i class="fas fa-microphone-alt"></i>
       <span class="tooltip">Cantor<br>Cristão</span>
     </a>
@@ -467,7 +579,7 @@
             <div class="page-title-bar">
                 <div class="title-left">
                     <i class="fas fa-book-open"></i>
-                    <span>ENCICLOPÉDIA BÍBLICA</span>
+                    <span>Enciclopédia Bíblica</span>
                 </div>
                 <div class="title-right">
                     <button id="btn-anterior-livro" class="nav-vol-btn"><i class="fas fa-chevron-left"></i></button>
@@ -585,10 +697,10 @@
         `;
         document.body.appendChild(medidor);
         
-        const referenciasHtml = referencias ? `<div class="verbete-referencias"><i class="fas fa-book"></i> Referências: ${escapeHTML(referencias)}</div>` : '';
+        const referenciasHtml = referencias ? `<div class="verbete-referencias"><i class="fas fa-book"></i> ${referencias}</div>` : '';
         
         const cabecalhoCompleto = `<div class="verbete-item" data-termo="${termo}">
-            <div class="verbete-titulo">${escapeHTML(termo)}</div>
+            <div class="verbete-titulo">${termo}</div>
         `;
         
         const textoDefinicao = definicao || '';
@@ -598,7 +710,7 @@
             const paginaUnica = `<div class="own-size" data-termo="${termo}" data-pagina-inicial="true">
                 <div class="page-content">
                     <div class="cabecalho-pagina">
-                        <span class="referencia">${escapeHTML(termo)}</span>
+                        <span class="referencia">${termo}</span>
                     </div>
                     <div class="conteudo-uma-coluna">
                         <div class="coluna-unica">
@@ -628,11 +740,11 @@
                 
                 let htmlTeste;
                 if (paginaNum === 1) {
-                    htmlTeste = `${cabecalhoCompleto}<div class="verbete-definicao">${escapeHTML(novoTeste)}</div>${referenciasHtml}</div>`;
+                    htmlTeste = `${cabecalhoCompleto}<div class="verbete-definicao">${novoTeste}</div>${referenciasHtml}</div>`;
                 } else {
                     htmlTeste = `<div class="verbete-item" data-termo="${termo}">
-                        <div class="continuacao-label"><i class="fas fa-arrow-right"></i> Continuação: ${escapeHTML(termo)}</div>
-                        <div class="verbete-definicao">${escapeHTML(novoTeste)}</div>
+                        <div class="continuacao-label"><i class="fas fa-arrow-right"></i> Continuação: ${termo}</div>
+                        <div class="verbete-definicao">${novoTeste}</div>
                         ${paginaNum === 2 && referencias ? referenciasHtml : ''}
                     </div>`;
                 }
@@ -654,12 +766,12 @@
                     paginaHtml = `<div class="own-size" data-termo="${termo}" data-pagina-inicial="true">
                         <div class="page-content">
                             <div class="cabecalho-pagina">
-                                <span class="referencia">${escapeHTML(termo)}</span>
+                                <span class="referencia">${termo}</span>
                             </div>
                             <div class="conteudo-uma-coluna">
                                 <div class="coluna-unica">
                                     ${cabecalhoCompleto}
-                                    <div class="verbete-definicao">${escapeHTML(testeConteudo)}</div>
+                                    <div class="verbete-definicao">${testeConteudo}</div>
                                     ${referenciasHtml}
                                 </div>
                             </div>
@@ -671,13 +783,13 @@
                     paginaHtml = `<div class="own-size" data-termo="${termo}" data-continuacao="true">
                         <div class="page-content">
                             <div class="cabecalho-pagina">
-                                <span class="referencia">${escapeHTML(termo)} (continuação ${paginaNum - 1})</span>
+                                <span class="referencia">${termo} (continuação ${paginaNum - 1})</span>
                             </div>
                             <div class="conteudo-uma-coluna">
                                 <div class="coluna-unica">
                                     <div class="verbete-item" data-termo="${termo}">
-                                        <div class="continuacao-label"><i class="fas fa-arrow-right"></i> Continuação: ${escapeHTML(termo)} (parte ${paginaNum - 1})</div>
-                                        <div class="verbete-definicao">${escapeHTML(testeConteudo)}</div>
+                                        <div class="continuacao-label"><i class="fas fa-arrow-right"></i> Continuação: ${termo} (parte ${paginaNum - 1})</div>
+                                        <div class="verbete-definicao">${testeConteudo}</div>
                                         ${paginaNum === 2 && referencias ? referenciasHtml : ''}
                                     </div>
                                 </div>
@@ -701,12 +813,12 @@
             const paginaUnica = `<div class="own-size" data-termo="${termo}" data-pagina-inicial="true">
                 <div class="page-content">
                     <div class="cabecalho-pagina">
-                        <span class="referencia">${escapeHTML(termo)}</span>
+                        <span class="referencia">${termo}</span>
                     </div>
                     <div class="conteudo-uma-coluna">
                         <div class="coluna-unica">
                             ${cabecalhoCompleto}
-                            <div class="verbete-definicao">${escapeHTML(textoDefinicao)}</div>
+                            <div class="verbete-definicao">${textoDefinicao}</div>
                             ${referenciasHtml}
                         </div>
                     </div>
