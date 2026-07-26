@@ -1,40 +1,508 @@
 window.LIVRO_DATA = {
     nome: "Volume 9",
     dados: [
-{
-    termo: "<span class='numero-ordem'>801.</span> <span class='nome-principal'>Merede</span> <span class='subtitulo'>– descendente de Judá, casado com Bitiá, filha de Faraó (1Cr 4:17-18)</span>",
-    definicao: "<p><strong>Merede</strong>, da tribo de Judá, casou-se com <strong>Bitiá</strong>, uma princesa egípcia (filha de Faraó). Teve filhos que fundaram cidades (Gederá, Socó, Zanoa).</p><ul><li><strong>Nome:</strong> significa 'rebelde' ou 'resistente'</li><li>Representa a integração de estrangeiros na linhagem de Judá</li><li><strong>Curiosidade:</strong> Bitiá é tradicionalmente identificada com a princesa que salvou Moisés, mas não há prova bíblica</li></ul>",
-    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:17-18</span>"
-},
-{
-    termo: "<span class='numero-ordem'>802.</span> <span class='nome-principal'>Bitiá (Bithiah)</span> <span class='subtitulo'>– princesa egípcia, esposa de Merede (1Cr 4:18)</span>",
-    definicao: "<p><strong>Bitiá</strong> é uma filha de Faraó que se casou com Merede, um israelita da tribo de Judá.</p><ul><li><strong>Nome:</strong> significa 'filha de Yahweh' (ironicamente, pois era egípcia de nascimento)</li><li>A tradição judaica a identifica com a filha de Faraó que criou Moisés (<span class='versiculo'>Êx 2:5-10</span>), mas o texto não confirma</li><li>Representa a conversão de gentios ao Deus de Israel</li></ul>",
-    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:18</span>"
-},
-{
-    termo: "<span class='numero-ordem'>803.</span> <span class='nome-principal'>Calebe (filho de Hezrom)</span> <span class='subtitulo'>– diferente do espião, mencionado em 1Cr 2:18-19</span>",
-    definicao: "<p><strong>Calebe</strong>, filho de Hezrom (neto de Perez, descendente de Judá). Casou-se com Azuba, com quem teve Jeriote, e depois com Efrate, mãe de Hur (avô de Bezalel).</p><ul><li>Este Calebe é distinto de Calebe, filho de Jefoné (o espião)</li><li><strong>Nome:</strong> significa 'cão' ou 'audaz'</li><li>Representa a linhagem de Judá que produziu artesãos do tabernáculo</li></ul>",
-    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:18-19,24,50</span>"
-},
-{
-    termo: "<span class='numero-ordem'>804.</span> <span class='nome-principal'>Efrate (Efrata)</span> <span class='subtitulo'>– esposa de Calebe (filho de Hezrom), mãe de Hur (1Cr 2:19)</span>",
-    definicao: "<p><strong>Efrate</strong>, também chamada Efrata, é a segunda esposa de Calebe (filho de Hezrom). Deu à luz Hur, avô de Bezalel.</p><ul><li>Seu nome está associado à cidade de Belém-Efrata</li><li>Representa a conexão entre a linhagem de Judá e a arte do tabernáculo</li></ul>",
-    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:19,24,50; Rt 4:11</span>"
-},
-{
-    termo: "<span class='numero-ordem'>805.</span> <span class='nome-principal'>Azuba (Azubah)</span> <span class='subtitulo'>– primeira esposa de Calebe (filho de Hezrom) (1Cr 2:18)</span>",
-    definicao: "<p><strong>Azuba</strong> foi a primeira esposa de Calebe (descendente de Judá).</p><ul><li><strong>Nome:</strong> significa 'abandonada' ou 'desolada'</li><li>Teve uma filha chamada Jeriote</li><li>Representa as mulheres anônimas nas genealogias de Judá</li></ul>",
-    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:18</span>"
-},
-{
-    termo: "<span class='numero-ordem'>806.</span> <span class='nome-principal'>Jeriote (Jerioth)</span> <span class='subtitulo'>– filha de Calebe (filho de Hezrom) (1Cr 2:18)</span>",
-    definicao: "<p><strong>Jeriote</strong> é a filha de Calebe (o descendente de Judá) com Azuba.</p><ul><li><strong>Nome:</strong> significa 'cortinas' ou 'tendas'</li><li>Não se sabe se casou ou teve descendência</li><li>Representa a presença de mulheres nas listas genealógicas</li></ul>",
-    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:18</span>"
-},
-{
-    termo: "<span class='numero-ordem'>807.</span> <span class='nome-principal'>Seca (Sheshan)</span> <span class='subtitulo'>– descendente de Judá, que teve apenas filhas (1Cr 2:31-35)</span>",
-    definicao: "<p><strong>Seca</strong> é um descendente de Judá da linhagem de Jerameel. Não teve filhos, apenas filhas. Deu uma de suas filhas em casamento a Jarha, seu servo egípcio, para perpetuar o nome.</p><ul><li><strong>Nome:</strong> significa 'nobre' ou 'branco'</li><li>Representa a adaptação da lei de herança quando não há filhos homens</li></ul>",
-    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:31-35</span>"
+        {
+            termo: "<span class='numero-ordem'>801.</span> <span class='nome-principal'>Merede</span> <span class='subtitulo'>– descendente de Judá, casado com Bitiá, filha de Faraó (1Cr 4:17-18)</span>",
+            definicao: "<p><strong>Merede</strong>, da tribo de Judá, casou-se com <strong>Bitiá</strong>, uma princesa egípcia (filha de Faraó). Teve filhos que fundaram cidades (Gederá, Socó, Zanoa).</p><ul><li><strong>Nome:</strong> significa 'rebelde' ou 'resistente' — possivelmente indicando sua postura firme em manter a identidade israelita mesmo casado com uma estrangeira.</li><li><strong>Contexto genealógico:</strong> Merede é um dos poucos personagens bíblicos que se casou com uma filha de Faraó, mostrando que a linhagem de Judá não era exclusivamente endogâmica, mas aberta a alianças com estrangeiros que reconheciam o Deus de Israel.</li><li><strong>Cidades fundadas:</strong> Gederá, Socó e Zanoa eram localidades na Sefelá (planície costeira de Judá), regiões estratégicas para defesa e agricultura.</li><li><strong>Curiosidade:</strong> A tradição rabínica (Midrash) identifica Bitiá com a princesa que salvou Moisés (Êx 2:5-10). Embora não haja confirmação bíblica, a associação é antiga e simboliza a inclusão de gentios no povo de Deus.</li><li><strong>Tipologia:</strong> O casamento de Merede com uma egípcia prefigura a entrada dos gentios na igreja (Ef 2:11-22), quebrando barreiras étnicas.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:17-18; Êx 2:5-10 (possível ligação)</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>802.</span> <span class='nome-principal'>Bitiá (Bithiah)</span> <span class='subtitulo'>– princesa egípcia, esposa de Merede (1Cr 4:18)</span>",
+            definicao: "<p><strong>Bitiá</strong> é uma filha de Faraó que se casou com Merede, um israelita da tribo de Judá. Seu nome é uma forma feminina do egípcio 'Bt-ḥry' (filha de Rá?), mas a Bíblia dá a ele um significado hebraico: <span class='destaque-amarelo'>'filha de Yahweh'</span> — ironia divina, pois ela nasceu no Egito, terra de deuses pagãos.</p><ul><li><strong>Significado teológico:</strong> O nome Bitiá reflete a graça de Deus que alcança até os que estão fora do pacto. Ela abandonou a corte egípcia para se unir a Israel, simbolizando a conversão genuína.</li><li><strong>Tradição judaica:</strong> O Midrash (Talmude, Megilá 13a) identifica Bitiá como a filha de Faraó que criou Moisés. Ela teria sido curada da lepra ao tocar o cesto com Moisés, e por isso se chamou Bitiá ('filha de Yahweh'), pois o Senhor a curou.</li><li><strong>Relevância histórica:</strong> A menção de uma princesa egípcia na genealogia de Judá mostra que, mesmo durante o período dos juízes ou da monarquia, havia contato entre Israel e o Egito, e que estrangeiros podiam ser integrados ao povo da aliança.</li><li><strong>Conexão neotestamentária:</strong> A inclusão de Bitiá na linhagem de Judá prefigura a abertura do evangelho aos gentios (At 10). Assim como ela deixou o Egito para servir a Deus, os gentios deixam o mundo para seguir a Cristo.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:18; Êx 2:5-10; Megilá 13a (Talmude); At 10</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>803.</span> <span class='nome-principal'>Calebe (filho de Hezrom)</span> <span class='subtitulo'>– diferente do espião, mencionado em 1Cr 2:18-19</span>",
+            definicao: "<p><strong>Calebe</strong>, filho de Hezrom (neto de Perez, descendente de Judá). Casou-se com Azuba, com quem teve Jeriote, e depois com Efrate, mãe de Hur (avô de Bezalel).</p><ul><li><strong>Distinção importante:</strong> Este Calebe <span class='destaque-amarelo'>não é o espião</span> que entrou em Canaã com Josué. Ele é um antepassado de Bezalel, o construtor do tabernáculo, mostrando que Deus preparou artesãos hábeis desde as gerações anteriores.</li><li><strong>Nome:</strong> significa 'cão' ou 'audaz' — no contexto hebraico, o cão era símbolo de lealdade e coragem. Este Calebe foi leal à sua linhagem.</li><li><strong>Legado:</strong> Por meio de seu neto Bezalel, Calebe contribuiu para a habitação de Deus entre o povo (Êx 25-31). A arte e a habilidade manual são dons do Espírito Santo (Êx 31:3).</li><li><strong>Lição:</strong> Nem todos os heróis da fé são guerreiros; muitos são artesãos, construtores e servos fiéis nos bastidores.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:18-19,24,50; Êx 31:1-5; Êx 35:30-35</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>804.</span> <span class='nome-principal'>Efrate (Efrata)</span> <span class='subtitulo'>– esposa de Calebe (filho de Hezrom), mãe de Hur (1Cr 2:19)</span>",
+            definicao: "<p><strong>Efrate</strong>, também chamada Efrata, é a segunda esposa de Calebe (filho de Hezrom). Deu à luz Hur, avô de Bezalel.</p><ul><li><strong>Nome:</strong> Efrata significa 'fertilidade' ou 'abundância'. É o mesmo nome dado a Belém (Gn 35:19; Rt 4:11). Assim, Efrate está conectada à cidade de Davi e ao Messias.</li><li><strong>Significado simbólico:</strong> O nome Efrata associa esta mulher à terra fértil e à promessa de descendência real. Ela é uma matriarca secundária que, por meio de Hur e Bezalel, contribuiu para o culto divino.</li><li><strong>Curiosidade:</strong> Belém é chamada Efrata em Mq 5:2, onde o Messias nasceria. A conexão entre Efrate (a mulher) e Belém mostra que a linhagem de Judá estava entrelaçada com a história da redenção.</li><li><strong>Aplicação:</strong> Assim como Efrate deu à luz Hur, que gerou Bezalel, cada mãe cristã contribui para a próxima geração de servos de Deus.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:19,24,50; Gn 35:19; Rt 4:11; Mq 5:2</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>805.</span> <span class='nome-principal'>Azuba (Azubah)</span> <span class='subtitulo'>– primeira esposa de Calebe (filho de Hezrom) (1Cr 2:18)</span>",
+            definicao: "<p><strong>Azuba</strong> foi a primeira esposa de Calebe (descendente de Judá).</p><ul><li><strong>Nome:</strong> significa 'abandonada' ou 'desolada' (em hebraico, 'azuvá' = abandonada). Talvez o nome reflita a condição de mulheres em um período de conflitos ou migrações.</li><li><strong>Significado:</strong> Apesar do nome negativo, Azuba foi mãe de Jeriote e, portanto, parte da linhagem que levou a Bezalel. Deus não despreza os que se sentem abandonados.</li><li><strong>Analogia espiritual:</strong> O nome Azuba lembra a situação de Israel no exílio (Is 54:6 — 'como mulher abandonada'), mas Deus a restaura. Assim, mesmo os que se sentem desolados são incluídos no plano divino.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:18; Is 54:6</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>806.</span> <span class='nome-principal'>Jeriote (Jerioth)</span> <span class='subtitulo'>– filha de Calebe (filho de Hezrom) (1Cr 2:18)</span>",
+            definicao: "<p><strong>Jeriote</strong> é a filha de Calebe (o descendente de Judá) com Azuba.</p><ul><li><strong>Nome:</strong> significa 'cortinas' ou 'tendas' (possivelmente relacionado ao aramaico 'yari' = cortina). O nome evoca o tabernáculo, cujas cortinas eram feitas por artesãos.</li><li><strong>Importância:</strong> Embora não haja mais informações, sua menção mostra que as filhas eram registradas e valorizadas nas genealogias.</li><li><strong>Símbolo:</strong> As cortinas do tabernáculo representavam a proteção e a presença de Deus. Jeriote, cujo nome lembra cortinas, pode simbolizar a cobertura divina sobre a linhagem de Judá.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:18; Êx 26:1-14</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>807.</span> <span class='nome-principal'>Seca (Sheshan)</span> <span class='subtitulo'>– descendente de Judá, que teve apenas filhas (1Cr 2:31-35)</span>",
+            definicao: "<p><strong>Seca</strong> é um descendente de Judá da linhagem de Jerameel. Não teve filhos, apenas filhas. Deu uma de suas filhas em casamento a Jarha, seu servo egípcio, para perpetuar o nome.</p><ul><li><strong>Nome:</strong> significa 'nobre' ou 'branco' (do hebraico 'shéshan' = lírio ou brancura). Pode indicar sua posição social elevada.</li><li><strong>Contexto legal:</strong> Seca usou o direito de herança (Nm 27:8-11) adaptado para sua situação. Ao dar sua filha a Jarha, ele garantiu que sua linhagem continuasse dentro de Judá, mesmo não tendo filhos homens.</li><li><strong>Curiosidade:</strong> O casamento de uma filha de Seca com um servo egípcio é um exemplo de como estrangeiros podiam ser assimilados ao povo de Deus, desde que se sujeitassem à aliança.</li><li><strong>Lição:</strong> A Bíblia mostra Deus como justo até nas questões de herança, provendo meios para que a linhagem não se extinga.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:31-35; Nm 27:8-11</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>808.</span> <span class='nome-principal'>Jarha</span> <span class='subtitulo'>– servo egípcio de Seca, que se casou com sua filha (1Cr 2:34-35)</span>",
+            definicao: "<p><strong>Jarha</strong> era um servo egípcio da casa de Seca, que recebeu a filha de seu senhor em casamento para que a linhagem continuasse.</p><ul><li><strong>Nome:</strong> possivelmente egípcio, relacionado a 'Hórus' (deus egípcio). Mas, ao se casar com uma israelita, Jarha tornou-se parte do povo da aliança.</li><li><strong>Mobilidade social:</strong> Um servo estrangeiro podia ascender e se integrar à nobreza de Judá, o que demonstra a flexibilidade da sociedade israelita.</li><li><strong>Tipologia:</strong> Jarha representa os gentios que, pela fé, são enxertados na oliveira de Israel (Rm 11:17-24). Ele é um exemplo de como a graça de Deus alcança os estrangeiros.</li><li><strong>Curiosidade:</strong> O casamento de Jarha com a filha de Seca é análogo ao caso de Zorobabel (filho de Pedaías vs. Salatiel), mostrando que a transmissão da herança podia ocorrer por diferentes mecanismos legais.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:34-35; Rm 11:17-24</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>809.</span> <span class='nome-principal'>Atai (Attai)</span> <span class='subtitulo'>– filho de Jarha e da filha de Seca (1Cr 2:35-36)</span>",
+            definicao: "<p><strong>Atai</strong> é filho de Jarha, o egípcio, e da filha de Seca. Continuou a linhagem de Seca através de sua mãe.</p><ul><li><strong>Nome:</strong> significa 'oportuno' ou 'preparado' (do hebraico 'atay' = pronto). Indica que ele estava preparado para cumprir seu papel na história.</li><li><strong>Importância genealógica:</strong> Atai é um elo entre a linha de Jarha (estrangeiro) e a linhagem de Judá. Isso mostra como Deus preserva a descendência mesmo através de circunstâncias incomuns.</li><li><strong>Simbolismo:</strong> O nome 'Atai' pode ser visto como um chamado à prontidão para servir a Deus, como os levitas que se preparavam para o culto.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:35-36</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>810.</span> <span class='nome-principal'>Obede (pai de Jeú)</span> <span class='subtitulo'>– diferente de Obede, filho de Boaz (1Cr 2:37-38)</span>",
+            definicao: "<p><strong>Obede</strong>, filho de Semaías, descendente de Jerameel (da linhagem de Judá). Não confundir com Obede, avô de Davi.</p><ul><li><strong>Nome:</strong> significa 'servo' ou 'adorador' (do hebraico 'oved' = adorador). O nome indica devoção a Deus.</li><li><strong>Distinção:</strong> Este Obede é do século IV a.C. (pós-exílio) e não o ancestral direto de Davi. Há vários Obedes na Bíblia; cada um representa a fidelidade de uma geração.</li><li><strong>Contexto:</strong> A repetição de nomes mostra a continuidade da fé. Assim como Obede (avô de Davi) era servo de Deus, este Obede também foi fiel em sua geração.</li><li><strong>Lição:</strong> Deus valoriza a obediência e o serviço, independentemente da fama ou posição social.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:37-38</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>811.</span> <span class='nome-principal'>Jeú (filho de Obede)</span> <span class='subtitulo'>– descendente de Judá (1Cr 2:38)</span>",
+            definicao: "<p><strong>Jeú</strong>, filho de Obede (não confundir com o rei Jeú de Israel).</p><ul><li><strong>Nome:</strong> significa 'Yahweh é ele' (do hebraico 'Yehu' = ele é Yahweh). Um nome teofórico que declara a soberania de Deus.</li><li><strong>Significado:</strong> O nome Jeú proclama que Yahweh é o único Deus, em contraste com os ídolos que cercavam Israel.</li><li><strong>Importância:</strong> Mesmo sendo um personagem obscuro, seu nome era um testemunho de fé em meio a uma geração que se desviava.</li><li><strong>Conexão profética:</strong> O profeta Jeú (filho de Hanani) também levava esse nome, e ambos foram testemunhas de Deus em tempos difíceis.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:38; 2Cr 19:2-3; 1Rs 16:1-7</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>812.</span> <span class='nome-principal'>Tubalcaim, Jubal e Jabal</span> <span class='subtitulo'>– filhos de Lameque, o cainita (Gn 4:19-22)</span>",
+            definicao: "<p><strong>Tubalcaim</strong> (filho de Zilá) foi mestre em bronze e ferro; <strong>Jubal</strong> (filho de Ada) foi pai dos que tocam harpa e flauta; <strong>Jabal</strong> (filho de Ada) foi pai dos que habitam em tendas e criam gado.</p><ul><li><strong>Significado cultural:</strong> Estes três representam o desenvolvimento da civilização humana: metalurgia, música e pastorícia. Eles são os 'pais' das artes e ofícios.</li><li><strong>Contexto espiritual:</strong> Embora descendentes de Caim, eles desenvolveram habilidades que, em princípio, poderiam ser usadas para a glória de Deus. A cultura não é inerentemente má, mas o coração humano a corrompe.</li><li><strong>Jabal</strong> significa 'andarilho' (pastor nômade); <strong>Jubal</strong> deriva de 'yovel' (som musical); <strong>Tubalcaim</strong> relaciona-se a 'kain' (metalúrgico).</li><li><strong>Tipologia:</strong> A metalurgia de Tubalcaim prefigura os artesãos do tabernáculo (Bezalel), mas a diferença é que os descendentes de Caim usaram seus dons sem Deus, enquanto os descendentes de Sete os usaram para o culto.</li><li><strong>Curiosidade:</strong> A Bíblia mostra que mesmo fora da linhagem da promessa, Deus concede dons naturais à humanidade, refletindo sua graça comum.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Gn 4:19-22; Êx 31:1-5</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>813.</span> <span class='nome-principal'>Metusael</span> <span class='subtitulo'>– descendente de Caim, avô de Lameque (Gn 4:18)</span>",
+            definicao: "<p><strong>Metusael</strong>, filho de Meujael, pai de Lameque, o cainita (o que se gabou de vingança).</p><ul><li><strong>Nome:</strong> significa 'homem de Deus' (ou 'aquele que pede a Deus') — ironicamente, ele era da linhagem de Caim, que se afastou de Deus.</li><li><strong>Paralelo:</strong> Metusael é o equivalente cainita de Matusalém (da linhagem de Sete). Ambos têm nomes que incluem o elemento divino ('El' ou 'Selah'), mas a diferença está na linhagem e na fé.</li><li><strong>Lição:</strong> A linhagem de Caim desenvolveu a civilização, mas sem Deus. Isso mostra que a habilidade humana não é suficiente para agradar a Deus; é necessário o coração reto.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Gn 4:18</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>814.</span> <span class='nome-principal'>Meujael</span> <span class='subtitulo'>– filho de Irade, neto de Enoque (cainita) (Gn 4:18)</span>",
+            definicao: "<p><strong>Meujael</strong>, na linhagem de Caim, é pai de Metusael.</p><ul><li><strong>Nome:</strong> significado incerto: 'ferido por Deus' ou 'Deus esmaga'. Pode refletir a maldição sobre a linhagem de Caim (Gn 4:11-12).</li><li><strong>Observação:</strong> A linhagem de Caim termina com Lameque, que se gaba de vingança (Gn 4:23-24), contrastando com a linhagem de Sete que invoca o nome do Senhor (Gn 4:26).</li><li><strong>Contraste:</strong> Enquanto a linhagem de Caim desenvolvia a cultura material, a linhagem de Sete desenvolvia a vida espiritual. Ambos são necessários, mas a prioridade deve ser espiritual.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Gn 4:18</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>815.</span> <span class='nome-principal'>Irade (Irad)</span> <span class='subtitulo'>– filho de Enoque (cainita) (Gn 4:18)</span>",
+            definicao: "<p><strong>Irade</strong>, filho de Enoque (o cainita, não o trasladado), pai de Meujael.</p><ul><li><strong>Nome:</strong> significado incerto: 'cidade de testemunha' ou 'asno selvagem'. Talvez relacione-se à primeira cidade construída por Enoque (Gn 4:17).</li><li><strong>Significado teológico:</strong> A construção de cidades pela linhagem de Caim reflete a tentativa humana de criar segurança e identidade fora de Deus. No entanto, essas cidades pereceriam no dilúvio.</li><li><strong>Curiosidade:</strong> Enoque, o cainita, deu à cidade o nome de seu filho Irade, mostrando que ele buscava imortalidade através da descendência, ao passo que Enoque, o setita, buscou a imortalidade andando com Deus.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Gn 4:18</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>816.</span> <span class='nome-principal'>Enoque (cainita)</span> <span class='subtitulo'>– filho de Caim, construtor da primeira cidade (Gn 4:17-18)</span>",
+            definicao: "<p><strong>Enoque</strong>, filho de Caim, neto de Adão. Não confundir com Enoque, o trasladado (da linhagem de Sete).</p><ul><li><strong>Nome:</strong> significa 'iniciado' ou 'dedicado' (do hebraico 'chanokh'). Mas sua dedicação foi à construção de uma cidade e à civilização, não a Deus.</li><li><strong>A primeira cidade:</strong> Enoque construiu a primeira cidade mencionada na Bíblia, chamando-a com o nome de seu filho Irade. Isso simboliza a tentativa humana de fixar-se na terra, em vez de peregrinar com Deus.</li><li><strong>Contraste com Enoque setita:</strong> O Enoque da linhagem de Sete 'andou com Deus' e foi trasladado (Gn 5:24). O Enoque cainita construiu cidades, mas não agradou a Deus.</li><li><strong>Lição:</strong> As obras humanas, por mais impressionantes que sejam, não substituem o relacionamento com Deus. A verdadeira vida está em andar com Ele.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Gn 4:17-18; Gn 5:24; Hb 11:5</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>817.</span> <span class='nome-principal'>Jada</span> <span class='subtitulo'>– filho de Onã, descendente de Jerameel (1Cr 2:28,32)</span>",
+            definicao: "<p><strong>Jada</strong>, filho de Onã (não confundir com Onã, filho de Judá), da linhagem de Jerameel.</p><ul><li><strong>Nome:</strong> significa 'conhecido' ou 'sábio' (do hebraico 'yada' = conhecer). Indica que ele era uma pessoa de discernimento.</li><li><strong>Contexto genealógico:</strong> Jerameel é um ramo menos conhecido de Judá, e seus descendentes não produziram líderes de destaque, mas ainda assim fazem parte do povo de Deus.</li><li><strong>Aplicação:</strong> Muitos cristãos são 'Jadas' — pessoas que, sem grande fama, são conhecidas por Deus e cumprem seu papel na história.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:28,32</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>818.</span> <span class='nome-principal'>Jônatas (filho de Jada)</span> <span class='subtitulo'>– descendente de Jerameel (1Cr 2:32-33)</span>",
+            definicao: "<p><strong>Jônatas</strong>, filho de Jada, teve filhos: Pelete e Zaza. Não confundir com Jônatas, filho de Saul.</p><ul><li><strong>Nome:</strong> significa 'Yahweh deu' (do hebraico 'Yehonatan'). Este nome é uma confissão de que tudo vem de Deus.</li><li><strong>Distinção:</strong> Há vários Jônatas na Bíblia: o filho de Saul (amigo de Davi), o filho de Abiatar (sacerdote), e este da linhagem de Jerameel. Cada um, mesmo sem fama, carregava o nome de Deus.</li><li><strong>Lição:</strong> O nome Jônatas ('Yahweh deu') nos lembra que a vida e a descendência são dádivas divinas.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:32-33</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>819.</span> <span class='nome-principal'>Pelete</span> <span class='subtitulo'>– filho de Jônatas (descendente de Jerameel) (1Cr 2:33)</span>",
+            definicao: "<p><strong>Pelete</strong> é mencionado apenas em 1Crônicas 2:33.</p><ul><li><strong>Nome:</strong> significa 'libertação' ou 'fuga' (do hebraico 'palat' = escapar). Talvez o nome tenha sido dado em memória de alguma libertação.</li><li><strong>Significado:</strong> O nome Pelete aponta para a libertação que Deus concede ao seu povo. Em última análise, aponta para a libertação em Cristo.</li><li><strong>Curiosidade:</strong> Há um Pelete mencionado entre os que se uniram a Davi (1Cr 12:3), mas pode ser outra pessoa. O nome era comum entre os benjamitas.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:33; 1Cr 12:3</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>820.</span> <span class='nome-principal'>Zaza</span> <span class='subtitulo'>– outro filho de Jônatas (1Cr 2:33)</span>",
+            definicao: "<p><strong>Zaza</strong> é outro filho de Jônatas.</p><ul><li><strong>Nome:</strong> significa 'brilho' ou 'esplendor' (do hebraico 'zavzav'? ou 'zaz' = movimentar-se rapidamente). Sugere vivacidade e energia.</li><li><strong>Importância:</strong> Apesar de sua obscuridade, Zaza foi registrado nas Escrituras, mostrando que cada vida tem valor diante de Deus.</li><li><strong>Reflexão:</strong> Assim como Zaza, muitos cristãos são 'brilhantes' na fé, mesmo sem reconhecimento público. Deus vê cada um.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:33</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>821.</span> <span class='nome-principal'>Aião, Zobebá e Eleasá</span> <span class='subtitulo'>– descendentes de Judá (1Cr 2:40-41)</span>",
+            definicao: "<p><strong>Aiaião, Zobebá e Eleasá</strong> são descendentes de Judá, da linhagem de Jerameel.</p><ul><li>Aiaião significa 'ruína' ou 'torre' — talvez indicando um local fortificado.</li><li>Zobebá significa 'ligeiro' ou 'próspero' — nome que sugere agilidade e sucesso.</li><li>Eleasá significa 'Deus fez' — um nome teofórico que atribui a obra a Deus.</li><li>São nomes que aparecem apenas em 1Crônicas 2:40-41, mostrando a riqueza das genealogias que, embora pareçam monótonas, revelam a fidelidade de Deus através das gerações.</li><li><strong>Lição:</strong> Cada nome registrado é uma testemunha da providência divina, mesmo quando as narrativas são breves.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:40-41</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>822.</span> <span class='nome-principal'>Azarias (neto de Zadoque)</span> <span class='subtitulo'>– sumo sacerdote no templo de Salomão (1Rs 4:2)</span>",
+            definicao: "<p><strong>Azarias</strong>, filho de Zadoque, foi um dos principais oficiais de Salomão (<span class='versiculo'>1Rs 4:2</span>). Não confundir com outros Azarias.</p><ul><li><strong>Nome:</strong> significa 'Yahweh ajudou' — um nome adequado para um sacerdote que auxiliava o rei na liderança espiritual.</li><li><strong>Contexto:</strong> Azarias serviu no auge do reino unido, quando o templo foi construído e o culto estabelecido. Ele representa a aliança entre o sacerdócio e a monarquia.</li><li><strong>Importância:</strong> A presença de um sumo sacerdote na lista de oficiais de Salomão mostra que a religião e o Estado estavam intimamente ligados em Israel.</li><li><strong>Tipologia:</strong> Azarias prefigura Cristo, nosso sumo sacerdote que intercede por nós diante de Deus.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 4:2</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>823.</span> <span class='nome-principal'>Joiada (filho de Josué? Ne 12:10)</span> <span class='subtitulo'>– sumo sacerdote no período de Neemias (Ne 12:10)</span>",
+            definicao: "<p><strong>Joiada</strong>, filho de Eliashibe, neto de Josué (Jesua), foi sumo sacerdote no período de Neemias.</p><ul><li><strong>Nome:</strong> significa 'Yahweh sabe' — um nome que expressa confiança no conhecimento soberano de Deus.</li><li><strong>Contexto:</strong> Joiada serviu após o retorno do exílio, ajudando a restaurar a adoração no templo reconstruído. Ele é mencionado na lista de sacerdotes que lideraram a dedicação dos muros (Ne 12:10-11).</li><li><strong>Importância:</strong> Sua presença mostra a continuidade do sacerdócio mesmo após o cativeiro babilônico, cumprindo a promessa de Deus de preservar a linhagem de Arão.</li><li><strong>Curiosidade:</strong> Joiada é um dos elos entre o Antigo Testamento e o período intertestamentário, preparando o caminho para o sacerdócio de Zacarias (pai de João Batista).</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Ne 12:10</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>824.</span> <span class='nome-principal'>Elioenai, Jaquim, Isaías, Nataneel, Zobabe, Elienai</span> <span class='subtitulo'>– descendentes de Zorobabel (1Cr 3:22-24)</span>",
+            definicao: "<p><strong>Elioenai, Jaquim, Isaías, Nataneel, Zobabe e Elienai</strong> são netos e bisnetos de Zorobabel, da linhagem real de Davi.</p><ul><li>Elioenai significa 'meus olhos estão para Yahweh' — expressando a esperança messiânica.</li><li>Jaquim significa 'Deus estabelece' — confirmação da estabilidade da linhagem.</li><li>Isaías significa 'Yahweh é salvação' — nome profético, pois a salvação viria pela linhagem de Davi.</li><li>Nataneel significa 'Deus deu' — lembrando que a linhagem é uma dádiva divina.</li><li>Zobabe significa 'próspero' ou 'corrente' — indicando continuidade.</li><li>Elienai significa 'meu Deus responde' — confiança na oração respondida.</li><li>Estes nomes representam a fidelidade de Deus em preservar a semente real até o Messias, mesmo durante o silêncio profético.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:22-24</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>825.</span> <span class='nome-principal'>Semaías (da tribo de Simeão)</span> <span class='subtitulo'>– um dos príncipes que migraram para Gedor (1Cr 4:37)</span>",
+            definicao: "<p><strong>Semaías</strong>, da tribo de Simeão, é mencionado em <span class='versiculo'>1Cr 4:37</span> como um dos príncipes que migraram para a região de Gedor.</p><ul><li><strong>Nome:</strong> significa 'Yahweh ouviu' — um testemunho de que Deus atendeu às orações de seus antepassados.</li><li><strong>Contexto histórico:</strong> A migração para Gedor reflete a expansão das tribos para o sul, em busca de pastagens e segurança. Gedor ficava na região de Gerar, ao sul de Judá.</li><li><strong>Significado:</strong> Semaías representa a adaptação do povo de Deus a novas terras, sempre confiando na provisão divina.</li><li><strong>Curiosidade:</strong> A tribo de Simeão foi uma das que mais se expandiu geograficamente, mas também uma das que mais perdeu identidade, sendo absorvida por Judá.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:37</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>826.</span> <span class='nome-principal'>Mislite (Meshelemias)</span> <span class='subtitulo'>– descendente de Corá, porteiro do templo (1Cr 9:21; 26:1-2)</span>",
+            definicao: "<p><strong>Mislite</strong> (ou Melemele) era porteiro do templo, descendente de Corá.</p><ul><li><strong>Nome:</strong> significa 'amigo' ou 'íntimo' (do hebraico 'meshelem' = amigo). Isso sugere que ele era um servo fiel e próximo da casa de Deus.</li><li><strong>Função:</strong> Os porteiros eram responsáveis pela segurança do tabernáculo e depois do templo, guardando as portas e protegendo os utensílios sagrados.</li><li><strong>Herança de Corá:</strong> Mislite é descendente de Corá (o levita que se rebelou). No entanto, seus descendentes não pereceram (Nm 26:11) e foram usados por Deus no serviço do templo, mostrando que a misericórdia supera o juízo.</li><li><strong>Aplicação:</strong> Assim como Mislite guardava as portas do templo, os cristãos são chamados a guardar o coração (Pv 4:23) e a manter a pureza da igreja.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 9:21; 1Cr 26:1-2; Nm 26:11</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>827.</span> <span class='nome-principal'>Zacarias, Jediael, Zebadias, Jatniel</span> <span class='subtitulo'>– filhos de Mislite, porteiros do templo (1Cr 26:2)</span>",
+            definicao: "<p><strong>Zacarias, Jediael, Zebadias e Jatniel</strong> são filhos de Mislite, também porteiros do templo.</p><ul><li>Zacarias significa 'Yahweh lembrou' — lembrando que Deus não esquece seus servos.</li><li>Jediael significa 'conhecido por Deus' — indicando intimidade com o Senhor.</li><li>Zebadias significa 'Yahweh dotou' — reconhecendo que todo dom vem de Deus.</li><li>Jatniel significa 'Deus dá' — confissão da provisão divina.</li><li>Estes porteiros representam a organização cuidadosa do culto no templo, onde cada família tinha sua função específica.</li><li><strong>Lição:</strong> O serviço a Deus, mesmo em tarefas aparentemente simples (como vigiar portas), é honrado e registrado nas Escrituras.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 26:2</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>828.</span> <span class='nome-principal'>Ebiasafe (Abiasafe)</span> <span class='subtitulo'>– descendente de Corá, porteiro (1Cr 9:19; 26:1)</span>",
+            definicao: "<p><strong>Ebiasafe</strong>, filho de Corá (não confundir com o rebelde), antepassado dos porteiros.</p><ul><li><strong>Nome:</strong> significa 'meu pai ajuntou' ou 'pai da reunião' — talvez indicando que ele reunia o povo para adoração.</li><li><strong>Contexto:</strong> Ebiasafe é mencionado como antepassado dos porteiros, mostrando que a função de guardar o templo era hereditária e respeitada.</li><li><strong>Herança de Corá:</strong> Apesar da rebelião de Corá, seus descendentes foram preservados e elevados a posições de honra. Isso demonstra a graça redentora de Deus.</li><li><strong>Curiosidade:</strong> Os coraítas são autores de vários salmos (Sl 42-49, 84-85, 87-88), mostrando que a linhagem de Corá não apenas serviu como porteiros, mas também como adoradores e poetas.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 9:19; 1Cr 26:1; Êx 6:24; Sl 42-49</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>829.</span> <span class='nome-principal'>Assir, Elcana e Ebiasafe</span> <span class='subtitulo'>– filhos de Corá (levita) (Êx 6:24)</span>",
+            definicao: "<p><strong>Assir, Elcana e Ebiasafe</strong> são descendentes de Corá (o neto de Coate, tio de Moisés), mas não os que pereceram na rebelião.</p><ul><li>Assir significa 'prisioneiro' ou 'feliz' — paradoxo da libertação divina.</li><li>Elcana significa 'Deus possuiu' — nome que expressa posse divina.</li><li>Ebiasafe já foi listado.</li><li>Desta linhagem vieram os salmistas coraítas, que enriqueceram o saltério com hinos de louvor e lamento.</li><li><strong>Relevância teológica:</strong> Deus pode usar até mesmo a linhagem de um rebelde para produzir adoração. Isso mostra que o arrependimento e a restauração são possíveis.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Êx 6:24; Nm 16:1-35; Nm 26:11</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>830.</span> <span class='nome-principal'>Joel e Abias</span> <span class='subtitulo'>– filhos de Samuel, juízes em Berseba (1Sm 8:2)</span>",
+            definicao: "<p><strong>Joel e Abias</strong> são filhos de Elcana e Ana, irmãos mais velhos de Samuel (pois Samuel era filho da promessa).</p><ul><li>Foram juízes em Berseba, mas se corromperam, aceitando suborno e pervertendo a justiça (1Sm 8:3).</li><li>Joel significa 'Yahweh é Deus'; Abias significa 'Yahweh é meu pai' — nomes teofóricos que contrastam com sua conduta ímpia.</li><li>Sua corrupção foi o principal motivo que levou Israel a pedir um rei (1Sm 8:4-5).</li><li><strong>Lição:</strong> A falta de integridade dos líderes pode levar o povo a abandonar a confiança em Deus e buscar soluções humanas.</li><li><strong>Ironia:</strong> Samuel, o grande profeta, teve filhos que não seguiram seus caminhos, mostrando que a fé não é hereditária automaticamente.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Sm 8:1-3; 1Cr 6:28</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>831.</span> <span class='nome-principal'>Hofni e Fineias</span> <span class='subtitulo'>– filhos ímpios de Eli (1Sm 2:12-17)</span>",
+            definicao: "<p><strong>Hofni e Fineias</strong> eram filhos de Eli, sacerdotes corruptos.</p><ul><li>Tomavam a carne dos sacrifícios à força e dormiam com as mulheres que serviam à entrada da tenda da congregação (1Sm 2:22).</li><li>Morreram na batalha contra os filisteus, e a Arca foi capturada (1Sm 4:11).</li><li>Hofni significa 'punho' (talvez força bruta); Fineias significa 'boca de bronze' (ou oráculo).</li><li>Representam o clero apóstata que profana as coisas sagradas, e seu fim trágico é um alerta para líderes religiosos.</li><li><strong>Tipologia:</strong> Eles contrastam com o sumo sacerdote fiel que viria (Zadoque) e, em última análise, com Cristo, o sumo sacerdote perfeito.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Sm 2:12-36; 1Sm 3:11-14; 1Sm 4:4-22</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>832.</span> <span class='nome-principal'>Nadabe, Abiú, Eleazar, Itamar</span> <span class='subtitulo'>– filhos de Arão (Êx 6:23; Lv 10:1-2)</span>",
+            definicao: "<p><strong>Nadabe, Abiú, Eleazar e Itamar</strong> são os quatro filhos de Arão.</p><ul><li>Nadabe e Abiú morreram ao oferecer fogo estranho perante o Senhor (Lv 10:1-2), um ato de irreverência que custou a vida.</li><li>Eleazar e Itamar continuaram o sacerdócio, sendo os ancestrais das linhagens sacerdotais.</li><li>Nadabe significa 'generoso'; Abiú 'meu pai é Yahweh'; Eleazar 'Deus ajudou'; Itamar 'terra das palmeiras'.</li><li><strong>Lição:</strong> O sacerdócio exige santidade e obediência rigorosa. A irreverência no culto é severamente punida.</li><li><strong>Tipologia:</strong> Cristo, como sumo sacerdote, ofereceu-se a si mesmo em obediência perfeita, diferentemente de Nadabe e Abiú.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Êx 6:23; Lv 10:1-7; Nm 3:2-4; 1Cr 6:3-4</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>833.</span> <span class='nome-principal'>A linhagem de Eleazar e Itamar</span> <span class='subtitulo'>– as duas linhagens sacerdotais (1Cr 24:1-3)</span>",
+            definicao: "<p>A linhagem de Itamar produziu <strong>Eli e Abiatar</strong>; a de Eleazar produziu <strong>Fineias e Zadoque</strong>.</p><ul><li>Representa a competição entre as linhagens sacerdotais, que culminou na deposição de Abiatar (linhagem de Itamar) e no estabelecimento de Zadoque (linhagem de Eleazar) por Salomão (1Rs 2:26-27,35).</li><li>Zadoque foi escolhido por Deus como sacerdote fiel (1Sm 2:35), e sua linhagem permaneceu até o período do Segundo Templo.</li><li><strong>Tipologia:</strong> Zadoque prefigura Cristo, o sumo sacerdote segundo a ordem de Melquisedeque, que não depende de linhagem terrena.</li><li><strong>Curiosidade:</strong> A escolha de Zadoque mostra que Deus tem o direito de estabelecer e remover líderes espirituais conforme sua vontade.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 24:1-3; 1Rs 2:26-27,35</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>834.</span> <span class='nome-principal'>Azarias (filho de Hilquias)</span> <span class='subtitulo'>– sumo sacerdote no tempo de Josias (2Cr 34:18-21)</span>",
+            definicao: "<p><strong>Azarias</strong>, filho de Hilquias, foi sumo sacerdote quando o livro da Lei foi encontrado no templo por Josias.</p><ul><li><strong>Nome:</strong> significa 'Yahweh ajudou' — adequado, pois Deus ajudou Josias a redescobrir a Lei.</li><li><strong>Contexto:</strong> Azarias estava entre os que ouviram a leitura do livro e confirmaram a veracidade da profecia (2Cr 34:18-21).</li><li><strong>Importância:</strong> Sua presença no evento mostra que o sacerdócio apoiou a reforma de Josias, ao contrário do que ocorreu em outros períodos.</li><li><strong>Lição:</strong> Quando os líderes religiosos se unem à autoridade civil para promover a Palavra de Deus, ocorre avivamento.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Cr 34:18-22</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>835.</span> <span class='nome-principal'>Hilquias</span> <span class='subtitulo'>– sumo sacerdote que encontrou o livro da Lei (2Rs 22:8-13; 2Cr 34:14-21)</span>",
+            definicao: "<p><strong>Hilquias</strong>, pai de Azarias e de Eliaquim, foi sumo sacerdote no reinado de Josias. Encontrou o rolo da Lei (provavelmente Deuteronômio) durante a reforma do templo.</p><ul><li><strong>Nome:</strong> significa 'porção de Yahweh' ou 'Yahweh é minha parte' — expressando que Deus é a herança do sacerdote.</li><li><strong>Contexto:</strong> Ao encontrar o livro, Hilquias o entregou ao escriba Safã, que o leu ao rei Josias, provocando grande reforma espiritual.</li><li><strong>Importância:</strong> Este evento é um marco na história de Judá, pois a redescoberta da Lei levou à remoção da idolatria e à celebração da Páscoa.</li><li><strong>Tipologia:</strong> Hilquias prefigura o papel do Espírito Santo em revelar a Palavra de Deus à igreja.</li><li><strong>Curiosidade:</strong> O rolo encontrado provavelmente era o livro de Deuteronômio, que contém as maldições e bênçãos da aliança.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 22:4-14; 2Cr 34:9-22</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>836.</span> <span class='nome-principal'>Urias (sumo sacerdote)</span> <span class='subtitulo'>– que construiu altar pagão para Acaz (2Rs 16:10-16)</span>",
+            definicao: "<p><strong>Urias</strong>, sumo sacerdote no reinado de Acaz, construiu um altar segundo o modelo do altar de Damasco (pagão) por ordem do rei.</p><ul><li><strong>Nome:</strong> significa 'Yahweh é minha luz' — ironicamente, ele seguiu a escuridão da idolatria.</li><li><strong>Contexto:</strong> Acaz, ao visitar Damasco, viu um altar pagão e ordenou que Urias o reproduzisse em Jerusalém, substituindo o altar do Senhor (2Rs 16:10-16).</li><li><strong>Lição:</strong> A corrupção do sacerdócio ocorre quando os líderes religiosos se submetem ao poder político em vez de obedecer a Deus.</li><li><strong>Contraste:</strong> Urias contrasta com Hilquias, que encontrou a Lei e promoveu a reforma. A diferença está na fidelidade a Deus.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 16:10-16</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>837.</span> <span class='nome-principal'>Zinri (Zimri)</span> <span class='subtitulo'>– rei de Israel por sete dias (1Rs 16:9-20)</span>",
+            definicao: "<p><strong>Zinri</strong>, comandante da metade dos carros de guerra, assassinou o rei Elá e destruiu toda a casa de Baasa. Reinou apenas sete dias em Tirza, até que Onri o sitiou. Zinri queimou o palácio sobre si.</p><ul><li><strong>Nome:</strong> significa 'meu cântico' (ironicamente, seu fim foi trágico).</li><li><strong>Contexto:</strong> Zinri é um exemplo de ambição desmedida que leva à autodestruição. Sua morte foi um suicídio para evitar a captura.</li><li><strong>Lição:</strong> O poder obtido por assassinato e violência é efêmero. Deus julga os que buscam o trono por meios pecaminosos.</li><li><strong>Curiosidade:</strong> Zinri é lembrado em 2Rs 9:31 como exemplo de traição, quando Jeú foi comparado a ele.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 16:9-20</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>838.</span> <span class='nome-principal'>Elá (Elah)</span> <span class='subtitulo'>– rei de Israel, filho de Baasa (1Rs 16:8-14)</span>",
+            definicao: "<p><strong>Elá</strong> reinou dois anos em Tirza. Foi assassinado por Zinri enquanto se embriagava na casa de seu mordomo.</p><ul><li><strong>Nome:</strong> significa 'carvalho' ou 'terebinto' — árvore que simboliza força, mas Elá foi fraco e negligente.</li><li><strong>Contexto:</strong> Sua morte ocorreu porque ele estava embriagado, mostrando que a falta de vigilância leva à ruína.</li><li><strong>Profecia:</strong> A queda de sua dinastia já havia sido anunciada pelo profeta Jeú (1Rs 16:1-4), confirmando a fidelidade da palavra profética.</li><li><strong>Lição:</strong> O pecado e a negligência abrem portas para o juízo de Deus. A embriaguez é condenada nas Escrituras (Pv 20:1).</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 16:6-14</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>839.</span> <span class='nome-principal'>Baasa</span> <span class='subtitulo'>– rei de Israel, que exterminou a casa de Jeroboão (1Rs 15:27-16:7)</span>",
+            definicao: "<p><strong>Baasa</strong>, filho de Aías, da tribo de Issacar, assassinou o rei Nadabe (filho de Jeroboão) e exterminou toda a casa de Jeroboão. Reinou 24 anos, mas continuou a idolatria. O profeta Jeú anunciou a destruição de sua casa.</p><ul><li><strong>Nome:</strong> significa 'cheiro' ou 'coragem' — talvez indicando força militar, mas sua coragem não o livrou do juízo.</li><li><strong>Contexto:</strong> Baasa foi usado por Deus para executar juízo sobre a casa de Jeroboão, mas ele mesmo pecou, seguindo os caminhos de Jeroboão.</li><li><strong>Profecia:</strong> Jeú, filho de Hanani, profetizou que a casa de Baasa seria destruída (1Rs 16:1-4), o que se cumpriu com a morte de Elá e a usurpação de Zinri.</li><li><strong>Lição:</strong> Deus pode usar um instrumento mau para julgar outro, mas o instrumento também será julgado se não se arrepender.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 15:27-16:7</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>840.</span> <span class='nome-principal'>Nadabe</span> <span class='subtitulo'>– rei de Israel, filho de Jeroboão I (1Rs 15:25-31)</span>",
+            definicao: "<p><strong>Nadabe</strong> reinou dois anos sobre Israel. Fez o que era mau, seguindo os pecados de seu pai. Foi assassinado por Baasa em Gibetom.</p><ul><li><strong>Nome:</strong> significa 'generoso' (ironicamente, ele foi impiedoso e perverso).</li><li><strong>Contexto:</strong> Nadabe continuou a idolatria instituída por seu pai, e sua morte foi o cumprimento da profecia de Aías contra a casa de Jeroboão (1Rs 14:10-11).</li><li><strong>Lição:</strong> A herança espiritual não é automática. Nadabe teve a oportunidade de se desviar do pecado de seu pai, mas escolheu o mesmo caminho.</li><li><strong>Curiosidade:</strong> Gibetom, onde Nadabe foi assassinado, era uma cidade levítica que os filisteus haviam tomado, mostrando que Israel estava em conflito constante com os inimigos.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 15:25-31</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>841.</span> <span class='nome-principal'>Maaseias (filho de Acaz)</span> <span class='subtitulo'>– assassinado por Zicri (2Cr 28:7)</span>",
+            definicao: "<p><strong>Maaseias</strong>, filho do rei Acaz, foi morto pelo guerreiro efraimita Zicri durante a invasão de Peca, rei de Israel (<span class='versiculo'>2Cr 28:7</span>).</p><ul><li><strong>Nome:</strong> significa 'obra de Yahweh' — ironicamente, sua vida foi ceifada em uma guerra entre irmãos.</li><li><strong>Contexto:</strong> A invasão de Peca e Rezim contra Judá foi um juízo de Deus sobre Acaz por sua idolatria (2Cr 28:5-8).</li><li><strong>Lição:</strong> As consequências do pecado de um líder afetam sua família. A morte de Maaseias foi parte do juízo sobre a casa de Acaz.</li><li><strong>Curiosidade:</strong> Zicri, o assassino, era de Efraim, e o conflito entre Judá e Israel (norte) mostra a divisão trágica do povo de Deus.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Cr 28:7</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>842.</span> <span class='nome-principal'>Maaca (mãe do rei Asa)</span> <span class='subtitulo'>– filha de Absalão, deposta por fazer um ídolo (1Rs 15:10,13; 2Cr 15:16)</span>",
+            definicao: "<p><strong>Maaca</strong> (ou Maacá), filha de Absalão (neto de Davi?), foi esposa de Roboão e mãe de Abias e avó de Asa. Asa a depôs de rainha-mãe porque ela fez um ídolo de Aserá.</p><ul><li><strong>Nome:</strong> significa 'pressão' — talvez refletindo a influência que ela exercia na corte.</li><li><strong>Contexto:</strong> Maaca é um exemplo de como a influência feminina na realeza podia ser negativa quando desviava o povo para a idolatria.</li><li><strong>Reforma de Asa:</strong> Ao depor Maaca e destruir seu ídolo, Asa mostrou que a lealdade a Deus deve vir antes dos laços familiares (Mt 10:37).</li><li><strong>Lição:</strong> A reforma espiritual pode exigir decisões difíceis, inclusive contra membros da família.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 15:10,13; 2Cr 15:16</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>843.</span> <span class='nome-principal'>Abia (mãe do rei Ezequias)</span> <span class='subtitulo'>– filha de Zacarias (2Rs 18:2; 2Cr 29:1)</span>",
+            definicao: "<p><strong>Abia</strong> (Abi), filha de Zacarias (não o profeta), foi mãe de Ezequias.</p><ul><li><strong>Nome:</strong> significa 'meu pai é Yahweh' — nome que expressa a fé da família.</li><li><strong>Contexto:</strong> Abia influenciou Ezequias em sua infância, ajudando a formar o caráter do rei que promoveria a maior reforma religiosa de Judá.</li><li><strong>Importância:</strong> A mãe de Ezequias é mencionada em contraste com Maaca (mãe de Asa), mostrando que a influência materna pode ser para o bem ou para o mal.</li><li><strong>Lição:</strong> O papel das mães na formação espiritual dos filhos é incalculável.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 18:2; 2Cr 29:1</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>844.</span> <span class='nome-principal'>Jedida (mãe do rei Josias)</span> <span class='subtitulo'>– filha de Adaías (2Rs 22:1)</span>",
+            definicao: "<p><strong>Jedida</strong>, filha de Adaías, de Bozcate, foi mãe de Josias.</p><ul><li><strong>Nome:</strong> significa 'amada' — um nome que reflete o amor de Deus por ela e por seu filho.</li><li><strong>Contexto:</strong> Josias tornou-se rei aos 8 anos, então sua mãe certamente teve papel crucial em sua educação e formação espiritual.</li><li><strong>Importância:</strong> Josias foi o maior reformador de Judá, e sua mãe provavelmente o ensinou a temer a Deus desde a infância.</li><li><strong>Lição:</strong> Uma mãe piedosa pode influenciar uma nação inteira através da vida de seu filho.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 22:1</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>845.</span> <span class='nome-principal'>Zebida (mãe do rei Joaquim)</span> <span class='subtitulo'>– filha de Pedaías (2Rs 23:36)</span>",
+            definicao: "<p><strong>Zebida</strong>, filha de Pedaías, de Rumá, foi mãe de Jeoiaquim (Joaquim).</p><ul><li><strong>Nome:</strong> significa 'doada' ou 'presente' — talvez indicando que ela foi dada em casamento como aliança política.</li><li><strong>Contexto:</strong> Joaquim foi um rei ímpio que queimou o rolo de Jeremias (Jr 36:23). A influência de Zebida sobre ele não é mencionada, mas ela faz parte da linhagem real que conduziu Judá ao exílio.</li><li><strong>Lição:</strong> Nem sempre os filhos seguem o exemplo piedoso de seus pais, mas a responsabilidade maternal é grande.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 23:36</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>846.</span> <span class='nome-principal'>Hamutal (mãe de Zedequias)</span> <span class='subtitulo'>– filha de Jeremias de Libna (2Rs 23:31; 24:18)</span>",
+            definicao: "<p><strong>Hamutal</strong>, filha de Jeremias (não o profeta), foi mãe de Jeoacaz e de Zedequias.</p><ul><li><strong>Nome:</strong> significa 'parente do orvalho' ou 'sogra' — um nome incomum que pode indicar alianças familiares.</li><li><strong>Contexto:</strong> Hamutal viu dois de seus filhos reinarem e testemunhou a queda de Jerusalém e o exílio de Judá (586 a.C.).</li><li><strong>Importância:</strong> Ela representa a tragédia das mães dos últimos reis de Judá, que sofreram com a destruição da nação.</li><li><strong>Curiosidade:</strong> Seu nome aparece tanto para Jeoacaz quanto para Zedequias, indicando que ela era mãe de ambos.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 23:31; 2Rs 24:18; Jr 52:1</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>847.</span> <span class='nome-principal'>Neusta (mãe de Joaquim)</span> <span class='subtitulo'>– filha de Elnatã (2Rs 24:8,12,15; Jr 29:2)</span>",
+            definicao: "<p><strong>Neusta</strong>, filha de Elnatã, de Jerusalém, foi mãe de Joaquim (Jeconias).</p><ul><li><strong>Nome:</strong> significa 'seu nome' ou 'amante' — talvez indicando beleza ou fama.</li><li><strong>Contexto:</strong> Neusta foi levada cativa para a Babilônia com seu filho Joaquim, testemunhando o início do exílio.</li><li><strong>Importância:</strong> Sua menção nas listas de exilados (Jr 29:2) mostra que as mulheres da realeza também foram afetadas pelo juízo divino.</li><li><strong>Lição:</strong> O pecado de uma nação afeta todas as classes sociais, inclusive a família real.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 24:8,12,15; Jr 29:2</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>848.</span> <span class='nome-principal'>Salatiel (Sealtiel) e outros</span> <span class='subtitulo'>– filhos de Jeconias (1Cr 3:17-18)</span>",
+            definicao: "<p>Os filhos de Jeconias (Joaquim) incluíam <strong>Salatiel (Sealtiel)</strong>, pai adotivo de Zorobabel, e outros: Malquirão, Pedaías, Senazar, Jecamias, Hosama e Nadabias.</p><ul><li>Salatiel significa 'pedi a Deus' — um nome que expressa a dependência de Deus durante o exílio.</li><li>Malquirão significa 'meu rei é exaltado' — talvez uma declaração de fé.</li><li>Pedaías significa 'Yahweh redime' — esperança na redenção futura.</li><li>Representam a continuação da linhagem davídica no exílio, mostrando que Deus não abandonou sua promessa a Davi.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:17-18; Mt 1:12</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>849.</span> <span class='nome-principal'>Zorobabel e Simei (filhos de Pedaías)</span> <span class='subtitulo'>– irmãos, da linhagem de Davi (1Cr 3:19)</span>",
+            definicao: "<p><strong>Pedaías</strong>, filho de Jeconias, é listado como pai de <strong>Zorobabel</strong> em <span class='versiculo'>1Cr 3:19</span>, mas em outros lugares Zorobabel é filho de Salatiel (<span class='versiculo'>Ed 3:2</span>; <span class='versiculo'>Ne 12:1</span>; <span class='versiculo'>Ag 1:1</span>).</p><ul><li>Isso pode indicar levirato (casamento com a viúva de um irmão) ou adoção, práticas comuns na antiguidade para preservar a linhagem.</li><li>Zorobabel significa 'semente da Babilônia' — um nome que lembra seu nascimento durante o exílio.</li><li>Simei significa 'fama' — talvez um irmão menos conhecido.</li><li>Zorobabel foi o líder do primeiro retorno do exílio e construtor do segundo templo, uma figura messiânica.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:19; Ed 3:2; Ne 12:1; Ag 1:1; Mt 1:12</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>850.</span> <span class='nome-principal'>Os filhos de Zorobabel</span> <span class='subtitulo'>– Mesulão, Hananias, Selomite, Hasuba, Oel, Berequias, Hasadias, Jusabe-Hesede (1Cr 3:19-20)</span>",
+            definicao: "<p>Zorobabel teve vários filhos, sendo o mais notável <strong>Hananias</strong> (avô de Jesus em Lucas 3:27? Na genealogia de Lucas há Ressa, mas não direto).</p><ul><li>Hananias significa 'Yahweh é gracioso' — nome que reflete a graça do retorno do exílio.</li><li>Selomite significa 'pacífica' — uma filha, mostrando que as mulheres também eram registradas.</li><li>Hasadias significa 'Yahweh é bondade' — confissão da bondade divina.</li><li>Jusabe-Hesede significa 'o amor foi restaurado' — profecia da restauração do amor de Deus.</li><li>Estes nomes são uma teologia em miniatura: graça, paz, bondade e amor restaurado.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:19-20; Mt 1:12-13 (diferente)</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>851.</span> <span class='nome-principal'>Pelatias, Jesaías, Semaías</span> <span class='subtitulo'>– netos de Zorobabel (1Cr 3:21)</span>",
+            definicao: "<p>Descendentes de Hananias, filho de Zorobabel.</p><ul><li>Pelatias significa 'Yahweh liberta' — proclamação da libertação divina do exílio.</li><li>Jesaías significa 'Yahweh é salvação' — o mesmo nome do profeta, indicando esperança messiânica.</li><li>Semaías significa 'Yahweh ouviu' — Deus ouviu o clamor do seu povo no exílio.</li><li>Estes nomes continuam a linhagem davídica no período pós-exílico, mantendo viva a esperança do Messias.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:21</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>852.</span> <span class='nome-principal'>Hatate, Igal, Barias, Nearias, Safate</span> <span class='subtitulo'>– bisnetos de Zorobabel (1Cr 3:22)</span>",
+            definicao: "<p>Descendentes na linhagem de Davi, mencionados em <span class='versiculo'>1Cr 3:22</span>.</p><ul><li>Nearias significa 'lâmpada de Yahweh' — a lâmpada da linhagem de Davi continua a brilhar.</li><li>Safate significa 'juiz' — Deus é o juiz que governará através dessa linhagem.</li><li>Hatate pode ser uma forma de 'Hattush' (significado incerto).</li><li>Igal significa 'Ele redime' — confissão da redenção futura.</li><li>Barias significa 'Yahweh criou' — Deus continua a criar e sustentar sua linhagem.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:22</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>853.</span> <span class='nome-principal'>Elioenai, Ezequias, Azricão</span> <span class='subtitulo'>– netos de Nearias (1Cr 3:23)</span>",
+            definicao: "<p>Netos de Semaías, bisnetos de Zorobabel.</p><ul><li>Elioenai significa 'meus olhos estão para Yahweh' — uma expressão de esperança e expectativa.</li><li>Ezequias (não o rei) significa 'Yahweh fortalece' — Deus fortalece a linhagem real.</li><li>Azricão significa 'meu auxílio é Yahweh' — confiança na ajuda divina.</li><li>São os últimos nomes da linhagem davídica no Antigo Testamento antes do período intertestamentário, preparando o caminho para o Messias.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:23</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>854.</span> <span class='nome-principal'>Hodavias, Eliasibe, Pelaías, Acube, Joanã, Dalaías, Anani</span> <span class='subtitulo'>– filhos de Elioenai (1Cr 3:24)</span>",
+            definicao: "<p>Sete filhos de Elioenai, encerrando a genealogia de Davi em 1Crônicas 3. <strong>Anani</strong> é o último nome listado.</p><ul><li>Anani significa 'nuvem de Yahweh' ou 'meu povo responde' — a nuvem que guiou Israel no deserto, agora guiando a esperança messiânica.</li><li>Hodavias significa 'louvado seja Yahweh'.</li><li>Eliasibe significa 'Deus restaura' — a restauração final viria.</li><li>Pelaías significa 'Yahweh é maravilhoso'.</li><li>Acube significa 'ele engana'? (incerto).</li><li>Joanã significa 'Yahweh é gracioso'.</li><li>Dalaías significa 'Yahweh libertou'.</li><li>Estes nomes são uma súplica e uma profecia: Deus restaurará, libertará e será louvado na vinda do Messias.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:24</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>855.</span> <span class='nome-principal'>Uzias, o aserotita</span> <span class='subtitulo'>– guerreiro de Davi (1Cr 11:44)</span>",
+            definicao: "<p><strong>Uzias, o aserotita</strong>, foi um dos trinta guerreiros de Davi (<span class='versiculo'>1Cr 11:44</span>).</p><ul><li><strong>Nome:</strong> significa 'meu poder é Yahweh' — uma declaração de que sua força vinha de Deus.</li><li><strong>Contexto:</strong> Uzias é um dos muitos guerreiros anônimos que cercaram Davi, mostrando que o sucesso do rei dependia de muitos servos fiéis.</li><li><strong>Lição:</strong> Deus usa pessoas de diferentes origens (Uzias era aserotita) para cumprir seus propósitos.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 11:44</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>856.</span> <span class='nome-principal'>Zabade, filho de Aclai</span> <span class='subtitulo'>– guerreiro de Davi (1Cr 11:41)</span>",
+            definicao: "<p><strong>Zabade</strong>, filho de Aclai, é listado como um dos guerreiros de Davi (<span class='versiculo'>1Cr 11:41</span>).</p><ul><li><strong>Nome:</strong> significa 'dote' ou 'presente' — talvez indicando que ele era uma dádiva para o rei.</li><li><strong>Contexto:</strong> Zabade é mencionado na lista de guerreiros que se uniram a Davi em Ziclague (1Cr 12:1-22).</li><li><strong>Lição:</strong> Cada guerreiro, mesmo os menos conhecidos, contribuiu para a vitória e a consolidação do reino.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 11:41</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>857.</span> <span class='nome-principal'>Adina, filho de Siza</span> <span class='subtitulo'>– guerreiro de Davi, chefe dos rubenitas (1Cr 11:42)</span>",
+            definicao: "<p><strong>Adina</strong>, filho de Siza, foi um guerreiro rubenita, chefe de 30 soldados.</p><ul><li><strong>Nome:</strong> significa 'delicado' ou 'voluntário' — irônico para um guerreiro.</li><li><strong>Contexto:</strong> A tribo de Rúben, apesar de estar a leste do Jordão, enviou guerreiros para apoiar Davi, mostrando unidade nacional.</li><li><strong>Lição:</strong> A lealdade a Davi veio de todas as tribos, mesmo das mais distantes.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 11:42</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>858.</span> <span class='nome-principal'>Ezer, Obadias, Eliabe, Jasan, Jeremias</span> <span class='subtitulo'>– guerreiros gadeitas de Davi (1Cr 12:8-15)</span>",
+            definicao: "<p>Guerreiros gadeitas que se uniram a Davi no deserto.</p><ul><li>Ezer significa 'auxílio' — eles foram auxílio para Davi.</li><li>Obadias significa 'servo de Yahweh' — serviam a Deus e ao seu ungido.</li><li>Eliabe significa 'meu Deus é pai' — confiavam na paternidade divina.</li><li>Jasan (ou Jasiel) significa 'Deus faz' — reconheciam a obra de Deus.</li><li>Jeremias significa 'Yahweh exalta' — exaltavam a Deus e a Davi.</li><li>Estes homens eram valentes, com rostos de leão e ligeiros como gazelas (1Cr 12:8).</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 12:8-15</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>859.</span> <span class='nome-principal'>Aiezer, Joás, Jozabade</span> <span class='subtitulo'>– guerreiros benjamitas de Davi (1Cr 12:2-6)</span>",
+            definicao: "<p>Benjamitas valentes que se uniram a Davi em Ziclague.</p><ul><li>Aiezer significa 'irmão auxílio' — irmãos que se ajudavam.</li><li>Joás significa 'Yahweh é forte' — confiavam na força divina.</li><li>Jozabade significa 'Yahweh dotou' — reconheciam os dons de Deus.</li><li>Eram flecheiros e fundeiros, habilidosos com a mão direita e esquerda (1Cr 12:2).</li><li>Representam a reconciliação entre a casa de Saul e Davi, pois muitos benjamitas se uniram a Davi.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 12:2-6</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>860.</span> <span class='nome-principal'>Adna, Jozabade, Jediael, Micael</span> <span class='subtitulo'>– guerreiros de Manassés que se uniram a Davi (1Cr 12:19-21)</span>",
+            definicao: "<p>Guerreiros de Manassés que se uniram a Davi quando ele estava em Ziclague, antes de se tornar rei.</p><ul><li>Adna significa 'prazer' — Davi teve prazer em tê-los.</li><li>Jozabade significa 'Yahweh dotou' — Deus os deu a Davi.</li><li>Jediael significa 'conhecido por Deus' — Deus os conhecia.</li><li>Micael significa 'quem é como Deus?' — uma pergunta retórica que proclama a grandeza de Deus.</li><li>Representam a unificação das tribos sob Davi, mesmo as de além-Jordão.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 12:19-21</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>861.</span> <span class='nome-principal'>Os três valentes de Davi (Josabe-Bassebete, Eleazar, Samá)</span> <span class='subtitulo'>– que derramaram sua vida por água (2Sm 23:13-17)</span>",
+            definicao: "<p>Três dos trinta guerreiros foram a Davi durante a colheita, quando ele estava na caverna de Adulão e os filisteus ocupavam Belém. Davi expressou desejo de beber água do poço de Belém. Eles romperam o acampamento filisteu, tiraram água e a trouxeram a Davi. Ele a derramou como oferta ao Senhor.</p><ul><li><strong>Josabe-Bassebete</strong> (ou Jasobeão) era o chefe dos três.</li><li><strong>Eleazar</strong>, filho de Dodô, lutou até sua mão grudar na espada.</li><li><strong>Samá</strong>, filho de Agé, defendeu sozinho um campo de lentilhas.</li><li>Davi recusou beber a água, derramando-a como oferta, porque ela representava o sangue de seus homens.</li><li>Este ato mostra a nobreza de Davi e a lealdade extrema de seus guerreiros.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 23:13-17; 1Cr 11:15-19</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>862.</span> <span class='nome-principal'>Josabe-Bassebete</span> <span class='subtitulo'>– chefe dos três guerreiros valentes de Davi (2Sm 23:8; 1Cr 11:11)</span>",
+            definicao: "<p><strong>Josabe-Bassebete</strong> (também chamado Jasobeão em <span class='versiculo'>1Cr 11:11</span>) era o chefe dos três guerreiros mais valentes. Matou 800 inimigos de uma só vez.</p><ul><li><strong>Nome:</strong> significa 'assentado no trono' ou 'o povo retorna' — talvez indicando sua posição de honra.</li><li><strong>Proeza:</strong> Matar 800 inimigos demonstra força extraordinária, atribuída à ajuda divina.</li><li><strong>Lição:</strong> A vitória não vem da força humana, mas de Deus que capacita seus servos.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 23:8; 1Cr 11:11</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>863.</span> <span class='nome-principal'>Eleazar, filho de Dodô</span> <span class='subtitulo'>– segundo dos três valentes (2Sm 23:9-10; 1Cr 11:12-14)</span>",
+            definicao: "<p><strong>Eleazar</strong>, filho de Dodô, foi um dos três. Lutou contra os filisteus até que sua mão cansou e ficou grudada à espada. Deus deu grande vitória naquele dia.</p><ul><li><strong>Nome:</strong> significa 'Deus ajudou' — exatamente o que aconteceu na batalha.</li><li><strong>Contexto:</strong> Eleazar lutou sozinho depois que os outros soldados recuaram, mostrando coragem inabalável.</li><li><strong>Lição:</strong> A perseverança na batalha espiritual é recompensada com a vitória.</li><li><strong>Tipologia:</strong> Eleazar prefigura Cristo, que lutou sozinho na cruz.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 23:9-10; 1Cr 11:12-14</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>864.</span> <span class='nome-principal'>Samá, filho de Agé</span> <span class='subtitulo'>– terceiro dos três valentes (2Sm 23:11-12; 1Cr 11:14)</span>",
+            definicao: "<p><strong>Samá</strong>, filho de Agé, defendeu sozinho um campo de lentilhas contra os filisteus, matando-os. Deus lhe deu grande vitória.</p><ul><li><strong>Nome:</strong> significa 'desolação' ou 'espanto' — ele causou espanto nos inimigos.</li><li><strong>Contexto:</strong> O campo de lentilhas era um alimento básico; defendê-lo foi crucial para a sobrevivência do povo.</li><li><strong>Lição:</strong> A fidelidade de um homem pode proteger toda a comunidade.</li><li><strong>Curiosidade:</strong> Este é o mesmo Samá mencionado em 1Cr 11:14, confirmando a consistência das listas.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 23:11-12; 1Cr 11:14</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>865.</span> <span class='nome-principal'>Zeleque, o amonita</span> <span class='subtitulo'>– guerreiro de Davi (2Sm 23:37; 1Cr 11:39)</span>",
+            definicao: "<p><strong>Zeleque</strong>, amonita, foi um dos trinta guerreiros de Davi (<span class='versiculo'>2Sm 23:37</span>; <span class='versiculo'>1Cr 11:39</span>).</p><ul><li><strong>Nome:</strong> significa 'rachadura' ou 'fenda' — talvez indicando que ele abriu brechas no inimigo.</li><li><strong>Contexto:</strong> Os amonitas eram tradicionalmente inimigos de Israel, mas Zeleque se uniu a Davi, mostrando que a graça de Deus alcança até mesmo os gentios.</li><li><strong>Lição:</strong> O evangelho quebra barreiras étnicas; Davi aceitou um amonita em seu exército.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 23:37; 1Cr 11:39</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>866.</span> <span class='nome-principal'>Naarai, filho de Esbai</span> <span class='subtitulo'>– guerreiro de Davi (1Cr 11:37)</span>",
+            definicao: "<p><strong>Naarai</strong>, filho de Esbai, foi um dos trinta guerreiros.</p><ul><li><strong>Nome:</strong> significa 'jovem' ou 'rapaz' — talvez fosse jovem quando serviu.</li><li><strong>Contexto:</strong> A juventude não é impedimento para servir a Deus e ao seu ungido.</li><li><strong>Lição:</strong> Deus usa jovens para grandes feitos (1Tm 4:12).</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 11:37</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>867.</span> <span class='nome-principal'>Ira, filho de Iques</span> <span class='subtitulo'>– guerreiro de Tecoa (2Sm 23:26; 1Cr 11:28)</span>",
+            definicao: "<p><strong>Ira</strong>, filho de Iques, natural de Tecoa, foi um dos trinta guerreiros.</p><ul><li><strong>Nome:</strong> significa 'vigilante' ou 'cidade' — talvez fosse um guarda vigilante.</li><li><strong>Contexto:</strong> Tecoa é a cidade natal do profeta Amós (Am 1:1), mostrando que Deus levanta heróis de lugares pequenos.</li><li><strong>Lição:</strong> A fidelidade em uma pequena cidade pode levar a um grande serviço.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 23:26; 1Cr 11:28</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>868.</span> <span class='nome-principal'>Garebe (Gareb)</span> <span class='subtitulo'>– guerreiro de Davi, de Judá (2Sm 23:38; 1Cr 11:40)</span>",
+            definicao: "<p><strong>Garebe</strong>, natural de Judá, foi um dos trinta guerreiros.</p><ul><li><strong>Nome:</strong> significa 'coceira' ou 'sarna' — um nome incomum, talvez dado para superar uma enfermidade.</li><li><strong>Contexto:</strong> A diversidade de nomes mostra que o exército de Davi incluía pessoas de todas as origens.</li><li><strong>Lição:</strong> Deus não se importa com a aparência ou a origem; Ele olha para o coração.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 23:38; 1Cr 11:40</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>869.</span> <span class='nome-principal'>Eliete</span> <span class='subtitulo'>– guerreiro de Davi (1Cr 11:46)</span>",
+            definicao: "<p><strong>Eliete</strong>, mencionado em <span class='versiculo'>1Cr 11:46</span>, foi um dos guerreiros de Davi.</p><ul><li><strong>Nome:</strong> significa 'meu Deus é alto' ou 'meu Deus é força'.</li><li><strong>Contexto:</strong> Este nome é uma confissão de que a força vem de Deus.</li><li><strong>Lição:</strong> Mesmo os guerreiros mais fortes reconhecem que sua força vem do Senhor.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 11:46</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>870.</span> <span class='nome-principal'>Iru, Elá, Naã</span> <span class='subtitulo'>– descendentes de Calebe, o espião (1Cr 4:15)</span>",
+            definicao: "<p><strong>Iru, Elá e Naã</strong> são filhos de Calebe (o espião).</p><ul><li>Iru significa 'cidade' ou 'vigia' — talvez fundou uma cidade.</li><li>Elá significa 'carvalho' — árvore de força e longevidade.</li><li>Naã significa 'lamento' — talvez lembrando as dificuldades da peregrinação.</li><li>Quenaz (pai de Otniel) também é descendente de Calebe, mostrando a continuidade da linhagem.</li><li>Estes nomes representam as famílias da tribo de Judá na região de Hebrom, que foi dada a Calebe como herança.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:15</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>871.</span> <span class='nome-principal'>Sobal</span> <span class='subtitulo'>– descendente de Judá (1Cr 4:1-4)</span>",
+            definicao: "<p><strong>Sobal</strong>, descendente de Judá (por Hezrom), teve filhos que fundaram cidades.</p><ul><li><strong>Nome:</strong> significa 'fluir' ou 'descer' — talvez referindo-se a uma região de vale.</li><li><strong>Contexto:</strong> Sobal é um dos ancestrais das famílias que habitaram a região ao redor de Belém.</li><li><strong>Lição:</strong> A colonização da terra prometida envolveu famílias como a de Sobal, que estabeleceram comunidades.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:1-4</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>872.</span> <span class='nome-principal'>Os reis de Judá (Roboão a Zedequias)</span> <span class='subtitulo'>– lista completa dos reis do sul</span>",
+            definicao: "<p>Os reis de Judá (reino do sul) foram: <strong>Roboão, Abias, Asa, Jeosafá, Jeorão, Acazias, Atalia (usurpadora), Joás, Amazias, Uzias, Jotão, Acaz, Ezequias, Manassés, Amom, Josias, Jeoacaz, Jeoaquim, Joaquim e Zedequias</strong>.</p><ul><li>Alguns foram justos (Asa, Jeosafá, Ezequias, Josias), outros ímpios.</li><li>A queda de Judá em 586 a.C. encerrou a dinastia davídica (temporariamente).</li><li>A linhagem continuou através de Zorobabel e, finalmente, em Jesus, o Messias.</li><li><strong>Padrão:</strong> Os reis justos promoveram reformas; os ímpios levaram o povo à idolatria e ao cativeiro.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 11-2Rs 25; 2Cr 10-36</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>873.</span> <span class='nome-principal'>Os reis de Israel (norte)</span> <span class='subtitulo'>– lista completa dos reis do norte</span>",
+            definicao: "<p>Os reis de Israel (reino do norte) foram: <strong>Jeroboão I, Nadabe, Baasa, Elá, Zinri, Onri, Acabe, Acazias, Jeorão, Jeú, Jeoacaz, Jeoás, Jeroboão II, Zacarias, Salum, Menaém, Pecaías, Peca e Oséias</strong>.</p><ul><li>Todos foram ímpios, seguindo o pecado de Jeroboão I (os bezerros de ouro).</li><li>O reino de Israel caiu em 722 a.C. para a Assíria, como juízo divino.</li><li>Nenhum rei do norte foi considerado justo; todos se desviaram do caminho do Senhor.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 12-2Rs 17</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>874.</span> <span class='nome-principal'>Tibni</span> <span class='subtitulo'>– pretendente ao trono de Israel, rival de Onri (1Rs 16:21-22)</span>",
+            definicao: "<p><strong>Tibni</strong>, filho de Ginate, foi proclamado rei por metade do povo após a morte de Zinri, mas Onri prevaleceu e Tibni morreu.</p><ul><li><strong>Nome:</strong> significa 'palha' ou 'construção' — sua pretensão era frágil.</li><li><strong>Contexto:</strong> A divisão política após a morte de Zinri mostra a instabilidade do reino do norte.</li><li><strong>Lição:</strong> A liderança dividida leva à ruína; a unidade é necessária para a estabilidade.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 16:21-22</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>875.</span> <span class='nome-principal'>Os juízes maiores e menores</span> <span class='subtitulo'>– lista dos juízes de Israel</span>",
+            definicao: "<p>Juízes maiores: <strong>Otniel, Eúde, Débora, Gideão, Jefté, Sansão</strong>.</p><p>Juízes menores: <strong>Sangar, Tola, Jair, Ibsã, Elom, Abdom</strong>.</p><ul><li>Os juízes maiores têm narrativas detalhadas; os menores são apenas mencionados.</li><li>O ciclo de pecado, opressão, clamor e libertação se repete.</li><li>Representam a liderança carismática de Israel antes da monarquia.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Jz 3-16</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>876.</span> <span class='nome-principal'>Hananias (falso profeta)</span> <span class='subtitulo'>– que profetizou o fim do cativeiro em dois anos (Jr 28:1-17)</span>",
+            definicao: "<p><strong>Hananias</strong>, filho de Azur, profetizou falsamente que o cativeiro babilônico duraria apenas dois anos (<span class='versiculo'>Jr 28</span>). Jeremias o confrontou e profetizou sua morte no mesmo ano.</p><ul><li><strong>Nome:</strong> significa 'Yahweh é gracioso' — ironia, pois ele não mostrou graça ao povo.</li><li><strong>Contexto:</strong> Hananias quebrou o jugo de madeira que Jeremias carregava, simbolizando a falsa libertação.</li><li><strong>Profecia:</strong> Jeremias profetizou que Hananias morreria naquele ano, e assim aconteceu (Jr 28:16-17).</li><li><strong>Lição:</strong> Falsos profetas serão expostos e julgados; a palavra de Deus prevalece.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Jr 28:1-17</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>877.</span> <span class='nome-principal'>Asafe, Hemã, Jedutum (Etã)</span> <span class='subtitulo'>– líderes da música no tabernáculo (1Cr 16:5; 25:1-6)</span>",
+            definicao: "<p><strong>Asafe, Hemã e Jedutum</strong> (ou Etã) foram os três líderes da música no tabernáculo de Davi e depois no templo.</p><ul><li>Asafe significa 'ajuntador' — ele reunia o povo em louvor.</li><li>Hemã significa 'fiel' — sua música era fiel à doutrina.</li><li>Jedutum significa 'louvador' — sua função era louvar a Deus.</li><li>Compuseram salmos: Asafe (Sl 50, 73-83), Hemã (Sl 88), Jedutum (Sl 39, 62, 77).</li><li>Representam o ministério de louvor organizado no culto a Deus, que continuou até o Segundo Templo.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 6:33; 1Cr 16:41-42; 1Cr 25:1-6; 2Cr 5:12; Sl 50; Sl 62; Sl 73-83; Sl 88</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>878.</span> <span class='nome-principal'>Os filhos de Asafe</span> <span class='subtitulo'>– Zacur, José, Netanias, Asarela (1Cr 25:2)</span>",
+            definicao: "<p>Os filhos de Asafe eram profetas e músicos: <strong>Zacur, José, Netanias, Asarela</strong>.</p><ul><li>Zacur significa 'lembrado' — Deus se lembra de seus adoradores.</li><li>José significa 'Yahweh acrescenta' — Deus acrescenta bênçãos.</li><li>Netanias significa 'dádiva de Yahweh' — a música é uma dádiva.</li><li>Asarela significa 'Deus é meu dominador' — submissão a Deus.</li><li>Representam a continuidade do ministério musical através das gerações.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 25:2</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>879.</span> <span class='nome-principal'>Os filhos de Jedutum</span> <span class='subtitulo'>– Gedalias, Zeri, Jesaías, Hasabias, Matitias, Simei (1Cr 25:3)</span>",
+            definicao: "<p>Os filhos de Jedutum: <strong>Gedalias, Zeri, Jesaías, Hasabias, Matitias, Simei</strong>.</p><ul><li>Gedalias significa 'Yahweh é grande' — a grandeza de Deus é proclamada.</li><li>Zeri significa 'perfumado' ou 'bálsamo' — a música é como bálsamo.</li><li>Jesaías significa 'Yahweh é salvação' — a salvação é o tema do louvor.</li><li>Hasabias significa 'Yahweh considera' — Deus considera o louvor.</li><li>Matitias significa 'dom de Yahweh' — a música é um dom.</li><li>Simei significa 'fama' — a fama de Deus é proclamada.</li><li>Todos profetizavam ao som de harpas, mostrando que a música era um veículo de revelação profética.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 25:3</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>880.</span> <span class='nome-principal'>Os filhos de Hemã</span> <span class='subtitulo'>– Buquias, Matanias, Uziel, Sebuel, Jerimote, Hananias, Hanani, Eliata, Gidalti, Romanti-Ezer, Josbecasa, Maloti, Hotir, Maaziote (1Cr 25:4)</span>",
+            definicao: "<p>Hemã teve 14 filhos e 3 filhas (<span class='versiculo'>1Cr 25:5</span>). Todos profetizavam sob a direção do rei.</p><ul><li>Os nomes são teofóricos: Buquias ('Yahweh prova'), Matanias ('dom de Yahweh'), Uziel ('Deus é minha força'), Sebuel ('cativeiro de Deus'), Jerimote ('Yahweh é elevado'), Hananias ('Yahweh é gracioso'), Hanani ('gracioso'), Eliata ('Deus vem'), Gidalti ('engrandeci a Deus'), Romanti-Ezer ('eu exalto o auxílio'), Josbecasa ('assentado em meio'), Maloti ('eu falei'), Hotir ('abundância'), Maaziote ('visões de Deus').</li><li>Cada nome é uma confissão de fé.</li><li><strong>Curiosidade:</strong> Deus deu a Hemã catorze filhos por causa da promessa de exaltar seu poder (<span class='versiculo'>1Cr 25:5</span>).</li><li>A multiplicidade de filhos mostra a abundância da bênção musical no culto.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 25:4-6</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>881.</span> <span class='nome-principal'>Meshelemias</span> <span class='subtitulo'>– chefe dos porteiros, descendente de Corá (1Cr 26:1-2)</span>",
+            definicao: "<p><strong>Meshelemias</strong>, filho de Corá, era chefe dos porteiros do templo.</p><ul><li><strong>Nome:</strong> significa 'Yahweh retribui' ou 'amigo de Yahweh'.</li><li>Seus filhos: Zacarias, Jediael, Zebadias, Jatniel, Elão, Joanã, Elioenai — todos porteiros.</li><li>Os porteiros guardavam as portas do templo, protegendo a santidade do local.</li><li><strong>Lição:</strong> O serviço de guarda é essencial para a casa de Deus; cada um tem sua função.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 26:1-2</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>882.</span> <span class='nome-principal'>Os descendentes de Moisés</span> <span class='subtitulo'>– Gérson, Eliezer, Sebuel (1Cr 23:14-17)</span>",
+            definicao: "<p>Moisés teve filhos: <strong>Gérson</strong> (não confundir com filho de Levi) e <strong>Eliezer</strong>.</p><ul><li>Gérson significa 'exilado' — Moisés foi exilado no deserto.</li><li>Eliezer significa 'meu Deus é auxílio' — Deus ajudou Moisés.</li><li>Sebuel, filho de Gérson, foi tesoureiro do templo.</li><li>A linhagem de Moisés serviu no tabernáculo, embora não no sacerdócio (que era de Arão).</li><li><strong>Lição:</strong> Todos os servos de Deus têm funções diferentes, mas igualmente importantes.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 23:14-17</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>883.</span> <span class='nome-principal'>As 24 ordens sacerdotais</span> <span class='subtitulo'>– divisão do sacerdócio por Davi (1Cr 24:1-19)</span>",
+            definicao: "<p>As 24 ordens sacerdotais foram distribuídas por sorteio, 16 da linhagem de Eleazar e 8 da linhagem de Itamar.</p><ul><li>Cada ordem servia no templo por uma semana, de sábado a sábado.</li><li>Essa organização permitia que todos os sacerdotes participassem do culto.</li><li>A ordem de Abias (<span class='versiculo'>Lc 1:5</span>) era a oitava, à qual pertencia Zacarias, pai de João Batista.</li><li><strong>Tipologia:</strong> As 24 ordens prefiguram a adoração celestial (Ap 4:4 — 24 anciãos).</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 24:1-19; Lc 1:5; Ap 4:4</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>884.</span> <span class='nome-principal'>A ordem de Abias</span> <span class='subtitulo'>– a oitava ordem sacerdotal (1Cr 24:10; Lc 1:5)</span>",
+            definicao: "<p><strong>Abias</strong> era descendente de Eleazar. Zacarias, pai de João Batista, pertencia a essa ordem (<span class='versiculo'>Lc 1:5</span>).</p><ul><li><strong>Nome:</strong> significa 'Yahweh é meu pai'.</li><li><strong>Importância:</strong> Foi durante o serviço de Zacarias na ordem de Abias que o anjo Gabriel lhe apareceu, anunciando o nascimento de João Batista.</li><li><strong>Tipologia:</strong> A ordem de Abias preparou o caminho para o precursor do Messias.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 24:10; Lc 1:5</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>885.</span> <span class='nome-principal'>Os clãs de Israel no segundo censo (Nm 26)</span> <span class='subtitulo'>– Hanok, Harnofe, Jesiel, etc.</span>",
+            definicao: "<p>O segundo censo de Israel no deserto (<span class='versiculo'>Nm 26</span>) lista os clãs de cada tribo. Alguns nomes: <strong>Hanok</strong> (Rúben), <strong>Harnofe</strong> (Aser), <strong>Jesiel</strong> (Naftali?), etc.</p><ul><li>Hanok (Enoque) significa 'iniciado'.</li><li>Harnofe significa 'nariz quente' (incomum).</li><li>Jesiel significa 'Deus estabelece'.</li><li>Cada clã era uma subdivisão tribal, mostrando a organização social de Israel.</li><li>Este censo foi feito para distribuir a herança em Canaã.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Nm 26:1-65</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>886.</span> <span class='nome-principal'>Tirza (filha de Zelofeade)</span> <span class='subtitulo'>– uma das cinco irmãs que mudaram a lei de herança (Nm 27:1-11; 36:1-12)</span>",
+            definicao: "<p><strong>Tirza</strong> é uma das cinco filhas de Zelofeade, juntamente com Maalá, Noa, Hogla e Milca.</p><ul><li>Seu nome significa 'agradável' ou 'bem-aventurada' — também nome de uma cidade em Israel (1Rs 14:17).</li><li>As cinco irmãs são heroínas da herança feminina, pois suas petições mudaram a lei de herança em Israel (<span class='versiculo'>Nm 27</span>; <span class='versiculo'>Nm 36</span>), garantindo que as filhas pudessem herdar na ausência de filhos homens.</li><li><strong>Lição:</strong> Deus ouve o clamor dos justos e ajusta a lei para proteger os direitos das mulheres.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Nm 27:1-11; Nm 36:1-12; Js 17:3-4</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>887.</span> <span class='nome-principal'>Quenaz (irmão de Calebe)</span> <span class='subtitulo'>– pai de Otniel, o primeiro juiz (Js 15:17; Jz 1:13; 1Cr 4:13)</span>",
+            definicao: "<p><strong>Quenaz</strong>, irmão de Calebe (o espião), foi pai de Otniel, o primeiro juiz de Israel.</p><ul><li><strong>Nome:</strong> significa 'caçador' — talvez um guerreiro.</li><li><strong>Contexto:</strong> Otniel, filho de Quenaz, conquistou Debir e recebeu Acsa, filha de Calebe, como esposa (Js 15:16-17).</li><li><strong>Importância:</strong> A linhagem de Quenaz produziu o primeiro libertador de Israel após a conquista.</li><li><strong>Lição:</strong> Deus levanta libertadores de famílias aparentemente comuns.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Js 15:17; Jz 1:13; 1Cr 4:13</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>888.</span> <span class='nome-principal'>A nora de Eli (esposa de Fineias)</span> <span class='subtitulo'>– anônima, mãe de Icabode (1Sm 4:19-22)</span>",
+            definicao: "<p>A <strong>esposa de Fineias</strong>, nora de Eli, é anônima. Ao saber que a Arca havia sido capturada e que seu marido e sogro haviam morrido, deu à luz e chamou o menino de <strong>Icabode</strong>.</p><ul><li>Icabode significa 'sem glória' ou 'onde está a glória?'.</li><li>Ela exclamou: <span class='destaque-vermelho'>'Foi-se a glória de Israel'</span> (<span class='versiculo'>1Sm 4:21</span>).</li><li><strong>Significado:</strong> A perda da Arca simbolizava a ausência da presença de Deus.</li><li><strong>Lição:</strong> Quando o povo abandona a Deus, a glória se vai. Mas ela retornaria com a restauração.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Sm 4:19-22</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>889.</span> <span class='nome-principal'>Joanã, filho de Josias</span> <span class='subtitulo'>– primogênito de Josias, que não reinou (1Cr 3:15)</span>",
+            definicao: "<p><strong>Joanã</strong> foi o primogênito do rei Josias, mencionado em <span class='versiculo'>1Cr 3:15</span>. Seus irmãos reinaram: Jeoaquim, Zedequias e Jeoacaz.</p><ul><li><strong>Nome:</strong> significa 'Yahweh é gracioso'.</li><li><strong>Contexto:</strong> Joanã não teve destaque político, e seu nome não aparece em outros lugares.</li><li><strong>Lição:</strong> Nem todos os primogênitos são escolhidos para liderar; Deus tem planos diferentes para cada um.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 3:15</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>890.</span> <span class='nome-principal'>Os filhos de Ezequias</span> <span class='subtitulo'>– Manassés e outros, mortos por Manassés? (2Cr 33:6)</span>",
+            definicao: "<p>Ezequias teve vários filhos, incluindo <strong>Manassés</strong>, que o sucedeu. Segundo <span class='versiculo'>2Cr 33:6</span>, Manassés sacrificou seus próprios filhos no fogo, mas os nomes não são dados.</p><ul><li><strong>Contexto:</strong> A idolatria de Manassés foi tão severa que ele matou seus próprios descendentes.</li><li><strong>Lição:</strong> O pecado de um rei pode destruir sua própria família.</li><li><strong>Contraste:</strong> Ezequias foi um rei justo, mas seu filho Manassés foi um dos piores.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Cr 33:6</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>891.</span> <span class='nome-principal'>Os filhos de Uzias</span> <span class='subtitulo'>– Jotão e outros, não nomeados (2Cr 26:20-21)</span>",
+            definicao: "<p>Uzias teve outros filhos além de <strong>Jotão</strong>, seu sucessor, mas não são nomeados.</p><ul><li><strong>Contexto:</strong> Uzias foi leproso no final da vida, e Jotão governou em seu lugar.</li><li><strong>Lição:</strong> Mesmo grandes líderes podem ter fins trágicos; a lepra de Uzias o isolou.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Cr 26:20-21</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>892.</span> <span class='nome-principal'>Os 70 filhos de Acabe</span> <span class='subtitulo'>– decapitados por Jeú, cumprindo a profecia (2Rs 10:1-11)</span>",
+            definicao: "<p>Os <strong>70 filhos de Acabe</strong> foram decapitados por ordem de Jeú, cumprindo a profecia de Elias (1Rs 21:21-24). Seus nomes não são dados.</p><ul><li><strong>Contexto:</strong> Jeú executou o juízo divino sobre a casa de Acabe, matando todos os herdeiros.</li><li><strong>Cumprimento profético:</strong> Elias profetizou que a casa de Acabe seria destruída, e Jeú foi o instrumento.</li><li><strong>Lição:</strong> A palavra de Deus sempre se cumpre; ninguém escapa do juízo divino.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Rs 10:1-11; 1Rs 21:21-24</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>893.</span> <span class='nome-principal'>Os filhos de Davi (lista completa)</span> <span class='subtitulo'>– Amnon, Quileabe, Absalão, Adonias, Sefatias, Itreão, e os filhos com Bate-Seba e outras esposas (2Sm 5:14-16; 1Cr 3:5-8)</span>",
+            definicao: "<p>Davi teve muitos filhos: <strong>Amnon</strong> (com Ainoã), <strong>Quileabe</strong> (com Abigail), <strong>Absalão</strong> (com Maaca), <strong>Adonias</strong> (com Hagite), <strong>Sefatias</strong> (com Abital), <strong>Itreão</strong> (com Eglá), e os filhos com Bate-Seba: <strong>Samua, Sobabe, Natã, Salomão</strong>, mais <strong>Ibar, Elisua, Elifelete, Nogá, Nefegue, Jafia, Elisama, Eliada, Elifelete</strong>.</p><ul><li>Alguns nomes têm significados: Samua ('ouvido'), Sobabe ('rebelde'), Natã (ancestral de Jesus por Maria), Ibar ('ele escolhe'), Elisua ('Deus é salvação'), Elifelete ('Deus é livramento'), Nogá ('brilho'), Nefegue ('corajoso'), Jafia ('brilhe'), Elisama ('Deus ouviu'), Eliada ('Deus conhece').</li><li><strong>Importância:</strong> A numerosa descendência de Davi mostra a bênção de Deus, mas também trouxe conflitos (Amnon, Absalão, Adonias).</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>2Sm 5:14-16; 1Cr 3:5-8; 1Cr 14:3-7</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>894.</span> <span class='nome-principal'>Os filhos de Salomão</span> <span class='subtitulo'>– Roboão é o único registrado como herdeiro (1Rs 11:42)</span>",
+            definicao: "<p>Salomão teve muitas esposas e concubinas, mas apenas <strong>Roboão</strong> é registrado como herdeiro e sucessor.</p><ul><li><strong>Contexto:</strong> Roboão foi o filho escolhido por Deus para continuar a linhagem de Davi, mas sua insensatez dividiu o reino.</li><li><strong>Lição:</strong> A sucessão nem sempre é garantia de sabedoria; a escolha de Deus é soberana.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Rs 11:42</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>895.</span> <span class='nome-principal'>Abiúd</span> <span class='subtitulo'>– filho de Zorobabel na genealogia de Mateus (Mt 1:13)</span>",
+            definicao: "<p><strong>Abiúd</strong> é mencionado em <span class='versiculo'>Mt 1:13</span> como filho de Zorobabel e pai de Eliaquim. Não aparece em 1Crônicas 3.</p><ul><li><strong>Nome:</strong> significa 'meu pai é majestade' ou 'pai de louvor'.</li><li><strong>Genealogia:</strong> Mateus lista Abiúd, enquanto Lucas lista Ressa (Lc 3:27). Isso mostra diferentes linhagens (real e natural).</li><li><strong>Importância:</strong> Abiúd é um elo na linhagem legal de José, garantindo que Jesus seja herdeiro do trono de Davi.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Mt 1:13; Lc 3:27 (diferente)</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>896.</span> <span class='nome-principal'>Os descendentes de Calebe (o espião) em 1Cr 4:15</span> <span class='subtitulo'>– Iru, Elá, Naã, e outros</span>",
+            definicao: "<p>Os filhos de Calebe (o espião) incluíam <strong>Iru, Elá, Naã</strong>.</p><ul><li>Iru significa 'cidade' ou 'vigia'.</li><li>Elá significa 'carvalho' — símbolo de força.</li><li>Naã significa 'lamento' — talvez lembrando a dor da peregrinação.</li><li>Além deles, Calebe também teve <strong>Quenaz</strong> (pai de Otniel).</li><li>Estes nomes representam as famílias da tribo de Judá na região de Hebrom.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:15</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>897.</span> <span class='nome-principal'>Os filhos de Sobal (descendente de Judá)</span> <span class='subtitulo'>– fundadores de cidades (1Cr 4:1-4)</span>",
+            definicao: "<p><strong>Sobal</strong>, descendente de Judá, teve filhos que fundaram cidades na região.</p><ul><li><strong>Nome:</strong> significa 'fluir' ou 'descer'.</li><li><strong>Contexto:</strong> Sobal é um dos ancestrais das famílias que habitaram a região ao redor de Belém.</li><li><strong>Lição:</strong> Cada família contribuiu para a construção da terra prometida.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 4:1-4</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>898.</span> <span class='nome-principal'>Os filhos de Merari (levita)</span> <span class='subtitulo'>– Macli, Musi, e seus descendentes (Êx 6:19; Nm 3:20; 1Cr 23:21-23)</span>",
+            definicao: "<p><strong>Macli</strong> e <strong>Musi</strong> são os filhos de Merari, terceiro filho de Levi.</p><ul><li>Macli significa 'doente' ou 'fraco' — ironicamente, sua linhagem era forte no serviço.</li><li>Musi significa 'sensível' ou 'retirado'.</li><li>Os meraritas eram responsáveis pelo transporte das tábuas, barras, colunas e bases do tabernáculo — a estrutura pesada.</li><li><strong>Lição:</strong> Cada família levítica tinha uma função específica; todas eram necessárias para o culto.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Êx 6:19; Nm 3:20; 1Cr 23:21-23</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>899.</span> <span class='nome-principal'>Os filhos de Gérson (levita)</span> <span class='subtitulo'>– Libni e Simei (Êx 6:17; Nm 3:18; 1Cr 6:17)</span>",
+            definicao: "<p><strong>Libni</strong> e <strong>Simei</strong> são os filhos de Gérson, filho de Levi.</p><ul><li>Libni significa 'branco' ou 'puro'.</li><li>Simei significa 'famoso' ou 'ouvido'.</li><li>Os gersonitas eram responsáveis pelas cortinas, cobertas e coberturas do tabernáculo — os tecidos e revestimentos.</li><li><strong>Lição:</strong> O serviço de cada família levítica era indispensável para a adoração.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Êx 6:17; Nm 3:18; 1Cr 6:17</span>"
+        },
+        {
+            termo: "<span class='numero-ordem'>900.</span> <span class='nome-principal'>Os filhos de Coate (levita)</span> <span class='subtitulo'>– Anrão, Izar, Hebrom, Uziel (Êx 6:18; Nm 3:19; 1Cr 6:2)</span>",
+            definicao: "<p><strong>Anrão, Izar, Hebrom e Uziel</strong> são os filhos de Coate, filho de Levi.</p><ul><li>Anrão (pai de Moisés, Arão e Miriã).</li><li>Izar (pai de Corá).</li><li>Hebrom (fundador dos hebronitas).</li><li>Uziel (pai de Misael, Elzafã e Sitri).</li><li>Os coatitas eram responsáveis pelos utensílios mais sagrados do tabernáculo: a Arca, a mesa, o candelabro, os altares.</li><li>Esta linhagem produziu o sacerdócio (Arão) e grandes levitas.</li><li><strong>Tipologia:</strong> A linhagem de Coate prefigura o serviço mais próximo de Deus, que é o sacerdócio.</li></ul>",
+            referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>Êx 6:18; Nm 3:19; 1Cr 6:2</span>"
+        }
+    ]
+};    referencias: "<span class='label-ref'>📖 Referências:</span> <span class='refs'>1Cr 2:31-35</span>"
 },
 {
     termo: "<span class='numero-ordem'>808.</span> <span class='nome-principal'>Jarha</span> <span class='subtitulo'>– servo egípcio de Seca, que se casou com sua filha (1Cr 2:34-35)</span>",
