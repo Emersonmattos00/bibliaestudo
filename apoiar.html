@@ -318,17 +318,6 @@
       border-color: #16a34a;
     }
 
-    .btn-patrocine {
-      background: linear-gradient(135deg, #d4af37, #b8941e);
-      border-color: #d4af37;
-      color: #1a1a2e;
-    }
-    .btn-patrocine:hover {
-      background: linear-gradient(135deg, #e8c84a, #c8a428);
-      border-color: #e8c84a;
-      color: #1a1a2e;
-    }
-
     .btn-sugestao {
       background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
       border-color: #4a6fa5;
@@ -496,28 +485,6 @@
       justify-content: center;
     }
 
-    .btn-open-form {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      padding: 16px 40px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: var(--gold);
-      border: 2px solid var(--gold);
-      border-radius: 40px;
-      font-weight: 700;
-      font-size: 18px;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    .btn-open-form:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 24px rgba(139,69,19,0.4);
-    }
-    .btn-open-form i {
-      font-size: 22px;
-    }
-
     .btn-sugestao-form {
       display: inline-flex;
       align-items: center;
@@ -545,441 +512,6 @@
       color: #7a6a5a;
       margin-top: 0;
     }
-
-    /* ===== DEPOIMENTOS E APOIADORES ===== */
-    .testimonials { margin-top: 50px; text-align: center; color: #e4d5b8; }
-    .testimonials h3 { font-size: 26px; color: var(--gold); margin-bottom: 20px; }
-    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 15px; }
-    .testimonial-item { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); padding: 20px; border-radius: var(--border-radius); border: 1px solid rgba(255,215,0,0.15); font-size: 14px; line-height: 1.6; color: #f0e6d5; transition: transform 0.3s; }
-    .testimonial-item:hover { transform: translateY(-4px); }
-    .testimonial-item i { color: var(--gold); font-size: 24px; margin-bottom: 8px; display: block; }
-    .testimonial-item .author { margin-top: 10px; font-weight: 700; color: var(--gold); font-size: 13px; }
-
-    .supporters-section { margin-top: 5px; text-align: center; color: #e4d5b8; }
-    .supporters-section h3 { font-size: 26px; margin-bottom: 10px; color: var(--gold); }
-    .supporters-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 25px; margin-top: 18px; }
-    .supporter-tag { background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); padding: 6px 20px; border-radius: 30px; font-size: 14px; border: 1px solid #c5a47a44; }
-    .supporter-tag i { color: var(--gold); margin-right: 6px; }
-    .share-buttons { margin-top: 30px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-    .share-btn { background: rgba(255,255,255,0.08); color: #e4d5b8; padding: 8px 20px; border-radius: 40px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; border: 1px solid #c5a47a44; transition: 0.3s; }
-    .share-btn:hover { background: var(--gold); color: var(--primary-dark); border-color: var(--gold); }
-
-    /* ===== MODAL DE FORMULÁRIO MELHORADO ===== */
-    .modal-overlay {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.75);
-      backdrop-filter: blur(8px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 99999;
-      padding: 20px;
-      animation: fadeInOverlay 0.3s ease;
-    }
-    .modal-overlay.active { display: flex; }
-    @keyframes fadeInOverlay {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .modal-box {
-      background: var(--cream);
-      max-width: 620px;
-      width: 100%;
-      max-height: 92vh;
-      border-radius: 24px;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.7);
-      border: 2px solid var(--gold);
-      animation: modalPop 0.4s ease;
-      overflow-y: auto;
-      position: relative;
-      padding: 0;
-    }
-
-    .modal-box.sugestao-modal {
-      border-color: #4a6fa5;
-    }
-    .modal-box.sugestao-modal .modal-header {
-      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
-    }
-
-    @keyframes modalPop {
-      0% { transform: scale(0.85) translateY(30px); opacity: 0; }
-      100% { transform: scale(1) translateY(0); opacity: 1; }
-    }
-
-    /* HEADER DO MODAL */
-    .modal-header {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      padding: 30px 35px 25px;
-      border-radius: 22px 22px 0 0;
-      text-align: center;
-      position: relative;
-      border-bottom: 3px solid var(--gold);
-    }
-
-    .modal-header .modal-close {
-      position: absolute;
-      top: 14px;
-      right: 18px;
-      background: rgba(255,255,255,0.15);
-      border: none;
-      font-size: 24px;
-      color: #fff;
-      cursor: pointer;
-      transition: 0.3s;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .modal-header .modal-close:hover {
-      background: rgba(255,255,255,0.3);
-      transform: rotate(90deg);
-    }
-
-    .modal-header .modal-icon-top {
-      font-size: 52px;
-      color: var(--gold);
-      margin-bottom: 6px;
-      display: block;
-    }
-
-    .modal-header h2 {
-      color: #fff;
-      font-size: 28px;
-      margin-bottom: 4px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-
-    .modal-header .modal-subtitle {
-      color: rgba(255,255,255,0.85);
-      font-size: 15px;
-      font-weight: 400;
-    }
-
-    .modal-header .modal-badge {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--primary-dark);
-      padding: 4px 16px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-top: 8px;
-    }
-
-    /* CORPO DO MODAL */
-    .modal-body {
-      padding: 28px 35px 35px;
-    }
-
-    .modal-body .form-sub {
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 14px;
-      margin-bottom: 24px;
-      line-height: 1.5;
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .form-group {
-      margin-bottom: 2px;
-    }
-    .form-group.full-width {
-      grid-column: 1 / -1;
-    }
-
-    .form-group label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 600;
-      color: var(--primary-dark);
-      margin-bottom: 5px;
-      font-size: 13px;
-    }
-    .form-group label i {
-      color: var(--gold);
-      font-size: 14px;
-      width: 18px;
-      text-align: center;
-    }
-    .form-group label .required-star {
-      color: #e74c3c;
-      font-size: 16px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 16px;
-      border: 2px solid #e0d5c8;
-      border-radius: 12px;
-      font-size: 14px;
-      background: #fcf9f4;
-      transition: all 0.3s;
-      font-family: inherit;
-      color: #2c1810;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--gold);
-      box-shadow: 0 0 0 4px rgba(255,215,0,0.15);
-      background: #fff;
-    }
-
-    .form-group textarea {
-      min-height: 80px;
-      resize: vertical;
-    }
-
-    .form-group .field-hint {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 4px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .form-group .field-hint i {
-      font-size: 12px;
-    }
-
-    .form-group .char-counter {
-      font-size: 11px;
-      color: var(--text-muted);
-      text-align: right;
-      margin-top: 3px;
-    }
-
-    /* INPUT COM ÍCONE */
-    .input-icon-wrapper {
-      position: relative;
-    }
-    .input-icon-wrapper .input-icon {
-      position: absolute;
-      left: 14px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--gold);
-      font-size: 16px;
-    }
-    .input-icon-wrapper input,
-    .input-icon-wrapper select {
-      padding-left: 44px;
-    }
-
-    /* BOTÃO DE ENVIO */
-    .btn-submit-form {
-      grid-column: 1 / -1;
-      justify-self: center;
-      padding: 16px 50px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: var(--gold);
-      border: 2px solid var(--gold);
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 17px;
-      cursor: pointer;
-      transition: all 0.3s;
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 10px;
-      width: 100%;
-      justify-content: center;
-      letter-spacing: 0.3px;
-    }
-    .btn-submit-form:hover {
-      transform: scale(1.02);
-      box-shadow: 0 8px 30px rgba(139,69,19,0.4);
-    }
-    .btn-submit-form i {
-      font-size: 20px;
-    }
-
-    .btn-submit-sugestao {
-      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
-      border-color: #4a6fa5;
-      color: #ffffff;
-    }
-    .btn-submit-sugestao:hover {
-      background: linear-gradient(135deg, #5a7fb5, #3a5a8a);
-      border-color: #5a7fb5;
-      color: #ffffff;
-      box-shadow: 0 8px 24px rgba(74, 111, 165, 0.4);
-    }
-
-    /* FOOTER DO MODAL */
-    .modal-footer {
-      background: #f5f0e8;
-      padding: 14px 35px;
-      border-radius: 0 0 22px 22px;
-      text-align: center;
-      font-size: 12px;
-      color: var(--text-muted);
-      border-top: 1px solid #e0d5c8;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .modal-footer i {
-      color: var(--gold);
-      margin-right: 4px;
-    }
-    .modal-footer a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .modal-footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* ===== MODAL DE SUCESSO ===== */
-    .modal-success-overlay {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.7);
-      backdrop-filter: blur(6px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 999999;
-      padding: 20px;
-    }
-    .modal-success-overlay.active { display: flex; }
-
-    .modal-success-box {
-      background: var(--cream);
-      max-width: 480px;
-      width: 100%;
-      padding: 50px 40px;
-      border-radius: 24px;
-      text-align: center;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
-      border: 3px solid #22c55e;
-      animation: modalPop 0.4s ease;
-    }
-    .modal-success-box .success-icon {
-      font-size: 72px;
-      color: #22c55e;
-      margin-bottom: 12px;
-    }
-    .modal-success-box h3 {
-      font-size: 28px;
-      color: var(--primary-dark);
-      margin-bottom: 8px;
-    }
-    .modal-success-box p {
-      color: var(--text-muted);
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 24px;
-    }
-    .modal-success-box .verse-highlight {
-      background: #f5ede4;
-      padding: 12px 20px;
-      border-radius: 12px;
-      color: var(--primary-dark);
-      font-size: 14px;
-      font-style: italic;
-      margin-bottom: 20px;
-      border-left: 4px solid var(--gold);
-    }
-    .btn-modal-close {
-      background: var(--primary);
-      color: var(--gold);
-      border: 2px solid var(--gold);
-      padding: 14px 44px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .btn-modal-close:hover {
-      background: var(--primary-dark);
-      transform: scale(1.02);
-    }
-
-    /* ===== TOAST ===== */
-    .toast {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: #4a2c1a;
-      color: #ffd966;
-      padding: 16px 32px;
-      border-radius: 12px;
-      font-weight: 700;
-      font-size: 16px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-      z-index: 9999999;
-      border: 1px solid #ffd966;
-      opacity: 0;
-      transition: opacity 0.4s ease, transform 0.4s ease;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      pointer-events: none;
-    }
-    .toast.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-      pointer-events: auto;
-    }
-
-    /* ===== PÁGINAS DE REDIRECIONAMENTO ===== */
-    .redirect-card {
-      background: #fffef7;
-      max-width: 540px;
-      margin: 40px auto;
-      padding: 45px 35px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-      border: 1px solid #c5a47a;
-    }
-    .redirect-card .icon { font-size: 72px; margin-bottom: 15px; }
-    .redirect-card h2 { color: #4a2c1a; font-size: 28px; margin-bottom: 8px; }
-    .redirect-card p { color: #5a4a3a; font-size: 16px; line-height: 1.6; margin-bottom: 20px; }
-    .spinner { width: 60px; height: 60px; margin: 15px auto; border: 6px solid #e0d5c0; border-top-color: #22c55e; border-radius: 50%; animation: spin 0.9s linear infinite; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .progress-bar-redir { width: 100%; height: 6px; background: #e0d5c0; border-radius: 10px; margin: 20px 0 10px; overflow: hidden; }
-    .progress-bar-redir .fill { height: 100%; width: 0%; background: linear-gradient(90deg, #22c55e, #16a34a); border-radius: 10px; animation: progress 5s ease forwards; }
-    @keyframes progress { from { width: 0%; } to { width: 100%; } }
-    .btn-voltar { display: inline-block; margin-top: 15px; color: #8B4513; text-decoration: none; font-weight: 600; border: 2px solid #8B4513; padding: 10px 28px; border-radius: 40px; transition: 0.3s; }
-    .btn-voltar:hover { background: #8B4513; color: #ffd966; }
-    .highlight-verse { background: #f5ede4; padding: 12px 20px; border-radius: 12px; color: #4a2c1a; font-size: 15px; margin: 15px 0 25px; display: inline-block; }
-    .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-    .btn { padding: 12px 30px; border-radius: 40px; text-decoration: none; font-weight: 700; transition: 0.3s; border: 2px solid transparent; display: inline-flex; align-items: center; gap: 8px; }
-    .btn-primary { background: #8B4513; color: #ffd966; border-color: #ffd966; }
-    .btn-primary:hover { background: #4a2c1a; transform: scale(1.03); }
-    .btn-secondary { background: transparent; color: #8B4513; border-color: #8B4513; }
-    .btn-secondary:hover { background: #8B4513; color: #ffd966; }
-
-    footer { text-align: center; margin-top: 60px; padding: 25px 20px; color: #e4d5b8; border-top: 1px solid #c5a47a44; font-size: 13px; }
-    footer i.fa-heart { color: #ff6b6b; }
 
     /* ===== CONTATOS ===== */
     .contact-info {
@@ -1057,6 +589,407 @@
       font-size: 14px;
     }
 
+    /* ===== MODAL DE SUGESTÕES E CORREÇÕES ===== */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      padding: 20px;
+      animation: fadeInOverlay 0.3s ease;
+    }
+    .modal-overlay.active { display: flex; }
+    @keyframes fadeInOverlay {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-box {
+      background: var(--cream);
+      max-width: 620px;
+      width: 100%;
+      max-height: 92vh;
+      border-radius: 24px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+      border: 2px solid #4a6fa5;
+      animation: modalPop 0.4s ease;
+      overflow-y: auto;
+      position: relative;
+      padding: 0;
+    }
+
+    .modal-box .modal-header {
+      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
+    }
+
+    @keyframes modalPop {
+      0% { transform: scale(0.85) translateY(30px); opacity: 0; }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
+    }
+
+    /* HEADER DO MODAL */
+    .modal-header {
+      padding: 30px 35px 25px;
+      border-radius: 22px 22px 0 0;
+      text-align: center;
+      position: relative;
+      border-bottom: 3px solid #4a6fa5;
+    }
+
+    .modal-header .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-header .modal-close:hover {
+      background: rgba(255,255,255,0.3);
+      transform: rotate(90deg);
+    }
+
+    .modal-header .modal-icon-top {
+      font-size: 52px;
+      color: #ffd966;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .modal-header h2 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 4px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .modal-header .modal-subtitle {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .modal-header .modal-badge {
+      display: inline-block;
+      background: #ffd966;
+      color: #2c4a7a;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+    }
+
+    /* CORPO DO MODAL */
+    .modal-body {
+      padding: 28px 35px 35px;
+    }
+
+    .modal-body .form-sub {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 2px;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+    .form-group label i {
+      color: #4a6fa5;
+      font-size: 14px;
+      width: 18px;
+      text-align: center;
+    }
+    .form-group label .required-star {
+      color: #e74c3c;
+      font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e0d5c8;
+      border-radius: 12px;
+      font-size: 14px;
+      background: #fcf9f4;
+      transition: all 0.3s;
+      font-family: inherit;
+      color: #2c1810;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #4a6fa5;
+      box-shadow: 0 0 0 4px rgba(74, 111, 165, 0.15);
+      background: #fff;
+    }
+
+    .form-group textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .form-group .field-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .form-group .field-hint i {
+      font-size: 12px;
+    }
+
+    .form-group .char-counter {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: right;
+      margin-top: 3px;
+    }
+
+    /* INPUT COM ÍCONE */
+    .input-icon-wrapper {
+      position: relative;
+    }
+    .input-icon-wrapper .input-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #4a6fa5;
+      font-size: 16px;
+    }
+    .input-icon-wrapper input,
+    .input-icon-wrapper select {
+      padding-left: 44px;
+    }
+
+    /* BOTÃO DE ENVIO */
+    .btn-submit-form {
+      grid-column: 1 / -1;
+      justify-self: center;
+      padding: 16px 50px;
+      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
+      color: #ffffff;
+      border: 2px solid #4a6fa5;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 17px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+      letter-spacing: 0.3px;
+    }
+    .btn-submit-form:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(74, 111, 165, 0.4);
+    }
+    .btn-submit-form i {
+      font-size: 20px;
+    }
+
+    /* FOOTER DO MODAL */
+    .modal-footer {
+      background: #f5f0e8;
+      padding: 14px 35px;
+      border-radius: 0 0 22px 22px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid #e0d5c8;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .modal-footer i {
+      color: #4a6fa5;
+      margin-right: 4px;
+    }
+    .modal-footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .modal-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== MODAL DE SUCESSO PARA SUGESTÕES ===== */
+    .modal-success-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999999;
+      padding: 20px;
+    }
+    .modal-success-overlay.active { display: flex; }
+
+    .modal-success-box {
+      background: var(--cream);
+      max-width: 480px;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      border: 3px solid #4a6fa5;
+      animation: modalPop 0.4s ease;
+    }
+    .modal-success-box .success-icon {
+      font-size: 72px;
+      color: #4a6fa5;
+      margin-bottom: 12px;
+    }
+    .modal-success-box h3 {
+      font-size: 28px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .modal-success-box p {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .modal-success-box .verse-highlight {
+      background: #f5ede4;
+      padding: 12px 20px;
+      border-radius: 12px;
+      color: var(--primary-dark);
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 20px;
+      border-left: 4px solid #4a6fa5;
+    }
+    .btn-modal-close {
+      background: linear-gradient(135deg, #4a6fa5, #2c4a7a);
+      color: #ffffff;
+      border: 2px solid #4a6fa5;
+      padding: 14px 44px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-modal-close:hover {
+      background: linear-gradient(135deg, #5a7fb5, #3a5a8a);
+      transform: scale(1.02);
+    }
+
+    /* ===== TOAST ===== */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #4a2c1a;
+      color: #ffd966;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      z-index: 9999999;
+      border: 1px solid #ffd966;
+      opacity: 0;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+
+    /* ===== PÁGINAS DE REDIRECIONAMENTO ===== */
+    .redirect-card {
+      background: #fffef7;
+      max-width: 540px;
+      margin: 40px auto;
+      padding: 45px 35px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 1px solid #c5a47a;
+    }
+    .redirect-card .icon { font-size: 72px; margin-bottom: 15px; }
+    .redirect-card h2 { color: #4a2c1a; font-size: 28px; margin-bottom: 8px; }
+    .redirect-card p { color: #5a4a3a; font-size: 16px; line-height: 1.6; margin-bottom: 20px; }
+    .spinner { width: 60px; height: 60px; margin: 15px auto; border: 6px solid #e0d5c0; border-top-color: #22c55e; border-radius: 50%; animation: spin 0.9s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .progress-bar-redir { width: 100%; height: 6px; background: #e0d5c0; border-radius: 10px; margin: 20px 0 10px; overflow: hidden; }
+    .progress-bar-redir .fill { height: 100%; width: 0%; background: linear-gradient(90deg, #22c55e, #16a34a); border-radius: 10px; animation: progress 5s ease forwards; }
+    @keyframes progress { from { width: 0%; } to { width: 100%; } }
+    .btn-voltar { display: inline-block; margin-top: 15px; color: #8B4513; text-decoration: none; font-weight: 600; border: 2px solid #8B4513; padding: 10px 28px; border-radius: 40px; transition: 0.3s; }
+    .btn-voltar:hover { background: #8B4513; color: #ffd966; }
+    .highlight-verse { background: #f5ede4; padding: 12px 20px; border-radius: 12px; color: #4a2c1a; font-size: 15px; margin: 15px 0 25px; display: inline-block; }
+    .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 12px 30px; border-radius: 40px; text-decoration: none; font-weight: 700; transition: 0.3s; border: 2px solid transparent; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-primary { background: #8B4513; color: #ffd966; border-color: #ffd966; }
+    .btn-primary:hover { background: #4a2c1a; transform: scale(1.03); }
+    .btn-secondary { background: transparent; color: #8B4513; border-color: #8B4513; }
+    .btn-secondary:hover { background: #8B4513; color: #ffd966; }
+
+    footer { text-align: center; margin-top: 60px; padding: 25px 20px; color: #e4d5b8; border-top: 1px solid #c5a47a44; font-size: 13px; }
+    footer i.fa-heart { color: #ff6b6b; }
+
     /* ===== RESPONSIVO ===== */
     @media (max-width: 992px) {
       .pix-grid {
@@ -1075,7 +1008,6 @@
       .modal-body { padding: 20px; }
       .modal-footer { padding: 12px 20px; flex-direction: column; gap: 6px; }
       .pix-code { font-size: 16px; padding: 12px 18px; }
-      .testimonial-grid { grid-template-columns: 1fr; }
       .main-content { padding: 0 15px 0 70px; }
       .side-nav { left: 6px !important; padding: 8px 6px; gap: 4px; }
       .side-nav a { width: 36px; height: 36px; padding: 6px 8px; font-size: 16px; }
@@ -1083,7 +1015,7 @@
       .side-nav a .tooltip { font-size: 11px; left: 48px; padding: 4px 10px; }
       .donation-card { padding: 14px 16px; }
       .btn-actions-row { flex-direction: column; align-items: center; }
-      .btn-open-form, .btn-sugestao-form { width: 100%; justify-content: center; padding: 14px 20px; font-size: 16px; }
+      .btn-sugestao-form { width: 100%; justify-content: center; padding: 14px 20px; font-size: 16px; }
       .form-grid { grid-template-columns: 1fr; gap: 12px; }
       .btn-submit-form { width: 100%; justify-content: center; padding: 14px 20px; font-size: 15px; }
       .modal-header h2 { font-size: 22px; }
@@ -1102,7 +1034,7 @@
       .side-nav a { width: 32px; height: 32px; padding: 4px 6px; font-size: 14px; }
       .side-nav a i { font-size: 14px; }
       .side-nav a .tooltip { font-size: 10px; left: 40px; padding: 3px 8px; }
-      .btn-open-form, .btn-sugestao-form { font-size: 14px; padding: 12px 16px; }
+      .btn-sugestao-form { font-size: 14px; padding: 12px 16px; }
       .modal-header { padding: 20px 16px; }
       .modal-body { padding: 16px; }
       .modal-header h2 { font-size: 20px; }
@@ -1110,71 +1042,71 @@
     }
 
     /* ============================================
-   BOTÕES DE CONTATO - SHARE BUTTONS
-   ============================================ */
-.share-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin: 20px 5;
-}
+    BOTÕES DE CONTATO - SHARE BUTTONS
+    ============================================ */
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 20px 5;
+    }
 
-.share-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 6px 14px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--text-light);
-  border-color: rgba(197, 164, 122, 0.2);
-  cursor: pointer;
-}
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-light);
+      border-color: rgba(197, 164, 122, 0.2);
+      cursor: pointer;
+    }
 
-.share-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
+    .share-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
 
-.share-btn i {
-  font-size: 20px;
-}
+    .share-btn i {
+      font-size: 20px;
+    }
 
-/* ===== BOTÃO WHATSAPP ===== */
-.share-btn.whatsapp-btn {
-  background: rgba(37, 211, 102, 0.12);
-  border-color: #25d366;
-  color: #25d366;
-}
+    /* ===== BOTÃO WHATSAPP ===== */
+    .share-btn.whatsapp-btn {
+      background: rgba(37, 211, 102, 0.12);
+      border-color: #25d366;
+      color: #25d366;
+    }
 
-.share-btn.whatsapp-btn:hover {
-  background: #25d366;
-  color: #fff;
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-  border-color: #25d366;
-  transform: translateY(-3px);
-}
+    .share-btn.whatsapp-btn:hover {
+      background: #25d366;
+      color: #fff;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      border-color: #25d366;
+      transform: translateY(-3px);
+    }
 
-/* ===== BOTÃO E-MAIL ===== */
-.share-btn.email-btn {
-  background: rgba(255, 215, 0, 0.12);
-  border-color: var(--gold);
-  color: var(--gold);
-}
+    /* ===== BOTÃO E-MAIL ===== */
+    .share-btn.email-btn {
+      background: rgba(255, 215, 0, 0.12);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
 
-.share-btn.email-btn:hover {
-  background: var(--gold);
-  color: var(--primary-dark);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
-  border-color: var(--gold);
-  transform: translateY(-3px);
-}
+    .share-btn.email-btn:hover {
+      background: var(--gold);
+      color: var(--primary-dark);
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
   </style>
 </head>
 <body>
@@ -1266,7 +1198,7 @@
               <i class="fas fa-hand-holding-heart card-icon"></i>
               <h3>Doação Única</h3>
               <p>Contribua com qualquer valor via PIX.</p>
-              <span class="highlight">💡 Valor sugerido: R$ 10,00 ou <i>qualquer outro valor</i></span>
+              <span class="highlight">💡 Valor sugerido: R$ 10,00 ou qualquer outro valor</span>
               <div class="card-actions">
                 <a href="#" class="btn-donate btn-pix" onclick="scrollParaQR()">
                   <i class="fas fa-qrcode"></i> Ver QR Code <i class="fas fa-chevron-right"></i>
@@ -1278,7 +1210,7 @@
               <i class="fas fa-user-friends card-icon"></i>
               <h3>Apoio Mensal</h3>
               <p>Contribuição recorrente via PIX.</p>
-              <span class="highlight">🌟 Valor sugerido: R$ 20,00/mês ou <i>qualquer outro valor</i></span>
+              <span class="highlight">🌟 Valor sugerido: R$ 20,00/mês ou qualquer outro valor</span>
               <div class="card-actions">
                 <a href="#" class="btn-donate btn-pix" onclick="scrollParaQR()">
                   <i class="fas fa-qrcode"></i> Ver QR Code <i class="fas fa-chevron-right"></i>
@@ -1324,29 +1256,17 @@
           </a>
         </div>
 
+        <!-- ===== BOTÃO SUGESTÕES ===== -->
         <div class="btn-open-form-wrapper">
           <div class="btn-actions-row">
-            <button class="btn-open-form" onclick="abrirFormModal()">
-              <i class="fas fa-pen-fancy"></i> Seja um Apoiador Oficial
-            </button>
             <button class="btn-sugestao-form" onclick="abrirSugestaoModal()">
               <i class="fas fa-lightbulb"></i> Sugestões e Correções
             </button>
           </div>
           <p class="btn-hint">
-            <i class="fas fa-info-circle"></i> Registre seu nome, deixe uma mensagem e inspire outros!<br>
-            <small style="opacity:0.7;">Sugestões e correções ajudam a melhorar a plataforma para todos.</small>
+            <i class="fas fa-info-circle"></i> Sugestões e correções ajudam a melhorar a plataforma para todos.<br>
+            <small style="opacity:0.7;">Sua opinião é muito importante para nós.</small>
           </p>
-        </div>
-      </section>
-
-      <!-- ===== DEPOIMENTOS ===== -->
-      <section class="testimonials">
-        <h3><i class="fas fa-quote-left"></i> Depoimentos dos Apoiadores</h3>
-        <div class="testimonial-grid" id="testimonialGrid">
-          <div class="testimonial-item"><i class="fas fa-quote-right"></i><p>"Esta plataforma transformou meus estudos diários. Fico feliz em poder contribuir para que outros também tenham acesso."</p><div class="author">— Ana Paula S.</div></div>
-          <div class="testimonial-item"><i class="fas fa-quote-right"></i><p>"Material rico e bem organizado. Apoiar esse projeto é investir na propagação da Palavra de Deus."</p><div class="author">— Pastor Marcos R.</div></div>
-          <div class="testimonial-item"><i class="fas fa-quote-right"></i><p>"Gratidão por disponibilizarem tantos recursos gratuitamente. Minha doação é uma pequena retribuição."</p><div class="author">— Lúcia M.</div></div>
         </div>
       </section>
     </div>
@@ -1387,127 +1307,12 @@
         </div>
       </div>
     </div>
-
-    <footer role="contentinfo">
-      <p><i class="fas fa-heart" aria-hidden="true"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart" aria-hidden="true"></i></p>
-      <p style="margin-top:8px;">Idealizado pelo Pastor Emerson José de Mello Mattos | ADAMRV</p>
-      <p style="margin-top:8px;">Plataforma 100% gratuita · Mantida por doações via PIX</p>
-      <section class="supporters-section">
-        <div class="share-buttons">
-          <a href="https://wa.me/5521975079806?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Plataforma%20de%20Estudos%20Bíblicos" target="_blank" class="share-btn whatsapp-btn" title="(21) 975079806">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a> 
-          <a href="mailto:emerson.mattos00@gmail.com?subject=Contato%20sobre%20a%20Plataforma%20de%20Estudos%20Bíblicos&body=Olá,%20gostaria%20de%20entrar%20em%20contato%20sobre%20a%20plataforma..." class="share-btn email-btn" title="emerson.mattos00@gmail.com">
-            <i class="fas fa-envelope"></i> E-mail
-          </a>
-        </div>
-      </section>
-    </footer>
   </main>
-
-  <!-- ===== MODAL DE APOIADOR OFICIAL - MELHORADO ===== -->
-  <div class="modal-overlay" id="formModal">
-    <div class="modal-box">
-      <!-- HEADER -->
-      <div class="modal-header">
-        <button class="modal-close" onclick="fecharFormModal()">&times;</button>
-        <span class="modal-icon-top"><i class="fas fa-pen-fancy"></i></span>
-        <h2>Seja um Apoiador Oficial</h2>
-        <p class="modal-subtitle">Faça parte da nossa comunidade e inspire outros com sua mensagem</p>
-        <span class="modal-badge"><i class="fas fa-heart"></i> Sua contribuição importa</span>
-      </div>
-
-      <!-- BODY -->
-      <div class="modal-body">
-        <p class="form-sub">
-          <i class="fas fa-quote-left" style="color: var(--gold); opacity: 0.5;"></i>
-          Preencha os campos abaixo e apareça em nossa lista de apoiadores.
-          <i class="fas fa-quote-right" style="color: var(--gold); opacity: 0.5;"></i>
-        </p>
-
-        <form id="supporterForm" novalidate>
-          <div class="form-grid">
-            <div class="form-group">
-              <label>
-                <i class="fas fa-user"></i> Nome Completo
-                <span class="required-star">*</span>
-              </label>
-              <div class="input-icon-wrapper">
-                <i class="fas fa-user input-icon"></i>
-                <input type="text" id="supName" placeholder="Ex: João Silva" required />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>
-                <i class="fas fa-envelope"></i> E-mail
-              </label>
-              <div class="input-icon-wrapper">
-                <i class="fas fa-envelope input-icon"></i>
-                <input type="email" id="supEmail" placeholder="seu@email.com" />
-              </div>
-              <span class="field-hint"><i class="fas fa-info-circle"></i> Opcional – para receber novidades</span>
-            </div>
-
-            <div class="form-group">
-              <label>
-                <i class="fas fa-hand-holding-heart"></i> Tipo de Apoio
-              </label>
-              <div class="input-icon-wrapper">
-                <i class="fas fa-tag input-icon"></i>
-                <select id="supType">
-                  <option value="Doação única">💰 Doação única</option>
-                  <option value="Apoio mensal">🔄 Apoio mensal</option>
-                  <option value="Patrocinador">📢 Patrocinador</option>
-                  <option value="Divulgação">📢 Divulgação</option>
-                  <option value="Oração">🙏 Oração</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>
-                <i class="fas fa-star"></i> Quer aparecer como?
-              </label>
-              <div class="input-icon-wrapper">
-                <i class="fas fa-user-tag input-icon"></i>
-                <select id="supVisibility">
-                  <option value="Nome completo">👤 Nome completo</option>
-                  <option value="Primeiro nome">👤 Primeiro nome</option>
-                  <option value="Anônimo">🕊️ Anônimo</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group full-width">
-              <label>
-                <i class="fas fa-quote-left"></i> Mensagem de Apoio
-                <span class="required-star">*</span>
-              </label>
-              <textarea id="supMessage" placeholder="Escreva uma mensagem inspiradora para aparecer nos depoimentos..." required style="min-height: 90px;"></textarea>
-              <div class="char-counter"><span id="charCount">0</span> caracteres</div>
-            </div>
-
-            <button type="submit" class="btn-submit-form">
-              <i class="fas fa-paper-plane"></i> Enviar e Fazer Parte
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <!-- FOOTER -->
-      <div class="modal-footer">
-        <span><i class="fas fa-lock"></i> Dados seguros</span>
-        <span><i class="fas fa-check-circle"></i> Apareça na lista</span>
-        <span><i class="fas fa-heart" style="color: #e74c3c;"></i> Inspiramos mais pessoas</span>
-      </div>
-    </div>
-  </div>
 
   <!-- ===== MODAL DE SUGESTÕES E CORREÇÕES ===== -->
   <div class="modal-overlay" id="sugestaoModal">
-    <div class="modal-box sugestao-modal">
-      <div class="modal-header" style="background: linear-gradient(135deg, #4a6fa5, #2c4a7a);">
+    <div class="modal-box">
+      <div class="modal-header">
         <button class="modal-close" onclick="fecharSugestaoModal()">&times;</button>
         <span class="modal-icon-top"><i class="fas fa-lightbulb"></i></span>
         <h2>Sugestões e Correções</h2>
@@ -1585,14 +1390,14 @@
               <div class="char-counter"><span id="sugCharCount">0</span> caracteres</div>
             </div>
 
-            <button type="submit" class="btn-submit-form btn-submit-sugestao">
+            <button type="submit" class="btn-submit-form">
               <i class="fas fa-paper-plane"></i> Enviar Sugestão
             </button>
           </div>
         </form>
       </div>
 
-      <div class="modal-footer" style="border-top-color: #4a6fa5;">
+      <div class="modal-footer">
         <span><i class="fas fa-lock"></i> Dados seguros</span>
         <span><i class="fas fa-check-circle"></i> Análise da equipe</span>
         <span><i class="fas fa-lightbulb"></i> Juntos melhoramos</span>
@@ -1600,33 +1405,18 @@
     </div>
   </div>
 
-  <!-- ===== MODAL DE SUCESSO ===== -->
-  <div class="modal-success-overlay" id="successModal">
-    <div class="modal-success-box">
-      <div class="success-icon"><i class="fas fa-check-circle"></i></div>
-      <h3>Recebemos seu apoio!</h3>
-      <p><strong id="modalUserName"></strong>, sua mensagem foi registrada com sucesso!</p>
-      <div class="verse-highlight">
-        <i class="fas fa-bible" style="margin-right: 8px; color: var(--gold);"></i>
-        "Deus ama a quem dá com alegria" — 2 Coríntios 9:7
-      </div>
-      <p style="font-size: 14px; color: var(--text-muted);">Você já faz parte oficialmente da nossa lista de apoiadores. 🙌</p>
-      <button class="btn-modal-close" onclick="fecharSuccessModal()"><i class="fas fa-heart"></i> Que bom!</button>
-    </div>
-  </div>
-
   <!-- ===== MODAL DE SUCESSO PARA SUGESTÕES ===== -->
   <div class="modal-success-overlay" id="sugestaoSuccessModal">
-    <div class="modal-success-box" style="border-color: #4a6fa5;">
-      <div class="success-icon" style="color: #4a6fa5;"><i class="fas fa-lightbulb"></i></div>
+    <div class="modal-success-box">
+      <div class="success-icon"><i class="fas fa-lightbulb"></i></div>
       <h3>Sugestão Enviada!</h3>
       <p><strong id="sugUserNome"></strong>, obrigado por contribuir para a melhoria da plataforma!</p>
-      <div class="verse-highlight" style="border-left-color: #4a6fa5;">
+      <div class="verse-highlight">
         <i class="fas fa-bible" style="margin-right: 8px; color: #4a6fa5;"></i>
         "O sábio ouvirá e crescerá em conhecimento" — Provérbios 1:5
       </div>
       <p style="font-size: 14px; color: var(--text-muted);">Sua sugestão será analisada pela equipe. 🙏</p>
-      <button class="btn-modal-close" onclick="fecharSugestaoSuccessModal()" style="background: linear-gradient(135deg, #4a6fa5, #2c4a7a); border-color: #4a6fa5;">
+      <button class="btn-modal-close" onclick="fecharSugestaoSuccessModal()">
         <i class="fas fa-check"></i> Obrigado!
       </button>
     </div>
@@ -1691,37 +1481,7 @@
     }
 
     // ============================================================
-    // 4. FUNÇÃO PARA ENVIAR E-MAIL
-    // ============================================================
-    function enviarEmail(assunto, corpo, destinatario = null) {
-      const emailPadrao = CONTATOS.email[0];
-      const para = destinatario || emailPadrao;
-      const url = `mailto:${para}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
-      window.open(url, '_blank');
-    }
-
-    // ============================================================
-    // 5. MODAL DO FORMULÁRIO DE APOIADOR
-    // ============================================================
-    function abrirFormModal() {
-      document.getElementById('formModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
-      document.getElementById('charCount').textContent = '0';
-    }
-    function fecharFormModal() {
-      document.getElementById('formModal').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    document.getElementById('formModal').addEventListener('click', function(e) {
-      if (e.target === this) fecharFormModal();
-    });
-
-    document.getElementById('supMessage').addEventListener('input', function() {
-      document.getElementById('charCount').textContent = this.value.length;
-    });
-
-    // ============================================================
-    // 6. MODAL DE SUGESTÕES E CORREÇÕES
+    // 4. MODAL DE SUGESTÕES E CORREÇÕES
     // ============================================================
     function abrirSugestaoModal() {
       document.getElementById('sugestaoModal').classList.add('active');
@@ -1741,23 +1501,7 @@
     });
 
     // ============================================================
-    // 7. MODAL DE SUCESSO
-    // ============================================================
-    function abrirSuccessModal(nome) {
-      document.getElementById('modalUserName').textContent = nome;
-      document.getElementById('successModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function fecharSuccessModal() {
-      document.getElementById('successModal').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    document.getElementById('successModal').addEventListener('click', function(e) {
-      if (e.target === this) fecharSuccessModal();
-    });
-
-    // ============================================================
-    // 8. MODAL DE SUCESSO PARA SUGESTÕES
+    // 5. MODAL DE SUCESSO PARA SUGESTÕES
     // ============================================================
     function abrirSugestaoSuccessModal(nome) {
       document.getElementById('sugUserNome').textContent = nome;
@@ -1773,56 +1517,7 @@
     });
 
     // ============================================================
-    // 9. FORMULÁRIO DE APOIADOR
-    // ============================================================
-    document.getElementById('supporterForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const nome = document.getElementById('supName').value.trim();
-      if (nome === '') {
-        alert('Por favor, digite seu nome para continuar.');
-        document.getElementById('supName').focus();
-        return;
-      }
-      const mensagem = document.getElementById('supMessage').value.trim() || 'Apoio este projeto com muito amor! ❤️';
-      const tipo = document.getElementById('supType').value;
-      const visibilidade = document.getElementById('supVisibility').value;
-      
-      let nomeExibido = nome;
-      if (visibilidade === 'Primeiro nome') {
-        nomeExibido = nome.split(' ')[0];
-      } else if (visibilidade === 'Anônimo') {
-        nomeExibido = 'Anônimo';
-      }
-
-      const lista = document.getElementById('supportersList');
-      const placeholder = document.getElementById('placeholderSupporter');
-      const newTag = document.createElement('span');
-      newTag.className = 'supporter-tag';
-      newTag.innerHTML = `<i class="fas fa-star"></i> ${nomeExibido}`;
-      if (placeholder) lista.insertBefore(newTag, placeholder);
-      else lista.appendChild(newTag);
-
-      const grid = document.getElementById('testimonialGrid');
-      const newTestimonial = document.createElement('div');
-      newTestimonial.className = 'testimonial-item';
-      newTestimonial.style.animation = 'modalPop 0.5s ease';
-      newTestimonial.innerHTML = `
-        <i class="fas fa-quote-right"></i>
-        <p>"${mensagem}"</p>
-        <div class="author">— ${nomeExibido} · ${tipo}</div>
-      `;
-      grid.prepend(newTestimonial);
-
-      fecharFormModal();
-      abrirSuccessModal(nomeExibido);
-      document.getElementById('supName').value = '';
-      document.getElementById('supEmail').value = '';
-      document.getElementById('supMessage').value = '';
-      document.getElementById('charCount').textContent = '0';
-    });
-
-    // ============================================================
-    // 10. FORMULÁRIO DE SUGESTÕES
+    // 6. FORMULÁRIO DE SUGESTÕES
     // ============================================================
     document.getElementById('sugestaoForm').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -1864,7 +1559,7 @@
     });
 
     // ============================================================
-    // 11. COPIAR PIX
+    // 7. COPIAR PIX
     // ============================================================
     function copiarPix() {
       const pixText = document.getElementById('pixKey').innerText;
@@ -1882,7 +1577,7 @@
     }
 
     // ============================================================
-    // 12. TOAST
+    // 8. TOAST
     // ============================================================
     function mostrarToast(mensagem, tipo) {
       const toast = document.getElementById('toast');
@@ -1896,7 +1591,7 @@
     }
 
     // ============================================================
-    // 13. INICIALIZAÇÃO
+    // 9. INICIALIZAÇÃO
     // ============================================================
     (function init() {
       const params = new URLSearchParams(window.location.search);
@@ -1920,16 +1615,11 @@
     window.scrollParaQR = scrollParaQR;
     window.copiarPix = copiarPix;
     window.mostrarToast = mostrarToast;
-    window.abrirFormModal = abrirFormModal;
-    window.fecharFormModal = fecharFormModal;
     window.abrirSugestaoModal = abrirSugestaoModal;
     window.fecharSugestaoModal = fecharSugestaoModal;
-    window.abrirSuccessModal = abrirSuccessModal;
-    window.fecharSuccessModal = fecharSuccessModal;
     window.abrirSugestaoSuccessModal = abrirSugestaoSuccessModal;
     window.fecharSugestaoSuccessModal = fecharSugestaoSuccessModal;
     window.enviarWhatsApp = enviarWhatsApp;
-    window.enviarEmail = enviarEmail;
     window.CONTATOS = CONTATOS;
   </script>
 
