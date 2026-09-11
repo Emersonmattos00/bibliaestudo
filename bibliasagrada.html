@@ -439,7 +439,7 @@
         }
 
         /* ============================================
-           ANÚNCIO - 4 ÍCONES DE REDES SOCIAIS
+           ANÚNCIO - PLAYLIST DO SPOTIFY
         ============================================ */
         .ad-container {
             position: fixed;
@@ -467,9 +467,8 @@
             overflow: hidden;
         }
 
-        .ad-container.minimized .ad-content > *:not(.ad-minimized-icon),
-        .ad-container.minimized .ad-social-links {
-            display: none !important;
+        .ad-container.minimized .ad-content > *:not(.ad-minimized-icon) {
+            display: none;
         }
 
         .ad-container.minimized .ad-minimized-icon {
@@ -531,7 +530,7 @@
         .ad-content .ad-description {
             font-size: 12px;
             opacity: 0.8;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             line-height: 1.4;
         }
 
@@ -542,54 +541,31 @@
             margin-top: 2px;
         }
 
-        /* ===== ÍCONES DE REDES SOCIAIS UNIFICADOS ===== */
-        .ad-social-links {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 12px;
-        }
-
-        .ad-social-icon {
-            display: flex;
+        .ad-content .ad-button {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.08);
-            color: #ffd966;
-            font-size: 20px;
-            text-decoration: none !important; /* GARANTIA: Sem sublinhado */
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 217, 102, 0.2);
-        }
-
-        .ad-social-icon:hover {
-            transform: translateY(-4px) scale(1.1);
-            color: #ffffff;
-            border-color: transparent;
-        }
-
-        .ad-social-icon.spotify:hover {
+            gap: 8px;
             background: #1DB954;
-            box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 4px;
         }
 
-        .ad-social-icon.youtube:hover {
-            background: #FF0000;
-            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+        .ad-content .ad-button:hover {
+            transform: scale(1.04);
+            box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
+            background: #1ed760;
         }
 
-        .ad-social-icon.tiktok:hover {
-            background: #010101;
-            border-color: #00f2ea;
-            box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
-        }
-
-        .ad-social-icon.facebook:hover {
-            background: #1877F2;
-            box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
+        .ad-content .ad-button i {
+            font-size: 14px;
         }
 
         /* ===== ÍCONE MINIMIZADO ===== */
@@ -681,10 +657,9 @@
                 font-size: 11px;
             }
 
-            .ad-social-icon {
-                width: 38px;
-                height: 38px;
-                font-size: 18px;
+            .ad-content .ad-button {
+                font-size: 12px;
+                padding: 6px 16px;
             }
 
             .ad-minimized-icon {
@@ -732,14 +707,10 @@
                 font-size: 10px;
             }
 
-            .ad-social-links {
-                gap: 8px;
-            }
-
-            .ad-social-icon {
-                width: 36px;
-                height: 36px;
-                font-size: 16px;
+            .ad-content .ad-button {
+                font-size: 11px;
+                padding: 5px 14px;
+                gap: 5px;
             }
 
             .ad-close {
@@ -757,129 +728,6 @@
             .ad-minimized-icon i {
                 font-size: 20px;
             }
-        }
-
-        /* =====================================================
-           RESPONSIVIDADE GERAL DO FLIPBOOK E LAYOUT PRINCIPAL
-           ===================================================== */
-        
-        /* Container Principal */
-        .main-container {
-            padding-left: 80px; /* Espaço para side-nav fixo */
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            transition: padding-left 0.3s ease;
-        }
-
-        /* Estilos internos do Turn.js (Hardcoded para garantir funcionamento sem CSS externo) */
-        .ej-book { width: 100%; height: 100%; }
-        .hard { background-color: #f8efda; box-shadow: inset 0 0 30px rgba(0,0,0,0.1); }
-        .own-size { background-color: #fffef7; }
-        .blank-page { background-color: #fffef7; }
-        .page-content { padding: 40px; height: 100%; display: flex; flex-direction: column; position: relative; box-sizing: border-box; }
-        .cabecalho-pagina { font-size: 0.8rem; color: #8b4513; border-bottom: 1px solid #e0c48b; padding-bottom: 10px; margin-bottom: 20px; letter-spacing: 1px; }
-        .conteudo-duas-colunas { display: flex; gap: 30px; flex: 1; font-family: 'Georgia', serif; font-size: 1.1rem; line-height: 1.6; color: #2c2c2c; }
-        .coluna { flex: 1; }
-        .versiculo { margin-bottom: 15px; text-align: justify; }
-        .footnote { font-size: 0.7rem; color: #888; text-align: center; margin-top: auto; padding-top: 20px; border-top: 1px solid #eee; }
-        .capa-conteudo { display: flex; align-items: center; justify-content: center; height: 100%; }
-        .verso-capa-conteudo { padding: 40px; text-align: center; }
-        .anteverso-conteudo { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #2c3e50; }
-
-        /* TABLET (768px - 1024px) */
-        @media (max-width: 1024px) {
-            .main-container { padding-left: 70px; }
-            .side-nav { left: 8px; }
-            
-            #leitor { height: 500px; }
-            
-            .page-title-bar { margin: 10px 15px 0 15px; padding: 10px 15px; }
-            .search-bar { margin: 15px; }
-            .slider-container { margin: 10px 15px; }
-            
-            .scroll-btn { width: 35px; height: 35px; }
-        }
-
-        /* MOBILE LANDSCAPE & SMALL TABLET (< 768px) */
-        @media (max-width: 768px) {
-            /* Ajuste do Menu Global para Mobile */
-            .side-nav {
-                top: auto !important;
-                bottom: 10px !important;
-                left: 50% !important;
-                transform: translateX(-50%) !important;
-                flex-direction: row !important;
-                width: 90% !important;
-                max-width: 400px !important;
-                justify-content: space-around !important;
-                padding: 10px !important;
-                border-radius: 20px !important;
-            }
-            .side-nav.hidden { transform: translateX(-50%) scale(0.9) !important; }
-            .side-nav a { width: 36px; height: 36px; padding: 6px; font-size: 16px; }
-            .side-nav a i { font-size: 16px; }
-            .side-nav .divider { display: none; }
-            .side-nav a .tooltip { display: none; } /* Sem tooltips no mobile */
-
-            /* Layout Principal */
-            .main-container { padding-left: 10px !important; padding: 15px; }
-            
-            /* Header e Busca */
-            .page-title-bar { flex-direction: column; align-items: stretch; padding: 15px; margin: 0 0 15px 0; }
-            .title-left { justify-content: center; margin-bottom: 10px; }
-            .nav-buttons { justify-content: center; width: 100%; }
-            .livro-atual { width: 100%; margin: 5px 0; font-size: 1rem; }
-            .nav-btn { padding: 6px 12px; font-size: 0.8rem; }
-            
-            .search-bar { margin: 0 0 15px 0; padding: 5px 10px; }
-            .search-bar input { font-size: 0.9rem; }
-            .search-results { width: 100%; right: 0; top: 100%; }
-
-            /* Flipbook Responsivo */
-            #leitor { height: 400px; }
-            .leitor-wrapper { min-height: 400px; margin: 10px 0; }
-            
-            .scroll-btn { width: 30px; height: 30px; font-size: 0.8rem; }
-            .scroll-left { left: 0; }
-            .scroll-right { right: 0; }
-
-            /* Slider */
-            .slider-container { margin: 10px 0; padding: 10px 15px; }
-            .slider-container label { font-size: 0.7rem; }
-
-            /* Sidebar de Livros */
-            .sidebar-at { width: 100%; height: 100%; top: 0; border-radius: 0; }
-            .menu-toggle { width: 25px; height: 60px; top: 20%; transform: translateY(0); border-radius: 0 10px 10px 0; }
-            .menu-toggle.hidden-toggle { display: none; }
-        }
-
-        /* MOBILE PORTRAIT (< 480px) */
-        @media (max-width: 480px) {
-            .side-nav { width: 95%; padding: 8px; bottom: 5px; }
-            .side-nav a { width: 32px; height: 32px; }
-            
-            .livro-atual { font-size: 0.9rem; }
-            
-            /* Flipbook em telas muito pequenas */
-            #leitor { height: 320px; }
-            .leitor-wrapper { min-height: 320px; }
-            
-            /* Conteúdo da Página Adaptativo */
-            .page-content { padding: 20px; }
-            .conteudo-duas-colunas { flex-direction: column; gap: 15px; font-size: 1rem; }
-            .cabecalho-pagina { font-size: 0.7rem; margin-bottom: 10px; }
-        }
-
-        /* MODO PAISAGEM EM CELULARES PEQUENOS */
-        @media (max-height: 500px) and (orientation: landscape) {
-            #leitor { height: 80vh; }
-            .page-title-bar { margin-bottom: 5px; padding: 5px 10px; flex-wrap: nowrap; }
-            .title-left span { display: none; } /* Esconde texto "BÍBLIA SAGRADA" */
-            .slider-container { display: none; } /* Esconde slider para ganhar espaço */
-            .leitor-wrapper { margin: 5px 0; }
-            .side-nav { bottom: 5px; padding: 5px; }
-            .side-nav a { width: 28px; height: 28px; }
         }
     </style>
 </head>
@@ -1010,47 +858,40 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- ===== ANÚNCIO - 4 ÍCONES DE REDES SOCIAIS ===== -->
+    <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY ===== -->
     <!-- ============================================ -->
-    <div class="ad-container" id="adContainer" role="complementary" aria-label="Redes Sociais Joseph Matthos">
-        <button class="ad-close" id="adClose" aria-label="Minimizar">
+    <div class="ad-container" id="adContainer" role="complementary" aria-label="Playlist do Spotify" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <button class="ad-close" id="adClose" aria-label="Minimizar playlist">
             <i class="fas fa-minus" aria-hidden="true"></i>
         </button>
-        <button class="ad-expand-btn" id="adExpand" aria-label="Expandir" style="display: none;"></button>
+        <button class="ad-expand-btn" id="adExpand" aria-label="Expandir playlist" style="display: none;"></button>
         
         <div class="ad-content">
-            <span class="ad-label">🎧 Siga · Inscreva-se · Ouça</span>
+            <span class="ad-label">🎧 Playlist Recomendada</span>
             
             <!-- ===== IMAGEM DA PLAYLIST ===== -->
             <img 
                 src="assets/capa/josephmatthos.png" 
-                alt="Joseph Matthos" 
+                alt="Capa da playlist Joseph Matthos" 
                 class="ad-playlist-image"
                 loading="lazy"
-                width="150"
-                height="150"
+                width="200"
+                height="200"
             />
             
             <div class="ad-title">Joseph Matthos</div>
             <div class="ad-description">
-                30 álbuns · Discografia Completa
+                30 álbuns · Ouça no Spotify
             </div>
             
-            <!-- ===== 4 ÍCONES UNIFICADOS (Sem sublinhado) ===== -->
-            <div class="ad-social-links">
-                <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" target="_blank" rel="noopener noreferrer" class="ad-social-icon spotify" aria-label="Spotify" title="Spotify">
-                    <i class="fab fa-spotify"></i>
-                </a>
-                <a href="https://www.youtube.com/@josephmatthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon youtube" aria-label="YouTube" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://tiktok.com/@joseph.matthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon tiktok" aria-label="TikTok" title="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61593112378384" target="_blank" rel="noopener noreferrer" class="ad-social-icon facebook" aria-label="Facebook" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
+            <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" 
+               class="ad-button" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Abrir playlist no Spotify">
+                <i class="fab fa-spotify" aria-hidden="true"></i>
+                Ouvir no Spotify
+            </a>
         </div>
         
         <!-- ===== ÍCONE MINIMIZADO ===== -->
@@ -1843,4 +1684,4 @@
         });
     </script>
 </body>
-</html>
+</html> faça neste código
