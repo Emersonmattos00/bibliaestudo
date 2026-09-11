@@ -1878,7 +1878,7 @@ form#formLivro input[type="file"] {
 footer {
     position: absolute;
     color: #e4d5b8;
-    margin-bottom: 70px;
+    margin-top: 90px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
