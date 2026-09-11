@@ -1,0 +1,18 @@
+# ============================================
+# ROBOTS.TXT - Plataforma de Estudos Bíblicos
+# ============================================
+
+# Permite que todos os robôs de busca acessem o site
+User-agent: *
+Allow: /
+
+# Bloqueia acesso a arquivos de configuração sensíveis
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /assets/icons/
+
+# Indica a localização do Sitemap
+Sitemap: https://bibliaestudo.vercel.app/sitemap.xml
+
+# Tempo entre visitas do robô
+Crawl-delay: 1
