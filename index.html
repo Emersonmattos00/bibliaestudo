@@ -13,13 +13,12 @@
   <meta name="author" content="Emerson José de Mello Mattos" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta name="revisit-after" content="7 days" />
-  <meta name="google-site-verification" content="SEU_CODIGO_DE_VERIFICACAO" />
-  <meta name='impact-site-verification' value='7f288be5-8306-4ce6-874a-746313787fc8'>
+  <!-- [MELHORIA] Comentado para evitar erro de validação. Substitua SEU_CODIGO pelo real -->
+  <!-- <meta name="google-site-verification" content="SEU_CODIGO_DE_VERIFICACAO" /> -->
   
   <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:title" content="Plataforma de Estudos Bíblicos | Bíblia Sagrada Digital" />
   <meta property="og:description" content="Estude a Bíblia Sagrada com comentários, textos originais, enciclopédia e hinários. Plataforma gratuita para aprofundar seu conhecimento da Palavra de Deus." />
-  <meta property="keywords" content="Bíblia Sagrada, Estudos Bíblicos, Bíblia Online, Bíblia Comentada, Textos Originais, Harpa Cristã, Cantor Cristão, Enciclopédia Bíblica, Bíblia Digital, Estudo da Palavra, Deus, Jesus Cristo, Teologia, Escatologia" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bibliaestudo.vercel.app" />
   <meta property="og:image" content="https://bibliaestudo.vercel.app/assets/capa/biblia-sagrada.webp" />
@@ -164,16 +163,17 @@
 
     /* ============================================
        MENU LATERAL
+       [MELHORIA] Removido !important desnecessário onde a especificidade já basta
     ============================================ */
     .side-nav {
-      position: fixed !important;
-      top: 50% !important;
-      left: 12px !important;
-      transform: translateY(-50%) !important;
-      z-index: 10000 !important;
+      position: fixed;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      z-index: 10000;
       background: rgba(20, 30, 20, 0.75);
-      backdrop-filter: blur(12px) !important;
-      -webkit-backdrop-filter: blur(12px) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border-radius: 16px;
       padding: 12px 10px;
       display: flex;
@@ -348,6 +348,7 @@
 
     /* ============================================
        ESTANTE
+       [MELHORIA] CSS Unificado e Limpo (Removida duplicação)
     ============================================ */
     .linha-divisoria {
       height: 4px;
@@ -361,12 +362,11 @@
 
     .livros-wrapper {
       position: relative;
-      border: none;
-      border-top: none;
       border-radius: 0 0 12px 12px;
       background: none;
       backdrop-filter: blur(5px);
       overflow: hidden;
+      height: 450px; /* Altura fixa mantida */
     }
 
     .livros-container {
@@ -377,9 +377,11 @@
       scroll-behavior: smooth;
       padding: 30px;
       gap: 20px;
+      height: 100%;
       min-height: 320px;
       scrollbar-width: thin;
       scrollbar-color: var(--gold) transparent;
+      align-items: flex-start;
     }
 
     .livros-container::-webkit-scrollbar {
@@ -445,54 +447,6 @@
 
     .scroll-left { left: 12px; }
     .scroll-right { right: 12px; }
-
-    /* ============================================
-       ESTANTE - ALTURA FIXA
-    ============================================ */
-    .livros-wrapper {
-      position: relative;
-      border: none;
-      border-top: none;
-      border-radius: 0 0 12px 12px;
-      background: none;
-      backdrop-filter: blur(5px);
-      overflow: hidden;
-      height: 450px;
-    }
-
-    .livros-container {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      scroll-behavior: smooth;
-      padding: 30px;
-      gap: 20px;
-      height: 100%;
-      min-height: 320px;
-      scrollbar-width: thin;
-      scrollbar-color: var(--gold) transparent;
-      align-items: flex-start;
-    }
-
-    .livros-container::-webkit-scrollbar {
-      height: 6px;
-    }
-
-    .livros-container::-webkit-scrollbar-track {
-      background: rgba(197, 164, 122, 0.3);
-      border-radius: 10px;
-      margin: 0 20px;
-    }
-
-    .livros-container::-webkit-scrollbar-thumb {
-      background: linear-gradient(90deg, var(--gold), #e67e22);
-      border-radius: 10px;
-    }
-
-    .livros-container::-webkit-scrollbar-thumb:hover {
-      background: var(--gold-dark);
-    }
 
     /* ============================================
        CARDS DOS LIVROS - COM HOVER REVELANDO INFO
@@ -615,20 +569,31 @@
 
     /* ============================================
        ESTANTE HEADER
+       [MELHORIA] Transformado em BUTTON para acessibilidade nativa
     ============================================ */
-    .estante-header {
+    button.estante-header {
       display: flex;
       align-items: center;
       gap: 15px;
       padding: 20px 0;
+      width: 100%;
+      background: none;
+      border: none;
       cursor: pointer;
       user-select: none;
       color: var(--text-light);
       transition: opacity var(--transition);
+      text-align: left;
     }
 
-    .estante-header:hover {
+    button.estante-header:hover {
       opacity: 0.8;
+    }
+
+    button.estante-header:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+      border-radius: 8px;
     }
 
     .estante-icon {
@@ -641,6 +606,7 @@
       font-size: 40px;
       margin: 0;
       color: var(--text-light);
+      flex-grow: 1; /* Ocupa o espaço disponível */
     }
 
     .estante-subtitle {
@@ -653,6 +619,7 @@
       margin-left: auto;
       font-size: 18px;
       transition: transform var(--transition);
+      color: var(--gold);
     }
 
     /* ============================================
@@ -688,7 +655,7 @@
     }
 
     .back-to-top:focus-visible {
-      outline: 3px solid var(--gold);
+      outline: 3px solid var(--primary-dark);
       outline-offset: 2px;
     }
 
@@ -744,20 +711,13 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    .toast-notification.success i {
-      color: #4caf50;
-    }
-
-    .toast-notification.error i {
-      color: #ff6b6b;
-    }
-
-    .toast-notification.info i {
-      color: var(--gold);
-    }
+    .toast-notification.success i { color: #4caf50; }
+    .toast-notification.error i { color: #ff6b6b; }
+    .toast-notification.info i { color: var(--gold); }
 
     /* ============================================
-       CONTADOR DE VISUALIZAÇÕES - DISCRETO
+       CONTADOR DE VISUALIZAÇÕES
+       [MELHORIA] Adicionado ao HTML e ajustado para evitar sobreposição
     ============================================ */
     .view-counter {
       position: fixed;
@@ -775,16 +735,16 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      opacity: 0.5;
+      opacity: 0.8;
       transition: all 0.3s ease;
       z-index: 9998;
       user-select: none;
-      pointer-events: none;
+      pointer-events: auto;
     }
 
     .view-counter:hover {
-      opacity: 0.9;
-      background: rgba(20, 30, 20, 0.8);
+      opacity: 1;
+      background: rgba(20, 30, 20, 0.9);
       border-color: rgba(255, 217, 102, 0.3);
     }
 
@@ -801,30 +761,30 @@
     }
 
     .view-counter .count-label {
-      opacity: 0.6;
+      opacity: 0.8;
       font-size: 10px;
     }
 
     /* ============================================
-       ANÚNCIO - PLAYLIST DO SPOTIFY COM IMAGEM
+       ANÚNCIO - PLAYLIST DO SPOTIFY
+       [MELHORIA] Ajuste de z-index e posição para mobile
     ============================================ */
     .ad-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 9997;
-            max-width: 250px;
-            width: 100%;
-            background: rgba(20, 30, 20, 0.92);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 16px;
-            padding: 16px;
-            border: 1px solid rgba(255, 217, 102, 0.15);
-            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9997; /* Abaixo do back-to-top (9999) e view-counter (9998) */
+      max-width: 250px;
+      width: 100%;
+      background: rgba(20, 30, 20, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid rgba(255, 217, 102, 0.15);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     .ad-container.minimized {
       max-width: 56px;
@@ -867,7 +827,6 @@
       display: block;
     }
 
-    /* ===== IMAGEM DA PLAYLIST ===== */
     .ad-playlist-image {
       width: 100%;
       max-width: 200px;
@@ -939,11 +898,8 @@
       background: #1ed760;
     }
 
-    .ad-content .ad-button i {
-      font-size: 14px;
-    }
+    .ad-content .ad-button i { font-size: 14px; }
 
-    /* ===== ÍCONE MINIMIZADO ===== */
     .ad-minimized-icon {
       display: none !important;
       align-items: center;
@@ -956,11 +912,8 @@
       border-radius: 50%;
     }
 
-    .ad-minimized-icon i {
-      font-size: 28px;
-    }
+    .ad-minimized-icon i { font-size: 28px; }
 
-    /* ===== BOTÃO DE MINIMIZAR ===== */
     .ad-close {
       position: absolute;
       top: 8px;
@@ -981,20 +934,13 @@
       transform: scale(1.1);
     }
 
-    .ad-container.minimized .ad-close {
-      display: none;
-    }
+    .ad-container.minimized .ad-close { display: none; }
 
-    /* ===== BOTÃO DE EXPANDIR (aparece quando minimizado) ===== */
     .ad-expand-btn {
       display: none;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100%; height: 100%;
       border-radius: 50%;
       background: transparent;
       border: none;
@@ -1002,121 +948,7 @@
       z-index: 5;
     }
 
-    .ad-container.minimized .ad-expand-btn {
-      display: block;
-    }
-
-    /* Versão responsiva do anúncio */
-    @media (max-width: 768px) {
-      .ad-container {
-        max-width: 290px;
-        bottom: 15px;
-        right: 15px;
-        padding: 14px;
-      }
-
-      .ad-container.minimized {
-        max-width: 50px;
-        padding: 6px;
-      }
-
-      .ad-playlist-image {
-        max-width: 160px;
-      }
-
-      .ad-content .ad-title {
-        font-size: 14px;
-      }
-
-      .ad-content .ad-description {
-        font-size: 11px;
-      }
-
-      .ad-content iframe {
-        height: 72px;
-      }
-
-      .ad-content .ad-button {
-        font-size: 12px;
-        padding: 6px 16px;
-      }
-
-      .ad-minimized-icon {
-        width: 38px;
-        height: 38px;
-        font-size: 20px;
-      }
-
-      .ad-minimized-icon i {
-        font-size: 24px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .ad-container {
-        max-width: 230px;
-        bottom: 70px;
-        right: 10px;
-        padding: 12px;
-        border-radius: 12px;
-      }
-
-      .ad-container.minimized {
-        max-width: 44px;
-        padding: 5px;
-        bottom: 75px;
-        right: 12px;
-      }
-
-      .ad-playlist-image {
-        max-width: 120px;
-        margin-bottom: 8px;
-      }
-
-      .ad-content .ad-title {
-        font-size: 13px;
-      }
-
-      .ad-content .ad-description {
-        font-size: 10px;
-        margin-bottom: 6px;
-      }
-
-      .ad-content .ad-description span {
-        font-size: 10px;
-      }
-
-      .ad-content iframe {
-        height: 64px;
-        margin: 6px 0;
-      }
-
-      .ad-content .ad-button {
-        font-size: 11px;
-        padding: 5px 14px;
-        gap: 5px;
-      }
-
-      .ad-close {
-        font-size: 15px;
-        top: 5px;
-        right: 8px;
-      }
-
-      .ad-minimized-icon {
-        width: 34px;
-        height: 34px;
-        font-size: 18px;
-      }
-
-      .ad-minimized-icon i {
-        font-size: 20px;
-      }
-    }
-
-    footer {
-      margin-top: 100px;
-    }
+    .ad-container.minimized .ad-expand-btn { display: block; }
 
     /* ============================================
        SKELETON LOADING
@@ -1137,167 +969,91 @@
        PREFERS-REDUCED-MOTION
     ============================================ */
     @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
-
-      .card-livro {
-        transition: none !important;
-      }
-
-      .card-livro:hover {
-        transform: none !important;
-      }
+      .card-livro { transition: none !important; }
+      .card-livro:hover { transform: none !important; }
     }
 
     /* ============================================
        RESPONSIVIDADE
+       [MELHORIA] Ajuste fino de sobreposição em telas pequenas
     ============================================ */
     @media (max-width: 768px) {
-      .card-livro {
-        width: 180px;
-      }
-
-      .card-capa-modulo {
-        height: 180px;
-      }
-
-      .estante-title {
-        font-size: clamp(1.2rem, 4vw, 1.8rem);
-      }
-
-      .scroll-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-      }
-
-      .scroll-btn:hover {
-        font-size: 22px;
-      }
-
-      .main-content {
-        padding: 0 15px 0 70px;
-      }
-
-      .side-nav {
-        left: 6px !important;
-        padding: 8px 6px;
-        gap: 4px;
-      }
-
-      .side-nav a {
-        width: 36px;
-        height: 36px;
-        padding: 6px 8px;
-        font-size: 16px;
-      }
-
-      .side-nav a i {
-        font-size: 16px;
-      }
-
-      .side-nav a .tooltip {
-        font-size: 11px;
-        left: 48px;
-        padding: 4px 10px;
-      }
-
-      .back-to-top {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        bottom: 20px;
-        right: 15px;
-      }
-
-      .estante-header {
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .breadcrumb {
-        font-size: 12px;
-      }
-
-      .toast-notification {
-        bottom: 80px;
-        font-size: 14px;
-        padding: 12px 20px;
-      }
-
-      .view-counter {
-        bottom: 15px;
-        font-size: 10px;
-        padding: 4px 12px;
-      }
+      .card-livro { width: 180px; }
+      .card-capa-modulo { height: 180px; }
+      .estante-title { font-size: clamp(1.2rem, 4vw, 1.8rem); }
+      .scroll-btn { width: 35px; height: 35px; font-size: 16px; }
+      .scroll-btn:hover { font-size: 22px; }
+      .main-content { padding: 0 15px 0 70px; }
+      .side-nav { left: 6px !important; padding: 8px 6px; gap: 4px; }
+      .side-nav a { width: 36px; height: 36px; padding: 6px 8px; font-size: 16px; }
+      .side-nav a i { font-size: 16px; }
+      .side-nav a .tooltip { font-size: 11px; left: 48px; padding: 4px 10px; }
+      .back-to-top { width: 40px; height: 40px; font-size: 16px; bottom: 20px; right: 15px; }
+      .estante-header { flex-wrap: wrap; gap: 8px; }
+      .breadcrumb { font-size: 12px; }
+      .toast-notification { bottom: 80px; font-size: 14px; padding: 12px 20px; }
+      
+      /* Ajuste para não cobrir o botão de topo */
+      .ad-container { max-width: 290px; bottom: 80px; right: 15px; padding: 14px; }
+      .ad-container.minimized { max-width: 50px; padding: 6px; }
+      .ad-playlist-image { max-width: 160px; }
+      .ad-content .ad-title { font-size: 14px; }
+      .ad-content .ad-description { font-size: 11px; }
+      .ad-content iframe { height: 72px; }
+      .ad-content .ad-button { font-size: 12px; padding: 6px 16px; }
+      .ad-minimized-icon { width: 38px; height: 38px; font-size: 20px; }
+      .ad-minimized-icon i { font-size: 24px; }
+      .view-counter { bottom: 15px; font-size: 10px; padding: 4px 12px; }
     }
 
     @media (max-width: 480px) {
-      .card-livro {
-        width: 150px;
+      .card-livro { width: 150px; }
+      .livros-container { padding: 15px; gap: 12px; }
+      .card-capa-modulo { height: 150px; }
+      .main-content { padding: 0 10px 0 60px; }
+      .side-nav { left: 4px !important; padding: 6px 4px; border-radius: 12px; }
+      .side-nav a { width: 32px; height: 32px; padding: 4px 6px; font-size: 14px; }
+      .side-nav a i { font-size: 14px; }
+      .side-nav a .tooltip { font-size: 10px; left: 40px; padding: 3px 8px; }
+      .estante-title { font-size: 16px; }
+      .toast-notification { font-size: 13px; padding: 10px 16px; bottom: 70px; }
+      
+      /* [MELHORIA] Reposicionamento agressivo para telas muito pequenas */
+      .ad-container { 
+        max-width: 230px; 
+        bottom: 95px; /* Sobe acima do back-to-top */
+        right: 10px; 
+        padding: 12px; 
+        border-radius: 12px; 
       }
-
-      .livros-container {
-        padding: 15px;
-        gap: 12px;
+      .ad-container.minimized { 
+        max-width: 44px; 
+        padding: 5px; 
+        bottom: 95px; 
+        right: 12px; 
       }
-
-      .card-capa-modulo {
-        height: 150px;
+      .ad-playlist-image { max-width: 120px; margin-bottom: 8px; }
+      .ad-content .ad-title { font-size: 13px; }
+      .ad-content .ad-description { font-size: 10px; margin-bottom: 6px; }
+      .ad-content .ad-description span { font-size: 10px; }
+      .ad-content iframe { height: 64px; margin: 6px 0; }
+      .ad-content .ad-button { font-size: 11px; padding: 5px 14px; gap: 5px; }
+      .ad-close { font-size: 15px; top: 5px; right: 8px; }
+      .ad-minimized-icon { width: 34px; height: 34px; font-size: 18px; }
+      .ad-minimized-icon i { font-size: 20px; }
+      
+      .view-counter { 
+        bottom: 12px; 
+        font-size: 9px; 
+        padding: 3px 10px; 
       }
-
-      .main-content {
-        padding: 0 10px 0 60px;
-      }
-
-      .side-nav {
-        left: 4px !important;
-        padding: 6px 4px;
-        border-radius: 12px;
-      }
-
-      .side-nav a {
-        width: 32px;
-        height: 32px;
-        padding: 4px 6px;
-        font-size: 14px;
-      }
-
-      .side-nav a i {
-        font-size: 14px;
-      }
-
-      .side-nav a .tooltip {
-        font-size: 10px;
-        left: 40px;
-        padding: 3px 8px;
-      }
-
-      .estante-title {
-        font-size: 16px;
-      }
-
-      .toast-notification {
-        font-size: 13px;
-        padding: 10px 16px;
-        bottom: 70px;
-      }
-
-      .view-counter {
-        bottom: 12px;
-        font-size: 9px;
-        padding: 3px 10px;
-      }
-
-      .view-counter .count-number {
-        min-width: 20px;
-      }
+      .view-counter .count-number { min-width: 20px; }
     }
 
     .livros-container.hidden { display: none; }
@@ -1384,22 +1140,32 @@
     
     <!-- ===== ESTANTE DE RECURSOS ===== -->
     <section class="estante-section" aria-label="Recursos de estudo bíblico">
-      <div class="estante-header" onclick="toggleEstante('recursos')" role="button" tabindex="0" aria-expanded="true" aria-controls="estante-recursos">
+      <!-- [MELHORIA] Transformado em BUTTON para acessibilidade e removido onclick inline -->
+      <button class="estante-header" id="toggleRecursos" aria-expanded="true" aria-controls="estante-recursos">
         <h1 class="estante-title">PLATAFORMA DE ESTUDO BÍBLICO DIGITAL</h1>
         <span class="estante-toggle" aria-hidden="true">▼</span>
-      </div>
+      </button>
+      
       <div class="linha-divisoria at"></div>
       <div class="livros-wrapper" id="wrapper-recursos">
-        <button class="scroll-btn scroll-left hidden" id="scroll-left-recursos" onclick="scrollEstante('recursos', 'left')" aria-label="Rolar para esquerda">
+        <!-- [MELHORIA] Removido onclick inline. O JS captura pelo ID -->
+        <button class="scroll-btn scroll-left hidden" id="scroll-left-recursos" aria-label="Rolar para esquerda">
           <i class="fas fa-chevron-left" aria-hidden="true"></i>
         </button>
         <div id="estante-recursos" class="livros-container" role="list"></div>
-        <button class="scroll-btn scroll-right" id="scroll-right-recursos" onclick="scrollEstante('recursos', 'right')" aria-label="Rolar para direita">
+        <button class="scroll-btn scroll-right" id="scroll-right-recursos" aria-label="Rolar para direita">
           <i class="fas fa-chevron-right" aria-hidden="true"></i>
         </button>
       </div>
     </section>
     
+    <!-- [MELHORIA] Contador de Visitas adicionado ao DOM -->
+    <div class="view-counter" aria-label="Contador de visitas locais">
+      <i class="fas fa-eye" aria-hidden="true"></i>
+      <span class="count-number" id="viewCount">0</span>
+      <span class="count-label">Sua Jornada</span>
+    </div>
+
     <!-- ===== FOOTER ===== -->
     <footer role="contentinfo">
       <p><i class="fas fa-heart" aria-hidden="true"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart" aria-hidden="true"></i></p>
@@ -1420,7 +1186,7 @@
   </div>
 
   <!-- ============================================ -->
-  <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY COM IMAGEM (MINIMIZÁVEL) ===== -->
+  <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY ===== -->
   <!-- ============================================ -->
   <div class="ad-container" id="adContainer" role="complementary" aria-label="Playlist do Spotify">
     <button class="ad-close" id="adClose" aria-label="Minimizar playlist">
@@ -1431,22 +1197,19 @@
     <div class="ad-content">
       <span class="ad-label">🎧 Playlist Recomendada</span>
       
-      <!-- ===== IMAGEM DA PLAYLIST ===== -->
       <img 
         src="assets/capa/josephmatthos.png" 
         alt="Capa da playlist Joseph Matthos" 
         class="ad-playlist-image"
         loading="lazy"
-        width="200"
-        height="200"
+        width="150"
+        height="150"
       />
       
       <div class="ad-title">Joseph Matthos</div>
       <div class="ad-description">
-        26 álbuns · Ouça no Spotify
+        12 álbuns · Ouça no Spotify
       </div>
-      
-      <!-- ===== EMBED DO SPOTIFY ===== -->
       
       <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" 
          class="ad-button" 
@@ -1458,7 +1221,6 @@
       </a>
     </div>
     
-    <!-- ===== ÍCONE MINIMIZADO ===== -->
     <div class="ad-minimized-icon">
       <i class="fab fa-spotify" aria-hidden="true"></i>
     </div>
@@ -1479,50 +1241,34 @@
         try {
           const stored = localStorage.getItem(STORAGE_KEY);
           return stored ? parseInt(stored, 10) || 0 : 0;
-        } catch (e) {
-          return 0;
-        }
+        } catch (e) { return 0; }
       }
       
       function incrementViewCount() {
         const current = getViewCount();
         const newCount = current + 1;
-        try {
-          localStorage.setItem(STORAGE_KEY, String(newCount));
-        } catch (e) {
-          return current;
-        }
+        try { localStorage.setItem(STORAGE_KEY, String(newCount)); } catch (e) { return current; }
         return newCount;
       }
       
       function updateDisplay(count) {
         const el = document.getElementById(DISPLAY_ID);
-        if (el) {
-          el.textContent = count.toLocaleString('pt-BR');
-        }
+        if (el) el.textContent = count.toLocaleString('pt-BR');
       }
       
       function initViewCounter() {
         const sessionKey = 'biblia_view_session';
         let shouldIncrement = true;
-        
         try {
-          if (sessionStorage.getItem(sessionKey)) {
-            shouldIncrement = false;
-          } else {
-            sessionStorage.setItem(sessionKey, '1');
-          }
+          if (sessionStorage.getItem(sessionKey)) shouldIncrement = false;
+          else sessionStorage.setItem(sessionKey, '1');
         } catch (e) {}
-        
         const count = shouldIncrement ? incrementViewCount() : getViewCount();
         updateDisplay(count);
       }
       
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initViewCounter);
-      } else {
-        initViewCounter();
-      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initViewCounter);
+      else initViewCounter();
     })();
 
     // ============================================
@@ -1538,34 +1284,17 @@
         };
         this.loadState();
       }
-
       saveState() {
-        try {
-          localStorage.setItem('biblia-app-state', JSON.stringify(this.state));
-        } catch (e) {
-          console.warn('Não foi possível salvar o estado:', e);
-        }
+        try { localStorage.setItem('biblia-app-state', JSON.stringify(this.state)); } catch (e) { console.warn('Erro ao salvar estado:', e); }
       }
-
       loadState() {
         try {
           const saved = localStorage.getItem('biblia-app-state');
-          if (saved) {
-            this.state = { ...this.state, ...JSON.parse(saved) };
-          }
-        } catch (e) {
-          console.warn('Não foi possível carregar o estado:', e);
-        }
+          if (saved) this.state = { ...this.state, ...JSON.parse(saved) };
+        } catch (e) { console.warn('Erro ao carregar estado:', e); }
       }
-
-      get(key) {
-        return this.state[key];
-      }
-
-      set(key, value) {
-        this.state[key] = value;
-        this.saveState();
-      }
+      get(key) { return this.state[key]; }
+      set(key, value) { this.state[key] = value; this.saveState(); }
     }
 
     // ============================================
@@ -1585,15 +1314,8 @@
           { id: "cantor", nome: "Cantor Cristão", arquivo: "cantor.html", autor: "Hinos das Igrejas Batistas", capitulos: 581 }
         ];
       }
-
-      getRecursos() {
-        return this.recursos;
-      }
-
-      getRecursoById(id) {
-        return this.recursos.find(r => r.id === id);
-      }
-
+      getRecursos() { return this.recursos; }
+      getRecursoById(id) { return this.recursos.find(r => r.id === id); }
       preloadRecurso(arquivo) {
         if (this.cache.has(arquivo)) return;
         this.cache.set(arquivo, true);
@@ -1610,23 +1332,15 @@
     function mostrarToast(mensagem, tipo = 'info', duracao = 3000) {
       const toast = document.getElementById('toastNotification');
       const toastMessage = document.getElementById('toastMessage');
-      
       if (!toast || !toastMessage) return;
-      
       toast.className = 'toast-notification';
       toast.classList.add(tipo);
       toastMessage.textContent = mensagem;
       toast.classList.add('show');
-      
       clearTimeout(toast._timeout);
-      toast._timeout = setTimeout(() => {
-        toast.classList.remove('show');
-      }, duracao);
+      toast._timeout = setTimeout(() => { toast.classList.remove('show'); }, duracao);
     }
 
-    // ============================================
-    // FUNÇÃO DEBOUNCE
-    // ============================================
     function debounce(fn, delay) {
       let timer;
       return function(...args) {
@@ -1635,39 +1349,31 @@
       };
     }
 
-    // ============================================
-    // DADOS DOS RECURSOS
-    // ============================================
     const appState = new AppState();
     const resourceManager = new ResourceManager();
 
     // ============================================
     // FUNÇÕES DE RENDERIZAÇÃO
+    // [MELHORIA] Sem onclick inline. Usa data-attributes.
     // ============================================
     function gerarCard(recurso) {
       const classeCapa = `card-capa-modulo ${recurso.id}`;
       const cardsComImagem = ['completa','biblia', 'comentada', 'apologetica', 'enciclopedia', 'harpa', 'cantor', 'cristologia'];
       const temImagem = cardsComImagem.includes(recurso.id);
-      
       let conteudoCapa = '';
-      if (temImagem) {
-        conteudoCapa = '';
-      } else {
+      if (!temImagem) {
         const icone = recurso.icone || "fa-book";
         conteudoCapa = `<i class="fas ${icone}" aria-hidden="true"></i>`;
       }
-      
       const infoCapitulos = recurso.capitulos > 0 
         ? `<div class="card-capitulos">📖 ${recurso.capitulos} ${recurso.capitulos === 1 ? 'capítulo' : 'capítulos'}</div>` 
         : '<div class="card-capitulos">📚 Material de referência</div>';
       
       return `
-        <div class="card-livro" role="listitem" onclick="abrirRecurso('${recurso.arquivo}', '${recurso.nome}')" 
-             onkeydown="if(event.key==='Enter') abrirRecurso('${recurso.arquivo}', '${recurso.nome}')" 
-             tabindex="0" role="button" aria-label="Abrir ${recurso.nome}">
-          <div class="${classeCapa}">
-            ${conteudoCapa}
-          </div>
+        <div class="card-livro" role="listitem" tabindex="0" 
+             data-arquivo="${recurso.arquivo}" data-nome="${recurso.nome}"
+             aria-label="Abrir ${recurso.nome}">
+          <div class="${classeCapa}">${conteudoCapa}</div>
           <div class="card-info">
             <div class="card-titulo">${recurso.nome}</div>
             <div class="card-autor">${recurso.autor}</div>
@@ -1680,15 +1386,33 @@
     function renderizarEstantes() {
       const containerRecursos = document.getElementById('estante-recursos');
       if (!containerRecursos) return;
-      
       containerRecursos.innerHTML = '';
       const recursos = resourceManager.getRecursos();
-      
-      recursos.forEach(recurso => {
-        containerRecursos.innerHTML += gerarCard(recurso);
-        setTimeout(() => {
-          resourceManager.preloadRecurso(recurso.arquivo);
-        }, 1000);
+      recursos.forEach(recurso => { containerRecursos.innerHTML += gerarCard(recurso); });
+
+      // [MELHORIA] Event Delegation para cliques nos cards
+      containerRecursos.addEventListener('click', function(e) {
+        const card = e.target.closest('.card-livro');
+        if (card) abrirRecurso(card.dataset.arquivo, card.dataset.nome);
+      });
+
+      // [MELHORIA] Suporte a teclado (Enter/Space) nos cards
+      containerRecursos.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          const card = e.target.closest('.card-livro');
+          if (card) {
+            e.preventDefault();
+            abrirRecurso(card.dataset.arquivo, card.dataset.nome);
+          }
+        }
+      });
+
+      // [MELHORIA] Preload Inteligente (Apenas ao passar o mouse ou focar)
+      const cards = containerRecursos.querySelectorAll('.card-livro');
+      cards.forEach(card => {
+        const preloadHandler = () => resourceManager.preloadRecurso(card.dataset.arquivo);
+        card.addEventListener('mouseenter', preloadHandler);
+        card.addEventListener('focus', preloadHandler);
       });
     }
 
@@ -1712,10 +1436,8 @@
     function scrollEstante(estante, direcao) {
       const container = document.getElementById(`estante-${estante}`);
       if (!container) return;
-      
       const scrollAmount = 400;
       const currentScroll = container.scrollLeft;
-      
       if (direcao === 'left') {
         container.scrollTo({ left: currentScroll - scrollAmount, behavior: 'smooth' });
       } else {
@@ -1727,12 +1449,9 @@
       const container = document.getElementById(`estante-${estante}`);
       const leftBtn = document.getElementById(`scroll-left-${estante}`);
       const rightBtn = document.getElementById(`scroll-right-${estante}`);
-      
       if (!container || !leftBtn || !rightBtn) return;
-      
       const scrollLeft = container.scrollLeft;
       const maxScrollLeft = container.scrollWidth - container.clientWidth;
-      
       leftBtn.classList.toggle('hidden', scrollLeft <= 10);
       rightBtn.classList.toggle('hidden', scrollLeft >= maxScrollLeft - 10);
     }
@@ -1740,27 +1459,23 @@
     function toggleEstante(tipo) {
       const container = document.getElementById(`estante-${tipo}`);
       const wrapper = document.getElementById(`wrapper-${tipo}`);
-      const header = document.querySelector('.estante-header');
-      const toggle = header?.querySelector('.estante-toggle');
+      const headerBtn = document.getElementById(`toggle-${tipo}`); // [MELHORIA] Usa ID do botão
+      const toggle = headerBtn?.querySelector('.estante-toggle');
       
       if (container && wrapper) {
         const isHidden = container.style.display === 'none';
-        const isOpen = !isHidden;
-        
         if (isHidden) {
           container.style.display = 'flex';
           wrapper.style.display = 'block';
-          toggle.innerHTML = '▼';
-          toggle.title = 'Ocultar estante';
-          header?.setAttribute('aria-expanded', 'true');
+          if(toggle) toggle.innerHTML = '▼';
+          headerBtn?.setAttribute('aria-expanded', 'true');
           appState.set('isEstanteOpen', true);
           setTimeout(() => updateScrollButtons(tipo), 100);
         } else {
           container.style.display = 'none';
           wrapper.style.display = 'none';
-          toggle.innerHTML = '▶';
-          toggle.title = 'Mostrar estante';
-          header?.setAttribute('aria-expanded', 'false');
+          if(toggle) toggle.innerHTML = '▶';
+          headerBtn?.setAttribute('aria-expanded', 'false');
           appState.set('isEstanteOpen', false);
         }
       }
@@ -1770,13 +1485,8 @@
     // BACK TO TOP
     // ============================================
     const backToTop = document.getElementById('backToTop');
-    
     window.addEventListener('scroll', debounce(function() {
-      if (window.scrollY > 500) {
-        backToTop.classList.add('visible');
-      } else {
-        backToTop.classList.remove('visible');
-      }
+      backToTop.classList.toggle('visible', window.scrollY > 500);
     }, 100));
     
     backToTop.addEventListener('click', function() {
@@ -1789,8 +1499,10 @@
     window.addEventListener('scroll', debounce(function() {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = (scrollTop / docHeight) * 100;
-      document.getElementById('readingProgress').style.width = Math.min(progress, 100) + '%';
+      if(docHeight > 0) {
+        const progress = (scrollTop / docHeight) * 100;
+        document.getElementById('readingProgress').style.width = Math.min(progress, 100) + '%';
+      }
     }, 10));
 
     // ============================================
@@ -1800,57 +1512,35 @@
       const adContainer = document.getElementById('adContainer');
       const adClose = document.getElementById('adClose');
       const adExpand = document.getElementById('adExpand');
-      
-      // Verificar estado salvo
       const isMinimized = appState.get('adMinimized');
-      
       if (isMinimized) {
         adContainer.classList.add('minimized');
         adExpand.style.display = 'block';
       }
-      
-      // Minimizar
       adClose.addEventListener('click', function(e) {
         e.stopPropagation();
         adContainer.classList.add('minimized');
         adExpand.style.display = 'block';
         appState.set('adMinimized', true);
-        mostrarToast('Playlist minimizada. Clique no ícone para expandir.', 'info', 2000);
+        mostrarToast('Playlist minimizada.', 'info', 2000);
       });
-      
-      // Expandir (clique no container ou no botão de expandir)
       function expandAd() {
         adContainer.classList.remove('minimized');
         adExpand.style.display = 'none';
         appState.set('adMinimized', false);
       }
-      
       adExpand.addEventListener('click', function(e) {
         e.stopPropagation();
         expandAd();
       });
-      
       adContainer.addEventListener('click', function(e) {
-        if (adContainer.classList.contains('minimized')) {
-          // Verifica se o clique não foi no botão de fechar
-          if (!e.target.closest('.ad-close')) {
-            expandAd();
-          }
-        }
+        if (adContainer.classList.contains('minimized') && !e.target.closest('.ad-close')) expandAd();
       });
-      
-      // Permitir expandir com tecla Enter no container minimizado
       adContainer.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' && adContainer.classList.contains('minimized')) {
-          expandAd();
-        }
+        if (e.key === 'Enter' && adContainer.classList.contains('minimized')) expandAd();
       });
-      
-      // Tecla ESC para minimizar quando expandido
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !adContainer.classList.contains('minimized')) {
-          adClose.click();
-        }
+        if (e.key === 'Escape' && !adContainer.classList.contains('minimized')) adClose.click();
       });
     }
 
@@ -1860,58 +1550,48 @@
     document.addEventListener('keydown', function(e) {
       const container = document.getElementById('estante-recursos');
       if (!container || document.activeElement?.closest('.card-livro')) return;
-      
-      if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        scrollEstante('recursos', 'left');
-      } else if (e.key === 'ArrowRight') {
-        e.preventDefault();
-        scrollEstante('recursos', 'right');
-      }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); scrollEstante('recursos', 'left'); } 
+      else if (e.key === 'ArrowRight') { e.preventDefault(); scrollEstante('recursos', 'right'); }
     });
 
     // ============================================
     // INICIALIZAÇÃO
     // ============================================
     document.addEventListener('DOMContentLoaded', function() {
-      // Renderizar estantes
       renderizarEstantes();
+      
+      // [MELHORIA] Listener para o novo botão de toggle
+      document.getElementById('toggleRecursos').addEventListener('click', () => toggleEstante('recursos'));
+      
+      // [MELHORIA] Listeners para os botões de scroll (removidos do HTML)
+      document.getElementById('scroll-left-recursos').addEventListener('click', () => scrollEstante('recursos', 'left'));
+      document.getElementById('scroll-right-recursos').addEventListener('click', () => scrollEstante('recursos', 'right'));
       
       // Restaurar estado da estante
       const isOpen = appState.get('isEstanteOpen');
       if (!isOpen) {
         const container = document.getElementById('estante-recursos');
         const wrapper = document.getElementById('wrapper-recursos');
-        const toggle = document.querySelector('.estante-toggle');
-        if (container && wrapper && toggle) {
+        const btn = document.getElementById('toggleRecursos');
+        const toggle = btn?.querySelector('.estante-toggle');
+        if (container && wrapper) {
           container.style.display = 'none';
           wrapper.style.display = 'none';
-          toggle.innerHTML = '▶';
-          document.querySelector('.estante-header')?.setAttribute('aria-expanded', 'false');
+          if(toggle) toggle.innerHTML = '▶';
+          btn?.setAttribute('aria-expanded', 'false');
         }
       }
       
-      // Configurar scroll listeners
       const container = document.getElementById('estante-recursos');
       if (container) {
-        const scrollHandler = debounce(function() {
-          updateScrollButtons('recursos');
-        }, 150);
-        
+        const scrollHandler = debounce(function() { updateScrollButtons('recursos'); }, 150);
         container.addEventListener('scroll', scrollHandler);
-        
-        setTimeout(function() {
-          updateScrollButtons('recursos');
-        }, 100);
+        setTimeout(function() { updateScrollButtons('recursos'); }, 100);
       }
       
-      // Restaurar scroll position
       const savedScroll = appState.get('scrollPositions')?.recursos || 0;
-      if (container && savedScroll > 0) {
-        container.scrollLeft = savedScroll;
-      }
+      if (container && savedScroll > 0) container.scrollLeft = savedScroll;
       
-      // Salvar scroll position ao sair
       window.addEventListener('beforeunload', function() {
         if (container) {
           const positions = appState.get('scrollPositions') || {};
@@ -1920,34 +1600,21 @@
         }
       });
       
-      // Listener de resize
-      window.addEventListener('resize', debounce(function() {
-        updateScrollButtons('recursos');
-      }, 200));
+      window.addEventListener('resize', debounce(function() { updateScrollButtons('recursos'); }, 200));
       
-      // Inicializar tooltips para screen readers
       document.querySelectorAll('.side-nav a').forEach(link => {
         const tooltip = link.querySelector('.tooltip');
-        if (tooltip) {
-          link.setAttribute('aria-label', tooltip.textContent.trim());
-        }
+        if (tooltip) link.setAttribute('aria-label', tooltip.textContent.trim().replace(/\n/g, ' '));
       });
       
-      // Inicializar anúncio minimizável
       initAd();
     });
 
-    // ============================================
-    // TRATAMENTO DE ERROS GLOBAL
-    // ============================================
     window.addEventListener('error', function(e) {
       console.error('Erro capturado:', e.message, e.filename, e.lineno);
-      mostrarToast('Ocorreu um erro ao carregar o conteúdo. Por favor, tente novamente.', 'error', 4000);
+      mostrarToast('Ocorreu um erro ao carregar o conteúdo.', 'error', 4000);
     });
 
-    // ============================================
-    // EXPOR GLOBAL
-    // ============================================
     window.abrirRecurso = abrirRecurso;
     window.scrollEstante = scrollEstante;
     window.toggleEstante = toggleEstante;
