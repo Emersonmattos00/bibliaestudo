@@ -14,6 +14,9 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta name="revisit-after" content="7 days" />
   
+  <!-- ===== VERIFICAÇÃO DO GOOGLE SEARCH CONSOLE ===== -->
+  <meta name="google-site-verification" content="U-CvD_LhPd9wpRepHuPXL3qeMPt4GRqAZzt3lKmnoOA" />
+  
   <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:title" content="Plataforma de Estudos Bíblicos | Bíblia Sagrada Digital" />
   <meta property="og:description" content="Estude a Bíblia Sagrada com comentários, textos originais, enciclopédia e hinários. Plataforma gratuita para aprofundar seu conhecimento da Palavra de Deus." />
@@ -186,7 +189,7 @@
        CONTEÚDO PRINCIPAL
     ============================================ */
     .main-content { max-width: 1600px; margin: 0 auto; position: relative; z-index: 1; padding: 0 20px 0 80px; }
-    .bible-header { text-align: center; margin-bottom: 40px; color: white; position: relative; z-index: 2; padding: 30px 0; }
+    .bible-header { text-align: center; margin-bottom: 20px; color: white; position: relative; z-index: 2; padding: 30px 0; }
     .bible-header .tagline { font-size: 18px; font-style: italic; opacity: 0.95; margin-bottom: 10px; color: var(--gold); }
 
     /* ============================================
@@ -307,7 +310,7 @@
     button.estante-header:hover { opacity: 0.8; }
     button.estante-header:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; border-radius: 8px; }
     .estante-icon { font-size: 24px; color: var(--gold); }
-    .estante-title { font-weight: bold; font-size: 40px; margin: 0; color: var(--text-light); flex-grow: 1; }
+    .estante-title { font-weight: bold; font-size: clamp(1.5rem, 4vw, 2.5rem); margin: 0; color: var(--text-light); flex-grow: 1; line-height: 1.2; }
     .estante-subtitle { font-size: 14px; opacity: 0.7; color: var(--gold); }
     .estante-toggle { margin-left: auto; font-size: 18px; transition: transform var(--transition); color: var(--gold); }
 
@@ -398,7 +401,6 @@
     .ad-content .ad-description { font-size: 12px; opacity: 0.8; margin-bottom: 12px; line-height: 1.4; }
     .ad-content .ad-description span { display: block; font-size: 11px; opacity: 0.6; margin-top: 2px; }
 
-    /* --- NOVO: 4 Ícones de Redes Sociais Unificados --- */
     .ad-social-links {
       margin-top: 5px;
       display: flex;
@@ -416,7 +418,7 @@
       background: rgba(255, 255, 255, 0.08);
       color: var(--gold);
       font-size: 20px;
-      text-decoration: none !important; /* GARANTIA: Sem sublinhado */
+      text-decoration: none !important;
       transition: all var(--transition);
       border: 1px solid rgba(255, 217, 102, 0.2);
     }
@@ -427,27 +429,10 @@
       border-color: transparent;
     }
 
-    .ad-social-icon.spotify:hover {
-      background: #1DB954;
-      box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5);
-    }
-
-    .ad-social-icon.youtube:hover {
-      background: #FF0000;
-      box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
-    }
-
-    .ad-social-icon.tiktok:hover {
-      background: #010101;
-      border-color: #00f2ea;
-      box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
-    }
-
-    .ad-social-icon.facebook:hover {
-      background: #1877F2;
-      box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
-    }
-    /* ------------------------------------------ */
+    .ad-social-icon.spotify:hover { background: #1DB954; box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5); }
+    .ad-social-icon.youtube:hover { background: #FF0000; box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5); }
+    .ad-social-icon.tiktok:hover { background: #010101; border-color: #00f2ea; box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4); }
+    .ad-social-icon.facebook:hover { background: #1877F2; box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5); }
 
     .ad-minimized-icon {
       display: none !important; align-items: center; justify-content: center;
@@ -498,7 +483,6 @@
     @media (max-width: 768px) {
       .card-livro { width: 180px; }
       .card-capa-modulo { height: 180px; }
-      .estante-title { font-size: clamp(1.2rem, 4vw, 1.8rem); }
       .scroll-btn { width: 35px; height: 35px; font-size: 16px; }
       .scroll-btn:hover { font-size: 22px; }
       .main-content { padding: 0 15px 0 70px; }
@@ -531,7 +515,6 @@
       .side-nav a { width: 32px; height: 32px; padding: 4px 6px; font-size: 14px; }
       .side-nav a i { font-size: 14px; }
       .side-nav a .tooltip { font-size: 10px; left: 40px; padding: 3px 8px; }
-      .estante-title { font-size: 16px; }
       .toast-notification { font-size: 13px; padding: 10px 16px; bottom: 70px; }
       
       .ad-container { max-width: 230px; bottom: 95px; right: 10px; padding: 12px; border-radius: 12px; }
@@ -587,13 +570,24 @@
 
   <!-- ===== CONTEÚDO PRINCIPAL ===== -->
   <main class="main-content" id="main-content" role="main">
-    <header class="bible-header">
-      <p class="tagline">"Lâmpada para os meus pés é tua palavra, e luz para o meu caminho" - Salmos 119:105</p>
-    </header>
     
+    <!-- ===== NOVA SEÇÃO: TEXTO DESCRITIVO PARA SEO (AJUDA O GOOGLE A INDEXAR) ===== -->
+    <section class="seo-description" style="text-align: center; max-width: 900px; margin: 0 auto 40px auto; padding: 0 20px; color: var(--text-light);">
+      <h2 style="font-size: 1.5rem; color: var(--gold); margin-bottom: 15px;"><b>Aprofunde-se na Palavra de Deus Gratuitamente</b></h2>
+      <p style="font-size: 1rem; line-height: 1.6; opacity: 0.9;">
+        Acesse a <strong>Bíblia Sagrada Digital</strong> com a tradução King James Version 1769 (KJVA) em formato flipbook interativo.<br> 
+        Nossa plataforma oferece ferramentas completas para sua devocional e teologia, incluindo 
+        <strong>Bíblia Comentada</strong> versículo por versículo, estudos dos <strong>Textos Originais</strong> (Hebraico, Grego e Latim), 
+        <strong>Enciclopédia Bíblica</strong>, <strong>Apologética</strong> para defesa da fé, além dos hinários 
+        <strong>Harpa Cristã</strong> e <strong>Cantor Cristão</strong>.
+      </p>
+    </section>
+    <!-- ===== FIM DA SEÇÃO SEO ===== -->
+
     <section class="estante-section" aria-label="Recursos de estudo bíblico">
       <button class="estante-header" id="toggleRecursos" aria-expanded="true" aria-controls="estante-recursos">
-        <h1 class="estante-title">PLATAFORMA DE ESTUDO BÍBLICO DIGITAL</h1>
+        <!-- H1 ATUALIZADO PARA SEO -->
+        <h1 class="estante-title">Plataforma de Estudos Bíblicos | Bíblia Sagrada Digital e Comentada</h1>
         <span class="estante-toggle" aria-hidden="true">▼</span>
       </button>
       <div class="linha-divisoria at"></div>
@@ -636,7 +630,7 @@
     <button class="ad-expand-btn" id="adExpand" aria-label="Expandir" style="display: none;"></button>
     
     <div class="ad-content">
-      <span class="ad-label">🎧 Siga · Inscreva-se · Ouça </span>
+      <span class="ad-label">🎧 Siga · Se Inscreva e Ouça</span>
       
       <img src="assets/capa/josephmatthos.png" alt="Joseph Matthos" class="ad-playlist-image" loading="lazy" width="150" height="150" />
       
@@ -669,7 +663,6 @@
   <!-- SCRIPTS OTIMIZADOS                            -->
   <!-- ============================================ -->
   <script>
-    // (O JavaScript permanece exatamente o mesmo do seu código original otimizado)
     (function() {
       const STORAGE_KEY = 'biblia_view_count';
       const DISPLAY_ID = 'viewCount';
