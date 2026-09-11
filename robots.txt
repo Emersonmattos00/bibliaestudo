@@ -13,6 +13,3 @@ Disallow: /assets/icons/
 
 # Indica a localização do Sitemap
 Sitemap: https://bibliaestudo.vercel.app/sitemap.xml
-
-# Tempo entre visitas do robô
-Crawl-delay: 1
