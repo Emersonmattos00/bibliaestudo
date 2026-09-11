@@ -439,7 +439,7 @@
         }
 
         /* ============================================
-           ANÚNCIO - PLAYLIST DO SPOTIFY
+           ANÚNCIO - 4 ÍCONES DE REDES SOCIAIS
         ============================================ */
         .ad-container {
             position: fixed;
@@ -467,8 +467,9 @@
             overflow: hidden;
         }
 
-        .ad-container.minimized .ad-content > *:not(.ad-minimized-icon) {
-            display: none;
+        .ad-container.minimized .ad-content > *:not(.ad-minimized-icon),
+        .ad-container.minimized .ad-social-links {
+            display: none !important;
         }
 
         .ad-container.minimized .ad-minimized-icon {
@@ -530,7 +531,7 @@
         .ad-content .ad-description {
             font-size: 12px;
             opacity: 0.8;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             line-height: 1.4;
         }
 
@@ -541,31 +542,54 @@
             margin-top: 2px;
         }
 
-        .ad-content .ad-button {
-            display: inline-flex;
+        /* ===== ÍCONES DE REDES SOCIAIS UNIFICADOS ===== */
+        .ad-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .ad-social-icon {
+            display: flex;
             align-items: center;
-            gap: 8px;
-            background: #1DB954;
-            color: #fff;
-            padding: 8px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 13px;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffd966;
+            font-size: 20px;
+            text-decoration: none !important; /* GARANTIA: Sem sublinhado */
             transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            margin-top: 4px;
+            border: 1px solid rgba(255, 217, 102, 0.2);
         }
 
-        .ad-content .ad-button:hover {
-            transform: scale(1.04);
-            box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
-            background: #1ed760;
+        .ad-social-icon:hover {
+            transform: translateY(-4px) scale(1.1);
+            color: #ffffff;
+            border-color: transparent;
         }
 
-        .ad-content .ad-button i {
-            font-size: 14px;
+        .ad-social-icon.spotify:hover {
+            background: #1DB954;
+            box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5);
+        }
+
+        .ad-social-icon.youtube:hover {
+            background: #FF0000;
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .ad-social-icon.tiktok:hover {
+            background: #010101;
+            border-color: #00f2ea;
+            box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
+        }
+
+        .ad-social-icon.facebook:hover {
+            background: #1877F2;
+            box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
         }
 
         /* ===== ÍCONE MINIMIZADO ===== */
@@ -858,40 +882,47 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY ===== -->
+    <!-- ===== ANÚNCIO - 4 ÍCONES DE REDES SOCIAIS ===== -->
     <!-- ============================================ -->
-    <div class="ad-container" id="adContainer" role="complementary" aria-label="Playlist do Spotify" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-        <button class="ad-close" id="adClose" aria-label="Minimizar playlist">
+    <div class="ad-container" id="adContainer" role="complementary" aria-label="Redes Sociais Joseph Matthos">
+        <button class="ad-close" id="adClose" aria-label="Minimizar">
             <i class="fas fa-minus" aria-hidden="true"></i>
         </button>
-        <button class="ad-expand-btn" id="adExpand" aria-label="Expandir playlist" style="display: none;"></button>
+        <button class="ad-expand-btn" id="adExpand" aria-label="Expandir" style="display: none;"></button>
         
         <div class="ad-content">
-            <span class="ad-label">🎧 Playlist Recomendada</span>
+            <span class="ad-label">🎧 Siga · Inscreva-se · Ouça</span>
             
             <!-- ===== IMAGEM DA PLAYLIST ===== -->
             <img 
                 src="assets/capa/josephmatthos.png" 
-                alt="Capa da playlist Joseph Matthos" 
+                alt="Joseph Matthos" 
                 class="ad-playlist-image"
                 loading="lazy"
-                width="200"
-                height="200"
+                width="150"
+                height="150"
             />
             
             <div class="ad-title">Joseph Matthos</div>
             <div class="ad-description">
-                30 álbuns · Ouça no Spotify
+                30 álbuns · Discografia Completa
             </div>
             
-            <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" 
-               class="ad-button" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               aria-label="Abrir playlist no Spotify">
-                <i class="fab fa-spotify" aria-hidden="true"></i>
-                Ouvir no Spotify
-            </a>
+            <!-- ===== 4 ÍCONES UNIFICADOS (Sem sublinhado) ===== -->
+            <div class="ad-social-links">
+                <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" target="_blank" rel="noopener noreferrer" class="ad-social-icon spotify" aria-label="Spotify" title="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a href="https://www.youtube.com/@josephmatthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon youtube" aria-label="YouTube" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://tiktok.com/@joseph.matthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon tiktok" aria-label="TikTok" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61593112378384" target="_blank" rel="noopener noreferrer" class="ad-social-icon facebook" aria-label="Facebook" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
         </div>
         
         <!-- ===== ÍCONE MINIMIZADO ===== -->
