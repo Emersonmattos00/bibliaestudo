@@ -13,8 +13,6 @@
   <meta name="author" content="Emerson José de Mello Mattos" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta name="revisit-after" content="7 days" />
-  <!-- [MELHORIA] Comentado para evitar erro de validação. Substitua SEU_CODIGO pelo real -->
-  <!-- <meta name="google-site-verification" content="SEU_CODIGO_DE_VERIFICACAO" /> -->
   
   <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:title" content="Plataforma de Estudos Bíblicos | Bíblia Sagrada Digital" />
@@ -104,12 +102,7 @@
     /* ============================================
        ESTILOS BASE
     ============================================ */
-    * {
-      font-family: var(--font-family);
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { font-family: var(--font-family); margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: var(--font-family);
@@ -133,361 +126,140 @@
     /* ============================================
        FOCUS INDICATOR - Acessibilidade
     ============================================ */
-    *:focus-visible {
-      outline: 3px solid var(--gold);
-      outline-offset: 2px;
-      border-radius: 4px;
-    }
+    *:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
 
     /* ============================================
        SKIP LINK
     ============================================ */
     .skip-link {
-      position: absolute;
-      top: -100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--gold);
-      color: var(--primary-dark);
-      padding: 12px 24px;
-      border-radius: 0 0 8px 8px;
-      font-weight: bold;
-      z-index: 999999;
-      text-decoration: none;
-      transition: top 0.3s ease;
+      position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
+      background: var(--gold); color: var(--primary-dark); padding: 12px 24px;
+      border-radius: 0 0 8px 8px; font-weight: bold; z-index: 999999;
+      text-decoration: none; transition: top 0.3s ease;
     }
-
-    .skip-link:focus {
-      top: 0;
-    }
+    .skip-link:focus { top: 0; }
 
     /* ============================================
        MENU LATERAL
-       [MELHORIA] Removido !important desnecessário onde a especificidade já basta
     ============================================ */
     .side-nav {
-      position: fixed;
-      top: 50%;
-      left: 12px;
-      transform: translateY(-50%);
-      z-index: 10000;
-      background: rgba(20, 30, 20, 0.75);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 16px;
-      padding: 12px 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      box-shadow: 4px 0 30px rgba(0,0,0,0.6);
-      border: 1px solid rgba(255, 217, 102, 0.15);
+      position: fixed; top: 50%; left: 12px; transform: translateY(-50%);
+      z-index: 10000; background: rgba(20, 30, 20, 0.75);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px; padding: 12px 10px; display: flex;
+      flex-direction: column; align-items: center; gap: 6px;
+      box-shadow: 4px 0 30px rgba(0,0,0,0.6); border: 1px solid rgba(255, 217, 102, 0.15);
     }
 
     .side-nav a {
-      color: #c5a47a;
-      text-decoration: none;
-      padding: 10px 12px;
-      border-radius: 10px;
-      transition: all var(--transition);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      position: relative;
-      width: 44px;
-      height: 44px;
+      color: #c5a47a; text-decoration: none; padding: 10px 12px;
+      border-radius: 10px; transition: all var(--transition);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; position: relative; width: 44px; height: 44px;
     }
 
-    .side-nav a i {
-      font-size: 20px;
-      transition: all var(--transition);
-    }
+    .side-nav a i { font-size: 20px; transition: all var(--transition); }
 
     .side-nav a .tooltip {
-      position: absolute;
-      left: 58px;
-      background: rgba(20, 30, 20, 0.92);
-      backdrop-filter: blur(8px);
-      color: #ffd966;
-      padding: 6px 14px;
-      border-radius: 8px;
-      font-size: 13px;
-      font-weight: 500;
-      white-space: nowrap;
-      opacity: 0;
-      visibility: hidden;
-      transform: scale(0.8);
-      transition: all 0.25s ease;
-      border: 1px solid rgba(255, 217, 102, 0.2);
-      letter-spacing: 0.3px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      position: absolute; left: 58px; background: rgba(20, 30, 20, 0.92);
+      backdrop-filter: blur(8px); color: #ffd966; padding: 6px 14px;
+      border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap;
+      opacity: 0; visibility: hidden; transform: scale(0.8);
+      transition: all 0.25s ease; border: 1px solid rgba(255, 217, 102, 0.2);
+      letter-spacing: 0.3px; box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
 
     .side-nav a .tooltip::after {
-      content: '';
-      position: absolute;
-      left: -8px;
-      top: 50%;
-      transform: translateY(-50%);
-      border-right: 8px solid rgba(20, 30, 20, 0.92);
-      border-top: 6px solid transparent;
-      border-bottom: 6px solid transparent;
-      border-left: none;
+      content: ''; position: absolute; left: -8px; top: 50%;
+      transform: translateY(-50%); border-right: 8px solid rgba(20, 30, 20, 0.92);
+      border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: none;
     }
 
-    .side-nav a:hover {
-      background: rgba(255, 217, 102, 0.12);
-      transform: scale(1.05);
-    }
-
-    .side-nav a:hover i {
-      color: #ffd966;
-      transform: scale(1.1);
-    }
-
-    .side-nav a:hover .tooltip {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1);
-    }
-
-    .side-nav a.active {
-      background: rgba(255, 217, 102, 0.15);
-      border: 1px solid rgba(255, 217, 102, 0.25);
-    }
-
-    .side-nav a.active i {
-      color: #ffd966;
-    }
-
-    .side-nav .divider {
-      width: 30px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255, 217, 102, 0.2), transparent);
-      margin: 4px 0;
-    }
+    .side-nav a:hover { background: rgba(255, 217, 102, 0.12); transform: scale(1.05); }
+    .side-nav a:hover i { color: #ffd966; transform: scale(1.1); }
+    .side-nav a:hover .tooltip { opacity: 1; visibility: visible; transform: scale(1); }
+    .side-nav a.active { background: rgba(255, 217, 102, 0.15); border: 1px solid rgba(255, 217, 102, 0.25); }
+    .side-nav a.active i { color: #ffd966; }
+    .side-nav .divider { width: 30px; height: 1px; background: linear-gradient(90deg, transparent, rgba(255, 217, 102, 0.2), transparent); margin: 4px 0; }
 
     /* ============================================
        CONTEÚDO PRINCIPAL
     ============================================ */
-    .main-content {
-      max-width: 1600px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-      padding: 0 20px 0 80px;
-    }
-
-    .bible-header {
-      text-align: center;
-      margin-bottom: 40px;
-      color: white;
-      position: relative;
-      z-index: 2;
-      padding: 30px 0;
-    }
-
-    .bible-header .tagline {
-      font-size: 18px;
-      font-style: italic;
-      opacity: 0.95;
-      margin-bottom: 10px;
-      color: var(--gold);
-    }
+    .main-content { max-width: 1600px; margin: 0 auto; position: relative; z-index: 1; padding: 0 20px 0 80px; }
+    .bible-header { text-align: center; margin-bottom: 40px; color: white; position: relative; z-index: 2; padding: 30px 0; }
+    .bible-header .tagline { font-size: 18px; font-style: italic; opacity: 0.95; margin-bottom: 10px; color: var(--gold); }
 
     /* ============================================
        BREADCRUMB
     ============================================ */
-    .breadcrumb {
-      padding: 10px 0;
-      margin-bottom: 20px;
-      color: var(--text-light);
-      font-size: 14px;
-    }
-
-    .breadcrumb ol {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .breadcrumb li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .breadcrumb li::after {
-      content: '›';
-      color: var(--gold);
-      font-size: 18px;
-    }
-
-    .breadcrumb li:last-child::after {
-      display: none;
-    }
-
-    .breadcrumb a {
-      color: var(--gold);
-      text-decoration: none;
-      transition: color var(--transition);
-    }
-
-    .breadcrumb a:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-
-    .breadcrumb [aria-current="page"] {
-      color: #ffffff;
-      font-weight: 600;
-    }
+    .breadcrumb { padding: 10px 0; margin-bottom: 20px; color: var(--text-light); font-size: 14px; }
+    .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .breadcrumb li { display: flex; align-items: center; gap: 8px; }
+    .breadcrumb li::after { content: '›'; color: var(--gold); font-size: 18px; }
+    .breadcrumb li:last-child::after { display: none; }
+    .breadcrumb a { color: var(--gold); text-decoration: none; transition: color var(--transition); }
+    .breadcrumb a:hover { color: #ffffff; text-decoration: underline; }
+    .breadcrumb [aria-current="page"] { color: #ffffff; font-weight: 600; }
 
     /* ============================================
        ESTANTE
-       [MELHORIA] CSS Unificado e Limpo (Removida duplicação)
     ============================================ */
-    .linha-divisoria {
-      height: 4px;
-      background: linear-gradient(90deg, var(--gold), #c5a47a);
-      margin: 0;
-    }
-
-    .linha-divisoria.at {
-      background: linear-gradient(90deg, var(--gold), #e67e22);
-    }
+    .linha-divisoria { height: 4px; background: linear-gradient(90deg, var(--gold), #c5a47a); margin: 0; }
+    .linha-divisoria.at { background: linear-gradient(90deg, var(--gold), #e67e22); }
 
     .livros-wrapper {
-      position: relative;
-      border-radius: 0 0 12px 12px;
-      background: none;
-      backdrop-filter: blur(5px);
-      overflow: hidden;
-      height: 450px; /* Altura fixa mantida */
+      position: relative; border-radius: 0 0 12px 12px; background: none;
+      backdrop-filter: blur(5px); overflow: hidden; height: 450px;
     }
 
     .livros-container {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      scroll-behavior: smooth;
-      padding: 30px;
-      gap: 20px;
-      height: 100%;
-      min-height: 320px;
-      scrollbar-width: thin;
-      scrollbar-color: var(--gold) transparent;
+      display: flex; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden;
+      scroll-behavior: smooth; padding: 30px; gap: 20px; height: 100%;
+      min-height: 320px; scrollbar-width: thin; scrollbar-color: var(--gold) transparent;
       align-items: flex-start;
     }
 
-    .livros-container::-webkit-scrollbar {
-      height: 6px;
-    }
-
-    .livros-container::-webkit-scrollbar-track {
-      background: rgba(197, 164, 122, 0.3);
-      border-radius: 10px;
-      margin: 0 20px;
-    }
-
-    .livros-container::-webkit-scrollbar-thumb {
-      background: linear-gradient(90deg, var(--gold), #e67e22);
-      border-radius: 10px;
-    }
-
-    .livros-container::-webkit-scrollbar-thumb:hover {
-      background: var(--gold-dark);
-    }
+    .livros-container::-webkit-scrollbar { height: 6px; }
+    .livros-container::-webkit-scrollbar-track { background: rgba(197, 164, 122, 0.3); border-radius: 10px; margin: 0 20px; }
+    .livros-container::-webkit-scrollbar-thumb { background: linear-gradient(90deg, var(--gold), #e67e22); border-radius: 10px; }
+    .livros-container::-webkit-scrollbar-thumb:hover { background: var(--gold-dark); }
 
     /* ============================================
        BOTÕES DE SCROLL
     ============================================ */
     .scroll-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 45px;
-      height: 45px;
-      background: rgba(20, 30, 20, 0.8);
-      backdrop-filter: blur(8px);
-      border-radius: 50%;
-      color: var(--gold);
-      font-size: 20px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all var(--transition);
-      z-index: 10;
-      border: 1px solid rgba(255, 217, 102, 0.2);
-      outline: none;
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 45px; height: 45px; background: rgba(20, 30, 20, 0.8);
+      backdrop-filter: blur(8px); border-radius: 50%; color: var(--gold);
+      font-size: 20px; cursor: pointer; display: flex; align-items: center;
+      justify-content: center; transition: all var(--transition); z-index: 10;
+      border: 1px solid rgba(255, 217, 102, 0.2); outline: none;
     }
-
-    .scroll-btn:hover {
-      background: rgba(20, 30, 20, 0.95);
-      font-size: 28px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-      border-color: var(--gold);
-    }
-
-    .scroll-btn:focus-visible {
-      outline: 3px solid var(--gold);
-      outline-offset: 2px;
-    }
-
-    .scroll-btn.hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
-
+    .scroll-btn:hover { background: rgba(20, 30, 20, 0.95); font-size: 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); border-color: var(--gold); }
+    .scroll-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+    .scroll-btn.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
     .scroll-left { left: 12px; }
     .scroll-right { right: 12px; }
 
     /* ============================================
-       CARDS DOS LIVROS - COM HOVER REVELANDO INFO
+       CARDS DOS LIVROS
     ============================================ */
     .card-livro {
-      flex: 0 0 auto;
-      width: 230px;
-      cursor: pointer;
-      background: var(--card-bg);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: all var(--transition);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      border: 1px solid rgba(197, 164, 122, 0.3);
-      position: relative;
-      will-change: transform;
+      flex: 0 0 auto; width: 230px; cursor: pointer; background: var(--card-bg);
+      border-radius: 12px; overflow: hidden; transition: all var(--transition);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 1px solid rgba(197, 164, 122, 0.3);
+      position: relative; will-change: transform;
     }
-
-    .card-livro:hover {
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-      border-color: var(--gold);
-    }
-
-    .card-livro:focus-visible {
-      outline: 3px solid var(--gold);
-      outline-offset: 2px;
-    }
+    .card-livro:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.3); border-color: var(--gold); }
+    .card-livro:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
     .card-capa-modulo {
-      height: 286px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 48px;
-      color: var(--gold);
+      height: 286px; display: flex; align-items: center; justify-content: center;
+      font-size: 48px; color: var(--gold);
       background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      position: relative;
-      transition: all var(--transition);
+      position: relative; transition: all var(--transition);
     }
 
-    /* Capas específicas */
     .card-capa-modulo.completa { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
     .card-capa-modulo.biblia { background: url('assets/capa/biblesagrada.webp'); background-size: cover; }
     .card-capa-modulo.comentada { background: url('assets/capa/comentada.webp'); background-size: cover; }
@@ -498,456 +270,205 @@
     .card-capa-modulo.cantor { background: url('assets/capa/cantor.webp'); background-size: cover; }
     .card-capa-modulo.cristologia { background: url('assets/capa/enciclopedia.webp'); background-size: cover; }
 
-    .card-capa-modulo.completa i,
-    .card-capa-modulo.biblia i,
-    .card-capa-modulo.comentada i,
-    .card-capa-modulo.original i,
-    .card-capa-modulo.apologetica i,
-    .card-capa-modulo.enciclopedia i,
-    .card-capa-modulo.harpa i,
-    .card-capa-modulo.cantor i,
-    .card-capa-modulo.cristologia i {
-      display: none;
-    }
+    .card-capa-modulo.completa i, .card-capa-modulo.biblia i, .card-capa-modulo.comentada i,
+    .card-capa-modulo.original i, .card-capa-modulo.apologetica i, .card-capa-modulo.enciclopedia i,
+    .card-capa-modulo.harpa i, .card-capa-modulo.cantor i, .card-capa-modulo.cristologia i { display: none; }
 
-    /* ===== CARD INFO - OCULTO POR PADRÃO ===== */
     .card-info {
-      padding: 12px;
-      text-align: center;
-      background: rgba(3, 168, 160, 0.212);
-      border: 1px solid rgba(197, 164, 122, 0.3);
-      color: var(--text-light);
-      max-height: 0;
-      opacity: 0;
-      padding: 0 12px;
-      overflow: hidden;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      transform: translateY(-10px);
-      border: none;
+      padding: 12px; text-align: center; background: rgba(3, 168, 160, 0.212);
+      border: 1px solid rgba(197, 164, 122, 0.3); color: var(--text-light);
+      max-height: 0; opacity: 0; padding: 0 12px; overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transform: translateY(-10px); border: none;
     }
 
     .card-livro:hover .card-info {
-      max-height: 150px;
-      opacity: 1;
-      padding: 12px;
-      border: 1px solid rgba(197, 164, 122, 0.3);
-      transform: translateY(0);
+      max-height: 150px; opacity: 1; padding: 12px;
+      border: 1px solid rgba(197, 164, 122, 0.3); transform: translateY(0);
     }
 
     .card-livro:hover .card-capa-modulo::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
       background: linear-gradient(135deg, rgba(255, 217, 102, 0.1), rgba(255, 217, 102, 0.05));
-      border-radius: 0;
-      pointer-events: none;
+      border-radius: 0; pointer-events: none;
     }
 
-    .card-titulo {
-      font-weight: bold;
-      color: var(--cream);
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
-
-    .card-autor {
-      font-size: 10px;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 600;
-    }
-
-    .card-capitulos {
-      font-size: 11px;
-      color: #8bc34a;
-      margin-top: 5px;
-    }
+    .card-titulo { font-weight: bold; color: var(--cream); font-size: 16px; margin-bottom: 4px; }
+    .card-autor { font-size: 10px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    .card-capitulos { font-size: 11px; color: #8bc34a; margin-top: 5px; }
 
     /* ============================================
        ESTANTE HEADER
-       [MELHORIA] Transformado em BUTTON para acessibilidade nativa
     ============================================ */
     button.estante-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      padding: 20px 0;
-      width: 100%;
-      background: none;
-      border: none;
-      cursor: pointer;
-      user-select: none;
-      color: var(--text-light);
-      transition: opacity var(--transition);
-      text-align: left;
+      display: flex; align-items: center; gap: 15px; padding: 20px 0;
+      width: 100%; background: none; border: none; cursor: pointer;
+      user-select: none; color: var(--text-light); transition: opacity var(--transition); text-align: left;
     }
-
-    button.estante-header:hover {
-      opacity: 0.8;
-    }
-
-    button.estante-header:focus-visible {
-      outline: 3px solid var(--gold);
-      outline-offset: 4px;
-      border-radius: 8px;
-    }
-
-    .estante-icon {
-      font-size: 24px;
-      color: var(--gold);
-    }
-
-    .estante-title {
-      font-weight: bold;
-      font-size: 40px;
-      margin: 0;
-      color: var(--text-light);
-      flex-grow: 1; /* Ocupa o espaço disponível */
-    }
-
-    .estante-subtitle {
-      font-size: 14px;
-      opacity: 0.7;
-      color: var(--gold);
-    }
-
-    .estante-toggle {
-      margin-left: auto;
-      font-size: 18px;
-      transition: transform var(--transition);
-      color: var(--gold);
-    }
+    button.estante-header:hover { opacity: 0.8; }
+    button.estante-header:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; border-radius: 8px; }
+    .estante-icon { font-size: 24px; color: var(--gold); }
+    .estante-title { font-weight: bold; font-size: 40px; margin: 0; color: var(--text-light); flex-grow: 1; }
+    .estante-subtitle { font-size: 14px; opacity: 0.7; color: var(--gold); }
+    .estante-toggle { margin-left: auto; font-size: 18px; transition: transform var(--transition); color: var(--gold); }
 
     /* ============================================
        BACK TO TOP
     ============================================ */
     .back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 20px;
-      background: var(--gold);
-      color: var(--primary-dark);
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      font-size: 20px;
-      cursor: pointer;
-      opacity: 0;
-      visibility: hidden;
-      transition: all var(--transition);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      z-index: 9999;
+      position: fixed; bottom: 30px; right: 20px; background: var(--gold);
+      color: var(--primary-dark); border: none; border-radius: 50%;
+      width: 50px; height: 50px; font-size: 20px; cursor: pointer;
+      opacity: 0; visibility: hidden; transition: all var(--transition);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3); z-index: 9999;
     }
-
-    .back-to-top.visible {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .back-to-top:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 30px rgba(255, 217, 102, 0.3);
-    }
-
-    .back-to-top:focus-visible {
-      outline: 3px solid var(--primary-dark);
-      outline-offset: 2px;
-    }
+    .back-to-top.visible { opacity: 1; visibility: visible; }
+    .back-to-top:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(255, 217, 102, 0.3); }
+    .back-to-top:focus-visible { outline: 3px solid var(--primary-dark); outline-offset: 2px; }
 
     /* ============================================
        READING PROGRESS
     ============================================ */
-    .reading-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: transparent;
-      z-index: 99999;
-    }
-
-    .reading-progress .progress-bar {
-      height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, var(--gold), #e67e22);
-      transition: width 0.1s ease;
-    }
+    .reading-progress { position: fixed; top: 0; left: 0; width: 100%; height: 4px; background: transparent; z-index: 99999; }
+    .reading-progress .progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold), #e67e22); transition: width 0.1s ease; }
 
     /* ============================================
        TOAST NOTIFICATION
     ============================================ */
     .toast-notification {
-      position: fixed;
-      bottom: 100px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: rgba(20, 30, 20, 0.95);
-      backdrop-filter: blur(8px);
-      color: var(--gold);
-      padding: 14px 28px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 217, 102, 0.2);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-      z-index: 99999;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.4s ease;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-family: var(--font-family);
-      max-width: 90%;
+      position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(20px);
+      background: rgba(20, 30, 20, 0.95); backdrop-filter: blur(8px); color: var(--gold);
+      padding: 14px 28px; border-radius: 12px; border: 1px solid rgba(255, 217, 102, 0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4); z-index: 99999; opacity: 0;
+      visibility: hidden; transition: all 0.4s ease; display: flex; align-items: center;
+      gap: 12px; font-family: var(--font-family); max-width: 90%;
     }
-
-    .toast-notification.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(-50%) translateY(0);
-    }
-
+    .toast-notification.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
     .toast-notification.success i { color: #4caf50; }
     .toast-notification.error i { color: #ff6b6b; }
     .toast-notification.info i { color: var(--gold); }
 
     /* ============================================
        CONTADOR DE VISUALIZAÇÕES
-       [MELHORIA] Adicionado ao HTML e ajustado para evitar sobreposição
     ============================================ */
     .view-counter {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(20, 30, 20, 0.6);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255, 217, 102, 0.1);
-      border-radius: 20px;
-      padding: 6px 16px;
-      color: var(--text-light);
-      font-size: 11px;
-      font-family: var(--font-family);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      opacity: 0.8;
-      transition: all 0.3s ease;
-      z-index: 9998;
-      user-select: none;
-      pointer-events: auto;
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      background: rgba(20, 30, 20, 0.6); backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 217, 102, 0.1); border-radius: 20px;
+      padding: 6px 16px; color: var(--text-light); font-size: 11px;
+      font-family: var(--font-family); display: flex; align-items: center;
+      gap: 8px; opacity: 0.8; transition: all 0.3s ease; z-index: 9998;
+      user-select: none; pointer-events: auto;
     }
-
-    .view-counter:hover {
-      opacity: 1;
-      background: rgba(20, 30, 20, 0.9);
-      border-color: rgba(255, 217, 102, 0.3);
-    }
-
-    .view-counter i {
-      color: var(--gold);
-      font-size: 12px;
-    }
-
-    .view-counter .count-number {
-      font-weight: 600;
-      color: var(--gold);
-      min-width: 30px;
-      text-align: center;
-    }
-
-    .view-counter .count-label {
-      opacity: 0.8;
-      font-size: 10px;
-    }
+    .view-counter:hover { opacity: 1; background: rgba(20, 30, 20, 0.9); border-color: rgba(255, 217, 102, 0.3); }
+    .view-counter i { color: var(--gold); font-size: 12px; }
+    .view-counter .count-number { font-weight: 600; color: var(--gold); min-width: 30px; text-align: center; }
+    .view-counter .count-label { opacity: 0.8; font-size: 10px; }
 
     /* ============================================
-       ANÚNCIO - PLAYLIST DO SPOTIFY
-       [MELHORIA] Ajuste de z-index e posição para mobile
+       ANÚNCIO - REDES SOCIAIS UNIFICADAS (4 ÍCONES)
     ============================================ */
     .ad-container {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 9997; /* Abaixo do back-to-top (9999) e view-counter (9998) */
-      max-width: 250px;
-      width: 100%;
-      background: rgba(20, 30, 20, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 16px;
-      padding: 16px;
-      border: 1px solid rgba(255, 217, 102, 0.15);
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: fixed; bottom: 20px; right: 20px; z-index: 9997;
+      max-width: 250px; width: 100%; background: rgba(20, 30, 20, 0.92);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px; padding: 16px; border: 1px solid rgba(255, 217, 102, 0.15);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .ad-container.minimized {
-      max-width: 56px;
-      padding: 8px;
-      border-radius: 50%;
-      cursor: pointer;
-      overflow: hidden;
-    }
+    .ad-container.minimized { max-width: 56px; padding: 8px; border-radius: 50%; cursor: pointer; overflow: hidden; }
+    .ad-container.minimized .ad-content > *:not(.ad-minimized-icon),
+    .ad-container.minimized .ad-social-links { display: none !important; }
+    .ad-container.minimized .ad-minimized-icon { display: flex !important; }
 
-    .ad-container.minimized .ad-content > *:not(.ad-minimized-icon) {
-      display: none;
-    }
+    .ad-container:hover { border-color: rgba(255, 217, 102, 0.3); box-shadow: 0 8px 48px rgba(255, 217, 102, 0.08); }
+    .ad-container.minimized:hover { border-color: rgba(255, 217, 102, 0.3); transform: scale(1.05); }
 
-    .ad-container.minimized .ad-minimized-icon {
-      display: flex !important;
-    }
-
-    .ad-container:hover {
-      border-color: rgba(255, 217, 102, 0.3);
-      box-shadow: 0 8px 48px rgba(255, 217, 102, 0.08);
-    }
-
-    .ad-container.minimized:hover {
-      border-color: rgba(255, 217, 102, 0.3);
-      transform: scale(1.05);
-    }
-
-    .ad-content {
-      text-align: center;
-      color: var(--text-light);
-    }
-
-    .ad-content .ad-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #1DB954;
-      font-weight: 600;
-      margin-bottom: 6px;
-      display: block;
-    }
+    .ad-content { text-align: center; color: var(--text-light); }
+    .ad-content .ad-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #1DB954; font-weight: 600; margin-bottom: 6px; display: block; }
 
     .ad-playlist-image {
-      width: 100%;
-      max-width: 200px;
-      height: auto;
-      aspect-ratio: 1/1;
-      border-radius: 12px;
-      margin: 0 auto 10px;
-      display: block;
-      object-fit: cover;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      border: 2px solid rgba(255, 217, 102, 0.1);
+      width: 100%; max-width: 200px; height: auto; aspect-ratio: 1/1;
+      border-radius: 12px; margin: 0 auto 10px; display: block; object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); border: 2px solid rgba(255, 217, 102, 0.1);
       transition: all var(--transition);
     }
+    .ad-playlist-image:hover { transform: scale(1.02); border-color: rgba(255, 217, 102, 0.3); }
 
-    .ad-playlist-image:hover {
-      transform: scale(1.02);
-      border-color: rgba(255, 217, 102, 0.3);
+    .ad-content .ad-title { font-size: 16px; font-weight: 700; color: var(--cream); margin-bottom: 2px; }
+    .ad-content .ad-description { font-size: 12px; opacity: 0.8; margin-bottom: 12px; line-height: 1.4; }
+    .ad-content .ad-description span { display: block; font-size: 11px; opacity: 0.6; margin-top: 2px; }
+
+    /* --- NOVO: 4 Ícones de Redes Sociais Unificados --- */
+    .ad-social-links {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
     }
 
-    .ad-content .ad-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--cream);
-      margin-bottom: 2px;
-    }
-
-    .ad-content .ad-description {
-      font-size: 12px;
-      opacity: 0.8;
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
-
-    .ad-content .ad-description span {
-      display: block;
-      font-size: 11px;
-      opacity: 0.6;
-      margin-top: 2px;
-    }
-
-    .ad-content iframe {
-      border-radius: 12px;
-      margin: 8px 0;
-      width: 100%;
-      height: 80px;
-      border: none;
-    }
-
-    .ad-content .ad-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #1DB954;
-      color: #fff;
-      padding: 8px 20px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 13px;
-      transition: all var(--transition);
-      border: none;
-      cursor: pointer;
-      margin-top: 4px;
-    }
-
-    .ad-content .ad-button:hover {
-      transform: scale(1.04);
-      box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
-      background: #1ed760;
-    }
-
-    .ad-content .ad-button i { font-size: 14px; }
-
-    .ad-minimized-icon {
-      display: none !important;
+    .ad-social-icon {
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: 40px;
-      height: 40px;
-      font-size: 24px;
-      color: #1DB954;
-      background: rgba(20, 30, 20, 0.92);
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--gold);
+      font-size: 20px;
+      text-decoration: none !important; /* GARANTIA: Sem sublinhado */
+      transition: all var(--transition);
+      border: 1px solid rgba(255, 217, 102, 0.2);
     }
 
+    .ad-social-icon:hover {
+      transform: translateY(-4px) scale(1.1);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .ad-social-icon.spotify:hover {
+      background: #1DB954;
+      box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5);
+    }
+
+    .ad-social-icon.youtube:hover {
+      background: #FF0000;
+      box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+    }
+
+    .ad-social-icon.tiktok:hover {
+      background: #010101;
+      border-color: #00f2ea;
+      box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
+    }
+
+    .ad-social-icon.facebook:hover {
+      background: #1877F2;
+      box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
+    }
+    /* ------------------------------------------ */
+
+    .ad-minimized-icon {
+      display: none !important; align-items: center; justify-content: center;
+      width: 40px; height: 40px; font-size: 24px; color: #1DB954;
+      background: rgba(20, 30, 20, 0.92); border-radius: 50%;
+    }
     .ad-minimized-icon i { font-size: 28px; }
 
     .ad-close {
-      position: absolute;
-      top: 8px;
-      right: 12px;
-      background: none;
-      border: none;
-      color: rgba(255, 255, 255, 0.3);
-      font-size: 18px;
-      cursor: pointer;
-      transition: all var(--transition);
-      padding: 4px;
-      line-height: 1;
-      z-index: 10;
+      position: absolute; top: 8px; right: 12px; background: none; border: none;
+      color: rgba(255, 255, 255, 0.3); font-size: 18px; cursor: pointer;
+      transition: all var(--transition); padding: 4px; line-height: 1; z-index: 10;
     }
-
-    .ad-close:hover {
-      color: #ff6b6b;
-      transform: scale(1.1);
-    }
-
+    .ad-close:hover { color: #ff6b6b; transform: scale(1.1); }
     .ad-container.minimized .ad-close { display: none; }
 
     .ad-expand-btn {
-      display: none;
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      width: 100%; height: 100%;
-      border-radius: 50%;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      z-index: 5;
+      display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      width: 100%; height: 100%; border-radius: 50%; background: transparent;
+      border: none; cursor: pointer; z-index: 5;
     }
-
     .ad-container.minimized .ad-expand-btn { display: block; }
 
     /* ============================================
@@ -955,25 +476,17 @@
     ============================================ */
     .skeleton {
       background: linear-gradient(90deg, #f0e6d5 25%, #e4d5b8 50%, #f0e6d5 75%);
-      background-size: 200% 100%;
-      animation: skeleton-loading 1.5s ease-in-out infinite;
-      border-radius: 8px;
+      background-size: 200% 100%; animation: skeleton-loading 1.5s ease-in-out infinite; border-radius: 8px;
     }
-
-    @keyframes skeleton-loading {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
+    @keyframes skeleton-loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 
     /* ============================================
        PREFERS-REDUCED-MOTION
     ============================================ */
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important; scroll-behavior: auto !important;
       }
       .card-livro { transition: none !important; }
       .card-livro:hover { transform: none !important; }
@@ -981,7 +494,6 @@
 
     /* ============================================
        RESPONSIVIDADE
-       [MELHORIA] Ajuste fino de sobreposição em telas pequenas
     ============================================ */
     @media (max-width: 768px) {
       .card-livro { width: 180px; }
@@ -999,14 +511,12 @@
       .breadcrumb { font-size: 12px; }
       .toast-notification { bottom: 80px; font-size: 14px; padding: 12px 20px; }
       
-      /* Ajuste para não cobrir o botão de topo */
       .ad-container { max-width: 290px; bottom: 80px; right: 15px; padding: 14px; }
       .ad-container.minimized { max-width: 50px; padding: 6px; }
       .ad-playlist-image { max-width: 160px; }
       .ad-content .ad-title { font-size: 14px; }
       .ad-content .ad-description { font-size: 11px; }
-      .ad-content iframe { height: 72px; }
-      .ad-content .ad-button { font-size: 12px; padding: 6px 16px; }
+      .ad-social-icon { width: 38px; height: 38px; font-size: 18px; }
       .ad-minimized-icon { width: 38px; height: 38px; font-size: 20px; }
       .ad-minimized-icon i { font-size: 24px; }
       .view-counter { bottom: 15px; font-size: 10px; padding: 4px 12px; }
@@ -1024,35 +534,19 @@
       .estante-title { font-size: 16px; }
       .toast-notification { font-size: 13px; padding: 10px 16px; bottom: 70px; }
       
-      /* [MELHORIA] Reposicionamento agressivo para telas muito pequenas */
-      .ad-container { 
-        max-width: 230px; 
-        bottom: 95px; /* Sobe acima do back-to-top */
-        right: 10px; 
-        padding: 12px; 
-        border-radius: 12px; 
-      }
-      .ad-container.minimized { 
-        max-width: 44px; 
-        padding: 5px; 
-        bottom: 95px; 
-        right: 12px; 
-      }
+      .ad-container { max-width: 230px; bottom: 95px; right: 10px; padding: 12px; border-radius: 12px; }
+      .ad-container.minimized { max-width: 44px; padding: 5px; bottom: 95px; right: 12px; }
       .ad-playlist-image { max-width: 120px; margin-bottom: 8px; }
       .ad-content .ad-title { font-size: 13px; }
       .ad-content .ad-description { font-size: 10px; margin-bottom: 6px; }
       .ad-content .ad-description span { font-size: 10px; }
-      .ad-content iframe { height: 64px; margin: 6px 0; }
-      .ad-content .ad-button { font-size: 11px; padding: 5px 14px; gap: 5px; }
+      .ad-social-links { gap: 8px; }
+      .ad-social-icon { width: 36px; height: 36px; font-size: 16px; }
       .ad-close { font-size: 15px; top: 5px; right: 8px; }
       .ad-minimized-icon { width: 34px; height: 34px; font-size: 18px; }
       .ad-minimized-icon i { font-size: 20px; }
       
-      .view-counter { 
-        bottom: 12px; 
-        font-size: 9px; 
-        padding: 3px 10px; 
-      }
+      .view-counter { bottom: 12px; font-size: 9px; padding: 3px 10px; }
       .view-counter .count-number { min-width: 20px; }
     }
 
@@ -1076,79 +570,34 @@
       <i class="fas fa-home" aria-hidden="true"></i>
       <span class="tooltip" style="text-align: center;">Início</span>
     </a>
-    
     <div class="divider" role="separator"></div>
-    
-    <a href="bibliasagrada.html" title="Bíblia Completa">
-      <i class="fas fa-bible" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Bíblia<br>Sagrada</span>
-    </a>
-    
-    <a href="comentada.html" title="Bíblia Comentada versículo a versículo">
-      <i class="fas fa-comment-dots" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Bíblia<br>Comentada</span>
-    </a>
-    
-    <a href="original.html" title="Hebraico, Grego e Latim">
-      <i class="fas fa-scroll" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Textos<br>Originais</span>
-    </a>
-    
-    <a href="apologetica.html" title="Bíblia em Defesa da Fé">
-      <i class="fas fa-shield-alt" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Bíblia<br>Apologética</span>
-    </a>
-    
+    <a href="bibliasagrada.html" title="Bíblia Completa"><i class="fas fa-bible" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Bíblia<br>Sagrada</span></a>
+    <a href="comentada.html" title="Bíblia Comentada versículo a versículo"><i class="fas fa-comment-dots" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Bíblia<br>Comentada</span></a>
+    <a href="original.html" title="Hebraico, Grego e Latim"><i class="fas fa-scroll" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Textos<br>Originais</span></a>
+    <a href="apologetica.html" title="Bíblia em Defesa da Fé"><i class="fas fa-shield-alt" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Bíblia<br>Apologética</span></a>
     <div class="divider" role="separator"></div>
-    
-    <a href="cristologia.html" title="Estude com a Enciclopédia Cristológica">
-      <i class="fas fa-cross" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Enciclopédia<br>Cristológica</span>
-    </a>
-    
-    <a href="enciclopedia.html" title="Estude com a Enciclopédia">
-      <i class="fas fa-book-open" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Enciclopédia<br>Bíblica</span>
-    </a>
-    
+    <a href="cristologia.html" title="Estude com a Enciclopédia Cristológica"><i class="fas fa-cross" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Enciclopédia<br>Cristológica</span></a>
+    <a href="enciclopedia.html" title="Estude com a Enciclopédia"><i class="fas fa-book-open" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Enciclopédia<br>Bíblica</span></a>
     <div class="divider" role="separator"></div>
-    
-    <a href="harpa.html" title="Hinos das Assembléias de Deus">
-      <i class="fas fa-music" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span>
-    </a>
-    
-    <a href="cantor.html" title="Hinos Clássicos Batistas">
-      <i class="fas fa-microphone-alt" aria-hidden="true"></i>
-      <span class="tooltip">Cantor<br>Cristão</span>
-    </a>
-    
+    <a href="harpa.html" title="Hinos das Assembléias de Deus"><i class="fas fa-music" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Harpa<br>Cristã</span></a>
+    <a href="cantor.html" title="Hinos Clássicos Batistas"><i class="fas fa-microphone-alt" aria-hidden="true"></i><span class="tooltip">Cantor<br>Cristão</span></a>
     <div class="divider" role="separator"></div>
-    
-    <a href="apoiar.html" title="Apoie o Projeto">
-      <i class="fas fa-heart" aria-hidden="true"></i>
-      <span class="tooltip" style="text-align: center;">Apoiar</span>
-    </a>
+    <a href="apoiar.html" title="Apoie o Projeto"><i class="fas fa-heart" aria-hidden="true"></i><span class="tooltip" style="text-align: center;">Apoiar</span></a>
   </nav>
 
   <!-- ===== CONTEÚDO PRINCIPAL ===== -->
   <main class="main-content" id="main-content" role="main">
-
     <header class="bible-header">
       <p class="tagline">"Lâmpada para os meus pés é tua palavra, e luz para o meu caminho" - Salmos 119:105</p>
     </header>
     
-    <!-- ===== ESTANTE DE RECURSOS ===== -->
     <section class="estante-section" aria-label="Recursos de estudo bíblico">
-      <!-- [MELHORIA] Transformado em BUTTON para acessibilidade e removido onclick inline -->
       <button class="estante-header" id="toggleRecursos" aria-expanded="true" aria-controls="estante-recursos">
         <h1 class="estante-title">PLATAFORMA DE ESTUDO BÍBLICO DIGITAL</h1>
         <span class="estante-toggle" aria-hidden="true">▼</span>
       </button>
-      
       <div class="linha-divisoria at"></div>
       <div class="livros-wrapper" id="wrapper-recursos">
-        <!-- [MELHORIA] Removido onclick inline. O JS captura pelo ID -->
         <button class="scroll-btn scroll-left hidden" id="scroll-left-recursos" aria-label="Rolar para esquerda">
           <i class="fas fa-chevron-left" aria-hidden="true"></i>
         </button>
@@ -1159,7 +608,6 @@
       </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
     <footer role="contentinfo">
       <p><i class="fas fa-heart" aria-hidden="true"></i> Soli Deo Gloria | <i>Louvado e Exaltado seja o Nome de Deus!</i> <i class="fas fa-heart" aria-hidden="true"></i></p>
       <p style="margin-top: 8px;">Idealizado pelo Pastor Emerson José de Mello Mattos | ADAMRV</p>
@@ -1179,39 +627,37 @@
   </div>
 
   <!-- ============================================ -->
-  <!-- ===== ANÚNCIO - PLAYLIST DO SPOTIFY ===== -->
+  <!-- ===== ANÚNCIO - 4 ÍCONES DE REDES SOCIAIS ===== -->
   <!-- ============================================ -->
-  <div class="ad-container" id="adContainer" role="complementary" aria-label="Playlist do Spotify">
-    <button class="ad-close" id="adClose" aria-label="Minimizar playlist">
+  <div class="ad-container" id="adContainer" role="complementary" aria-label="Redes Sociais Joseph Matthos">
+    <button class="ad-close" id="adClose" aria-label="Minimizar">
       <i class="fas fa-minus" aria-hidden="true"></i>
     </button>
-    <button class="ad-expand-btn" id="adExpand" aria-label="Expandir playlist" style="display: none;"></button>
+    <button class="ad-expand-btn" id="adExpand" aria-label="Expandir" style="display: none;"></button>
     
     <div class="ad-content">
-      <span class="ad-label">🎧 Playlist Recomendada</span>
+      <span class="ad-label">🎧 Siga e Ouça</span>
       
-      <img 
-        src="assets/capa/josephmatthos.png" 
-        alt="Capa da playlist Joseph Matthos" 
-        class="ad-playlist-image"
-        loading="lazy"
-        width="150"
-        height="150"
-      />
+      <img src="assets/capa/josephmatthos.png" alt="Joseph Matthos" class="ad-playlist-image" loading="lazy" width="150" height="150" />
       
       <div class="ad-title">Joseph Matthos</div>
-      <div class="ad-description">
-        30 álbuns · Ouça no Spotify
+      <div class="ad-description">30 álbuns · Músicas e Louvores</div>
+
+      <!-- 4 Ícones Unificados (Sem sublinhado) -->
+      <div class="ad-social-links">
+        <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" target="_blank" rel="noopener noreferrer" class="ad-social-icon spotify" aria-label="Spotify" title="Spotify">
+          <i class="fab fa-spotify"></i>
+        </a>
+        <a href="https://www.youtube.com/@josephmatthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon youtube" aria-label="YouTube" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://tiktok.com/@joseph.matthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon tiktok" aria-label="TikTok" title="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61593112378384" target="_blank" rel="noopener noreferrer" class="ad-social-icon facebook" aria-label="Facebook" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
       </div>
-      
-      <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" 
-         class="ad-button" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         aria-label="Abrir playlist no Spotify">
-        <i class="fab fa-spotify" aria-hidden="true"></i>
-        Ouvir no Spotify
-      </a>
     </div>
     
     <div class="ad-minimized-icon">
@@ -1223,76 +669,25 @@
   <!-- SCRIPTS OTIMIZADOS                            -->
   <!-- ============================================ -->
   <script>
-    // ============================================
-    // CONTADOR DE VISUALIZAÇÕES
-    // ============================================
+    // (O JavaScript permanece exatamente o mesmo do seu código original otimizado)
     (function() {
       const STORAGE_KEY = 'biblia_view_count';
       const DISPLAY_ID = 'viewCount';
-      
-      function getViewCount() {
-        try {
-          const stored = localStorage.getItem(STORAGE_KEY);
-          return stored ? parseInt(stored, 10) || 0 : 0;
-        } catch (e) { return 0; }
-      }
-      
-      function incrementViewCount() {
-        const current = getViewCount();
-        const newCount = current + 1;
-        try { localStorage.setItem(STORAGE_KEY, String(newCount)); } catch (e) { return current; }
-        return newCount;
-      }
-      
-      function updateDisplay(count) {
-        const el = document.getElementById(DISPLAY_ID);
-        if (el) el.textContent = count.toLocaleString('pt-BR');
-      }
-      
-      function initViewCounter() {
-        const sessionKey = 'biblia_view_session';
-        let shouldIncrement = true;
-        try {
-          if (sessionStorage.getItem(sessionKey)) shouldIncrement = false;
-          else sessionStorage.setItem(sessionKey, '1');
-        } catch (e) {}
-        const count = shouldIncrement ? incrementViewCount() : getViewCount();
-        updateDisplay(count);
-      }
-      
-      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initViewCounter);
-      else initViewCounter();
+      function getViewCount() { try { const stored = localStorage.getItem(STORAGE_KEY); return stored ? parseInt(stored, 10) || 0 : 0; } catch (e) { return 0; } }
+      function incrementViewCount() { const current = getViewCount(); const newCount = current + 1; try { localStorage.setItem(STORAGE_KEY, String(newCount)); } catch (e) { return current; } return newCount; }
+      function updateDisplay(count) { const el = document.getElementById(DISPLAY_ID); if (el) el.textContent = count.toLocaleString('pt-BR'); }
+      function initViewCounter() { const sessionKey = 'biblia_view_session'; let shouldIncrement = true; try { if (sessionStorage.getItem(sessionKey)) shouldIncrement = false; else sessionStorage.setItem(sessionKey, '1'); } catch (e) {} const count = shouldIncrement ? incrementViewCount() : getViewCount(); updateDisplay(count); }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initViewCounter); else initViewCounter();
     })();
 
-    // ============================================
-    // MÓDULO DE GERENCIAMENTO DE ESTADO
-    // ============================================
     class AppState {
-      constructor() {
-        this.state = {
-          currentEstante: 'recursos',
-          scrollPositions: {},
-          isEstanteOpen: true,
-          adMinimized: false
-        };
-        this.loadState();
-      }
-      saveState() {
-        try { localStorage.setItem('biblia-app-state', JSON.stringify(this.state)); } catch (e) { console.warn('Erro ao salvar estado:', e); }
-      }
-      loadState() {
-        try {
-          const saved = localStorage.getItem('biblia-app-state');
-          if (saved) this.state = { ...this.state, ...JSON.parse(saved) };
-        } catch (e) { console.warn('Erro ao carregar estado:', e); }
-      }
+      constructor() { this.state = { currentEstante: 'recursos', scrollPositions: {}, isEstanteOpen: true, adMinimized: false }; this.loadState(); }
+      saveState() { try { localStorage.setItem('biblia-app-state', JSON.stringify(this.state)); } catch (e) { console.warn('Erro ao salvar estado:', e); } }
+      loadState() { try { const saved = localStorage.getItem('biblia-app-state'); if (saved) this.state = { ...this.state, ...JSON.parse(saved) }; } catch (e) { console.warn('Erro ao carregar estado:', e); } }
       get(key) { return this.state[key]; }
       set(key, value) { this.state[key] = value; this.saveState(); }
     }
 
-    // ============================================
-    // MÓDULO DE GERENCIAMENTO DE RECURSOS
-    // ============================================
     class ResourceManager {
       constructor() {
         this.cache = new Map();
@@ -1309,237 +704,88 @@
       }
       getRecursos() { return this.recursos; }
       getRecursoById(id) { return this.recursos.find(r => r.id === id); }
-      preloadRecurso(arquivo) {
-        if (this.cache.has(arquivo)) return;
-        this.cache.set(arquivo, true);
-        const link = document.createElement('link');
-        link.rel = 'prefetch';
-        link.href = arquivo;
-        document.head.appendChild(link);
-      }
+      preloadRecurso(arquivo) { if (this.cache.has(arquivo)) return; this.cache.set(arquivo, true); const link = document.createElement('link'); link.rel = 'prefetch'; link.href = arquivo; document.head.appendChild(link); }
     }
 
-    // ============================================
-    // SISTEMA DE NOTIFICAÇÕES (TOAST)
-    // ============================================
     function mostrarToast(mensagem, tipo = 'info', duracao = 3000) {
-      const toast = document.getElementById('toastNotification');
-      const toastMessage = document.getElementById('toastMessage');
-      if (!toast || !toastMessage) return;
-      toast.className = 'toast-notification';
-      toast.classList.add(tipo);
-      toastMessage.textContent = mensagem;
-      toast.classList.add('show');
-      clearTimeout(toast._timeout);
-      toast._timeout = setTimeout(() => { toast.classList.remove('show'); }, duracao);
+      const toast = document.getElementById('toastNotification'); const toastMessage = document.getElementById('toastMessage');
+      if (!toast || !toastMessage) return; toast.className = 'toast-notification'; toast.classList.add(tipo); toastMessage.textContent = mensagem; toast.classList.add('show');
+      clearTimeout(toast._timeout); toast._timeout = setTimeout(() => { toast.classList.remove('show'); }, duracao);
     }
 
-    function debounce(fn, delay) {
-      let timer;
-      return function(...args) {
-        clearTimeout(timer);
-        timer = setTimeout(() => fn.apply(this, args), delay);
-      };
-    }
+    function debounce(fn, delay) { let timer; return function(...args) { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, args), delay); }; }
 
-    const appState = new AppState();
-    const resourceManager = new ResourceManager();
+    const appState = new AppState(); const resourceManager = new ResourceManager();
 
-    // ============================================
-    // FUNÇÕES DE RENDERIZAÇÃO
-    // [MELHORIA] Sem onclick inline. Usa data-attributes.
-    // ============================================
     function gerarCard(recurso) {
       const classeCapa = `card-capa-modulo ${recurso.id}`;
       const cardsComImagem = ['completa','biblia', 'comentada', 'apologetica', 'enciclopedia', 'harpa', 'cantor', 'cristologia'];
       const temImagem = cardsComImagem.includes(recurso.id);
       let conteudoCapa = '';
-      if (!temImagem) {
-        const icone = recurso.icone || "fa-book";
-        conteudoCapa = `<i class="fas ${icone}" aria-hidden="true"></i>`;
-      }
-      const infoCapitulos = recurso.capitulos > 0 
-        ? `<div class="card-capitulos">📖 ${recurso.capitulos} ${recurso.capitulos === 1 ? 'capítulo' : 'capítulos'}</div>` 
-        : '<div class="card-capitulos">📚 Material de referência</div>';
-      
-      return `
-        <div class="card-livro" role="listitem" tabindex="0" 
-             data-arquivo="${recurso.arquivo}" data-nome="${recurso.nome}"
-             aria-label="Abrir ${recurso.nome}">
-          <div class="${classeCapa}">${conteudoCapa}</div>
-          <div class="card-info">
-            <div class="card-titulo">${recurso.nome}</div>
-            <div class="card-autor">${recurso.autor}</div>
-            ${infoCapitulos}
-          </div>
-        </div>
-      `;
+      if (!temImagem) { const icone = recurso.icone || "fa-book"; conteudoCapa = `<i class="fas ${icone}" aria-hidden="true"></i>`; }
+      const infoCapitulos = recurso.capitulos > 0 ? `<div class="card-capitulos">📖 ${recurso.capitulos} ${recurso.capitulos === 1 ? 'capítulo' : 'capítulos'}</div>` : '<div class="card-capitulos">📚 Material de referência</div>';
+      return `<div class="card-livro" role="listitem" tabindex="0" data-arquivo="${recurso.arquivo}" data-nome="${recurso.nome}" aria-label="Abrir ${recurso.nome}"><div class="${classeCapa}">${conteudoCapa}</div><div class="card-info"><div class="card-titulo">${recurso.nome}</div><div class="card-autor">${recurso.autor}</div>${infoCapitulos}</div></div>`;
     }
     
     function renderizarEstantes() {
-      const containerRecursos = document.getElementById('estante-recursos');
-      if (!containerRecursos) return;
-      containerRecursos.innerHTML = '';
-      const recursos = resourceManager.getRecursos();
+      const containerRecursos = document.getElementById('estante-recursos'); if (!containerRecursos) return;
+      containerRecursos.innerHTML = ''; const recursos = resourceManager.getRecursos();
       recursos.forEach(recurso => { containerRecursos.innerHTML += gerarCard(recurso); });
-
-      // [MELHORIA] Event Delegation para cliques nos cards
-      containerRecursos.addEventListener('click', function(e) {
-        const card = e.target.closest('.card-livro');
-        if (card) abrirRecurso(card.dataset.arquivo, card.dataset.nome);
-      });
-
-      // [MELHORIA] Suporte a teclado (Enter/Space) nos cards
-      containerRecursos.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          const card = e.target.closest('.card-livro');
-          if (card) {
-            e.preventDefault();
-            abrirRecurso(card.dataset.arquivo, card.dataset.nome);
-          }
-        }
-      });
-
-      // [MELHORIA] Preload Inteligente (Apenas ao passar o mouse ou focar)
+      containerRecursos.addEventListener('click', function(e) { const card = e.target.closest('.card-livro'); if (card) abrirRecurso(card.dataset.arquivo, card.dataset.nome); });
+      containerRecursos.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { const card = e.target.closest('.card-livro'); if (card) { e.preventDefault(); abrirRecurso(card.dataset.arquivo, card.dataset.nome); } } });
       const cards = containerRecursos.querySelectorAll('.card-livro');
-      cards.forEach(card => {
-        const preloadHandler = () => resourceManager.preloadRecurso(card.dataset.arquivo);
-        card.addEventListener('mouseenter', preloadHandler);
-        card.addEventListener('focus', preloadHandler);
-      });
+      cards.forEach(card => { const preloadHandler = () => resourceManager.preloadRecurso(card.dataset.arquivo); card.addEventListener('mouseenter', preloadHandler); card.addEventListener('focus', preloadHandler); });
     }
 
-    // ============================================
-    // FUNÇÃO PARA ABRIR RECURSO
-    // ============================================
     function abrirRecurso(arquivo, nomeItem) {
       mostrarToast(`Abrindo: ${nomeItem}...`, 'info', 2000);
-      if (window.gtag) {
-        gtag('event', 'recurso_aberto', {
-          'event_category': 'Navegação',
-          'event_label': nomeItem
-        });
-      }
+      if (window.gtag) { gtag('event', 'recurso_aberto', { 'event_category': 'Navegação', 'event_label': nomeItem }); }
       window.location.href = arquivo;
     }
 
-    // ============================================
-    // FUNÇÕES DE ROLAGEM
-    // ============================================
     function scrollEstante(estante, direcao) {
-      const container = document.getElementById(`estante-${estante}`);
-      if (!container) return;
-      const scrollAmount = 400;
-      const currentScroll = container.scrollLeft;
-      if (direcao === 'left') {
-        container.scrollTo({ left: currentScroll - scrollAmount, behavior: 'smooth' });
-      } else {
-        container.scrollTo({ left: currentScroll + scrollAmount, behavior: 'smooth' });
-      }
+      const container = document.getElementById(`estante-${estante}`); if (!container) return;
+      const scrollAmount = 400; const currentScroll = container.scrollLeft;
+      if (direcao === 'left') { container.scrollTo({ left: currentScroll - scrollAmount, behavior: 'smooth' }); } else { container.scrollTo({ left: currentScroll + scrollAmount, behavior: 'smooth' }); }
     }
     
     function updateScrollButtons(estante) {
-      const container = document.getElementById(`estante-${estante}`);
-      const leftBtn = document.getElementById(`scroll-left-${estante}`);
-      const rightBtn = document.getElementById(`scroll-right-${estante}`);
+      const container = document.getElementById(`estante-${estante}`); const leftBtn = document.getElementById(`scroll-left-${estante}`); const rightBtn = document.getElementById(`scroll-right-${estante}`);
       if (!container || !leftBtn || !rightBtn) return;
-      const scrollLeft = container.scrollLeft;
-      const maxScrollLeft = container.scrollWidth - container.clientWidth;
-      leftBtn.classList.toggle('hidden', scrollLeft <= 10);
-      rightBtn.classList.toggle('hidden', scrollLeft >= maxScrollLeft - 10);
+      const scrollLeft = container.scrollLeft; const maxScrollLeft = container.scrollWidth - container.clientWidth;
+      leftBtn.classList.toggle('hidden', scrollLeft <= 10); rightBtn.classList.toggle('hidden', scrollLeft >= maxScrollLeft - 10);
     }
     
     function toggleEstante(tipo) {
-      const container = document.getElementById(`estante-${tipo}`);
-      const wrapper = document.getElementById(`wrapper-${tipo}`);
-      const headerBtn = document.getElementById(`toggle-${tipo}`); // [MELHORIA] Usa ID do botão
-      const toggle = headerBtn?.querySelector('.estante-toggle');
-      
+      const container = document.getElementById(`estante-${tipo}`); const wrapper = document.getElementById(`wrapper-${tipo}`); const headerBtn = document.getElementById(`toggle-${tipo}`); const toggle = headerBtn?.querySelector('.estante-toggle');
       if (container && wrapper) {
         const isHidden = container.style.display === 'none';
-        if (isHidden) {
-          container.style.display = 'flex';
-          wrapper.style.display = 'block';
-          if(toggle) toggle.innerHTML = '▼';
-          headerBtn?.setAttribute('aria-expanded', 'true');
-          appState.set('isEstanteOpen', true);
-          setTimeout(() => updateScrollButtons(tipo), 100);
-        } else {
-          container.style.display = 'none';
-          wrapper.style.display = 'none';
-          if(toggle) toggle.innerHTML = '▶';
-          headerBtn?.setAttribute('aria-expanded', 'false');
-          appState.set('isEstanteOpen', false);
-        }
+        if (isHidden) { container.style.display = 'flex'; wrapper.style.display = 'block'; if(toggle) toggle.innerHTML = '▼'; headerBtn?.setAttribute('aria-expanded', 'true'); appState.set('isEstanteOpen', true); setTimeout(() => updateScrollButtons(tipo), 100); }
+        else { container.style.display = 'none'; wrapper.style.display = 'none'; if(toggle) toggle.innerHTML = '▶'; headerBtn?.setAttribute('aria-expanded', 'false'); appState.set('isEstanteOpen', false); }
       }
     }
 
-    // ============================================
-    // BACK TO TOP
-    // ============================================
     const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', debounce(function() {
-      backToTop.classList.toggle('visible', window.scrollY > 500);
-    }, 100));
-    
-    backToTop.addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    window.addEventListener('scroll', debounce(function() { backToTop.classList.toggle('visible', window.scrollY > 500); }, 100));
+    backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-    // ============================================
-    // READING PROGRESS
-    // ============================================
     window.addEventListener('scroll', debounce(function() {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if(docHeight > 0) {
-        const progress = (scrollTop / docHeight) * 100;
-        document.getElementById('readingProgress').style.width = Math.min(progress, 100) + '%';
-      }
+      const scrollTop = window.scrollY; const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if(docHeight > 0) { const progress = (scrollTop / docHeight) * 100; document.getElementById('readingProgress').style.width = Math.min(progress, 100) + '%'; }
     }, 10));
 
-    // ============================================
-    // ANÚNCIO - CONTROLE DE MINIMIZAR/EXPANDIR
-    // ============================================
     function initAd() {
-      const adContainer = document.getElementById('adContainer');
-      const adClose = document.getElementById('adClose');
-      const adExpand = document.getElementById('adExpand');
+      const adContainer = document.getElementById('adContainer'); const adClose = document.getElementById('adClose'); const adExpand = document.getElementById('adExpand');
       const isMinimized = appState.get('adMinimized');
-      if (isMinimized) {
-        adContainer.classList.add('minimized');
-        adExpand.style.display = 'block';
-      }
-      adClose.addEventListener('click', function(e) {
-        e.stopPropagation();
-        adContainer.classList.add('minimized');
-        adExpand.style.display = 'block';
-        appState.set('adMinimized', true);
-        mostrarToast('Playlist minimizada.', 'info', 2000);
-      });
-      function expandAd() {
-        adContainer.classList.remove('minimized');
-        adExpand.style.display = 'none';
-        appState.set('adMinimized', false);
-      }
-      adExpand.addEventListener('click', function(e) {
-        e.stopPropagation();
-        expandAd();
-      });
-      adContainer.addEventListener('click', function(e) {
-        if (adContainer.classList.contains('minimized') && !e.target.closest('.ad-close')) expandAd();
-      });
-      adContainer.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' && adContainer.classList.contains('minimized')) expandAd();
-      });
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !adContainer.classList.contains('minimized')) adClose.click();
-      });
+      if (isMinimized) { adContainer.classList.add('minimized'); adExpand.style.display = 'block'; }
+      adClose.addEventListener('click', function(e) { e.stopPropagation(); adContainer.classList.add('minimized'); adExpand.style.display = 'block'; appState.set('adMinimized', true); mostrarToast('Minimizado.', 'info', 2000); });
+      function expandAd() { adContainer.classList.remove('minimized'); adExpand.style.display = 'none'; appState.set('adMinimized', false); }
+      adExpand.addEventListener('click', function(e) { e.stopPropagation(); expandAd(); });
+      adContainer.addEventListener('click', function(e) { if (adContainer.classList.contains('minimized') && !e.target.closest('.ad-close')) expandAd(); });
+      adContainer.addEventListener('keydown', function(e) { if (e.key === 'Enter' && adContainer.classList.contains('minimized')) expandAd(); });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && !adContainer.classList.contains('minimized')) adClose.click(); });
     }
 
-    // ============================================
-    // Teclado - Navegação por setas
-    // ============================================
     document.addEventListener('keydown', function(e) {
       const container = document.getElementById('estante-recursos');
       if (!container || document.activeElement?.closest('.card-livro')) return;
@@ -1547,74 +793,32 @@
       else if (e.key === 'ArrowRight') { e.preventDefault(); scrollEstante('recursos', 'right'); }
     });
 
-    // ============================================
-    // INICIALIZAÇÃO
-    // ============================================
     document.addEventListener('DOMContentLoaded', function() {
       renderizarEstantes();
-      
-      // [MELHORIA] Listener para o novo botão de toggle
       document.getElementById('toggleRecursos').addEventListener('click', () => toggleEstante('recursos'));
-      
-      // [MELHORIA] Listeners para os botões de scroll (removidos do HTML)
       document.getElementById('scroll-left-recursos').addEventListener('click', () => scrollEstante('recursos', 'left'));
       document.getElementById('scroll-right-recursos').addEventListener('click', () => scrollEstante('recursos', 'right'));
-      
-      // Restaurar estado da estante
       const isOpen = appState.get('isEstanteOpen');
       if (!isOpen) {
-        const container = document.getElementById('estante-recursos');
-        const wrapper = document.getElementById('wrapper-recursos');
-        const btn = document.getElementById('toggleRecursos');
-        const toggle = btn?.querySelector('.estante-toggle');
-        if (container && wrapper) {
-          container.style.display = 'none';
-          wrapper.style.display = 'none';
-          if(toggle) toggle.innerHTML = '▶';
-          btn?.setAttribute('aria-expanded', 'false');
-        }
+        const container = document.getElementById('estante-recursos'); const wrapper = document.getElementById('wrapper-recursos'); const btn = document.getElementById('toggleRecursos'); const toggle = btn?.querySelector('.estante-toggle');
+        if (container && wrapper) { container.style.display = 'none'; wrapper.style.display = 'none'; if(toggle) toggle.innerHTML = '▶'; btn?.setAttribute('aria-expanded', 'false'); }
       }
-      
       const container = document.getElementById('estante-recursos');
       if (container) {
         const scrollHandler = debounce(function() { updateScrollButtons('recursos'); }, 150);
-        container.addEventListener('scroll', scrollHandler);
-        setTimeout(function() { updateScrollButtons('recursos'); }, 100);
+        container.addEventListener('scroll', scrollHandler); setTimeout(function() { updateScrollButtons('recursos'); }, 100);
       }
-      
       const savedScroll = appState.get('scrollPositions')?.recursos || 0;
       if (container && savedScroll > 0) container.scrollLeft = savedScroll;
-      
-      window.addEventListener('beforeunload', function() {
-        if (container) {
-          const positions = appState.get('scrollPositions') || {};
-          positions.recursos = container.scrollLeft;
-          appState.set('scrollPositions', positions);
-        }
-      });
-      
+      window.addEventListener('beforeunload', function() { if (container) { const positions = appState.get('scrollPositions') || {}; positions.recursos = container.scrollLeft; appState.set('scrollPositions', positions); } });
       window.addEventListener('resize', debounce(function() { updateScrollButtons('recursos'); }, 200));
-      
-      document.querySelectorAll('.side-nav a').forEach(link => {
-        const tooltip = link.querySelector('.tooltip');
-        if (tooltip) link.setAttribute('aria-label', tooltip.textContent.trim().replace(/\n/g, ' '));
-      });
-      
+      document.querySelectorAll('.side-nav a').forEach(link => { const tooltip = link.querySelector('.tooltip'); if (tooltip) link.setAttribute('aria-label', tooltip.textContent.trim().replace(/\n/g, ' ')); });
       initAd();
     });
 
-    window.addEventListener('error', function(e) {
-      console.error('Erro capturado:', e.message, e.filename, e.lineno);
-      mostrarToast('Ocorreu um erro ao carregar o conteúdo.', 'error', 4000);
-    });
+    window.addEventListener('error', function(e) { console.error('Erro capturado:', e.message, e.filename, e.lineno); mostrarToast('Ocorreu um erro ao carregar o conteúdo.', 'error', 4000); });
 
-    window.abrirRecurso = abrirRecurso;
-    window.scrollEstante = scrollEstante;
-    window.toggleEstante = toggleEstante;
-    window.mostrarToast = mostrarToast;
-    window.appState = appState;
-    window.resourceManager = resourceManager;
+    window.abrirRecurso = abrirRecurso; window.scrollEstante = scrollEstante; window.toggleEstante = toggleEstante; window.mostrarToast = mostrarToast; window.appState = appState; window.resourceManager = resourceManager;
   </script>
-
 </body>
 </html>
