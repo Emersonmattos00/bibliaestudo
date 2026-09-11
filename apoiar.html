@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Apoie o Projeto | Plataforma de Estudos Bíblicos</title>
   
-  <!-- ===== SEO E META TAGS (Sincronizado com index.html) ===== -->
+  <!-- ===== SEO E META TAGS ===== -->
   <meta name="description" content="Apoie a Plataforma de Estudos Bíblicos. Sua contribuição ajuda a manter os servidores e a expandir o conteúdo gratuito da Palavra de Deus." />
   <meta name="keywords" content="Doação, Apoiar, PIX, Bíblia Sagrada, Estudos Bíblicos, Emerson Mattos" />
   <meta name="author" content="Emerson José de Mello Mattos" />
@@ -78,7 +78,7 @@
       padding: 0 20px 0 80px;
     }
 
-    /* ===== MENU LATERAL (Mesmo do index) ===== */
+    /* ===== MENU LATERAL ===== */
     .side-nav {
       position: fixed;
       top: 50%;
@@ -163,7 +163,6 @@
     .page-header h1 i { margin-right: 12px; }
     .page-header .subtitle { font-size: 20px; color: var(--gold); font-style: italic; margin-bottom: 15px; }
     
-    /* Divisor estilizado substituindo o <hr> */
     .header-divider {
       width: 100px;
       height: 3px;
@@ -348,7 +347,7 @@
     .contact-info a i.fa-whatsapp { color: var(--whatsapp); }
     .contact-info a i.fa-envelope { color: var(--primary); }
 
-    /* ===== MODAIS (Acessibilidade Melhorada) ===== */
+    /* ===== MODAIS ===== */
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -435,7 +434,6 @@
       background: #fff;
     }
     
-    /* Estado de erro na validação */
     .form-group input.error, .form-group select.error, .form-group textarea.error {
       border-color: #e74c3c;
       background: #fff5f5;
@@ -453,7 +451,7 @@
       grid-column: 1 / -1;
       justify-self: center;
       padding: 16px 50px;
-      background: linear-gradient(135deg, var(--whatsapp), #128C7E); /* Cor do WhatsApp para clareza */
+      background: linear-gradient(135deg, var(--whatsapp), #128C7E);
       color: #ffffff;
       border: none;
       border-radius: 50px;
@@ -485,7 +483,6 @@
     }
     .modal-footer i { color: #4a6fa5; margin-right: 4px; }
 
-    /* Modal de Sucesso */
     .modal-success-box {
       background: var(--cream);
       max-width: 480px;
@@ -570,6 +567,217 @@
     footer { text-align: center; margin-top: 60px; padding: 25px 20px; color: var(--text-light); border-top: 1px solid #c5a47a44; font-size: 13px; }
     footer i.fa-heart { color: #ff6b6b; }
 
+    /* ============================================
+       ANÚNCIO - 4 ÍCONES DE REDES SOCIAIS
+    ============================================ */
+    .ad-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9997;
+      max-width: 250px;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: transparent;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .ad-container.minimized {
+      max-width: 56px;
+      padding: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .ad-container.minimized .ad-content > *:not(.ad-minimized-icon),
+    .ad-container.minimized .ad-social-links {
+      display: none !important;
+    }
+
+    .ad-container.minimized .ad-minimized-icon {
+      display: flex !important;
+    }
+
+    .ad-container:hover {
+      border-color: rgba(255, 217, 102, 0.3);
+      box-shadow: 0 8px 48px rgba(255, 217, 102, 0.08);
+    }
+
+    .ad-container.minimized:hover {
+      border-color: rgba(255, 217, 102, 0.3);
+      transform: scale(1.05);
+    }
+
+    .ad-content {
+      text-align: center;
+      color: var(--text-light);
+    }
+
+    .ad-content .ad-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #1DB954;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .ad-playlist-image {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      aspect-ratio: 1/1;
+      border-radius: 12px;
+      margin: 0 auto 10px;
+      display: block;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(255, 217, 102, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .ad-playlist-image:hover {
+      transform: scale(1.02);
+      border-color: rgba(255, 217, 102, 0.3);
+    }
+
+    .ad-content .ad-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 2px;
+    }
+
+    .ad-content .ad-description {
+      font-size: 12px;
+      opacity: 0.8;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .ad-content .ad-description span {
+      display: block;
+      font-size: 11px;
+      opacity: 0.6;
+      margin-top: 2px;
+    }
+
+    .ad-social-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .ad-social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--gold);
+      font-size: 20px;
+      text-decoration: none !important;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 217, 102, 0.2);
+    }
+
+    .ad-social-icon:hover {
+      transform: translateY(-4px) scale(1.1);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .ad-social-icon.spotify:hover {
+      background: #1DB954;
+      box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5);
+    }
+
+    .ad-social-icon.youtube:hover {
+      background: #FF0000;
+      box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+    }
+
+    .ad-social-icon.tiktok:hover {
+      background: #010101;
+      border-color: #00f2ea;
+      box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
+    }
+
+    .ad-social-icon.facebook:hover {
+      background: #1877F2;
+      box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
+    }
+
+    .ad-minimized-icon {
+      display: none !important;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      color: #1DB954;
+      background: rgba(20, 30, 20, 0.92);
+      border-radius: 50%;
+    }
+
+    .ad-minimized-icon i {
+      font-size: 28px;
+    }
+
+    .ad-close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 4px;
+      line-height: 1;
+      z-index: 10;
+    }
+
+    .ad-close:hover {
+      color: #ff6b6b;
+      transform: scale(1.1);
+    }
+
+    .ad-container.minimized .ad-close {
+      display: none;
+    }
+
+    .ad-expand-btn {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 5;
+    }
+
+    .ad-container.minimized .ad-expand-btn {
+      display: block;
+    }
+
     /* ===== RESPONSIVO ===== */
     @media (max-width: 992px) {
       .pix-grid { grid-template-columns: 1fr; gap: 30px; }
@@ -591,6 +799,15 @@
       .side-nav a .tooltip { font-size: 11px; left: 48px; padding: 4px 10px; }
       .form-grid { grid-template-columns: 1fr; gap: 12px; }
       .contact-info { flex-direction: column; align-items: center; gap: 8px; }
+      
+      .ad-container { max-width: 230px; bottom: 15px; right: 15px; padding: 14px; }
+      .ad-container.minimized { max-width: 50px; padding: 6px; }
+      .ad-playlist-image { max-width: 160px; }
+      .ad-content .ad-title { font-size: 14px; }
+      .ad-content .ad-description { font-size: 11px; }
+      .ad-social-icon { width: 38px; height: 38px; font-size: 18px; }
+      .ad-minimized-icon { width: 38px; height: 38px; font-size: 20px; }
+      .ad-minimized-icon i { font-size: 24px; }
     }
     
     @media (max-width: 480px) {
@@ -603,6 +820,18 @@
       .side-nav a i { font-size: 14px; }
       .side-nav a .tooltip { font-size: 10px; left: 40px; padding: 3px 8px; }
       .modal-success-box { padding: 30px 20px; }
+      
+      .ad-container { max-width: 200px; bottom: 70px; right: 10px; padding: 12px; border-radius: 12px; }
+      .ad-container.minimized { max-width: 44px; padding: 5px; bottom: 75px; right: 12px; }
+      .ad-playlist-image { max-width: 120px; margin-bottom: 8px; }
+      .ad-content .ad-title { font-size: 13px; }
+      .ad-content .ad-description { font-size: 10px; margin-bottom: 6px; }
+      .ad-content .ad-description span { font-size: 10px; }
+      .ad-social-links { gap: 8px; }
+      .ad-social-icon { width: 36px; height: 36px; font-size: 16px; }
+      .ad-close { font-size: 15px; top: 5px; right: 8px; }
+      .ad-minimized-icon { width: 34px; height: 34px; font-size: 18px; }
+      .ad-minimized-icon i { font-size: 20px; }
     }
   </style>
 </head>
@@ -692,7 +921,7 @@
             </div>
             <div class="security-badge">
               <span><i class="fas fa-lock"></i> Transação segura</span>
-              <span><i class="fas fa-check-circle"></i> Emerson José de Mello Mattos</span>
+              <span><i class="fas fa-check-circle"></i> Emerson J. M. Mattos</span>
             </div>
           </div>
         </div>
@@ -839,6 +1068,53 @@
   <!-- ===== TOAST ===== -->
   <div class="toast" id="toast" role="alert" aria-live="polite"></div>
 
+  <!-- ============================================ -->
+  <!-- ===== ANÚNCIO - 4 ÍCONES DE REDES SOCIAIS ===== -->
+  <!-- ============================================ -->
+  <div class="ad-container" id="adContainer" role="complementary" aria-label="Redes Sociais Joseph Matthos">
+    <button class="ad-close" id="adClose" aria-label="Minimizar" title="Minimizar">
+      <i class="fas fa-minus" aria-hidden="true"></i>
+    </button>
+    <button class="ad-expand-btn" id="adExpand" aria-label="Expandir" style="display: none;"></button>
+    
+    <div class="ad-content">
+      <span class="ad-label">🎧 Siga · Inscreva-se · Ouça</span>
+      
+      <img 
+        src="assets/capa/josephmatthos.png" 
+        alt="Joseph Matthos" 
+        class="ad-playlist-image"
+        loading="lazy"
+        width="150"
+        height="150"
+      />
+      
+      <div class="ad-title">Joseph Matthos</div>
+      <div class="ad-description">
+        30 álbuns · Discografia Completa
+      </div>
+      
+      <div class="ad-social-links">
+        <a href="https://open.spotify.com/playlist/3flgUEol1uBvFAlriXZE24?si=PtjKfVQuQfms4zMCjyIqaA" target="_blank" rel="noopener noreferrer" class="ad-social-icon spotify" aria-label="Spotify" title="Spotify">
+          <i class="fab fa-spotify"></i>
+        </a>
+        <a href="https://www.youtube.com/@josephmatthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon youtube" aria-label="YouTube" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://tiktok.com/@joseph.matthos" target="_blank" rel="noopener noreferrer" class="ad-social-icon tiktok" aria-label="TikTok" title="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61593112378384" target="_blank" rel="noopener noreferrer" class="ad-social-icon facebook" aria-label="Facebook" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="ad-minimized-icon">
+      <i class="fab fa-spotify" aria-hidden="true"></i>
+    </div>
+  </div>
+
   <footer>
     <p><i class="fas fa-heart"></i> Soli Deo Gloria | <i>Louvado seja o Nome de Deus!</i> <i class="fas fa-heart"></i></p>
   </footer>
@@ -924,7 +1200,7 @@
     }
 
     // ============================================================
-    // 5. MODAIS E FOCUS TRAP (Acessibilidade)
+    // 5. MODAIS E FOCUS TRAP
     // ============================================================
     let lastFocusedElement = null;
 
@@ -934,7 +1210,6 @@
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
       
-      // Foca no primeiro elemento interativo ou no botão de fechar
       const focusable = modal.querySelector('button, [href], input, select, textarea');
       if (focusable) focusable.focus();
     }
@@ -946,7 +1221,6 @@
       if (lastFocusedElement) lastFocusedElement.focus();
     }
 
-    // Trap de Foco (Impede que o Tab saia do modal)
     function trapFocus(e, modalId) {
       const modal = document.getElementById(modalId);
       if (!modal.classList.contains('active')) return;
@@ -982,7 +1256,6 @@
       const msg = document.getElementById('sugMensagem');
       let isValid = true;
 
-      // Limpa erros anteriores
       [nome, tipo, msg].forEach(el => el.classList.remove('error'));
 
       if (!nome.value.trim()) {
@@ -1021,17 +1294,67 @@
       document.getElementById('sugUserNome').textContent = nome;
       abrirModal('sugestaoSuccessModal');
       
-      // Limpa form
       document.getElementById('sugestaoForm').reset();
       document.getElementById('sugCharCount').textContent = '0';
     }
 
     // ============================================================
-    // 7. INICIALIZAÇÃO E EVENT LISTENERS (Desacoplado do HTML)
+    // 7. ANÚNCIO - CONTROLE DE MINIMIZAR/EXPANDIR
+    // ============================================================
+    function initAd() {
+      const adContainer = document.getElementById('adContainer');
+      const adClose = document.getElementById('adClose');
+      const adExpand = document.getElementById('adExpand');
+      
+      const isMinimized = localStorage.getItem('adMinimized') === 'true';
+      
+      if (isMinimized) {
+        adContainer.classList.add('minimized');
+        adExpand.style.display = 'block';
+      }
+      
+      adClose.addEventListener('click', function(e) {
+        e.stopPropagation();
+        adContainer.classList.add('minimized');
+        adExpand.style.display = 'block';
+        localStorage.setItem('adMinimized', 'true');
+        mostrarToast('Minimizado.', 'info', 2000);
+      });
+      
+      function expandAd() {
+        adContainer.classList.remove('minimized');
+        adExpand.style.display = 'none';
+        localStorage.setItem('adMinimized', 'false');
+      }
+      
+      adExpand.addEventListener('click', function(e) {
+        e.stopPropagation();
+        expandAd();
+      });
+      
+      adContainer.addEventListener('click', function(e) {
+        if (adContainer.classList.contains('minimized') && !e.target.closest('.ad-close')) {
+          expandAd();
+        }
+      });
+      
+      adContainer.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && adContainer.classList.contains('minimized')) {
+          expandAd();
+        }
+      });
+      
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !adContainer.classList.contains('minimized')) {
+          adClose.click();
+        }
+      });
+    }
+
+    // ============================================================
+    // 8. INICIALIZAÇÃO E EVENT LISTENERS
     // ============================================================
     document.addEventListener('DOMContentLoaded', () => {
-      
-      // Navegação SPA
       const params = new URLSearchParams(window.location.search);
       const page = params.get('page');
       if (page && ['apoiar', 'redirecionar', 'sucesso'].includes(page)) {
@@ -1042,41 +1365,31 @@
         if (e.state && e.state.page) navegar(e.state.page);
       });
 
-      // Botões de Scroll QR
       document.getElementById('btnScrollQR1').addEventListener('click', scrollParaQR);
       document.getElementById('btnScrollQR2').addEventListener('click', scrollParaQR);
-      
-      // Botão Copiar PIX
       document.getElementById('btnCopyPix').addEventListener('click', copiarPix);
-      
-      // Botões Voltar
       document.getElementById('btnVoltar1').addEventListener('click', () => navegar('apoiar'));
       document.getElementById('btnVoltar2').addEventListener('click', () => navegar('apoiar'));
 
-      // Modais
       document.getElementById('btnOpenSugestao').addEventListener('click', () => abrirModal('sugestaoModal'));
       document.getElementById('btnCloseModal').addEventListener('click', () => fecharModal('sugestaoModal'));
       document.getElementById('btnCloseSuccess').addEventListener('click', () => fecharModal('sugestaoSuccessModal'));
       
-      // Fechar modal clicando fora
       document.querySelectorAll('.modal-overlay').forEach(overlay => {
         overlay.addEventListener('click', (e) => {
           if (e.target === overlay) fecharModal(overlay.id);
         });
       });
 
-      // Focus Trap e Teclado (ESC)
       document.addEventListener('keydown', (e) => {
         trapFocus(e, 'sugestaoModal');
         trapFocus(e, 'sugestaoSuccessModal');
       });
 
-      // Contador de caracteres
       document.getElementById('sugMensagem').addEventListener('input', function() {
         document.getElementById('sugCharCount').textContent = this.value.length;
       });
 
-      // Submissão do Formulário
       document.getElementById('sugestaoForm').addEventListener('submit', (e) => {
         e.preventDefault();
         if (validarFormulario()) {
@@ -1084,10 +1397,12 @@
         }
       });
       
-      // Remover classe de erro ao digitar
       document.querySelectorAll('#sugestaoForm input, #sugestaoForm select, #sugestaoForm textarea').forEach(el => {
         el.addEventListener('input', () => el.classList.remove('error'));
       });
+
+      // Inicializar anúncio
+      initAd();
     });
   </script>
 
