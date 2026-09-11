@@ -1,0 +1,42 @@
+{
+  "name": "Plataforma de Estudos Bíblicos",
+  "short_name": "Bíblia Digital",
+  "description": "Plataforma de Estudos Bíblicos com Bíblia Sagrada Digital, Comentários versículo por versículo, Textos Originais, Enciclopédia Bíblica, Harpa Cristã e Cantor Cristão. Estude a Palavra de Deus online e gratuitamente.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#313030",
+  "theme_color": "#4a2c1a",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["education", "books", "religion"],
+  "icons": [
+    {
+      "src": "./assets/icons/bible-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/bible-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/bible-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/capa/biblia-sagrada.webp",
+      "sizes": "1200x630",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Plataforma de Estudos Bíblicos"
+    }
+  ]
+}

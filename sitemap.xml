@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ===== PÁGINA PRINCIPAL ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ===== BÍBLIA SAGRADA ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/bibliasagrada.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== BÍBLIA COMENTADA ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/comentada.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== TEXTOS ORIGINAIS ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/original.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== BÍBLIA APOLOGÉTICA ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/apologetica.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== ENCICLOPÉDIA CRISTOLÓGICA ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/cristologia.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== ENCICLOPÉDIA BÍBLICA ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/enciclopedia.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== HARPA CRISTÃ ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/harpa.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== CANTOR CRISTÃO ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/cantor.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== APOIAR O PROJETO ===== -->
+  <url>
+    <loc>https://bibliaestudo.vercel.app/apoiar.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
